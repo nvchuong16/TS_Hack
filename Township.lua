@@ -2992,7 +2992,88 @@ gg.setValues(A)
 
 
 end
-function hack15cD()
+ function hack15cD()
+  gg.toast( "Cargando...")  
+  gg.processResume() 
+  gg.clearResults()
+  gg.searchNumber("6E726526h;68747269h;5F796164h;00000031h", gg.TYPE_DWORD ) 
+  gg.refineNumber("68747269h", gg.TYPE_DWORD )
+   
+ r = gg.getResults(2)
+ 
+if gg.getResultCount() == 2 then
+  --do something
+ 
+   local t = {}
+t[2] = {}
+t[2].address = r[2].address + 0xA0
+t[2].flags = gg.TYPE_DWORD
+t[2].value = 1
+t[2].freeze = false
+gg.setValues(t)
+
+local G = {}
+G[2] = {}
+G[2].address = r[2].address + 0x94
+G[2].flags = gg.TYPE_DWORD
+G[2].value = 7000
+G[2].freeze = false
+gg.setValues(G)
+
+local A = {}
+A[2] = {}
+A[2].address = r[2].address + 0x90
+A[2].flags = gg.TYPE_DWORD
+A[2].value = 0
+A[2].freeze = false
+gg.setValues(A)
+ 
+   gg.alert("hack done 2") 
+  gg.toast( "hack done 2...")
+ 
+
+-- gg.clearResults()
+else
+  --do something else entirely
+  gg.toast( "NO done...")
+  gg.clearResults()
+end
+
+ --gg.clearResults()
+--elseif gg.getResultCount() == 1 then
+  --do something else
+   re = gg.getResults(1)
+
+local te = {}
+te[1] = {}
+te[1].address = re[1].address + 0xA0
+te[1].flags = gg.TYPE_DWORD
+te[1].value = 1
+te[1].freeze = false
+gg.setValues(te)
+
+local Ge = {}
+Ge[1] = {}
+Ge[1].address = re[1].address + 0x94
+Ge[1].flags = gg.TYPE_DWORD
+Ge[1].value = 7000
+Ge[1].freeze = false
+gg.setValues(Ge)
+
+local Ae = {}
+Ae[1] = {}
+Ae[1].address = re[1].address + 0x90
+Ae[1].flags = gg.TYPE_DWORD
+Ae[1].value = 0
+Ae[1].freeze = false
+gg.setValues(Ae)
+ 
+  
+  gg.alert("hack done 1") 
+  gg.toast( "hack done 1...")
+gg.clearResults()
+end
+function hack15cDn()
   gg.toast( "Cargando...") --696B5326h;69415F6Eh;616C7072h;735F656Eh;65636170h --616C7072h;735F656Eh;65636170h 65726F63h;72616D10h;696B532Ah Skin_Chicken_space 1.937.011.470;1.701.998.435 .erniemars025
   gg.processResume() --6E72651Ch;00353230h;00000031h 6E72651Ch;32737261h;00000031h  
   gg.clearResults()
