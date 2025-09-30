@@ -364,11 +364,11 @@ function menuMine()
     if MNM == nil then
         return
     elseif MNM == 1 then
-        hack("g")
+        hack("00336D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     elseif MNM == 2 then
-        hack("h")
+        hack("00326D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     elseif MNM == 3 then
-        hack("i")
+        hack("00316D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     elseif MNM == 4 then
         menuescolhas2(3)
     end
@@ -380,17 +380,17 @@ function menuConstruction()
     if MNN == nil then
         return
     elseif MNN == 1 then
-        hack("j")
+        hack("616C470Ah", "00007373h", "00000000h", "00000000h", "1BFDEA58h", "00000079h", 0)
     elseif MNN == 2 then
-        hack("k")
+        hack("6972420Ah", "00006B63h", "38DF4A98h", "00000079h", "722A8208h", "00000078h", 0)
     elseif MNN == 3 then
-        hack("l")
+        hack("696C500Ah", "00006174h", "00000000h", "00000000h", "23CA6A58h", "00000079h", 0)
     elseif MNN == 4 then
-        hack("j2")
+        hack("776F7010h", "61737265h", "00720077h", "65006B63h", "6C616972h", "00006500h", 0)
     elseif MNN == 5 then
-        hack("k2")
+        hack("63616A14h", "6D61686Bh", "0072656Dh", "65006B63h", "6C616972h", "00006500h", 0)
     elseif MNN == 6 then
-        hack("l2")
+        hack("6972640Ah", "61006C6Ch", "00720077h", "65006B63h", "6C616972h", "00006500h", 0)
     elseif MNN == 7 then
         menuescolhas2(3)
     end
@@ -401,11 +401,11 @@ function menuGems()
     if MNU == nil then
         return
     elseif MNU == 1 then
-        hack("n")
+        hack("6D656708h", "00000031h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     elseif MNU == 2 then
-        hack("m")
+        hack("6D656708h", "00000032h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     elseif MNU == 3 then
-        hack("o")
+        hack("6D656708h", "00000033h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     elseif MNU == 4 then
         menuescolhas2(3)
     end
@@ -418,13 +418,13 @@ function menuIngots()
     if MNV == nil then
         return
     elseif MNV == 1 then
-        hack("lg1")
+        hack("6F724228h", "42657A6Eh", "696C6C75h", "6F436E6Fh", "65746E75h", "00000072h", 0)
     elseif MNV == 2 then
-        hack("lg2")
+        hack("6C695328h", "42726576h", "696C6C75h", "6F436E6Fh", "65746E75h", "00000072h", 0)
     elseif MNV == 3 then
-        hack("lg3")
+        hack("6C6F4724h", "6C754264h", "6E6F696Ch", "6E756F43h", "00726574h", "00000000h", 0)
     elseif MNV == 4 then
-        hack("lg4")
+        hack("1634488364", "1970170228", "1819624045", "1852795244", "1853189955", "7497076", 0)
     elseif MNV == 5 then
         menuescolhas2(3)
     end
@@ -437,19 +437,19 @@ function menuAdvantage()
     if MXC == nil then
         return
     elseif MXC == 1 then
-        hack("lv1")
+        hack("1599099682", "1936682818", "1634882676", "1632464489", "29556", "0", 5)
     elseif MXC == 2 then
-        hack("lv2")
+        hack("5F505322h", "5362614Ch", "50746F6Ch", "696D6572h", "00006D75h", "0", 1)
     elseif MXC == 3 then
-        hack("lv3")
+        hack("1599099684", "1936682818", "1685213044", "1866691173", "7564905", "0", 50)
     elseif MXC == 4 then
-        hack("lv4")
+        hack("1599099680", "1802658125", "1917875301", "1969843557", "-1308229523", "0", 1)
     elseif MXC == 5 then
-        hack("lv5")
+        hack("1599099682", "1684107084", "1349675329", "1768777074", "-1308594827", "0", 1)
     elseif MXC == 6 then
-        hack("lv9")
+        hack("1835619372", "1850041445", "2037672308", "1635214674", "1816224882", "3299436", 50)
     elseif MXC == 7 then
-        hack("lv10")
+        hack("1869374220", "7497078", "0", "0", "0", "0", 50)
     elseif MXC == 8 then
         menuescolhas2(3)
     end
@@ -465,37 +465,37 @@ function menuLab()
     if MAC == nil then
         return
     elseif MAC == 1 then
-        hack("lb1")
+        hack("6F6F4222h", "70537473h", "55646565h", "69685370h", "00007370h", "00000000h", 80)
     elseif MAC == 2 then
-        hack("lb2")
+        hack("6F6F4224h", "70537473h", "55646565h", "61725470h", "00736E69h", "00000000h", 80)
     elseif MAC == 3 then
-        hack("lb3")
+        hack("6F6F4222h", "69547473h", "6D53656Dh", "65746C65h", "28007972h", "0", 80)
     elseif MAC == 4 then
-        hack("lb4")
+        hack("6F6F421Eh", "69547473h", "614D656Dh", "74656B72h", "0", "0", 80)
     elseif MAC == 5 then
-        hack("lb5")
+        hack("6F6F4220h", "69547473h", "6146656Dh", "726F7463h", "283D0079h", "0", 80)
     elseif MAC == 6 then
-        hack("lb6")
+        hack("6F6F4222h", "70537473h", "55646565h", "64724F70h", "28007265h", "0", 80)
     elseif MAC == 7 then
-        hack("lb7")
+        hack("6F6F4226h", "70537473h", "55646565h", "72614870h", "74736576h", "0", 80)
     elseif MAC == 8 then
-        hack("lb8")
+        hack("6F6F4226h", "72507473h", "6375646Fh", "72614874h", "74736576h", "0", 80)
     elseif MAC == 9 then
-        hack("lb9")
+        hack("1869562400", "1917875315", "1668637807", "1918977652", "109", "0", 80)
     elseif MAC == 10 then
-        hack("lb10")
+        hack("6F6F421Eh", "6F4D7473h", "4F79656Eh", "72656472h", "0", "0", 80)
     elseif MAC == 11 then
-        hack("lb11")
+        hack("6F6F421Ch", "614D7473h", "6E6F4478h", "00657461h", "0", "0", 80)
     elseif MAC == 12 then
-        hack("lb12")
+        hack("6F6F421Ch", "65487473h", "73747261h", "006F6F5Ah", "0", "0", 80)
     elseif MAC == 13 then
-        hack("lb13")
+        hack("6F6F4224h", "6F447473h", "656C6275h", "74636146h", "0079726Fh", "0", 80)
     elseif MAC == 14 then
-        hack("lb14")
+        hack("6F6F4222h", "69417473h", "726F7072h", "696F4374h", "2800736Eh", "0", 80)
     elseif MAC == 15 then
-        hack("lb15")
+        hack("6F6F4228h", "6C437473h", "65486E61h", "6552706Ch", "73657571h", "00000074h", 80)
     elseif MAC == 16 then
-        hack("lb16")
+        hack("6F6F422Eh", "72507473h", "6261626Fh", "74696C69h", "6C734979h", "73646E61h", 80)
     elseif MAC == 17 then
         menuescolhas2(3)
     end
@@ -509,23 +509,23 @@ function menuMinigame()
     if MRT == nil then
         return
     elseif MRT == 1 then
-        hack("lm1")
+        hack("1952533798", "1278437475", "1936029289", "1718511967", "1701669204", "0", 5)
     elseif MRT == 2 then
-        hack("lm2")
+        hack("1379101978", "1651403105", "1631745903", "27756", "0", "0", 0)
     elseif MRT == 3 then
-        hack("lm02")
+        hack("4C336D0Ch", "00656E69h", "0", "0", "0", "0", 0)
     elseif MRT == 4 then
-        hack("lm002")
+        hack("1110666508", "6450543", "0", "0", "0", "0", 0)
     elseif MRT == 5 then
-        hack("lm3")
+        hack("1395879196", "1734632812", "1835100261", "7497069", "0", "0", 0)
     elseif MRT == 6 then
-        hack("lm4")
+        hack("1211329808", "1701670241", "114", "0", "0", "0", 0)
     elseif MRT == 7 then
-        hack("lm5")
+        hack("1194552590", "1702260588", "0", "0", "0", "0", 0)
     elseif MRT == 8 then
-        hack("lm6")
+        hack("1886938400", "1953064037", "1164865385", "1735550318", "121", "0", 0)
     elseif MRT == 9 then
-        hack("lm7")
+        hack("6D69542Ch", "6E456465h", "79746974h", "61776552h", "6C416472h", "0032586Ch", 864000)
     elseif MRT == 10 then
         menuescolhas2(3)
     end
@@ -544,23 +544,23 @@ function menuSkinCastle()
     if MaxJES_1 == nil then
         return
     elseif MaxJES_1 == 1 then
-        hack("Cas_1")
+        hack("696B532Ah", "6F465F6Eh", "65727472h", "475F7373h", "62737461h", "00003379h", 50)
     elseif MaxJES_1 == 2 then
-        hack("Cas_2")
+        hack("696B532Ah", "6F465F6Eh", "65727472h", "475F7373h", "62737461h", "00003279h", 50)
     elseif MaxJES_1 == 3 then
-        hack("Cas_3")
+        hack("696B532Ah", "6F465F6Eh", "65727472h", "475F7373h", "62737461h", "00003179h", 50)
     elseif MaxJES_1 == 4 then
-        hack("Cas_4")
+        hack("696B532Ah", "6F465F6Eh", "65727472h", "505F7373h", "74617269h", "00003365h", 50)
     elseif MaxJES_1 == 5 then
-        hack("Cas_5")
+        hack("696B532Ah", "6F465F6Eh", "65727472h", "505F7373h", "74617269h", "00003265h", 50)
     elseif MaxJES_1 == 6 then
-        hack("Cas_6")
+        hack("696B532Ah", "6F465F6Eh", "65727472h", "505F7373h", "74617269h", "00003165h", 50)
     elseif MaxJES_1 == 7 then
-        hack("Cas_7")
+        hack("696B5328h", "6F465F6Eh", "65727472h", "655F7373h", "65747361h", "00000072h", 50)
     elseif MaxJES_1 == 8 then
-        hack("Cas_8")
+        hack("696B5326h", "6F465F6Eh", "65727472h", "705F7373h", "73697261h", "00000000h", 50)
     elseif MaxJES_1 == 9 then
-        hack("Cas_9")
+        hack("696B5328h", "6F465F6Eh", "65727472h", "615F7373h", "6365747Ah", "00000073h", 50)
     elseif MaxJES_1 == 10 then
         hackFortress_1()
     elseif MaxJES_1 == 11 then
@@ -591,25 +591,25 @@ function menuSkinHelicopter()
     if MaxJES_2 == nil then
         return
     elseif MaxJES_2 == 1 then
-        hack("heli_1")
+        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "6F70535Fh", "00007472h", 50)
     elseif MaxJES_2 == 2 then
-        hack("heli_2")
+        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "626F525Fh", "0000746Fh", 50)
     elseif MaxJES_2 == 3 then
-        hack("heli_3")
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "656C535Fh", "00686769h", 50)
     elseif MaxJES_2 == 4 then
-        hack("heli_4")
+        hack("696B5326h", "65485F6Eh", "6F63696Ch", "72657470h", "6F66555Fh", "00000000h", 50)
     elseif MaxJES_2 == 5 then
-        hack("heli_5")
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172415Fh", "00636962h", 50)
     elseif MaxJES_2 == 6 then
-        hack("heli_6")
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7365525Fh", "0074726Fh", 50)
     elseif MaxJES_2 == 7 then
-        hack("heli_7")
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172545Fh", "006C6576h", 50)
     elseif MaxJES_2 == 8 then
-        hack("heli_8")
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
     elseif MaxJES_2 == 9 then
-        hack("heli_9")
+        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "7369645Fh", "00006F63h", 50)
     elseif MaxJES_2 == 10 then
-        hack("heli_10")
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172625Fh", "006C697Ah", 50)
     elseif MaxJES_2 == 11 then
         hackhelicopter_1()
     elseif MaxJES_2 == 12 then
@@ -706,33 +706,33 @@ function menuSkinTrain()
     if MaxJES_4 == nil then
         return
     elseif MaxJES_4 == 1 then
-        hack("Tre_1")
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "69726863h", "616D7473h", "00000073h", 50)
     elseif MaxJES_4 == 2 then
-        hack("Tre_2")
+        hack("696B531Ch", "72545F6Eh", "5F6E6961h", "00355053h", "00000000h", "00000000h", 50)
     elseif MaxJES_4 == 3 then
-        hack("Tre_3")
+        hack("696B5320h", "72545F6Eh", "5F6E6961h", "3A325053h", "00000032h", "00000000h", 50)
     elseif MaxJES_4 == 4 then
-        hack("Tre_4")
+        hack("696B532Ch", "72545F6Eh", "5F6E6961h", "68657270h", "6F747369h", "00636972h", 50)
     elseif MaxJES_4 == 5 then
-        hack("Tre_5")
+        hack("696B5322h", "72545F6Eh", "5F6E6961h", "74736165h", "00007265h", "00000000h", 50)
     elseif MaxJES_4 == 6 then
-        hack("Tre_6")
+        hack("696B532Ah", "72545F6Eh", "5F6E6961h", "61656874h", "63697274h", "00006C61h", 50)
     elseif MaxJES_4 == 7 then
-        hack("Tre_7")
+        hack("696B532Ch", "72545F6Eh", "5F6E6961h", "616E756Ch", "32594E72h", "00323230h", 50)
     elseif MaxJES_4 == 8 then
-        hack("Tre_8")
+        hack("696B531Eh", "72545F6Eh", "5F6E6961h", "7372616Dh", "00000000h", "00000000h", 50)
     elseif MaxJES_4 == 9 then
-        hack("Tre_9")
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "69626F72h", "6F6F486Eh", "00000064h", 50)
     elseif MaxJES_4 == 10 then
-        hack("Tre_10")
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "6B636F72h", "6C6F726Eh", "0000006Ch", 50)
     elseif MaxJES_4 == 11 then
-        hack("Tre_11")
+        hack("696B5322h", "72545F6Eh", "5F6E6961h", "67696E6Bh", "00007468h", "00000000h", 50)
     elseif MaxJES_4 == 12 then
-        hack("Tre_12")
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "6C617469h", "32303279h", "00000034h", 50)
     elseif MaxJES_4 == 13 then
-        hack("Tre_13")
+        hack("696B531Ch", "72545F6Eh", "5F6E6961h", "00385053h", "00000000h", "00000000h", 50)
     elseif MaxJES_4 == 14 then
-        hack("Tre_14")
+        hack("696B5326h", "72545F6Eh", "5F6E6961h", "74736566h", "6C617669h", "00000000h", 50)
     elseif MaxJES_4 == 15 then
         hacktrain_1()
     elseif MaxJES_4 == 16 then
@@ -756,13 +756,13 @@ function menuSkinTrainStation()
     if MaxJES_5 == nil then
         return
     elseif MaxJES_5 == 1 then
-        hack("Esta_1")
+        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003250h", 50)
     elseif MaxJES_5 == 2 then
-        hack("Esta_2")
+        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003550h", 50)
     elseif MaxJES_5 == 3 then
-        hack("Esta_3")
+        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003850h", 50)
     elseif MaxJES_5 == 4 then
-        hack("Esta_4")
+        hack("696B532Ch", "72545F6Eh", "536E6961h", "69746174h", "6D5F6E6Fh", "00737261h", 50)
     elseif MaxJES_5 == 5 then
         hacktrain_station_1()
     elseif MaxJES_5 == 6 then
@@ -808,27 +808,27 @@ function menuSkinAirplane()
     if MaxJES_6 == nil then
         return
     elseif MaxJES_6 == 1 then
-        hack("Avio_1")
+        hack("696B5326h", "69415F6Eh", "616C7072h", "535F656Eh", "323A3350h", "00000000h", 50)
     elseif MaxJES_6 == 2 then
-        hack("Avio_2")
+        hack("696B5322h", "69415F6Eh", "616C7072h", "535F656Eh", "00003350h", "00000000h", 50)
     elseif MaxJES_6 == 3 then
-        hack("Avio_3")
+        hack("696B5326h", "69415F6Eh", "616C7072h", "535F656Eh", "323A3750h", "00000000h", 50)
     elseif MaxJES_6 == 4 then
-        hack("Avio_4")
+        hack("696B5326h", "69415F6Eh", "616C7072h", "735F656Eh", "65636170h", "00000000h", 50)
     elseif MaxJES_6 == 5 then
-        hack("Avio_5")
+        hack("696B5324h", "69415F6Eh", "616C7072h", "725F656Eh", "006B636Fh", "00000000h", 50)
     elseif MaxJES_6 == 6 then
-        hack("Avio_6")
+        hack("696B5326h", "69415F6Eh", "616C7072h", "6D5F656Eh", "6569766Fh", "00000000h", 50)
     elseif MaxJES_6 == 7 then
-        hack("Avio_7")
+        hack("696B5326h", "69415F6Eh", "616C7072h", "735F656Eh", "74656577h", "00000000h", 50)
     elseif MaxJES_6 == 8 then
-        hack("Avio_8")
+        hack("696B532Ah", "69415F6Eh", "616C7072h", "695F656Eh", "616C6572h", "0000646Eh", 50)
     elseif MaxJES_6 == 9 then
-        hack("Avio_9")
+        hack("696B5324h", "69415F6Eh", "616C7072h", "615F656Eh", "00626172h", "00000000h", 50)
     elseif MaxJES_6 == 10 then
-        hack("Avio_10")
+        hack("696B532Ah", "69415F6Eh", "616C7072h", "665F656Eh", "69687361h", "00006E6Fh", 50)
     elseif MaxJES_6 == 11 then
-        hack("Avio_11")
+        hack("696B5322h", "69415F6Eh", "616C7072h", "735F656Eh", "00007970h", "00000000h", 50)
     elseif MaxJES_6 == 12 then
         hackairplane_1()
     elseif MaxJES_6 == 13 then
@@ -859,23 +859,23 @@ function menuSkinAirport()
     if MaxJES_7 == nil then
         return
     elseif MaxJES_7 == 1 then
-        hack("Aero_1")
+        hack("696B5322h", "69415F6Eh", "726F7072h", "6F725F74h", "00006B63h", "00000000h", 50)
     elseif MaxJES_7 == 2 then
-        hack("Aero_2")
+        hack("696B5324h", "69415F6Eh", "726F7072h", "77735F74h", "00746565h", "00000000h", 50)
     elseif MaxJES_7 == 3 then
-        hack("Aero_3")
+        hack("696B5324h", "69415F6Eh", "726F7072h", "6F6D5F74h", "00656976h", "00000000h", 50)
     elseif MaxJES_7 == 4 then
-        hack("Aero_4")
+        hack("696B5320h", "69415F6Eh", "726F7072h", "70735F74h", "00000079h", "00000000h", 50)
     elseif MaxJES_7 == 5 then
-        hack("Aero_5")
+        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000033h", "00000000h", 50)
     elseif MaxJES_7 == 6 then
-        hack("Aero_6")
+        hack("696B5324h", "69415F6Eh", "726F7072h", "70735F74h", "00656361h", "00000000h", 50)
     elseif MaxJES_7 == 7 then
-        hack("Aero_7")
+        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000037h", "00000000h", 50)
     elseif MaxJES_7 == 8 then
-        hack("Aero_8")
+        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000039h", "00000000h", 50)
     elseif MaxJES_7 == 9 then
-        hack("Aero_9")
+        hack("696B5328h", "69415F6Eh", "726F7072h", "72695F74h", "6E616C65h", "00000064h", 50)
     elseif MaxJES_7 == 10 then
         hackairport_1()
     elseif MaxJES_7 == 11 then
@@ -894,37 +894,34 @@ function menuSkinAirport()
 end
 
 function menuSkinBoat()
-    MaxJES_8 = gg.choice({
-    "🛰️ • Skin 1 Cruise Ship", "🚀 • Skin 2 Greek Bireme Ship",
-    "⚓ • Skin 3 Viking Ship", "🎯 • Skin 4 Steamship",
-    "🛬 • Skin 5 Arctic Ship", "🚁 • Skin 6 Gift Ship",
-    "☃️ • Skin 7 Ghost Ship", "🚁 • Skin 8 Holiday Boat",
-    "☃️ • Skin 9 Love Boat", "❌ • Volver"
-}, nil)
+    MaxJES_8 = gg.choice({"🛰️ • Skin 1 Cruise Ship", "🚀 • Skin 2 Greek Bireme Ship",
+                          "⚓ • Skin 3 Viking Ship", "🎯 • Skin 4 Steamship", "🛬 • Skin 5 Arctic Ship",
+                          "🚁 • Skin 6 Gift Ship", "☃️ • Skin 7 Ghost Ship", "🚁 • Skin 8 Holiday Boat",
+                          "☃️ • Skin 9 Love Boat", "❌ • Volver"}, nil)
 
-if MaxJES_8 == nil then
-    return
-elseif MaxJES_8 == 1 then
-    hack("Barc_1")
-elseif MaxJES_8 == 2 then
-    hack("Barc_2")
-elseif MaxJES_8 == 3 then
-    hack("Barc_3")
-elseif MaxJES_8 == 4 then
-    hack("Barc_4")
-elseif MaxJES_8 == 5 then
-    hack("Barc_5")
-elseif MaxJES_8 == 6 then
-    hackship_1()
-elseif MaxJES_8 == 7 then
-    hackship_2()
-elseif MaxJES_8 == 8 then
-    hackship_3()
-elseif MaxJES_8 == 9 then
-    hackship_4()
-elseif MaxJES_8 == 10 then
-    menuescolhas2(4)
-end
+    if MaxJES_8 == nil then
+        return
+    elseif MaxJES_8 == 1 then
+        hack("696B5320h", "68535F6Eh", "6A5F7069h", "6C676E75h", "00000065h", "00000000h", 50)
+    elseif MaxJES_8 == 2 then
+        hack("696B5320h", "68535F6Eh", "685F7069h", "616C6C65h", "00000073h", "00000000h", 50)
+    elseif MaxJES_8 == 3 then
+        hack("696B5326h", "68535F6Eh", "6E5F7069h", "6964726Fh", "646F4763h", "00000000h", 50)
+    elseif MaxJES_8 == 4 then
+        hack("696B532Ch", "68535F6Eh", "775F7069h", "77646C69h", "32747365h", "00343230h", 50)
+    elseif MaxJES_8 == 5 then
+        hack("696B5320h", "68535F6Eh", "615F7069h", "69746372h", "00000063h", "00000000h", 50)
+    elseif MaxJES_8 == 6 then
+        hackship_1()
+    elseif MaxJES_8 == 7 then
+        hackship_2()
+    elseif MaxJES_8 == 8 then
+        hackship_3()
+    elseif MaxJES_8 == 9 then
+        hackship_4()
+    elseif MaxJES_8 == 10 then
+        menuescolhas2(4)
+    end
 
 end
 
@@ -933,44 +930,36 @@ function menuSkinPort()
                           "⚓ • Skin 3 Classic Port", "🎯 • Skin 4 Jungle Port", "🛬 • Skin 5 Viking Port",
                           "🚁 • Skin 6 Christmas Port", "☃️ • Skin 7 Port Tavern Port",
                           "🚁 • Skin 8 Sugar Port", "☃️ • Skin 9 Creepy Port",
-                          "🚁 • Skin 10 Holiday Port", "☃️ • Skin 11 Romantic Port", '❌ • Back'}, nil,
-        "CHOOSE ONE OPTION")
+                          "🚁 • Skin 10 Holiday Port", "☃️ • Skin 11 Romantic Port", "❌ • Back"}, nil)
+
     if MaxJES_9 == nil then
         return
-    end
-    if MaxJES_9 == 1 then
-        hack("Puer_1")
-    end
-    if MaxJES_9 == 2 then
-        hack("Puer_2")
-    end
-    if MaxJES_9 == 3 then
-        hack("Puer_3")
-    end
-    if MaxJES_9 == 4 then
-        hack("Puer_4")
-    end
-    if MaxJES_9 == 5 then
-        hack("Puer_5")
-    end
-    if MaxJES_9 == 6 then
+    elseif MaxJES_9 == 1 then
+        hack("696B531Eh", "61485F6Eh", "726F6272h", "3950535Fh", "00000000h", "00000000h", 50)
+    elseif MaxJES_9 == 2 then
+        hack("696B531Eh", "61485F6Eh", "726F6272h", "3154535Fh", "00000000h", "00000000h", 50)
+    elseif MaxJES_9 == 3 then
+        hack("696B5324h", "61485F6Eh", "726F6272h", "6C65685Fh", "0073616Ch", "00000000h", 50)
+    elseif MaxJES_9 == 4 then
+        hack("696B5324h", "61485F6Eh", "726F6272h", "6E756A5Fh", "00656C67h", "00000000h", 50)
+    elseif MaxJES_9 == 5 then
+        hack("696B532Ah", "61485F6Eh", "726F6272h", "726F6E5Fh", "47636964h", "0000646Fh", 50)
+    elseif MaxJES_9 == 6 then
         hackharbor_1()
-    end
-    if MaxJES_9 == 7 then
+    elseif MaxJES_9 == 7 then
         hackharbor_2()
-    end
-    if MaxJES_9 == 8 then
+    elseif MaxJES_9 == 8 then
         hackharbor_3()
-    end
-    if MaxJES_9 == 9 then
+    elseif MaxJES_9 == 9 then
         hackharbor_4()
-    end
-    if MaxJES_9 == 10 then
+    elseif MaxJES_9 == 10 then
         hackharbor_5()
-    end
-    if MaxJES_9 == 11 then
+    elseif MaxJES_9 == 11 then
         hackharbor_6()
+    elseif MaxJES_9 == 12 then
+        menuescolhas2(4)
     end
+
 end
 
 function menuSkinChicken()
@@ -979,52 +968,30 @@ function menuSkinChicken()
                             "🛬 • Skin 5 Adventurous Hen", "🚁 • Skin 6 Cheerleader Hen",
                             "☃️ • Skin 7 Pilot Hen", "🚁 • Skin 8 Disco Hen", "☃️ • Skin 9 Hens",
                             "🚁 • Skin 10 Hens", "☃️ • Skin 11 Hens", "🚁 • Skin 12 Hens",
-                            "☃️ • Skin 13 Hens", '❌ • Return'}, nil)
+                            "☃️ • Skin 13 Hens", "❌ • Return"}, nil)
+
     if MaxJES_110 == nil then
         return
-    end
-    if MaxJES_110 == 1 then
-        hack("Galli_1")
-    end
-    if MaxJES_110 == 2 then
-        hack("Galli_2")
-    end
-    if MaxJES_110 == 3 then
-        hack("Galli_3")
-    end
-    if MaxJES_110 == 4 then
-        hack("Galli_4")
-    end
-    if MaxJES_110 == 5 then
-        hack("Galli_5")
-    end
-    if MaxJES_110 == 6 then
-        hack("Galli_6")
-    end
-    if MaxJES_110 == 7 then
-        hack("Galli_7")
-    end
-    if MaxJES_110 == 8 then
-        hack("Galli_8")
-    end
-    if MaxJES_110 == 9 then
-        menuescolhas2(109)
-    end
-    if MaxJES_110 == 10 then
-        menuescolhas2(110)
-    end
-    if MaxJES_110 == 11 then
-        menuescolhas2(111)
-    end
-    if MaxJES_110 == 12 then
-        menuescolhas2(112)
-    end
-    if MaxJES_110 == 13 then
-        menuescolhas2(113)
-    end
-    if MaxJES_110 == 14 then
+    elseif MaxJES_110 == 1 then
+        hack("696B5328h", "68435F6Eh", "656B6369h", "6E635F6Eh", "32303279h", "00000035h", 50)
+    elseif MaxJES_110 == 2 then
+        hack("696B5326h", "68435F6Eh", "656B6369h", "65685F6Eh", "73616C6Ch", "00000000h", 50)
+    elseif MaxJES_110 == 3 then
+        hack("696B5328h", "68435F6Eh", "656B6369h", "72695F6Eh", "6E616C65h", "00000064h", 50)
+    elseif MaxJES_110 == 4 then
+        hack("696B5324h", "68435F6Eh", "656B6369h", "77735F6Eh", "00746565h", "00000000h", 50)
+    elseif MaxJES_110 == 5 then
+        hack("696B5326h", "68435F6Eh", "656B6369h", "756A5F6Eh", "656C676Eh", "00000000h", 50)
+    elseif MaxJES_110 == 6 then
+        hack("696B5324h", "68435F6Eh", "656B6369h", "70735F6Eh", "0074726Fh", "00000000h", 50)
+    elseif MaxJES_110 == 7 then
+        hack("696B5326h", "68435F6Eh", "656B6369h", "72745F6Eh", "6C657661h", "00000000h", 50)
+    elseif MaxJES_110 == 8 then
+        hack("696B5324h", "68435F6Eh", "656B6369h", "69645F6Eh", "006F6373h", "00000000h", 50)
+    elseif MaxJES_110 >= 9 and MaxJES_110 <= 14 then
         menuescolhas2(4)
     end
+
 end
 
 function menuSkinCow()
@@ -1033,53 +1000,35 @@ function menuSkinCow()
                             "🛬 • Atlantean Queen Cow Skin 5", "🚁 • Spy Cow Skin 6",
                             "☃️ • Paschal Cow Skin 7", "🚁 • Astronaut Cow Skin 8",
                             "☃️ • Bloodsucking Cow Skin 9", "🚁 • Alpine Cow Skin 10",
-                            "☃️ • Cow Skin 11", "🚁 • Cow Skin 12", "☃️ • Cow Skin 13", '❌ • Return'},
+                            "☃️ • Cow Skin 11", "🚁 • Cow Skin 12", "☃️ • Cow Skin 13", "❌ • Return"},
         nil)
+
     if MaxJES_111 == nil then
         return
-    end
-    if MaxJES_111 == 1 then
-        hack("Vaca_1")
-    end
-    if MaxJES_111 == 2 then
-        hack("Vaca_2")
-    end
-    if MaxJES_111 == 3 then
-        hack("Vaca_3")
-    end
-    if MaxJES_111 == 4 then
-        hack("Vaca_4")
-    end
-    if MaxJES_111 == 5 then
-        hack("Vaca_5")
-    end
-    if MaxJES_111 == 6 then
-        hack("Vaca_6")
-    end
-    if MaxJES_111 == 7 then
-        hack("Vaca_7")
-    end
-    if MaxJES_111 == 8 then
-        hack("Vaca_8")
-    end
-    if MaxJES_111 == 9 then
-        hack("Vaca_9")
-    end
-    if MaxJES_111 == 10 then
-        hack("Vaca_10")
-    end
-    if MaxJES_111 == 11 then
-        menuescolhas2(111)
-    end
-    if MaxJES_111 == 12 then
-        menuescolhas2(112)
-    end
-    if MaxJES_111 == 13 then
-        menuescolhas2(113)
-    end
-    if MaxJES_111 == 14 then
+    elseif MaxJES_111 == 1 then
+        hack("696B5326h", "6F435F6Eh", "69705F77h", "65746172h", "34323032h", "00000000h", 50)
+    elseif MaxJES_111 == 2 then
+        hack("696B5324h", "6F435F6Eh", "74695F77h", "32796C61h", "00343230h", "00000000h", 50)
+    elseif MaxJES_111 == 3 then
+        hack("696B531Eh", "6F435F6Eh", "72615F77h", "63697463h", "00000000h", "00000000h", 50)
+    elseif MaxJES_111 == 4 then
+        hack("696B532Ah", "6F435F6Eh", "69625F77h", "64687472h", "30327961h", "00003432h", 50)
+    elseif MaxJES_111 == 5 then
+        hack("696B5322h", "6F435F6Eh", "74615F77h", "746E616Ch", "00007369h", "00000000h", 50)
+    elseif MaxJES_111 == 6 then
+        hack("696B5318h", "6F435F6Eh", "70735F77h", "00000079h", "00000000h", "00000000h", 50)
+    elseif MaxJES_111 == 7 then
+        hack("696B5326h", "6F435F6Eh", "61655F77h", "72657473h", "34323032h", "00000000h", 50)
+    elseif MaxJES_111 == 8 then
+        hack("696B531Ah", "6F435F6Eh", "616D5F77h", "00007372h", "00000000h", "00000000h", 50)
+    elseif MaxJES_111 == 9 then
+        hack("696B532Ch", "6F435F6Eh", "61685F77h", "776F6C6Ch", "326E6565h", "00333230h", 50)
+    elseif MaxJES_111 == 10 then
+        hack("696B5328h", "6F435F6Eh", "69775F77h", "7265746Eh", "726F7053h", "00000074h", 50)
+    elseif MaxJES_111 >= 11 and MaxJES_111 <= 14 then
         menuescolhas2(4)
     end
+
 end
 
 function menuSkinSheep()
@@ -1089,1377 +1038,1004 @@ function menuSkinSheep()
                             "☃️ • Skin 7 Research Sheep", "🚁 • Skin 8 Gladiator Sheep",
                             "☃️ • Skin 9 Easter Sheep", "🚁 • Skin 10 Festival Sheep",
                             "☃️ • Skin 11 Gala Sheep", "🚁 • Skin 12 Sheep", "☃️ • Skin 13 Sheep",
-                            '❌ • Return'}, nil)
+                            "❌ • Return"}, nil)
+
     if MaxJES_112 == nil then
         return
-    end
-    if MaxJES_112 == 1 then
-        hack("Ovej_1")
-    end
-    if MaxJES_112 == 2 then
-        hack("Ovej_2")
-    end
-    if MaxJES_112 == 3 then
-        hack("Ovej_3")
-    end
-    if MaxJES_112 == 4 then
-        hack("Ovej_4")
-    end
-    if MaxJES_112 == 5 then
-        hack("Ovej_5")
-    end
-    if MaxJES_112 == 6 then
-        hack("Ovej_6")
-    end
-    if MaxJES_112 == 7 then
-        hack("Ovej_7")
-    end
-    if MaxJES_112 == 8 then
-        hack("Ovej_8")
-    end
-    if MaxJES_112 == 9 then
-        hack("Ovej_9")
-    end
-    if MaxJES_112 == 10 then
-        hack("Ovej_10")
-    end
-    if MaxJES_112 == 11 then
-        hack("Ovej_11")
-    end
-    if MaxJES_112 == 12 then
-        menuescolhas2(112)
-    end
-    if MaxJES_112 == 13 then
-        menuescolhas2(113)
-    end
-    if MaxJES_112 == 14 then
+    elseif MaxJES_112 == 1 then
+        hack("696B5328h", "68535F6Eh", "5F706565h", "6B636F72h", "6C6F726Eh", "0000006Ch", 50)
+    elseif MaxJES_112 == 2 then
+        hack("696B5322h", "68535F6Eh", "5F706565h", "67696E6Bh", "00007468h", "00000000h", 50)
+    elseif MaxJES_112 == 3 then
+        hack("696B5320h", "68535F6Eh", "5F706565h", "70796765h", "00000074h", "00000000h", 50)
+    elseif MaxJES_112 == 4 then
+        hack("696B5322h", "68535F6Eh", "5F706565h", "7A617262h", "00006C69h", "00000000h", 50)
+    elseif MaxJES_112 == 5 then
+        hack("696B5328h", "68535F6Eh", "5F706565h", "69626F72h", "6F6F486Eh", "00000064h", 50)
+    elseif MaxJES_112 == 6 then
+        hack("696B5320h", "68535F6Eh", "5F706565h", "65657773h", "00000074h", "00000000h", 50)
+    elseif MaxJES_112 == 7 then
+        hack("696B5328h", "68535F6Eh", "5F706565h", "65746564h", "76697463h", "00000065h", 50)
+    elseif MaxJES_112 == 8 then
+        hack("696B5328h", "68535F6Eh", "5F706565h", "64726F6Eh", "6F476369h", "00000064h", 50)
+    elseif MaxJES_112 == 9 then
+        hack("696B532Ah", "68535F6Eh", "5F706565h", "74736165h", "30327265h", "00003332h", 50)
+    elseif MaxJES_112 == 10 then
+        hack("696B532Ch", "68535F6Eh", "5F706565h", "616E756Ch", "32594E72h", "00323230h", 50)
+    elseif MaxJES_112 == 11 then
+        hack("696B532Ah", "68535F6Eh", "5F706565h", "7173616Dh", "61726575h", "00006564h", 50)
+    elseif MaxJES_112 >= 12 and MaxJES_112 <= 14 then
         menuescolhas2(4)
     end
+
 end
 
 function menuSkinPig()
-    MaxJESxd_113 = gg.choice({"🛰️ • Cerdo Ceremonial", "🛰️ • Cerdo valentin", '❌ • Volver'}, nil,
-        "CHOOSE ONE OPTION")
+    MaxJESxd_113 = gg.choice({"🛰️ • Cerdo Ceremonial", "🛰️ • Cerdo valentin", '❌ • Volver'}, nil)
     if MaxJESxd_113 == nil then
         return
-    end
-    if MaxJESxd_113 == 1 then
-        hack("Cerdj_1")
-    end
-    if MaxJESxd_113 == 2 then
-        hack("Cerdj_2")
-    end
-    if MaxJESxd_113 == 3 then
+    elseif MaxJESxd_113 == 1 then
+        hack("696B5318h", "69505F6Eh", "4E435F67h", "00000059h", "5A0643E0h", "00007E94h", 50)
+    elseif MaxJESxd_113 == 2 then
+        hack("1766874990", "1635147623", "1936027241", "7954756", "0", "0", 50)
+    elseif MaxJESxd_113 == 3 then
         menuescolhas2(4)
     end
 end
 
 function menuDecor1()
-    MaxJTyMT = gg.choice({"🎲 • Walk of Fame", "🎲 • Venetian Bridge", "🎲 • Transformation Studio",
-                          "🎲 • Open-air Planetarium", "🎲 • Vineyard Cafe", "🎲 • Happy Elephants",
-                          "🎲 • Maxi Blender", "🎲 • Macedonian Parterre", "🎲 • Stilt Dance",
-                          "🎲 • Loch Ness Monster", "🎲 • Haunted Ship", "🎲 • Diplodocus",
-                          "🎲 • Galloping", "🎲 • Stonehenge", "🎲 • Waterfall", "🎲 • Hourglass",
-                          "🎲 • Peacock Statue", "🎲 • Atlantean Trident", "🎲 • Pixies",
-                          "🎲 • Statue Sea Relic", "🎲 • Coral Corner", "🎲 • Sea Explorers",
-                          "🎲 • Lily Pad Fairy", "🎲 • Treasure Keeper", "🎲 • Falconry",
-                          "🎲 • Ghost Ship", "🎲 • Carnivorous Plant", "🎲 • Flower Swing",
-                          "🎲 • Cocoloco Beach Bar", "🎲 • Surf Pool", "🎲 • Bungalow",
-                          "🎲 • Palm Tree Seesaw", "🎲 • Farmer's Totem", "🎲 • Scribe's Workshop",
-                          "🎲 • Naval Cannon", "🎲 • Flower Palette", "🎲 • Magic Tap",
-                          "🎲 • Music Fountain", "🎲 • Gramophone Carousel", "🎲 • Set Filming",
-                          "🎲 • Movie Fountain", "🎲 • Music Store", "🎲 • Pharaoh Statue",
-                          "🎲 • Papyrus Boat", "🎲 • Trojan Horse", "🎲 • Amphitheater",
-                          "🎲 • Arabian Horse", "🎲 • Swan Pond", "🎲 • Weeping Willow",
-                          "🎲 • Fallen Tree", "🎲 • Waterfall", "🎲 • Satellite Station",
-                          "🎲 • Parisian Square", "🎲 • Bike Parking", "🎲 • Bookstore",
-                          "🎲 • Flower Boutique", "🎲 • Giant Synthesizer", "❌ • Return"}, nil)
+    MaxJTyMT = gg.choice({"1 • Walk of Fame", "2 • Venetian Bridge", "3 • Transformation Studio",
+                          "4 • Open-air Planetarium", "5 • Vineyard Cafe", "6 • Happy Elephants",
+                          "7 • Maxi Blender", "8 • Macedonian Parterre", "9 • Stilt Dance",
+                          "10 • Loch Ness Monster", "11 • Haunted Ship", "12 • Diplodocus", "13 • Galloping",
+                          "14 • Stonehenge", "15 • Waterfall", "16 • Hourglass", "17 • Peacock Statue",
+                          "18 • Atlantean Trident", "19 • Pixies", "20 • Statue Sea Relic", "21 • Coral Corner",
+                          "22 • Sea Explorers", "23 • Lily Pad Fairy", "24 • Treasure Keeper", "25 • Falconry",
+                          "26 • Ghost Ship", "27 • Carnivorous Plant", "28 • Flower Swing",
+                          "29 • Cocoloco Beach Bar", "30 • Surf Pool", "31 • Bungalow", "32 • Palm Tree Seesaw",
+                          "33 • Farmer's Totem", "34 • Scribe's Workshop", "35 • Naval Cannon",
+                          "36 • Flower Palette", "37 • Magic Tap", "38 • Music Fountain",
+                          "39 • Gramophone Carousel", "40 • Set Filming", "41 • Movie Fountain",
+                          "42 • Music Store", "43 • Pharaoh Statue", "44 • Papyrus Boat", "45 • Trojan Horse",
+                          "46 • Amphitheater", "47 • Arabian Horse", "48 • Swan Pond", "49 • Weeping Willow",
+                          "50 • Fallen Tree", "51 • Waterfall", "52 • Satellite Station",
+                          "53 • Parisian Square", "54 • Bike Parking", "55 • Bookstore", "56 • Flower Boutique",
+                          "57 • Giant Synthesizer", "❌ • Return"}, nil)
+
     if MaxJTyMT == nil then
         return
-    end
-    if MaxJTyMT == 1 then
-        hack("r14px")
-    end
-    if MaxJTyMT == 2 then
-        hack("r15px")
-    end
-    if MaxJTyMT == 3 then
-        hack("r16px")
-    end
-    if MaxJTyMT == 4 then
-        hack("r1JTyMT")
-    end
-    if MaxJTyMT == 5 then
-        hack("r2JTyMT")
-    end
-    if MaxJTyMT == 6 then
-        hack("r3JTyMT")
-    end
-    if MaxJTyMT == 7 then
-        hack("r4JTyMT")
-    end
-    if MaxJTyMT == 8 then
-        hack("r5JTyMT")
-    end
-    if MaxJTyMT == 9 then
-        hack("r6JTyMT")
-    end
-    if MaxJTyMT == 10 then
-        hack("r7JTyMT")
-    end
-    if MaxJTyMT == 11 then
-        hack("r8JTyMT")
-    end
-    if MaxJTyMT == 12 then
-        hack("r9JTyMT")
-    end
-    if MaxJTyMT == 13 then
-        hack("r10JTyMT")
-    end
-    if MaxJTyMT == 14 then
-        hack("r11JTyMT")
-    end
-    if MaxJTyMT == 15 then
-        hack("r12JTyMT")
-    end
-    if MaxJTyMT == 16 then
-        hack("r13JTyMT")
-    end
-    if MaxJTyMT == 17 then
-        hack("r14JTyMT")
-    end
-    if MaxJTyMT == 18 then
-        hack("r15JTyMT")
-    end
-    if MaxJTyMT == 19 then
-        hack("r16JTyMT")
-    end
-    if MaxJTyMT == 20 then
-        hack("r17JTyMT")
-    end
-    if MaxJTyMT == 21 then
-        hack("r18JTyMT")
-    end
-    if MaxJTyMT == 22 then
-        hack("r19JTyMT")
-    end
-    if MaxJTyMT == 23 then
-        hack("r20JTyMT")
-    end
-    if MaxJTyMT == 24 then
-        hack("r21JTyMT")
-    end
-    if MaxJTyMT == 25 then
-        hack("r22JTyMT")
-    end
-    if MaxJTyMT == 26 then
-        hack("r23JTyMT")
-    end
-    if MaxJTyMT == 27 then
-        hack("r24JTyMT")
-    end
-    if MaxJTyMT == 28 then
-        hack("r25JTyMT")
-    end
-    if MaxJTyMT == 29 then
-        hack("r26JTyMT")
-    end
-    if MaxJTyMT == 30 then
-        hack("r27JTyMT")
-    end
-    if MaxJTyMT == 31 then
-        hack("r28JTyMT")
-    end
-    if MaxJTyMT == 32 then
-        hack("r29JTyMT")
-    end
-    if MaxJTyMT == 33 then
-        hack("r30JTyMT")
-    end
-    if MaxJTyMT == 34 then
-        hack("r31JTyMT")
-    end
-    if MaxJTyMT == 35 then
-        hack("r32JTyMT")
-    end
-    if MaxJTyMT == 36 then
-        hack("r33JTyMT")
-    end
-    if MaxJTyMT == 37 then
-        hack("r34JTyMT")
-    end
-    if MaxJTyMT == 38 then
-        hack("r35JTyMT")
-    end
-    if MaxJTyMT == 39 then
-        hack("r36JTyMT")
-    end
-    if MaxJTyMT == 40 then
-        hack("r37JTyMT")
-    end
-    if MaxJTyMT == 41 then
-        hack("r38JTyMT")
-    end
-    if MaxJTyMT == 42 then
-        hack("r39JTyMT")
-    end
-    if MaxJTyMT == 43 then
-        hack("r40JTyMT")
-    end
-    if MaxJTyMT == 44 then
-        hack("r41JTyMT")
-    end
-    if MaxJTyMT == 45 then
-        hack("r42JTyMT")
-    end
-    if MaxJTyMT == 46 then
-        hack("r43JTyMT")
-    end
-    if MaxJTyMT == 47 then
-        hack("r44JTyMT")
-    end
-    if MaxJTyMT == 48 then
-        hack("r45JTyMT")
-    end
-    if MaxJTyMT == 49 then
-        hack("r46JTyMT")
-    end
-    if MaxJTyMT == 50 then
-        hack("r47JTyMT")
-    end
-    if MaxJTyMT == 51 then
-        hack("r48JTyMT")
-    end
-    if MaxJTyMT == 52 then
-        hack("r49JTyMT")
-    end
-    if MaxJTyMT == 53 then
-        hack("r50JTyMT")
-    end
-    if MaxJTyMT == 54 then
-        hack("r51JTyMT")
-    end
-    if MaxJTyMT == 55 then
-        hack("r52JTyMT")
-    end
-    if MaxJTyMT == 56 then
-        hack("r53JTyMT")
-    end
-    if MaxJTyMT == 57 then
-        hack("r54JTyMT")
-    end
-    if MaxJTyMT == 58 then
+    elseif MaxJTyMT == 1 then
+        hack("1818314770", "1632001900", "771777901", "32564", "525400016", "120", 5)
+    elseif MaxJTyMT == 2 then
+        hack("1634292250", "1601139820", "1684632130", "25959", "0", "0", 5)
+    elseif MaxJTyMT == 3 then
+        hack("1818317600", "1601073007", "2036429383", "1937076045", "525336677", "140", 5)
+    elseif MaxJTyMT == 4 then
+        hack("61656226h", "5F797475h", "616C6F73h", "79735F72h", "6D657473h", "00007700h", 5)
+    elseif MaxJTyMT == 5 then
+        hack("6661431Ah", "69565F65h", "6179656Eh", "00006472h", "00000000h", "00000000h", 5)
+    elseif MaxJTyMT == 6 then
+        hack("61656220h", "5F797475h", "70656C65h", "746E6168h", "86140073h", "00007756h", 5)
+    elseif MaxJTyMT == 7 then
+        hack("656C621Ah", "7265646Eh", "696E6B5Fh", "00006566h", "0563EA58h", "00000000h", 5)
+    elseif MaxJTyMT == 8 then
+        hack("6E69701Eh", "70706165h", "6B5F656Ch", "6566696Eh", "0563ED00h", "00000055h", 5)
+    elseif MaxJTyMT == 9 then
+        hack("6165622Ch", "5F797475h", "6F726361h", "73746162h", "6974735Fh", "0073746Ch", 5)
+    elseif MaxJTyMT == 10 then
+        hack("61656228h", "5F797475h", "65746177h", "6F6D5F72h", "6574736Eh", "00000072h", 5)
+    elseif MaxJTyMT == 11 then
+        hack("61656222h", "5F797475h", "736F6867h", "68735F74h", "86007069h", "00007756h", 5)
+    elseif MaxJTyMT == 12 then
+        hack("6165621Eh", "5F797475h", "6F6E6964h", "72756173h", "86006500h", "00007756h", 5)
+    elseif MaxJTyMT == 13 then
+        hack("6165621Ch", "5F797475h", "6D6D616Dh", "0068746Fh", "86006567h", "00007756h", 5)
+    elseif MaxJTyMT == 14 then
+        hack("61656222h", "5F797475h", "6E6F7473h", "6E656865h", "86006567h", "00007756h", 5)
+    elseif MaxJTyMT == 15 then
+        hack("616D531Ch", "61576C6Ch", "66726574h", "006C6C61h", "6169646Eh", "0000006Ch", 5)
+    elseif MaxJTyMT == 16 then
+        hack("61656228h", "5F797475h", "6772616Ch", "75735F65h", "6169646Eh", "0000006Ch", 5)
+    elseif MaxJTyMT == 17 then
+        hack("6165622Ah", "5F797475h", "63616570h", "5F6B636Fh", "74617473h", "00006575h", 5)
+    elseif MaxJTyMT == 18 then
+        hack("61656222h", "5F797475h", "616C7461h", "61685F73h", "6500646Eh", "00726163h", 5)
+    elseif MaxJTyMT == 19 then
+        hack("6F6E670Ch", "0073656Dh", "283FE426h", "00007057h", "0563F7B0h", "00000034h", 5)
+    elseif MaxJTyMT == 20 then
+        hack("6165622Ch", "5F797475h", "616C7461h", "7369746Eh", "6174735Fh", "00657574h", 5)
+    elseif MaxJTyMT == 21 then
+        hack("61656226h", "5F797475h", "61726F63h", "61675F6Ch", "6E656472h", "00007700h", 5)
+    elseif MaxJTyMT == 22 then
+        hack("6165622Ch", "5F797475h", "5F616573h", "65736572h", "68637261h", "00737265h", 5)
+    elseif MaxJTyMT == 23 then
+        hack("69616616h", "775F7972h", "72657461h", "00007000h", "0563FE10h", "0000001Ch", 5)
+    elseif MaxJTyMT == 24 then
+        hack("63656D26h", "61724468h", "5F6E6F67h", "6964656Dh", "6C617665h", "00007700h", 5)
+    elseif MaxJTyMT == 25 then
+        hack("6C61661Ch", "5F6E6F63h", "746E7568h", "00676E69h", "6C617665h", "00007700h", 5)
+    elseif MaxJTyMT == 26 then
+        hack("6C616828h", "65776F6Ch", "675F6E65h", "74736F68h", "6968735Fh", "00000070h", 5)
+    elseif MaxJTyMT == 27 then
+        hack("61656228h", "5F797475h", "756E6576h", "6C665F73h", "61727479h", "00000070h", 5)
+    elseif MaxJTyMT == 28 then
+        hack("6F6C6618h", "5F726577h", "6E697773h", "00000067h", "05642038h", "00000064h", 5)
+    elseif MaxJTyMT == 29 then
+        hack("61656224h", "5F797475h", "6F636F43h", "5F74756Eh", "00726162h", "00000000h", 5)
+    elseif MaxJTyMT == 30 then
+        hack("61656220h", "5F797475h", "66726573h", "6F6F705Fh", "9953006Ch", "00000000h", 5)
+    elseif MaxJTyMT == 31 then
+        hack("61656228h", "5F797475h", "73756F68h", "6C614D65h", "65766964h", "00000073h", 5)
+    elseif MaxJTyMT == 32 then
+        hack("61656222h", "5F797475h", "6E697773h", "61705F67h", "99006D6Ch", "00000000h", 5)
+    elseif MaxJTyMT == 33 then
+        hack("65705326h", "6C616963h", "75616542h", "545F7974h", "6D65746Fh", "00000000h", 5)
+    elseif MaxJTyMT == 34 then
+        hack("72637328h", "6F747069h", "6D756972h", "64656D5Fh", "61766569h", "0000006Ch", 5)
+    elseif MaxJTyMT == 35 then
+        hack("6570532Ah", "6C616963h", "75616542h", "535F7974h", "47706968h", "00006E75h", 5)
+    elseif MaxJTyMT == 36 then
+        hack("6C615020h", "65747465h", "6C756353h", "72757470h", "99530065h", "00000000h", 5)
+    elseif MaxJTyMT == 37 then
+        hack("6172431Ah", "6F46656Eh", "61746E75h", "00006E69h", "99531F58h", "00000000h", 5)
+    elseif MaxJTyMT == 38 then
+        hack("72694C18h", "756F4661h", "6961746Eh", "0000006Eh", "995321E8h", "00000000h", 5)
+    elseif MaxJTyMT == 39 then
+        hack("73754D1Ch", "61436369h", "73756F72h", "00656C65h", "99533348h", "00000000h", 5)
+    elseif MaxJTyMT == 40 then
+        hack("6165732Ch", "556E6F73h", "74536F66h", "6F696475h", "6E69635Fh", "00616D65h", 5)
+    elseif MaxJTyMT == 41 then
+        hack("61656228h", "5F797475h", "69766F4Dh", "756F4665h", "6961746Eh", "0000006Eh", 5)
+    elseif MaxJTyMT == 42 then
+        hack("736E4924h", "6D757274h", "57746E65h", "736B726Fh", "00706F68h", "00000000h", 5)
+    elseif MaxJTyMT == 43 then
+        hack("79674524h", "68507470h", "6F617261h", "61745368h", "00657574h", "00000000h", 5)
+    elseif MaxJTyMT == 44 then
+        hack("79674520h", "61507470h", "75727970h", "616F4273h", "99530074h", "00000000h", 5)
+    elseif MaxJTyMT == 45 then
+        hack("6F727426h", "486E616Ah", "6573726Fh", "636E615Fh", "746E6569h", "00000000h", 5)
+    elseif MaxJTyMT == 46 then
+        hack("65687428h", "72657461h", "6F65644Fh", "6E615F6Eh", "6E656963h", "00000074h", 5)
+    elseif MaxJTyMT == 47 then
+        hack("61726126h", "5F636962h", "73726F68h", "74735F65h", "65757461h", "00000000h", 5)
+    elseif MaxJTyMT == 48 then
+        hack("6E6F7012h", "61775364h", "7400736Eh", "705F6575h", "636E6972h", "00000065h", 5)
+    elseif MaxJTyMT == 49 then
+        hack("6565771Ch", "676E6970h", "6C69775Fh", "00776F6Ch", "636E0072h", "00000065h", 5)
+    elseif MaxJTyMT == 50 then
+        hack("65687316h", "64657261h", "65657254h", "75735F00h", "6169646Eh", "0000006Ch", 5)
+    elseif MaxJTyMT == 51 then
+        hack("616D531Ch", "61576C6Ch", "66726574h", "006C6C61h", "6169646Eh", "0000006Ch", 5)
+    elseif MaxJTyMT == 52 then
+        hack("6E6F431Eh", "7463656Eh", "6174535Fh", "6E6F6974h", "41325500h", "00000078h", 5)
+    elseif MaxJTyMT == 53 then
+        hack("72615018h", "535F7369h", "65657274h", "00000074h", "66760591h", "00007DE3h", 5)
+    elseif MaxJTyMT == 54 then
+        hack("6379431Ah", "505F656Ch", "696B7261h", "0000676Eh", "4132B038h", "0000008Ch", 5)
+    elseif MaxJTyMT == 55 then
+        hack("6F6F4214h", "74535F6Bh", "0065726Fh", "00007DE3h", "4132A340h", "00000078h", 5)
+    elseif MaxJTyMT == 56 then
+        hack("6F6C4618h", "5F726577h", "726F7453h", "00000065h", "4132C948h", "0000008Ch", 5)
+    elseif MaxJTyMT == 57 then
+        hack("73754D16h", "535F6369h", "656E6563h", "00007D00h", "4132CFA8h", "00000078h", 5)
+    elseif MaxJTyMT == 58 then
         menuescolhas2(5)
     end
 end
 
 function menuDecor2()
-    MaxDECORT = gg.choice({"🎲 • Dancing Fountain", "🎲 • Water Slide", "🎲 • Outdoor Pizzeria",
-                           "🎲 • Artist District", "🎲 • Elephant Carousel", "🎲 • Whale Fountain",
-                           "🎲 • Lifeguard Tower", "🎲 • Rainbow Arch", "🎲 • Noodle Shop",
-                           "🎲 • New Record Fountain", "🎲 • Restaurant", "🎲 • Submarine",
-                           "🎲 • Yellow Dog", "🎲 • Marine Fence", "🎲 • Admiral's Anchor",
-                           "🎲 • Seahorse", "🎲 • The Mermaid", "🎲 • Fishing Octopus",
-                           "🎲 • Pilot Bee", "🎲 • Infinite Staircase", "🎲 • Hermit Crab",
-                           "🎲 • Pier Market", "🎲 • Children's Carousel", "🎲 • Jet Ski",
-                           "🎲 • Carp Pond", "🎲 • Dovecote", "🎲 • Vegetable Cart",
-                           "🎲 • Children's Park", "🎲 • Pink Water Lily", "🎲 • Catamaran",
-                           "🎲 • Wind Turbine", "🎲 • Zebra Print", "🎲 • Gate of Glory",
-                           "🎲 • Golden Fence", "🎲 • Picnic Gazebo", "🎲 • Sun Monument",
-                           "🎲 • Luxury House", "🎲 • Candy Shower Sign", "🎲 • Suspension Bridge",
-                           "🎲 • Airboat", "🎲 • Visit to the Dolphins", "🎲 • Milkshake Pyramid",
-                           "🎲 • Topiary Contest", "🎲 • Pasta House", "🎲 • Medieval Throne",
-                           "🎲 • Wild West Merry-Go-Round", "🎲 • Traveling Circus",
-                           "🎲 • Wild West Playground", "🎲 • Stuffed Unicorn", "🎲 • Spring Festival",
-                           "🎲 • Exotic Snack Bar", "🎲 • Fruit Assortment", "🎲 • Floral Fairy Fountain",
-                           "🎲 • Rainbow Factory", "🎲 • Milkshake Pyramid",
-                           "🎲 • Natural Wonder Work of Art", "🎲 • Inflatable Challenge",
-                           "🎲 • Monster Truck", "🎲 • Around the World", "🎲 • Kingdom Center",
-                           "🎲 • Curlin", "🎲 • Book of Nature", "🎲 • The Sea Trotter",
-                           "🎲 • Macedonian Parterre", "❌ • Return"}, nil)
+    MaxDECORT = gg.choice({"1 • Dancing Fountain", "2 • Water Slide", "3 • Outdoor Pizzeria",
+                           "4 • Artist District", "5 • Elephant Carousel", "6 • Whale Fountain",
+                           "7 • Lifeguard Tower", "8 • Rainbow Arch", "9 • Noodle Shop",
+                           "10 • New Record Fountain", "11 • Restaurant", "12 • Submarine", "13 • Yellow Dog",
+                           "14 • Marine Fence", "15 • Admiral's Anchor", "16 • Seahorse", "17 • The Mermaid",
+                           "18 • Fishing Octopus", "19 • Pilot Bee", "20 • Infinite Staircase",
+                           "21 • Hermit Crab", "22 • Pier Market", "23 • Children's Carousel", "24 • Jet Ski",
+                           "25 • Carp Pond", "26 • Dovecote", "27 • Vegetable Cart", "28 • Children's Park",
+                           "29 • Pink Water Lily", "30 • Catamaran", "31 • Wind Turbine", "32 • Zebra Print",
+                           "33 • Gate of Glory", "34 • Golden Fence", "35 • Picnic Gazebo", "36 • Sun Monument",
+                           "37 • Luxury House", "38 • Candy Shower Sign", "39 • Suspension Bridge",
+                           "40 • Airboat", "41 • Visit to the Dolphins", "42 • Milkshake Pyramid",
+                           "43 • Topiary Contest", "44 • Pasta House", "45 • Medieval Throne",
+                           "46 • Wild West Merry-Go-Round", "47 • Traveling Circus", "48 • Wild West Playground",
+                           "49 • Stuffed Unicorn", "50 • Spring Festival", "51 • Exotic Snack Bar",
+                           "52 • Fruit Assortment", "53 • Floral Fairy Fountain", "54 • Rainbow Factory",
+                           "55 • Milkshake Pyramid", "56 • Natural Wonder Work of Art",
+                           "57 • Inflatable Challenge", "58 • Monster Truck", "59 • Around the World",
+                           "60 • Kingdom Center", "61 • Curlin", "62 • Book of Nature", "63 • The Sea Trotter",
+                           "64 • Macedonian Parterre", "65 • Return"}, nil)
+
     if MaxDECORT == nil then
         return
-    end
-    if MaxDECORT == 1 then
-        hack("r1DECORT")
-    end
-    if MaxDECORT == 2 then
-        hack("r2DECORT")
-    end
-    if MaxDECORT == 3 then
-        hack("r3DECORT")
-    end
-    if MaxDECORT == 4 then
-        hack("r4DECORT")
-    end
-    if MaxDECORT == 5 then
-        hack("r5DECORT")
-    end
-    if MaxDECORT == 6 then
-        hack("r6DECORT")
-    end
-    if MaxDECORT == 7 then
-        hack("r7DECORT")
-    end
-    if MaxDECORT == 8 then
-        hack("r8DECORT")
-    end
-    if MaxDECORT == 9 then
-        hack("r9DECORT")
-    end
-    if MaxDECORT == 10 then
-        hack("r10DECORT")
-    end
-    if MaxDECORT == 11 then
-        hack("r11DECORT")
-    end
-    if MaxDECORT == 12 then
-        hack("r12DECORT")
-    end
-    if MaxDECORT == 13 then
-        hack("r13DECORT")
-    end
-    if MaxDECORT == 14 then
-        hack("r14DECORT")
-    end
-    if MaxDECORT == 15 then
-        hack("r15DECORT")
-    end
-    if MaxDECORT == 16 then
-        hack("r16DECORT")
-    end
-    if MaxDECORT == 17 then
-        hack("r17DECORT")
-    end
-    if MaxDECORT == 18 then
-        hack("r18DECORT")
-    end
-    if MaxDECORT == 19 then
-        hack("r19DECORT")
-    end
-    if MaxDECORT == 20 then
-        hack("r20DECORT")
-    end
-    if MaxDECORT == 21 then
-        hack("r21DECORT")
-    end
-    if MaxDECORT == 22 then
-        hack("r22DECORT")
-    end
-    if MaxDECORT == 23 then
-        hack("r23DECORT")
-    end
-    if MaxDECORT == 24 then
-        hack("r24DECORT")
-    end
-    if MaxDECORT == 25 then
-        hack("r25DECORT")
-    end
-    if MaxDECORT == 26 then
-        hack("r26DECORT")
-    end
-    if MaxDECORT == 27 then
-        hack("r27DECORT")
-    end
-    if MaxDECORT == 28 then
-        hack("r28DECORT")
-    end
-    if MaxDECORT == 29 then
-        hack("r29DECORT")
-    end
-    if MaxDECORT == 30 then
-        hack("r30DECORT")
-    end
-    if MaxDECORT == 31 then
-        hack("r31DECORT")
-    end
-    if MaxDECORT == 32 then
-        hack("r32DECORT")
-    end
-    if MaxDECORT == 33 then
-        hack("r33DECORT")
-    end
-    if MaxDECORT == 34 then
-        hack("r34DECORT")
-    end
-    if MaxDECORT == 35 then
-        hack("r35DECORT")
-    end
-    if MaxDECORT == 36 then
-        hack("r36DECORT")
-    end
-    if MaxDECORT == 37 then
-        hack("r37DECORT")
-    end
-    if MaxDECORT == 38 then
-        hack("r38DECORT")
-    end
-    if MaxDECORT == 39 then
-        hack("r39DECORT")
-    end
-    if MaxDECORT == 40 then
-        hack("r40DECORT")
-    end
-    if MaxDECORT == 41 then
-        hack("r41DECORT")
-    end
-    if MaxDECORT == 42 then
-        hack("r42DECORT")
-    end
-    if MaxDECORT == 43 then
-        hack("r43DECORT")
-    end
-    if MaxDECORT == 44 then
-        hack("r44DECORT")
-    end
-    if MaxDECORT == 45 then
-        hack("r45DECORT")
-    end
-    if MaxDECORT == 46 then
-        hack("r46DECORT")
-    end
-    if MaxDECORT == 47 then
-        hack("r47DECORT")
-    end
-    if MaxDECORT == 48 then
-        hack("r48DECORT")
-    end
-    if MaxDECORT == 49 then
-        hack("r49DECORT")
-    end
-    if MaxDECORT == 50 then
-        hack("r50DECORT")
-    end
-    if MaxDECORT == 51 then
-        hack("r51DECORT")
-    end
-    if MaxDECORT == 52 then
-        hack("r52DECORT")
-    end
-    if MaxDECORT == 53 then
-        hack("r53DECORT")
-    end
-    if MaxDECORT == 54 then
-        hack("r54DECORT")
-    end
-    if MaxDECORT == 55 then
-        hack("r55DECORT")
-    end
-    if MaxDECORT == 56 then
-        hack("r56DECORT")
-    end
-    if MaxDECORT == 57 then
-        hack("r57DECORT")
-    end
-    if MaxDECORT == 58 then
-        hack("r58DECORT")
-    end
-    if MaxDECORT == 59 then
-        hack("r59DECORT")
-    end
-    if MaxDECORT == 60 then
-        hack("r60DECORT")
-    end
-    if MaxDECORT == 61 then
-        hack("r61DECORT")
-    end
-    if MaxDECORT == 62 then
-        hack("r62DECORT")
-    end
-    if MaxDECORT == 63 then
-        hack("r63DECORT")
-    end
-    if MaxDECORT == 64 then
-        hack("r64DECORT")
-    end
-    if MaxDECORT == 65 then
+    elseif MaxDECORT == 1 then
+        hack("6E616420h", "676E6963h", "6E756F46h", "6E696174h", "61690073h", "0000006Ch", 5)
+    elseif MaxDECORT == 2 then
+        hack("61656222h", "5F797475h", "65746177h", "696C5372h", "00006564h", "0000646Eh", 5)
+    elseif MaxDECORT == 3 then
+        hack("6165622Ah", "5F797475h", "7A7A6970h", "61697265h", "7361705Fh", "00006174h", 5)
+    elseif MaxDECORT == 4 then
+        hack("6165622Ah", "5F797475h", "69747261h", "715F7473h", "74726175h", "00007265h", 5)
+    elseif MaxDECORT == 5 then
+        hack("72616324h", "6573756Fh", "6C655F6Ch", "61687065h", "0073746Eh", "00000000h", 5)
+    elseif MaxDECORT == 6 then
+        hack("756F661Ch", "6961746Eh", "68775F6Eh", "00656C61h", "0073746Eh", "00000000h", 5)
+    elseif MaxDECORT == 7 then
+        hack("66696C1Ah", "61756765h", "685F6472h", "6C007475h", "61690065h", "0000006Ch", 5)
+    elseif MaxDECORT == 8 then
+        hack("69615216h", "776F626Eh", "68637241h", "6F6D5F00h", "79656B6Eh", "00007600h", 5)
+    elseif MaxDECORT == 9 then
+        hack("6F6F6E16h", "5F656C64h", "706F6873h", "6F6D5F00h", "79656B6Eh", "00007600h", 5)
+    elseif MaxDECORT == 10 then
+        hack("6165622Ch", "5F797475h", "6D796C4Fh", "46636970h", "746E756Fh", "006E6961h", 5)
+    elseif MaxDECORT == 11 then
+        hack("6F6F7A1Ch", "7365725Fh", "72756174h", "00746E61h", "74D782D0h", "00000000h", 5)
+    elseif MaxDECORT == 12 then
+        hack("61656220h", "5F797475h", "6D627573h", "6E697261h", "74C40065h", "00000015h", 5)
+    elseif MaxDECORT == 13 then
+        hack("69684314h", "6573656Eh", "00676F44h", "00007601h", "8C7E1591h", "00007601h", 5)
+    elseif MaxDECORT == 14 then
+        hack("6165531Ch", "636E6546h", "65665F65h", "0065636Eh", "74C4ECD8h", "0000005Ah", 5)
+    elseif MaxDECORT == 15 then
+        hack("65705326h", "6C616963h", "75616542h", "615F7974h", "726F636Eh", "00000000h", 5)
+    elseif MaxDECORT == 16 then
+        hack("6570532Ch", "6C616963h", "75616542h", "735F7974h", "6F686165h", "00657372h", 5)
+    elseif MaxDECORT == 17 then
+        hack("6570532Ah", "6C616963h", "75616542h", "6D5F7974h", "616D7265h", "00006469h", 5)
+    elseif MaxDECORT == 18 then
+        hack("6570532Ah", "6C616963h", "75616542h", "6F5F7974h", "706F7463h", "00007375h", 5)
+    elseif MaxDECORT == 19 then
+        hack("6570532Ch", "6C616963h", "75616542h", "425F7974h", "69506565h", "00746F6Ch", 5)
+    elseif MaxDECORT == 20 then
+        hack("6174731Ah", "5F737269h", "6374616Dh", "00003368h", "74C56B78h", "0000005Ah", 5)
+    elseif MaxDECORT == 21 then
+        hack("61656228h", "5F797475h", "636E6163h", "685F7265h", "696D7265h", "00000074h", 5)
+    elseif MaxDECORT == 22 then
+        hack("61656224h", "5F797475h", "68736966h", "72616D5Fh", "0074656Bh", "00007601h", 5)
+    elseif MaxDECORT == 23 then
+        hack("6165621Eh", "5F797475h", "6F726163h", "6C657375h", "65000000h", "00007372h", 5)
+    elseif MaxDECORT == 24 then
+        hack("61656222h", "5F797475h", "65746177h", "61726372h", "65007466h", "00007372h", 5)
+    elseif MaxDECORT == 25 then
+        hack("6E6F701Ch", "69775F64h", "635F6874h", "00707261h", "79473FE0h", "00007601h", 5)
+    elseif MaxDECORT == 26 then
+        hack("6570532Ch", "6C616963h", "75616542h", "445F7974h", "6365766Fh", "0065746Fh", 5)
+    elseif MaxDECORT == 27 then
+        hack("61656226h", "5F797475h", "65657267h", "6F72676Eh", "79726563h", "00007600h", 5)
+    elseif MaxDECORT == 28 then
+        hack("61656224h", "5F797475h", "79616C70h", "756F7267h", "0032646Eh", "00007601h", 5)
+    elseif MaxDECORT == 29 then
+        hack("7461771Eh", "665F7265h", "65776F6Ch", "325F7372h", "74C93000h", "00000000h", 5)
+    elseif MaxDECORT == 30 then
+        hack("74616B12h", "72616D61h", "6C006E61h", "65620079h", "73006172h", "00007600h", 5)
+    elseif MaxDECORT == 31 then
+        hack("7465760Eh", "6B617972h", "6C696D00h", "65620079h", "73006172h", "00007600h", 5)
+    elseif MaxDECORT == 32 then
+        hack("61656224h", "5F797475h", "6C616863h", "657A5F6Bh", "00617262h", "0000746Eh", 5)
+    elseif MaxDECORT == 33 then
+        hack("61656226h", "5F797475h", "7578754Ch", "675F7972h", "73657461h", "00000000h", 5)
+    elseif MaxDECORT == 34 then
+        hack("78756C18h", "5F797275h", "636E6566h", "6F720065h", "79726563h", "00007400h", 5)
+    elseif MaxDECORT == 35 then
+        hack("6369700Ch", "0063696Eh", "EBB23591h", "0000769Ah", "CC57E280h", "00000000h", 5)
+    elseif MaxDECORT == 36 then
+        hack("65705322h", "6C616963h", "75616542h", "535F7974h", "EB006E75h", "0000769Ah", 5)
+    elseif MaxDECORT == 37 then
+        hack("61656226h", "5F797475h", "7578756Ch", "685F7972h", "6573756Fh", "00000000h", 5)
+    elseif MaxDECORT == 38 then
+        hack("6968431Ah", "6573656Eh", "6E6E6142h", "00007265h", "EB3A4591h", "0000769Ah", 5)
+    elseif MaxDECORT == 39 then
+        hack("636E611Ch", "746E6569h", "6972625Fh", "00656764h", "C2A6CC00h", "0000001Ch", 5)
+    elseif MaxDECORT == 40 then
+        hack("7269611Ah", "74616F62h", "616C705Fh", "00006B6Eh", "C2A6DE38h", "00000055h", 5)
+    elseif MaxDECORT == 41 then
+        hack("6165621Eh", "5F797475h", "706C6F64h", "736E6968h", "EBE1F500h", "0000769Ah", 5)
+    elseif MaxDECORT == 42 then
+        hack("61656228h", "5F797475h", "61727970h", "5F64696Dh", "66696E6Bh", "00000065h", 5)
+    elseif MaxDECORT == 43 then
+        hack("706F7426h", "79726169h", "6D6F635Fh", "69746570h", "6E6F6974h", "00000000h", 5)
+    elseif MaxDECORT == 44 then
+        hack("73655220h", "61726F74h", "42726F74h", "646C6975h", "05630032h", "0000002Dh", 5)
+    elseif MaxDECORT == 45 then
+        hack("72687426h", "48656E6Fh", "5F6C6C61h", "6964656Dh", "6C617665h", "00000000h", 5)
+    elseif MaxDECORT == 46 then
+        hack("726F481Ch", "435F6573h", "756F7261h", "006C6573h", "00000000h", "00000000h", 5)
+    elseif MaxDECORT == 47 then
+        hack("7269431Ch", "5F737563h", "706D6143h", "00676E69h", "00000000h", "00000000h", 5)
+    elseif MaxDECORT == 48 then
+        hack("776F4318h", "5F796F62h", "65776F54h", "00000072h", "CC0590A8h", "0000008Ch", 5)
+    elseif MaxDECORT == 49 then
+        hack("756C702Ch", "6E556873h", "726F6369h", "61765F6Eh", "746E656Ch", "00656E69h", 5)
+    elseif MaxDECORT == 50 then
+        hack("7361651Ah", "52726574h", "6F626269h", "0000736Eh", "00000000h", "00000000h", 5)
+    elseif MaxDECORT == 51 then
+        hack("6165621Eh", "705F6863h", "79747261h", "7261625Fh", "CBF5B400h", "00000000h", 5)
+    elseif MaxDECORT == 52 then
+        hack("6165621Eh", "665F6863h", "74697572h", "78696D5Fh", "CBF5C200h", "00000000h", 5)
+    elseif MaxDECORT == 53 then
+        hack("6961461Ch", "465F7972h", "746E756Fh", "006E6961h", "00720070h", "0000769Ah", 5)
+    elseif MaxDECORT == 54 then
+        hack("6E61631Ah", "725F7964h", "626E6961h", "0000776Fh", "05642698h", "00000043h", 5)
+    elseif MaxDECORT == 55 then
+        hack("61656228h", "5F797475h", "61727970h", "5F64696Dh", "66696E6Bh", "00000065h", 5)
+    elseif MaxDECORT == 56 then
+        hack("736E6920h", "6C6C6174h", "6F697461h", "72615F6Eh", "05640074h", "0000003Ah", 5)
+    elseif MaxDECORT == 57 then
+        hack("646F7222h", "65486F65h", "5F63696Ch", "6E6E7572h", "05007265h", "00000000h", 5)
+    elseif MaxDECORT == 58 then
+        hack("67696222h", "63617254h", "5F726F74h", "63736572h", "05006575h", "00000017h", 5)
+    elseif MaxDECORT == 59 then
+        hack("6F6C6724h", "466C6162h", "6867696Ch", "6C705F74h", "00656E61h", "0000005Ah", 5)
+    elseif MaxDECORT == 60 then
+        hack("6E694B1Ah", "6D6F6467h", "746E6543h", "00006572h", "0564FAD8h", "00000078h", 5)
+    elseif MaxDECORT == 61 then
+        hack("7275631Ch", "676E696Ch", "6E75725Fh", "0072656Eh", "05650F38h", "00000013h", 5)
+    elseif MaxDECORT == 62 then
+        hack("6F6F621Eh", "6572546Bh", "756A5F65h", "656C676Eh", "05658200h", "00000000h", 5)
+    elseif MaxDECORT == 63 then
+        hack("70616328h", "6E696174h", "74617453h", "705F6575h", "74617269h", "00000065h", 5)
+    elseif MaxDECORT == 64 then
+        hack("6E69701Eh", "70706165h", "6B5F656Ch", "6566696Eh", "0563ED00h", "00000055h", 5)
+    elseif MaxDECORT == 65 then
         menuescolhas2(5)
     end
+
 end
 
 function menuDecorValentine()
-    MaxJTyP = gg.choice({"❤ • Cat Love Statue", "❤️ • Care Bear", "❤️ • Romantic Date",
-                         "❤️ • Love Messenger Statue", "❤️ • The Bride and Groom Lived",
-                         "❤️ • Doves in Love", "❤️ • Heart Floral Bed", "❤️ • Arch of Love",
-                         "❤️ • Adorable Kitten", "❤️ • Stuffed Rabbit", "❤️ • Cupid's Arrow",
-                         "❤️ • Lovers' Bench", "❤️ • Lovers' Pilot", "❤️ • Flying Hearts",
-                         "❤️ • Cupid's Eye", "❤️ • Ideal Couple Photocall", "❤️ • Mini Park romantic",
-                         "❤️ • carriage", "❤️ • Bridal Bouquet", "❤️ • Eternal Love",
-                         "❤️ • Fairytale Rose", "❌ • Return"}, nil)
+    MaxJTyP = gg.choice({"1 • Cat Love Statue", "2 • Care Bear", "3 • Romantic Date",
+                         "4 • Love Messenger Statue", "5 • The Bride and Groom Lived", "6 • Doves in Love",
+                         "7 • Heart Floral Bed", "8 • Arch of Love", "9 • Adorable Kitten",
+                         "10 • Stuffed Rabbit", "11 • Cupid's Arrow", "12 • Lovers' Bench",
+                         "13 • Lovers' Pilot", "14 • Flying Hearts", "15 • Cupid's Eye",
+                         "16 • Ideal Couple Photocall", "17 • Mini Park romantic", "18 • Carriage",
+                         "19 • Bridal Bouquet", "20 • Eternal Love", "21 • Fairytale Rose", "22 • Return"}, nil)
+
     if MaxJTyP == nil then
         return
-    end
-    if MaxJTyP == 1 then
-        hack("r1p")
-    end
-    if MaxJTyP == 2 then
-        hack("r2p")
-    end
-    if MaxJTyP == 3 then
-        hack("r3p")
-    end
-    if MaxJTyP == 4 then
-        hack("r4p")
-    end
-    if MaxJTyP == 5 then
-        hack("r5p")
-    end
-    if MaxJTyP == 6 then
-        hack("r6p")
-    end
-    if MaxJTyP == 7 then
-        hack("r7p")
-    end
-    if MaxJTyP == 8 then
-        hack("r8p")
-    end
-    if MaxJTyP == 9 then
-        hack("r9p")
-    end
-    if MaxJTyP == 10 then
-        hack("r10p")
-    end
-    if MaxJTyP == 11 then
-        hack("r11p")
-    end
-    if MaxJTyP == 12 then
-        hack("r12p")
-    end
-    if MaxJTyP == 13 then
-        hack("r13p")
-    end
-    if MaxJTyP == 14 then
-        hack("r14p")
-    end
-    if MaxJTyP == 15 then
-        hack("r15p")
-    end
-    if MaxJTyP == 16 then
-        hack("r1664p")
-    end
-    if MaxJTyP == 17 then
-        hack("r1665p")
-    end
-    if MaxJTyP == 18 then
-        hack("r1666p")
-    end
-    if MaxJTyP == 19 then
-        hack("r1667p")
-    end
-    if MaxJTyP == 20 then
-        hack("r1668p")
-    end
-    if MaxJTyP == 21 then
-        hack("r1669p")
-    end
-    if MaxJTyP == 22 then
+    elseif MaxJTyP == 1 then
+        hack("1818318364", "1769238117", "1667196270", "7566433", "351650536", "12", 5)
+    elseif MaxJTyP == 2 then
+        hack("1818318378", "1769238117", "1415538030", "2036622437", "1634034271", "12914", 5)
+    elseif MaxJTyP == 3 then
+        hack("1818318372", "1769238117", "1935631726", "1852142181", "6644833", "45", 5)
+    elseif MaxJTyP == 4 then
+        hack("1818318374", "1769238117", "1885300078", "1937011567", "1885693288", "0", 5)
+    elseif MaxJTyP == 5 then
+        hack("1818318378", "1769238117", "1784636782", "1299477365", "1769108065", "25701", 5)
+    elseif MaxJTyP == 6 then
+        hack("1818318380", "1769238117", "1885300078", "1868916585", "1818194798", "6649455", 5)
+    elseif MaxJTyP == 7 then
+        hack("1818318374", "1769238117", "1717527918", "1702326124", "1684365938", "0", 5)
+    elseif MaxJTyP == 8 then
+        hack("1818318372", "1769238117", "1818191214", "1634039407", "6841202", "29", 5)
+    elseif MaxJTyP == 9 then
+        hack("1818318374", "1769238117", "1885300078", "1752397164", "1952539487", "0", 5)
+    elseif MaxJTyP == 10 then
+        hack("1818318366", "1769238117", "1113548142", "2037280373", "350665152", "21", 5)
+    elseif MaxJTyP == 11 then
+        hack("1818318378", "1769238117", "1130325358", "1684631669", "1920090483", "30575", 5)
+    elseif MaxJTyP == 12 then
+        hack("1818318380", "1769238117", "1818191214", "1919252079", "1700945779", "6841198", 5)
+    elseif MaxJTyP == 13 then
+        hack("1987013650", "1852397413", "771781479", "32564", "352675424", "135", 5)
+    elseif MaxJTyP == 14 then
+        hack("796C6628h", "656C6156h", "6E69746Eh", "6C614265h", "6E6F6F6Ch", "00790073h", 5)
+    elseif MaxJTyP == 15 then
+        hack("796C6622h", "656C6156h", "6E69746Eh", "70754365h", "6E006469h", "00790073h", 5)
+    elseif MaxJTyP == 16 then
+        hack("6F687028h", "74536F74h", "5F646E61h", "656C6176h", "6E69746Eh", "00000065h", 5)
+    elseif MaxJTyP == 17 then
+        hack("61656826h", "72547472h", "765F6565h", "6E656C61h", "656E6974h", "00000000h", 5)
+    elseif MaxJTyP == 18 then
+        hack("6C61562Ah", "69746E65h", "6C5F656Eh", "7265766Fh", "61635F73h", "00007472h", 5)
+    elseif MaxJTyP == 19 then
+        hack("6465571Eh", "676E6964h", "445F4433h", "726F6365h", "40F74300h", "0000008Ch", 5)
+    elseif MaxJTyP == 20 then
+        hack("6C61562Ch", "69746E65h", "685F656Eh", "74726165h", "61486E49h", "0073646Eh", 5)
+    elseif MaxJTyP == 21 then
+        hack("6F6C661Eh", "55726577h", "7265646Eh", "646F6F48h", "0563F200h", "00000031h", 5)
+    elseif MaxJTyP == 22 then
         menuescolhas2(5)
     end
+
 end
 
 function menuDecorChristmas()
-    MaxJTyM = gg.choice({"🎲 • Ice Rink", "🎲 • Christmas Carousel", "🎲 • Festive Lamppost",
-                         "🎲 • Group of Friends", "🎲 • Snowman", "🎲 • Ice Angel",
-                         "🎲 • Christmas Fence", "🎲 • Snow Globe", "🎲 • Lake House",
-                         "🎲 • Santa's House", "🎲 • Ice Slide", "🎲 • Toboggan Run", "🎲 • Sled Dogs",
-                         "🎲 • Frozen Tyrannosaurus", "🎲 • Polar Station", "🎲 • Cable Car",
-                         "🎲 • Ice Reindeer", "🎲 • Ice Castle", "🎲 • Snow Globe",
-                         "🎲 • Frozen Mammoth", "🎲 • Icebreaker Ship", "🎲 • Penguin Land",
-                         "🎲 • Arctic Glacier", "🎲 • Christmas Stocking", "🎲 • Christmas Tree",
-                         "🎲 • Gift Mountain", "🎲 • Ice Dragon", "🎲 • Elf House", "🎲 • Snowman",
-                         "🎲 • Christmas Ball", "🎲 • Meeting Santa Claus Poster", "🎲 • Winter Sports",
-                         "🎲 • Santa's Workshop", "🎲 • Sheep Slide", "🎲 • Winter Yurt",
-                         "🎲 • Skating Squirrels", "🎲 • Ice Portal", "🎲 • Polar Explorer",
-                         "🎲 • Hot Springs", "🎲 • Castle Ice rink with slide", "🎲 • Snowy cottage",
-                         "🎲 • The turbo sled", "🎲 • Flying lanterns", "❌ • Return"}, nil,
-        "CHOOSE ONE OPTION")
+    MaxJTyM = gg.choice({"1 • Ice Rink", "2 • Christmas Carousel", "3 • Festive Lamppost",
+                         "4 • Group of Friends", "5 • Snowman", "6 • Ice Angel", "7 • Christmas Fence",
+                         "8 • Snow Globe", "9 • Lake House", "10 • Santa's House", "11 • Ice Slide",
+                         "12 • Toboggan Run", "13 • Sled Dogs", "14 • Frozen Tyrannosaurus",
+                         "15 • Polar Station", "16 • Cable Car", "17 • Ice Reindeer", "18 • Ice Castle",
+                         "19 • Snow Globe", "20 • Frozen Mammoth", "21 • Icebreaker Ship", "22 • Penguin Land",
+                         "23 • Arctic Glacier", "24 • Christmas Stocking", "25 • Christmas Tree",
+                         "26 • Gift Mountain", "27 • Ice Dragon", "28 • Elf House", "29 • Snowman",
+                         "30 • Christmas Ball", "31 • Meeting Santa Claus Poster", "32 • Winter Sports",
+                         "33 • Santa's Workshop", "34 • Sheep Slide", "35 • Winter Yurt",
+                         "36 • Skating Squirrels", "37 • Ice Portal", "38 • Polar Explorer", "39 • Hot Springs",
+                         "40 • Castle Ice rink with slide", "41 • Snowy cottage", "42 • The turbo sled",
+                         "43 • Flying lanterns", "❌ • Return"}, nil)
+
     if MaxJTyM == nil then
         return
-    end
-    if MaxJTyM == 1 then
-        hack("r17p")
-    end
-    if MaxJTyM == 2 then
-        hack("r18p")
-    end
-    if MaxJTyM == 3 then
-        hack("r20p")
-    end
-    if MaxJTyM == 4 then
-        hack("r21p")
-    end
-    if MaxJTyM == 5 then
-        hack("r22p")
-    end
-    if MaxJTyM == 6 then
-        hack("r23p")
-    end
-    if MaxJTyM == 7 then
-        hack("r24p")
-    end
-    if MaxJTyM == 8 then
-        hack("r25p")
-    end
-    if MaxJTyM == 9 then
-        hack("r20010p")
-    end
-    if MaxJTyM == 10 then
-        hack("r20011p")
-    end
-    if MaxJTyM == 11 then
-        hack("r20012p")
-    end
-    if MaxJTyM == 12 then
-        hack("r20013p")
-    end
-    if MaxJTyM == 13 then
-        hack("r20014p")
-    end
-    if MaxJTyM == 14 then
-        hack("r20015p")
-    end
-    if MaxJTyM == 15 then
-        hack("r20016p")
-    end
-    if MaxJTyM == 16 then
-        hack("r20017p")
-    end
-    if MaxJTyM == 17 then
-        hack("r20018p")
-    end
-    if MaxJTyM == 18 then
-        hack("r20019p")
-    end
-    if MaxJTyM == 19 then
-        hack("r20020p")
-    end
-    if MaxJTyM == 20 then
-        hack("r20021p")
-    end
-    if MaxJTyM == 21 then
-        hack("r20022p")
-    end
-    if MaxJTyM == 22 then
-        hack("r20023p")
-    end
-    if MaxJTyM == 23 then
-        hack("r20024p")
-    end
-    if MaxJTyM == 24 then
-        hack("r20025p")
-    end
-    if MaxJTyM == 25 then
-        hack("r20026p")
-    end
-    if MaxJTyM == 26 then
-        hack("r20027p")
-    end
-    if MaxJTyM == 27 then
-        hack("r20028p")
-    end
-    if MaxJTyM == 28 then
-        hack("r20029p")
-    end
-    if MaxJTyM == 29 then
-        hack("r20030p")
-    end
-    if MaxJTyM == 30 then
-        hack("r20031p")
-    end
-    if MaxJTyM == 31 then
-        hack("r20032p")
-    end
-    if MaxJTyM == 32 then
-        hack("r20033p")
-    end
-    if MaxJTyM == 33 then
-        hack("r20034p")
-    end
-    if MaxJTyM == 34 then
-        hack("r20035p")
-    end
-    if MaxJTyM == 35 then
-        hack("r20036p")
-    end
-    if MaxJTyM == 36 then
-        hack("r20037p")
-    end
-    if MaxJTyM == 37 then
-        hack("r20038p")
-    end
-    if MaxJTyM == 38 then
-        hack("r20039p")
-    end
-    if MaxJTyM == 39 then
-        hack("r20040p")
-    end
-    if MaxJTyM == 40 then
-        hack("r20041p")
-    end
-    if MaxJTyM == 41 then
-        hack("r20042p")
-    end
-    if MaxJTyM == 42 then
-        hack("r20043p")
-    end
-    if MaxJTyM == 43 then
-        hack("r20044p")
-    end
-    if MaxJTyM == 44 then
+    elseif MaxJTyM == 1 then
+        hack("1919435562", "1836348265", "1230992225", "1935631715", "1769234795", "26478", 5)
+    elseif MaxJTyM == 2 then
+        hack("1919435554", "1836348265", "1631810401", "1937076082", "520121445", "0", 5)
+    elseif MaxJTyM == 3 then
+        hack("1919435554", "1836348265", "1818194785", "1702129249", "453013106", "2", 5)
+    elseif MaxJTyM == 4 then
+        hack("1919435550", "1836348265", "1935635297", "1701733731", "778156544", "32564", 5)
+    elseif MaxJTyM == 5 then
+        hack("1919435554", "1836348265", "1398764385", "1836543854", "453013089", "8", 5)
+    elseif MaxJTyM == 6 then
+        hack("1919435550", "1836348265", "1633645409", "1818584942", "459043840", "100", 5)
+    elseif MaxJTyM == 7 then
+        hack("1919435550", "1836348265", "1717531489", "1701015141", "0", "0", 5)
+    elseif MaxJTyM == 8 then
+        hack("1919443748", "1836348265", "1935635297", "1651994478", "7105633", "22", 5)
+    elseif MaxJTyM == 9 then
+        hack("61656222h", "5F797475h", "656B616Ch", "756F685Fh", "74006573h", "0000002Ch", 5)
+    elseif MaxJTyM == 10 then
+        hack("7268432Ah", "6D747369h", "535F7361h", "61746E61h", "756F485Fh", "00006573h", 5)
+    elseif MaxJTyM == 11 then
+        hack("61656220h", "5F797475h", "776F6E73h", "64696C73h", "006E0065h", "00000000h", 5)
+    elseif MaxJTyM == 12 then
+        hack("626F421Ah", "69656C73h", "61526867h", "00006563h", "74C466B8h", "00000032h", 5)
+    elseif MaxJTyM == 13 then
+        hack("61656224h", "5F797475h", "73676F64h", "6372615Fh", "00636974h", "00000000h", 5)
+    elseif MaxJTyM == 14 then
+        hack("65636910h", "6E69645Fh", "776F006Fh", "64696C73h", "006E0065h", "00000000h", 5)
+    elseif MaxJTyM == 15 then
+        hack("61656226h", "5F797475h", "616C6F70h", "61745372h", "6E6F6974h", "00007700h", 5)
+    elseif MaxJTyM == 16 then
+        hack("6165622Ch", "5F797475h", "6E6E7572h", "635F7265h", "656C6261h", "00726163h", 5)
+    elseif MaxJTyM == 17 then
+        hack("6165621Ch", "5F797475h", "44656369h", "00726565h", "9953F380h", "00000000h", 5)
+    elseif MaxJTyM == 18 then
+        hack("61656222h", "5F797475h", "5F656369h", "74736163h", "6500656Ch", "00726163h", 5)
+    elseif MaxJTyM == 19 then
+        hack("77654E18h", "72616579h", "626F6C47h", "00000065h", "86148AA0h", "00007756h", 5)
+    elseif MaxJTyM == 20 then
+        hack("6D616D1Ch", "68746F6Dh", "74616D5Fh", "00336863h", "74C56EE8h", "00000066h", 5)
+    elseif MaxJTyM == 21 then
+        hack("61656222h", "5F797475h", "62656369h", "6B616572h", "99007265h", "00000000h", 5)
+    elseif MaxJTyM == 22 then
+        hack("6165622Ch", "5F797475h", "74616B73h", "50676E69h", "75676E65h", "00736E69h", 5)
+    elseif MaxJTyM == 23 then
+        hack("6165621Ch", "5F797475h", "62656369h", "00677265h", "74617473h", "00006575h", 5)
+    elseif MaxJTyM == 24 then
+        hack("7268432Ah", "6D747369h", "705F7361h", "65736572h", "6F73746Eh", "00006B63h", 5)
+    elseif MaxJTyM == 25 then
+        hack("72684328h", "6D747369h", "555F7361h", "6E616272h", "6572745Fh", "00000065h", 5)
+    elseif MaxJTyM == 26 then
+        hack("7268431Eh", "6D747369h", "675F7361h", "73746669h", "C2A6AC00h", "00000022h", 5)
+    elseif MaxJTyM == 27 then
+        hack("65636912h", "67617244h", "EB006E6Fh", "0000769Ah", "C2A6AA30h", "00000020h", 5)
+    elseif MaxJTyM == 28 then
+        hack("7268632Ch", "6D747369h", "735F7361h", "61746E61h", "6C65685Fh", "00726570h", 5)
+    elseif MaxJTyM == 29 then
+        hack("72684322h", "6D747369h", "535F7361h", "6D776F6Eh", "C2006E61h", "00000008h", 5)
+    elseif MaxJTyM == 30 then
+        hack("7268431Ah", "6D747369h", "61427361h", "00006C6Ch", "C2A69080h", "00000055h", 5)
+    elseif MaxJTyM == 31 then
+        hack("7268431Eh", "6D747369h", "61427361h", "72656E6Eh", "C2A6C800h", "0000004Bh", 5)
+    elseif MaxJTyM == 32 then
+        hack("696B5310h", "6F68535Fh", "66760070h", "00007DE3h", "413282B8h", "00000078h", 5)
+    elseif MaxJTyM == 33 then
+        hack("766F4314h", "475F7265h", "00746669h", "00007DE3h", "41325C08h", "00000078h", 5)
+    elseif MaxJTyM == 34 then
+        hack("65685314h", "6C537065h", "00656469h", "00007DE3h", "41328918h", "00000078h", 5)
+    elseif MaxJTyM == 35 then
+        hack("6E697726h", "59726574h", "5F747275h", "73616D78h", "32323032h", "00000000h", 5)
+    elseif MaxJTyM == 36 then
+        hack("6769662Ch", "53657275h", "6974616Bh", "785F676Eh", "3273616Dh", "00323230h", 5)
+    elseif MaxJTyM == 37 then
+        hack("6563691Ch", "68637241h", "6372615Fh", "00636974h", "05651BC0h", "00000067h", 5)
+    elseif MaxJTyM == 38 then
+        hack("6C6F701Eh", "616D7261h", "72615F6Eh", "63697463h", "05652200h", "00000000h", 5)
+    elseif MaxJTyM == 39 then
+        hack("746F6820h", "69727053h", "6D5F676Eh", "68637461h", "05650033h", "00000000h", 5)
+    elseif MaxJTyM == 40 then
+        hack("696C7318h", "6D5F6564h", "68637461h", "00000033h", "05652E70h", "0000005Ch", 5)
+    elseif MaxJTyM == 41 then
+        hack("7268631Eh", "6D747369h", "6F437361h", "676E696Dh", "05653600h", "00000069h", 5)
+    elseif MaxJTyM == 42 then
+        hack("72757422h", "6C736F62h", "65676465h", "6E61735Fh", "05006174h", "0000006Eh", 5)
+    elseif MaxJTyM == 43 then
+        hack("796C6620h", "746E614Ch", "5F6E7265h", "746E6173h", "05650061h", "00000084h", 5)
+    elseif MaxJTyM == 44 then
         menuescolhas2(5)
     end
+
 end
 
 function menuDecorHaloween()
-    MaxJTyMTRE = gg.choice({"🎲 • Ominous Fountain", "🎲 • Black Cat", "🎲 • Witch with Potion",
-                            "🎲 • Witcher's Hut", "🎲 • Carnivorous Greenhouse", "🎲 • Pumpkin Man",
-                            "🎲 • Pumpkin Rider", "🎲 • Ghostly Coach", "🎲 • Gothic Tower",
-                            "🎲 • Werewolf Spectacle", "🎲 • Witch on her broom", "❌ • Return"}, nil,
-        "CHOOSE ONE OPTION")
+    MaxJTyMTRE = gg.choice({"1 • Ominous Fountain", "2 • Black Cat", "3 • Witch with Potion",
+                            "4 • Witcher's Hut", "5 • Carnivorous Greenhouse", "6 • Pumpkin Man",
+                            "7 • Pumpkin Rider", "8 • Ghostly Coach", "9 • Gothic Tower",
+                            "10 • Werewolf Spectacle", "11 • Witch on her broom", "❌ • Return"}, nil)
+
     if MaxJTyMTRE == nil then
         return
-    end
-    if MaxJTyMTRE == 1 then
-        hack("r1ko")
-    end
-    if MaxJTyMTRE == 2 then
-        hack("r2ko")
-    end
-    if MaxJTyMTRE == 3 then
-        hack("r3ko")
-    end
-    if MaxJTyMTRE == 4 then
-        hack("r4ko")
-    end
-    if MaxJTyMTRE == 5 then
-        hack("r5ko")
-    end
-    if MaxJTyMTRE == 6 then
-        hack("r6ko")
-    end
-    if MaxJTyMTRE == 7 then
-        hack("r7ko")
-    end
-    if MaxJTyMTRE == 8 then
-        hack("r8ko")
-    end
-    if MaxJTyMTRE == 9 then
-        hack("r9ko")
-    end
-    if MaxJTyMTRE == 10 then
-        hack("r10ko")
-    end
-    if MaxJTyMTRE == 11 then
-        hack("r11ko")
-    end
-    if MaxJTyMTRE == 12 then
+    elseif MaxJTyMTRE == 1 then
+        hack("6C616824h", "65776F6Ch", "665F6E65h", "746E756Fh", "006E6961h", "00007756h", 5)
+    elseif MaxJTyMTRE == 2 then
+        hack("6C61681Ah", "65776F6Ch", "635F6E65h", "00007461h", "CBF32778h", "0000000Ah", 5)
+    elseif MaxJTyMTRE == 3 then
+        hack("6C61681Eh", "65776F6Ch", "775F6E65h", "68637469h", "CBF32100h", "00000000h", 5)
+    elseif MaxJTyMTRE == 4 then
+        hack("6D75501Ah", "6E696B70h", "756F485Fh", "00006573h", "CC05A470h", "0000008Ch", 5)
+    elseif MaxJTyMTRE == 5 then
+        hack("65724726h", "6F686E65h", "5F657375h", "64657250h", "726F7461h", "00000000h", 5)
+    elseif MaxJTyMTRE == 6 then
+        hack("6C61681Ch", "65776F6Ch", "705F6E65h", "00706D75h", "CBF324E8h", "0000000Fh", 5)
+    elseif MaxJTyMTRE == 7 then
+        hack("61654822h", "73656C64h", "6F485F73h", "6D657372h", "CC006E61h", "00000000h", 5)
+    elseif MaxJTyMTRE == 8 then
+        hack("6F68671Eh", "796C7473h", "72726143h", "65676169h", "00000000h", "00000000h", 5)
+    elseif MaxJTyMTRE == 9 then
+        hack("746F4718h", "5F636968h", "65776F54h", "00000072h", "CC05B1A0h", "0000008Ch", 5)
+    elseif MaxJTyMTRE == 10 then
+        hack("616C501Ch", "575F6B6Eh", "77657265h", "00666C6Fh", "CC059740h", "0000008Ch", 5)
+    elseif MaxJTyMTRE == 11 then
+        hack("7469572Ah", "74536863h", "65757461h", "6C61685Fh", "65776F6Ch", "00006E65h", 1)
+    elseif MaxJTyMTRE == 12 then
         menuescolhas2(5)
     end
+
 end
 
 function menuDecorTheFirst()
-    MaxJTyCFMT = gg.choice(
-        {"🎲 • The first geneticist", "🎲 • The first tourist", "🎲 • The first thinker",
-         "🎲 • The first firefighter", "🎲 • The first commander", "🎲 • The first policeman",
-         "🎲 • The first musician", "🎲 • The first painter", "🎲 • The first soccer player",
-         "🎲 • The first scientist", "🎲 • The first balloonist", "❌ • Return"}, nil)
+    MaxJTyCFMT = gg.choice({"1 • The first geneticist", "2 • The first tourist", "3 • The first thinker",
+                            "4 • The first firefighter", "5 • The first commander", "6 • The first policeman",
+                            "7 • The first musician", "8 • The first painter", "9 • The first soccer player",
+                            "10 • The first scientist", "11 • The first balloonist", "❌ • Return"}, nil)
+
     if MaxJTyCFMT == nil then
         return
-    end
-    if MaxJTyCFMT == 1 then
-        hack("r1pDx")
-    end
-    if MaxJTyCFMT == 2 then
-        hack("r2pDx")
-    end
-    if MaxJTyCFMT == 3 then
-        hack("r3pDx")
-    end
-    if MaxJTyCFMT == 4 then
-        hack("r4pDx")
-    end
-    if MaxJTyCFMT == 5 then
-        hack("r5pDx")
-    end
-    if MaxJTyCFMT == 6 then
-        hack("r6pDx")
-    end
-    if MaxJTyCFMT == 7 then
-        hack("r7pDx")
-    end
-    if MaxJTyCFMT == 8 then
-        hack("r8pDx")
-    end
-    if MaxJTyCFMT == 9 then
-        hack("r9pDx")
-    end
-    if MaxJTyCFMT == 10 then
-        hack("r10pDx")
-    end
-    if MaxJTyCFMT == 11 then
-        hack("r11pDx")
-    end
-    if MaxJTyCFMT == 12 then
+    elseif MaxJTyCFMT == 1 then
+        hack("61747322h", "5F657574h", "656E6567h", "69636974h", "CC007473h", "00000000h", 5)
+    elseif MaxJTyCFMT == 2 then
+        hack("6174731Ch", "5F657574h", "72756F74h", "00747369h", "CC610290h", "00000078h", 5)
+    elseif MaxJTyCFMT == 3 then
+        hack("6174731Ch", "5F657574h", "6E696874h", "0072656Bh", "CC6107B0h", "00000000h", 5)
+    elseif MaxJTyCFMT == 4 then
+        hack("6174731Ch", "5F657574h", "65726966h", "006E616Dh", "CC610A78h", "00000000h", 5)
+    elseif MaxJTyCFMT == 5 then
+        hack("6174731Ch", "5F657574h", "656E6567h", "006C6172h", "CC610D08h", "00000000h", 5)
+    elseif MaxJTyCFMT == 6 then
+        hack("61747320h", "5F657574h", "696C6F70h", "616D6563h", "CC61006Eh", "00000000h", 5)
+    elseif MaxJTyCFMT == 7 then
+        hack("6174731Ch", "5F657574h", "6973756Dh", "006E6163h", "CC6114F0h", "00000000h", 5)
+    elseif MaxJTyCFMT == 8 then
+        hack("6174731Ah", "5F657574h", "69747261h", "00007473h", "CC611780h", "00000064h", 5)
+    elseif MaxJTyCFMT == 9 then
+        hack("61747322h", "5F657574h", "746F6F66h", "6C6C6162h", "CC007265h", "00000000h", 5)
+    elseif MaxJTyCFMT == 10 then
+        hack("61747324h", "5F657574h", "6E61656Eh", "74726564h", "006C6168h", "00000064h", 5)
+    elseif MaxJTyCFMT == 11 then
+        hack("6174731Ah", "5F657574h", "62796C66h", "0000796Fh", "CC60F458h", "00000000h", 5)
+    elseif MaxJTyCFMT == 12 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorSports()
-    MaxJTUTR = gg.choice({"🎲 • Hockey field", "🎲 • Rugby field", "🎲 • Eternal rink",
-                          "🎲 • Veteran goalkeeper", "🎲 • Skatepark", "🎲 • World champion",
-                          "❌ • Return"}, nil)
+    MaxJTUTR = gg.choice({"1 • Hockey field", "2 • Rugby field", "3 • Eternal rink", "4 • Veteran goalkeeper",
+                          "5 • Skatepark", "6 • World champion", "❌ • Return"}, nil)
+
     if MaxJTUTR == nil then
         return
-    end
-    if MaxJTUTR == 1 then
-        hack("r1TUTR")
-    end
-    if MaxJTUTR == 2 then
-        hack("r2TUTR")
-    end
-    if MaxJTUTR == 3 then
-        hack("r3TUTR")
-    end
-    if MaxJTUTR == 4 then
-        hack("r4TUTR")
-    end
-    if MaxJTUTR == 5 then
-        hack("r5TUTR")
-    end
-    if MaxJTUTR == 6 then
-        hack("r6TUTR")
-    end
-    if MaxJTUTR == 7 then
+    elseif MaxJTUTR == 1 then
+        hack("636F6824h", "4679656Bh", "646C6569h", "6E75725Fh", "0072656Eh", "00000017h", 5)
+    elseif MaxJTUTR == 2 then
+        hack("6775721Ah", "735F7962h", "69646174h", "74006D75h", "0079726Fh", "0000006Ch", 5)
+    elseif MaxJTUTR == 3 then
+        hack("6F6E7320h", "616F6277h", "725F6472h", "656E6E75h", "74C40072h", "00000055h", 5)
+    elseif MaxJTUTR == 4 then
+        hack("61656222h", "5F797475h", "6C616F47h", "7065656Bh", "74007265h", "00000050h", 5)
+    elseif MaxJTUTR == 5 then
+        hack("6165622Ah", "5F797475h", "74656B53h", "726F6265h", "616C5064h", "00006563h", 5)
+    elseif MaxJTUTR == 6 then
+        hack("61656224h", "5F797475h", "746F6F46h", "6C6C6162h", "00676F44h", "00000050h", 5)
+    elseif MaxJTUTR == 7 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorAirplane()
-    MaxEWQT = gg.choice({"🎲 • Flight Simulator", "🎲 • Steam Plane", "🎲 • Biplane",
-                         "🎲 • Flying Champion", "🎲 • Galleon Balloon", "❌ • Return"}, nil,
-        "CHOOSE ONE OPTION")
+    MaxEWQT = gg.choice({"1 • Flight Simulator", "2 • Steam Plane", "3 • Biplane", "4 • Flying Champion",
+                         "5 • Galleon Balloon", "❌ • Return"}, nil)
+
     if MaxEWQT == nil then
         return
-    end
-    if MaxEWQT == 1 then
-        hack("r1EWQT")
-    end
-    if MaxEWQT == 2 then
-        hack("r2EWQT")
-    end
-    if MaxEWQT == 3 then
-        hack("r3EWQT")
-    end
-    if MaxEWQT == 4 then
-        hack("r4EWQT")
-    end
-    if MaxEWQT == 5 then
-        hack("r5EWQT")
-    end
-    if MaxEWQT == 6 then
+    elseif MaxEWQT == 1 then
+        hack("6165622Ch", "5F797475h", "756D6973h", "6F74616Ch", "6C705F72h", "00656E61h", 5)
+    elseif MaxEWQT == 2 then
+        hack("61656224h", "5F797475h", "6E616C70h", "74735F65h", "006D6165h", "0000724Dh", 5)
+    elseif MaxEWQT == 3 then
+        hack("61656226h", "5F797475h", "64647570h", "754A656Ch", "7265706Dh", "00006400h", 5)
+    elseif MaxEWQT == 4 then
+        hack("616C7026h", "6941656Eh", "61726372h", "65527466h", "64726177h", "00007600h", 5)
+    elseif MaxEWQT == 5 then
+        hack("61656222h", "5F797475h", "69796C66h", "6873676Eh", "72007069h", "00006400h", 5)
+    elseif MaxEWQT == 6 then
         menuescolhas2(5)
     end
+
 end
 
 function menuDecorCandy()
-    MaxYIUIS = gg.choice({"🎲 • Candy House", "🎲 • Candy Mountain", "🎲 • Candy Tree",
-                          "🎲 • Candy Bridge", "🎲 • Marzipan Gate", "❌ • Return"}, nil)
+    MaxYIUIS = gg.choice({"1 • Candy House", "2 • Candy Mountain", "3 • Candy Tree", "4 • Candy Bridge",
+                          "5 • Marzipan Gate", "❌ • Return"}, nil)
+
     if MaxYIUIS == nil then
         return
-    end
-    if MaxYIUIS == 1 then
-        hack("r1YIUIS")
-    end
-    if MaxYIUIS == 2 then
-        hack("r2YIUIS")
-    end
-    if MaxYIUIS == 3 then
-        hack("r3YIUIS")
-    end
-    if MaxYIUIS == 4 then
-        hack("r2YIUIS")
-    end
-    if MaxYIUIS == 5 then
-        hack("r3YIUIS")
-    end
-    if MaxYIUIS == 6 then
+    elseif MaxYIUIS == 1 then
+        hack("61656224h", "5F797475h", "646E6163h", "6F685F79h", "00657375h", "00000073h", 5)
+    elseif MaxYIUIS == 2 then
+        hack("61656226h", "5F797475h", "646E6163h", "72625F79h", "65676469h", "00007200h", 5)
+    elseif MaxYIUIS == 3 then
+        hack("6E616314h", "675F7964h", "00657461h", "00000000h", "79473FE0h", "00007601h", 5)
+    elseif MaxYIUIS == 4 then
+        hack("r4YIUIS")
+    elseif MaxYIUIS == 5 then
+        hack("r5YIUIS")
+    elseif MaxYIUIS == 6 then
         menuescolhas2(5)
     end
+
 end
 
 function menuDecorRuins()
-    MaxPOYUT = gg.choice({"🎲 • Lost City Gate", "🎲 • Ancient Ruins", "🎲 • Ancestral Statue",
-                          "🎲 • Lost City", "🎲 • Happy Gorilla", "🎲 • Jungle Cave",
-                          "🎲 • Ancient Calendar", "❌ • Return"}, nil)
+    MaxPOYUT = gg.choice({"1 • Lost City Gate", "2 • Ancient Ruins", "3 • Ancestral Statue", "4 • Lost City",
+                          "5 • Happy Gorilla", "6 • Jungle Cave", "7 • Ancient Calendar", "❌ • Return"}, nil)
+
     if MaxPOYUT == nil then
         return
-    end
-    if MaxPOYUT == 1 then
-        hack("r1POYUT")
-    end
-    if MaxPOYUT == 2 then
-        hack("r2POYUT")
-    end
-    if MaxPOYUT == 3 then
-        hack("r3POYUT")
-    end
-    if MaxPOYUT == 4 then
-        hack("r4POYUT")
-    end
-    if MaxPOYUT == 5 then
-        hack("r5POYUT")
-    end
-    if MaxPOYUT == 6 then
-        hack("r6POYUT")
-    end
-    if MaxPOYUT == 7 then
-        hack("r7POYUT")
-    end
-    if MaxPOYUT == 8 then
+    elseif MaxPOYUT == 1 then
+        hack("61656228h", "5F797475h", "69636E61h", "5F746E65h", "6D757264h", "00000073h", 5)
+    elseif MaxPOYUT == 2 then
+        hack("61656226h", "5F797475h", "69636E61h", "5F746E65h", "6E776F74h", "00000000h", 5)
+    elseif MaxPOYUT == 3 then
+        hack("61656228h", "5F797475h", "676E756Ah", "745F656Ch", "6D65746Fh", "00000073h", 5)
+    elseif MaxPOYUT == 4 then
+        hack("61656226h", "5F797475h", "676E756Ah", "725F656Ch", "736E6975h", "00007700h", 5)
+    elseif MaxPOYUT == 5 then
+        hack("61656224h", "5F797475h", "676E756Ah", "6D5F656Ch", "006B6E6Fh", "00007756h", 5)
+    elseif MaxPOYUT == 6 then
+        hack("6165622Ah", "5F797475h", "65766163h", "5F6E695Fh", "676E756Ah", "0000656Ch", 5)
+    elseif MaxPOYUT == 7 then
+        hack("79616D1Ah", "61635F61h", "646E656Ch", "00007261h", "C2A6E170h", "0000000Eh", 5)
+    elseif MaxPOYUT == 8 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorTownshipStatues()
-    MaxWSFP = gg.choice({"🎲 • The Discobolus", "🎲 • Statue of Triumph", "🎲 • Dedicated Artists",
-                         "🎲 • The Magnificent Five", "🎲 • Happy Chefs", "🎲 • Symbol of the New Year",
-                         "🎲 • Souvenir Shop", "🎲 • Kite Master", "🎲 • Street Artist",
-                         "🎲 • Fruit Artist", "🎲 • The Magnificent Three", "🎲 • Adrenaline attraction",
-                         "🎲 • Statue of a great leader", "❌ • Return"}, nil)
+    MaxWSFP = gg.choice({"1 • The Discobolus", "2 • Statue of Triumph", "3 • Dedicated Artists",
+                         "4 • The Magnificent Five", "5 • Happy Chefs", "6 • Symbol of the New Year",
+                         "7 • Souvenir Shop", "8 • Kite Master", "9 • Street Artist", "10 • Fruit Artist",
+                         "11 • The Magnificent Three", "12 • Adrenaline attraction",
+                         "13 • Statue of a great leader", "❌ • Return"}, nil)
+
     if MaxWSFP == nil then
         return
-    end
-    if MaxWSFP == 1 then
-        hack("r1WSFP")
-    end
-    if MaxWSFP == 2 then
-        hack("r2WSFP")
-    end
-    if MaxWSFP == 3 then
-        hack("r3WSFP")
-    end
-    if MaxWSFP == 4 then
-        hack("r4WSFP")
-    end
-    if MaxWSFP == 5 then
-        hack("r5WSFP")
-    end
-    if MaxWSFP == 6 then
-        hack("r6WSFP")
-    end
-    if MaxWSFP == 7 then
-        hack("r7WSFP")
-    end
-    if MaxWSFP == 8 then
-        hack("r8WSFP")
-    end
-    if MaxWSFP == 9 then
-        hack("r9WSFP")
-    end
-    if MaxWSFP == 10 then
-        hack("r10WSFP")
-    end
-    if MaxWSFP == 11 then
-        hack("r11WSFP")
-    end
-    if MaxWSFP == 12 then
-        hack("r12WSFP")
-    end
-    if MaxWSFP == 13 then
-        hack("r13WSFP")
-    end
-    if MaxWSFP == 14 then
+    elseif MaxWSFP == 1 then
+        hack("7369642Ah", "54737563h", "776F7268h", "615F7265h", "6569636Eh", "0000746Eh", 5)
+    elseif MaxWSFP == 2 then
+        hack("696B7320h", "776F4373h", "796C6F5Fh", "6169706Dh", "8C7E0064h", "00007601h", 5)
+    elseif MaxWSFP == 3 then
+        hack("6165622Ah", "5F797475h", "6F6C6F63h", "676E6972h", "6275635Fh", "00007365h", 5)
+    elseif MaxWSFP == 4 then
+        hack("61656224h", "5F797475h", "6D5F7935h", "6D756E6Fh", "00746E65h", "00007756h", 5)
+    elseif MaxWSFP == 5 then
+        hack("61656228h", "5F797475h", "6D696E61h", "5F736C61h", "74736170h", "00000061h", 5)
+    elseif MaxWSFP == 6 then
+        hack("69684326h", "6573656Eh", "705F594Eh", "74536769h", "65757461h", "00007600h", 5)
+    elseif MaxWSFP == 7 then
+        hack("61656228h", "5F797475h", "76756F73h", "72696E65h", "6F68735Fh", "00000070h", 5)
+    elseif MaxWSFP == 8 then
+        hack("6570532Ah", "6C616963h", "75616542h", "4B5F7974h", "694B6469h", "00006574h", 5)
+    elseif MaxWSFP == 9 then
+        hack("776F4312h", "69747241h", "F3007473h", "0000769Ah", "EBE1F591h", "0000769Ah", 5)
+    elseif MaxWSFP == 10 then
+        hack("6E696E16h", "6B5F616Ah", "6566696Eh", "00007000h", "05642CF8h", "00000058h", 5)
+    elseif MaxWSFP == 11 then
+        hack("6165621Eh", "5F797475h", "61625F33h", "6E6F6C6Ch", "00000000h", "00000000h", 5)
+    elseif MaxWSFP == 12 then
+        hack("6F6C461Ah", "5F726577h", "74617453h", "00006575h", "EA9286E8h", "0000008Dh", 1)
+    elseif MaxWSFP == 13 then
+        hack("7269622Ch", "61646874h", "6E696E79h", "63654465h", "7461726Fh", "006E6F69h", 1)
+    elseif MaxWSFP == 14 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorTree()
-    MaxBHSO = gg.choice({"🎲 • Jacaranda", "🎲 • Cactus", "🎲 • Baobab", "🎲 • Date Palm",
-                         "🎲 • Wisteria", "🎲 • Delonix regia", "🎲 • Araguaney", "🎲 • Rhododendron",
-                         "🎲 • Gladioli", "🎲 • Poppies", "🎲 • Field of Flowers", "❌ • Return"}, nil,
-        "CHOOSE ONE OPTION")
+    MaxBHSO = gg.choice({"1 • Jacaranda", "2 • Cactus", "3 • Baobab", "4 • Date Palm", "5 • Wisteria",
+                         "6 • Delonix regia", "7 • Araguaney", "8 • Rhododendron", "9 • Gladioli",
+                         "10 • Poppies", "11 • Field of Flowers", "❌ • Return"}, nil)
+
     if MaxBHSO == nil then
         return
-    end
-    if MaxBHSO == 1 then
-        hack("r1BHSO")
-    end
-    if MaxBHSO == 2 then
-        hack("r2BHSO")
-    end
-    if MaxBHSO == 3 then
-        hack("r3BHSO")
-    end
-    if MaxBHSO == 4 then
-        hack("r4BHSO")
-    end
-    if MaxBHSO == 5 then
-        hack("r5BHSO")
-    end
-    if MaxBHSO == 6 then
-        hack("r6BHSO")
-    end
-    if MaxBHSO == 7 then
-        hack("r7BHSO")
-    end
-    if MaxBHSO == 8 then
-        hack("r8BHSO")
-    end
-    if MaxBHSO == 9 then
-        hack("r9BHSO")
-    end
-    if MaxBHSO == 10 then
-        hack("r10BHSO")
-    end
-    if MaxBHSO == 11 then
-        hack("r11BHSO")
-    end
-    if MaxBHSO == 12 then
+    elseif MaxBHSO == 1 then
+        hack("6B616A12h", "6E617261h", "65006164h", "665F7900h", "6C45796Ch", "00007065h", 5)
+    elseif MaxBHSO == 2 then
+        hack("6361630Ch", "00737574h", "6564696Ch", "665F7900h", "6C45796Ch", "00007065h", 5)
+    elseif MaxBHSO == 3 then
+        hack("6F61620Ch", "00626162h", "6564696Ch", "665F7900h", "6C45796Ch", "00007065h", 5)
+    elseif MaxBHSO == 4 then
+        hack("61656222h", "5F797475h", "696E6966h", "61705F63h", "65006D6Ch", "00007400h", 5)
+    elseif MaxBHSO == 5 then
+        hack("6165621Eh", "5F797475h", "74736977h", "61697265h", "00656C00h", "00000061h", 5)
+    elseif MaxBHSO == 6 then
+        hack("6165621Ch", "5F797475h", "6F6C6564h", "0078696Eh", "00656C70h", "00000061h", 5)
+    elseif MaxBHSO == 7 then
+        hack("61656220h", "5F797475h", "67617261h", "656E6175h", "65000079h", "00007372h", 5)
+    elseif MaxBHSO == 8 then
+        hack("61656226h", "5F797475h", "646F6872h", "6E65646Fh", "6E6F7264h", "00000000h", 5)
+    elseif MaxBHSO == 9 then
+        hack("6F6C6626h", "62726577h", "675F6465h", "6964616Ch", "73756C6Fh", "00000000h", 5)
+    elseif MaxBHSO == 10 then
+        hack("6F6C6622h", "62726577h", "705F6465h", "6970706Fh", "00007365h", "00000000h", 5)
+    elseif MaxBHSO == 11 then
+        hack("6F6C6618h", "5F726577h", "67646568h", "00000065h", "00000000h", "00000000h", 5)
+    elseif MaxBHSO == 12 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorInflatable()
-    MaxVXCS = gg.choice({"🎲 • Inflatable Fish", "🎲 • Inflatable Pig", "🎲 • Inflatable Whale",
-                         "🎲 • Inflatable Cow", "🎲 • Inflatable Sheep", "🎲 • Inflatable Bee",
-                         "🎲 • Inflatable Dragon", "🎲 • Inflatable Elephant", "🎲 • Inflatable Panda",
-                         "🎲 • Shark Jaw Trampoline", "🎲 • Lion Trampoline", "🎲 • Zoo Trampoline",
+    MaxVXCS = gg.choice({"1 • Inflatable Fish", "2 • Inflatable Pig", "3 • Inflatable Whale",
+                         "4 • Inflatable Cow", "5 • Inflatable Sheep", "6 • Inflatable Bee",
+                         "7 • Inflatable Dragon", "8 • Inflatable Elephant", "9 • Inflatable Panda",
+                         "10 • Shark Jaw Trampoline", "11 • Lion Trampoline", "12 • Zoo Trampoline",
                          "❌ • Return"}, nil)
+
     if MaxVXCS == nil then
         return
-    end
-    if MaxVXCS == 1 then
-        hack("r1VXCS")
-    end
-    if MaxVXCS == 2 then
-        hack("r2VXCS")
-    end
-    if MaxVXCS == 3 then
-        hack("r3VXCS")
-    end
-    if MaxVXCS == 4 then
-        hack("r4VXCS")
-    end
-    if MaxVXCS == 5 then
-        hack("r5VXCS")
-    end
-    if MaxVXCS == 6 then
-        hack("r6VXCS")
-    end
-    if MaxVXCS == 7 then
-        hack("r7VXCS")
-    end
-    if MaxVXCS == 8 then
-        hack("r8VXCS")
-    end
-    if MaxVXCS == 9 then
-        hack("r9VXCS")
-    end
-    if MaxVXCS == 10 then
-        hack("r10VXCS")
-    end
-    if MaxVXCS == 11 then
-        hack("r11VXCS")
-    end
-    if MaxVXCS == 12 then
-        hack("r12VXCS")
-    end
-    if MaxVXCS == 13 then
+    elseif MaxVXCS == 1 then
+        hack("61656224h", "5F797475h", "68736966h", "6C61625Fh", "006E6F6Ch", "00000000h", 5)
+    elseif MaxVXCS == 2 then
+        hack("65705328h", "6C616963h", "75616542h", "665F7974h", "6950796Ch", "00000067h", 5)
+    elseif MaxVXCS == 3 then
+        hack("6570532Ch", "6C616963h", "75616542h", "665F7974h", "6857796Ch", "00656C61h", 5)
+    elseif MaxVXCS == 4 then
+        hack("65705328h", "6C616963h", "75616542h", "665F7974h", "6F43796Ch", "00000077h", 5)
+    elseif MaxVXCS == 5 then
+        hack("6570532Ch", "6C616963h", "75616542h", "665F7974h", "6853796Ch", "00706565h", 5)
+    elseif MaxVXCS == 6 then
+        hack("796C660Ch", "00656542h", "7578756Ch", "685F7972h", "6573756Fh", "00007400h", 5)
+    elseif MaxVXCS == 7 then
+        hack("796C6612h", "67617244h", "75006E6Fh", "685F7972h", "6573756Fh", "00007400h", 5)
+    elseif MaxVXCS == 8 then
+        hack("6570532Ah", "6C616963h", "75616542h", "665F7974h", "6C45796Ch", "00007065h", 5)
+    elseif MaxVXCS == 9 then
+        hack("796C6610h", "646E6150h", "65640061h", "665F7900h", "6C45796Ch", "00007065h", 5)
+    elseif MaxVXCS == 10 then
+        hack("61687316h", "735F6B72h", "6564696Ch", "665F7900h", "6C45796Ch", "00007065h", 5)
+    elseif MaxVXCS == 11 then
+        hack("6F696C16h", "6C735F6Eh", "73656469h", "66006500h", "6C45796Ch", "00007065h", 5)
+    elseif MaxVXCS == 12 then
+        hack("6C61621Ah", "5F6E6F6Fh", "74736163h", "6600656Ch", "6C45796Ch", "00007065h", 5)
+    elseif MaxVXCS == 13 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorPuzzle()
-    MaxTPLKA = gg.choice({"🎲 • Land of the Dinosaurs", "🎲 • Spaceport", "🎲 • Snowman",
-                          "🎲 • Giant Cake", "🎲 • Classic Car Collection", "🎲 • Magic School",
-                          "🎲 • Tree of Lights", "🎲 • Disco District", "🎲 • Rabbit Village",
-                          "🎲 • Water Village", "❌ • Return"}, nil)
+    MaxTPLKA = gg.choice({"1 • Land of the Dinosaurs", "2 • Spaceport", "3 • Snowman", "4 • Giant Cake",
+                          "5 • Classic Car Collection", "6 • Magic School", "7 • Tree of Lights",
+                          "8 • Disco District", "9 • Rabbit Village", "10 • Water Village", "❌ • Return"}, nil)
+
     if MaxTPLKA == nil then
         return
-    end
-    if MaxTPLKA == 1 then
-        hack("r1TPLKA")
-    end
-    if MaxTPLKA == 2 then
-        hack("r2TPLKA")
-    end
-    if MaxTPLKA == 3 then
-        hack("r3TPLKA")
-    end
-    if MaxTPLKA == 4 then
-        hack("r4TPLKA")
-    end
-    if MaxTPLKA == 5 then
-        hack("r5TPLKA")
-    end
-    if MaxTPLKA == 6 then
-        hack("r6TPLKA")
-    end
-    if MaxTPLKA == 7 then
-        hack("r7TPLKA")
-    end
-    if MaxTPLKA == 8 then
-        hack("r8TPLKA")
-    end
-    if MaxTPLKA == 9 then
-        hack("r9TPLKA")
-    end
-    if MaxTPLKA == 10 then
-        hack("r10TPLKA")
-    end
-    if MaxTPLKA == 11 then
+    elseif MaxTPLKA == 1 then
+        hack("72754A18h", "69737361h", "72615063h", "6C74006Bh", "61690065h", "0000006Ch", 5)
+    elseif MaxTPLKA == 2 then
+        hack("61705316h", "6F526563h", "74656B63h", "00616C00h", "61690065h", "0000006Ch", 5)
+    elseif MaxTPLKA == 3 then
+        hack("6F6E530Eh", "6E616D77h", "6F6E7300h", "6F6D5F77h", "79656B6Eh", "00007600h", 5)
+    elseif MaxTPLKA == 4 then
+        hack("67654D10h", "6B614361h", "006F0065h", "74726F66h", "73736572h", "00000000h", 5)
+    elseif MaxTPLKA == 5 then
+        hack("74657214h", "615F6F72h", "006F7476h", "74726F66h", "73736572h", "00000000h", 5)
+    elseif MaxTPLKA == 6 then
+        hack("6C614824h", "65776F6Ch", "30326E65h", "65443731h", "00726F63h", "00310072h", 5)
+    elseif MaxTPLKA == 7 then
+        hack("6968431Ah", "6573656Eh", "7254594Eh", "6F006565h", "0032316Eh", "00310072h", 5)
+    elseif MaxTPLKA == 8 then
+        hack("0", "0", "0", "0", "0", "0", 5)
+    elseif MaxTPLKA == 9 then
+        hack("7361451Eh", "32726574h", "44373130h", "726F6365h", "00323100h", "00310072h", 5)
+    elseif MaxTPLKA == 10 then
+        hack("74615720h", "75427265h", "6C61676Eh", "5053776Fh", "05630039h", "00000000h", 5)
+    elseif MaxTPLKA == 11 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorDiamonds()
-    MaxLFGJZ = gg.choice({"🎲 • St. Basil's Cathedral", "🎲 • Castle", "🎲 • Statue of Liberty",
-                          "🎲 • Crater", "🎲 • Taj Mahal", "🎲 • Watchtower",
-                          "🎲 • Petronas Twin Towers", "🎲 • Pizza Tower", "🎲 • Temple of Heaven",
-                          "🎲 • Notre Dame de Paris", "🎲 • Space Needle", "🎲 • Sea Arches",
-                          "🎲 • Big Ben", "🎲 • Golden Gate Bridge", "🎲 • Thai Temple",
-                          "🎲 • Burj Khalifa", "🎲 • Pyramid", "🎲 • Yacht",
-                          "🎲 • Empire State Building", "🎲 • Vintage Boat", "🎲 • Eiffel Tower",
-                          "🎲 • Space Needle", "🎲 • Flag", "🎲 • Sydney Opera House",
-                          "🎲 • Triumphal Arch", "❌ • Return"}, nil)
+    MaxLFGJZ = gg.choice({"1 • St. Basil's Cathedral", "2 • Castle", "3 • Statue of Liberty", "4 • Crater",
+                          "5 • Taj Mahal", "6 • Watchtower", "7 • Petronas Twin Towers", "8 • Pizza Tower",
+                          "9 • Temple of Heaven", "10 • Notre Dame de Paris", "11 • Space Needle",
+                          "12 • Sea Arches", "13 • Big Ben", "14 • Golden Gate Bridge", "15 • Thai Temple",
+                          "16 • Burj Khalifa", "17 • Pyramid", "18 • Yacht", "19 • Empire State Building",
+                          "20 • Vintage Boat", "21 • Eiffel Tower", "22 • Space Needle", "23 • Flag",
+                          "24 • Sydney Opera House", "25 • Triumphal Arch", "❌ • Return"}, nil)
+
     if MaxLFGJZ == nil then
         return
-    end
-    if MaxLFGJZ == 1 then
-        hack("r1LFGJZ")
-    end
-    if MaxLFGJZ == 2 then
-        hack("r2LFGJZ")
-    end
-    if MaxLFGJZ == 3 then
-        hack("r3LFGJZ")
-    end
-    if MaxLFGJZ == 4 then
-        hack("r4LFGJZ")
-    end
-    if MaxLFGJZ == 5 then
-        hack("r5LFGJZ")
-    end
-    if MaxLFGJZ == 6 then
-        hack("r6LFGJZ")
-    end
-    if MaxLFGJZ == 7 then
-        hack("r7LFGJZ")
-    end
-    if MaxLFGJZ == 8 then
-        hack("r8LFGJZ")
-    end
-    if MaxLFGJZ == 9 then
-        hack("r9LFGJZ")
-    end
-    if MaxLFGJZ == 10 then
-        hack("r10LFGJZ")
-    end
-    if MaxLFGJZ == 11 then
-        hack("r11LFGJZ")
-    end
-    if MaxLFGJZ == 12 then
-        hack("r12LFGJZ")
-    end
-    if MaxLFGJZ == 13 then
-        hack("r13LFGJZ")
-    end
-    if MaxLFGJZ == 14 then
-        hack("r14LFGJZ")
-    end
-    if MaxLFGJZ == 15 then
-        hack("r15LFGJZ")
-    end
-    if MaxLFGJZ == 16 then
-        hack("r16LFGJZ")
-    end
-    if MaxLFGJZ == 17 then
-        hack("r17LFGJZ")
-    end
-    if MaxLFGJZ == 18 then
-        hack("r18LFGJZ")
-    end
-    if MaxLFGJZ == 19 then
-        hack("r19LFGJZ")
-    end
-    if MaxLFGJZ == 20 then
-        hack("r20LFGJZ")
-    end
-    if MaxLFGJZ == 21 then
-        hack("r21LFGJZ")
-    end
-    if MaxLFGJZ == 22 then
-        hack("r22LFGJZ")
-    end
-    if MaxLFGJZ == 23 then
-        hack("r23LFGJZ")
-    end
-    if MaxLFGJZ == 24 then
-        hack("r24LFGJZ")
-    end
-    if MaxLFGJZ == 25 then
-        hack("r25LFGJZ")
-    end
-    if MaxLFGJZ == 26 then
+    elseif MaxLFGJZ == 1 then
+        hack("73614214h", "435F6C69h", "00687461h", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 2 then
+        hack("7361630Ch", "00656C74h", "8158B1DEh", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 3 then
+        hack("65726614h", "6D6F6465h", "0031765Fh", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 4 then
+        hack("6172630Ch", "00726574h", "8158B1DEh", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 5 then
+        hack("6A617416h", "6168616Dh", "31765F6Ch", "00007200h", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 6 then
+        hack("6F6F6C1Ah", "74756F6Bh", "696F705Fh", "0000746Eh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 7 then
+        hack("74657010h", "616E6F72h", "81580073h", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 8 then
+        hack("776F541Ah", "6F5F7265h", "69505F66h", "00006173h", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 9 then
+        hack("6C615022h", "5F656361h", "745F666Fh", "735F6568h", "AA00796Bh", "0000724Dh", 5)
+    elseif MaxLFGJZ == 10 then
+        hack("746F4E14h", "445F6572h", "00656D61h", "66006500h", "6C45796Ch", "00007065h", 5)
+    elseif MaxLFGJZ == 11 then
+        hack("6170731Ch", "656E6563h", "656C6465h", "0031765Fh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 12 then
+        hack("61657310h", "7461675Fh", "81580065h", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 13 then
+        hack("6769620Eh", "6E61625Fh", "8158B100h", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 14 then
+        hack("6C6F6716h", "5F6E6564h", "65746167h", "00007200h", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 15 then
+        hack("61656224h", "5F797475h", "69616874h", "6D65745Fh", "00656C70h", "0000724Dh", 5)
+    elseif MaxLFGJZ == 16 then
+        hack("61656228h", "5F797475h", "64727562h", "685F687Ah", "66696C61h", "00000061h", 5)
+    elseif MaxLFGJZ == 17 then
+        hack("72797010h", "64696D61h", "81580065h", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 18 then
+        hack("63617912h", "665F7468h", "81006E69h", "0000724Dh", "0000000Bh", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 19 then
+        hack("706D651Eh", "5F657269h", "74617473h", "31765F65h", "00000000h", "2D956CC0h", 5)
+    elseif MaxLFGJZ == 20 then
+        hack("6165621Eh", "5F797475h", "6C696173h", "74616F62h", "00326400h", "00007601h", 5)
+    elseif MaxLFGJZ == 21 then
+        hack("66696516h", "745F6C65h", "7265776Fh", "00007600h", "CBB17B60h", "00000000h", 5)
+    elseif MaxLFGJZ == 22 then
+        hack("6170731Ch", "656E6563h", "656C6465h", "0031765Fh", "CBB1D8F0h", "00000000h", 5)
+    elseif MaxLFGJZ == 23 then
+        hack("616C6608h", "00000067h", "EC0A2591h", "0000769Ah", "CBF27020h", "00000000h", 5)
+    elseif MaxLFGJZ == 24 then
+        hack("64797318h", "5F79656Eh", "7265706Fh", "00000061h", "CBF30E28h", "00000000h", 5)
+    elseif MaxLFGJZ == 25 then
+        hack("6E6F6D12h", "6E656D75h", "EC003574h", "0000769Ah", "CBF2DEA8h", "00000000h", 5)
+    elseif MaxLFGJZ == 26 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorChina()
-    MaxCHIMN = gg.choice({"🎲 • Chinatown", "🎲 • Dragon Dance", "🎲 • x", "❌ • Return"}, nil,
-        "CHOOSE ONE OPTION")
+    MaxCHIMN = gg.choice({"🎲 • Chinatown", "🎲 • Dragon Dance", "🎲 • x", "❌ • Return"}, nil)
     if MaxCHIMN == nil then
         return
-    end
-    if MaxCHIMN == 1 then
-        hack("r1CHIMN")
-    end
-    if MaxCHIMN == 2 then
-        hack("r2CHIMN")
-    end
-    if MaxCHIMN == 3 then
+    elseif MaxCHIMN == 1 then
+        hack("61656222h", "5F797475h", "6E696863h", "6F745F61h", "65006E77h", "00726163h", 5)
+    elseif MaxCHIMN == 2 then
+        hack("61656226h", "5F797475h", "67617264h", "645F6E6Fh", "65636E61h", "00007700h", 5)
+    elseif MaxCHIMN == 3 then
         hack("r3CHIMN")
-    end
-    if MaxCHIMN == 4 then
+    elseif MaxCHIMN == 4 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorEvent()
-    MaxFGJZ = gg.choice({"🎲 • Florist's House", "🎲 • House of Terror", "🎲 • Art Exhibition",
-                         "🎲 • Farmers Market", "🎲 • Gardening School", "🎲 • Mini Rabbit Zoo",
-                         "🎲 • Red Lily Pond", "🎲 • Rat with Sack of Coins", "🎲 • Aquarist's House",
-                         "🎲 • Camp Kitchen", "🎲 • Fruit Tribe", "🎲 • Experimental Jet Pack Test",
-                         "🎲 • Fruit Village", "🎲 • Tuned Cars", "🎲 • Outdoor Cinema",
-                         "🎲 • Altlantida Exhibition", "🎲 • Candy Park", "🎲 • Candy Castle",
-                         "🎲 • Center Music", "🎲 • Pirate Camp", "🎲 • Yeti", "🎲 • UFO Detected",
-                         "🎲 • Mother Nature Pool", "🎲 • Sunken City", "🎲 • Marine Station",
-                         "🎲 • Hotel Atlantida", "❌ • Return"}, nil)
+    MaxFGJZ = gg.choice({"1 • Florist's House", "2 • House of Terror", "3 • Art Exhibition",
+                         "4 • Farmers Market", "5 • Gardening School", "6 • Mini Rabbit Zoo",
+                         "7 • Red Lily Pond", "8 • Rat with Sack of Coins", "9 • Aquarist's House",
+                         "10 • Camp Kitchen", "11 • Fruit Tribe", "12 • Experimental Jet Pack Test",
+                         "13 • Fruit Village", "14 • Tuned Cars", "15 • Outdoor Cinema",
+                         "16 • Altlantida Exhibition", "17 • Candy Park", "18 • Candy Castle",
+                         "19 • Center Music", "20 • Pirate Camp", "21 • Yeti", "22 • UFO Detected",
+                         "23 • Mother Nature Pool", "24 • Sunken City", "25 • Marine Station",
+                         "26 • Hotel Atlantida", "❌ • Return"}, nil)
+
     if MaxFGJZ == nil then
         return
-    end
-    if MaxFGJZ == 1 then
-        hack("r1LFG")
-    end
-    if MaxFGJZ == 2 then
-        hack("r2LFG")
-    end
-    if MaxFGJZ == 3 then
-        hack("r3LFG")
-    end
-    if MaxFGJZ == 4 then
-        hack("r4LFG")
-    end
-    if MaxFGJZ == 5 then
-        hack("r5LFG")
-    end
-    if MaxFGJZ == 6 then
-        hack("r6LFG")
-    end
-    if MaxFGJZ == 7 then
-        hack("r7LFG")
-    end
-    if MaxFGJZ == 8 then
-        hack("r8LFG")
-    end
-    if MaxFGJZ == 9 then
-        hack("r9LFG")
-    end
-    if MaxFGJZ == 10 then
-        hack("r10LFG")
-    end
-    if MaxFGJZ == 11 then
-        hack("r11LFG")
-    end
-    if MaxFGJZ == 12 then
-        hack("r12LFG")
-    end
-    if MaxFGJZ == 13 then
-        hack("r13LFG")
-    end
-    if MaxFGJZ == 14 then
-        hack("r14LFG")
-    end
-    if MaxFGJZ == 15 then
-        hack("r15LFG")
-    end
-    if MaxFGJZ == 16 then
-        hack("r16LFG")
-    end
-    if MaxFGJZ == 17 then
-        hack("r17LFG")
-    end
-    if MaxFGJZ == 18 then
-        hack("r18LFG")
-    end
-    if MaxFGJZ == 19 then
-        hack("r19LFG")
-    end
-    if MaxFGJZ == 20 then
-        hack("r20LFG")
-    end
-    if MaxFGJZ == 21 then
-        hack("r21LFG")
-    end
-    if MaxFGJZ == 22 then
-        hack("r22LFG")
-    end
-    if MaxFGJZ == 23 then
-        hack("r23LFG")
-    end
-    if MaxFGJZ == 24 then
-        hack("r24LFG")
-    end
-    if MaxFGJZ == 25 then
-        hack("r25LFG")
-    end
-    if MaxFGJZ == 26 then
-        hack("r26LFG")
-    end
-    if MaxFGJZ == 27 then
+    elseif MaxFGJZ == 1 then
+        hack("6F6C6618h", "5F726577h", "73756F68h", "00000065h", "056409F0h", "00000055h", 5)
+    elseif MaxFGJZ == 2 then
+        hack("61686322h", "7265626Dh", "6C61685Fh", "65776F6Ch", "05006E65h", "0000005Ah", 5)
+    elseif MaxFGJZ == 3 then
+        hack("6C616716h", "7972656Ch", "7472615Fh", "00007000h", "05644598h", "00000064h", 5)
+    elseif MaxFGJZ == 4 then
+        hack("69616616h", "65725F72h", "65756373h", "00007000h", "0564D508h", "00000022h", 5)
+    elseif MaxFGJZ == 5 then
+        hack("756F791Eh", "675F676Eh", "65647261h", "7372656Eh", "05640400h", "0000002Ch", 5)
+    elseif MaxFGJZ == 6 then
+        hack("6E6F6322h", "74636174h", "5F6F6F5Ah", "63736572h", "05006575h", "0000000Fh", 5)
+    elseif MaxFGJZ == 7 then
+        hack("6465721Ah", "696C694Ch", "6F507365h", "0000646Eh", "05655988h", "0000006Dh", 5)
+    elseif MaxFGJZ == 8 then
+        hack("7461721Ch", "64726147h", "6A5F6E65h", "00706D75h", "05655FE8h", "00000064h", 5)
+    elseif MaxFGJZ == 9 then
+        hack("7571612Ah", "75697261h", "756F486Dh", "665F6573h", "69687369h", "0000676Eh", 5)
+    elseif MaxFGJZ == 10 then
+        hack("74696B1Ah", "6E656863h", "616C705Fh", "00006B6Eh", "05644C30h", "00000000h", 5)
+    elseif MaxFGJZ == 11 then
+        hack("6C69761Ch", "6567616Ch", "6E756A5Fh", "00656C67h", "05659048h", "00000068h", 5)
+    elseif MaxFGJZ == 12 then
+        hack("74656A1Ah", "6B636170h", "616C705Fh", "0000656Eh", "05659EF0h", "0000006Bh", 5)
+    elseif MaxFGJZ == 13 then
+        hack("7572661Eh", "61507469h", "6B5F6B72h", "6566696Eh", "05659600h", "00000000h", 5)
+    elseif MaxFGJZ == 14 then
+        hack("776F6C20h", "65646972h", "725F7372h", "75637365h", "69000065h", "0000676Eh", 5)
+    elseif MaxFGJZ == 15 then
+        hack("7274732Ah", "43746565h", "6D656E69h", "61635F61h", "6873656Bh", "0000706Fh", 5)
+    elseif MaxFGJZ == 16 then
+        hack("73756D1Eh", "5F6D7565h", "616C7461h", "7369746Eh", "05657C00h", "00000000h", 5)
+    elseif MaxFGJZ == 17 then
+        hack("6C656A16h", "6F42796Ch", "65636E75h", "00007000h", "05651560h", "0000005Ch", 5)
+    elseif MaxFGJZ == 18 then
+        hack("6E616322h", "61437964h", "656C7473h", "6C65685Fh", "05007869h", "0000005Ch", 5)
+    elseif MaxFGJZ == 19 then
+        hack("73756D24h", "75516369h", "65747261h", "756D5F72h", "00636973h", "0000004Ch", 5)
+    elseif MaxFGJZ == 20 then
+        hack("61656228h", "5F797475h", "74726170h", "69705F79h", "65746172h", "00730073h", 5)
+    elseif MaxFGJZ == 21 then
+        hack("61656216h", "5F797475h", "69746579h", "73746100h", "6974735Fh", "0073746Ch", 5)
+    elseif MaxFGJZ == 22 then
+        hack("61656214h", "5F797475h", "006F6675h", "73746162h", "6974735Fh", "0073746Ch", 5)
+    elseif MaxFGJZ == 23 then
+        hack("6E6F7022h", "6F6D5F64h", "72656874h", "7261655Fh", "05006874h", "0000006Eh", 5)
+    elseif MaxFGJZ == 24 then
+        hack("63726128h", "6F656168h", "79676F6Ch", "6C74615Fh", "69746E61h", "00000073h", 5)
+    elseif MaxFGJZ == 25 then
+        hack("6165731Eh", "74617453h", "5F6E6F69h", "65766964h", "05654A00h", "00000076h", 5)
+    elseif MaxFGJZ == 26 then
+        hack("6165622Ah", "5F797475h", "616C7461h", "7369746Eh", "746F685Fh", "00006C65h", 5)
+    elseif MaxFGJZ == 27 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorKids()
-    MaTPKi = gg.choice({"🎲 • Mechanical Scarecrow", "🎲 • Remote Control Car Racing", "🎲 • Fruit Cannon",
-                        "🎲 • Knife Throwing", "🎲 • Fruit Shooting Range", "🎲 • Power Hammer",
-                        "🎲 • Pinball", "🎲 • Stuffed Animal Machine", "🎲 • Ultimate Console",
-                        "🎲 • Octopus Merry-Go-Round", "❌ • Return"}, nil)
+    MaTPKi = gg.choice({"1 • Mechanical Scarecrow", "2 • Remote Control Car Racing", "3 • Fruit Cannon",
+                        "4 • Knife Throwing", "5 • Fruit Shooting Range", "6 • Power Hammer", "7 • Pinball",
+                        "8 • Stuffed Animal Machine", "9 • Ultimate Console", "10 • Octopus Merry-Go-Round",
+                        "❌ • Return"}, nil)
+
     if MaTPKi == nil then
         return
-    end
-    if MaTPKi == 1 then
-        hack("r1MaTPKi")
-    end
-    if MaTPKi == 2 then
-        hack("r2MaTPKi")
-    end
-    if MaTPKi == 3 then
-        hack("r3MaTPKi")
-    end
-    if MaTPKi == 4 then
-        hack("r4MaTPKi")
-    end
-    if MaTPKi == 5 then
-        hack("r5MaTPKi")
-    end
-    if MaTPKi == 6 then
-        hack("r6MaTPKi")
-    end
-    if MaTPKi == 7 then
-        hack("r7MaTPKi")
-    end
-    if MaTPKi == 8 then
-        hack("r8MaTPKi")
-    end
-    if MaTPKi == 9 then
-        hack("r9MaTPKi")
-    end
-    if MaTPKi == 10 then
-        hack("r10MaTPKi")
-    end
-    if MaTPKi == 11 then
+    elseif MaTPKi == 1 then
+        hack("63656D18h", "72745368h", "616D7761h", "0000006Eh", "05650138h", "00000064h", 5)
+    elseif MaTPKi == 2 then
+        hack("64617220h", "61726F69h", "725F6563h", "75637365h", "05640065h", "00000068h", 5)
+    elseif MaTPKi == 3 then
+        hack("75726624h", "6C537469h", "6E696369h", "6E6B5F67h", "00656669h", "0000006Ah", 5)
+    elseif MaTPKi == 4 then
+        hack("6165622Ch", "5F797475h", "6F726874h", "676E6977h", "696E6B5Fh", "00736576h", 5)
+    elseif MaTPKi == 5 then
+        hack("6F68731Eh", "6E69746Fh", "65725F67h", "65756373h", "05647E00h", "00000064h", 5)
+    elseif MaTPKi == 6 then
+        hack("6E796424h", "6D6F6D61h", "72657465h", "7365725Fh", "00657563h", "00000039h", 5)
+    elseif MaTPKi == 7 then
+        hack("6E69701Ah", "6C6C6162h", "6C65685Fh", "00007869h", "0564E828h", "0000007Dh", 5)
+    elseif MaTPKi == 8 then
+        hack("796F7420h", "6863614Dh", "5F656E69h", "696C6568h", "05640078h", "0000004Bh", 5)
+    elseif MaTPKi == 9 then
+        hack("6D61671Ah", "796F6265h", "6C65685Fh", "00007869h", "056508D8h", "00000078h", 5)
+    elseif MaTPKi == 10 then
+        hack("72614320h", "6573756Fh", "634F5F6Ch", "75706F74h", "EA920073h", "0000008Ch", 1)
+    elseif MaTPKi == 11 then
         menuescolhas2(5)
     end
 end
@@ -2479,124 +2055,86 @@ function menuDecorExpedition()
                         '30 • MonkeyLand Water Park', '31 • Mountain Haven', '32 • Sweet Amusement Park',
                         '33 • Halloween Windmill', '34 • Gate to Cyber City', '35 • Sheriff Office',
                         '36 • Santa Village', '37 • Jazz Club', '38 • Sinister Carriage', '❌ • Return'}, nil)
+
     if MNCvSW == nil then
         return
-    end
-    if MNCvSW == 1 then
+    elseif MNCvSW == 1 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1698983535, 1698983535, 1634738994, 3372146, "rExpe_1")
-    end
-    if MNCvSW == 2 then
+    elseif MNCvSW == 2 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738998, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 3 then
+    elseif MNCvSW == 3 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738995, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 4 then
+    elseif MNCvSW == 4 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738996, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 5 then
+    elseif MNCvSW == 5 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738997, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 6 then
+    elseif MNCvSW == 6 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738999, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 7 then
+    elseif MNCvSW == 7 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634739000, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 8 then
+    elseif MNCvSW == 8 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634739001, 3241074, "rExpe_1")
-    end
-    if MNCvSW == 9 then
+    elseif MNCvSW == 9 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738993, 3372146, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 10 then
+    elseif MNCvSW == 10 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738994, 3372146, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 11 then
+    elseif MNCvSW == 11 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738995, 3372146, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 12 then
+    elseif MNCvSW == 12 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738996, 3372146, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 13 then
+    elseif MNCvSW == 13 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738997, 3306610, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 14 then
+    elseif MNCvSW == 14 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738998, 3306610, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 15 then
+    elseif MNCvSW == 15 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738999, 3306610, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 16 then
+    elseif MNCvSW == 16 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634739000, 3241074, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 17 then
+    elseif MNCvSW == 17 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634739001, 3241074, 7561581, "rExpe_3")
-    end
-    if MNCvSW == 18 then
+    elseif MNCvSW == 18 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1881354289, 829715041, 7561581, "rExpe_4")
-    end
-    if MNCvSW == 19 then
+    elseif MNCvSW == 19 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1881354545, 829715041, 7561581, "rExpe_4")
-    end
-    if MNCvSW == 20 then
+    elseif MNCvSW == 20 then
         hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1881354801, 829715041, 7561581, "rExpe_4")
-    end
-    if MNCvSW == 21 then
+    elseif MNCvSW == 21 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354289, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 22 then
+    elseif MNCvSW == 22 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354545, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 23 then
+    elseif MNCvSW == 23 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354801, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 24 then
+    elseif MNCvSW == 24 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355057, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 25 then
+    elseif MNCvSW == 25 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355313, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 26 then
+    elseif MNCvSW == 26 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355569, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 27 then
+    elseif MNCvSW == 27 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355825, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 28 then
+    elseif MNCvSW == 28 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356081, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 29 then
+    elseif MNCvSW == 29 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356337, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 30 then
+    elseif MNCvSW == 30 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356593, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 31 then
+    elseif MNCvSW == 31 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354290, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 32 then
+    elseif MNCvSW == 32 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354546, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 33 then
+    elseif MNCvSW == 33 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354802, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 34 then
+    elseif MNCvSW == 34 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355315, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 35 then
+    elseif MNCvSW == 35 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355571, 829715041, "rExpe_2")
-    end
-    if MNCvSW == 36 then
+    elseif MNCvSW == 36 then
         menuescolhas2(5)
-    end
-    if MNCvSW == 37 then
+    elseif MNCvSW == 37 then
         menuescolhas2(5)
-    end
-    if MNCvSW == 38 then
+    elseif MNCvSW == 38 then
         menuescolhas2(5)
-    end
-    if MNCvSW == 39 then
+    elseif MNCvSW == 39 then
         menuescolhas2(5)
     end
 end
@@ -2608,29 +2146,21 @@ function menuCoupon()
 
     if MNC == nil then
         return
-    end
-    if MNC == 1 then
-        hack("a")
-    end
-    if MNC == 2 then
-        hack("b")
-    end
-    if MNC == 3 then
-        hack("c")
-    end
-    if MNC == 4 then
-        hack("d")
-    end
-    if MNC == 5 then
-        hack("e")
-    end
-    if MNC == 6 then
-        hack("f")
-    end
-    if MNC == 7 then
-        hack("mm")
-    end
-    if MNC == 8 then
+    elseif MNC == 1 then
+        hack("756F432Ch", "4C6E6F70h", "5464616Fh", "6E696172h", "70726941h", "0074726Fh", 0)
+    elseif MNC == 2 then
+        hack("6572661Ah", "70784565h", "69736E61h", "00006E6Fh", "0", "0", 0)
+    elseif MNC == 3 then
+        hack("65726618h", "626D4165h", "6E497261h", "00000063h", "00000000h", "00000000h", 0)
+    elseif MNC == 4 then
+        hack("756F4328h", "556E6F70h", "61726770h", "61466564h", "726F7463h", "00000079h", 0)
+    elseif MNC == 5 then
+        hack("1970225956", "1433300848", "1634887536", "1918133604", "7235937", "1970225956", 0)
+    elseif MNC == 6 then
+        hack("1970225958", "1433300848", "1634887536", "1934189924", "1684955500", "0", 0)
+    elseif MNC == 7 then
+        hack("756F4320h", "486E6F70h", "44657269h", "656C6165h", "00000072h", "00000000h", 0)
+    elseif MNC == 8 then
         menuescolhas2(1)
     end
 end
@@ -2639,28 +2169,22 @@ function menuBadge()
     MYU = gg.choice(
         {'💎 • Badge 1', '💎 • Badge 2', '💎 • Badge 3', '💎 • Badge 4', '💎 • Badge 5',
          '💎 • Badge 6', '❌ • Return'}, nil)
+
     if MYU == nil then
         return
-    end
-    if MYU == 1 then
-        hackBadg("a")
-    end
-    if MYU == 2 then
-        hackBadg("b")
-    end
-    if MYU == 3 then
-        hackBadg("c")
-    end
-    if MYU == 4 then
-        hackBadg("d")
-    end
-    if MYU == 5 then
-        hackBadg("e")
-    end
-    if MYU == 6 then
-        hackBadg("f")
-    end
-    if MYU == 7 then
+    elseif MYU == 1 then
+        hack("1684103706", "811558247", "1633836849", "25971", "426107464", "112", 1)
+    elseif MYU == 2 then
+        hack("1684103708", "811558247", "1919377201", "6581857", "426107464", "112", 1)
+    elseif MYU == 3 then
+        hack("1684103712", "811558247", "846618417", "1935762015", "426049637", "112", 1)
+    elseif MYU == 4 then
+        hack("1684103714", "811558247", "846618417", "1634887519", "419456110", "112", 1)
+    elseif MYU == 5 then
+        hack("1684103706", "811558247", "1633836850", "25971", "426107464", "112", 1)
+    elseif MYU == 6 then
+        hack("1684103708", "811558247", "1919377202", "6581857", "426107464", "112", 1)
+    elseif MYU == 7 then
         menuescolhas2(1)
     end
 end
@@ -13734,80 +13258,6 @@ function hackFortress_5()
     hackSkin_1Dh("rExpe_2")
 end
 
--- HACK BADGE
-function hackBadg(varith)
-    gg.toast("loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    -- Badge
-    if varith == "a" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "112")
-        setd(-56, "426107464")
-        setd(-60, "25971")
-        setd(-64, "1633836849")
-        setd(-68, "811558247")
-        setd(-72, "1684103706")
-    elseif varith == "b" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "112")
-        setd(-56, "426107464")
-        setd(-60, "6581857")
-        setd(-64, "1919377201")
-        setd(-68, "811558247")
-        setd(-72, "1684103708")
-    elseif varith == "c" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "112")
-        setd(-56, "426049637")
-        setd(-60, "1935762015")
-        setd(-64, "846618417")
-        setd(-68, "811558247")
-        setd(-72, "1684103712")
-    elseif varith == "d" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "112")
-        setd(-56, "419456110")
-        setd(-60, "1634887519")
-        setd(-64, "846618417")
-        setd(-68, "811558247")
-        setd(-72, "1684103714")
-    elseif varith == "e" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "112")
-        setd(-56, "426107464")
-        setd(-60, "25971")
-        setd(-64, "1633836850")
-        setd(-68, "811558247")
-        setd(-72, "1684103706")
-    elseif varith == "f" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "112")
-        setd(-56, "426107464")
-        setd(-60, "6581857")
-        setd(-64, "1919377202")
-        setd(-68, "811558247")
-        setd(-72, "1684103708")
-
-    end
-    gg.clearResults()
-end
-
 -- HACK SKIN
 function hackSkin_1Fh(varcJExpe_2)
     ItemPass()
@@ -14387,7 +13837,7 @@ function hackSkin_17h(varcJExpe_2)
 end
 
 ---- HACK ITEMS GOLDPASS
-function hack(variacao)
+function hack(val1, val2, val3, val4, val5, val6, quantity)
     gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
@@ -14401,6451 +13851,24 @@ function hack(variacao)
     setd(32, "0")
     setd(36, "0")
 
-    -- Solicita quantidade apenas se necessário
     local int1 = nil
-    if variacao == "lm2" or variacao == "lm02" or variacao == "lm002" or variacao == "lm3" or variacao == "lm4" or
-        variacao == "lm5" or variacao == "lm6" or variacao == "g" or variacao == "h" or variacao == "i" or variacao ==
-        "j" or variacao == "j2" or variacao == "k" or variacao == "k2" or variacao == "l" or variacao == "l2" or
-        variacao == "n" or variacao == "m" or variacao == "o" or variacao == "lg1" or variacao == "lg2" or variacao ==
-        "lg3" or variacao == "lg4" then
+    if quantity == 0 then
         int1 = gg.prompt({"Amount? [0; 5000]"}, {1}, {"number"})
         int1[1] = tonumber(int1[1])
     end
 
-    if variacao == "a" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "0074726Fh")
-        setd(-56, "70726941h")
-        setd(-60, "6E696172h")
-        setd(-64, "5464616Fh")
-        setd(-68, "4C6E6F70h")
-        setd(-72, "756F432Ch")
-    elseif variacao == "b" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "00006E6Fh")
-        setd(-64, "69736E61h")
-        setd(-68, "70784565h")
-        setd(-72, "6572661Ah")
-    elseif variacao == "c" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000063h")
-        setd(-64, "6E497261h")
-        setd(-68, "626D4165h")
-        setd(-72, "65726618h")
-    elseif variacao == "d" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "00000079h")
-        setd(-56, "726F7463h")
-        setd(-60, "61466564h")
-        setd(-64, "61726770h")
-        setd(-68, "556E6F70h")
-        setd(-72, "756F4328h")
-    elseif variacao == "e" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "1970225956")
-        setd(-56, "7235937")
-        setd(-60, "1918133604")
-        setd(-64, "1634887536")
-        setd(-68, "1433300848")
-        setd(-72, "1970225956")
-    elseif variacao == "f" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "0")
-        setd(-56, "1684955500")
-        setd(-60, "1934189924")
-        setd(-64, "1634887536")
-        setd(-68, "1433300848")
-        setd(-72, "1970225958")
-    elseif variacao == "mm" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "00000000h")
-        setd(-56, "00000072h")
-        setd(-60, "656C6165h")
-        setd(-64, "44657269h")
-        setd(-68, "486E6F70h")
-        setd(-72, "756F4320h")
-        ---- HACK MINA ITENS
-    elseif variacao == "g" then
-        setd(-48, 0)
+    setd(-48, 0)
+    if quantity == 0 then
         setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00000000h")
-        setd(-72, "00336D04h")
-    elseif variacao == "h" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00000000h")
-        setd(-72, "00326D04h")
-    elseif variacao == "i" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00000000h")
-        setd(-72, "00316D04h")
-        ---- HACK CONSTRUÇÃO ITENS
-    elseif variacao == "j" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000079h")
-        setd(-56, "1BFDEA58h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00007373h")
-        setd(-72, "616C470Ah")
-    elseif variacao == "j2" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00006500h")
-        setd(-56, "6C616972h")
-        setd(-60, "65006B63h")
-        setd(-64, "00720077h")
-        setd(-68, "61737265h")
-        setd(-72, "776F7010h")
-    elseif variacao == "k" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000078h")
-        setd(-56, "722A8208h")
-        setd(-60, "00000079h")
-        setd(-64, "38DF4A98h")
-        setd(-68, "00006B63h")
-        setd(-72, "6972420Ah")
-    elseif variacao == "k2" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00006500h")
-        setd(-56, "6C616972h")
-        setd(-60, "65006B63h")
-        setd(-64, "0072656Dh")
-        setd(-68, "6D61686Bh")
-        setd(-72, "63616A14h")
-    elseif variacao == "l" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000079h")
-        setd(-56, "23CA6A58h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00006174h")
-        setd(-72, "696C500Ah")
-    elseif variacao == "l2" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00006500h")
-        setd(-56, "6C616972h")
-        setd(-60, "65006B63h")
-        setd(-64, "00720077h")
-        setd(-68, "61006C6Ch")
-        setd(-72, "6972640Ah")
-        ---- HACK GEMAS ITENS
-    elseif variacao == "n" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00000031h")
-        setd(-72, "6D656708h")
-    elseif variacao == "m" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00000032h")
-        setd(-72, "6D656708h")
-    elseif variacao == "o" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00000033h")
-        setd(-72, "6D656708h")
-        ---- FICHAS LOJA REGATA
-    elseif variacao == "p" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "00687361h")
-        setd(-68, "43617461h")
-        setd(-72, "67655214h")
-        ---- FICHAS LOJA REGATA
-    elseif variacao == "q" then
-        setd(-48, 0)
-        setd(-44, 500)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "00687361h")
-        setd(-68, "43617461h")
-        setd(-72, "67655214h")
-        ---- PLANTAÇÕES HACK
-    elseif variacao == "x" then
-        setd(-48, 0)
-        setd(-44, 100)
-        setd(-52, 7631717)
-        setd(-56, 1987207496)
-        setd(-60, 1884644453)
-        setd(-64, 1701860212)
-        setd(-68, 1936682818)
-        setd(-72, 1599099692)
-        ---- PLANTAÇÕES HACK
-    elseif variacao == "z" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "0000313Ah")
-        setd(-56, "522C353Ah")
-        setd(-60, "552C3531h")
-        setd(-64, "3A432C30h")
-        setd(-68, "333A4E6Bh")
-        setd(-72, "6365642Ah")
-        ---- LINGOTES HACK
-    elseif variacao == "lg1" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000072h")
-        setd(-56, "65746E75h")
-        setd(-60, "6F436E6Fh")
-        setd(-64, "696C6C75h")
-        setd(-68, "42657A6Eh")
-        setd(-72, "6F724228h")
-    elseif variacao == "lg2" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000072h")
-        setd(-56, "65746E75h")
-        setd(-60, "6F436E6Fh")
-        setd(-64, "696C6C75h")
-        setd(-68, "42726576h")
-        setd(-72, "6C695328h")
-    elseif variacao == "lg3" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "00000000h")
-        setd(-56, "00726574h")
-        setd(-60, "6E756F43h")
-        setd(-64, "6E6F696Ch")
-        setd(-68, "6C754264h")
-        setd(-72, "6C6F4724h")
-    elseif variacao == "lg4" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "7497076")
-        setd(-56, "1853189955")
-        setd(-60, "1852795244")
-        setd(-64, "1819624045")
-        setd(-68, "1970170228")
-        setd(-72, "1634488364")
-        ---- BOOSTER LAB HACK
-    elseif variacao == "lb1" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "00000000h")
-        setd(-56, "00007370h")
-        setd(-60, "69685370h")
-        setd(-64, "55646565h")
-        setd(-68, "70537473h")
-        setd(-72, "6F6F4222h")
-    elseif variacao == "lb2" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "00000000h")
-        setd(-56, "00736E69h")
-        setd(-60, "61725470h")
-        setd(-64, "55646565h")
-        setd(-68, "70537473h")
-        setd(-72, "6F6F4224h")
-    elseif variacao == "lb3" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "28007972h")
-        setd(-60, "65746C65h")
-        setd(-64, "6D53656Dh")
-        setd(-68, "69547473h")
-        setd(-72, "6F6F4222h")
-    elseif variacao == "lb4" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "74656B72h")
-        setd(-64, "614D656Dh")
-        setd(-68, "69547473h")
-        setd(-72, "6F6F421Eh")
-    elseif variacao == "lb5" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "283D0079h")
-        setd(-60, "726F7463h")
-        setd(-64, "6146656Dh")
-        setd(-68, "69547473h")
-        setd(-72, "6F6F4220h")
-    elseif variacao == "lb6" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "28007265h")
-        setd(-60, "64724F70h")
-        setd(-64, "55646565h")
-        setd(-68, "70537473h")
-        setd(-72, "6F6F4222h")
-    elseif variacao == "lb7" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "74736576h")
-        setd(-60, "72614870h")
-        setd(-64, "55646565h")
-        setd(-68, "70537473h")
-        setd(-72, "6F6F4226h")
-    elseif variacao == "lb8" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "74736576h")
-        setd(-60, "72614874h")
-        setd(-64, "6375646Fh")
-        setd(-68, "72507473h")
-        setd(-72, "6F6F4226h")
-    elseif variacao == "lb9" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "109")
-        setd(-60, "1918977652")
-        setd(-64, "1668637807")
-        setd(-68, "1917875315")
-        setd(-72, "1869562400")
-    elseif variacao == "lb10" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "72656472h")
-        setd(-64, "4F79656Eh")
-        setd(-68, "6F4D7473h")
-        setd(-72, "6F6F421Eh")
-    elseif variacao == "lb11" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "00657461h")
-        setd(-64, "6E6F4478h")
-        setd(-68, "614D7473h")
-        setd(-72, "6F6F421Ch")
-    elseif variacao == "lb12" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "006F6F5Ah")
-        setd(-64, "73747261h")
-        setd(-68, "65487473h")
-        setd(-72, "6F6F421Ch")
-    elseif variacao == "lb13" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "0079726Fh")
-        setd(-60, "74636146h")
-        setd(-64, "656C6275h")
-        setd(-68, "6F447473h")
-        setd(-72, "6F6F4224h")
-    elseif variacao == "lb14" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "0")
-        setd(-56, "2800736Eh")
-        setd(-60, "696F4374h")
-        setd(-64, "726F7072h")
-        setd(-68, "69417473h")
-        setd(-72, "6F6F4222h")
-    elseif variacao == "lb15" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "00000074h")
-        setd(-56, "73657571h")
-        setd(-60, "6552706Ch")
-        setd(-64, "65486E61h")
-        setd(-68, "6C437473h")
-        setd(-72, "6F6F4228h")
-    elseif variacao == "lb16" then
-        setd(-48, 0)
-        setd(-44, 80)
-        setd(-52, "73646E61h")
-        setd(-56, "6C734979h")
-        setd(-60, "74696C69h")
-        setd(-64, "6261626Fh")
-        setd(-68, "72507473h")
-        setd(-72, "6F6F422Eh")
-        ---- BOOSTER MINIGAME HACK
-    elseif variacao == "lm1" then
-        setd(-48, 0)
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "1701669204")
-        setd(-60, "1718511967")
-        setd(-64, "1936029289")
-        setd(-68, "1278437475")
-        setd(-72, "1952533798")
-    elseif variacao == "lm2" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "27756")
-        setd(-64, "1631745903")
-        setd(-68, "1651403105")
-        setd(-72, "1379101978")
-    elseif variacao == "lm02" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "0")
-        setd(-68, "00656E69h")
-        setd(-72, "4C336D0Ch")
-    elseif variacao == "lm002" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "0")
-        setd(-68, "6450543")
-        setd(-72, "1110666508")
-    elseif variacao == "lm3" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "7497069")
-        setd(-64, "1835100261")
-        setd(-68, "1734632812")
-        setd(-72, "1395879196")
-    elseif variacao == "lm4" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "114")
-        setd(-68, "1701670241")
-        setd(-72, "1211329808")
-    elseif variacao == "lm5" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "0")
-        setd(-68, "1702260588")
-        setd(-72, "1194552590")
-    elseif variacao == "lm6" then
-        setd(-48, 0)
-        setd(-44, int1[1])
-        setd(-52, "0")
-        setd(-56, "121")
-        setd(-60, "1735550318")
-        setd(-64, "1164865385")
-        setd(-68, "1953064037")
-        setd(-72, "1886938400")
-    elseif variacao == "lm7" then
-        setd(-48, 0)
-        setd(-44, 864000)
-        setd(-52, "0032586Ch")
-        setd(-56, "6C416472h")
-        setd(-60, "61776552h")
-        setd(-64, "79746974h")
-        setd(-68, "6E456465h")
-        setd(-72, "6D69542Ch")
-        ---- VANTAGEM HACK
-    elseif variacao == "lv1" then
-        setd(-48, 0)
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "29556")
-        setd(-60, "1632464489")
-        setd(-64, "1634882676")
-        setd(-68, "1936682818")
-        setd(-72, "1599099682")
-    elseif variacao == "lv2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "0")
-        setd(-56, "00006D75h")
-        setd(-60, "696D6572h")
-        setd(-64, "50746F6Ch")
-        setd(-68, "5362614Ch")
-        setd(-72, "5F505322h")
-    elseif variacao == "lv3" then
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0")
-        setd(-56, "7564905")
-        setd(-60, "1866691173")
-        setd(-64, "1685213044")
-        setd(-68, "1936682818")
-        setd(-72, "1599099684")
-    elseif variacao == "lv4" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "0")
-        setd(-56, "-1308229523")
-        setd(-60, "1969843557")
-        setd(-64, "1917875301")
-        setd(-68, "1802658125")
-        setd(-72, "1599099680")
-    elseif variacao == "lv5" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, "0")
-        setd(-56, "-1308594827")
-        setd(-60, "1768777074")
-        setd(-64, "1349675329")
-        setd(-68, "1684107084")
-        setd(-72, "1599099682")
-    elseif variacao == "lv6" then
-        setd(-48, 0)
-        setd(-44, 100)
-        setd(-52, "0")
-        setd(-56, "7498049")
-        setd(-60, "1884644453")
-        setd(-64, "1701860212")
-        setd(-68, "1936682818")
-        setd(-72, "1599099684")
-    elseif variacao == "lv9" then
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "3299436")
-        setd(-56, "1816224882")
-        setd(-60, "1635214674")
-        setd(-64, "2037672308")
-        setd(-68, "1850041445")
-        setd(-72, "1835619372")
-    elseif variacao == "lv10" then
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "0")
-        setd(-68, "7497078")
-        setd(-72, "1869374220")
-    elseif variacao == "lv11" then
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "32767")
-        setd(-56, "915593664")
-        setd(-60, "114")
-        setd(-64, "1701669204")
-        setd(-68, "1885956947")
-        setd(-72, "1599099672")
-        -- Skin Castillo
-    elseif variacao == "Cas_1" then -- Palacio en la isla Gatsb y3
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003379h")
-        setd(-56, "62737461h")
-        setd(-60, "475F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Cas_2" then -- mansion en la isla Gatsb y2
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003279h")
-        setd(-56, "62737461h")
-        setd(-60, "475F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Cas_3" then -- casa en la isla Gatsb y1
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003179h")
-        setd(-56, "62737461h")
-        setd(-60, "475F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Cas_4" then -- Fuerte pirata e3
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003365h")
-        setd(-56, "74617269h")
-        setd(-60, "505F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Cas_5" then -- base pirata e2
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003265h")
-        setd(-56, "74617269h")
-        setd(-60, "505F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Cas_6" then -- choza pirata e1
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003165h")
-        setd(-56, "74617269h")
-        setd(-60, "505F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Cas_7" then -- pueblo pascua
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000072h")
-        setd(-56, "65747361h")
-        setd(-60, "655F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Cas_8" then -- la pequeña paris
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "73697261h")
-        setd(-60, "705F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Cas_9" then -- isla azteca
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000073h")
-        setd(-56, "6365747Ah")
-        setd(-60, "615F7373h")
-        setd(-64, "65727472h")
-        setd(-68, "6F465F6Eh")
-        setd(-72, "696B5328h")
-
-        -- 656D614Eh;6C797453h;65665F65h;76697473h;625F6C61h;00006769h
-        -- Helicóptero
-    elseif variacao == "heli_1" then -- helicleta
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00007472h")
-        setd(-56, "6F70535Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "heli_2" then -- robot repartidor
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0000746Fh")
-        setd(-56, "626F525Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "heli_3" then -- trinero del ayudante de papa noel
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00686769h")
-        setd(-56, "656C535Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "heli_4" then -- platillo volante 
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "6F66555Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "heli_5" then -- alfombra voladora
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00636962h")
-        setd(-56, "6172415Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "heli_6" then -- dron tumbona
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0074726Fh")
-        setd(-56, "7365525Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "heli_7" then -- barco volador
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "006C6576h")
-        setd(-56, "6172545Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "heli_8" then -- helicotero privado
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00796273h")
-        setd(-56, "7461475Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "heli_9" then -- helicoter discotequero
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00006F63h")
-        setd(-56, "7369645Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "heli_10" then -- helicoter emplumado
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "006C697Ah") -- 696B532Ch;65485F6Eh;6F63696Ch;72657470h;6172625Fh;006C697Ah helicoter emplumado heli_10
-        setd(-56, "6172625Fh")
-        setd(-60, "72657470h")
-        setd(-64, "6F63696Ch")
-        setd(-68, "65485F6Eh")
-        setd(-72, "696B532Ch")
-        -- Skin Tren
-    elseif variacao == "Tre_1" then -- tren navideño
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000073h")
-        setd(-56, "616D7473h")
-        setd(-60, "69726863h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Tre_2" then -- tren fantasma
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00355053h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B531Ch")
-    elseif variacao == "Tre_3" then -- tren ultraexpreso
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000032h")
-        setd(-60, "3A325053h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Tre_4" then -- Tren Expreso primigenio
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00636972h")
-        setd(-56, "6F747369h")
-        setd(-60, "68657270h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "Tre_5" then -- Tren Pascual expres
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00007265h")
-        setd(-60, "74736165h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Tre_6" then -- Tren Teatro expres
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00006C61h")
-        setd(-56, "63697274h")
-        setd(-60, "61656874h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Tre_7" then -- Tren Dragon
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00323230h")
-        setd(-56, "32594E72h")
-        setd(-60, "616E756Ch")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "Tre_8" then -- Tren Astromovil
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "7372616Dh")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B531Eh")
-    elseif variacao == "Tre_9" then -- Tren Vagon de madera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000064h")
-        setd(-56, "6F6F486Eh")
-        setd(-60, "69626F72h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Tre_10" then -- Tren Musical
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0000006Ch")
-        setd(-56, "6C6F726Eh")
-        setd(-60, "6B636F72h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Tre_11" then -- Tren Caballeresco
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00007468h")
-        setd(-60, "67696E6Bh")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Tre_12" then -- Tren Tanvia expres
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000034h")
-        setd(-56, "32303279h")
-        setd(-60, "6C617469h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Tre_13" then -- Tren Disco
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00385053h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B531Ch")
-    elseif variacao == "Tre_14" then -- Tren Floral
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "6C617669h")
-        setd(-60, "74736566h")
-        setd(-64, "5F6E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B5326h")
-        -- Estación de tren
-    elseif variacao == "Esta_1" then -- Estacion portal expreso
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003250h")
-        setd(-56, "535F6E6Fh")
-        setd(-60, "69746174h")
-        setd(-64, "536E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Esta_2" then -- Estacion embrujada
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003550h")
-        setd(-56, "535F6E6Fh")
-        setd(-60, "69746174h")
-        setd(-64, "536E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Esta_3" then -- Estacion disco 
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003850h")
-        setd(-56, "535F6E6Fh")
-        setd(-60, "69746174h")
-        setd(-64, "536E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Esta_4" then -- Estacion espacial
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00737261h")
-        setd(-56, "6D5F6E6Fh")
-        setd(-60, "69746174h")
-        setd(-64, "536E6961h")
-        setd(-68, "72545F6Eh")
-        setd(-72, "696B532Ch")
-        -- Skin Avión
-    elseif variacao == "Avio_1" then -- Avion Cohete
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "323A3350h")
-        setd(-60, "535F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Avio_2" then -- Avion Cohete Supercohete
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00003350h")
-        setd(-60, "535F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Avio_3" then -- Avion Dragon Supersonico
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "323A3750h")
-        setd(-60, "535F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Avio_4" then -- Avion Cohete Espacial
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "65636170h")
-        setd(-60, "735F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Avio_5" then -- Avion Rockero
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "006B636Fh")
-        setd(-60, "725F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Avio_6" then -- Avion Aero Plano
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "6569766Fh")
-        setd(-60, "6D5F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Avio_7" then -- Avion Glaseado
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "74656577h")
-        setd(-60, "735F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Avio_8" then -- Avion de la Suerte
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0000646Eh")
-        setd(-56, "616C6572h")
-        setd(-60, "695F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Avio_9" then -- Avion Arabigo
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00626172h")
-        setd(-60, "615F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Avio_10" then -- Avion de Moda
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00006E6Fh")
-        setd(-56, "69687361h")
-        setd(-60, "665F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Avio_11" then -- Aeronave Sigilosa
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00007970h")
-        setd(-60, "735F656Eh")
-        setd(-64, "616C7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5322h")
-
-        -- Skin Aeropuerto
-    elseif variacao == "Aero_1" then -- Aeropuerto Rockero
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00006B63h")
-        setd(-60, "6F725F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Aero_2" then -- Aeropuerto Dulce
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00746565h")
-        setd(-60, "77735F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Aero_3" then -- Aeropuerto Cine
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00656976h")
-        setd(-60, "6F6D5F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Aero_4" then -- Base Secreta
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000079h")
-        setd(-60, "70735F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Aero_5" then -- Aeropuerto Aero
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000033h")
-        setd(-60, "50535F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Aero_6" then -- Aeropuerto Espacial
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00656361h")
-        setd(-60, "70735F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Aero_7" then -- Aeropuerto Festival
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000037h")
-        setd(-60, "50535F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Aero_8" then -- Aeropuerto Tropical
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000039h")
-        setd(-60, "50535F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Aero_9" then -- Aeropuerto Arcoiris
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000064h")
-        setd(-56, "6E616C65h")
-        setd(-60, "72695F74h")
-        setd(-64, "726F7072h")
-        setd(-68, "69415F6Eh")
-        setd(-72, "696B5328h")
-        -- Skin Barcos
-    elseif variacao == "Barc_1" then -- barco Crucero
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000065h")
-        setd(-60, "6C676E75h")
-        setd(-64, "6A5F7069h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Barc_2" then -- barco Birreme griego
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000073h")
-        setd(-60, "616C6C65h")
-        setd(-64, "685F7069h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Barc_3" then -- barco Vikingo
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "646F4763h")
-        setd(-60, "6964726Fh")
-        setd(-64, "6E5F7069h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Barc_4" then -- barco de Vapor
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00343230h")
-        setd(-56, "32747365h")
-        setd(-60, "77646C69h")
-        setd(-64, "775F7069h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "Barc_5" then -- barco Artico
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000063h")
-        setd(-60, "69746372h")
-        setd(-64, "615F7069h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5320h")
-        -- Skin Puertos
-    elseif variacao == "Puer_1" then -- puerto Tropical
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "3950535Fh")
-        setd(-64, "726F6272h")
-        setd(-68, "61485F6Eh")
-        setd(-72, "696B531Eh")
-    elseif variacao == "Puer_2" then -- puerto Pirata
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "3154535Fh")
-        setd(-64, "726F6272h")
-        setd(-68, "61485F6Eh")
-        setd(-72, "696B531Eh")
-    elseif variacao == "Puer_3" then -- puerto Clásico
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "0073616Ch")
-        setd(-60, "6C65685Fh")
-        setd(-64, "726F6272h")
-        setd(-68, "61485F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Puer_4" then -- puerto Selvatico
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00656C67h")
-        setd(-60, "6E756A5Fh")
-        setd(-64, "726F6272h")
-        setd(-68, "61485F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Puer_5" then -- puerto Vikingo
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0000646Fh")
-        setd(-56, "47636964h")
-        setd(-60, "726F6E5Fh")
-        setd(-64, "726F6272h")
-        setd(-68, "61485F6Eh")
-        setd(-72, "696B532Ah")
-        -- Skin Gallinas
-    elseif variacao == "Galli_1" then -- gallina Verbenera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000035h")
-        setd(-56, "32303279h")
-        setd(-60, "6E635F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Galli_2" then -- gallina Con quitón
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "73616C6Ch")
-        setd(-60, "65685F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Galli_3" then -- gallina Leprechaun
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000064h")
-        setd(-56, "6E616C65h")
-        setd(-60, "72695F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Galli_4" then -- gallina Cumpleañera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00746565h")
-        setd(-60, "77735F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Galli_5" then -- gallina Aventurera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "656C676Eh")
-        setd(-60, "756A5F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Galli_6" then -- gallina Animadora
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "0074726Fh")
-        setd(-60, "70735F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Galli_7" then -- gallina Piloto
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "6C657661h")
-        setd(-60, "72745F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Galli_8" then -- gallina Discotequera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "006F6373h")
-        setd(-60, "69645F6Eh")
-        setd(-64, "656B6369h")
-        setd(-68, "68435F6Eh")
-        setd(-72, "696B5324h")
-        -- Skin Vacas
-    elseif variacao == "Vaca_1" then -- vaca Corsaria
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "34323032h")
-        setd(-60, "65746172h")
-        setd(-64, "69705F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Vaca_2" then -- vaca Elegante
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00343230h")
-        setd(-60, "32796C61h")
-        setd(-64, "74695F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B5324h")
-    elseif variacao == "Vaca_3" then -- vaca Artica
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "63697463h")
-        setd(-64, "72615F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B531Eh")
-    elseif variacao == "Vaca_4" then -- vaca Verbenera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003432h")
-        setd(-56, "30327961h")
-        setd(-60, "64687472h")
-        setd(-64, "69625F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Vaca_5" then -- vaca Reina de la Atlántida
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00007369h")
-        setd(-60, "746E616Ch")
-        setd(-64, "74615F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Vaca_6" then -- vaca Espía
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000079h")
-        setd(-64, "70735F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B5318h")
-    elseif variacao == "Vaca_7" then -- vaca Pascual
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "34323032h")
-        setd(-60, "72657473h")
-        setd(-64, "61655F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B5326h")
-    elseif variacao == "Vaca_8" then -- vaca Astronauta
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00007372h")
-        setd(-64, "616D5F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B531Ah")
-    elseif variacao == "Vaca_9" then -- vaca Chupasangre
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00333230h")
-        setd(-56, "326E6565h")
-        setd(-60, "776F6C6Ch")
-        setd(-64, "61685F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "Vaca_10" then -- vaca Alpina
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000074h")
-        setd(-56, "726F7053h")
-        setd(-60, "7265746Eh")
-        setd(-64, "69775F77h")
-        setd(-68, "6F435F6Eh")
-        setd(-72, "696B5328h")
-        -- Skin Ovejas
-    elseif variacao == "Ovej_1" then -- oveja Rockera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0000006Ch")
-        setd(-56, "6C6F726Eh")
-        setd(-60, "6B636F72h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Ovej_2" then -- oveja Beeelica
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00007468h")
-        setd(-60, "67696E6Bh")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Ovej_3" then -- oveja Egipcia
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000074h")
-        setd(-60, "70796765h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Ovej_4" then -- oveja Carnavalera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00006C69h")
-        setd(-60, "7A617262h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5322h")
-    elseif variacao == "Ovej_5" then -- oveja Bandida noble
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000064h")
-        setd(-56, "6F6F486Eh")
-        setd(-60, "69626F72h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Ovej_6" then -- oveja Cumpleañera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000000h")
-        setd(-56, "00000074h")
-        setd(-60, "65657773h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5320h")
-    elseif variacao == "Ovej_7" then -- oveja Investigadora
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000065h")
-        setd(-56, "76697463h")
-        setd(-60, "65746564h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Ovej_8" then -- oveja Gladiador
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00000064h")
-        setd(-56, "6F476369h")
-        setd(-60, "64726F6Eh")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B5328h")
-    elseif variacao == "Ovej_9" then -- oveja De Pascua
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00003332h")
-        setd(-56, "30327265h")
-        setd(-60, "74736165h")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B532Ah")
-    elseif variacao == "Ovej_10" then -- oveja Festivalera
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00323230h")
-        setd(-56, "32594E72h")
-        setd(-60, "616E756Ch")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B532Ch")
-    elseif variacao == "Ovej_11" then -- oveja De Gala
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00006564h")
-        setd(-56, "61726575h")
-        setd(-60, "7173616Dh")
-        setd(-64, "5F706565h")
-        setd(-68, "68535F6Eh")
-        setd(-72, "696B532Ah")
-        -- Skin cerdo
-    elseif variacao == "Cerdj_1" then -- Cerdo Ceremonial
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "00007E94h")
-        setd(-56, "5A0643E0h")
-        setd(-60, "00000059h")
-        setd(-64, "4E435F67h")
-        setd(-68, "69505F6Eh")
-        setd(-72, "696B5318h")
-    elseif variacao == "Cerdj_2" then -- Cerdo Ceremonial
-        setd(-48, 0)
-        setd(-44, 50)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "7954756")
-        setd(-64, "1936027241")
-        setd(-68, "1635147623")
-        setd(-72, "1766874990")
-        -- Decoración Valentin  
-        --------------------------
-    elseif variacao == "r1p" then
-        setd(-48, 0) -- test 1 Valentine_cats test 1 Estatua Amor Gatuno
-        setd(-44, 5)
-        setd(-52, "12") --
-        setd(-56, "351650536") --
-        setd(-60, "7566433") --
-        setd(-64, "1667196270")
-        setd(-68, "1769238117")
-        setd(-72, "1818318364")
-    elseif variacao == "r2p" then
-        setd(-48, 0) -- test 2  Valentine_Teddy test 2 Osito Amoroso
-        setd(-44, 5)
-        setd(-52, "12914")
-        setd(-56, "1634034271")
-        setd(-60, "2036622437")
-        setd(-64, "1415538030")
-        setd(-68, "1769238117")
-        setd(-72, "1818318378")
-    elseif variacao == "r3p" then
-        setd(-48, 0) -- test 3 Valentine_serenade test 3 Cita Romantica
-        setd(-44, 5)
-        setd(-52, "45")
-        setd(-56, "6644833")
-        setd(-60, "1852142181")
-        setd(-64, "1935631726")
-        setd(-68, "1769238117")
-        setd(-72, "1818318372")
-    elseif variacao == "r4p" then
-        setd(-48, 0) -- test 4 Valentine_postsheep test 4 Estatua Mensajero Amor
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "1885693288")
-        setd(-60, "1937011567")
-        setd(-64, "1885300078")
-        setd(-68, "1769238117")
-        setd(-72, "1818318374")
-    elseif variacao == "r5p" then
-        setd(-48, 0) -- test 5 Valentine_justMarried Vivian los novios
-        setd(-44, 5)
-        setd(-52, "25701")
-        setd(-56, "1769108065")
-        setd(-60, "1299477365")
-        setd(-64, "1784636782")
-        setd(-68, "1769238117")
-        setd(-72, "1818318378")
-    elseif variacao == "r6p" then
-        setd(-48, 0) -- test 6 Valentine_pigeons_love test 6 Palomas Enamoradas
-        setd(-44, 5)
-        setd(-52, "6649455")
-        setd(-56, "1818194798")
-        setd(-60, "1868916585")
-        setd(-64, "1885300078")
-        setd(-68, "1769238117")
-        setd(-72, "1818318380")
-    elseif variacao == "r7p" then
-        setd(-48, 0) -- test 7 Valentine_flowerbeb test 7 Cama Floral Corazon
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "1684365938")
-        setd(-60, "1702326124")
-        setd(-64, "1717527918")
-        setd(-68, "1769238117")
-        setd(-72, "1818318374")
-    elseif variacao == "r8p" then
-        setd(-48, 0) -- test 8 Valentine_lovearch test 8 Arco Del Amor
-        setd(-44, 5)
-        setd(-52, "29")
-        setd(-56, "6841202")
-        setd(-60, "1634039407")
-        setd(-64, "1818191214")
-        setd(-68, "1769238117")
-        setd(-72, "1818318372")
-    elseif variacao == "r9p" then
-        setd(-48, 0) -- test 9 Valentine_plush_cat test 9 Gatito Adorable
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "1952539487")
-        setd(-60, "1752397164")
-        setd(-64, "1885300078")
-        setd(-68, "1769238117")
-        setd(-72, "1818318374")
-    elseif variacao == "r10p" then
-        setd(-48, 0) -- test 10 Valentine_Bunny test 10 Conejo Peluche
-        setd(-44, 5)
-        setd(-52, "21")
-        setd(-56, "350665152")
-        setd(-60, "2037280373")
-        setd(-64, "1113548142")
-        setd(-68, "1769238117")
-        setd(-72, "1818318366")
-    elseif variacao == "r11p" then
-        setd(-48, 0) -- test 11 Valentine_CupidsArrow test 11 Flecha De Cupido
-        setd(-44, 5)
-        setd(-52, "30575")
-        setd(-56, "1920090483")
-        setd(-60, "1684631669")
-        setd(-64, "1130325358")
-        setd(-68, "1769238117")
-        setd(-72, "1818318378")
-    elseif variacao == "r12p" then
-        setd(-48, 0) -- test 12 Valentine_lovers_bench Banco de Enamorados
-        setd(-44, 5)
-        setd(-52, "6841198")
-        setd(-56, "1700945779")
-        setd(-60, "1919252079")
-        setd(-64, "1818191214")
-        setd(-68, "1769238117")
-        setd(-72, "1818318380")
-    elseif variacao == "r13p" then
-        setd(-48, 0) -- test 13 Piloto Enamorados
-        setd(-44, 5)
-        setd(-52, "135")
-        setd(-56, "352675424")
-        setd(-60, "32564")
-        setd(-64, "771781479")
-        setd(-68, "1852397413")
-        setd(-72, "1987013650")
-    elseif variacao == "r14p" then
-        setd(-48, 0) -- test 14 Corazones Voladores
-        setd(-44, 5)
-        setd(-52, "00790073h")
-        setd(-56, "6E6F6F6Ch")
-        setd(-60, "6C614265h")
-        setd(-64, "6E69746Eh")
-        setd(-68, "656C6156h")
-        setd(-72, "796C6628h")
-    elseif variacao == "r15p" then
-        setd(-48, 0) -- test 15 El Ojo De Cupido
-        setd(-44, 5)
-        setd(-52, "00790073h")
-        setd(-56, "6E006469h")
-        setd(-60, "70754365h")
-        setd(-64, "6E69746Eh")
-        setd(-68, "656C6156h")
-        setd(-72, "796C6622h")
-    elseif variacao == "r1664p" then
-        setd(-48, 0) -- test r1664p photocall paraja ideal
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "6E69746Eh")
-        setd(-60, "656C6176h")
-        setd(-64, "5F646E61h")
-        setd(-68, "74536F74h")
-        setd(-72, "6F687028h")
-    elseif variacao == "r1665p" then
-        setd(-48, 0) -- test  Miniparque romantico   
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "656E6974h")
-        setd(-60, "6E656C61h")
-        setd(-64, "765F6565h")
-        setd(-68, "72547472h")
-        setd(-72, "61656826h")
-    elseif variacao == "r1666p" then
-        setd(-48, 0) -- test  carroza  
-        setd(-44, 5)
-        setd(-52, "00007472h")
-        setd(-56, "61635F73h")
-        setd(-60, "7265766Fh")
-        setd(-64, "6C5F656Eh")
-        setd(-68, "69746E65h")
-        setd(-72, "6C61562Ah")
-    elseif variacao == "r1667p" then
-        setd(-48, 0) -- test  cespe nupcial  
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "40F74300h")
-        setd(-60, "726F6365h")
-        setd(-64, "445F4433h")
-        setd(-68, "676E6964h")
-        setd(-72, "6465571Eh")
-    elseif variacao == "r1668p" then
-        setd(-48, 0) -- test    amor eterno
-        setd(-44, 5)
-        setd(-52, "0073646Eh")
-        setd(-56, "61486E49h")
-        setd(-60, "74726165h")
-        setd(-64, "685F656Eh")
-        setd(-68, "69746E65h")
-        setd(-72, "6C61562Ch")
-    elseif variacao == "r1669p" then
-        setd(-48, 0) -- test    rosa de cuento
-        setd(-44, 5)
-        setd(-52, "00000031h")
-        setd(-56, "0563F200h")
-        setd(-60, "646F6F48h")
-        setd(-64, "7265646Eh")
-        setd(-68, "55726577h")
-        setd(-72, "6F6C661Eh")
-        -- Decoración Navideño
-    elseif variacao == "r17p" then
-        setd(-48, 0) -- test 17 Pista de Hielo
-        setd(-44, 5)
-        setd(-52, "26478")
-        setd(-56, "1769234795")
-        setd(-60, "1935631715")
-        setd(-64, "1230992225")
-        setd(-68, "1836348265")
-        setd(-72, "1919435562")
-    elseif variacao == "r18p" then
-        setd(-48, 0) -- test 18 Carrusel Navideño
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "520121445")
-        setd(-60, "1937076082")
-        setd(-64, "1631810401")
-        setd(-68, "1836348265")
-        setd(-72, "1919435554")
-    elseif variacao == "r20p" then
-        setd(-48, 0) -- test 20 Farola Festiva
-        setd(-44, 5)
-        setd(-52, "2")
-        setd(-56, "453013106")
-        setd(-60, "1702129249")
-        setd(-64, "1818194785")
-        setd(-68, "1836348265")
-        setd(-72, "1919435554")
-    elseif variacao == "r21p" then
-        setd(-48, 0) -- test 21 Grupo de amigos
-        setd(-44, 5)
-        setd(-52, "32564")
-        setd(-56, "778156544")
-        setd(-60, "1701733731")
-        setd(-64, "1935635297")
-        setd(-68, "1836348265")
-        setd(-72, "1919435550")
-    elseif variacao == "r22p" then
-        setd(-48, 0) -- test 22 Mueño de Nieve
-        setd(-44, 5)
-        setd(-52, "8")
-        setd(-56, "453013089")
-        setd(-60, "1836543854")
-        setd(-64, "1398764385")
-        setd(-68, "1836348265")
-        setd(-72, "1919435554")
-    elseif variacao == "r23p" then
-        setd(-48, 0) -- test 23 Angel de Hielo
-        setd(-44, 5)
-        setd(-52, "100")
-        setd(-56, "459043840")
-        setd(-60, "1818584942")
-        setd(-64, "1633645409")
-        setd(-68, "1836348265")
-        setd(-72, "1919435550")
-    elseif variacao == "r24p" then
-        setd(-48, 0) -- test 24 Valla Navideña
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "1701015141")
-        setd(-64, "1717531489")
-        setd(-68, "1836348265")
-        setd(-72, "1919435550")
-    elseif variacao == "r25p" then
-        setd(-48, 0) -- test 25 Bola de Nieve Bola de Nieve
-        setd(-44, 5)
-        setd(-52, "22")
-        setd(-56, "7105633")
-        setd(-60, "1651994478")
-        setd(-64, "1935635297")
-        setd(-68, "1836348265")
-        setd(-72, "1919443748")
-    elseif variacao == "r20010p" then
-        setd(-48, 0) -- test casita del lago  
-        setd(-44, 5)
-        setd(-52, "0000002Ch")
-        setd(-56, "74006573h")
-        setd(-60, "756F685Fh")
-        setd(-64, "656B616Ch")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r20011p" then
-        setd(-48, 0) -- test la casa de papa noel  
-        setd(-44, 5)
-        setd(-52, "00006573h")
-        setd(-56, "756F485Fh")
-        setd(-60, "61746E61h")
-        setd(-64, "535F7361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268432Ah")
-    elseif variacao == "r20012p" then
-        setd(-48, 0) -- test tobogan de hielo  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "006E0065h")
-        setd(-60, "64696C73h")
-        setd(-64, "776F6E73h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656220h")
-    elseif variacao == "r20013p" then
-        setd(-48, 0) -- test pista de trineo  
-        setd(-44, 5)
-        setd(-52, "00000032h")
-        setd(-56, "74C466B8h")
-        setd(-60, "00006563h")
-        setd(-64, "61526867h")
-        setd(-68, "69656C73h")
-        setd(-72, "626F421Ah")
-    elseif variacao == "r20014p" then
-        setd(-48, 0) -- test perros de trineo  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00636974h")
-        setd(-60, "6372615Fh")
-        setd(-64, "73676F64h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r20015p" then
-        setd(-48, 0) -- test tiranosaurio congelado  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "006E0065h")
-        setd(-60, "64696C73h")
-        setd(-64, "776F006Fh")
-        setd(-68, "6E69645Fh")
-        setd(-72, "65636910h")
-    elseif variacao == "r20016p" then
-        setd(-48, 0) -- test estacion polar  
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "6E6F6974h")
-        setd(-60, "61745372h")
-        setd(-64, "616C6F70h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r20017p" then
-        setd(-48, 0) -- test teleferico  
-        setd(-44, 5)
-        setd(-52, "00726163h")
-        setd(-56, "656C6261h")
-        setd(-60, "635F7265h")
-        setd(-64, "6E6E7572h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r20018p" then
-        setd(-48, 0) -- test reno de hielo  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "9953F380h")
-        setd(-60, "00726565h")
-        setd(-64, "44656369h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Ch")
-    elseif variacao == "r20019p" then
-        setd(-48, 0) -- test castillo de hielo  
-        setd(-44, 5)
-        setd(-52, "00726163h")
-        setd(-56, "6500656Ch")
-        setd(-60, "74736163h")
-        setd(-64, "5F656369h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r20020p" then
-        setd(-48, 0) -- test globo de nieve  
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "86148AA0h")
-        setd(-60, "00000065h")
-        setd(-64, "626F6C47h")
-        setd(-68, "72616579h")
-        setd(-72, "77654E18h")
-    elseif variacao == "r20021p" then
-        setd(-48, 0) -- test mamut congelado  
-        setd(-44, 5)
-        setd(-52, "00000066h")
-        setd(-56, "74C56EE8h")
-        setd(-60, "00336863h")
-        setd(-64, "74616D5Fh")
-        setd(-68, "68746F6Dh")
-        setd(-72, "6D616D1Ch")
-    elseif variacao == "r20022p" then
-        setd(-48, 0) -- test buque rompehiela  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "99007265h")
-        setd(-60, "6B616572h")
-        setd(-64, "62656369h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r20023p" then
-        setd(-48, 0) -- test pinguilandia  
-        setd(-44, 5)
-        setd(-52, "00736E69h")
-        setd(-56, "75676E65h")
-        setd(-60, "50676E69h")
-        setd(-64, "74616B73h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r20024p" then
-        setd(-48, 0) -- test glaciar artico  
-        setd(-44, 5)
-        setd(-52, "00006575h")
-        setd(-56, "74617473h")
-        setd(-60, "00677265h")
-        setd(-64, "62656369h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Ch")
-    elseif variacao == "r20025p" then
-        setd(-48, 0) -- test calcetin de navidad  
-        setd(-44, 5)
-        setd(-52, "00006B63h")
-        setd(-56, "6F73746Eh")
-        setd(-60, "65736572h")
-        setd(-64, "705F7361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268432Ah")
-    elseif variacao == "r20026p" then
-        setd(-48, 0) -- test arbol de navidad  
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "6572745Fh")
-        setd(-60, "6E616272h")
-        setd(-64, "555F7361h")
-        setd(-68, "6D747369h")
-        setd(-72, "72684328h")
-    elseif variacao == "r20027p" then
-        setd(-48, 0) -- test montaña de regalos  
-        setd(-44, 5)
-        setd(-52, "00000022h")
-        setd(-56, "C2A6AC00h")
-        setd(-60, "73746669h")
-        setd(-64, "675F7361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268431Eh")
-    elseif variacao == "r20028p" then
-        setd(-48, 0) -- test dragon de hielo  
-        setd(-44, 5)
-        setd(-52, "00000020h")
-        setd(-56, "C2A6AA30h")
-        setd(-60, "0000769Ah")
-        setd(-64, "EB006E6Fh")
-        setd(-68, "67617244h")
-        setd(-72, "65636912h")
-    elseif variacao == "r20029p" then
-        setd(-48, 0) -- test casa del elfo  
-        setd(-44, 5)
-        setd(-52, "00726570h")
-        setd(-56, "6C65685Fh")
-        setd(-60, "61746E61h")
-        setd(-64, "735F7361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268632Ch")
-    elseif variacao == "r20030p" then
-        setd(-48, 0) -- test muñeco de nieve  
-        setd(-44, 5)
-        setd(-52, "00000008h")
-        setd(-56, "C2006E61h")
-        setd(-60, "6D776F6Eh")
-        setd(-64, "535F7361h")
-        setd(-68, "6D747369h")
-        setd(-72, "72684322h")
-    elseif variacao == "r20031p" then
-        setd(-48, 0) -- test bola de navidad  
-        setd(-44, 5)
-        setd(-52, "00000055h")
-        setd(-56, "C2A69080h")
-        setd(-60, "00006C6Ch")
-        setd(-64, "61427361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268431Ah")
-    elseif variacao == "r20032p" then
-        setd(-48, 0) -- test cartel reunion con papa noel  
-        setd(-44, 5)
-        setd(-52, "0000004Bh")
-        setd(-56, "C2A6C800h")
-        setd(-60, "72656E6Eh")
-        setd(-64, "61427361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268431Eh")
-    elseif variacao == "r20033p" then
-        setd(-48, 0) -- test Deportes de invierno
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "413282B8h")
-        setd(-60, "00007DE3h")
-        setd(-64, "66760070h")
-        setd(-68, "6F68535Fh")
-        setd(-72, "696B5310h")
-    elseif variacao == "r20034p" then
-        setd(-48, 0) -- test Taller de papa noel
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "41325C08h")
-        setd(-60, "00007DE3h")
-        setd(-64, "00746669h")
-        setd(-68, "475F7265h")
-        setd(-72, "766F4314h")
-    elseif variacao == "r20035p" then
-        setd(-48, 0) -- test Tobogan de la oveja
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "41328918h")
-        setd(-60, "00007DE3h")
-        setd(-64, "00656469h")
-        setd(-68, "6C537065h")
-        setd(-72, "65685314h")
-    elseif variacao == "r20036p" then
-        setd(-48, 0) -- test Yurta invernal
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "32323032h")
-        setd(-60, "73616D78h")
-        setd(-64, "5F747275h")
-        setd(-68, "59726574h")
-        setd(-72, "6E697726h")
-    elseif variacao == "r20037p" then
-        setd(-48, 0) -- test Ardillas patinadoras
-        setd(-44, 5)
-        setd(-52, "00323230h")
-        setd(-56, "3273616Dh")
-        setd(-60, "785F676Eh")
-        setd(-64, "6974616Bh")
-        setd(-68, "53657275h")
-        setd(-72, "6769662Ch")
-
-    elseif variacao == "r20038p" then
-        setd(-48, 0) -- test  ;;;;; portal de hielo
-        setd(-44, 5)
-        setd(-52, "00000067h")
-        setd(-56, "05651BC0h")
-        setd(-60, "00636974h")
-        setd(-64, "6372615Fh")
-        setd(-68, "68637241h")
-        setd(-72, "6563691Ch")
-    elseif variacao == "r20039p" then
-        setd(-48, 0) -- test  ;;;;; explorador polar
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05652200h")
-        setd(-60, "63697463h")
-        setd(-64, "72615F6Eh")
-        setd(-68, "616D7261h")
-        setd(-72, "6C6F701Eh")
-    elseif variacao == "r20040p" then
-        setd(-48, 0) -- test  ;;;;; pozas termales
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05650033h")
-        setd(-60, "68637461h")
-        setd(-64, "6D5F676Eh")
-        setd(-68, "69727053h")
-        setd(-72, "746F6820h")
-    elseif variacao == "r20041p" then
-        setd(-48, 0) -- test  ;;;;; castillo de hielo con tobogan
-        setd(-44, 5)
-        setd(-52, "0000005Ch")
-        setd(-56, "05652E70h")
-        setd(-60, "00000033h")
-        setd(-64, "68637461h")
-        setd(-68, "6D5F6564h")
-        setd(-72, "696C7318h")
-    elseif variacao == "r20042p" then
-        setd(-48, 0) -- test  ;;;;; casita nevada
-        setd(-44, 5)
-        setd(-52, "00000069h")
-        setd(-56, "05653600h")
-        setd(-60, "676E696Dh")
-        setd(-64, "6F437361h")
-        setd(-68, "6D747369h")
-        setd(-72, "7268631Eh")
-    elseif variacao == "r20043p" then
-        setd(-48, 0) -- test  ;;;;; el turbotrineo de papa noel
-        setd(-44, 5)
-        setd(-52, "0000006Eh")
-        setd(-56, "05006174h")
-        setd(-60, "6E61735Fh")
-        setd(-64, "65676465h")
-        setd(-68, "6C736F62h")
-        setd(-72, "72757422h")
-    elseif variacao == "r20044p" then
-        setd(-48, 0) -- test  ;;;;; farolillos voladores
-        setd(-44, 5)
-        setd(-52, "00000084h")
-        setd(-56, "05650061h")
-        setd(-60, "746E6173h")
-        setd(-64, "5F6E7265h")
-        setd(-68, "746E614Ch")
-        setd(-72, "796C6620h")
-
-        -- Decoración Mas_1
-    elseif variacao == "r14px" then
-        setd(-48, 0) -- test 14  Paseo de la Fama
-        setd(-44, 5)
-        setd(-52, "120")
-        setd(-56, "525400016")
-        setd(-60, "32564")
-        setd(-64, "771777901")
-        setd(-68, "1632001900")
-        setd(-72, "1818314770")
-    elseif variacao == "r15px" then
-        setd(-48, 0) -- test 15 Puente Veneciano
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "25959")
-        setd(-64, "1684632130")
-        setd(-68, "1601139820")
-        setd(-72, "1634292250")
-    elseif variacao == "r16px" then
-        setd(-48, 0) -- test 16 Estudio de Transformaciones
-        setd(-44, 5)
-        setd(-52, "140")
-        setd(-56, "525336677")
-        setd(-60, "1937076045")
-        setd(-64, "2036429383")
-        setd(-68, "1601073007")
-        setd(-72, "1818317600")
-        -- Decoración halloween
-    elseif variacao == "r1ko" then
-        setd(-48, 0) -- test  fuente ominosa  
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "006E6961h")
-        setd(-60, "746E756Fh")
-        setd(-64, "665F6E65h")
-        setd(-68, "65776F6Ch")
-        setd(-72, "6C616824h")
-    elseif variacao == "r2ko" then
-        setd(-48, 0) -- test  gato negro  
-        setd(-44, 5)
-        setd(-52, "0000000Ah")
-        setd(-56, "CBF32778h")
-        setd(-60, "00007461h")
-        setd(-64, "635F6E65h")
-        setd(-68, "65776F6Ch")
-        setd(-72, "6C61681Ah")
-    elseif variacao == "r3ko" then
-        setd(-48, 0) -- test  bruja con pocion  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBF32100h")
-        setd(-60, "68637469h")
-        setd(-64, "775F6E65h")
-        setd(-68, "65776F6Ch")
-        setd(-72, "6C61681Eh")
-    elseif variacao == "r4ko" then
-        setd(-48, 0) -- test  choza del brujo  
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "CC05A470h")
-        setd(-60, "00006573h")
-        setd(-64, "756F485Fh")
-        setd(-68, "6E696B70h")
-        setd(-72, "6D75501Ah")
-    elseif variacao == "r5ko" then
-        setd(-48, 0) -- test  invernadero carnivoro  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "726F7461h")
-        setd(-60, "64657250h")
-        setd(-64, "5F657375h")
-        setd(-68, "6F686E65h")
-        setd(-72, "65724726h")
-    elseif variacao == "r6ko" then
-        setd(-48, 0) -- test  muñeco de calabaza  
-        setd(-44, 5)
-        setd(-52, "0000000Fh")
-        setd(-56, "CBF324E8h")
-        setd(-60, "00706D75h")
-        setd(-64, "705F6E65h")
-        setd(-68, "65776F6Ch")
-        setd(-72, "6C61681Ch")
-    elseif variacao == "r7ko" then
-        setd(-48, 0) -- test  jinite calabezon  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC006E61h")
-        setd(-60, "6D657372h")
-        setd(-64, "6F485F73h")
-        setd(-68, "73656C64h")
-        setd(-72, "61654822h")
-    elseif variacao == "r8ko" then
-        setd(-48, 0) -- test  Carroza Fantasmal  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "65676169h")
-        setd(-64, "72726143h")
-        setd(-68, "796C7473h")
-        setd(-72, "6F68671Eh")
-    elseif variacao == "r9ko" then
-        setd(-48, 0) -- test  torre gotica  
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "CC05B1A0h")
-        setd(-60, "00000072h")
-        setd(-64, "65776F54h")
-        setd(-68, "5F636968h")
-        setd(-72, "746F4718h")
-    elseif variacao == "r10ko" then
-        setd(-48, 0) -- test  espectaculo del hombre lobo  
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "CC059740h")
-        setd(-60, "00666C6Fh")
-        setd(-64, "77657265h")
-        setd(-68, "575F6B6Eh")
-        setd(-72, "616C501Ch")
-    elseif variacao == "r11ko" then
-        setd(-48, 0) -- test  Bruja en su escoba
-        setd(-44, 1)
-        setd(-52, "00006E65h")
-        setd(-56, "65776F6Ch")
-        setd(-60, "6C61685Fh")
-        setd(-64, "65757461h")
-        setd(-68, "74536863h")
-        setd(-72, "7469572Ah")
-        -- Decoración El primer
-    elseif variacao == "r1pDx" then
-        setd(-48, 0) -- test    El primer genetista 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC007473h")
-        setd(-60, "69636974h")
-        setd(-64, "656E6567h")
-        setd(-68, "5F657574h")
-        setd(-72, "61747322h")
-    elseif variacao == "r2pDx" then
-        setd(-48, 0) -- test El primer turista 
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "CC610290h")
-        setd(-60, "00747369h")
-        setd(-64, "72756F74h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ch")
-    elseif variacao == "r3pDx" then
-        setd(-48, 0) -- test El primer pensador
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC6107B0h")
-        setd(-60, "0072656Bh")
-        setd(-64, "6E696874h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ch")
-    elseif variacao == "r4pDx" then
-        setd(-48, 0) -- test   El primer bombero
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC610A78h")
-        setd(-60, "006E616Dh")
-        setd(-64, "65726966h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ch")
-    elseif variacao == "r5pDx" then
-        setd(-48, 0) -- test   El primer comandante
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC610D08h")
-        setd(-60, "006C6172h")
-        setd(-64, "656E6567h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ch")
-    elseif variacao == "r6pDx" then
-        setd(-48, 0) -- test   El primer policia
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC61006Eh")
-        setd(-60, "616D6563h")
-        setd(-64, "696C6F70h")
-        setd(-68, "5F657574h")
-        setd(-72, "61747320h")
-    elseif variacao == "r7pDx" then
-        setd(-48, 0) -- test  El primer musico
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC6114F0h")
-        setd(-60, "006E6163h")
-        setd(-64, "6973756Dh")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ch")
-    elseif variacao == "r8pDx" then
-        setd(-48, 0) -- test  El primer pintor
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "CC611780h")
-        setd(-60, "00007473h")
-        setd(-64, "69747261h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ah")
-    elseif variacao == "r9pDx" then
-        setd(-48, 0) -- test   El primer futbolista
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC007265h")
-        setd(-60, "6C6C6162h")
-        setd(-64, "746F6F66h")
-        setd(-68, "5F657574h")
-        setd(-72, "61747322h")
-    elseif variacao == "r10pDx" then
-        setd(-48, 0) -- test  El primer cientifico
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "006C6168h")
-        setd(-60, "74726564h")
-        setd(-64, "6E61656Eh")
-        setd(-68, "5F657574h")
-        setd(-72, "61747324h")
-    elseif variacao == "r11pDx" then
-        setd(-48, 0) -- test   El primer aeronautico
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC60F458h")
-        setd(-60, "0000796Fh")
-        setd(-64, "62796C66h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ah")
-
-        -- Decoración Deportes
-    elseif variacao == "r1TUTR" then
-        setd(-48, 0) -- test    Campo de hockey
-        setd(-44, 5)
-        setd(-52, "00000017h")
-        setd(-56, "0072656Eh")
-        setd(-60, "6E75725Fh")
-        setd(-64, "646C6569h")
-        setd(-68, "4679656Bh")
-        setd(-72, "636F6824h")
-    elseif variacao == "r2TUTR" then
-        setd(-48, 0) -- test    Campo de rugby
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "0079726Fh")
-        setd(-60, "74006D75h")
-        setd(-64, "69646174h")
-        setd(-68, "735F7962h")
-        setd(-72, "6775721Ah")
-    elseif variacao == "r3TUTR" then
-        setd(-48, 0) -- test    Pista eterna
-        setd(-44, 5)
-        setd(-52, "00000055h")
-        setd(-56, "74C40072h")
-        setd(-60, "656E6E75h")
-        setd(-64, "725F6472h")
-        setd(-68, "616F6277h")
-        setd(-72, "6F6E7320h")
-    elseif variacao == "r4TUTR" then
-        setd(-48, 0) -- test    Portero veterano
-        setd(-44, 5)
-        setd(-52, "00000050h")
-        setd(-56, "74007265h")
-        setd(-60, "7065656Bh")
-        setd(-64, "6C616F47h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r5TUTR" then
-        setd(-48, 0) -- test    Skatepark
-        setd(-44, 5)
-        setd(-52, "00006563h")
-        setd(-56, "616C5064h")
-        setd(-60, "726F6265h")
-        setd(-64, "74656B53h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-    elseif variacao == "r6TUTR" then
-        setd(-48, 0) -- test    Campeon del mundo
-        setd(-44, 5)
-        setd(-52, "00000050h")
-        setd(-56, "00676F44h")
-        setd(-60, "6C6C6162h")
-        setd(-64, "746F6F46h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-        -- Decoración Avion
-    elseif variacao == "r1EWQT" then
-        setd(-48, 0) -- test   Simulador de vuelo
-        setd(-44, 5)
-        setd(-52, "00656E61h")
-        setd(-56, "6C705F72h")
-        setd(-60, "6F74616Ch")
-        setd(-64, "756D6973h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r2EWQT" then
-        setd(-48, 0) -- test   Avion a vapor
-        setd(-44, 5)
-        setd(-52, "0000724Dh")
-        setd(-56, "006D6165h")
-        setd(-60, "74735F65h")
-        setd(-64, "6E616C70h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r3EWQT" then
-        setd(-48, 0) -- test   Biplano
-        setd(-44, 5)
-        setd(-52, "00006400h")
-        setd(-56, "7265706Dh")
-        setd(-60, "754A656Ch")
-        setd(-64, "64647570h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r4EWQT" then
-        setd(-48, 0) -- test   Campeon volador
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "64726177h")
-        setd(-60, "65527466h")
-        setd(-64, "61726372h")
-        setd(-68, "6941656Eh")
-        setd(-72, "616C7026h")
-    elseif variacao == "r5EWQT" then
-        setd(-48, 0) -- test   Globo galeon 
-        setd(-44, 5)
-        setd(-52, "00006400h")
-        setd(-56, "72007069h")
-        setd(-60, "6873676Eh")
-        setd(-64, "69796C66h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-        -- Decoración Golosinas
-    elseif variacao == "r1YIUIS" then
-        setd(-48, 0) -- test   Casa de golosinas
-        setd(-44, 5)
-        setd(-52, "00000073h")
-        setd(-56, "00657375h")
-        setd(-60, "6F685F79h")
-        setd(-64, "646E6163h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r2YIUIS" then
-        setd(-48, 0) -- test   Montaña de caramelos
-        setd(-44, 5)
-        setd(-52, "0000724Dh")
-        setd(-56, "79006C6Ch")
-        setd(-60, "69685F74h")
-        setd(-64, "65657773h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r3YIUIS" then
-        setd(-48, 0) -- test   Arbol de caramelos
-        setd(-44, 5)
-        setd(-52, "0000724Dh")
-        setd(-56, "79006565h")
-        setd(-60, "72745F79h")
-        setd(-64, "646E6163h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r2YIUIS" then
-        setd(-48, 0) -- test    Puente caramelos
-        setd(-44, 5)
-        setd(-52, "00007200h")
-        setd(-56, "65676469h")
-        setd(-60, "72625F79h")
-        setd(-64, "646E6163h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r3YIUIS" then
-        setd(-48, 0) -- test   Porton de mazapan	
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "79473FE0h")
-        setd(-60, "00000000h")
-        setd(-64, "00657461h")
-        setd(-68, "675F7964h")
-        setd(-72, "6E616314h")
-        -- Decoración Ruinas
-    elseif variacao == "r1POYUT" then
-        setd(-48, 0) -- test   Puerta de la ciudad perdida
-        setd(-44, 5)
-        setd(-52, "00000073h")
-        setd(-56, "6D757264h")
-        setd(-60, "5F746E65h")
-        setd(-64, "69636E61h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r2POYUT" then
-        setd(-48, 0) -- test   Ruinas antiguas
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "6E776F74h")
-        setd(-60, "5F746E65h")
-        setd(-64, "69636E61h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r3POYUT" then
-        setd(-48, 0) -- test   Estatua ancestral
-        setd(-44, 5)
-        setd(-52, "00000073h")
-        setd(-56, "6D65746Fh")
-        setd(-60, "745F656Ch")
-        setd(-64, "676E756Ah")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r4POYUT" then
-        setd(-48, 0) -- test   Ciudad perdida
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "736E6975h")
-        setd(-60, "725F656Ch")
-        setd(-64, "676E756Ah")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r5POYUT" then
-        setd(-48, 0) -- test   Gorila feliz
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "006B6E6Fh")
-        setd(-60, "6D5F656Ch")
-        setd(-64, "676E756Ah")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r6POYUT" then
-        setd(-48, 0) -- test   Cueva selvatica
-        setd(-44, 5)
-        setd(-52, "0000656Ch")
-        setd(-56, "676E756Ah")
-        setd(-60, "5F6E695Fh")
-        setd(-64, "65766163h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-    elseif variacao == "r7POYUT" then
-        setd(-48, 0) -- test   Calendario antiguo
-        setd(-44, 5)
-        setd(-52, "0000000Eh")
-        setd(-56, "C2A6E170h")
-        setd(-60, "00007261h")
-        setd(-64, "646E656Ch")
-        setd(-68, "61635F61h")
-        setd(-72, "79616D1Ah")
-        -- Decoración estatuas townshi
-    elseif variacao == "r1WSFP" then
-        setd(-48, 0) -- test  El discobolo
-        setd(-44, 5)
-        setd(-52, "0000746Eh")
-        setd(-56, "6569636Eh")
-        setd(-60, "615F7265h")
-        setd(-64, "776F7268h")
-        setd(-68, "54737563h")
-        setd(-72, "7369642Ah")
-    elseif variacao == "r2WSFP" then
-        setd(-48, 0) -- test  Estatua de triunfo
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "8C7E0064h")
-        setd(-60, "6169706Dh")
-        setd(-64, "796C6F5Fh")
-        setd(-68, "776F4373h")
-        setd(-72, "696B7320h")
-    elseif variacao == "r3WSFP" then
-        setd(-48, 0) -- test  Artistas entregados
-        setd(-44, 5)
-        setd(-52, "00007365h")
-        setd(-56, "6275635Fh")
-        setd(-60, "676E6972h")
-        setd(-64, "6F6C6F63h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-    elseif variacao == "r4WSFP" then
-        setd(-48, 0) -- test  Los cinco magnificos
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "00746E65h")
-        setd(-60, "6D756E6Fh")
-        setd(-64, "6D5F7935h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r5WSFP" then
-        setd(-48, 0) -- test  Chefs felices
-        setd(-44, 5)
-        setd(-52, "00000061h")
-        setd(-56, "74736170h")
-        setd(-60, "5F736C61h")
-        setd(-64, "6D696E61h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r6WSFP" then
-        setd(-48, 0) -- test  Simbolo de año nuevo
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "65757461h")
-        setd(-60, "74536769h")
-        setd(-64, "705F594Eh")
-        setd(-68, "6573656Eh")
-        setd(-72, "69684326h")
-    elseif variacao == "r7WSFP" then
-        setd(-48, 0) -- test  Tienda de souvernirs
-        setd(-44, 5)
-        setd(-52, "00000070h")
-        setd(-56, "6F68735Fh")
-        setd(-60, "72696E65h")
-        setd(-64, "76756F73h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r8WSFP" then
-        setd(-48, 0) -- test  Maestro de las cometas
-        setd(-44, 5)
-        setd(-52, "00006574h")
-        setd(-56, "694B6469h")
-        setd(-60, "4B5F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ah")
-    elseif variacao == "r9WSFP" then
-        setd(-48, 0) -- test   Artista callejera
-        setd(-44, 5)
-        setd(-52, "0000769Ah")
-        setd(-56, "EBE1F591h")
-        setd(-60, "0000769Ah")
-        setd(-64, "F3007473h")
-        setd(-68, "69747241h")
-        setd(-72, "776F4312h")
-    elseif variacao == "r10WSFP" then
-        setd(-48, 0) -- test  artista la fruta
-        setd(-44, 5)
-        setd(-52, "00000058h")
-        setd(-56, "05642CF8h")
-        setd(-60, "00007000h")
-        setd(-64, "6566696Eh")
-        setd(-68, "6B5F616Ah")
-        setd(-72, "6E696E16h")
-    elseif variacao == "r11WSFP" then
-        setd(-48, 0) -- test    beauty_3 // para townshi
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "6E6F6C6Ch")
-        setd(-64, "61625F33h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r12WSFP" then
-        setd(-48, 0) -- test    beauty_3 // Atracción adrenalina
-        setd(-44, 1)
-        setd(-52, "0000008Dh")
-        setd(-56, "EA9286E8h")
-        setd(-60, "00006575h")
-        setd(-64, "74617453h")
-        setd(-68, "5F726577h")
-        setd(-72, "6F6C461Ah")
-    elseif variacao == "r13WSFP" then
-        setd(-48, 0) -- test    beauty_3 //  Estatua de gran dirigente
-        setd(-44, 1)
-        setd(-52, "006E6F69h")
-        setd(-56, "7461726Fh")
-        setd(-60, "63654465h")
-        setd(-64, "6E696E79h")
-        setd(-68, "61646874h")
-        setd(-72, "7269622Ch")
-        -- Decoración Arbol
-    elseif variacao == "r1BHSO" then
-        setd(-48, 0) -- test    Jacaranda
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "665F7900h")
-        setd(-64, "65006164h")
-        setd(-68, "6E617261h")
-        setd(-72, "6B616A12h")
-    elseif variacao == "r2BHSO" then
-        setd(-48, 0) -- test    Cactus
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "665F7900h")
-        setd(-64, "6564696Ch")
-        setd(-68, "00737574h")
-        setd(-72, "6361630Ch")
-    elseif variacao == "r3BHSO" then
-        setd(-48, 0) -- test    Baobab
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "665F7900h")
-        setd(-64, "6564696Ch")
-        setd(-68, "00626162h")
-        setd(-72, "6F61620Ch")
-    elseif variacao == "r4BHSO" then
-        setd(-48, 0) -- test    Palmera datilera
-        setd(-44, 5)
-        setd(-52, "00007400h")
-        setd(-56, "65006D6Ch")
-        setd(-60, "61705F63h")
-        setd(-64, "696E6966h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r5BHSO" then
-        setd(-48, 0) -- test    Glicina
-        setd(-44, 5)
-        setd(-52, "00000061h")
-        setd(-56, "00656C00h")
-        setd(-60, "61697265h")
-        setd(-64, "74736977h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r6BHSO" then
-        setd(-48, 0) -- test    Delonix regia
-        setd(-44, 5)
-        setd(-52, "00000061h")
-        setd(-56, "00656C70h")
-        setd(-60, "0078696Eh")
-        setd(-64, "6F6C6564h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Ch")
-    elseif variacao == "r7BHSO" then
-        setd(-48, 0) -- test    Araguaney
-        setd(-44, 5)
-        setd(-52, "00007372h")
-        setd(-56, "65000079h")
-        setd(-60, "656E6175h")
-        setd(-64, "67617261h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656220h")
-    elseif variacao == "r8BHSO" then
-        setd(-48, 0) -- test    Rododendro
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "6E6F7264h")
-        setd(-60, "6E65646Fh")
-        setd(-64, "646F6872h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r9BHSO" then
-        setd(-48, 0) -- test    Gladiolos
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "73756C6Fh")
-        setd(-60, "6964616Ch")
-        setd(-64, "675F6465h")
-        setd(-68, "62726577h")
-        setd(-72, "6F6C6626h")
-    elseif variacao == "r10BHSO" then
-        setd(-48, 0) -- test    Amapolas
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00007365h")
-        setd(-60, "6970706Fh")
-        setd(-64, "705F6465h")
-        setd(-68, "62726577h")
-        setd(-72, "6F6C6622h")
-    elseif variacao == "r11BHSO" then
-        setd(-48, 0) -- test    Campo de flores
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000065h")
-        setd(-64, "67646568h")
-        setd(-68, "5F726577h")
-        setd(-72, "6F6C6618h")
-        -- Decoración hinchable 
-    elseif variacao == "r1VXCS" then
-        setd(-48, 0) -- test   Pez hinchable
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "006E6F6Ch")
-        setd(-60, "6C61625Fh")
-        setd(-64, "68736966h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r2VXCS" then
-        setd(-48, 0) -- test   Cerdo hinchable
-        setd(-44, 5)
-        setd(-52, "00000067h")
-        setd(-56, "6950796Ch")
-        setd(-60, "665F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "65705328h")
-    elseif variacao == "r3VXCS" then
-        setd(-48, 0) -- test   Ballena hinchable
-        setd(-44, 5)
-        setd(-52, "00656C61h")
-        setd(-56, "6857796Ch")
-        setd(-60, "665F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ch")
-    elseif variacao == "r4VXCS" then
-        setd(-48, 0) -- test   Vaca hinchable
-        setd(-44, 5)
-        setd(-52, "00000077h")
-        setd(-56, "6F43796Ch")
-        setd(-60, "665F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "65705328h")
-    elseif variacao == "r5VXCS" then
-        setd(-48, 0) -- test   Oveja hinchable
-        setd(-44, 5)
-        setd(-52, "00706565h")
-        setd(-56, "6853796Ch")
-        setd(-60, "665F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ch")
-    elseif variacao == "r6VXCS" then
-        setd(-48, 0) -- test   Abeja hinchable
-        setd(-44, 5)
-        setd(-52, "00007400h")
-        setd(-56, "6573756Fh")
-        setd(-60, "685F7972h")
-        setd(-64, "7578756Ch")
-        setd(-68, "00656542h")
-        setd(-72, "796C660Ch")
-    elseif variacao == "r7VXCS" then
-        setd(-48, 0) -- test   Dragon hinchable
-        setd(-44, 5)
-        setd(-52, "00007400h")
-        setd(-56, "6573756Fh")
-        setd(-60, "685F7972h")
-        setd(-64, "75006E6Fh")
-        setd(-68, "67617244h")
-        setd(-72, "796C6612h")
-    elseif variacao == "r8VXCS" then
-        setd(-48, 0) -- test   Elefante hinchable
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "665F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ah")
-    elseif variacao == "r9VXCS" then
-        setd(-48, 0) -- test   Panda hinchable
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "665F7900h")
-        setd(-64, "65640061h")
-        setd(-68, "646E6150h")
-        setd(-72, "796C6610h")
-    elseif variacao == "r10VXCS" then
-        setd(-48, 0) -- test   Trampolin de mandibula de tiburon
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "665F7900h")
-        setd(-64, "6564696Ch")
-        setd(-68, "735F6B72h")
-        setd(-72, "61687316h")
-    elseif variacao == "r11VXCS" then
-        setd(-48, 0) -- test   Trampolin de leon
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "66006500h")
-        setd(-64, "73656469h")
-        setd(-68, "6C735F6Eh")
-        setd(-72, "6F696C16h")
-    elseif variacao == "r12VXCS" then
-        setd(-48, 0) -- test   Trampolin de zoo
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "6600656Ch")
-        setd(-64, "74736163h")
-        setd(-68, "5F6E6F6Fh")
-        setd(-72, "6C61621Ah")
-        -- Decoración Puzzle
-    elseif variacao == "r1TPLKA" then
-        setd(-48, 0) -- test    tierra de los dinosaurios
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "61690065h")
-        setd(-60, "6C74006Bh")
-        setd(-64, "72615063h")
-        setd(-68, "69737361h")
-        setd(-72, "72754A18h")
-    elseif variacao == "r2TPLKA" then
-        setd(-48, 0) -- test    puerto espacial
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "61690065h")
-        setd(-60, "00616C00h")
-        setd(-64, "74656B63h")
-        setd(-68, "6F526563h")
-        setd(-72, "61705316h")
-    elseif variacao == "r3TPLKA" then
-        setd(-48, 0) -- test    muñeco de nieve
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "79656B6Eh")
-        setd(-60, "6F6D5F77h")
-        setd(-64, "6F6E7300h")
-        setd(-68, "6E616D77h")
-        setd(-72, "6F6E530Eh")
-    elseif variacao == "r4TPLKA" then
-        setd(-48, 0) -- test    tarta gigante
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "73736572h")
-        setd(-60, "74726F66h")
-        setd(-64, "006F0065h")
-        setd(-68, "6B614361h")
-        setd(-72, "67654D10h")
-    elseif variacao == "r5TPLKA" then
-        setd(-48, 0) -- test    colecion de coches clasicos
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "73736572h")
-        setd(-60, "74726F66h")
-        setd(-64, "006F7476h")
-        setd(-68, "615F6F72h")
-        setd(-72, "74657214h")
-
-    elseif variacao == "r6TPLKA" then
-        setd(-48, 0) -- test  hallowen2017 Escuela de magia
-        setd(-44, 5)
-        setd(-52, "00310072h")
-        setd(-56, "00726F63h")
-        setd(-60, "65443731h")
-        setd(-64, "30326E65h")
-        setd(-68, "65776F6Ch")
-        setd(-72, "6C614824h")
-    elseif variacao == "r7TPLKA" then
-        setd(-48, 0) -- test    Árbol de luces
-        setd(-44, 5)
-        setd(-52, "00310072h")
-        setd(-56, "0032316Eh")
-        setd(-60, "6F006565h")
-        setd(-64, "7254594Eh")
-        setd(-68, "6573656Eh")
-        setd(-72, "6968431Ah")
-    elseif variacao == "r8TPLKA" then
-        setd(-48, 0) -- test Barrio disco
-        setd(-44, 5)
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "0")
-        setd(-68, "0")
-        setd(-72, "0")
-    elseif variacao == "r9TPLKA" then
-        setd(-48, 0) -- test   Villaconejo
-        setd(-44, 5)
-        setd(-52, "00310072h")
-        setd(-56, "00323100h")
-        setd(-60, "726F6365h")
-        setd(-64, "44373130h")
-        setd(-68, "32726574h")
-        setd(-72, "7361451Eh")
-    elseif variacao == "r10TPLKA" then
-        setd(-48, 0) -- test     Villa sobre agua
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05630039h")
-        setd(-60, "5053776Fh")
-        setd(-64, "6C61676Eh")
-        setd(-68, "75427265h")
-        setd(-72, "74615720h")
-
-        -- Decoración Diamantes
-    elseif variacao == "r1LFGJZ" then
-        setd(-48, 0) -- test    Catedral de san basilio
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "00687461h")
-        setd(-68, "435F6C69h")
-        setd(-72, "73614214h")
-    elseif variacao == "r2LFGJZ" then
-        setd(-48, 0) -- test    Castillo
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "8158B1DEh")
-        setd(-68, "00656C74h")
-        setd(-72, "7361630Ch")
-    elseif variacao == "r3LFGJZ" then
-        setd(-48, 0) -- test    Estatua de la libertad
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "0031765Fh")
-        setd(-68, "6D6F6465h")
-        setd(-72, "65726614h")
-    elseif variacao == "r4LFGJZ" then
-        setd(-48, 0) -- test    Crater
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "8158B1DEh")
-        setd(-68, "00726574h")
-        setd(-72, "6172630Ch")
-    elseif variacao == "r5LFGJZ" then
-        setd(-48, 0) -- test    Taj mahal
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "00007200h")
-        setd(-64, "31765F6Ch")
-        setd(-68, "6168616Dh")
-        setd(-72, "6A617416h")
-    elseif variacao == "r6LFGJZ" then
-        setd(-48, 0) -- test    Torre de vigilancia
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000746Eh")
-        setd(-64, "696F705Fh")
-        setd(-68, "74756F6Bh")
-        setd(-72, "6F6F6C1Ah")
-    elseif variacao == "r7LFGJZ" then
-        setd(-48, 0) -- test    Torres petronas
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "81580073h")
-        setd(-68, "616E6F72h")
-        setd(-72, "74657010h")
-    elseif variacao == "r8LFGJZ" then
-        setd(-48, 0) -- test    La torre de pizza
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "00006173h")
-        setd(-64, "69505F66h")
-        setd(-68, "6F5F7265h")
-        setd(-72, "776F541Ah")
-    elseif variacao == "r9LFGJZ" then
-        setd(-48, 0) -- test    Templo del cielo
-        setd(-44, 5)
-        setd(-52, "0000724Dh")
-        setd(-56, "AA00796Bh")
-        setd(-60, "735F6568h")
-        setd(-64, "745F666Fh")
-        setd(-68, "5F656361h")
-        setd(-72, "6C615022h")
-    elseif variacao == "r10LFGJZ" then
-        setd(-48, 0) -- test    Notre-dame de paris
-        setd(-44, 5)
-        setd(-52, "00007065h")
-        setd(-56, "6C45796Ch")
-        setd(-60, "66006500h")
-        setd(-64, "00656D61h")
-        setd(-68, "445F6572h")
-        setd(-72, "746F4E14h")
-    elseif variacao == "r11LFGJZ" then
-        setd(-48, 0) -- test    Aguja espacial
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0031765Fh")
-        setd(-64, "656C6465h")
-        setd(-68, "656E6563h")
-        setd(-72, "6170731Ch")
-    elseif variacao == "r12LFGJZ" then
-        setd(-48, 0) -- test    Arcos marinos
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "81580065h")
-        setd(-68, "7461675Fh")
-        setd(-72, "61657310h")
-    elseif variacao == "r13LFGJZ" then
-        setd(-48, 0) -- test    Big ben
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "8158B100h")
-        setd(-68, "6E61625Fh")
-        setd(-72, "6769620Eh")
-    elseif variacao == "r14LFGJZ" then
-        setd(-48, 0) -- test    Puente golden gate
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "00007200h")
-        setd(-64, "65746167h")
-        setd(-68, "5F6E6564h")
-        setd(-72, "6C6F6716h")
-    elseif variacao == "r15LFGJZ" then
-        setd(-48, 0) -- test    Templo tailandes
-        setd(-44, 5)
-        setd(-52, "0000724Dh")
-        setd(-56, "00656C70h")
-        setd(-60, "6D65745Fh")
-        setd(-64, "69616874h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r16LFGJZ" then
-        setd(-48, 0) -- test    Burj khalifa
-        setd(-44, 5)
-        setd(-52, "00000061h")
-        setd(-56, "66696C61h")
-        setd(-60, "685F687Ah")
-        setd(-64, "64727562h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r17LFGJZ" then
-        setd(-48, 0) -- test    Piramide
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "81580065h")
-        setd(-68, "64696D61h")
-        setd(-72, "72797010h")
-    elseif variacao == "r18LFGJZ" then
-        setd(-48, 0) -- test    Yate
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "0000000Bh")
-        setd(-60, "0000724Dh")
-        setd(-64, "81006E69h")
-        setd(-68, "665F7468h")
-        setd(-72, "63617912h")
-    elseif variacao == "r19LFGJZ" then
-        setd(-48, 0) -- test    Empire state building
-        setd(-44, 5)
-        setd(-52, "2D956CC0h")
-        setd(-56, "00000000h")
-        setd(-60, "31765F65h")
-        setd(-64, "74617473h")
-        setd(-68, "5F657269h")
-        setd(-72, "706D651Eh")
-    elseif variacao == "r20LFGJZ" then
-        setd(-48, 0) -- test    Barco antiguo
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "00326400h")
-        setd(-60, "74616F62h")
-        setd(-64, "6C696173h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r21LFGJZ" then
-        setd(-48, 0) -- test    Torre Eiffel
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBB17B60h")
-        setd(-60, "00007600h")
-        setd(-64, "7265776Fh")
-        setd(-68, "745F6C65h")
-        setd(-72, "66696516h")
-    elseif variacao == "r22LFGJZ" then
-        setd(-48, 0) -- test    Aguja espacial
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBB1D8F0h")
-        setd(-60, "0031765Fh")
-        setd(-64, "656C6465h")
-        setd(-68, "656E6563h")
-        setd(-72, "6170731Ch")
-    elseif variacao == "r23LFGJZ" then
-        setd(-48, 0) -- test    Bandera
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBF27020h")
-        setd(-60, "0000769Ah")
-        setd(-64, "EC0A2591h")
-        setd(-68, "00000067h")
-        setd(-72, "616C6608h")
-    elseif variacao == "r24LFGJZ" then
-        setd(-48, 0) -- test    Opera de sidney
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBF30E28h")
-        setd(-60, "00000061h")
-        setd(-64, "7265706Fh")
-        setd(-68, "5F79656Eh")
-        setd(-72, "64797318h")
-    elseif variacao == "r25LFGJZ" then
-        setd(-48, 0) -- test    Arco del triunfo
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBF2DEA8h")
-        setd(-60, "0000769Ah")
-        setd(-64, "EC003574h")
-        setd(-68, "6E656D75h")
-        setd(-72, "6E6F6D12h")
-        -- Decoración China
-    elseif variacao == "r1CHIMN" then
-        setd(-48, 0) -- test  chinatown
-        setd(-44, 5)
-        setd(-52, "00726163h")
-        setd(-56, "65006E77h")
-        setd(-60, "6F745F61h")
-        setd(-64, "6E696863h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r2CHIMN" then
-        setd(-48, 0) -- test  Danza del dragon
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "65636E61h")
-        setd(-60, "645F6E6Fh")
-        setd(-64, "67617264h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-        -- Decoración Eventos
-    elseif variacao == "r1LFG" then
-        setd(-48, 0) -- test   ;;;;; Casa de la florista
-        setd(-44, 5)
-        setd(-52, "00000055h")
-        setd(-56, "056409F0h")
-        setd(-60, "00000065h")
-        setd(-64, "73756F68h")
-        setd(-68, "5F726577h")
-        setd(-72, "6F6C6618h")
-    elseif variacao == "r2LFG" then
-        setd(-48, 0) -- test   ;;;;; Casa del terror
-        setd(-44, 5)
-        setd(-52, "0000005Ah")
-        setd(-56, "05006E65h")
-        setd(-60, "65776F6Ch")
-        setd(-64, "6C61685Fh")
-        setd(-68, "7265626Dh")
-        setd(-72, "61686322h")
-    elseif variacao == "r3LFG" then
-        setd(-48, 0) -- test   ;;;;; Exposicion de arte
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "05644598h")
-        setd(-60, "00007000h")
-        setd(-64, "7472615Fh")
-        setd(-68, "7972656Ch")
-        setd(-72, "6C616716h")
-    elseif variacao == "r4LFG" then
-        setd(-48, 0) -- test   ;;;;; Mercado agricola
-        setd(-44, 5)
-        setd(-52, "00000022h")
-        setd(-56, "0564D508h")
-        setd(-60, "00007000h")
-        setd(-64, "65756373h")
-        setd(-68, "65725F72h")
-        setd(-72, "69616616h")
-    elseif variacao == "r5LFG" then
-        setd(-48, 0) -- test   ;;;;; Escuela de jardineria
-        setd(-44, 5)
-        setd(-52, "0000002Ch")
-        setd(-56, "05640400h")
-        setd(-60, "7372656Eh")
-        setd(-64, "65647261h")
-        setd(-68, "675F676Eh")
-        setd(-72, "756F791Eh")
-    elseif variacao == "r6LFG" then
-        setd(-48, 0) -- test   ;;;;; Minizoo de conejos
-        setd(-44, 5)
-        setd(-52, "0000000Fh")
-        setd(-56, "05006575h")
-        setd(-60, "63736572h")
-        setd(-64, "5F6F6F5Ah")
-        setd(-68, "74636174h")
-        setd(-72, "6E6F6322h")
-    elseif variacao == "r7LFG" then
-        setd(-48, 0) -- test   ;;;;; Estanque de los nenufares rojos
-        setd(-44, 5)
-        setd(-52, "0000006Dh")
-        setd(-56, "05655988h")
-        setd(-60, "0000646Eh")
-        setd(-64, "6F507365h")
-        setd(-68, "696C694Ch")
-        setd(-72, "6465721Ah")
-    elseif variacao == "r8LFG" then
-        setd(-48, 0) -- test   ;;;;; Rata con saco de monedas
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "05655FE8h")
-        setd(-60, "00706D75h")
-        setd(-64, "6A5F6E65h")
-        setd(-68, "64726147h")
-        setd(-72, "7461721Ch")
-    elseif variacao == "r9LFG" then
-        setd(-48, 0) -- test   ;;;;; Casa del acuarista
-        setd(-44, 5)
-        setd(-52, "0000676Eh")
-        setd(-56, "69687369h")
-        setd(-60, "665F6573h")
-        setd(-64, "756F486Dh")
-        setd(-68, "75697261h")
-        setd(-72, "7571612Ah")
-    elseif variacao == "r10LFG" then
-        setd(-48, 0) -- test   ;;;;; Cocina de campamento
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05644C30h")
-        setd(-60, "00006B6Eh")
-        setd(-64, "616C705Fh")
-        setd(-68, "6E656863h")
-        setd(-72, "74696B1Ah")
-    elseif variacao == "r11LFG" then
-        setd(-48, 0) -- test   ;;;;; Tribu fructifera
-        setd(-44, 5)
-        setd(-52, "00000068h")
-        setd(-56, "05659048h")
-        setd(-60, "00656C67h")
-        setd(-64, "6E756A5Fh")
-        setd(-68, "6567616Ch")
-        setd(-72, "6C69761Ch")
-    elseif variacao == "r12LFG" then
-        setd(-48, 0) -- test   ;;;;; Prueba experimental de jet pack
-        setd(-44, 5)
-        setd(-52, "0000006Bh")
-        setd(-56, "05659EF0h")
-        setd(-60, "0000656Eh")
-        setd(-64, "616C705Fh")
-        setd(-68, "6B636170h")
-        setd(-72, "74656A1Ah")
-    elseif variacao == "r13LFG" then
-        setd(-48, 0) -- test   ;;;;; Pueblo la fruta
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05659600h")
-        setd(-60, "6566696Eh")
-        setd(-64, "6B5F6B72h")
-        setd(-68, "61507469h")
-        setd(-72, "7572661Eh")
-    elseif variacao == "r14LFG" then
-        setd(-48, 0) -- test   ;;;;; Coches tuneados
-        setd(-44, 5)
-        setd(-52, "0000676Eh")
-        setd(-56, "69000065h")
-        setd(-60, "75637365h")
-        setd(-64, "725F7372h")
-        setd(-68, "65646972h")
-        setd(-72, "776F6C20h")
-    elseif variacao == "r15LFG" then
-        setd(-48, 0) -- test   ;;;;; Cine al aire libre
-        setd(-44, 5)
-        setd(-52, "0000706Fh")
-        setd(-56, "6873656Bh")
-        setd(-60, "61635F61h")
-        setd(-64, "6D656E69h")
-        setd(-68, "43746565h")
-        setd(-72, "7274732Ah")
-    elseif variacao == "r16LFG" then
-        setd(-48, 0) -- test   ;;;;; Exposicion altlantida
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05657C00h")
-        setd(-60, "7369746Eh")
-        setd(-64, "616C7461h")
-        setd(-68, "5F6D7565h")
-        setd(-72, "73756D1Eh")
-    elseif variacao == "r17LFG" then
-        setd(-48, 0) -- test   ;;;;; Parque de golosinas
-        setd(-44, 5)
-        setd(-52, "0000005Ch")
-        setd(-56, "05651560h")
-        setd(-60, "00007000h")
-        setd(-64, "65636E75h")
-        setd(-68, "6F42796Ch")
-        setd(-72, "6C656A16h")
-    elseif variacao == "r18LFG" then
-        setd(-48, 0) -- test   ;;;;; Castillo de golosinas
-        setd(-44, 5)
-        setd(-52, "0000005Ch")
-        setd(-56, "05007869h")
-        setd(-60, "6C65685Fh")
-        setd(-64, "656C7473h")
-        setd(-68, "61437964h")
-        setd(-72, "6E616322h")
-    elseif variacao == "r19LFG" then
-        setd(-48, 0) -- test   ;;;;; Centro de musica
-        setd(-44, 5)
-        setd(-52, "0000004Ch")
-        setd(-56, "00636973h")
-        setd(-60, "756D5F72h")
-        setd(-64, "65747261h")
-        setd(-68, "75516369h")
-        setd(-72, "73756D24h")
-    elseif variacao == "r20LFG" then
-        setd(-48, 0) -- test   ;;;;; Campamento pirata 
-        setd(-44, 5)
-        setd(-52, "00730073h")
-        setd(-56, "65746172h")
-        setd(-60, "69705F79h")
-        setd(-64, "74726170h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r21LFG" then
-        setd(-48, 0) -- test   ;;;;; Yeti 
-        setd(-44, 5)
-        setd(-52, "0073746Ch")
-        setd(-56, "6974735Fh")
-        setd(-60, "73746100h")
-        setd(-64, "69746579h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656216h")
-    elseif variacao == "r22LFG" then
-        setd(-48, 0) -- test  ;;;;; Ovni detectado  
-        setd(-44, 5)
-        setd(-52, "0073746Ch")
-        setd(-56, "6974735Fh")
-        setd(-60, "73746162h")
-        setd(-64, "006F6675h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656214h")
-    elseif variacao == "r23LFG" then
-        setd(-48, 0) -- test   ;;;;; Poza madre la naturaleza
-        setd(-44, 5)
-        setd(-52, "0000006Eh")
-        setd(-56, "05006874h")
-        setd(-60, "7261655Fh")
-        setd(-64, "72656874h")
-        setd(-68, "6F6D5F64h")
-        setd(-72, "6E6F7022h")
-    elseif variacao == "r24LFG" then
-        setd(-48, 0) -- test   ;;;;; Ciudad hundida
-        setd(-44, 5)
-        setd(-52, "00000073h")
-        setd(-56, "69746E61h")
-        setd(-60, "6C74615Fh")
-        setd(-64, "79676F6Ch")
-        setd(-68, "6F656168h")
-        setd(-72, "63726128h")
-    elseif variacao == "r25LFG" then
-        setd(-48, 0) -- test   ;;;;; Estacion marina
-        setd(-44, 5)
-        setd(-52, "00000076h")
-        setd(-56, "05654A00h")
-        setd(-60, "65766964h")
-        setd(-64, "5F6E6F69h")
-        setd(-68, "74617453h")
-        setd(-72, "6165731Eh")
-    elseif variacao == "r26LFG" then
-        setd(-48, 0) -- test   ;;;;; Hotel atlantida 
-        setd(-44, 5)
-        setd(-52, "00006C65h")
-        setd(-56, "746F685Fh")
-        setd(-60, "7369746Eh")
-        setd(-64, "616C7461h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-        -- Decoración Niños
-    elseif variacao == "r1MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Espantapajaros mecanico
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "05650138h")
-        setd(-60, "0000006Eh")
-        setd(-64, "616D7761h")
-        setd(-68, "72745368h")
-        setd(-72, "63656D18h")
-    elseif variacao == "r2MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Carreras de coches telerigidos
-        setd(-44, 5)
-        setd(-52, "00000068h")
-        setd(-56, "05640065h")
-        setd(-60, "75637365h")
-        setd(-64, "725F6563h")
-        setd(-68, "61726F69h")
-        setd(-72, "64617220h")
-    elseif variacao == "r3MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Cañon de fruta
-        setd(-44, 5)
-        setd(-52, "0000006Ah")
-        setd(-56, "00656669h")
-        setd(-60, "6E6B5F67h")
-        setd(-64, "6E696369h")
-        setd(-68, "6C537469h")
-        setd(-72, "75726624h")
-    elseif variacao == "r4MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Lanzamiento de cuchillos 
-        setd(-44, 5)
-        setd(-52, "00736576h")
-        setd(-56, "696E6B5Fh")
-        setd(-60, "676E6977h")
-        setd(-64, "6F726874h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r5MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Campo de tiro la fruta
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "05647E00h")
-        setd(-60, "65756373h")
-        setd(-64, "65725F67h")
-        setd(-68, "6E69746Fh")
-        setd(-72, "6F68731Eh")
-    elseif variacao == "r6MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Martillo de fuerza
-        setd(-44, 5)
-        setd(-52, "00000039h")
-        setd(-56, "00657563h")
-        setd(-60, "7365725Fh")
-        setd(-64, "72657465h")
-        setd(-68, "6D6F6D61h")
-        setd(-72, "6E796424h")
-    elseif variacao == "r7MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Pinball
-        setd(-44, 5)
-        setd(-52, "0000007Dh")
-        setd(-56, "0564E828h")
-        setd(-60, "00007869h")
-        setd(-64, "6C65685Fh")
-        setd(-68, "6C6C6162h")
-        setd(-72, "6E69701Ah")
-    elseif variacao == "r8MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Maquina de peluches
-        setd(-44, 5)
-        setd(-52, "0000004Bh")
-        setd(-56, "05640078h")
-        setd(-60, "696C6568h")
-        setd(-64, "5F656E69h")
-        setd(-68, "6863614Dh")
-        setd(-72, "796F7420h")
-    elseif variacao == "r9MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Consola por antonomasia
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "056508D8h")
-        setd(-60, "00007869h")
-        setd(-64, "6C65685Fh")
-        setd(-68, "796F6265h")
-        setd(-72, "6D61671Ah")
-    elseif variacao == "r10MaTPKi" then
-        setd(-48, 0) -- test  ;;;;; Tiovivo pulpo
-        setd(-44, 1)
-        setd(-52, "0000008Ch")
-        setd(-56, "EA920073h")
-        setd(-60, "75706F74h")
-        setd(-64, "634F5F6Ch")
-        setd(-68, "6573756Fh")
-        setd(-72, "72614320h")
-
-        -- Decoración 1
-    elseif variacao == "r1JTyMT" then
-        setd(-48, 0) -- test Planetario al aire libre
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "6D657473h")
-        setd(-60, "79735F72h")
-        setd(-64, "616C6F73h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r2JTyMT" then
-        setd(-48, 0) -- test Cafeteria con viñedo
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00006472h")
-        setd(-64, "6179656Eh")
-        setd(-68, "69565F65h")
-        setd(-72, "6661431Ah")
-    elseif variacao == "r3JTyMT" then
-        setd(-48, 0) -- test Elefantes felices
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "86140073h")
-        setd(-60, "746E6168h")
-        setd(-64, "70656C65h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656220h")
-    elseif variacao == "r4JTyMT" then
-        setd(-48, 0) -- test Yeti   maxibatidora 1
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "0563EA58h")
-        setd(-60, "00006566h")
-        setd(-64, "696E6B5Fh")
-        setd(-68, "7265646Eh")
-        setd(-72, "656C621Ah")
-    elseif variacao == "r5JTyMT" then
-        setd(-48, 0) --   parterre macedoña 1
-        setd(-44, 5)
-        setd(-52, "00000055h")
-        setd(-56, "0563ED00h")
-        setd(-60, "6566696Eh")
-        setd(-64, "6B5F656Ch")
-        setd(-68, "70706165h")
-        setd(-72, "6E69701Eh")
-    elseif variacao == "r6JTyMT" then
-        setd(-48, 0) -- test Danza de los zancos
-        setd(-44, 5)
-        setd(-52, "0073746Ch")
-        setd(-56, "6974735Fh")
-        setd(-60, "73746162h")
-        setd(-64, "6F726361h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r7JTyMT" then
-        setd(-48, 0) -- test Monstruo del lago ness
-        setd(-44, 5)
-        setd(-52, "00000072h")
-        setd(-56, "6574736Eh")
-        setd(-60, "6F6D5F72h")
-        setd(-64, "65746177h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r8JTyMT" then
-        setd(-48, 0) -- test Barco encantado
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "86007069h")
-        setd(-60, "68735F74h")
-        setd(-64, "736F6867h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r9JTyMT" then
-        setd(-48, 0) -- test Diplodocus
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "86006500h")
-        setd(-60, "72756173h")
-        setd(-64, "6F6E6964h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r10JTyMT" then
-        setd(-48, 0) -- test A Galope
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "86006567h")
-        setd(-60, "0068746Fh")
-        setd(-64, "6D6D616Dh")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Ch")
-    elseif variacao == "r11JTyMT" then
-        setd(-48, 0) -- test Stonehenge
-        setd(-44, 5)
-        setd(-52, "00007756h")
-        setd(-56, "86006567h")
-        setd(-60, "6E656865h")
-        setd(-64, "6E6F7473h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r12JTyMT" then
-        setd(-48, 0) -- test Cascada
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "6169646Eh")
-        setd(-60, "006C6C61h")
-        setd(-64, "66726574h")
-        setd(-68, "61576C6Ch")
-        setd(-72, "616D531Ch")
-    elseif variacao == "r13JTyMT" then
-        setd(-48, 0) -- test Reloj de arena
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "6169646Eh")
-        setd(-60, "75735F65h")
-        setd(-64, "6772616Ch")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r14JTyMT" then
-        setd(-48, 0) -- test Estatua de pavo real
-        setd(-44, 5)
-        setd(-52, "00006575h")
-        setd(-56, "74617473h")
-        setd(-60, "5F6B636Fh")
-        setd(-64, "63616570h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-    elseif variacao == "r15JTyMT" then
-        setd(-48, 0) -- test Tridente atlante
-        setd(-44, 5)
-        setd(-52, "00726163h")
-        setd(-56, "6500646Eh")
-        setd(-60, "61685F73h")
-        setd(-64, "616C7461h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r16JTyMT" then
-        setd(-48, 0) -- test duendecillos 1
-        setd(-44, 5)
-        setd(-52, "00000034h")
-        setd(-56, "0563F7B0h")
-        setd(-60, "00007057h")
-        setd(-64, "283FE426h")
-        setd(-68, "0073656Dh")
-        setd(-72, "6F6E670Ch")
-    elseif variacao == "r17JTyMT" then
-        setd(-48, 0) -- test Estatua reliquia de mar
-        setd(-44, 5)
-        setd(-52, "00657574h")
-        setd(-56, "6174735Fh")
-        setd(-60, "7369746Eh")
-        setd(-64, "616C7461h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r18JTyMT" then
-        setd(-48, 0) -- test Ricon del coral
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "6E656472h")
-        setd(-60, "61675F6Ch")
-        setd(-64, "61726F63h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r19JTyMT" then
-        setd(-48, 0) -- test Exploradores marinos
-        setd(-44, 5)
-        setd(-52, "00737265h")
-        setd(-56, "68637261h")
-        setd(-60, "65736572h")
-        setd(-64, "5F616573h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r20JTyMT" then
-        setd(-48, 0) -- test  hada en nenufar 1   
-        setd(-44, 5)
-        setd(-52, "0000001Ch")
-        setd(-56, "0563FE10h")
-        setd(-60, "00007000h")
-        setd(-64, "72657461h")
-        setd(-68, "775F7972h")
-        setd(-72, "69616616h")
-    elseif variacao == "r21JTyMT" then
-        setd(-48, 0) -- test Guardian del tesoro
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "6C617665h")
-        setd(-60, "6964656Dh")
-        setd(-64, "5F6E6F67h")
-        setd(-68, "61724468h")
-        setd(-72, "63656D26h")
-    elseif variacao == "r22JTyMT" then
-        setd(-48, 0) -- test Cetreria
-        setd(-44, 5)
-        setd(-52, "00007700h")
-        setd(-56, "6C617665h")
-        setd(-60, "00676E69h")
-        setd(-64, "746E7568h")
-        setd(-68, "5F6E6F63h")
-        setd(-72, "6C61661Ch")
-    elseif variacao == "r23JTyMT" then
-        setd(-48, 0) -- test Barco fantasma
-        setd(-44, 5)
-        setd(-52, "00000070h")
-        setd(-56, "6968735Fh")
-        setd(-60, "74736F68h")
-        setd(-64, "675F6E65h")
-        setd(-68, "65776F6Ch")
-        setd(-72, "6C616828h")
-    elseif variacao == "r24JTyMT" then
-        setd(-48, 0) -- test Planta carnívora
-        setd(-44, 5)
-        setd(-52, "00000070h")
-        setd(-56, "61727479h")
-        setd(-60, "6C665F73h")
-        setd(-64, "756E6576h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r25JTyMT" then
-        setd(-48, 0) -- test   columpio de flores 1
-        setd(-44, 5)
-        setd(-52, "00000064h")
-        setd(-56, "05642038h")
-        setd(-60, "00000067h")
-        setd(-64, "6E697773h")
-        setd(-68, "5F726577h")
-        setd(-72, "6F6C6618h")
-    elseif variacao == "r26JTyMT" then
-        setd(-48, 0) -- test Chiringuito cocoloco
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00726162h")
-        setd(-60, "5F74756Eh")
-        setd(-64, "6F636F43h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r27JTyMT" then
-        setd(-48, 0) -- test Piscina de surf
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "9953006Ch")
-        setd(-60, "6F6F705Fh")
-        setd(-64, "66726573h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656220h")
-    elseif variacao == "r28JTyMT" then
-        setd(-48, 0) -- test Bungalo
-        setd(-44, 5)
-        setd(-52, "00000073h")
-        setd(-56, "65766964h")
-        setd(-60, "6C614D65h")
-        setd(-64, "73756F68h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r29JTyMT" then
-        setd(-48, 0) -- test Balancin palmera
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "99006D6Ch")
-        setd(-60, "61705F67h")
-        setd(-64, "6E697773h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r30JTyMT" then
-        setd(-48, 0) -- test Totem de granjero
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "6D65746Fh")
-        setd(-60, "545F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "65705326h")
-    elseif variacao == "r31JTyMT" then
-        setd(-48, 0) -- test Taller de escriba
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "61766569h")
-        setd(-60, "64656D5Fh")
-        setd(-64, "6D756972h")
-        setd(-68, "6F747069h")
-        setd(-72, "72637328h")
-    elseif variacao == "r32JTyMT" then
-        setd(-48, 0) -- test Cañon naval
-        setd(-44, 5)
-        setd(-52, "00006E75h")
-        setd(-56, "47706968h")
-        setd(-60, "535F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ah")
-    elseif variacao == "r33JTyMT" then
-        setd(-48, 0) -- test Paleta de flores
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "99530065h")
-        setd(-60, "72757470h")
-        setd(-64, "6C756353h")
-        setd(-68, "65747465h")
-        setd(-72, "6C615020h")
-    elseif variacao == "r34JTyMT" then
-        setd(-48, 0) -- test Grifo magico
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "99531F58h")
-        setd(-60, "00006E69h")
-        setd(-64, "61746E75h")
-        setd(-68, "6F46656Eh")
-        setd(-72, "6172431Ah")
-    elseif variacao == "r35JTyMT" then
-        setd(-48, 0) -- test Fuente musica
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "995321E8h")
-        setd(-60, "0000006Eh")
-        setd(-64, "6961746Eh")
-        setd(-68, "756F4661h")
-        setd(-72, "72694C18h")
-    elseif variacao == "r36JTyMT" then
-        setd(-48, 0) -- test Carrusel gramófono
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "99533348h")
-        setd(-60, "00656C65h")
-        setd(-64, "73756F72h")
-        setd(-68, "61436369h")
-        setd(-72, "73754D1Ch")
-    elseif variacao == "r37JTyMT" then
-        setd(-48, 0) -- test Set de rodaje
-        setd(-44, 5)
-        setd(-52, "00616D65h")
-        setd(-56, "6E69635Fh")
-        setd(-60, "6F696475h")
-        setd(-64, "74536F66h")
-        setd(-68, "556E6F73h")
-        setd(-72, "6165732Ch")
-    elseif variacao == "r38JTyMT" then
-        setd(-48, 0) -- test Fuente pelicula
-        setd(-44, 5)
-        setd(-52, "0000006Eh")
-        setd(-56, "6961746Eh")
-        setd(-60, "756F4665h")
-        setd(-64, "69766F4Dh")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r39JTyMT" then
-        setd(-48, 0) -- test Tienda musica
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00706F68h")
-        setd(-60, "736B726Fh")
-        setd(-64, "57746E65h")
-        setd(-68, "6D757274h")
-        setd(-72, "736E4924h")
-    elseif variacao == "r40JTyMT" then
-        setd(-48, 0) -- test Estatua de faraon
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00657574h")
-        setd(-60, "61745368h")
-        setd(-64, "6F617261h")
-        setd(-68, "68507470h")
-        setd(-72, "79674524h")
-    elseif variacao == "r41JTyMT" then
-        setd(-48, 0) -- test Barco papiro
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "99530074h")
-        setd(-60, "616F4273h")
-        setd(-64, "75727970h")
-        setd(-68, "61507470h")
-        setd(-72, "79674520h")
-    elseif variacao == "r42JTyMT" then
-        setd(-48, 0) -- test Caballo de troya
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "746E6569h")
-        setd(-60, "636E615Fh")
-        setd(-64, "6573726Fh")
-        setd(-68, "486E616Ah")
-        setd(-72, "6F727426h")
-    elseif variacao == "r43JTyMT" then
-        setd(-48, 0) -- test Anfiteatro
-        setd(-44, 5)
-        setd(-52, "00000074h")
-        setd(-56, "6E656963h")
-        setd(-60, "6E615F6Eh")
-        setd(-64, "6F65644Fh")
-        setd(-68, "72657461h")
-        setd(-72, "65687428h")
-    elseif variacao == "r44JTyMT" then
-        setd(-48, 0) -- test Caballo arabes
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "65757461h")
-        setd(-60, "74735F65h")
-        setd(-64, "73726F68h")
-        setd(-68, "5F636962h")
-        setd(-72, "61726126h")
-    elseif variacao == "r45JTyMT" then
-        setd(-48, 0) -- test Estanque de cisnes
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "636E6972h")
-        setd(-60, "705F6575h")
-        setd(-64, "7400736Eh")
-        setd(-68, "61775364h")
-        setd(-72, "6E6F7012h")
-    elseif variacao == "r46JTyMT" then
-        setd(-48, 0) -- test Sauce lloron
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "636E0072h")
-        setd(-60, "00776F6Ch")
-        setd(-64, "6C69775Fh")
-        setd(-68, "676E6970h")
-        setd(-72, "6565771Ch")
-    elseif variacao == "r47JTyMT" then
-        setd(-48, 0) -- test Arbol caido
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "6169646Eh")
-        setd(-60, "75735F00h")
-        setd(-64, "65657254h")
-        setd(-68, "64657261h")
-        setd(-72, "65687316h")
-    elseif variacao == "r48JTyMT" then
-        setd(-48, 0) -- test Cascada
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "6169646Eh")
-        setd(-60, "006C6C61h")
-        setd(-64, "66726574h")
-        setd(-68, "61576C6Ch")
-        setd(-72, "616D531Ch")
-
-    elseif variacao == "r49JTyMT" then
-        setd(-48, 0) -- test  Estacion de satelite
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "41325500h")
-        setd(-60, "6E6F6974h")
-        setd(-64, "6174535Fh")
-        setd(-68, "7463656Eh")
-        setd(-72, "6E6F431Eh")
-    elseif variacao == "r50JTyMT" then
-        setd(-48, 0) -- test  Plazoleta parisina
-        setd(-44, 5)
-        setd(-52, "00007DE3h")
-        setd(-56, "66760591h")
-        setd(-60, "00000074h")
-        setd(-64, "65657274h")
-        setd(-68, "535F7369h")
-        setd(-72, "72615018h")
-    elseif variacao == "r51JTyMT" then
-        setd(-48, 0) -- test  Aparcamiento de bicis
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "4132B038h")
-        setd(-60, "0000676Eh")
-        setd(-64, "696B7261h")
-        setd(-68, "505F656Ch")
-        setd(-72, "6379431Ah")
-    elseif variacao == "r52JTyMT" then
-        setd(-48, 0) -- test  Libreria
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "4132A340h")
-        setd(-60, "00007DE3h")
-        setd(-64, "0065726Fh")
-        setd(-68, "74535F6Bh")
-        setd(-72, "6F6F4214h")
-    elseif variacao == "r53JTyMT" then
-        setd(-48, 0) -- test  Boutique floral
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "4132C948h")
-        setd(-60, "00000065h")
-        setd(-64, "726F7453h")
-        setd(-68, "5F726577h")
-        setd(-72, "6F6C4618h")
-    elseif variacao == "r54JTyMT" then
-        setd(-48, 0) -- test  Sintetizador gigante
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "4132CFA8h")
-        setd(-60, "00007D00h")
-        setd(-64, "656E6563h")
-        setd(-68, "535F6369h")
-        setd(-72, "73754D16h")
-
-        -- Decoración 2
-    elseif variacao == "r1DECORT" then
-        setd(-48, 0) -- test Fuente bailarina
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "61690073h")
-        setd(-60, "6E696174h")
-        setd(-64, "6E756F46h")
-        setd(-68, "676E6963h")
-        setd(-72, "6E616420h")
-    elseif variacao == "r2DECORT" then
-        setd(-48, 0) -- test Tobogan acuatico
-        setd(-44, 5)
-        setd(-52, "0000646Eh")
-        setd(-56, "00006564h")
-        setd(-60, "696C5372h")
-        setd(-64, "65746177h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r3DECORT" then
-        setd(-48, 0) -- test Pizzeria al aire libre
-        setd(-44, 5)
-        setd(-52, "00006174h")
-        setd(-56, "7361705Fh")
-        setd(-60, "61697265h")
-        setd(-64, "7A7A6970h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-    elseif variacao == "r4DECORT" then
-        setd(-48, 0) -- test Distrito del artista
-        setd(-44, 5)
-        setd(-52, "00007265h")
-        setd(-56, "74726175h")
-        setd(-60, "715F7473h")
-        setd(-64, "69747261h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ah")
-    elseif variacao == "r5DECORT" then
-        setd(-48, 0) -- test Tiovivo de elefantes
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "0073746Eh")
-        setd(-60, "61687065h")
-        setd(-64, "6C655F6Ch")
-        setd(-68, "6573756Fh")
-        setd(-72, "72616324h")
-    elseif variacao == "r6DECORT" then
-        setd(-48, 0) -- test Fuente ballena
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "0073746Eh")
-        setd(-60, "00656C61h")
-        setd(-64, "68775F6Eh")
-        setd(-68, "6961746Eh")
-        setd(-72, "756F661Ch")
-    elseif variacao == "r7DECORT" then
-        setd(-48, 0) -- test Torre de socorristas
-        setd(-44, 5)
-        setd(-52, "0000006Ch")
-        setd(-56, "61690065h")
-        setd(-60, "6C007475h")
-        setd(-64, "685F6472h")
-        setd(-68, "61756765h")
-        setd(-72, "66696C1Ah")
-    elseif variacao == "r8DECORT" then
-        setd(-48, 0) -- test Arco arcoiris
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "79656B6Eh")
-        setd(-60, "6F6D5F00h")
-        setd(-64, "68637241h")
-        setd(-68, "776F626Eh")
-        setd(-72, "69615216h")
-    elseif variacao == "r9DECORT" then
-        setd(-48, 0) -- test Tienda de noodles
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "79656B6Eh")
-        setd(-60, "6F6D5F00h")
-        setd(-64, "706F6873h")
-        setd(-68, "5F656C64h")
-        setd(-72, "6F6F6E16h")
-    elseif variacao == "r10DECORT" then
-        setd(-48, 0) -- test Fuente de nuevo record
-        setd(-44, 5)
-        setd(-52, "006E6961h")
-        setd(-56, "746E756Fh")
-        setd(-60, "46636970h")
-        setd(-64, "6D796C4Fh")
-        setd(-68, "5F797475h")
-        setd(-72, "6165622Ch")
-    elseif variacao == "r11DECORT" then
-        setd(-48, 0) -- test Restaurante
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "74D782D0h")
-        setd(-60, "00746E61h")
-        setd(-64, "72756174h")
-        setd(-68, "7365725Fh")
-        setd(-72, "6F6F7A1Ch")
-    elseif variacao == "r12DECORT" then
-        setd(-48, 0) -- test Submarino
-        setd(-44, 5)
-        setd(-52, "00000015h")
-        setd(-56, "74C40065h")
-        setd(-60, "6E697261h")
-        setd(-64, "6D627573h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656220h")
-    elseif variacao == "r13DECORT" then
-        setd(-48, 0) -- test Perro amarillo
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "8C7E1591h")
-        setd(-60, "00007601h")
-        setd(-64, "00676F44h")
-        setd(-68, "6573656Eh")
-        setd(-72, "69684314h")
-    elseif variacao == "r14DECORT" then
-        setd(-48, 0) -- test Valla marinera
-        setd(-44, 5)
-        setd(-52, "0000005Ah")
-        setd(-56, "74C4ECD8h")
-        setd(-60, "0065636Eh")
-        setd(-64, "65665F65h")
-        setd(-68, "636E6546h")
-        setd(-72, "6165531Ch")
-    elseif variacao == "r15DECORT" then
-        setd(-48, 0) -- test Ancla del almirante
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "726F636Eh")
-        setd(-60, "615F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "65705326h")
-    elseif variacao == "r16DECORT" then
-        setd(-48, 0) -- test Caballito de mar
-        setd(-44, 5)
-        setd(-52, "00657372h")
-        setd(-56, "6F686165h")
-        setd(-60, "735F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ch")
-    elseif variacao == "r17DECORT" then
-        setd(-48, 0) -- test La sirena
-        setd(-44, 5)
-        setd(-52, "00006469h")
-        setd(-56, "616D7265h")
-        setd(-60, "6D5F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ah")
-    elseif variacao == "r18DECORT" then
-        setd(-48, 0) -- test Pulpo pescador
-        setd(-44, 5)
-        setd(-52, "00007375h")
-        setd(-56, "706F7463h")
-        setd(-60, "6F5F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ah")
-    elseif variacao == "r19DECORT" then
-        setd(-48, 0) -- test Abeja piloto
-        setd(-44, 5)
-        setd(-52, "00746F6Ch")
-        setd(-56, "69506565h")
-        setd(-60, "425F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ch")
-    elseif variacao == "r20DECORT" then
-        setd(-48, 0) -- test Escalera infinita
-        setd(-44, 5)
-        setd(-52, "0000005Ah")
-        setd(-56, "74C56B78h")
-        setd(-60, "00003368h")
-        setd(-64, "6374616Dh")
-        setd(-68, "5F737269h")
-        setd(-72, "6174731Ah")
-    elseif variacao == "r21DECORT" then
-        setd(-48, 0) -- test Cangrejo ermitaño
-        setd(-44, 5)
-        setd(-52, "00000074h")
-        setd(-56, "696D7265h")
-        setd(-60, "685F7265h")
-        setd(-64, "636E6163h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r22DECORT" then
-        setd(-48, 0) -- test Mercado embarcadero
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "0074656Bh")
-        setd(-60, "72616D5Fh")
-        setd(-64, "68736966h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r23DECORT" then
-        setd(-48, 0) -- test Carrusel de niños
-        setd(-44, 5)
-        setd(-52, "00007372h")
-        setd(-56, "65000000h")
-        setd(-60, "6C657375h")
-        setd(-64, "6F726163h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r24DECORT" then
-        setd(-48, 0) -- test Moto acuatico
-        setd(-44, 5)
-        setd(-52, "00007372h")
-        setd(-56, "65007466h")
-        setd(-60, "61726372h")
-        setd(-64, "65746177h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656222h")
-    elseif variacao == "r25DECORT" then
-        setd(-48, 0) -- test Estanque de carpas
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "79473FE0h")
-        setd(-60, "00707261h")
-        setd(-64, "635F6874h")
-        setd(-68, "69775F64h")
-        setd(-72, "6E6F701Ch")
-    elseif variacao == "r26DECORT" then
-        setd(-48, 0) -- test Palomar
-        setd(-44, 5)
-        setd(-52, "0065746Fh")
-        setd(-56, "6365766Fh")
-        setd(-60, "445F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "6570532Ch")
-    elseif variacao == "r27DECORT" then
-        setd(-48, 0) -- test Carrito de verduras
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "79726563h")
-        setd(-60, "6F72676Eh")
-        setd(-64, "65657267h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r28DECORT" then
-        setd(-48, 0) -- test Parque de los niños
-        setd(-44, 5)
-        setd(-52, "00007601h")
-        setd(-56, "0032646Eh")
-        setd(-60, "756F7267h")
-        setd(-64, "79616C70h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r29DECORT" then
-        setd(-48, 0) -- test Nenufar rosa
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "74C93000h")
-        setd(-60, "325F7372h")
-        setd(-64, "65776F6Ch")
-        setd(-68, "665F7265h")
-        setd(-72, "7461771Eh")
-    elseif variacao == "r30DECORT" then
-        setd(-48, 0) -- test Catamaran
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "73006172h")
-        setd(-60, "65620079h")
-        setd(-64, "6C006E61h")
-        setd(-68, "72616D61h")
-        setd(-72, "74616B12h")
-    elseif variacao == "r31DECORT" then
-        setd(-48, 0) -- test Aerogenerador
-        setd(-44, 5)
-        setd(-52, "00007600h")
-        setd(-56, "73006172h")
-        setd(-60, "65620079h")
-        setd(-64, "6C696D00h")
-        setd(-68, "6B617972h")
-        setd(-72, "7465760Eh")
-    elseif variacao == "r32DECORT" then
-        setd(-48, 0) -- test Dibujo de cebra
-        setd(-44, 5)
-        setd(-52, "0000746Eh")
-        setd(-56, "00617262h")
-        setd(-60, "657A5F6Bh")
-        setd(-64, "6C616863h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656224h")
-    elseif variacao == "r33DECORT" then
-        setd(-48, 0) -- test Puerta de la gloria
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "73657461h")
-        setd(-60, "675F7972h")
-        setd(-64, "7578754Ch")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r34DECORT" then
-        setd(-48, 0) -- test Valla dorado 
-        setd(-44, 5)
-        setd(-52, "00007400h")
-        setd(-56, "79726563h")
-        setd(-60, "6F720065h")
-        setd(-64, "636E6566h")
-        setd(-68, "5F797275h")
-        setd(-72, "78756C18h")
-    elseif variacao == "r35DECORT" then
-        setd(-48, 0) -- test Glorieta de picnic
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CC57E280h")
-        setd(-60, "0000769Ah")
-        setd(-64, "EBB23591h")
-        setd(-68, "0063696Eh")
-        setd(-72, "6369700Ch")
-    elseif variacao == "r36DECORT" then
-        setd(-48, 0) -- test Monumento al sol
-        setd(-44, 5)
-        setd(-52, "0000769Ah")
-        setd(-56, "EB006E75h")
-        setd(-60, "535F7974h")
-        setd(-64, "75616542h")
-        setd(-68, "6C616963h")
-        setd(-72, "65705322h")
-    elseif variacao == "r37DECORT" then
-        setd(-48, 0) -- test Casa de lujo
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "6573756Fh")
-        setd(-60, "685F7972h")
-        setd(-64, "7578756Ch")
-        setd(-68, "5F797475h")
-        setd(-72, "61656226h")
-    elseif variacao == "r38DECORT" then
-        setd(-48, 0) -- test Cartel de lluvia de confiti
-        setd(-44, 5)
-        setd(-52, "0000769Ah")
-        setd(-56, "EB3A4591h")
-        setd(-60, "00007265h")
-        setd(-64, "6E6E6142h")
-        setd(-68, "6573656Eh")
-        setd(-72, "6968431Ah")
-    elseif variacao == "r39DECORT" then
-        setd(-48, 0) -- test Puente colgante
-        setd(-44, 5)
-        setd(-52, "0000001Ch")
-        setd(-56, "C2A6CC00h")
-        setd(-60, "00656764h")
-        setd(-64, "6972625Fh")
-        setd(-68, "746E6569h")
-        setd(-72, "636E611Ch")
-    elseif variacao == "r40DECORT" then
-        setd(-48, 0) -- test Hidrodeslizador
-        setd(-44, 5)
-        setd(-52, "00000055h")
-        setd(-56, "C2A6DE38h")
-        setd(-60, "00006B6Eh")
-        setd(-64, "616C705Fh")
-        setd(-68, "74616F62h")
-        setd(-72, "7269611Ah")
-    elseif variacao == "r41DECORT" then
-        setd(-48, 0) -- test Visita a los delfines
-        setd(-44, 5)
-        setd(-52, "0000769Ah")
-        setd(-56, "EBE1F500h")
-        setd(-60, "736E6968h")
-        setd(-64, "706C6F64h")
-        setd(-68, "5F797475h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r42DECORT" then
-        setd(-48, 0) -- test Piramide de batidos
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "66696E6Bh")
-        setd(-60, "5F64696Dh")
-        setd(-64, "61727970h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r43DECORT" then
-        setd(-48, 0) -- test Concurso de topiarias
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "6E6F6974h")
-        setd(-60, "69746570h")
-        setd(-64, "6D6F635Fh")
-        setd(-68, "79726169h")
-        setd(-72, "706F7426h")
-    elseif variacao == "r44DECORT" then
-        setd(-48, 0) -- test casa la pasta
-        setd(-44, 5)
-        setd(-52, "0000002Dh")
-        setd(-56, "05630032h")
-        setd(-60, "646C6975h")
-        setd(-64, "42726F74h")
-        setd(-68, "61726F74h")
-        setd(-72, "73655220h")
-    elseif variacao == "r45DECORT" then
-        setd(-48, 0) -- test Trono mediaval
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "6C617665h")
-        setd(-60, "6964656Dh")
-        setd(-64, "5F6C6C61h")
-        setd(-68, "48656E6Fh")
-        setd(-72, "72687426h")
-    elseif variacao == "r46DECORT" then
-        setd(-48, 0) -- test Tiovivo salvaje del oeste
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "006C6573h")
-        setd(-64, "756F7261h")
-        setd(-68, "435F6573h")
-        setd(-72, "726F481Ch")
-    elseif variacao == "r47DECORT" then
-        setd(-48, 0) -- test Circo itinerante
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00676E69h")
-        setd(-64, "706D6143h")
-        setd(-68, "5F737563h")
-        setd(-72, "7269431Ch")
-    elseif variacao == "r48DECORT" then
-        setd(-48, 0) -- test Parque infantil salvaje oeste
-        setd(-44, 5)
-        setd(-52, "0000008Ch")
-        setd(-56, "CC0590A8h")
-        setd(-60, "00000072h")
-        setd(-64, "65776F54h")
-        setd(-68, "5F796F62h")
-        setd(-72, "776F4318h")
-    elseif variacao == "r49DECORT" then
-        setd(-48, 0) -- test Unicornio de peluche
-        setd(-44, 5)
-        setd(-52, "00656E69h")
-        setd(-56, "746E656Ch")
-        setd(-60, "61765F6Eh")
-        setd(-64, "726F6369h")
-        setd(-68, "6E556873h")
-        setd(-72, "756C702Ch")
-    elseif variacao == "r50DECORT" then
-        setd(-48, 0) -- test  Fiesta de primavera
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "0000736Eh")
-        setd(-64, "6F626269h")
-        setd(-68, "52726574h")
-        setd(-72, "7361651Ah")
-    elseif variacao == "r51DECORT" then
-        setd(-48, 0) -- test  Chiringuito exotico
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBF5B400h")
-        setd(-60, "7261625Fh")
-        setd(-64, "79747261h")
-        setd(-68, "705F6863h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r52DECORT" then
-        setd(-48, 0) -- test Surtido de frutas
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "CBF5C200h")
-        setd(-60, "78696D5Fh")
-        setd(-64, "74697572h")
-        setd(-68, "665F6863h")
-        setd(-72, "6165621Eh")
-    elseif variacao == "r53DECORT" then
-        setd(-48, 0) -- test Fuente hada floral
-        setd(-44, 5)
-        setd(-52, "0000769Ah")
-        setd(-56, "00720070h")
-        setd(-60, "006E6961h")
-        setd(-64, "746E756Fh")
-        setd(-68, "465F7972h")
-        setd(-72, "6961461Ch")
-
-    elseif variacao == "r54DECORT" then
-        setd(-48, 0) -- test  ;;;;; fabrica de arcoiris
-        setd(-44, 5)
-        setd(-52, "00000043h")
-        setd(-56, "05642698h")
-        setd(-60, "0000776Fh")
-        setd(-64, "626E6961h")
-        setd(-68, "725F7964h")
-        setd(-72, "6E61631Ah")
-    elseif variacao == "r55DECORT" then
-        setd(-48, 0) -- test  ;;;;; piramide de batidos
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "66696E6Bh")
-        setd(-60, "5F64696Dh")
-        setd(-64, "61727970h")
-        setd(-68, "5F797475h")
-        setd(-72, "61656228h")
-    elseif variacao == "r56DECORT" then
-        setd(-48, 0) -- test  ;;;;; obra de arte maravilla natural
-        setd(-44, 5)
-        setd(-52, "0000003Ah")
-        setd(-56, "05640074h")
-        setd(-60, "72615F6Eh")
-        setd(-64, "6F697461h")
-        setd(-68, "6C6C6174h")
-        setd(-72, "736E6920h")
-    elseif variacao == "r57DECORT" then
-        setd(-48, 0) -- test  ;;;;; desafio inchable
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05007265h")
-        setd(-60, "6E6E7572h")
-        setd(-64, "5F63696Ch")
-        setd(-68, "65486F65h")
-        setd(-72, "646F7222h")
-    elseif variacao == "r58DECORT" then
-        setd(-48, 0) -- test  ;;;;; camion monstruo
-        setd(-44, 5)
-        setd(-52, "00000017h")
-        setd(-56, "05006575h")
-        setd(-60, "63736572h")
-        setd(-64, "5F726F74h")
-        setd(-68, "63617254h")
-        setd(-72, "67696222h")
-    elseif variacao == "r59DECORT" then
-        setd(-48, 0) -- test  ;;;;; la vuelta al mundo
-        setd(-44, 5)
-        setd(-52, "0000005Ah")
-        setd(-56, "00656E61h")
-        setd(-60, "6C705F74h")
-        setd(-64, "6867696Ch")
-        setd(-68, "466C6162h")
-        setd(-72, "6F6C6724h")
-    elseif variacao == "r60DECORT" then
-        setd(-48, 0) -- test  ;;;;; centro del reino
-        setd(-44, 5)
-        setd(-52, "00000078h")
-        setd(-56, "0564FAD8h")
-        setd(-60, "00006572h")
-        setd(-64, "746E6543h")
-        setd(-68, "6D6F6467h")
-        setd(-72, "6E694B1Ah")
-    elseif variacao == "r61DECORT" then
-        setd(-48, 0) -- test  ;;;;; curlin
-        setd(-44, 5)
-        setd(-52, "00000013h")
-        setd(-56, "05650F38h")
-        setd(-60, "0072656Eh")
-        setd(-64, "6E75725Fh")
-        setd(-68, "676E696Ch")
-        setd(-72, "7275631Ch")
-    elseif variacao == "r62DECORT" then
-        setd(-48, 0) -- test  ;;;;; libro de la naturaleza
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "05658200h")
-        setd(-60, "656C676Eh")
-        setd(-64, "756A5F65h")
-        setd(-68, "6572546Bh")
-        setd(-72, "6F6F621Eh")
-    elseif variacao == "r63DECORT" then
-        setd(-48, 0) -- test  ;;;;; el trotamares
-        setd(-44, 5)
-        setd(-52, "00000065h")
-        setd(-56, "74617269h")
-        setd(-60, "705F6575h")
-        setd(-64, "74617453h")
-        setd(-68, "6E696174h")
-        setd(-72, "70616328h")
-    elseif variacao == "r64DECORT" then
-        setd(-48, 0) -- test  ;;;;; parterre macedonia
-        setd(-44, 5)
-        setd(-52, "00000055h")
-        setd(-56, "0563ED00h")
-        setd(-60, "6566696Eh")
-        setd(-64, "6B5F656Ch")
-        setd(-68, "70706165h")
-        setd(-72, "6E69701Eh")
-        -- Avatar
-    elseif variacao == "t1AVATR" then
-        setd(-48, 0) -- test  1 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393131h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t2AVATR" then
-        setd(-48, 0) -- test 2 año 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00303231h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t3AVATR" then
-        setd(-48, 0) -- test  3 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313231h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t4AVATR" then
-        setd(-48, 0) -- test  4 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323231h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t5AVATR" then
-        setd(-48, 0) -- test  5 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333231h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t6AVATR" then
-        setd(-48, 0) -- test  6 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343531h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t7AVATR" then
-        setd(-48, 0) -- test  7 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313931h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t8AVATR" then
-        setd(-48, 0) -- test  8 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393332h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t9AVATR" then
-        setd(-48, 0) -- test  9 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313832h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t10AVATR" then
-        setd(-48, 0) -- test  10 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333133h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t11AVATR" then
-        setd(-48, 0) -- test  11 año
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323633h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t12AVATR" then
-        setd(-48, 0) -- test  Pirata mujer
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383832h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t13AVATR" then
-        setd(-48, 0) -- test  Pirata hombre fantasma
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00303733h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t14AVATR" then
-        setd(-48, 0) -- test  Papa noel
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333733h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t15AVATR" then
-        setd(-48, 0) -- test  Serpiente
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t16AVATR" then
-        setd(-48, 0) -- test  Ultimante vaca campeona
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00003039h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t17AVATR" then
-        setd(-48, 0) -- test  Perro aplastante
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00003135h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t18AVATR" then
-        setd(-48, 0) -- test  Pescado payaso de alegre
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00003235h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t19AVATR" then
-        setd(-48, 0) -- test  Hombre con pizza
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363433h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t20AVATR" then
-        setd(-48, 0) -- test  Festival de Playa
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00303433h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t21AVATR" then
-        setd(-48, 0) -- test  Viaje de camping
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t22AVATR" then
-        setd(-48, 0) -- test  Feria de Artesanía
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t23AVATR" then
-        setd(-48, 0) -- test  Fiesta de la retro
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t24AVATR" then
-        setd(-48, 0) -- test  La Aldea de invierno
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00373233h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t25AVATR" then
-        setd(-48, 0) -- test  Torneo Deportivo
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323233h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t26AVATR" then
-        setd(-48, 0) -- test  Farming Frenzy
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343133h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t27AVATR" then
-        setd(-48, 0) -- test  Aventura culinaria
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t28AVATR" then
-        setd(-48, 0) -- test  Bonanza Botánica
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t29AVATR" then
-        setd(-48, 0) -- test  Celebración china
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t30AVATR" then
-        setd(-48, 0) -- test  Oveja
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00373933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t31AVATR" then
-        setd(-48, 0) -- test  Hombre con gafas
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t32AVATR" then
-        setd(-48, 0) -- test  Abuelo con pizza
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t33AVATR" then
-        setd(-48, 0) -- test  Mujer
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t34AVATR" then
-        setd(-48, 0) -- test  Abuelo chino
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t35AVATR" then
-        setd(-48, 0) -- test  Mujer rasta
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t36AVATR" then
-        setd(-48, 0) -- test  Mujer vaquera
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t37AVATR" then
-        setd(-48, 0) -- test  Caballo mujer
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00303933h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t38AVATR" then
-        setd(-48, 0) -- test  Hombre capucha morada
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t39AVATR" then
-        setd(-48, 0) -- test  Hombre azul
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t40AVATR" then
-        setd(-48, 0) -- test  Mujer pelo azul
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t41AVATR" then
-        setd(-48, 0) -- test  Pirata
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t42AVATR" then
-        setd(-48, 0) -- test Robot morado 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t43AVATR" then
-        setd(-48, 0) -- test  Mujer espia
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t44AVATR" then
-        setd(-48, 0) -- test  Reno
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383733h")
-        setd(-72, "6176610Ch")
-        --
-    elseif variacao == "t45AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353233h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t46AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363233h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t47AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00303333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t48AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t49AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t50AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t51AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393333h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t52AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313433h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t53AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00373433h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t54AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00303533h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t55AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343533h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t56AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353533h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t57AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383533h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t58AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333633h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t59AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363633h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t60AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393633h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t61AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343733h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t62AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313833h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t63AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t64AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333531h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t65AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363931h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t66AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383332h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t67AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363432h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t68AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363532h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t69AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353632h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t70AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363732h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t71AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00373732h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t72AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333832h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t73AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00343832h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t74AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383832h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t75AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393832h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t76AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t77AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t78AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t79AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00373932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t80AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00393932h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t81AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00363033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t82AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t83AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353133h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t84AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "6E776F74h")
-        setd(-68, "00353031h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t85AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00794172h")
-        setd(-68, "70000031h")
-        setd(-72, "61766108h")
-    elseif variacao == "t86AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "0000646Eh")
-        setd(-68, "61003337h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t87AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00797469h")
-        setd(-68, "43003332h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t88AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "0041477Ah")
-        setd(-68, "00003534h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t89AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00006FFCh")
-        setd(-56, "8D1D1140h")
-        setd(-60, "00000000h")
-        setd(-64, "0000001Ah")
-        setd(-68, "00003532h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t90AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000079h")
-        setd(-64, "67614E6Fh")
-        setd(-68, "00343632h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t91AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00694156h")
-        setd(-68, "00383433h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t92AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "006C5500h")
-        setd(-68, "6E003736h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t93AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "005A0065h")
-        setd(-68, "6C003338h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t94AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00006FFCh")
-        setd(-56, "8D1D1C80h")
-        setd(-60, "00000000h")
-        setd(-64, "00000019h")
-        setd(-68, "00000034h")
-        setd(-72, "61766108h")
-    elseif variacao == "t95AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00006FFCh")
-        setd(-56, "94B9E8E0h")
-        setd(-60, "00000000h")
-        setd(-64, "00000025h")
-        setd(-68, "00343532h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t96AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000073h")
-        setd(-64, "6564696Dh")
-        setd(-68, "61003336h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t97AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00003039h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t98AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00003139h")
-        setd(-72, "6176610Ah")
-    elseif variacao == "t99AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t100AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00353033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t101AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00373033h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t102AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00383133h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t103AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00313233h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t104AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00323432h")
-        setd(-72, "6176610Ch")
-    elseif variacao == "t105AVATR" then
-        setd(-48, 0) -- test  
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000000h")
-        setd(-68, "00333432h")
-        setd(-72, "6176610Ch")
-
-        -- Stickers
-    elseif variacao == "t1STICK" then
-        setd(-48, 0) -- test   Sticker 1
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t2STICK" then
-        setd(-48, 0) -- test   Sticker 2
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363470h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t3STICK" then
-        setd(-48, 0) -- test   Sticker 3
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363570h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t4STICK" then
-        setd(-48, 0) -- test   Sticker 4
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363670h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t5STICK" then
-        setd(-48, 0) -- test   Sticker 5
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363770h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t6STICKx" then
-        setd(-48, 0) -- test   Sticker 6
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363870h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t7STICK" then
-        setd(-48, 0) -- test   Sticker 7 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363970h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t8STICK" then
-        setd(-48, 0) -- test   Sticker 8 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t9STICK" then
-        setd(-48, 0) -- test   Sticker 9 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t10STICK" then
-        setd(-48, 0) -- test   Sticker 10 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t11STICK" then
-        setd(-48, 0) -- test   Sticker 11 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t12STICK" then
-        setd(-48, 0) -- test   Sticker 12 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t13STICK" then
-        setd(-48, 0) -- test   Sticker 13 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t14STICK" then
-        setd(-48, 0) -- test   Sticker 14 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t15STICK" then
-        setd(-48, 0) -- test   Sticker 15 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t16STICK" then
-        setd(-48, 0) -- test   Sticker 16 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003874h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t17STICK" then
-        setd(-48, 0) -- test   Sticker 17
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00003974h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6512h")
-    elseif variacao == "t18STICK" then
-        setd(-48, 0) -- test   Sticker 18 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t19STICK" then
-        setd(-48, 0) -- test   Sticker 19 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t20STICK" then
-        setd(-48, 0) -- test   Sticker 20
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t21STICK" then
-        setd(-48, 0) -- test   Sticker 21 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t22STICK" then
-        setd(-48, 0) -- test   Sticker 22
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t23STICK" then
-        setd(-48, 0) -- test   Sticker 23 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t24STICK" then
-        setd(-48, 0) -- test   Sticker 24 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t25STICK" then
-        setd(-48, 0) -- test   Sticker 25
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t26STICK" then
-        setd(-48, 0) -- test   Sticker 26
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t27STICK" then
-        setd(-48, 0) -- test   Sticker 27
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393174h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t28STICK" then
-        setd(-48, 0) -- test   Sticker 28
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t29STICK" then
-        setd(-48, 0) -- test   Sticker 29 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t30STICK" then
-        setd(-48, 0) -- test   Sticker 30
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t31STICK" then
-        setd(-48, 0) -- test   Sticker 31
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t32STICK" then
-        setd(-48, 0) -- test   Sticker 32 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t33STICK" then
-        setd(-48, 0) -- test   Sticker 33 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t34STICKx" then
-        setd(-48, 0) -- test   Sticker 34
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t35STICK" then
-        setd(-48, 0) -- test   Sticker 35 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393274h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t36STICK" then
-        setd(-48, 0) -- test   Sticker 36
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t37STICK" then
-        setd(-48, 0) -- test   Sticker 37
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t38STICK" then
-        setd(-48, 0) -- test   Sticker 38
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t39STICK" then
-        setd(-48, 0) -- test   Sticker 39
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t40STICK" then
-        setd(-48, 0) -- test   Sticker 40
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t41STICK" then
-        setd(-48, 0) -- test   Sticker 41
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t42STICK" then
-        setd(-48, 0) -- test   Sticker 42
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t43STICK" then
-        setd(-48, 0) -- test   Sticker 43
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393374h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t44STICK" then
-        setd(-48, 0) -- test   Sticker 44
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t45STICK" then
-        setd(-48, 0) -- test   Sticker 45
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t46STICK" then
-        setd(-48, 0) -- test   Sticker 46
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t47STICK" then
-        setd(-48, 0) -- test   Sticker 47
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t48STICK" then
-        setd(-48, 0) -- test   Sticker 48
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t49STICK" then
-        setd(-48, 0) -- test   Sticker 49
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t50STICKx" then
-        setd(-48, 0) -- test   Sticker 50
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t51STICKx" then
-        setd(-48, 0) -- test   Sticker 51
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t52STICK" then
-        setd(-48, 0) -- test   Sticker 52
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t53STICK" then
-        setd(-48, 0) -- test   Sticker 53
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393474h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t54STICK" then
-        setd(-48, 0) -- test   Sticker 54
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t55STICK" then
-        setd(-48, 0) -- test   Sticker 55
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-        -- Sticker menu 2
-    elseif variacao == "t1STICKx" then
-        setd(-48, 0) -- test   Sticker 1
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t2STICKx" then
-        setd(-48, 0) -- test   Sticker 2
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t3STICKx" then
-        setd(-48, 0) -- test   Sticker 3
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t4STICKx" then
-        setd(-48, 0) -- test   Sticker 4
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t5STICKx" then
-        setd(-48, 0) -- test   Sticker 5
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t6STICKx" then
-        setd(-48, 0) -- test   Sticker 6
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t7STICKx" then
-        setd(-48, 0) -- test   Sticker 7 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t8STICKx" then
-        setd(-48, 0) -- test   Sticker 8 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393574h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t9STICKx" then
-        setd(-48, 0) -- test   Sticker 9 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t10STICKx" then
-        setd(-48, 0) -- test   Sticker 10 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t11STICKx" then
-        setd(-48, 0) -- test   Sticker 11 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t12STICKx" then
-        setd(-48, 0) -- test   Sticker 12 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t13STICKx" then
-        setd(-48, 0) -- test   Sticker 13 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t14STICKx" then
-        setd(-48, 0) -- test   Sticker 14 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t15STICKx" then
-        setd(-48, 0) -- test   Sticker 15 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t16STICKx" then
-        setd(-48, 0) -- test   Sticker 16 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t17STICKx" then
-        setd(-48, 0) -- test   Sticker 17
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t18STICKx" then
-        setd(-48, 0) -- test   Sticker 18 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393674h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t19STICKx" then
-        setd(-48, 0) -- test   Sticker 19 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t20STICKx" then
-        setd(-48, 0) -- test   Sticker 20
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t21STICKx" then
-        setd(-48, 0) -- test   Sticker 21 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t22STICKx" then
-        setd(-48, 0) -- test   Sticker 22
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t23STICKx" then
-        setd(-48, 0) -- test   Sticker 23 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t24STICKx" then
-        setd(-48, 0) -- test   Sticker 24 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t25STICKx" then
-        setd(-48, 0) -- test   Sticker 25
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t26STICKx" then
-        setd(-48, 0) -- test   Sticker 26
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t27STICKx" then
-        setd(-48, 0) -- test   Sticker 27
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t28STICKx" then
-        setd(-48, 0) -- test   Sticker 28
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393774h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t29STICKx" then
-        setd(-48, 0) -- test   Sticker 29 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303874h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t30STICKx" then
-        setd(-48, 0) -- test   Sticker 30
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t31STICKx" then
-        setd(-48, 0) -- test   Sticker 31
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t32STICKx" then
-        setd(-48, 0) -- test   Sticker 32 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t33STICKx" then
-        setd(-48, 0) -- test   Sticker 33 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t34STICKx" then
-        setd(-48, 0) -- test   Sticker 34
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t35STICKx" then
-        setd(-48, 0) -- test   Sticker 35 
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t36STICKx" then
-        setd(-48, 0) -- test   Sticker 36
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t37STICKx" then
-        setd(-48, 0) -- test   Sticker 37
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t38STICKx" then
-        setd(-48, 0) -- test   Sticker 38
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00383170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t39STICKx" then
-        setd(-48, 0) -- test   Sticker 39
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00393170h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t40STICKx" then
-        setd(-48, 0) -- test   Sticker 40
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00303270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t41STICKx" then
-        setd(-48, 0) -- test   Sticker 41
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00313270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t42STICKx" then
-        setd(-48, 0) -- test   Sticker 42
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00323270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t43STICKx" then
-        setd(-48, 0) -- test   Sticker 43
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00333270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t44STICKx" then
-        setd(-48, 0) -- test   Sticker 44
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00343270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t45STICKx" then
-        setd(-48, 0) -- test   Sticker 45
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00353270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t46STICKx" then
-        setd(-48, 0) -- test   Sticker 46
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00363270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t47STICKx" then
-        setd(-48, 0) -- test   Sticker 47
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00373270h")
-        setd(-68, "735F696Ah")
-        setd(-72, "6F6D6514h")
-    elseif variacao == "t48STICKx" then
-        setd(-48, 0) -- test   Sticker 48
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000031h")
-        setd(-68, "765F696Ah")
-        setd(-72, "6F6D6510h")
-    elseif variacao == "t49STICKx" then
-        setd(-48, 0) -- test   Sticker 49
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000032h")
-        setd(-68, "765F696Ah")
-        setd(-72, "6F6D6510h")
-    elseif variacao == "t50STICKx" then
-        setd(-48, 0) -- test   Sticker 50
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00000000h")
-        setd(-64, "00000033h")
-        setd(-68, "765F696Ah")
-        setd(-72, "6F6D6510h")
-
+    else
+        setd(-44, quantity)
     end
+    setd(-52, val6)
+    setd(-56, val5)
+    setd(-60, val4)
+    setd(-64, val3)
+    setd(-68, val2)
+    setd(-72, val1)
     gg.clearResults()
 end
 
@@ -20873,110 +13896,82 @@ function MENUFREE()
 
             if MNZ == nil then
                 return
-            end
-            if MNZ == 1 then
+            elseif MNZ == 1 then
                 hack14()
-            end
-            if MNZ == 2 then
+            elseif MNZ == 2 then
                 hack2()
-            end
-            if MNZ == 3 then
+            elseif MNZ == 3 then
                 hackAliVacas()
-            end
-            if MNZ == 4 then
+            elseif MNZ == 4 then
                 hackAliGallinas()
-            end
-            if MNZ == 5 then
+            elseif MNZ == 5 then
                 hackAliOvejas()
-            end
-            if MNZ == 6 then
+            elseif MNZ == 6 then
                 MENUFREE()
             end
         end
         if opcao == 3 then
-            MNF = gg.choice({'🍀 • XP (Wheat)', '📦 • City Market', '🏭 • Industry Academy',
-                             '🚃📦 • XP Train', '🚃📦 • Wheat Train', '🚃 • Freeze Clover Train',
-                             '🛬📦 • XP Plane 6 boxes', '🛬📦 • XP Plane If it doesnt work 1/6 boxes',
-                             '🛬📦 • Ask for help plane 6 boxes', '🛬📦 • XP Plane 9 boxes',
-                             '🛬📦 • XP Plane If it doesnt work 1/9 boxes',
-                             '🛬📦 • Ask for help plane 9 boxes', '🛬 • Plane return to base',
-                             '🃏✉️🪧📩🚃 • train card', '🚀 • Heli Auto', '💺 • Airplane Auto',
-                             '👾 • Freeze Population', '❌ • Return'}, nil)
+            MNF = gg.choice({'1 • XP (Wheat)', '2 • City Market', '3 • Industry Academy', '4 • XP Train',
+                             '5 • Wheat Train', '6 • Freeze Clover Train', '7 • XP Plane 6 boxes',
+                             '8 • XP Plane If it doesnt work 1/6 boxes', '9 • Ask for help plane 6 boxes',
+                             '10 • XP Plane 9 boxes', '11 • XP Plane If it doesnt work 1/9 boxes',
+                             '12 • Ask for help plane 9 boxes', '13 • Plane return to base', '14 • Train card',
+                             '15 • Heli Auto', '16 • Airplane Auto', '17 • Freeze Population', '18 • Return'},
+                nil)
 
             if MNF == nil then
                 return
-            end
-            if MNF == 1 then
+            elseif MNF == 1 then
                 hack16(true)
-            end
-            if MNF == 2 then
+            elseif MNF == 2 then
                 hack13()
-            end
-            if MNF == 3 then
+            elseif MNF == 3 then
                 hack2C()
-            end
-            if MNF == 4 then
+            elseif MNF == 4 then
                 hackTrEn()
-            end
-            if MNF == 5 then
+            elseif MNF == 5 then
                 hackTrEn_1()
-            end
-            if MNF == 6 then
+            elseif MNF == 6 then
                 hackTrEnTrebol_1()
-            end
-            if MNF == 7 then
+            elseif MNF == 7 then
                 hackAvion_xp()
-            end
-            if MNF == 8 then
+            elseif MNF == 8 then
                 hackAvion_1()
-            end
-            if MNF == 9 then
+            elseif MNF == 9 then
                 hackPedirAyudaAvion()
-            end
-            if MNF == 10 then
+            elseif MNF == 10 then
                 hackAvion_xp_9()
-            end
-            if MNF == 11 then
+            elseif MNF == 11 then
                 hackAvion_1_9()
-            end
-            if MNF == 12 then
+            elseif MNF == 12 then
                 hackPedirAyudaAvion_9()
-            end
-            if MNF == 13 then
+            elseif MNF == 13 then
                 hackAvion_Volver()
-            end
-            if MNF == 14 then
+            elseif MNF == 14 then
                 hackTrEnCarta_1()
-            end
-            if MNF == 15 then
+            elseif MNF == 15 then
                 hack12()
-            end
-            if MNF == 16 then
-                hack("lv6")
-            end
-            if MNF == 17 then
+            elseif MNF == 16 then
+                hack("1599099684", "1936682818", "1701860212", "1884644453", "7498049", "0", 100)
+            elseif MNF == 17 then
                 hack255()
-            end
-            if MNF == 18 then
+            elseif MNF == 18 then
                 MENUFREE()
             end
+
         end
         if opcao == 4 then
             PRV = gg.choice({"💵 • Helicopter", "💵 • T-Cash", "💵 • Money", "❌ • Return"}, nil)
 
             if PRV == nil then
                 return
-            end
-            if PRV == 1 then
+            elseif PRV == 1 then
                 hack11(true)
-            end
-            if PRV == 2 then
+            elseif PRV == 2 then
                 hackTHO("th6")
-            end
-            if PRV == 3 then
+            elseif PRV == 3 then
                 hackTHO("th7")
-            end
-            if PRV == 4 then
+            elseif PRV == 4 then
                 MENUFREE()
             end
         end
