@@ -175,11 +175,9 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 307 then
         menuMinigame()
     elseif menu_tipo == 4 then
-        MaxJE = gg.choice({"🛰️ • Skin 1 Castle", "🚀 • Skin 2 Helicopter", "⚓ • Skin 3 Helipad",
-                           "🎯 • Skin 4 Train", "🛬 • Skin 5 Train Station", "🚁 • Skin 6 Airplane",
-                           "☃️ • Skin 7 Airport", "🚁 • Skin 8 Boats", "☃️ • Skin 9 Ports",
-                           "🚁 • Skin 10 Chickens", "☃️ • Skin 11 Cows", "🚁 • Skin 12 Sheep",
-                           "☃️ • Skin 13 Pigs", "❌ • Back"}, nil)
+        MaxJE = gg.choice({"1 • Castle", "2 • Heli & Helipad", "3 • Train & Train Station",
+                           "4 • Airport & Airplane", "5 • Ports & Ship", "6 • Chickens", "7 • Cows",
+                           "8 • Sheep", "9 • Pigs", "❌ • Back"}, nil)
 
         if MaxJE == nil then
             return
@@ -202,41 +200,25 @@ function menuescolhas2(menu_tipo)
         elseif MaxJE == 9 then
             menuescolhas2(409)
         elseif MaxJE == 10 then
-            menuescolhas2(410)
-        elseif MaxJE == 11 then
-            menuescolhas2(411)
-        elseif MaxJE == 12 then
-            menuescolhas2(412)
-        elseif MaxJE == 13 then
-            menuescolhas2(413)
-        elseif MaxJE == 14 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 401 then
         menuSkinCastle()
     elseif menu_tipo == 402 then
-        menuSkinHelicopter()
+        menuSkinHeli_Helipad()
     elseif menu_tipo == 403 then
-        menuSkinHelipad()
+        menuSkinTrain_TrainStation()
     elseif menu_tipo == 404 then
-        menuSkinTrain()
+        menuSkinAirport_Airplane()
     elseif menu_tipo == 405 then
-        menuSkinTrainStation()
+        menuSkinPort_Ship()
     elseif menu_tipo == 406 then
-        menuSkinAirplane()
-    elseif menu_tipo == 407 then
-        menuSkinAirport()
-    elseif menu_tipo == 408 then
-        menuSkinBoat()
-    elseif menu_tipo == 409 then
-        menuSkinPort()
-    elseif menu_tipo == 410 then
         menuSkinChicken()
-    elseif menu_tipo == 411 then
+    elseif menu_tipo == 407 then
         menuSkinCow()
-    elseif menu_tipo == 412 then
+    elseif menu_tipo == 408 then
         menuSkinSheep()
-    elseif menu_tipo == 413 then
+    elseif menu_tipo == 409 then
         menuSkinPig()
     elseif menu_tipo == 5 then
         MaxJP = gg.choice({"🎲 • Decoration 1", "🎲 • Decoration 2", "🎲 • Valentine's Day",
@@ -532,13 +514,10 @@ function menuMinigame()
 end
 
 function menuSkinCastle()
-    MaxJES_1 = gg.choice({"🛰️ • Skin 1 Gatsby Island Palace", "🚀 • Skin 2 Gatsby Island Mansion",
-                          "⚓ • Skin 3 Gatsby Island House", "🎯 • Skin 4 Pirate Fort",
-                          "🛬 • Skin 5 Pirate Base", "🚁 • Skin 6 Pirate Hut",
-                          "☃️ • Skin 7 Easter Village", "🚁 • Skin 8 Little Paris",
-                          "☃️ • Skin 9 Aztec Island", "🚁 • Skin 10 Neanderthal Island",
-                          "☃️ • Skin 11 Ice Castle", "🚁 • Skin 12 Witch's House",
-                          "☃️ • Skin 13 Witch's Mansion", "☃️ • Skin 14 Witch's Castle", "❌ • Return"},
+    MaxJES_1 = gg.choice({"1 • Gatsby Island Palace", "2 • Gatsby Island Mansion", "3 • Gatsby Island House",
+                          "4 • Pirate Fort", "5 • Pirate Base", "6 • Pirate Hut", "7 • Easter Village",
+                          "8 • Little Paris", "9 • Aztec Island", "10 • Neanderthal Island", "11 • Ice Castle",
+                          "12 • Witch's House", "13 • Witch's Mansion", "14 • Witch's Castle", "❌ • Return"},
         nil)
 
     if MaxJES_1 == nil then
@@ -576,399 +555,384 @@ function menuSkinCastle()
     end
 end
 
-function menuSkinHelicopter()
-    MaxJES_2 = gg.choice({"🚁 • Skin 1 Helicopter", "🚁 • Skin 2 Super Delivery Robot",
-                          "🚁 • Skin 3 Santa's Little Helper's Sleigh", "🚁 • Skin 4 Flying Saucer",
-                          "🚁 • Skin 5 Flying Carpet", "🚁 • Skin 6 Lounger Drone",
-                          "🚁 • Skin 7 Flying Boat", "🚁 • Skin 8 Private", "🚁 • Skin 9 Clubber",
-                          "🚁 • Skin 10 Feathered", "🚁 • Skin 11 HeliEgg",
-                          "🚁 • Skin 12 Flying Basticapho", "🚁 • Skin 13 Pirate", "🚁 • Skin 14 Holiday",
-                          "🚁 • Skin 15 Gala", "🚁 • Skin 16 Space", "🚁 • Skin 17 Santa's Sleigh",
-                          "🚁 • Skin 18 Eggplant", "🚁 • Skin 19 Pumpkin-Chopper",
-                          "🚁 • Skin 20 Surveillance Blimp", "🚁 • Skin 21 Flying Cauldron", "❌ • Back"},
-        nil)
-
-    if MaxJES_2 == nil then
-        return
-    elseif MaxJES_2 == 1 then
-        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "6F70535Fh", "00007472h", 50)
-    elseif MaxJES_2 == 2 then
-        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "626F525Fh", "0000746Fh", 50)
-    elseif MaxJES_2 == 3 then
-        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "656C535Fh", "00686769h", 50)
-    elseif MaxJES_2 == 4 then
-        hack("696B5326h", "65485F6Eh", "6F63696Ch", "72657470h", "6F66555Fh", "00000000h", 50)
-    elseif MaxJES_2 == 5 then
-        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172415Fh", "00636962h", 50)
-    elseif MaxJES_2 == 6 then
-        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7365525Fh", "0074726Fh", 50)
-    elseif MaxJES_2 == 7 then
-        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172545Fh", "006C6576h", 50)
-    elseif MaxJES_2 == 8 then
-        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
-    elseif MaxJES_2 == 9 then
-        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "7369645Fh", "00006F63h", 50)
-    elseif MaxJES_2 == 10 then
-        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172625Fh", "006C697Ah", 50)
-    elseif MaxJES_2 == 11 then
-        hackhelicopter_1()
-    elseif MaxJES_2 == 12 then
-        hackhelicopter_2()
-    elseif MaxJES_2 == 13 then
-        hackhelicopter_3()
-    elseif MaxJES_2 == 14 then
-        hackhelicopter_4()
-    elseif MaxJES_2 == 15 then
-        hackhelicopter_5()
-    elseif MaxJES_2 == 16 then
-        hackhelicopter_6()
-    elseif MaxJES_2 == 17 then
-        hackhelicopter_8()
-    elseif MaxJES_2 == 18 then
-        hackhelicopter_9()
-    elseif MaxJES_2 == 19 then
-        hackhelicopter_10()
-    elseif MaxJES_2 == 20 then
-        hackhelicopter_12()
-    elseif MaxJES_2 == 21 then
-        hackhelicopter_13()
-    elseif MaxJES_2 == 22 then
-        menuescolhas2(4)
-    end
-end
-
-function menuSkinHelipad()
-    MaxJES_3 = gg.choice({"🚁 • Skin 1 Holiday Helipad", "🚁 • Skin 2 Nomads' Harbor Helipad",
-                          "🚁 • Skin 3 Sports Arena Helipad", "🚁 • Skin 4 Flying Saucer Hangar Helipad",
-                          "🚁 • Skin 5 Base Station Helipad", "🚁 • Skin 6 Vegetable Helipad",
-                          "🚁 • Skin 7 Sultan's Palace Helipad", "🚁 • Skin 8 Luxury Helipad",
-                          "🚁 • Skin 9 Club Helipad", "🚁 • Skin 10 Carnival Stage Helipad",
-                          "🚁 • Skin 11 Royal Palace Helipad", "🚁 • Skin 12 Detective Agency Helipad",
-                          "🚁 • Skin 13 Sleigh Parking Helipad", "🚁 • Skin 14 Gala Helipad",
-                          "🚁 • Skin 15 Pirate Helipad", "🚁 • Skin 16 Space Helipad Helipad",
-                          "🚁 • Skin 17 Easter Helipad", "🚁 • Skin 18 Sunken Palace Helipad", "❌ • Back"},
-        nil)
+function menuSkinHeli_Helipad()
+    MaxJES_3 = gg.choice({"1 • Festive Helipad", "1 • Festive", "2 • Wanderers' Harbor Helipad",
+                          "2 • Flying Ship", "3 • Fitness Helipad", "3 • Helicycle",
+                          "4 • Flying Saucer Hangar Helipad", "4 • Flying Saucer", "5 • Docking Station Helipad",
+                          "5 • Super Robot Courier", "6 • Veggie Helipad", "6 • Eggplant",
+                          "7 • Sultan's Palace Helipad", "7 • Flying Carpet", "8 • Five-star Helipad",
+                          "8 • Chaise Lounger Drone", "9 • Disco Helipad", "9 • Disco",
+                          "10 • Carnival Platform Helipad", "10 • Feathery", "11 • Royal Palace Helipad",
+                          "11 • Pumpkin", "12 • Detective Agency Helipad", "12 • Surveillance Airship",
+                          "13 • Sleigh Parking Lot Helipad", "13 • Santa's Helper's Sleigh",
+                          "13 • Santa's Sleigh", "14 • Ballroom Helipad", "14 • Ballroom",
+                          "15 • Pirate Helipad", "15 • Pirate", "16 • Astro Helipad", "16 • Astro",
+                          "17 • Easter Helipad", "17 • Egg Chopper", "18 • Underwater Palace Helipad",
+                          "18 • Flying Bathyscaphe", "19 • Haunted Tower Helipad", "19 • Flying Cauldron",
+                          "20 • Private Helipad", "20 • Private", "❌ • Back"}, nil)
 
     if MaxJES_3 == nil then
         return
     elseif MaxJES_3 == 1 then
         hackhelicopterPlace_1()
     elseif MaxJES_3 == 2 then
-        hackhelicopterPlace_2()
+        hackhelicopter_4()
     elseif MaxJES_3 == 3 then
-        hackhelicopterPlace_3()
+        hackhelicopterPlace_2()
     elseif MaxJES_3 == 4 then
-        hackhelicopterPlace_4()
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172545Fh", "006C6576h", 50)
     elseif MaxJES_3 == 5 then
-        hackhelicopterPlace_5()
+        hackhelicopterPlace_3()
     elseif MaxJES_3 == 6 then
-        hackhelicopterPlace_6()
+        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "6F70535Fh", "00007472h", 50)
     elseif MaxJES_3 == 7 then
-        hackhelicopterPlace_7()
+        hackhelicopterPlace_4()
     elseif MaxJES_3 == 8 then
-        hackhelicopterPlace_8()
+        hack("696B5326h", "65485F6Eh", "6F63696Ch", "72657470h", "6F66555Fh", "00000000h", 50)
     elseif MaxJES_3 == 9 then
-        hackhelicopterPlace_9()
+        hackhelicopterPlace_5()
     elseif MaxJES_3 == 10 then
-        hackhelicopterPlace_10()
+        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "626F525Fh", "0000746Fh", 50)
     elseif MaxJES_3 == 11 then
-        hackhelicopterPlace_11()
+        hackhelicopterPlace_6()
     elseif MaxJES_3 == 12 then
-        hackhelicopterPlace_12()
+        hackhelicopter_9()
     elseif MaxJES_3 == 13 then
-        hackhelicopterPlace_13()
+        hackhelicopterPlace_7()
     elseif MaxJES_3 == 14 then
-        hackhelicopterPlace_14()
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172415Fh", "00636962h", 50)
     elseif MaxJES_3 == 15 then
-        hackhelicopterPlace_15()
+        hackhelicopterPlace_8()
     elseif MaxJES_3 == 16 then
-        hackhelicopterPlace_16()
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7365525Fh", "0074726Fh", 50)
     elseif MaxJES_3 == 17 then
-        hackhelicopterPlace_17()
+        hackhelicopterPlace_9()
     elseif MaxJES_3 == 18 then
-        hackhelicopterPlace_18()
+        hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "7369645Fh", "00006F63h", 50)
     elseif MaxJES_3 == 19 then
+        hackhelicopterPlace_10()
+    elseif MaxJES_3 == 20 then
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172625Fh", "006C697Ah", 50)
+    elseif MaxJES_3 == 21 then
+        hackhelicopterPlace_11()
+    elseif MaxJES_3 == 22 then
+        hackhelicopter_10()
+    elseif MaxJES_3 == 23 then
+        hackhelicopterPlace_12()
+    elseif MaxJES_3 == 24 then
+        hackhelicopter_12()
+    elseif MaxJES_3 == 25 then
+        hackhelicopterPlace_13()
+    elseif MaxJES_3 == 26 then
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "656C535Fh", "00686769h", 50)
+    elseif MaxJES_3 == 27 then
+        hackhelicopter_8()
+    elseif MaxJES_3 == 28 then
+        hackhelicopterPlace_14()
+    elseif MaxJES_3 == 29 then
+        hackhelicopter_5()
+    elseif MaxJES_3 == 30 then
+        hackhelicopterPlace_15()
+    elseif MaxJES_3 == 31 then
+        hackhelicopter_3()
+    elseif MaxJES_3 == 32 then
+        hackhelicopterPlace_16()
+    elseif MaxJES_3 == 33 then
+        hackhelicopter_6()
+    elseif MaxJES_3 == 34 then
+        hackhelicopterPlace_17()
+    elseif MaxJES_3 == 35 then
+        hackhelicopter_1()
+    elseif MaxJES_3 == 36 then
+        hackhelicopterPlace_18()
+    elseif MaxJES_3 == 37 then
+        hackhelicopter_2()
+    elseif MaxJES_3 == 38 then
+        hackhelicopterPlace_19()
+    elseif MaxJES_3 == 39 then
+        hackhelicopter_13()
+    elseif MaxJES_3 == 40 then
+        hack("1768641324", "1699241838", "1868786028", "1919251568", "1952532319", "7955059", 50)
+    elseif MaxJES_3 == 41 then
+        hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
+    elseif MaxJES_3 == 42 then
         menuescolhas2(4)
     end
 end
 
-function menuSkinTrain()
-    MaxJES_4 = gg.choice({"🛰️ • Skin 1 Christmas Train", "🚀 • Skin 2 Ghost Train",
-                          "⚓ • Skin 3 Ultra Express Train", "🎯 • Skin 4 Primordial Express Train",
-                          "🛬 • Skin 5 Pascual Express Train", "🚁 • Skin 6 Theater Express Train",
-                          "☃️ • Skin 7 Dragon Train", "🚁 • Skin 8 Astromobile Train",
-                          "☃️ • Skin 9 Wooden Wagon Train", "🚁 • Skin 10 Musical Train",
-                          "☃️ • Skin 11 Chivalrous Train", "🚁 • Skin 12 Express Railcar Train",
-                          "☃️ • Skin 13 Disco Train", "☃️ • Skin 14 Floral Train",
-                          "☃️ • Skin 13 Chrismas 2024", "☃️ • Skin 14 Halloween 2024", "❌ • Return"},
-        nil)
-
-    if MaxJES_4 == nil then
-        return
-    elseif MaxJES_4 == 1 then
-        hack("696B5328h", "72545F6Eh", "5F6E6961h", "69726863h", "616D7473h", "00000073h", 50)
-    elseif MaxJES_4 == 2 then
-        hack("696B531Ch", "72545F6Eh", "5F6E6961h", "00355053h", "00000000h", "00000000h", 50)
-    elseif MaxJES_4 == 3 then
-        hack("696B5320h", "72545F6Eh", "5F6E6961h", "3A325053h", "00000032h", "00000000h", 50)
-    elseif MaxJES_4 == 4 then
-        hack("696B532Ch", "72545F6Eh", "5F6E6961h", "68657270h", "6F747369h", "00636972h", 50)
-    elseif MaxJES_4 == 5 then
-        hack("696B5322h", "72545F6Eh", "5F6E6961h", "74736165h", "00007265h", "00000000h", 50)
-    elseif MaxJES_4 == 6 then
-        hack("696B532Ah", "72545F6Eh", "5F6E6961h", "61656874h", "63697274h", "00006C61h", 50)
-    elseif MaxJES_4 == 7 then
-        hack("696B532Ch", "72545F6Eh", "5F6E6961h", "616E756Ch", "32594E72h", "00323230h", 50)
-    elseif MaxJES_4 == 8 then
-        hack("696B531Eh", "72545F6Eh", "5F6E6961h", "7372616Dh", "00000000h", "00000000h", 50)
-    elseif MaxJES_4 == 9 then
-        hack("696B5328h", "72545F6Eh", "5F6E6961h", "69626F72h", "6F6F486Eh", "00000064h", 50)
-    elseif MaxJES_4 == 10 then
-        hack("696B5328h", "72545F6Eh", "5F6E6961h", "6B636F72h", "6C6F726Eh", "0000006Ch", 50)
-    elseif MaxJES_4 == 11 then
-        hack("696B5322h", "72545F6Eh", "5F6E6961h", "67696E6Bh", "00007468h", "00000000h", 50)
-    elseif MaxJES_4 == 12 then
-        hack("696B5328h", "72545F6Eh", "5F6E6961h", "6C617469h", "32303279h", "00000034h", 50)
-    elseif MaxJES_4 == 13 then
-        hack("696B531Ch", "72545F6Eh", "5F6E6961h", "00385053h", "00000000h", "00000000h", 50)
-    elseif MaxJES_4 == 14 then
-        hack("696B5326h", "72545F6Eh", "5F6E6961h", "74736566h", "6C617669h", "00000000h", 50)
-    elseif MaxJES_4 == 15 then
-        hacktrain_1()
-    elseif MaxJES_4 == 16 then
-        hacktrain_2()
-    elseif MaxJES_4 == 17 then
-        menuescolhas2(4)
-    end
-end
-
-function menuSkinTrainStation()
-    MaxJES_5 = gg.choice({"🛰️ • Express Gate Station Skin 1", "🚀 • Haunted Station Skin 2",
-                          "⚓ • Disco Station Skin 3", "🎯 • Space Station Skin 4",
-                          "🛬 • Mythical Station Skin 5", "🚁 • Flower Festival Station Skin 6",
-                          "☃️ • Training Camp Station Skin 7", "🚁 • Recording Station Skin 8",
-                          "☃️ • Castle Station Skin 9", "🚁 • Romantic Station Skin 10",
-                          "☃️ • Easter Station Skin 11", "🚁 • Cowboy Station Skin 12",
-                          "☃️ • Backstage Station Skin 13", "☃️ • China Station Skin 14",
-                          "🚁 • Halloween Station Skin 15", "☃️ • Primitive Settlement Station Skin 16",
-                          "☃️ • Christmas Station Skin 17", "❌ • Back"}, nil)
+function menuSkinTrain_TrainStation()
+    MaxJES_5 = gg.choice({"1 • Express Portal", "1 • Ultra Express Train", "2 • Ghost Station",
+                          "2 • Ghost Train", "3 • Disco Station", "3 • Disco Train", "4 • Space Station",
+                          "4 • Mars Rover", "5 • Mythic Station", "5 • Mythic Train", "6 • Flower Station",
+                          "6 • Flower Train", "7 • Training Camp Station", "7 • Wooden Wagon Train",
+                          "8 • Record Station", "8 • Music Express", "9 • Castle Station", "9 • Knight Train",
+                          "10 • Roman Station", "10 • Express Tram", "11 • Easter Station",
+                          "11 • Easter Express", "12 • Cowboy Station", "12 • Cowboy Train",
+                          "13 • Thearter Set Station", "13 • Theater Express", "14 • Chinese Station",
+                          "14 • Dragon Train", "15 • Halloween Station", "15 • Halloween Train",
+                          "16 • Ancient Settlement Station", "16 • Primeval Express", "17 • Christmas Station",
+                          "17 • Chrismas Train", "❌ • Back"}, nil)
 
     if MaxJES_5 == nil then
         return
     elseif MaxJES_5 == 1 then
         hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003250h", 50)
     elseif MaxJES_5 == 2 then
-        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003550h", 50)
+        hack("696B5320h", "72545F6Eh", "5F6E6961h", "3A325053h", "00000032h", "00000000h", 50)
     elseif MaxJES_5 == 3 then
-        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003850h", 50)
+        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003550h", 50)
     elseif MaxJES_5 == 4 then
-        hack("696B532Ch", "72545F6Eh", "536E6961h", "69746174h", "6D5F6E6Fh", "00737261h", 50)
+        hack("696B531Ch", "72545F6Eh", "5F6E6961h", "00355053h", "00000000h", "00000000h", 50)
     elseif MaxJES_5 == 5 then
-        hacktrain_station_1()
+        hack("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003850h", 50)
     elseif MaxJES_5 == 6 then
-        hacktrain_station_2()
+        hack("696B531Ch", "72545F6Eh", "5F6E6961h", "00385053h", "00000000h", "00000000h", 50)
     elseif MaxJES_5 == 7 then
-        hacktrain_station_3()
+        hack("696B532Ch", "72545F6Eh", "536E6961h", "69746174h", "6D5F6E6Fh", "00737261h", 50)
     elseif MaxJES_5 == 8 then
-        hacktrain_station_4()
+        hack("696B531Eh", "72545F6Eh", "5F6E6961h", "7372616Dh", "00000000h", "00000000h", 50)
     elseif MaxJES_5 == 9 then
-        hacktrain_station_5()
+        hacktrain_station_1()
     elseif MaxJES_5 == 10 then
-        hacktrain_station_6()
+        hacktrain_3()
     elseif MaxJES_5 == 11 then
-        hacktrain_station_7()
+        hacktrain_station_2()
     elseif MaxJES_5 == 12 then
-        hacktrain_station_8()
+        hack("696B5326h", "72545F6Eh", "5F6E6961h", "74736566h", "6C617669h", "00000000h", 50)
     elseif MaxJES_5 == 13 then
-        hacktrain_station_9()
+        hacktrain_station_3()
     elseif MaxJES_5 == 14 then
-        hacktrain_station_10()
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "69626F72h", "6F6F486Eh", "00000064h", 50)
     elseif MaxJES_5 == 15 then
-        hacktrain_station_11()
+        hacktrain_station_4()
     elseif MaxJES_5 == 16 then
-        hacktrain_station_12()
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "6B636F72h", "6C6F726Eh", "0000006Ch", 50)
     elseif MaxJES_5 == 17 then
-        hacktrain_station_13()
+        hacktrain_station_5()
     elseif MaxJES_5 == 18 then
+        hack("696B5322h", "72545F6Eh", "5F6E6961h", "67696E6Bh", "00007468h", "00000000h", 50)
+    elseif MaxJES_5 == 19 then
+        hacktrain_station_6()
+    elseif MaxJES_5 == 20 then
+        hack("696B5328h", "72545F6Eh", "5F6E6961h", "6C617469h", "32303279h", "00000034h", 50)
+    elseif MaxJES_5 == 21 then
+        hacktrain_station_7()
+    elseif MaxJES_5 == 22 then
+        hack("696B5322h", "72545F6Eh", "5F6E6961h", "74736165h", "00007265h", "00000000h", 50)
+    elseif MaxJES_5 == 23 then
+        hacktrain_station_8()
+    elseif MaxJES_5 == 24 then
+        hack("1768641316", "1918132078", "1601071457", "1953719671", "7238245", "0", 50)
+    elseif MaxJES_5 == 25 then
+        hacktrain_station_9()
+    elseif MaxJES_5 == 26 then
+        hack("696B532Ah", "72545F6Eh", "5F6E6961h", "61656874h", "63697274h", "00006C61h", 50)
+    elseif MaxJES_5 == 27 then
+        hacktrain_station_10()
+    elseif MaxJES_5 == 28 then
+        hack("696B532Ch", "72545F6Eh", "5F6E6961h", "616E756Ch", "32594E72h", "00323230h", 50)
+    elseif MaxJES_5 == 29 then
+        hacktrain_station_11()
+    elseif MaxJES_5 == 30 then
+        hacktrain_2()
+    elseif MaxJES_5 == 31 then
+        hacktrain_station_12()
+    elseif MaxJES_5 == 32 then
+        hack("696B532Ch", "72545F6Eh", "5F6E6961h", "68657270h", "6F747369h", "00636972h", 50)
+    elseif MaxJES_5 == 33 then
+        hacktrain_station_13()
+    elseif MaxJES_5 == 34 then
+        hacktrain_1()
+    elseif MaxJES_5 == 35 then
         menuescolhas2(4)
     end
 end
 
-function menuSkinAirplane()
-    MaxJES_6 = gg.choice({"🛬 • Rocket Plane Skin 1", "🛬 • Super Rocket Plane Skin 2",
-                          "🛬 • Supersonic Dragon Plane Skin 3", "🛬 • Space Rocket Plane Skin 4",
-                          "🛬 • Rock Plane Skin 5", "🛬 • Aero Plane Skin 6", "🛬 • Frosted Plane Skin 7",
-                          "🛬 • Lucky Plane Skin 8", "🛬 • Arabian Plane Skin 9",
-                          "🛬 • Fashion Plane Skin 10", "🛬 • Stealth Plane Skin 11",
-                          "🛬 • Seaplane Skin 12", "🛬 • Festive Plane Skin 13",
-                          "🛬 • Spectral Plane Skin 14", "🛬 • Avian Plane Skin 15",
-                          "🛬 • Flying Triene Plane Skin 16", "🛬 • Symphonic Plane Skin 17", "❌ • Back"},
-        nil)
-
-    if MaxJES_6 == nil then
-        return
-    elseif MaxJES_6 == 1 then
-        hack("696B5326h", "69415F6Eh", "616C7072h", "535F656Eh", "323A3350h", "00000000h", 50)
-    elseif MaxJES_6 == 2 then
-        hack("696B5322h", "69415F6Eh", "616C7072h", "535F656Eh", "00003350h", "00000000h", 50)
-    elseif MaxJES_6 == 3 then
-        hack("696B5326h", "69415F6Eh", "616C7072h", "535F656Eh", "323A3750h", "00000000h", 50)
-    elseif MaxJES_6 == 4 then
-        hack("696B5326h", "69415F6Eh", "616C7072h", "735F656Eh", "65636170h", "00000000h", 50)
-    elseif MaxJES_6 == 5 then
-        hack("696B5324h", "69415F6Eh", "616C7072h", "725F656Eh", "006B636Fh", "00000000h", 50)
-    elseif MaxJES_6 == 6 then
-        hack("696B5326h", "69415F6Eh", "616C7072h", "6D5F656Eh", "6569766Fh", "00000000h", 50)
-    elseif MaxJES_6 == 7 then
-        hack("696B5326h", "69415F6Eh", "616C7072h", "735F656Eh", "74656577h", "00000000h", 50)
-    elseif MaxJES_6 == 8 then
-        hack("696B532Ah", "69415F6Eh", "616C7072h", "695F656Eh", "616C6572h", "0000646Eh", 50)
-    elseif MaxJES_6 == 9 then
-        hack("696B5324h", "69415F6Eh", "616C7072h", "615F656Eh", "00626172h", "00000000h", 50)
-    elseif MaxJES_6 == 10 then
-        hack("696B532Ah", "69415F6Eh", "616C7072h", "665F656Eh", "69687361h", "00006E6Fh", 50)
-    elseif MaxJES_6 == 11 then
-        hack("696B5322h", "69415F6Eh", "616C7072h", "735F656Eh", "00007970h", "00000000h", 50)
-    elseif MaxJES_6 == 12 then
-        hackairplane_1()
-    elseif MaxJES_6 == 13 then
-        hackairplane_2()
-    elseif MaxJES_6 == 14 then
-        hackairplane_3()
-    elseif MaxJES_6 == 15 then
-        hackairplane_4()
-    elseif MaxJES_6 == 16 then
-        hackairplane_5()
-    elseif MaxJES_6 == 17 then
-        hackairplane_7()
-    elseif MaxJES_6 == 18 then
-        menuescolhas2(4)
-    end
-end
-
-function menuSkinAirport()
-    MaxJES_7 = gg.choice({"🛬 • Skin 1 Rocker Airport", "🛬 • Skin 2 Sweet Airport",
-                          "🛬 • Skin 3 Movie Airport", "🛬 • Skin 4 Secret Base Airport",
-                          "🛬 • Skin 5 Aero Airport", "🛬 • Skin 6 Space Airport",
-                          "🛬 • Skin 7 Festival Airport", "🛬 • Skin 8 Tropical Airport",
-                          "🛬 • Skin 9 Rainbow Airport", "🛬 • Skin 10 Five-Star Airport",
-                          "🛬 • Skin 11 Santa's House Airport", "🛬 • Skin 12 Symphony Airport",
-                          "🛬 • Skin 13 Ghost Airport", "🛬 • Skin 14 Pascual Airport",
-                          "🛬 • Skin 15 Ski Resort Airport", "❌ • Return"}, nil)
+function menuSkinAirport_Airplane()
+    MaxJES_7 = gg.choice({"1 • Rock Airport", "1 • Rock Plane", "2 • Sugary Airport", "2 • Éclair Plane",
+                          "3 • Cenima Airport", "3 • A-Lister Jet", "4 • Secret Base Airport",
+                          "4 • Stealth Aircraft", "5 • Aerial Airport", "5 • Ultra Plane", "5 • Mega Plane",
+                          "6 • Space Airport", "6 • Lauch Vehcle", "7 • Festival Airport", "7 • Sky Dragon",
+                          "7 • Supersonic Dragon", "8 • Tropical Airport", "8 • Tropical Biplane",
+                          "9 • Rainbow Airport", "9 • Lucky Jet", "10 • Five-Star Airport", "10 • Seaplane",
+                          "11 • Santa's Residence Airport", "11 • Holiday Plane", "12 • Symphony Airport",
+                          "12 • Symphony Plane", "13 • Ghost Airport", "13 • Ghost Plane",
+                          "14 • Easter Airport", "14 • Bird Plane", "15 • Ski Airport", "15 • Aero Sleigh",
+                          "16 • Sultan Airport", "16 • Arabian Plane", "17 • Fashion Airport",
+                          "17 • Fashion Plane", "❌ • Return"}, nil)
 
     if MaxJES_7 == nil then
         return
     elseif MaxJES_7 == 1 then
         hack("696B5322h", "69415F6Eh", "726F7072h", "6F725F74h", "00006B63h", "00000000h", 50)
     elseif MaxJES_7 == 2 then
-        hack("696B5324h", "69415F6Eh", "726F7072h", "77735F74h", "00746565h", "00000000h", 50)
+        hack("696B5324h", "69415F6Eh", "616C7072h", "725F656Eh", "006B636Fh", "00000000h", 50)
     elseif MaxJES_7 == 3 then
-        hack("696B5324h", "69415F6Eh", "726F7072h", "6F6D5F74h", "00656976h", "00000000h", 50)
+        hack("696B5324h", "69415F6Eh", "726F7072h", "77735F74h", "00746565h", "00000000h", 50)
     elseif MaxJES_7 == 4 then
-        hack("696B5320h", "69415F6Eh", "726F7072h", "70735F74h", "00000079h", "00000000h", 50)
+        hack("696B5326h", "69415F6Eh", "616C7072h", "735F656Eh", "74656577h", "00000000h", 50)
     elseif MaxJES_7 == 5 then
-        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000033h", "00000000h", 50)
+        hack("696B5324h", "69415F6Eh", "726F7072h", "6F6D5F74h", "00656976h", "00000000h", 50)
     elseif MaxJES_7 == 6 then
-        hack("696B5324h", "69415F6Eh", "726F7072h", "70735F74h", "00656361h", "00000000h", 50)
+        hack("696B5326h", "69415F6Eh", "616C7072h", "6D5F656Eh", "6569766Fh", "00000000h", 50)
     elseif MaxJES_7 == 7 then
-        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000037h", "00000000h", 50)
+        hack("696B5320h", "69415F6Eh", "726F7072h", "70735F74h", "00000079h", "00000000h", 50)
     elseif MaxJES_7 == 8 then
-        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000039h", "00000000h", 50)
+        hack("696B5322h", "69415F6Eh", "616C7072h", "735F656Eh", "00007970h", "00000000h", 50)
     elseif MaxJES_7 == 9 then
-        hack("696B5328h", "69415F6Eh", "726F7072h", "72695F74h", "6E616C65h", "00000064h", 50)
+        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000033h", "00000000h", 50)
     elseif MaxJES_7 == 10 then
-        hackairport_1()
+        hack("696B5326h", "69415F6Eh", "616C7072h", "535F656Eh", "323A3350h", "00000000h", 50)
     elseif MaxJES_7 == 11 then
-        hackairport_2()
+        hack("696B5322h", "69415F6Eh", "616C7072h", "535F656Eh", "00003350h", "00000000h", 50)
     elseif MaxJES_7 == 12 then
-        hackairport_3()
+        hack("696B5324h", "69415F6Eh", "726F7072h", "70735F74h", "00656361h", "00000000h", 50)
     elseif MaxJES_7 == 13 then
-        hackairport_4()
+        hack("696B5326h", "69415F6Eh", "616C7072h", "735F656Eh", "65636170h", "00000000h", 50)
     elseif MaxJES_7 == 14 then
-        hackairport_5()
+        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000037h", "00000000h", 50)
     elseif MaxJES_7 == 15 then
-        hackairport_6()
+        hack("1768641314", "1765891950", "1634496626", "1398760814", "14160", "0", 50)
     elseif MaxJES_7 == 16 then
+        hack("696B5326h", "69415F6Eh", "616C7072h", "535F656Eh", "323A3750h", "00000000h", 50)
+    elseif MaxJES_7 == 17 then
+        hack("696B5320h", "69415F6Eh", "726F7072h", "50535F74h", "00000039h", "00000000h", 50)
+    elseif MaxJES_7 == 18 then
+        hack("1768641314", "1765891950", "1634496626", "1398760814", "14672", "0", 50)
+    elseif MaxJES_7 == 19 then
+        hack("696B5328h", "69415F6Eh", "726F7072h", "72695F74h", "6E616C65h", "00000064h", 50)
+    elseif MaxJES_7 == 20 then
+        hack("696B532Ah", "69415F6Eh", "616C7072h", "695F656Eh", "616C6572h", "0000646Eh", 50)
+    elseif MaxJES_7 == 21 then
+        hackairport_1()
+    elseif MaxJES_7 == 22 then
+        hackairplane_1()
+    elseif MaxJES_7 == 23 then
+        hackairport_2()
+    elseif MaxJES_7 == 24 then
+        hackairplane_2()
+    elseif MaxJES_7 == 25 then
+        hackairport_3()
+    elseif MaxJES_7 == 26 then
+        hackairplane_7()
+    elseif MaxJES_7 == 27 then
+        hackairport_4()
+    elseif MaxJES_7 == 28 then
+        hackairplane_3()
+    elseif MaxJES_7 == 29 then
+        hackairport_5()
+    elseif MaxJES_7 == 30 then
+        hackairplane_4()
+    elseif MaxJES_7 == 31 then
+        hackairport_6()
+    elseif MaxJES_7 == 32 then
+        hackairplane_5()
+    elseif MaxJES_7 == 33 then
+        hack("696B5322", "69415F6E", "726F7072", "72615F74", "00006261", "00000000", 50)
+    elseif MaxJES_7 == 34 then
+        hack("696B5324h", "69415F6Eh", "616C7072h", "615F656Eh", "00626172h", "00000000h", 50)
+    elseif MaxJES_7 == 35 then
+        hack("1768641320", "1765891950", "1919905906", "1634099060", "1869178995", "110", 50)
+    elseif MaxJES_7 == 36 then
+        hack("696B532Ah", "69415F6Eh", "616C7072h", "665F656Eh", "69687361h", "00006E6Fh", 50)
+    elseif MaxJES_7 == 37 then
         menuescolhas2(4)
     end
 end
 
-function menuSkinBoat()
-    MaxJES_8 = gg.choice({"🛰️ • Skin 1 Cruise Ship", "🚀 • Skin 2 Greek Bireme Ship",
-                          "⚓ • Skin 3 Viking Ship", "🎯 • Skin 4 Steamship", "🛬 • Skin 5 Arctic Ship",
-                          "🚁 • Skin 6 Gift Ship", "☃️ • Skin 7 Ghost Ship", "🚁 • Skin 8 Holiday Boat",
-                          "☃️ • Skin 9 Love Boat", "❌ • Volver"}, nil)
-
-    if MaxJES_8 == nil then
-        return
-    elseif MaxJES_8 == 1 then
-        hack("696B5320h", "68535F6Eh", "6A5F7069h", "6C676E75h", "00000065h", "00000000h", 50)
-    elseif MaxJES_8 == 2 then
-        hack("696B5320h", "68535F6Eh", "685F7069h", "616C6C65h", "00000073h", "00000000h", 50)
-    elseif MaxJES_8 == 3 then
-        hack("696B5326h", "68535F6Eh", "6E5F7069h", "6964726Fh", "646F4763h", "00000000h", 50)
-    elseif MaxJES_8 == 4 then
-        hack("696B532Ch", "68535F6Eh", "775F7069h", "77646C69h", "32747365h", "00343230h", 50)
-    elseif MaxJES_8 == 5 then
-        hack("696B5320h", "68535F6Eh", "615F7069h", "69746372h", "00000063h", "00000000h", 50)
-    elseif MaxJES_8 == 6 then
-        hackship_1()
-    elseif MaxJES_8 == 7 then
-        hackship_2()
-    elseif MaxJES_8 == 8 then
-        hackship_3()
-    elseif MaxJES_8 == 9 then
-        hackship_4()
-    elseif MaxJES_8 == 10 then
-        menuescolhas2(4)
-    end
-
-end
-
-function menuSkinPort()
-    MaxJES_9 = gg.choice({"🛰️ • Skin 1 Tropical Port", "🚀 • Skin 2 Pirate Port",
-                          "⚓ • Skin 3 Classic Port", "🎯 • Skin 4 Jungle Port", "🛬 • Skin 5 Viking Port",
-                          "🚁 • Skin 6 Christmas Port", "☃️ • Skin 7 Port Tavern Port",
-                          "🚁 • Skin 8 Sugar Port", "☃️ • Skin 9 Creepy Port",
-                          "🚁 • Skin 10 Holiday Port", "☃️ • Skin 11 Romantic Port", "❌ • Back"}, nil)
+function menuSkinPort_Ship()
+    MaxJES_9 = gg.choice({"1 • Equatorial Port", "1 • Cruise Liner", "2 • Pirate Harbor", "2 • Pirate Galleon",
+                          "3 • Ancient Port", "3 • Greek Bireme Ship", "4 • Jungle Port", "4 • Cruise Ship",
+                          "5 • Viking Harbor", "5 • Sturdy Drakkar", "6 • Christmas Port", "6 • Gift Ship",
+                          "7 • Saloon On The Water", "7 • River Steamboat", "8 • Candy Port", "8 • Sweet Boat",
+                          "9 • Port Of Horrors", "9 • Ghost Ship", "10 • Vacation Port", "10 • Vacation Ship",
+                          "11 • Romantic Harbor", "11 • Love Boat", "12 • Arctic Port", "12 • Arctic Ship",
+                          "13 • Egyptian Port", "13 • Egyptian Ship", "14 • Lantern Harbor", "14 • Dragon Boat",
+                          "15 • Doge Pier", "15 • Gondola", "16 • Sweet Port", "16 • Croissant Ferry",
+                          "17 • Japanese Port", "17 • Japanese Ship", "❌ • Back"}, nil)
 
     if MaxJES_9 == nil then
         return
     elseif MaxJES_9 == 1 then
         hack("696B531Eh", "61485F6Eh", "726F6272h", "3950535Fh", "00000000h", "00000000h", 50)
     elseif MaxJES_9 == 2 then
-        hack("696B531Eh", "61485F6Eh", "726F6272h", "3154535Fh", "00000000h", "00000000h", 50)
+        hack("1768641306", "1750294382", "1398763625", "14672", "0", "0", 50)
     elseif MaxJES_9 == 3 then
-        hack("696B5324h", "61485F6Eh", "726F6272h", "6C65685Fh", "0073616Ch", "00000000h", 50)
+        hack("696B531Eh", "61485F6Eh", "726F6272h", "3154535Fh", "00000000h", "00000000h", 50)
     elseif MaxJES_9 == 4 then
-        hack("696B5324h", "61485F6Eh", "726F6272h", "6E756A5Fh", "00656C67h", "00000000h", 50)
+        hack("1768641306", "1750294382", "1398763625", "12628", "0", "0", 50)
     elseif MaxJES_9 == 5 then
-        hack("696B532Ah", "61485F6Eh", "726F6272h", "726F6E5Fh", "47636964h", "0000646Fh", 50)
+        hack("696B5324h", "61485F6Eh", "726F6272h", "6C65685Fh", "0073616Ch", "00000000h", 50)
     elseif MaxJES_9 == 6 then
-        hackharbor_1()
+        hack("696B5320h", "68535F6Eh", "685F7069h", "616C6C65h", "00000073h", "00000000h", 50)
     elseif MaxJES_9 == 7 then
-        hackharbor_2()
+        hack("696B5324h", "61485F6Eh", "726F6272h", "6E756A5Fh", "00656C67h", "00000000h", 50)
     elseif MaxJES_9 == 8 then
-        hackharbor_3()
+        hack("696B5320h", "68535F6Eh", "6A5F7069h", "6C676E75h", "00000065h", "00000000h", 50)
     elseif MaxJES_9 == 9 then
-        hackharbor_4()
+        hack("696B532Ah", "61485F6Eh", "726F6272h", "726F6E5Fh", "47636964h", "0000646Fh", 50)
     elseif MaxJES_9 == 10 then
-        hackharbor_5()
+        hack("696B5326h", "68535F6Eh", "6E5F7069h", "6964726Fh", "646F4763h", "00000000h", 50)
     elseif MaxJES_9 == 11 then
-        hackharbor_6()
+        hackharbor_1()
     elseif MaxJES_9 == 12 then
+        hackship_1()
+    elseif MaxJES_9 == 13 then
+        hackharbor_2()
+    elseif MaxJES_9 == 14 then
+        hack("696B532Ch", "68535F6Eh", "775F7069h", "77646C69h", "32747365h", "00343230h", 50)
+    elseif MaxJES_9 == 15 then
+        hackharbor_3()
+    elseif MaxJES_9 == 16 then
+        hack("1768641324", "1750294382", "1650421865", "1752461929", "846815588", "3420720", 50)
+    elseif MaxJES_9 == 17 then
+        hackharbor_4()
+    elseif MaxJES_9 == 18 then
+        hackship_2()
+    elseif MaxJES_9 == 19 then
+        hackharbor_5()
+    elseif MaxJES_9 == 20 then
+        hackship_3()
+    elseif MaxJES_9 == 21 then
+        hackharbor_6()
+    elseif MaxJES_9 == 22 then
+        hackship_4()
+    elseif MaxJES_9 == 23 then
+        hack("1768641316", "1632132974", "1919902322", "1668440415", "6515060", "0", 50)
+    elseif MaxJES_9 == 24 then
+        hack("696B5320h", "68535F6Eh", "615F7069h", "69746372h", "00000063h", "00000000h", 50)
+    elseif MaxJES_9 == 25 then
+        hack("1768641314", "1632132974", "1919902322", "2036819295", "29808", "0", 50)
+    elseif MaxJES_9 == 26 then
+        hack("1768641310", "1750294382", "1700753513", "1953528167", "0", "0", 50)
+    elseif MaxJES_9 == 27 then
+        hack("1768641310", "1632132974", "1919902322", "1498301279", "0", "0", 50)
+    elseif MaxJES_9 == 28 then
+        hack("1768641306", "1750294382", "1130328169", "22862", "0", "0", 50)
+    elseif MaxJES_9 == 29 then
+        hack("1768641316", "1632132974", "1919902322", "1852143199", "6644585", "0", 50)
+    elseif MaxJES_9 == 30 then
+        hack("1768641312", "1750294382", "1985966185", "1667853925", "101", "0", 50)
+    elseif MaxJES_9 == 31 then
+        hack("1768641314", "1632132974", "1919902322", "1918988383", "29545", "0", 50)
+    elseif MaxJES_9 == 32 then
+        hack("1768641310", "1750294382", "1885302889", "1936290401", "0", "0", 50)
+    elseif MaxJES_9 == 33 then
+        hack("1768641310", "1750294382", "1784639593", "1851879521", "0", "0", 50)
+    elseif MaxJES_9 == 34 then
+        hack("1768641314", "1632132974", "1919902322", "1885432415", "28257", "0", 50)
+    elseif MaxJES_9 == 35 then
         menuescolhas2(4)
     end
-
 end
 
 function menuSkinChicken()
-    MaxJES_110 = gg.choice({"🛰️ • Skin 1 Festive Hen", "🚀 • Skin 2 Hen with Chiton",
-                            "⚓ • Skin 3 Leprechaun Hen", "🎯 • Skin 4 Birthday Hen",
-                            "🛬 • Skin 5 Adventurous Hen", "🚁 • Skin 6 Cheerleader Hen",
-                            "☃️ • Skin 7 Pilot Hen", "🚁 • Skin 8 Disco Hen", "☃️ • Skin 9 Hens",
-                            "🚁 • Skin 10 Hens", "☃️ • Skin 11 Hens", "🚁 • Skin 12 Hens",
-                            "☃️ • Skin 13 Hens", "❌ • Return"}, nil)
+    MaxJES_110 = gg.choice({"1 • Festive Chicken", "2 • Chicken in a Chiton", "3 • Leprechaun Chicken",
+                            "4 • Birthday Chicken", "5 • Explorer Chicken", "6 • Cheerleader Chicken",
+                            "7 • Pilot Chicken", "8 • Disco Chicken", "9 • Fashion Chicken",
+                            "10 • Festive Chicken", "11 • Halloween Chicken", "12 • Santa Little Helper Chicken",
+                            "13 • Party Chicken", "14 • Fairytale Chicken", "15 • Harlequin Chicken",
+                            "16 • Vacation Chicken", "❌ • Return"}, nil)
 
     if MaxJES_110 == nil then
         return
@@ -988,57 +952,88 @@ function menuSkinChicken()
         hack("696B5326h", "68435F6Eh", "656B6369h", "72745F6Eh", "6C657661h", "00000000h", 50)
     elseif MaxJES_110 == 8 then
         hack("696B5324h", "68435F6Eh", "656B6369h", "69645F6Eh", "006F6373h", "00000000h", 50)
-    elseif MaxJES_110 >= 9 and MaxJES_110 <= 14 then
+    elseif MaxJES_110 == 9 then
+        hack("1768641320", "1749245806", "1701536617", "1634099054", "1869178995", "110", 50)
+    elseif MaxJES_110 == 10 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 11 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 12 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 13 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 14 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 15 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 16 then
+        menuescolhas2(4)
+    elseif MaxJES_110 == 17 then
         menuescolhas2(4)
     end
 
 end
 
 function menuSkinCow()
-    MaxJES_111 = gg.choice({"🛰️ • Corsair Cow Skin 1", "🚀 • Elegant Cow Skin 2",
-                            "⚓ • Arctic Cow Skin 3", "🎯 • Verbena Cow Skin 4",
-                            "🛬 • Atlantean Queen Cow Skin 5", "🚁 • Spy Cow Skin 6",
-                            "☃️ • Paschal Cow Skin 7", "🚁 • Astronaut Cow Skin 8",
-                            "☃️ • Bloodsucking Cow Skin 9", "🚁 • Alpine Cow Skin 10",
-                            "☃️ • Cow Skin 11", "🚁 • Cow Skin 12", "☃️ • Cow Skin 13", "❌ • Return"},
-        nil)
+    MaxJES_111 = gg.choice({"1 • Corsair Cow", "2 • Arctic Cow", "3 • Queen Of Atlantis", "4 • Spy Cow",
+                            "5 • Easter Cow", "6 • Astronaut Cow", "7 • Moo Sferatu Cow", "8 • Alpine Cow",
+                            "9 • Flower Cow", "10 • Birthday Cow", "11 • Ceremonial Cow", "12 • Elf Cow",
+                            "13 • Party Cow", "14 • Flirty Cow", "15 • Stylish Cow", "16 • Confectioner Cow",
+                            "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "❌ • Return"}, nil)
 
     if MaxJES_111 == nil then
         return
     elseif MaxJES_111 == 1 then
         hack("696B5326h", "6F435F6Eh", "69705F77h", "65746172h", "34323032h", "00000000h", 50)
     elseif MaxJES_111 == 2 then
-        hack("696B5324h", "6F435F6Eh", "74695F77h", "32796C61h", "00343230h", "00000000h", 50)
-    elseif MaxJES_111 == 3 then
         hack("696B531Eh", "6F435F6Eh", "72615F77h", "63697463h", "00000000h", "00000000h", 50)
-    elseif MaxJES_111 == 4 then
-        hack("696B532Ah", "6F435F6Eh", "69625F77h", "64687472h", "30327961h", "00003432h", 50)
-    elseif MaxJES_111 == 5 then
+    elseif MaxJES_111 == 3 then
         hack("696B5322h", "6F435F6Eh", "74615F77h", "746E616Ch", "00007369h", "00000000h", 50)
-    elseif MaxJES_111 == 6 then
+    elseif MaxJES_111 == 4 then
         hack("696B5318h", "6F435F6Eh", "70735F77h", "00000079h", "00000000h", "00000000h", 50)
-    elseif MaxJES_111 == 7 then
+    elseif MaxJES_111 == 5 then
         hack("696B5326h", "6F435F6Eh", "61655F77h", "72657473h", "34323032h", "00000000h", 50)
-    elseif MaxJES_111 == 8 then
+    elseif MaxJES_111 == 6 then
         hack("696B531Ah", "6F435F6Eh", "616D5F77h", "00007372h", "00000000h", "00000000h", 50)
-    elseif MaxJES_111 == 9 then
+    elseif MaxJES_111 == 7 then
         hack("696B532Ch", "6F435F6Eh", "61685F77h", "776F6C6Ch", "326E6565h", "00333230h", 50)
-    elseif MaxJES_111 == 10 then
+    elseif MaxJES_111 == 8 then
         hack("696B5328h", "6F435F6Eh", "69775F77h", "7265746Eh", "726F7053h", "00000074h", 50)
-    elseif MaxJES_111 >= 11 and MaxJES_111 <= 14 then
+    elseif MaxJES_111 == 9 then
+        hack("1768641314", "1866686318", "1701207927", "1986622579", "27745", "0", 50)
+    elseif MaxJES_111 == 10 then
+        hack("1768641308", "1866686318", "2004049783", "7628133", "0", "0", 50)
+    elseif MaxJES_111 == 11 then
+        hack("1768641304", "1866686318", "1313038199", "89", "0", "0", 50)
+    elseif MaxJES_111 == 12 then
+        hack("1768641324", "1866686318", "1751342967", "1953720690", "846422381", "3289648", 50)
+    elseif MaxJES_111 == 13 then
+        hack("1768641314", "1866686318", "1768054647", "1684567154", "31073", "0", 50)
+    elseif MaxJES_111 == 14 then
+        hack("1768641316", "1866686318", "1635147639", "1953391980", "6647401", "0", 50)
+    elseif MaxJES_111 == 15 then
+        hack("1768641316", "1866686318", "1953062775", "846818401", "3420720", "0", 50)
+    elseif MaxJES_111 == 16 then
+        hack("1768641310", "1866686318", "2004049783", "846488933", "0", "0", 50)
+    elseif MaxJES_111 == 17 then
+        hack("1768641322", "1866686318", "1768054647", "1684567154", "808614241", "13362", 50)
+    elseif MaxJES_111 == 18 then
+        hack("1768641322", "1866686318", "1818451831", "1769173857", "1937075555", "25449", 50)
+    elseif MaxJES_111 == 19 then
+        hack("1768641308", "1866686318", "1869438839", "6646134", "0", "0", 50)
+    elseif MaxJES_111 == 20 then
         menuescolhas2(4)
     end
 
 end
 
 function menuSkinSheep()
-    MaxJES_112 = gg.choice({"🛰️ • Skin 1 Rocker Sheep", "🚀 • Skin 2 Beeelica Sheep",
-                            "⚓ • Skin 3 Egyptian Sheep", "🎯 • Skin 4 Carnival Sheep",
-                            "🛬 • Skin 5 Noble Bandit Sheep", "🚁 • Skin 6 Birthday Sheep",
-                            "☃️ • Skin 7 Research Sheep", "🚁 • Skin 8 Gladiator Sheep",
-                            "☃️ • Skin 9 Easter Sheep", "🚁 • Skin 10 Festival Sheep",
-                            "☃️ • Skin 11 Gala Sheep", "🚁 • Skin 12 Sheep", "☃️ • Skin 13 Sheep",
-                            "❌ • Return"}, nil)
+    MaxJES_112 = gg.choice({"1 • Rock n roll Sheep", "2 • Billy Bonka Sheep", "3 • Egyptian Sheep",
+                            "4 • Samba Sheep", "5 • Noble Bandit Sheep", "6 • Birthday Sheep",
+                            "7 • Sleuth Sheep", "8 • Battle Sheep", "9 • Easter Sheep",
+                            "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
+                            "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
+                            "16 • Christmas Sheep", "17 • Sheep Witch", "❌ • Return"}, nil)
 
     if MaxJES_112 == nil then
         return
@@ -1064,14 +1059,26 @@ function menuSkinSheep()
         hack("696B532Ch", "68535F6Eh", "5F706565h", "616E756Ch", "32594E72h", "00323230h", 50)
     elseif MaxJES_112 == 11 then
         hack("696B532Ah", "68535F6Eh", "5F706565h", "7173616Dh", "61726575h", "00006564h", 50)
-    elseif MaxJES_112 >= 12 and MaxJES_112 <= 14 then
+    elseif MaxJES_112 == 12 then
+        hack("1768641320", "1750294382", "1601201509", "1685221230", "1866949481", "100", 50)
+    elseif MaxJES_112 == 13 then
+        menuescolhas2(4)
+    elseif MaxJES_112 == 14 then
+        menuescolhas2(4)
+    elseif MaxJES_112 == 15 then
+        menuescolhas2(4)
+    elseif MaxJES_112 == 16 then
+        menuescolhas2(4)
+    elseif MaxJES_112 == 17 then
+        menuescolhas2(4)
+    elseif MaxJES_112 == 18 then
         menuescolhas2(4)
     end
 
 end
 
 function menuSkinPig()
-    MaxJESxd_113 = gg.choice({"🛰️ • Cerdo Ceremonial", "🛰️ • Cerdo valentin", '❌ • Volver'}, nil)
+    MaxJESxd_113 = gg.choice({"1 • Ceremonial Pig", "2 • Cupid Pig", '❌ • Volver'}, nil)
     if MaxJESxd_113 == nil then
         return
     elseif MaxJESxd_113 == 1 then
@@ -2632,7 +2639,7 @@ function hack15cD()
     Ge[1] = {}
     Ge[1].address = re[1].address + 0x94
     Ge[1].flags = gg.TYPE_DWORD
-    Ge[1].value = 7000
+    Ge[1].value = 1000
     Ge[1].freeze = false
     gg.setValues(Ge)
 
@@ -10288,6 +10295,9 @@ function hackhelicopterPlace_18()
 
     hackSkin_1Dh("rExpe_2")
 end
+function hackhelicopterPlace_19()
+    gg.toast("Updating............ helicopter place")
+end
 
 -- HACK TRAIN STATION
 function hacktrain_station_1()
@@ -11353,7 +11363,9 @@ function hacktrain_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
     hackSkin_18h("rExpe_2")
-
+end
+function hacktrain_3()
+    gg.toast("Updating............ train ")
 end
 
 -- HACK AIRPORT
