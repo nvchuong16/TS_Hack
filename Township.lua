@@ -113,7 +113,7 @@ function menuescolhas2(menu_tipo)
     if menu_tipo == 1 then
         MNV = gg.choice({'1 • Unlock Gold Pass', '2 • Freeze Reward', '3 • Items', "4 • Skins",
                          '5 • Decoration', '6 • Coupons', '7 • Crop Time', '8 • Badge', '9 • Name and Frame',
-                         '❌ • Back'}, nil)
+                         '10 • Exp', '❌ • Back'}, nil)
         if MNV == nil then
             return
         elseif MNV == 1 then
@@ -135,16 +135,17 @@ function menuescolhas2(menu_tipo)
         elseif MNV == 9 then
             menuescolhas2(9)
         elseif MNV == 10 then
+            hackExp()
+        elseif MNV == 11 then
             MENUFREE()
         end
     elseif menu_tipo == 3 then
         MNZ = gg.choice({'1 • Mine', '2 • Construction', '3 • Gems', '4 • Ingots', "5 • Advantage",
-                         "6 • Lab", "7 • Minigame", '❌ • Return'}, nil)
+                         "6 • Lab", "7 • Minigame", "8 • Expansion", "9 • Barn", '❌ • Return'}, nil)
         if MNZ == nil then
             return
         elseif MNZ == 1 then
             menuescolhas2(301)
-            menuMine()
         elseif MNZ == 2 then
             menuescolhas2(302)
         elseif MNZ == 3 then
@@ -158,6 +159,10 @@ function menuescolhas2(menu_tipo)
         elseif MNZ == 7 then
             menuescolhas2(307)
         elseif MNZ == 8 then
+            menuescolhas2(308)
+        elseif MNZ == 9 then
+            menuescolhas2(309)
+        elseif MNZ == 10 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 301 then
@@ -174,6 +179,10 @@ function menuescolhas2(menu_tipo)
         menuLab()
     elseif menu_tipo == 307 then
         menuMinigame()
+    elseif menu_tipo == 308 then
+        menuExpansion()
+    elseif menu_tipo == 309 then
+        menuBarn()
     elseif menu_tipo == 4 then
         MaxJE = gg.choice({"1 • Castle", "2 • Heli & Helipad", "3 • Train & Train Station",
                            "4 • Airport & Airplane", "5 • Ports & Ship", "6 • Chickens", "7 • Cows",
@@ -357,7 +366,7 @@ function menuMine()
 end
 
 function menuConstruction()
-    MNN = gg.choice({'🏭 • Glass', '🏭 • Brick', '🏭 • Slab', '🏭 • Saw', '🏭 • Jackhammer',
+    MNN = gg.choice({'🏭 • Glass', '🏭 • Brick', '🏭 • Slab', '🏭 • Electric Saw', '🏭 • Jackhammer',
                      '🏭 • Drill', '❌ • Back'}, nil)
     if MNN == nil then
         return
@@ -509,6 +518,38 @@ function menuMinigame()
     elseif MRT == 9 then
         hack("6D69542Ch", "6E456465h", "79746974h", "61776552h", "6C416472h", "0032586Ch", 864000)
     elseif MRT == 10 then
+        menuescolhas2(3)
+    end
+end
+
+function menuExpansion()
+    MRT = gg.choice({"⚔️ • Shovel", "⚔️ • Axe", "⚔️ • Saw", "❌ • Return"}, nil)
+
+    if MRT == nil then
+        return
+    elseif MRT == 1 then
+        hack("1667854344", "107", "0", "0", "0", "0", 0)
+    elseif MRT == 2 then
+        hack("1702387974", "0", "0", "0", "0", "0", 0)
+    elseif MRT == 3 then
+        hack("1414419462", "0", "0", "0", "0", "0", 0)
+    elseif MRT == 4 then
+        menuescolhas2(3)
+    end
+end
+
+function menuBarn()
+    MRT = gg.choice({"⚔️ • Nail", "⚔️ • Hammer", "⚔️ • Paint", "❌ • Return"}, nil)
+
+    if MRT == nil then
+        return
+    elseif MRT == 1 then
+        hack("1767992846", "1952533868", "0", "0", "0", "0", 0)
+    elseif MRT == 2 then
+        hack("1835100178", "1299342701", "29793", "0", "0", "0", 0)
+    elseif MRT == 3 then
+        hack("1767993366", "1699902574", "1952533860", "0", "0", "0", 0)
+    elseif MRT == 4 then
         menuescolhas2(3)
     end
 end
@@ -1705,13 +1746,13 @@ function menuDecorCandy()
     elseif MaxYIUIS == 1 then
         hack("61656224h", "5F797475h", "646E6163h", "6F685F79h", "00657375h", "00000073h", 5)
     elseif MaxYIUIS == 2 then
-        hack("61656226h", "5F797475h", "646E6163h", "72625F79h", "65676469h", "00007200h", 5)
+        hack("61656222h", "5F797475h", "65657773h", "69685F74h", "79006C6Ch", "0000724Dh", 5)
     elseif MaxYIUIS == 3 then
-        hack("6E616314h", "675F7964h", "00657461h", "00000000h", "79473FE0h", "00007601h", 5)
+        hack("61656222h", "5F797475h", "646E6163h", "72745F79h", "79006565h", "0000724Dh", 5)
     elseif MaxYIUIS == 4 then
-        hack("r4YIUIS")
+        hack("61656226h", "5F797475h", "646E6163h", "72625F79h", "65676469h", "00007200h", 5)
     elseif MaxYIUIS == 5 then
-        hack("r5YIUIS")
+        hack("6E616314h", "675F7964h", "00657461h", "00000000h", "79473FE0h", "00007601h", 5)
     elseif MaxYIUIS == 6 then
         menuescolhas2(5)
     end
@@ -2171,9 +2212,9 @@ function menuDecorExpedition()
 end
 
 function menuCoupon()
-    MNC = gg.choice({'🎫 • Order Coupon', '🎫 • Expansion Coupon', '🎫 • Granary Coupon',
-                     '🎫 • Industry Coupon', '🎫 • Train Coupon', '🎫 • Island Coupon',
-                     '🎫 • Merchant Coupon', '❌ • Return'}, nil)
+    MNC = gg.choice({'🎫 • Order Coupon', '🎫 • Expansion Coupon', '🎫 • Barn Coupon',
+                     '🎫 • Factory Coupon', '🎫 • Train Coupon', '🎫 • Island Coupon',
+                     '🎫 • Dealer Coupon', '❌ • Return'}, nil)
 
     if MNC == nil then
         return
@@ -2199,7 +2240,7 @@ end
 function menuBadge()
     MYU = gg.choice(
         {'💎 • Badge 1', '💎 • Badge 2', '💎 • Badge 3', '💎 • Badge 4', '💎 • Badge 5',
-         '💎 • Badge 6', '❌ • Return'}, nil)
+         '💎 • Badge 6', '💎 • Card Colection', '❌ • Return'}, nil)
 
     if MYU == nil then
         return
@@ -2216,6 +2257,8 @@ function menuBadge()
     elseif MYU == 6 then
         hack("1684103708", "811558247", "1919377202", "6581857", "426107464", "112", 1)
     elseif MYU == 7 then
+        hack("1918976790", "1348420452", "896230241", "0", "1985025720", "120", 10)
+    elseif MYU == 8 then
         menuescolhas2(1)
     end
 end
@@ -13904,6 +13947,14 @@ function hack(val1, val2, val3, val4, val5, val6, quantity)
     setd(-68, val2)
     setd(-72, val1)
     gg.clearResults()
+end
+
+function hackExp()
+    local int1 = nil
+    int1 = gg.prompt({"Amount? [0; 100000000]"}, {1}, {"number"})
+    int1[1] = tonumber(int1[1])
+
+    hack("1886938374","0","0","0","0","0",int1[1])
 end
 
 function EXIT()
