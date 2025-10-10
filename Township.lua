@@ -1090,6 +1090,30 @@ function menuSkinPig()
     end
 end
 
+function runHackDecor()
+    local input = gg.prompt({"Enter code"}, nil, {"text"})
+    if not input then
+        gg.alert("Bạn đã hủy nhập!")
+        return
+    end
+    local raw = input[1]
+    local vals = {}
+    for part in string.gmatch(s, "([^;]+)") do
+        table.insert(vals, part)
+    end
+    for i = 1, 6 do
+        local v = vals[i]
+        if not v or v == "" then
+            vals[i] = 0
+        else
+            local n = tonumber(v)
+            vals[i] = (n ~= nil) and n or 0
+        end
+    end
+
+    hack(vals[1], vals[2], vals[3], vals[4], vals[5], vals[6], 50)
+end
+
 function menuDecor1()
     MaxJTyMT = gg.choice({"1 • Walk of Fame", "2 • Venetian Bridge", "3 • Transformation Studio",
                           "4 • Open-air Planetarium", "5 • Vineyard Cafe", "6 • Happy Elephants",
@@ -2577,11 +2601,11 @@ end
 
 ---- GOLDPASS HACK
 function hack15cD()
-    gg.toast("Cargando...")
+    gg.toast("Processing...")
     gg.processResume()
     gg.clearResults()
-    gg.searchNumber("6E726526h;68747269h;5F796164h;00000031h", gg.TYPE_DWORD)
-    gg.refineNumber("68747269h", gg.TYPE_DWORD)
+    gg.searchNumber("6E726526h;6E656577h;35323032h;00626104h;00000031h;0000001Bh", gg.TYPE_DWORD)
+    gg.refineNumber("0000001Bh", gg.TYPE_DWORD)
 
     r = gg.getResults(2)
 
@@ -2590,7 +2614,7 @@ function hack15cD()
 
         local t = {}
         t[2] = {}
-        t[2].address = r[2].address + 0xA0
+        t[2].address = r[2].address - 0x10
         t[2].flags = gg.TYPE_DWORD
         t[2].value = 1
         t[2].freeze = false
@@ -2598,22 +2622,21 @@ function hack15cD()
 
         local G = {}
         G[2] = {}
-        G[2].address = r[2].address + 0x94
+        G[2].address = r[2].address - 0x1C
         G[2].flags = gg.TYPE_DWORD
-        G[2].value = 1000
+        G[2].value = 7000
         G[2].freeze = false
         gg.setValues(G)
 
         local A = {}
         A[2] = {}
-        A[2].address = r[2].address + 0x90
+        A[2].address = r[2].address - 0x20
         A[2].flags = gg.TYPE_DWORD
         A[2].value = 0
         A[2].freeze = false
         gg.setValues(A)
 
-        gg.alert("hack done 2")
-        gg.toast("hack done 2...")
+        gg.alert("hack done")
 
         -- gg.clearResults()
     else
@@ -2629,7 +2652,7 @@ function hack15cD()
 
     local te = {}
     te[1] = {}
-    te[1].address = re[1].address + 0xA0
+    te[1].address = re[1].address - 0x10
     te[1].flags = gg.TYPE_DWORD
     te[1].value = 1
     te[1].freeze = false
@@ -2637,22 +2660,21 @@ function hack15cD()
 
     local Ge = {}
     Ge[1] = {}
-    Ge[1].address = re[1].address + 0x94
+    Ge[1].address = re[1].address - 0x1C
     Ge[1].flags = gg.TYPE_DWORD
-    Ge[1].value = 1000
+    Ge[1].value = 7000
     Ge[1].freeze = false
     gg.setValues(Ge)
 
     local Ae = {}
     Ae[1] = {}
-    Ae[1].address = re[1].address + 0x90
+    Ae[1].address = re[1].address - 0x20
     Ae[1].flags = gg.TYPE_DWORD
     Ae[1].value = 0
     Ae[1].freeze = false
     gg.setValues(Ae)
 
-    gg.alert("hack done 1")
-    gg.toast("hack done 1...")
+    gg.alert("hack done")
     gg.clearResults()
 end
 
