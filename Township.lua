@@ -111,9 +111,9 @@ end
 function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
-        MNV = gg.choice({'1 • Unlock Gold Pass', '2 • Freeze Reward', '3 • Items', "4 • Skins",
-                         '5 • Decoration', '6 • Coupons', '7 • Crop Time', '8 • Badge', '9 • Name and Frame',
-                         '10 • Exp', '❌ • Back'}, nil)
+        MNV = gg.choice({"1 • Unlock Gold Pass", "2 • Freeze Reward", "3 • Items", "4 • Skins",
+                         "5 • Decoration", "6 • Coupons", "7 • Crop Time", "8 • Badge", "9 • Name and Frame",
+                         "10 • Exp", "❌ • Back"}, nil)
         if MNV == nil then
             return
         elseif MNV == 1 then
@@ -140,8 +140,8 @@ function menuescolhas2(menu_tipo)
             MENUFREE()
         end
     elseif menu_tipo == 3 then
-        MNZ = gg.choice({'1 • Mine', '2 • Construction', '3 • Gems', '4 • Ingots', "5 • Advantage",
-                         "6 • Lab", "7 • Minigame", "8 • Expansion", "9 • Barn", '❌ • Return'}, nil)
+        MNZ = gg.choice({"1 • Mine", "2 • Construction", "3 • Gems", "4 • Ingots", "5 • Advantage",
+                         "6 • Lab", "7 • Minigame", "8 • Expansion", "9 • Barn", "❌ • Return"}, nil)
         if MNZ == nil then
             return
         elseif MNZ == 1 then
@@ -230,12 +230,12 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 409 then
         menuSkinPig()
     elseif menu_tipo == 5 then
-        MaxJP = gg.choice({"🎲 • Decoration 1", "🎲 • Decoration 2", "🎲 • Valentine's Day",
-                           "🎲 • Christmas", "🎲 • Halloween", "🎲 • The First", "🎲 • Sports",
-                           "🎲 • Airplane", "🎲 • Candy", "🎲 • Ruins", "🎲 • Township Statues",
-                           "🎲 • Tree", "🎲 • Inflatable", "🎲 • Puzzle", "🎲 • Diamonds",
-                           "🎲 • China", "🎲 • Event Decoration", "🎲 • Kids Decoration",
-                           "🎲 • Expedition", "❌ • Return"}, nil)
+        MaxJP = gg.choice({"1 • Decoration", "2 • Summer", "3 • Valentine", "4 • Christmas", "5 • Halloween",
+                           "6 • The First", "7 • Sports", "8 • Airplane", "9 • Candy", "10 • Ruins",
+                           "11 • Township Statues", "12 • Tree", "13 • Inflatable", "14 • Puzzle",
+                           "15 • Diamonds", "16 • China", "17 • Flower", "18 • Kids", "19 • Easter",
+                           "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Expedition", "❌ • Return"},
+            nil)
 
         if MaxJP == nil then
             return
@@ -278,12 +278,20 @@ function menuescolhas2(menu_tipo)
         elseif MaxJP == 19 then
             menuescolhas2(519)
         elseif MaxJP == 20 then
+            menuescolhas2(520)
+        elseif MaxJP == 21 then
+            menuescolhas2(521)
+        elseif MaxJP == 22 then
+            menuescolhas2(522)
+        elseif MaxJP == 23 then
+            menuescolhas2(523)
+        elseif MaxJP == 24 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 501 then
-        menuDecor1()
+        menuDecor()
     elseif menu_tipo == 502 then
-        menuDecor2()
+        menuDecorSummer()
     elseif menu_tipo == 503 then
         menuDecorValentine()
     elseif menu_tipo == 504 then
@@ -313,15 +321,23 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 516 then
         menuDecorChina()
     elseif menu_tipo == 517 then
-        menuDecorEvent()
+        menuDecorFlower()
     elseif menu_tipo == 518 then
         menuDecorKids()
     elseif menu_tipo == 519 then
+        menuDecorEaster()
+    elseif menu_tipo == 520 then
+        menuDecorPirate()
+    elseif menu_tipo == 521 then
+        menuDecorAtlantis()
+    elseif menu_tipo == 522 then
+        menuDecorFruit()
+    elseif menu_tipo == 523 then
         menuDecorExpedition()
     elseif menu_tipo == 6 then
         menuCoupon()
     elseif menu_tipo == 7 then
-        FCC = gg.choice({"1 • Construction ", "2 • Increase Barn ", "3 • Plant", '❌ • Return'}, nil)
+        FCC = gg.choice({"1 • Construction ", "2 • Increase Barn ", "3 • Plant", "❌ • Return"}, nil)
         if FCC == nil then
             return
         elseif FCC == 1 then
@@ -336,7 +352,7 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 8 then
         menuBadge()
     elseif menu_tipo == 9 then
-        MNxC = gg.choice({'🕷 • Name', '🎫 • Frame', '❌ • Return'}, nil)
+        MNxC = gg.choice({"🕷 • Name", "🎫 • Frame", "❌ • Return"}, nil)
         if MNxC == nil then
             return
         elseif MNxC == 1 then
@@ -351,7 +367,7 @@ function menuescolhas2(menu_tipo)
 end
 
 function menuMine()
-    MNM = gg.choice({'💣 • Dynamite', '💣 • Pickaxe', '💣 • Explosive', '❌ • Return'}, nil)
+    MNM = gg.choice({"💣 • Dynamite", "💣 • Pickaxe", "💣 • Explosive", "❌ • Return"}, nil)
     if MNM == nil then
         return
     elseif MNM == 1 then
@@ -366,8 +382,8 @@ function menuMine()
 end
 
 function menuConstruction()
-    MNN = gg.choice({'🏭 • Glass', '🏭 • Brick', '🏭 • Slab', '🏭 • Electric Saw', '🏭 • Jackhammer',
-                     '🏭 • Drill', '❌ • Back'}, nil)
+    MNN = gg.choice({"🏭 • Glass", "🏭 • Brick", "🏭 • Slab", "🏭 • Electric Saw",
+                     "🏭 • Jackhammer", "🏭 • Drill", "❌ • Back"}, nil)
     if MNN == nil then
         return
     elseif MNN == 1 then
@@ -388,7 +404,7 @@ function menuConstruction()
 end
 
 function menuGems()
-    MNU = gg.choice({'💎 • Orange', '💎 • Green', '💎 • Red', '❌ • Return'}, nil)
+    MNU = gg.choice({"💎 • Orange", "💎 • Green", "💎 • Red", "❌ • Return"}, nil)
     if MNU == nil then
         return
     elseif MNU == 1 then
@@ -404,8 +420,8 @@ end
 
 function menuIngots()
     MNV = gg.choice(
-        {'💎 • Bronze Ingot', '💎 • Silver Ingot', '💎 • Gold Ingot', '💎 • Platinum Ingot',
-         '❌ • Return'}, nil)
+        {"💎 • Bronze Ingot", "💎 • Silver Ingot", "💎 • Gold Ingot", "💎 • Platinum Ingot",
+         "❌ • Return"}, nil)
     if MNV == nil then
         return
     elseif MNV == 1 then
@@ -558,8 +574,7 @@ function menuSkinCastle()
     MaxJES_1 = gg.choice({"1 • Gatsby Island Palace", "2 • Gatsby Island Mansion", "3 • Gatsby Island House",
                           "4 • Pirate Fort", "5 • Pirate Base", "6 • Pirate Hut", "7 • Easter Village",
                           "8 • Little Paris", "9 • Aztec Island", "10 • Neanderthal Island", "11 • Ice Castle",
-                          "12 • Witch's House", "13 • Witch's Mansion", "14 • Witch's Castle", "❌ • Return"},
-        nil)
+                          "12 • Witchs House", "13 • Witchs Mansion", "14 • Witchs Castle", "❌ • Return"}, nil)
 
     if MaxJES_1 == nil then
         return
@@ -597,20 +612,20 @@ function menuSkinCastle()
 end
 
 function menuSkinHeli_Helipad()
-    MaxJES_3 = gg.choice({"1 • Festive Helipad", "1 • Festive", "2 • Wanderers' Harbor Helipad",
+    MaxJES_3 = gg.choice({"1 • Festive Helipad", "1 • Festive", "2 • Wanderers Harbor Helipad",
                           "2 • Flying Ship", "3 • Fitness Helipad", "3 • Helicycle",
                           "4 • Flying Saucer Hangar Helipad", "4 • Flying Saucer", "5 • Docking Station Helipad",
                           "5 • Super Robot Courier", "6 • Veggie Helipad", "6 • Eggplant",
-                          "7 • Sultan's Palace Helipad", "7 • Flying Carpet", "8 • Five-star Helipad",
+                          "7 • Sultans Palace Helipad", "7 • Flying Carpet", "8 • Five-star Helipad",
                           "8 • Chaise Lounger Drone", "9 • Disco Helipad", "9 • Disco",
                           "10 • Carnival Platform Helipad", "10 • Feathery", "11 • Royal Palace Helipad",
                           "11 • Pumpkin", "12 • Detective Agency Helipad", "12 • Surveillance Airship",
-                          "13 • Sleigh Parking Lot Helipad", "13 • Santa's Helper's Sleigh",
-                          "13 • Santa's Sleigh", "14 • Ballroom Helipad", "14 • Ballroom",
-                          "15 • Pirate Helipad", "15 • Pirate", "16 • Astro Helipad", "16 • Astro",
-                          "17 • Easter Helipad", "17 • Egg Chopper", "18 • Underwater Palace Helipad",
-                          "18 • Flying Bathyscaphe", "19 • Haunted Tower Helipad", "19 • Flying Cauldron",
-                          "20 • Private Helipad", "20 • Private", "❌ • Back"}, nil)
+                          "13 • Sleigh Parking Lot Helipad", "13 • Santas Helpers Sleigh", "13 • Santas Sleigh",
+                          "14 • Ballroom Helipad", "14 • Ballroom", "15 • Pirate Helipad", "15 • Pirate",
+                          "16 • Astro Helipad", "16 • Astro", "17 • Easter Helipad", "17 • Egg Chopper",
+                          "18 • Underwater Palace Helipad", "18 • Flying Bathyscaphe",
+                          "19 • Haunted Tower Helipad", "19 • Flying Cauldron", "20 • Private Helipad",
+                          "20 • Private", "❌ • Back"}, nil)
 
     if MaxJES_3 == nil then
         return
@@ -796,7 +811,7 @@ function menuSkinAirport_Airplane()
                           "6 • Space Airport", "6 • Lauch Vehcle", "7 • Festival Airport", "7 • Sky Dragon",
                           "7 • Supersonic Dragon", "8 • Tropical Airport", "8 • Tropical Biplane",
                           "9 • Rainbow Airport", "9 • Lucky Jet", "10 • Five-Star Airport", "10 • Seaplane",
-                          "11 • Santa's Residence Airport", "11 • Holiday Plane", "12 • Symphony Airport",
+                          "11 • Santas Residence Airport", "11 • Holiday Plane", "12 • Symphony Airport",
                           "12 • Symphony Plane", "13 • Ghost Airport", "13 • Ghost Plane",
                           "14 • Easter Airport", "14 • Bird Plane", "15 • Ski Airport", "15 • Aero Sleigh",
                           "16 • Sultan Airport", "16 • Arabian Plane", "17 • Fashion Airport",
@@ -1119,7 +1134,7 @@ function menuSkinSheep()
 end
 
 function menuSkinPig()
-    MaxJESxd_113 = gg.choice({"1 • Ceremonial Pig", "2 • Cupid Pig", '❌ • Volver'}, nil)
+    MaxJESxd_113 = gg.choice({"1 • Ceremonial Pig", "2 • Cupid Pig", "❌ • Volver"}, nil)
     if MaxJESxd_113 == nil then
         return
     elseif MaxJESxd_113 == 1 then
@@ -1155,167 +1170,302 @@ function runHackDecor()
     hack(vals[1], vals[2], vals[3], vals[4], vals[5], vals[6], 50)
 end
 
-function menuDecor1()
-    MaxJTyMT = gg.choice({"1 • Walk of Fame", "2 • Venetian Bridge", "3 • Transformation Studio",
-                          "4 • Open-air Planetarium", "5 • Vineyard Cafe", "6 • Happy Elephants",
-                          "7 • Maxi Blender", "8 • Macedonian Parterre", "9 • Stilt Dance",
-                          "10 • Loch Ness Monster", "11 • Haunted Ship", "12 • Diplodocus", "13 • Galloping",
-                          "14 • Stonehenge", "15 • Waterfall", "16 • Hourglass", "17 • Peacock Statue",
-                          "18 • Atlantean Trident", "19 • Pixies", "20 • Statue Sea Relic", "21 • Coral Corner",
-                          "22 • Sea Explorers", "23 • Lily Pad Fairy", "24 • Treasure Keeper", "25 • Falconry",
-                          "26 • Ghost Ship", "27 • Carnivorous Plant", "28 • Flower Swing",
-                          "29 • Cocoloco Beach Bar", "30 • Surf Pool", "31 • Bungalow", "32 • Palm Tree Seesaw",
-                          "33 • Farmer's Totem", "34 • Scribe's Workshop", "35 • Naval Cannon",
-                          "36 • Flower Palette", "37 • Magic Tap", "38 • Music Fountain",
-                          "39 • Gramophone Carousel", "40 • Set Filming", "41 • Movie Fountain",
-                          "42 • Music Store", "43 • Pharaoh Statue", "44 • Papyrus Boat", "45 • Trojan Horse",
-                          "46 • Amphitheater", "47 • Arabian Horse", "48 • Swan Pond", "49 • Weeping Willow",
-                          "50 • Fallen Tree", "51 • Waterfall", "52 • Satellite Station",
-                          "53 • Parisian Square", "54 • Bike Parking", "55 • Bookstore", "56 • Flower Boutique",
-                          "57 • Giant Synthesizer", "❌ • Return"}, nil)
+function menuDecor()
+    local options = { -- menuDecor1 items
+    "1 • Walk of Fame", "2 • Venetian Bridge", "3 • Transformation Studio", "4 • Open-air Planetarium",
+    "5 • Vineyard Cafe", "6 • Happy Elephants", "7 • Maxi Blender", "8 • Macedonian Parterre",
+    "9 • Stilt Dance", "10 • Loch Ness Monster", "11 • Haunted Ship", "12 • Diplodocus", "13 • Galloping",
+    "14 • Stonehenge", "15 • Waterfall", "16 • Hourglass", "17 • Peacock Statue", "18 • Atlantean Trident",
+    "19 • Pixies", "20 • Statue Sea Relic", "21 • Coral Corner", "22 • Sea Explorers", "23 • Lily Pad Fairy",
+    "24 • Treasure Keeper", "25 • Falconry", "26 • Ghost Ship", "27 • Carnivorous Plant", "28 • Flower Swing",
+    "29 • Cocoloco Beach Bar", "30 • Surf Pool", "31 • Bungalow", "32 • Palm Tree Seesaw",
+    "33 • Farmers Totem", "34 • Scribes Workshop", "35 • Naval Cannon", "36 • Flower Palette",
+    "37 • Magic Tap", "38 • Music Fountain", "39 • Gramophone Carousel", "40 • Set Filming",
+    "41 • Movie Fountain", "42 • Music Store", "43 • Pharaoh Statue", "44 • Papyrus Boat",
+    "45 • Trojan Horse", "46 • Amphitheater", "47 • Arabian Horse", "48 • Swan Pond", "49 • Weeping Willow",
+    "50 • Fallen Tree", "51 • Waterfall", "52 • Satellite Station", "53 • Parisian Square",
+    "54 • Bike Parking", "55 • Bookstore", "56 • Flower Boutique", "57 • Giant Synthesizer",
 
-    if MaxJTyMT == nil then
+    -- menuDecor2 items
+    "58 • Dancing Fountain", "59 • Water Slide", "60 • Outdoor Pizzeria", "61 • Artist District",
+    "62 • Elephant Carousel", "63 • Whale Fountain", "64 • Lifeguard Tower", "65 • Rainbow Arch",
+    "66 • Noodle Shop", "67 • New Record Fountain", "68 • Restaurant", "69 • Submarine", "70 • Yellow Dog",
+    "71 • Marine Fence", "72 • Admirals Anchor", "73 • Seahorse", "74 • The Mermaid", "75 • Fishing Octopus",
+    "76 • Pilot Bee", "77 • Infinite Staircase", "78 • Hermit Crab", "79 • Pier Market",
+    "80 • Childrens Carousel", "81 • Jet Ski", "82 • Carp Pond", "83 • Dovecote", "84 • Vegetable Cart",
+    "85 • Childrens Park", "86 • Pink Water Lily", "87 • Catamaran", "88 • Wind Turbine", "89 • Zebra Print",
+    "90 • Gate of Glory", "91 • Golden Fence", "92 • Picnic Gazebo", "93 • Sun Monument", "94 • Luxury House",
+    "95 • Candy Shower Sign", "96 • Suspension Bridge", "97 • Airboat", "98 • Visit to the Dolphins",
+    "99 • Milkshake Pyramid", "100 • Topiary Contest", "101 • Pasta House", "102 • Medieval Throne",
+    "103 • Wild West Merry-Go-Round", "104 • Traveling Circus", "105 • Wild West Playground",
+    "106 • Stuffed Unicorn", "107 • Spring Festival", "108 • Exotic Snack Bar", "109 • Fruit Assortment",
+    "110 • Floral Fairy Fountain", "111 • Rainbow Factory", "112 • Milkshake Pyramid",
+    "113 • Natural Wonder Work of Art", "114 • Inflatable Challenge", "115 • Monster Truck",
+    "116 • Around the World", "117 • Kingdom Center", "118 • Curlin", "119 • Book of Nature",
+    "120 • The Sea Trotter", "121 • Macedonian Parterre", "❌ • Return"}
+
+    local choice = gg.choice(options, nil)
+    if choice == nil then
         return
-    elseif MaxJTyMT == 1 then
+    end
+
+    if choice == 1 then
         hack("1818314770", "1632001900", "771777901", "32564", "525400016", "120", 5)
-    elseif MaxJTyMT == 2 then
+    elseif choice == 2 then
         hack("1634292250", "1601139820", "1684632130", "25959", "0", "0", 5)
-    elseif MaxJTyMT == 3 then
+    elseif choice == 3 then
         hack("1818317600", "1601073007", "2036429383", "1937076045", "525336677", "140", 5)
-    elseif MaxJTyMT == 4 then
+    elseif choice == 4 then
         hack("61656226h", "5F797475h", "616C6F73h", "79735F72h", "6D657473h", "00007700h", 5)
-    elseif MaxJTyMT == 5 then
+    elseif choice == 5 then
         hack("6661431Ah", "69565F65h", "6179656Eh", "00006472h", "00000000h", "00000000h", 5)
-    elseif MaxJTyMT == 6 then
+    elseif choice == 6 then
         hack("61656220h", "5F797475h", "70656C65h", "746E6168h", "86140073h", "00007756h", 5)
-    elseif MaxJTyMT == 7 then
+    elseif choice == 7 then
         hack("656C621Ah", "7265646Eh", "696E6B5Fh", "00006566h", "0563EA58h", "00000000h", 5)
-    elseif MaxJTyMT == 8 then
+    elseif choice == 8 then
         hack("6E69701Eh", "70706165h", "6B5F656Ch", "6566696Eh", "0563ED00h", "00000055h", 5)
-    elseif MaxJTyMT == 9 then
+    elseif choice == 9 then
         hack("6165622Ch", "5F797475h", "6F726361h", "73746162h", "6974735Fh", "0073746Ch", 5)
-    elseif MaxJTyMT == 10 then
-        hack("61656228h", "5F797475h", "65746177h", "6F6D5F72h", "6574736Eh", "00000072h", 5)
-    elseif MaxJTyMT == 11 then
+    elseif choice == 10 then
+        hack("61656228h", "5F797475h", "65746177h", "6F6D5F72h", "6574736En", "00000072h", 5)
+    elseif choice == 11 then
         hack("61656222h", "5F797475h", "736F6867h", "68735F74h", "86007069h", "00007756h", 5)
-    elseif MaxJTyMT == 12 then
+    elseif choice == 12 then
         hack("6165621Eh", "5F797475h", "6F6E6964h", "72756173h", "86006500h", "00007756h", 5)
-    elseif MaxJTyMT == 13 then
+    elseif choice == 13 then
         hack("6165621Ch", "5F797475h", "6D6D616Dh", "0068746Fh", "86006567h", "00007756h", 5)
-    elseif MaxJTyMT == 14 then
+    elseif choice == 14 then
         hack("61656222h", "5F797475h", "6E6F7473h", "6E656865h", "86006567h", "00007756h", 5)
-    elseif MaxJTyMT == 15 then
+    elseif choice == 15 then
         hack("616D531Ch", "61576C6Ch", "66726574h", "006C6C61h", "6169646Eh", "0000006Ch", 5)
-    elseif MaxJTyMT == 16 then
+    elseif choice == 16 then
         hack("61656228h", "5F797475h", "6772616Ch", "75735F65h", "6169646Eh", "0000006Ch", 5)
-    elseif MaxJTyMT == 17 then
+    elseif choice == 17 then
         hack("6165622Ah", "5F797475h", "63616570h", "5F6B636Fh", "74617473h", "00006575h", 5)
-    elseif MaxJTyMT == 18 then
+    elseif choice == 18 then
         hack("61656222h", "5F797475h", "616C7461h", "61685F73h", "6500646Eh", "00726163h", 5)
-    elseif MaxJTyMT == 19 then
+    elseif choice == 19 then
         hack("6F6E670Ch", "0073656Dh", "283FE426h", "00007057h", "0563F7B0h", "00000034h", 5)
-    elseif MaxJTyMT == 20 then
+    elseif choice == 20 then
         hack("6165622Ch", "5F797475h", "616C7461h", "7369746Eh", "6174735Fh", "00657574h", 5)
-    elseif MaxJTyMT == 21 then
+    elseif choice == 21 then
         hack("61656226h", "5F797475h", "61726F63h", "61675F6Ch", "6E656472h", "00007700h", 5)
-    elseif MaxJTyMT == 22 then
+    elseif choice == 22 then
         hack("6165622Ch", "5F797475h", "5F616573h", "65736572h", "68637261h", "00737265h", 5)
-    elseif MaxJTyMT == 23 then
+    elseif choice == 23 then
         hack("69616616h", "775F7972h", "72657461h", "00007000h", "0563FE10h", "0000001Ch", 5)
-    elseif MaxJTyMT == 24 then
+    elseif choice == 24 then
         hack("63656D26h", "61724468h", "5F6E6F67h", "6964656Dh", "6C617665h", "00007700h", 5)
-    elseif MaxJTyMT == 25 then
+    elseif choice == 25 then
         hack("6C61661Ch", "5F6E6F63h", "746E7568h", "00676E69h", "6C617665h", "00007700h", 5)
-    elseif MaxJTyMT == 26 then
+    elseif choice == 26 then
         hack("6C616828h", "65776F6Ch", "675F6E65h", "74736F68h", "6968735Fh", "00000070h", 5)
-    elseif MaxJTyMT == 27 then
+    elseif choice == 27 then
         hack("61656228h", "5F797475h", "756E6576h", "6C665F73h", "61727479h", "00000070h", 5)
-    elseif MaxJTyMT == 28 then
+    elseif choice == 28 then
         hack("6F6C6618h", "5F726577h", "6E697773h", "00000067h", "05642038h", "00000064h", 5)
-    elseif MaxJTyMT == 29 then
+    elseif choice == 29 then
         hack("61656224h", "5F797475h", "6F636F43h", "5F74756Eh", "00726162h", "00000000h", 5)
-    elseif MaxJTyMT == 30 then
+    elseif choice == 30 then
         hack("61656220h", "5F797475h", "66726573h", "6F6F705Fh", "9953006Ch", "00000000h", 5)
-    elseif MaxJTyMT == 31 then
+    elseif choice == 31 then
         hack("61656228h", "5F797475h", "73756F68h", "6C614D65h", "65766964h", "00000073h", 5)
-    elseif MaxJTyMT == 32 then
+    elseif choice == 32 then
         hack("61656222h", "5F797475h", "6E697773h", "61705F67h", "99006D6Ch", "00000000h", 5)
-    elseif MaxJTyMT == 33 then
+    elseif choice == 33 then
         hack("65705326h", "6C616963h", "75616542h", "545F7974h", "6D65746Fh", "00000000h", 5)
-    elseif MaxJTyMT == 34 then
-        hack("72637328h", "6F747069h", "6D756972h", "64656D5Fh", "61766569h", "0000006Ch", 5)
-    elseif MaxJTyMT == 35 then
+    elseif choice == 34 then
+        hack("72637328h", "6F747069h", "6D756972r", "64656D5Fh", "61766569h", "0000006Ch", 5)
+    elseif choice == 35 then
         hack("6570532Ah", "6C616963h", "75616542h", "535F7974h", "47706968h", "00006E75h", 5)
-    elseif MaxJTyMT == 36 then
+    elseif choice == 36 then
         hack("6C615020h", "65747465h", "6C756353h", "72757470h", "99530065h", "00000000h", 5)
-    elseif MaxJTyMT == 37 then
+    elseif choice == 37 then
         hack("6172431Ah", "6F46656Eh", "61746E75h", "00006E69h", "99531F58h", "00000000h", 5)
-    elseif MaxJTyMT == 38 then
+    elseif choice == 38 then
         hack("72694C18h", "756F4661h", "6961746Eh", "0000006Eh", "995321E8h", "00000000h", 5)
-    elseif MaxJTyMT == 39 then
+    elseif choice == 39 then
         hack("73754D1Ch", "61436369h", "73756F72h", "00656C65h", "99533348h", "00000000h", 5)
-    elseif MaxJTyMT == 40 then
+    elseif choice == 40 then
         hack("6165732Ch", "556E6F73h", "74536F66h", "6F696475h", "6E69635Fh", "00616D65h", 5)
-    elseif MaxJTyMT == 41 then
+    elseif choice == 41 then
         hack("61656228h", "5F797475h", "69766F4Dh", "756F4665h", "6961746Eh", "0000006Eh", 5)
-    elseif MaxJTyMT == 42 then
+    elseif choice == 42 then
         hack("736E4924h", "6D757274h", "57746E65h", "736B726Fh", "00706F68h", "00000000h", 5)
-    elseif MaxJTyMT == 43 then
+    elseif choice == 43 then
         hack("79674524h", "68507470h", "6F617261h", "61745368h", "00657574h", "00000000h", 5)
-    elseif MaxJTyMT == 44 then
+    elseif choice == 44 then
         hack("79674520h", "61507470h", "75727970h", "616F4273h", "99530074h", "00000000h", 5)
-    elseif MaxJTyMT == 45 then
+    elseif choice == 45 then
         hack("6F727426h", "486E616Ah", "6573726Fh", "636E615Fh", "746E6569h", "00000000h", 5)
-    elseif MaxJTyMT == 46 then
+    elseif choice == 46 then
         hack("65687428h", "72657461h", "6F65644Fh", "6E615F6Eh", "6E656963h", "00000074h", 5)
-    elseif MaxJTyMT == 47 then
+    elseif choice == 47 then
         hack("61726126h", "5F636962h", "73726F68h", "74735F65h", "65757461h", "00000000h", 5)
-    elseif MaxJTyMT == 48 then
+    elseif choice == 48 then
         hack("6E6F7012h", "61775364h", "7400736Eh", "705F6575h", "636E6972h", "00000065h", 5)
-    elseif MaxJTyMT == 49 then
+    elseif choice == 49 then
         hack("6565771Ch", "676E6970h", "6C69775Fh", "00776F6Ch", "636E0072h", "00000065h", 5)
-    elseif MaxJTyMT == 50 then
+    elseif choice == 50 then
         hack("65687316h", "64657261h", "65657254h", "75735F00h", "6169646Eh", "0000006Ch", 5)
-    elseif MaxJTyMT == 51 then
+    elseif choice == 51 then
         hack("616D531Ch", "61576C6Ch", "66726574h", "006C6C61h", "6169646Eh", "0000006Ch", 5)
-    elseif MaxJTyMT == 52 then
+    elseif choice == 52 then
         hack("6E6F431Eh", "7463656Eh", "6174535Fh", "6E6F6974h", "41325500h", "00000078h", 5)
-    elseif MaxJTyMT == 53 then
+    elseif choice == 53 then
         hack("72615018h", "535F7369h", "65657274h", "00000074h", "66760591h", "00007DE3h", 5)
-    elseif MaxJTyMT == 54 then
+    elseif choice == 54 then
         hack("6379431Ah", "505F656Ch", "696B7261h", "0000676Eh", "4132B038h", "0000008Ch", 5)
-    elseif MaxJTyMT == 55 then
+    elseif choice == 55 then
         hack("6F6F4214h", "74535F6Bh", "0065726Fh", "00007DE3h", "4132A340h", "00000078h", 5)
-    elseif MaxJTyMT == 56 then
+    elseif choice == 56 then
         hack("6F6C4618h", "5F726577h", "726F7453h", "00000065h", "4132C948h", "0000008Ch", 5)
-    elseif MaxJTyMT == 57 then
+    elseif choice == 57 then
         hack("73754D16h", "535F6369h", "656E6563h", "00007D00h", "4132CFA8h", "00000078h", 5)
-    elseif MaxJTyMT == 58 then
+    elseif choice == 58 then
+        hack("6E616420h", "676E6963h", "6E756F46h", "6E696174h", "61690073h", "0000006Ch", 5)
+    elseif choice == 59 then
+        hack("61656222h", "5F797475h", "65746177h", "696C5372h", "00006564h", "0000646Eh", 5)
+    elseif choice == 60 then
+        hack("6165622Ah", "5F797475h", "7A7A6970h", "61697265h", "7361705Fh", "00006174h", 5)
+    elseif choice == 61 then
+        hack("6165622Ah", "5F797475h", "69747261h", "715F7473h", "74726175h", "00007265h", 5)
+    elseif choice == 62 then
+        hack("72616324h", "6573756Fh", "6C655F6Ch", "61687065h", "0073746Eh", "00000000h", 5)
+    elseif choice == 63 then
+        hack("756F661Ch", "6961746Eh", "68775F6Eh", "00656C61h", "0073746Eh", "00000000h", 5)
+    elseif choice == 64 then
+        hack("66696C1Ah", "61756765h", "685F6472h", "6C007475h", "61690065h", "0000006Ch", 5)
+    elseif choice == 65 then
+        hack("69615216h", "776F626Eh", "68637241h", "6F6D5F00h", "79656B6Eh", "00007600h", 5)
+    elseif choice == 66 then
+        hack("6F6F6E16h", "5F656C64h", "706F6873h", "6F6D5F00h", "79656B6Eh", "00007600h", 5)
+    elseif choice == 67 then
+        hack("6165622Ch", "5F797475h", "6D796C4Fh", "46636970h", "746E756Fh", "006E6961h", 5)
+    elseif choice == 68 then
+        hack("6F6F7A1Ch", "7365725Fh", "72756174h", "00746E61h", "74D782D0h", "00000000h", 5)
+    elseif choice == 69 then
+        hack("61656220h", "5F797475h", "6D627573h", "6E697261h", "74C40065h", "00000015h", 5)
+    elseif choice == 70 then
+        hack("69684314h", "6573656En", "00676F44h", "00007601h", "8C7E1591h", "00007601h", 5)
+    elseif choice == 71 then
+        hack("6165531Ch", "636E6546h", "65665F65h", "0065636Eh", "74C4ECD8h", "0000005Ah", 5)
+    elseif choice == 72 then
+        hack("65705326h", "6C616963h", "75616542h", "615F7974h", "726F636Eh", "00000000h", 5)
+    elseif choice == 73 then
+        hack("6570532Ch", "6C616963h", "75616542h", "735F7974h", "6F686165h", "00657372h", 5)
+    elseif choice == 74 then
+        hack("6570532Ah", "6C616963h", "75616542h", "6D5F7974h", "616D7265h", "00006469h", 5)
+    elseif choice == 75 then
+        hack("6570532Ah", "6C616963h", "75616542h", "6F5F7974h", "706F7463h", "00007375h", 5)
+    elseif choice == 76 then
+        hack("6570532Ch", "6C616963h", "75616542h", "425F7974h", "69506565h", "00746F6Ch", 5)
+    elseif choice == 77 then
+        hack("6174731Ah", "5F737269h", "6374616Dh", "00003368h", "74C56B78h", "0000005Ah", 5)
+    elseif choice == 78 then
+        hack("61656228h", "5F797475h", "636E6163h", "685F7265h", "696D7265h", "00000074h", 5)
+    elseif choice == 79 then
+        hack("61656224h", "5F797475h", "68736966h", "72616D5Fh", "0074656Bh", "00007601h", 5)
+    elseif choice == 80 then
+        hack("6165621Eh", "5F797475h", "6F726163h", "6C657375h", "65000000h", "00007372h", 5)
+    elseif choice == 81 then
+        hack("61656222h", "5F797475h", "65746177h", "61726372h", "65007466h", "00007372h", 5)
+    elseif choice == 82 then
+        hack("6E6F701Ch", "69775F64h", "635F6874h", "00707261h", "79473FE0h", "00007601h", 5)
+    elseif choice == 83 then
+        hack("6570532Ch", "6C616963h", "75616542h", "445F7974h", "6365766Fh", "0065746Fh", 5)
+    elseif choice == 84 then
+        hack("61656226h", "5F797475h", "65657267h", "6F72676Eh", "79726563h", "00007600h", 5)
+    elseif choice == 85 then
+        hack("61656224h", "5F797475h", "79616C70h", "756F7267h", "0032646Eh", "00007601h", 5)
+    elseif choice == 86 then
+        hack("7461771Eh", "665F7265h", "65776F6Ch", "325F7372h", "74C93000h", "00000000h", 5)
+    elseif choice == 87 then
+        hack("74616B12h", "72616D61h", "6C006E61h", "65620079h", "73006172h", "00007600h", 5)
+    elseif choice == 88 then
+        hack("7465760Eh", "6B617972h", "6C696D00h", "65620079h", "73006172h", "00007600h", 5)
+    elseif choice == 89 then
+        hack("61656224h", "5F797475h", "6C616863h", "657A5F6Bh", "00617262h", "0000746Eh", 5)
+    elseif choice == 90 then
+        hack("61656226h", "5F797475h", "7578754Ch", "675F7972h", "73657461h", "00000000h", 5)
+    elseif choice == 91 then
+        hack("78756C18h", "5F797275h", "636E6566h", "6F720065h", "79726563h", "00007400h", 5)
+    elseif choice == 92 then
+        hack("6369700Ch", "0063696Eh", "EBB23591h", "0000769Ah", "CC57E280h", "00000000h", 5)
+    elseif choice == 93 then
+        hack("65705322h", "6C616963h", "75616542h", "535F7974h", "EB006E75h", "0000769Ah", 5)
+    elseif choice == 94 then
+        hack("61656226h", "5F797475h", "7578756Ch", "685F7972h", "6573756Fh", "00000000h", 5)
+    elseif choice == 95 then
+        hack("6968431Ah", "6573656En", "6E6E6142h", "00007265h", "EB3A4591h", "0000769Ah", 5)
+    elseif choice == 96 then
+        hack("636E611Ch", "746E6569h", "6972625Fh", "00656764h", "C2A6CC00h", "0000001Ch", 5)
+    elseif choice == 97 then
+        hack("7269611Ah", "74616F62h", "616C705Fh", "00006B6Eh", "C2A6DE38h", "00000055h", 5)
+    elseif choice == 98 then
+        hack("6165621Eh", "5F797475h", "706C6F64h", "736E6968h", "EBE1F500h", "0000769Ah", 5)
+    elseif choice == 99 then
+        hack("61656228h", "5F797475h", "61727970h", "5F64696Dh", "66696E6Bh", "00000065h", 5)
+    elseif choice == 100 then
+        hack("706F7426h", "79726169h", "6D6F635Fh", "69746570h", "6E6F6974h", "00000000h", 5)
+    elseif choice == 101 then
+        hack("73655220h", "61726F74h", "42726F74h", "646C6975h", "05630032h", "0000002Dh", 5)
+    elseif choice == 102 then
+        hack("72687426h", "48656E6Fh", "5F6C6C61h", "6964656Dh", "6C617665h", "00000000h", 5)
+    elseif choice == 103 then
+        hack("726F481Ch", "435F6573h", "756F7261h", "006C6573h", "00000000h", "00000000h", 5)
+    elseif choice == 104 then
+        hack("7269431Ch", "5F737563h", "706D6143h", "00676E69h", "00000000h", "00000000h", 5)
+    elseif choice == 105 then
+        hack("776F4318h", "5F796F62h", "65776F54h", "00000072h", "CC0590A8h", "0000008Ch", 5)
+    elseif choice == 106 then
+        hack("756C702Ch", "6E556873h", "726F6369h", "61765F6Eh", "746E656Ch", "00656E69h", 5)
+    elseif choice == 107 then
+        hack("7361651Ah", "52726574h", "6F626269h", "0000736Eh", "00000000h", "00000000h", 5)
+    elseif choice == 108 then
+        hack("6165621Eh", "705F6863h", "79747261h", "7261625Fh", "CBF5B400h", "00000000h", 5)
+    elseif choice == 109 then
+        hack("6165621Eh", "665F6863h", "74697572h", "78696D5Fh", "CBF5C200h", "00000000h", 5)
+    elseif choice == 110 then
+        hack("6961461Ch", "465F7972h", "746E756Fh", "006E6961h", "00720070h", "0000769Ah", 5)
+    elseif choice == 111 then
+        hack("6E61631Ah", "725F7964h", "626E6961h", "0000776Fh", "05642698h", "00000043h", 5)
+    elseif choice == 112 then
+        hack("61656228h", "5F797475h", "61727970h", "5F64696Dh", "66696E6Bh", "00000065h", 5)
+    elseif choice == 113 then
+        hack("736E6920h", "6C6C6174h", "6F697461h", "72615F6Eh", "05640074h", "0000003Ah", 5)
+    elseif choice == 114 then
+        hack("646F7222h", "65486F65h", "5F63696Ch", "6E6E7572h", "05007265h", "00000000h", 5)
+    elseif choice == 115 then
+        hack("67696222h", "63617254h", "5F726F74h", "63736572h", "05006575h", "00000017h", 5)
+    elseif choice == 116 then
+        hack("6F6C6724h", "466C6162h", "6867696Ch", "6C705F74h", "00656E61h", "0000005Ah", 5)
+    elseif choice == 117 then
+        hack("6E694B1Ah", "6D6F6467h", "746E6543h", "00006572h", "0564FAD8h", "00000078h", 5)
+    elseif choice == 118 then
+        hack("7275631Ch", "676E696Ch", "6E75725Fh", "0072656En", "05650F38h", "00000013h", 5)
+    elseif choice == 119 then
+        hack("6F6F621Eh", "6572546Bh", "756A5F65h", "656C676Eh", "05658200h", "00000000h", 5)
+    elseif choice == 120 then
+        hack("70616328h", "6E696174h", "74617453h", "705F6575h", "74617269h", "00000065h", 5)
+    elseif choice == 121 then
+        hack("6E69701Eh", "70706165h", "6B5F656Ch", "6566696Eh", "0563ED00h", "00000055h", 5)
+    elseif choice == 122 then
         menuescolhas2(5)
     end
 end
 
-function menuDecor2()
+function menuDecorSummer()
     MaxDECORT = gg.choice({"1 • Dancing Fountain", "2 • Water Slide", "3 • Outdoor Pizzeria",
                            "4 • Artist District", "5 • Elephant Carousel", "6 • Whale Fountain",
                            "7 • Lifeguard Tower", "8 • Rainbow Arch", "9 • Noodle Shop",
                            "10 • New Record Fountain", "11 • Restaurant", "12 • Submarine", "13 • Yellow Dog",
-                           "14 • Marine Fence", "15 • Admiral's Anchor", "16 • Seahorse", "17 • The Mermaid",
+                           "14 • Marine Fence", "15 • Admirals Anchor", "16 • Seahorse", "17 • The Mermaid",
                            "18 • Fishing Octopus", "19 • Pilot Bee", "20 • Infinite Staircase",
-                           "21 • Hermit Crab", "22 • Pier Market", "23 • Children's Carousel", "24 • Jet Ski",
-                           "25 • Carp Pond", "26 • Dovecote", "27 • Vegetable Cart", "28 • Children's Park",
-                           "29 • Pink Water Lily", "30 • Catamaran", "31 • Wind Turbine", "32 • Zebra Print",
-                           "33 • Gate of Glory", "34 • Golden Fence", "35 • Picnic Gazebo", "36 • Sun Monument",
-                           "37 • Luxury House", "38 • Candy Shower Sign", "39 • Suspension Bridge",
-                           "40 • Airboat", "41 • Visit to the Dolphins", "42 • Milkshake Pyramid",
-                           "43 • Topiary Contest", "44 • Pasta House", "45 • Medieval Throne",
-                           "46 • Wild West Merry-Go-Round", "47 • Traveling Circus", "48 • Wild West Playground",
-                           "49 • Stuffed Unicorn", "50 • Spring Festival", "51 • Exotic Snack Bar",
-                           "52 • Fruit Assortment", "53 • Floral Fairy Fountain", "54 • Rainbow Factory",
-                           "55 • Milkshake Pyramid", "56 • Natural Wonder Work of Art",
-                           "57 • Inflatable Challenge", "58 • Monster Truck", "59 • Around the World",
-                           "60 • Kingdom Center", "61 • Curlin", "62 • Book of Nature", "63 • The Sea Trotter",
-                           "64 • Macedonian Parterre", "65 • Return"}, nil)
+                           "21 • Hermit Crab", "22 • Pier Market", "23 • Childrens Carousel", "24 • Jet Ski",
+                           "25 • Carp Pond", "26 • Dovecote", "27 • Vegetable Cart", "28 • Childrens Park",
+                           "29 • Pink Water Lily", "30 • Catamaran", "❌ • Return"}, nil)
 
     if MaxDECORT == nil then
         return
@@ -1380,74 +1530,6 @@ function menuDecor2()
     elseif MaxDECORT == 30 then
         hack("74616B12h", "72616D61h", "6C006E61h", "65620079h", "73006172h", "00007600h", 5)
     elseif MaxDECORT == 31 then
-        hack("7465760Eh", "6B617972h", "6C696D00h", "65620079h", "73006172h", "00007600h", 5)
-    elseif MaxDECORT == 32 then
-        hack("61656224h", "5F797475h", "6C616863h", "657A5F6Bh", "00617262h", "0000746Eh", 5)
-    elseif MaxDECORT == 33 then
-        hack("61656226h", "5F797475h", "7578754Ch", "675F7972h", "73657461h", "00000000h", 5)
-    elseif MaxDECORT == 34 then
-        hack("78756C18h", "5F797275h", "636E6566h", "6F720065h", "79726563h", "00007400h", 5)
-    elseif MaxDECORT == 35 then
-        hack("6369700Ch", "0063696Eh", "EBB23591h", "0000769Ah", "CC57E280h", "00000000h", 5)
-    elseif MaxDECORT == 36 then
-        hack("65705322h", "6C616963h", "75616542h", "535F7974h", "EB006E75h", "0000769Ah", 5)
-    elseif MaxDECORT == 37 then
-        hack("61656226h", "5F797475h", "7578756Ch", "685F7972h", "6573756Fh", "00000000h", 5)
-    elseif MaxDECORT == 38 then
-        hack("6968431Ah", "6573656Eh", "6E6E6142h", "00007265h", "EB3A4591h", "0000769Ah", 5)
-    elseif MaxDECORT == 39 then
-        hack("636E611Ch", "746E6569h", "6972625Fh", "00656764h", "C2A6CC00h", "0000001Ch", 5)
-    elseif MaxDECORT == 40 then
-        hack("7269611Ah", "74616F62h", "616C705Fh", "00006B6Eh", "C2A6DE38h", "00000055h", 5)
-    elseif MaxDECORT == 41 then
-        hack("6165621Eh", "5F797475h", "706C6F64h", "736E6968h", "EBE1F500h", "0000769Ah", 5)
-    elseif MaxDECORT == 42 then
-        hack("61656228h", "5F797475h", "61727970h", "5F64696Dh", "66696E6Bh", "00000065h", 5)
-    elseif MaxDECORT == 43 then
-        hack("706F7426h", "79726169h", "6D6F635Fh", "69746570h", "6E6F6974h", "00000000h", 5)
-    elseif MaxDECORT == 44 then
-        hack("73655220h", "61726F74h", "42726F74h", "646C6975h", "05630032h", "0000002Dh", 5)
-    elseif MaxDECORT == 45 then
-        hack("72687426h", "48656E6Fh", "5F6C6C61h", "6964656Dh", "6C617665h", "00000000h", 5)
-    elseif MaxDECORT == 46 then
-        hack("726F481Ch", "435F6573h", "756F7261h", "006C6573h", "00000000h", "00000000h", 5)
-    elseif MaxDECORT == 47 then
-        hack("7269431Ch", "5F737563h", "706D6143h", "00676E69h", "00000000h", "00000000h", 5)
-    elseif MaxDECORT == 48 then
-        hack("776F4318h", "5F796F62h", "65776F54h", "00000072h", "CC0590A8h", "0000008Ch", 5)
-    elseif MaxDECORT == 49 then
-        hack("756C702Ch", "6E556873h", "726F6369h", "61765F6Eh", "746E656Ch", "00656E69h", 5)
-    elseif MaxDECORT == 50 then
-        hack("7361651Ah", "52726574h", "6F626269h", "0000736Eh", "00000000h", "00000000h", 5)
-    elseif MaxDECORT == 51 then
-        hack("6165621Eh", "705F6863h", "79747261h", "7261625Fh", "CBF5B400h", "00000000h", 5)
-    elseif MaxDECORT == 52 then
-        hack("6165621Eh", "665F6863h", "74697572h", "78696D5Fh", "CBF5C200h", "00000000h", 5)
-    elseif MaxDECORT == 53 then
-        hack("6961461Ch", "465F7972h", "746E756Fh", "006E6961h", "00720070h", "0000769Ah", 5)
-    elseif MaxDECORT == 54 then
-        hack("6E61631Ah", "725F7964h", "626E6961h", "0000776Fh", "05642698h", "00000043h", 5)
-    elseif MaxDECORT == 55 then
-        hack("61656228h", "5F797475h", "61727970h", "5F64696Dh", "66696E6Bh", "00000065h", 5)
-    elseif MaxDECORT == 56 then
-        hack("736E6920h", "6C6C6174h", "6F697461h", "72615F6Eh", "05640074h", "0000003Ah", 5)
-    elseif MaxDECORT == 57 then
-        hack("646F7222h", "65486F65h", "5F63696Ch", "6E6E7572h", "05007265h", "00000000h", 5)
-    elseif MaxDECORT == 58 then
-        hack("67696222h", "63617254h", "5F726F74h", "63736572h", "05006575h", "00000017h", 5)
-    elseif MaxDECORT == 59 then
-        hack("6F6C6724h", "466C6162h", "6867696Ch", "6C705F74h", "00656E61h", "0000005Ah", 5)
-    elseif MaxDECORT == 60 then
-        hack("6E694B1Ah", "6D6F6467h", "746E6543h", "00006572h", "0564FAD8h", "00000078h", 5)
-    elseif MaxDECORT == 61 then
-        hack("7275631Ch", "676E696Ch", "6E75725Fh", "0072656Eh", "05650F38h", "00000013h", 5)
-    elseif MaxDECORT == 62 then
-        hack("6F6F621Eh", "6572546Bh", "756A5F65h", "656C676Eh", "05658200h", "00000000h", 5)
-    elseif MaxDECORT == 63 then
-        hack("70616328h", "6E696174h", "74617453h", "705F6575h", "74617269h", "00000065h", 5)
-    elseif MaxDECORT == 64 then
-        hack("6E69701Eh", "70706165h", "6B5F656Ch", "6566696Eh", "0563ED00h", "00000055h", 5)
-    elseif MaxDECORT == 65 then
         menuescolhas2(5)
     end
 
@@ -1457,10 +1539,10 @@ function menuDecorValentine()
     MaxJTyP = gg.choice({"1 • Cat Love Statue", "2 • Care Bear", "3 • Romantic Date",
                          "4 • Love Messenger Statue", "5 • The Bride and Groom Lived", "6 • Doves in Love",
                          "7 • Heart Floral Bed", "8 • Arch of Love", "9 • Adorable Kitten",
-                         "10 • Stuffed Rabbit", "11 • Cupid's Arrow", "12 • Lovers' Bench",
-                         "13 • Lovers' Pilot", "14 • Flying Hearts", "15 • Cupid's Eye",
-                         "16 • Ideal Couple Photocall", "17 • Mini Park romantic", "18 • Carriage",
-                         "19 • Bridal Bouquet", "20 • Eternal Love", "21 • Fairytale Rose", "22 • Return"}, nil)
+                         "10 • Stuffed Rabbit", "11 • Cupids Arrow", "12 • Lovers Bench", "13 • Lovers Pilot",
+                         "14 • Flying Hearts", "15 • Cupids Eye", "16 • Ideal Couple Photocall",
+                         "17 • Mini Park romantic", "18 • Carriage", "19 • Bridal Bouquet", "20 • Eternal Love",
+                         "21 • Fairytale Rose", "22 • Return"}, nil)
 
     if MaxJTyP == nil then
         return
@@ -1513,19 +1595,30 @@ function menuDecorValentine()
 end
 
 function menuDecorChristmas()
-    MaxJTyM = gg.choice({"1 • Ice Rink", "2 • Christmas Carousel", "3 • Festive Lamppost",
-                         "4 • Group of Friends", "5 • Snowman", "6 • Ice Angel", "7 • Christmas Fence",
-                         "8 • Snow Globe", "9 • Lake House", "10 • Santa's House", "11 • Ice Slide",
-                         "12 • Toboggan Run", "13 • Sled Dogs", "14 • Frozen Tyrannosaurus",
-                         "15 • Polar Station", "16 • Cable Car", "17 • Ice Reindeer", "18 • Ice Castle",
-                         "19 • Snow Globe", "20 • Frozen Mammoth", "21 • Icebreaker Ship", "22 • Penguin Land",
-                         "23 • Arctic Glacier", "24 • Christmas Stocking", "25 • Christmas Tree",
-                         "26 • Gift Mountain", "27 • Ice Dragon", "28 • Elf House", "29 • Snowman",
-                         "30 • Christmas Ball", "31 • Meeting Santa Claus Poster", "32 • Winter Sports",
-                         "33 • Santa's Workshop", "34 • Sheep Slide", "35 • Winter Yurt",
-                         "36 • Skating Squirrels", "37 • Ice Portal", "38 • Polar Explorer", "39 • Hot Springs",
-                         "40 • Castle Ice rink with slide", "41 • Snowy cottage", "42 • The turbo sled",
-                         "43 • Flying lanterns", "❌ • Return"}, nil)
+    MaxJTyM = gg.choice({"1 • Ice Rink", "2 • Holiday Carousel", "3 • Holiday Lamppost", "4 • Friendly Group",
+                         "5 • Snowman", "6 • Ice Angel", "7 • Christmas Fence", "8 • Snow Globe",
+                         "9 • Lake House", "10 • Santas House", "11 • Ice Slide",
+                         "12 • Accident At The Workshop", "13 • Dogsled", "14 • Frozen T Rex",
+                         "15 • Polar Station", "16 • Ski Lift", "17 • Ice Reindeer", "18 • Ice Castle",
+                         "19 • Snow Globe", "20 • Frozen Mammoth", "21 • Icebreaker Ship",
+                         "22 • Penguin Skating Rink", "23 • Arctic Glacier", "24 • Christmas Stocking",
+                         "25 • Christmas Tree", "26 • Mountain Of Presents", "27 • Ice Dragon",
+                         "28 • Elf House", "29 • Bridge For Two", "30 • Christmas Ball",
+                         "31 • Meeting Santa Banner", "32 • Winter Sports Rentals", "33 • Santas Workshop",
+                         "34 • Sheep Slide", "35 • Holiday Hut", "36 • Squirrel Skating Rink", "37 • Ice Gate",
+                         "38 • Polar Explorer", "39 • Hot Springs", "40 • Castle Ice Slide",
+                         "41 • Holiday Season", "42 • Santas Turbo Sleigh", "43 • Floating Lanterns",
+                         "44 • Christmas On Wheels", "45 • Christmas Square", "46 • Cozy Chalet",
+                         "47 • Festive Tree", "48 • Forest Skating Rink", "49 • Gingerbread House",
+                         "50 • Gingerbread Statue", "51 • Holiday Choir", "52 • Holiday Gift Store",
+                         "53 • Holiday Market Stall", "54 • Holiday Shop", "55 • Holiday Tree Market",
+                         "56 • Husky House", "57 • Ice Museum", "58 • Ice Sculptures", "59 • Snow House",
+                         "60 • Magic Number", "61 • Magical Alley", "62 • Mr Gingerbread", "63 • New Years Eve",
+                         "64 • Photo With Santa", "65 • Polar Water Park", "66 • Reindeer Rodeo",
+                         "67 • Santas Helper", "68 • Santas Helpers House", "69 • Santas Helpers",
+                         "70 • Santas Office", "71 • Santas Reindeer", "72 • Snow Cannon", "73 • Snow Fight",
+                         "74 • Snow Fortress", "75 • Snowman Igloo", "76 • Winter Activities",
+                         "77 • Winter Fun", "78 • Hot Springs", "79 • Frozen Lake", "❌ • Return"}, nil)
 
     if MaxJTyM == nil then
         return
@@ -1552,7 +1645,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 11 then
         hack("61656220h", "5F797475h", "776F6E73h", "64696C73h", "006E0065h", "00000000h", 5)
     elseif MaxJTyM == 12 then
-        hack("626F421Ah", "69656C73h", "61526867h", "00006563h", "74C466B8h", "00000032h", 5)
+        hack('726F771Ah', '6F68736Bh', '61724370h', '00006873h', '00000000h', '00000000h', 5)
     elseif MaxJTyM == 13 then
         hack("61656224h", "5F797475h", "73676F64h", "6372615Fh", "00636974h", "00000000h", 5)
     elseif MaxJTyM == 14 then
@@ -1586,7 +1679,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 28 then
         hack("7268632Ch", "6D747369h", "735F7361h", "61746E61h", "6C65685Fh", "00726570h", 5)
     elseif MaxJTyM == 29 then
-        hack("72684322h", "6D747369h", "535F7361h", "6D776F6Eh", "C2006E61h", "00000008h", 5)
+        hack('1919435562', '1836348265', '1918137185', '1601071457', '1684632130', '25959', 5)
     elseif MaxJTyM == 30 then
         hack("7268431Ah", "6D747369h", "61427361h", "00006C6Ch", "C2A69080h", "00000055h", 5)
     elseif MaxJTyM == 31 then
@@ -1616,6 +1709,78 @@ function menuDecorChristmas()
     elseif MaxJTyM == 43 then
         hack("796C6620h", "746E614Ch", "5F6E7265h", "746E6173h", "05650061h", "00000084h", 5)
     elseif MaxJTyM == 44 then
+        hack('7268431Ch', '6D747369h', '435F7361h', '00656661h', 'EE7877C8h', '0000007Ch', 5)
+    elseif MaxJTyM == 45 then
+        gg.toast("1919435554;1836348265;1631810401;1937076082;33;23 loc 23")
+    elseif MaxJTyM == 46 then
+        gg.toast("1918980120;1398764393;1701147252;33;24;25 loc 24")
+    elseif MaxJTyM == 47 then
+        hack('1818322984', '1702326124', '2002742885', '1751348329', '1919510623', '101', 5)
+    elseif MaxJTyM == 48 then
+        hack('1634034218', '1601795189', '2003791475', '1601069421', '1952541555', '29285', 5)
+    elseif MaxJTyM == 49 then
+        hack('1852393240', '1601332583', '1937076040', '101', '0', '0', 5)
+    elseif MaxJTyM == 50 then
+        gg.toast("Updating...")
+    elseif MaxJTyM == 51 then
+        hack('72684320h', '6D747369h', '435F7361h', '75726F68h', '00000073h', '00000000h', 5)
+    elseif MaxJTyM == 52 then
+        gg.toast("1919435554;1937076082;1953055504;1734955897;33;25 loc 25")
+    elseif MaxJTyM == 53 then
+        hack('1769304344', '1600877423', '1851878512', '107', '0', '0', 5)
+    elseif MaxJTyM == 54 then
+        hack('1919435548', '1836348265', '1180660577', '7498081', '0', '0', 5)
+    elseif MaxJTyM == 55 then
+        hack('1701991446', '1632460645', '1952803698', '0', '672503271', '110', 5)
+    elseif MaxJTyM == 56 then
+        gg.toast("1918980120;1398764393;1701147252;33;24;25 loc 24")
+    elseif MaxJTyM == 57 then
+        hack('1701013798', '1819632467', '1920300144', '1885303653', '1802396012', '0', 5)
+    elseif MaxJTyM == 58 then
+        hack('65634928h', '69687845h', '69746962h', '725F6E6Fh', '656E6E75h', '00000072h', 5)
+    elseif MaxJTyM == 59 then
+        hack('1818716424', '117', '757625832', '126', '756548082', '126', 5)
+    elseif MaxJTyM == 60 then
+        hack('2003127824', '1634031967', '672268402', '110', '672503271', '110', 5)
+    elseif MaxJTyM == 61 then
+        hack('1919435550', '1836348265', '1952412513', '1852399986', '-294095104', '124', 5)
+    elseif MaxJTyM == 62 then
+        gg.toast("1919435554;1937076082;1953055504;1734955897;33;26 loc 26")
+    elseif MaxJTyM == 63 then
+        hack('1935764508', '1970227316', '1819303794', '7040609', '0', '0', 5)
+    elseif MaxJTyM == 64 then
+        hack('61656224h', '5F797475h', '746E6173h', '6C705F61h', '006B6E61h', '00000000h', 5)
+    elseif MaxJTyM == 65 then
+        gg.toast("Updating...")
+    elseif MaxJTyM == 66 then
+        hack('1701143584', '1684623986', '1600613993', '1851878512', '-196738965', '62', 5)
+    elseif MaxJTyM == 67 then
+        hack('6568531Eh', '6C457065h', '75725F66h', '72656E6Eh', '00000000h', '00000000h', 5)
+    elseif MaxJTyM == 68 then
+        hack('1919443756', '1836348265', '1935635297', '1635020385', '1818585183', '7497072', 5)
+    elseif MaxJTyM == 69 then
+        hack('1851872022', '1817403764', '1751607653', '0', '756548082', '60', 5)
+    elseif MaxJTyM == 70 then
+        hack('1851872030', '1381982580', '1885692773', '1852795252', '0', '0', 5)
+    elseif MaxJTyM == 71 then
+        gg.toast("1919443756;1635020385;33;23;1634034188;7959669:189 loc 23")
+    elseif MaxJTyM == 72 then
+        hack('2037141286', '1667854445', '1869501279', '1667329399', '1701734760', '0', 5)
+    elseif MaxJTyM == 73 then
+        hack('1869509406', '1734952567', '1885303912', '1802396012', '0', '0', 5)
+    elseif MaxJTyM == 74 then
+        gg.toast("1919443756;1635020385;33;23;1634034188;7959669:189 loc 23")
+    elseif MaxJTyM == 75 then
+        hack('1634289434', '1398764654', '1836543854', '28257', '0', '0', 5)
+    elseif MaxJTyM == 76 then
+        gg.toast("1919435554;1836348265;1631810401;1937076082;33;23 loc 23")
+    elseif MaxJTyM == 77 then
+        hack('1634034216', '1601795189', '1953393015', '1667199589', '1869508193', '110', 5)
+    elseif MaxJTyM == 78 then
+        hack('1953450008', '1970226783', '1767994478', '110', '0', '0', 5)
+    elseif MaxJTyM == 79 then
+        hack('1701013774', '1701536076', '1866691328', '1735289197', '0', '0', 5)
+    elseif MaxJTyM == 80 then
         menuescolhas2(5)
     end
 
@@ -1623,7 +1788,7 @@ end
 
 function menuDecorHaloween()
     MaxJTyMTRE = gg.choice({"1 • Ominous Fountain", "2 • Black Cat", "3 • Witch with Potion",
-                            "4 • Witcher's Hut", "5 • Carnivorous Greenhouse", "6 • Pumpkin Man",
+                            "4 • Witchers Hut", "5 • Carnivorous Greenhouse", "6 • Pumpkin Man",
                             "7 • Pumpkin Rider", "8 • Ghostly Coach", "9 • Gothic Tower",
                             "10 • Werewolf Spectacle", "11 • Witch on her broom", "❌ • Return"}, nil)
 
@@ -1661,7 +1826,8 @@ function menuDecorTheFirst()
     MaxJTyCFMT = gg.choice({"1 • The first geneticist", "2 • The first tourist", "3 • The first thinker",
                             "4 • The first firefighter", "5 • The first commander", "6 • The first policeman",
                             "7 • The first musician", "8 • The first painter", "9 • The first soccer player",
-                            "10 • The first scientist", "11 • The first balloonist", "❌ • Return"}, nil)
+                            "10 • The first scientist", "11 • The first balloonist", "12 • The first writer",
+                            "❌ • Return"}, nil)
 
     if MaxJTyCFMT == nil then
         return
@@ -1688,13 +1854,15 @@ function menuDecorTheFirst()
     elseif MaxJTyCFMT == 11 then
         hack("6174731Ah", "5F657574h", "62796C66h", "0000796Fh", "CC60F458h", "00000000h", 5)
     elseif MaxJTyCFMT == 12 then
+        hack("1635021594", "1600484724", "1953067639", "29285", "0", "0", 5)
+    elseif MaxJTyCFMT == 13 then
         menuescolhas2(5)
     end
 end
 
 function menuDecorSports()
     MaxJTUTR = gg.choice({"1 • Hockey field", "2 • Rugby field", "3 • Eternal rink", "4 • Veteran goalkeeper",
-                          "5 • Skatepark", "6 • World champion", "❌ • Return"}, nil)
+                          "5 • Skatepark", "6 • World champion", "6 • Bobsled Track", "❌ • Return"}, nil)
 
     if MaxJTUTR == nil then
         return
@@ -1711,13 +1879,16 @@ function menuDecorSports()
     elseif MaxJTUTR == 6 then
         hack("61656224h", "5F797475h", "746F6F46h", "6C6C6162h", "00676F44h", "00000050h", 5)
     elseif MaxJTUTR == 7 then
+        hack("626F421Ah", "69656C73h", "61526867h", "00006563h", "74C466B8h", "00000032h", 5)
         menuescolhas2(5)
     end
 end
 
 function menuDecorAirplane()
-    MaxEWQT = gg.choice({"1 • Flight Simulator", "2 • Steam Plane", "3 • Biplane", "4 • Flying Champion",
-                         "5 • Galleon Balloon", "❌ • Return"}, nil)
+    MaxEWQT = gg.choice({"1 • Flight Simulator", "2 • Steam Plane", "3 • Biplane", "4 • Winged Winner",
+                         "5 • Air Galleon", "6 • amphibious_aircraft", "7 • Biomasspowered Airplane",
+                         "8 • Experimental Plane", "9 • flyseasoned_friends", "10 • hat_air_balloon",
+                         "11 • piggy_blimp", "❌ • Return"}, nil)
 
     if MaxEWQT == nil then
         return
@@ -1732,6 +1903,18 @@ function menuDecorAirplane()
     elseif MaxEWQT == 5 then
         hack("61656222h", "5F797475h", "69796C66h", "6873676Eh", "72007069h", "00006400h", 5)
     elseif MaxEWQT == 6 then
+        gg.toast("33;28;7959669;1701860140;1818323299 loc 28")
+    elseif MaxEWQT == 7 then
+        hack("6570532Ah", "6C616963h", "75616542h", "625F7974h", "6C706F69h", "00006E61h", 5)
+    elseif MaxEWQT == 8 then
+        gg.toast("1869898092;1819303794;6647393;1634034188;795966;9;1811970420;33;24")
+    elseif MaxEWQT == 9 then
+        gg.toast("Updating...")
+    elseif MaxEWQT == 10 then
+        gg.toast("656E6E61h;00000072h;61656220Ch;00797475h;33;0;26;0 loc 26")
+    elseif MaxEWQT == 11 then
+        hack("72696420h", "61656769h", "73656C62h", "75746174h", "656E0065h", "000072h", 5)
+    elseif MaxEWQT == 12 then
         menuescolhas2(5)
     end
 
@@ -1760,8 +1943,16 @@ function menuDecorCandy()
 end
 
 function menuDecorRuins()
-    MaxPOYUT = gg.choice({"1 • Lost City Gate", "2 • Ancient Ruins", "3 • Ancestral Statue", "4 • Lost City",
-                          "5 • Happy Gorilla", "6 • Jungle Cave", "7 • Ancient Calendar", "❌ • Return"}, nil)
+    MaxPOYUT = gg.choice({"1 • Lost City Gate", "2 • Ancient City Site", "3 • Ancient Statue", "4 • Lost City",
+                          "5 • Banana Break", "6 • Jungle Cave", "7 • Ancient Calendar", "8 • Ancient Throne",
+                          "9 • Campfire Fun", "10 • Colorful Tent", "11 • Egyptian House", "12 • Falconry",
+                          "13 • Jungle Village", "14 • Magic Lamp", "15 • Monkey Nursery", "16 • Mystery Pond",
+                          "17 • Papyrus Shop", "18 • Paradise Tent", "19 • Pharaoh Statue",
+                          "20 • Primeval Settlement", "21 • Pyramid Of Cheops", "22 • Rope Bridge",
+                          "23 • Sarcophagus", "24 • Scarab Statue", "25 • Sheikhs Palace",
+                          "26 • Stone Age House", "27 • Stonehenge", "28 • The First Fider",
+                          "29 • Underwater Temple", "30 • Trojan Horse", "31 • Yeti", "32 • Wildlife Reserve",
+                          "33 • Papyrus Boat", "❌ • Return"}, nil)
 
     if MaxPOYUT == nil then
         return
@@ -1780,6 +1971,58 @@ function menuDecorRuins()
     elseif MaxPOYUT == 7 then
         hack("79616D1Ah", "61635F61h", "646E656Ch", "00007261h", "C2A6E170h", "0000000Eh", 5)
     elseif MaxPOYUT == 8 then
+        hack("1919448102", "1214606959", "1600941153", "1768187245", "1818326629", "0", 5)
+    elseif MaxPOYUT == 9 then
+        hack("6D616320h", "676E6970h", "6C697775h", "73657764h", "65770074h", "00007473h", 5)
+    elseif MaxPOYUT == 10 then
+        hack('1634877718', '1600350562', '1953391956', '0', '0', '0', 5)
+    elseif MaxPOYUT == 11 then
+        hack('1970227226', '1732601203', '1769238649', '28257', '-1609462377', '123', 5)
+    elseif MaxPOYUT == 12 then
+        hack('6C61661Ch', '5F6E6F63h', '746E7568h', '00676E69h', '00000000h', '00000000h', 5)
+    elseif MaxPOYUT == 13 then
+        gg.toast("33;24;1634034188;7959669;1634034214;1635013490:93 loc 24")
+    elseif MaxPOYUT == 14 then
+        hack('6172611Eh', '5F636962h', '5F6E696Ah', '706D616Ch', 'DA306800h', 'FFFF0000h', 5)
+    elseif MaxPOYUT == 15 then
+        hack('6E6F6D1Ah', '7379656Bh', '616C705Fh', '5F006B6Eh', '676E756Ah', '0000656Ch', 5)
+    elseif MaxPOYUT == 16 then
+        hack('72614D1Ch', '745F6873h', '73616572h', '00657275h', '00617473h', '00007473h', 5)
+    elseif MaxPOYUT == 17 then
+        hack('6172632Ch', '6D737466h', '6F576E61h', '6E696B72h', '67655F67h', '00747079h', 5)
+    elseif MaxPOYUT == 18 then
+        hack('1935765270', '1700754281', '1953528167', '0', '0', '0', 5)
+    elseif MaxPOYUT == 19 then
+        hack('79674524h', '68507470h', '6F617261h', '61745368h', '00657574h', '00000000h', 5)
+    elseif MaxPOYUT == 20 then
+        hack('1818850844', '1701273964', '1853188703', '6646887', '-196688589', '104', 5)
+    elseif MaxPOYUT == 21 then
+        hack('2036811032', '2035315824', '1768776050', '100', '-212155670', '0', 5)
+    elseif MaxPOYUT == 22 then
+        hack('636E611Ch', '746E6569h', '6972625Fh', '00656764h', '00000000h', '00000000h', 5)
+    elseif MaxPOYUT == 23 then
+        hack('6C61682Ah', '65776F6Ch', '735F6E65h', '6F637261h', '67616870h', '00007375h', 5)
+    elseif MaxPOYUT == 24 then
+        hack('61637318h', '5F626172h', '70796765h', '00000074h', '6C833A23h', '0000007Ah', 5)
+    elseif MaxPOYUT == 25 then
+        hack('1634885928', '1600350562', '1633643617', '1885302377', '1667329121', '101', 5)
+    elseif MaxPOYUT == 26 then
+        gg.toast("Updating...")
+    elseif MaxPOYUT == 27 then
+        hack('61656222h', '5F797475h', '6E6F7473h', '6E656865h', '00006567h', '00000000h', 5)
+    elseif MaxPOYUT == 28 then
+        hack("6165621Ch", "5F797475h", "6D6D616Dh", "0068746Fh", "00000000h", "00000000h", 5)
+    elseif MaxPOYUT == 29 then
+        gg.toast("1769300575;1852400748;103;1096776052;1918989681;7;173481;33;23 loc 23")
+    elseif MaxPOYUT == 30 then
+        hack("6F727426h", "486E616Ah", "6573726Fh", "636E615Fh", "746E6569h", "00000000h", 5)
+    elseif MaxPOYUT == 31 then
+        hack("61656216h", "5F797475h", "69746579h", "00000000h", "6D4B7A23h", "0000007Ah", 5)
+    elseif MaxPOYUT == 32 then
+        gg.toast("Updating...")
+    elseif MaxPOYUT == 33 then
+        gg.toast("2003792488;1633645157;1852402976;1969321071;33;26 loc 26")
+    elseif MaxPOYUT == 34 then
         menuescolhas2(5)
     end
 end
@@ -1918,7 +2161,7 @@ function menuDecorPuzzle()
     elseif MaxTPLKA == 7 then
         hack("6968431Ah", "6573656Eh", "7254594Eh", "6F006565h", "0032316Eh", "00310072h", 5)
     elseif MaxTPLKA == 8 then
-        hack("0", "0", "0", "0", "0", "0", 5)
+        hack("1936286756", "1866887011", "1702258034", "1970102130", "6515059", "113", 5)
     elseif MaxTPLKA == 9 then
         hack("7361451Eh", "32726574h", "44373130h", "726F6365h", "00323100h", "00310072h", 5)
     elseif MaxTPLKA == 10 then
@@ -1929,7 +2172,7 @@ function menuDecorPuzzle()
 end
 
 function menuDecorDiamonds()
-    MaxLFGJZ = gg.choice({"1 • St. Basil's Cathedral", "2 • Castle", "3 • Statue of Liberty", "4 • Crater",
+    MaxLFGJZ = gg.choice({"1 • St. Basils Cathedral", "2 • Castle", "3 • Statue of Liberty", "4 • Crater",
                           "5 • Taj Mahal", "6 • Watchtower", "7 • Petronas Twin Towers", "8 • Pizza Tower",
                           "9 • Temple of Heaven", "10 • Notre Dame de Paris", "11 • Space Needle",
                           "12 • Sea Arches", "13 • Big Ben", "14 • Golden Gate Bridge", "15 • Thai Temple",
@@ -1995,7 +2238,8 @@ function menuDecorDiamonds()
 end
 
 function menuDecorChina()
-    MaxCHIMN = gg.choice({"🎲 • Chinatown", "🎲 • Dragon Dance", "🎲 • x", "❌ • Return"}, nil)
+    MaxCHIMN = gg.choice({"1 • Chinatown", "2 • Dragon Dance", "3 • Yellow dog", "4 • Red Lily Pond",
+                          "5 • Golden Bull", "6 • Golden Rat Garden", "❌ • Return"}, nil)
     if MaxCHIMN == nil then
         return
     elseif MaxCHIMN == 1 then
@@ -2003,16 +2247,22 @@ function menuDecorChina()
     elseif MaxCHIMN == 2 then
         hack("61656226h", "5F797475h", "67617264h", "645F6E6Fh", "65636E61h", "00007700h", 5)
     elseif MaxCHIMN == 3 then
-        hack("r3CHIMN")
+        hack("69684314h", "6573656En", "00676F44h", "00007601h", "8C7E1591h", "00007601h", 5)
     elseif MaxCHIMN == 4 then
+        hack('6465721Ah', '696C694Ch', '6F507365h', '7500646Eh', '69000065h', '0000676Eh', 5)
+    elseif MaxCHIMN == 5 then
+        hack('6C756222h', '6174536Ch', '5F657574h', '6E6E7572h', '65007265h', '00000072h', 5)
+    elseif MaxCHIMN == 6 then
+        hack('7461721Ch', '64726147h', '6A5F6E65h', '00706D75h', '69000065h', '0000676Eh', 5)
+    elseif MaxCHIMN == 7 then
         menuescolhas2(5)
     end
 end
 
-function menuDecorEvent()
-    MaxFGJZ = gg.choice({"1 • Florist's House", "2 • House of Terror", "3 • Art Exhibition",
+function menuDecorFlower()
+    MaxFGJZ = gg.choice({"1 • Florists House", "2 • House of Terror", "3 • Art Exhibition",
                          "4 • Farmers Market", "5 • Gardening School", "6 • Mini Rabbit Zoo",
-                         "7 • Red Lily Pond", "8 • Rat with Sack of Coins", "9 • Aquarist's House",
+                         "7 • Red Lily Pond", "8 • Rat with Sack of Coins", "9 • Aquarists House",
                          "10 • Camp Kitchen", "11 • Fruit Tribe", "12 • Experimental Jet Pack Test",
                          "13 • Fruit Village", "14 • Tuned Cars", "15 • Outdoor Cinema",
                          "16 • Altlantida Exhibition", "17 • Candy Park", "18 • Candy Castle",
@@ -2112,21 +2362,81 @@ function menuDecorKids()
     end
 end
 
+function menuDecorEaster()
+end
+
+function menuDecorPirate()
+end
+
+function menuDecorAtlantis()
+    MaxFGJZ = gg.choice({"1 • Admiralty Anchor", "2 • Atlandean Trident", "3 • Atlantean Aquarium",
+                         "4 • Atlantean Rest", "5 • Atlantis Hotel", "6 • Atlantis Museum", "7 • Coral Fence",
+                         "8 • Glass Bridge", "9 • Pearl Shell", "10 • Poseidon Statue",
+                         "11 • Ruins Of Atlantis", "12 • Sea Herald", "13 • Sea Horse",
+                         "14 • Sea Riches Statue", "15 • Sunken City", "16 • Sword In The Stone",
+                         "17 • The Mermaid", "18 • Water Fairy", "❌ • Return"}, nil)
+
+    if MaxFGJZ == nil then
+        return
+    elseif MaxFGJZ == 1 then
+        hack('1701860134', '1818323299', '1969317186', '1633646964', '1919902574', '0', 5)
+    elseif MaxFGJZ == 2 then
+        hack('61656222h', '5F797475h', '616C7461h', '61685F73h', '6500646Eh', '00726163h', 5)
+    elseif MaxFGJZ == 3 then
+        gg.toast("Updating...")
+    elseif MaxFGJZ == 4 then
+        gg.toast("Updating...")
+    elseif MaxFGJZ == 5 then
+        hack('6165622Ah', '5F797475h', '616C7461h', '7369746Eh', '746F685Fh', '00006C65h', 5)
+    elseif MaxFGJZ == 6 then
+        hack('73756D1Eh', '5F6D7565h', '616C7461h', '7369746Eh', '05657C00h', '00000000h', 5)
+    elseif MaxFGJZ == 7 then
+        hack('1819558172', '1769238113', '1701207923', '6644590', '0', '0', 5)
+    elseif MaxFGJZ == 8 then
+        hack('1634486038', '1916957555', '1701274729', '0', '0', '0', 5)
+    elseif MaxFGJZ == 9 then
+        gg.toast("33;25;7959669;1970234112;570455150 loc 25")
+    elseif MaxFGJZ == 10 then
+        hack('1634034206', '1601795189', '1702063984', '1852793961', '0', '0', 5)
+    elseif MaxFGJZ == 11 then
+        hack('1634034218', '1601795189', '1634497633', '1936290926', '1769304671', '29550', 5)
+    elseif MaxFGJZ == 12 then
+        hack('1818585130', '1333028205', '1886352483', '1633645429', '1701405550', '29806', 5)
+    elseif MaxFGJZ == 13 then
+        hack('1701860140', '1818323299', '1969317186', '1935636852', '1869111653', '6648690', 5)
+    elseif MaxFGJZ == 14 then
+        hack('1634034220', '1601795189', '1634497633', '1936290926', '1635021663', '6649204', 5)
+    elseif MaxFGJZ == 15 then
+        hack('63726128h', '6F656168h', '79676F6Ch', '6C74615Fh', '69746E61h', '00000073h', 5)
+    elseif MaxFGJZ == 16 then
+        gg.toast("Updating...")
+    elseif MaxFGJZ == 17 then
+        hack('1701860138', '1818323299', '1969317186', '1834973556', '1634562661', '25705', 5)
+    elseif MaxFGJZ == 18 then
+        hack('69616616h', '775F7972h', '72657461h', '00000000h', '00000000h', '00000000h', 5)
+    elseif MaxFGJZ == 19 then
+        menuescolhas2(5)
+    end
+end
+
+function menuDecorFruit()
+end
+
 function menuDecorExpedition()
-    MNCvSW = gg.choice({'1 • Queen of Turtle Island', '2 • Cleopatras Secret Spa Hotel',
-                        '3 • Guardian of the North', '4 • Pirate Odyssey', '5 • Yeti Megalith',
-                        '6 • Botanical Amusement Park', '7 • Poseidons Kingdom Museum',
-                        '8 • Institute of Natural Phenomena', '9 • Central Park', '10 • Chinese Community Center',
-                        '11 • Rainbow Ecopark', '12 • Gourment Tour', '13 • Agricultural Fair',
-                        '14 • Sports Complex', '15 • Penguin World', '16 • Retro Disco Hall',
-                        '17 • Arts and Craft Fair', '18 • Cozy Campsite', '19 • Beach Party',
-                        '20 • The Heart of Italy', '21 • Smart Mansion', '22 • Golden Deer Country House',
-                        '23 • Frozen Lotus Fountain', '24 • Ancient Theater of Pandora',
-                        '25 • The Wasp Queen Greenhouse', '26 • Space Research Center', '27 • Tree Library',
-                        '28 • Nature Embrace Glamping Base', '29 • Cosmic Cafeteria',
-                        '30 • MonkeyLand Water Park', '31 • Mountain Haven', '32 • Sweet Amusement Park',
-                        '33 • Halloween Windmill', '34 • Gate to Cyber City', '35 • Sheriff Office',
-                        '36 • Santa Village', '37 • Jazz Club', '38 • Sinister Carriage', '❌ • Return'}, nil)
+    MNCvSW = gg.choice({"1 • Queen of Turtle Island", "2 • Cleopatras Secret Spa Hotel",
+                        "3 • Guardian of the North", "4 • Pirate Odyssey", "5 • Yeti Megalith",
+                        "6 • Botanical Amusement Park", "7 • Poseidons Kingdom Museum",
+                        "8 • Institute of Natural Phenomena", "9 • Central Park", "10 • Chinese Community Center",
+                        "11 • Rainbow Ecopark", "12 • Gourment Tour", "13 • Agricultural Fair",
+                        "14 • Sports Complex", "15 • Penguin World", "16 • Retro Disco Hall",
+                        "17 • Arts and Craft Fair", "18 • Cozy Campsite", "19 • Beach Party",
+                        "20 • The Heart of Italy", "21 • Smart Mansion", "22 • Golden Deer Country House",
+                        "23 • Frozen Lotus Fountain", "24 • Ancient Theater of Pandora",
+                        "25 • The Wasp Queen Greenhouse", "26 • Space Research Center", "27 • Tree Library",
+                        "28 • Nature Embrace Glamping Base", "29 • Cosmic Cafeteria",
+                        "30 • MonkeyLand Water Park", "31 • Mountain Haven", "32 • Sweet Amusement Park",
+                        "33 • Halloween Windmill", "34 • Gate to Cyber City", "35 • Sheriff Office",
+                        "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage", "❌ • Return"}, nil)
 
     if MNCvSW == nil then
         return
@@ -2201,20 +2511,20 @@ function menuDecorExpedition()
     elseif MNCvSW == 35 then
         hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355571, 829715041, "rExpe_2")
     elseif MNCvSW == 36 then
-        menuescolhas2(5)
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3486318", 1)
     elseif MNCvSW == 37 then
-        menuescolhas2(5)
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3683182", 1)
     elseif MNCvSW == 38 then
-        menuescolhas2(5)
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3748718", 1)
     elseif MNCvSW == 39 then
         menuescolhas2(5)
     end
 end
 
 function menuCoupon()
-    MNC = gg.choice({'🎫 • Order Coupon', '🎫 • Expansion Coupon', '🎫 • Barn Coupon',
-                     '🎫 • Factory Coupon', '🎫 • Train Coupon', '🎫 • Island Coupon',
-                     '🎫 • Dealer Coupon', '❌ • Return'}, nil)
+    MNC = gg.choice({"🎫 • Order Coupon", "🎫 • Expansion Coupon", "🎫 • Barn Coupon",
+                     "🎫 • Factory Coupon", "🎫 • Train Coupon", "🎫 • Island Coupon",
+                     "🎫 • Dealer Coupon", "❌ • Return"}, nil)
 
     if MNC == nil then
         return
@@ -2239,8 +2549,8 @@ end
 
 function menuBadge()
     MYU = gg.choice(
-        {'💎 • Badge 1', '💎 • Badge 2', '💎 • Badge 3', '💎 • Badge 4', '💎 • Badge 5',
-         '💎 • Badge 6', '💎 • Card Colection', '❌ • Return'}, nil)
+        {"💎 • Badge 1", "💎 • Badge 2", "💎 • Badge 3", "💎 • Badge 4", "💎 • Badge 5",
+         "💎 • Badge 6", "💎 • Card Colection", "❌ • Return"}, nil)
 
     if MYU == nil then
         return
@@ -2257,7 +2567,7 @@ function menuBadge()
     elseif MYU == 6 then
         hack("1684103708", "811558247", "1919377202", "6581857", "426107464", "112", 1)
     elseif MYU == 7 then
-        hack("1918976790", "1348420452", "896230241", "0", "1985025720", "120", 10)
+        hack("1918976790", "1348420452", "896230241", "0", "1985025720", "120", 100)
     elseif MYU == 8 then
         menuescolhas2(1)
     end
@@ -2271,7 +2581,7 @@ function hack2()
     gg.searchNumber("3600;7200;10800;14400", gg.TYPE_FLOAT)
     gg.refineNumber("3600", gg.TYPE_FLOAT)
     gg.getResults(30)
-    gg.editAll('1', gg.TYPE_FLOAT)
+    gg.editAll("1", gg.TYPE_FLOAT)
     setf(80, 1)
     setf(160, 1)
     setf(240, 1)
@@ -2427,15 +2737,15 @@ function hack14()
     gg.clearResults()
     gg.searchNumber("1200;3600", gg.TYPE_FLOAT)
     gg.getResults(4)
-    gg.editAll('1', gg.TYPE_FLOAT)
+    gg.editAll("1", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.searchNumber("14400;25200", gg.TYPE_FLOAT)
     gg.getResults(10)
-    gg.editAll('1', gg.TYPE_FLOAT)
+    gg.editAll("1", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.searchNumber("21600", gg.TYPE_FLOAT)
     gg.getResults(10)
-    gg.editAll('1', gg.TYPE_FLOAT)
+    gg.editAll("1", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.clearList()
 end
@@ -2457,9 +2767,7 @@ function hack255()
         t[1].freeze = true
         gg.setValues(t)
         gg.addListItems(t) -- automaticly saves the list
-        gg.alert("hack done 2")
-        gg.toast("hack done 2...")
-        gg.toast(" ENJOY UNLIMITED ...")
+        gg.alert("hack done")
         gg.loadResults(t) -- loading the list
     else
         gg.alert("Check the population required to unlock the terrain, then open the Gameguardian...")
@@ -2667,7 +2975,7 @@ function hack15cD()
         G[2] = {}
         G[2].address = r[2].address - 0x1C
         G[2].flags = gg.TYPE_DWORD
-        G[2].value = 7000
+        G[2].value = 1000
         G[2].freeze = false
         gg.setValues(G)
 
@@ -2757,8 +3065,7 @@ function hack15cDn()
         A[2].freeze = false
         gg.setValues(A)
 
-        gg.alert("hack done 2")
-        gg.toast("hack done 2...")
+        gg.alert("hack done")
         gg.clearResults()
     elseif gg.getResultCount() == 1 then
         -- do something else
@@ -2788,8 +3095,7 @@ function hack15cDn()
         Ae[1].freeze = false
         gg.setValues(Ae)
 
-        gg.alert("hack done 1")
-        gg.toast("hack done 1...")
+        gg.alert("hack done")
         gg.clearResults()
     else
         -- do something else entirely
@@ -2848,12 +3154,12 @@ function hack2C()
     gg.processResume()
     gg.clearList()
     gg.clearResults()
-    gg.alert("Check out a factory's time bonus at the industry academy.")
+    gg.alert("Check out a factory s time bonus at the industry academy.")
     wait_for_action()
     gg.processResume()
     gg.setVisible(false)
 
-    input = gg.prompt({"Bonus Time", "Island"}, nil, {'number', 'checkbox'})
+    input = gg.prompt({"Bonus Time", "Island"}, nil, {"number", "checkbox"})
     if input == nil then
         return MENUFREE() -- Se o usuário cancelar, volta ao MENUFREE()
     end
@@ -3355,7 +3661,6 @@ end
 
 -- hackTrEn
 function hackTrEn()
-    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
     gg.processResume()
@@ -3738,9 +4043,8 @@ function hackTrEn()
 end
 
 function hackTrEn_XP_2()
-    gg.alert("Hacerlo mas Iniciar el juego o reiniciar el juego...")
-    gg.toast("Hacerlo mas Iniciar el juego o reiniciar el juego...")
-    gg.toast("Cargando...")
+    gg.toast("Make it more Start the game or restart the game...")
+    gg.toast("Loading...")
 
     r = gg.getResults(2)
     -- do something
@@ -4121,7 +4425,6 @@ end
 
 function hackTrEn_1()
 
-    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Loading............ train 1")
     gg.processResume()
@@ -5180,7 +5483,6 @@ end
 
 function hackAvion_xp()
 
-    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
     gg.processResume()
@@ -5312,8 +5614,7 @@ end
 
 function hackTrEnTrebol_1()
 
-    --  gg.alert("Hacerlo mas Iniciar el juego o reiniciar el juego...") 
-    --  gg.toast( "Hacerlo mas Iniciar el juego o reiniciar el juego...")  
+    --  gg.toast( "Make it more Start the game or restart the game...")  
     gg.toast("Loading............ clover 1")
     gg.processResume()
     gg.clearResults()
@@ -5487,7 +5788,6 @@ function hackTrEnTrebol_3()
 end
 ---FFFFFFFFh;6D616E08h
 function hackAvion_1()
-    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
     gg.processResume()
@@ -5618,8 +5918,7 @@ function hackAvion_1()
 end
 
 function hackPedirAyudaAvion()
-    gg.alert("Hacerlo mas Iniciar el juego o reiniciar el juego...")
-    gg.toast("Hacerlo mas Iniciar el juego o reiniciar el juego...")
+    gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Cargando...")
     gg.processResume()
     gg.clearResults()
@@ -5680,9 +5979,7 @@ function hackPedirAyudaAvion()
 end
 
 function hackAvion_xp_9()
-
-    gg.alert("Hacerlo mas Iniciar el juego o reiniciar el juego...")
-    gg.toast("Hacerlo mas Iniciar el juego o reiniciar el juego...")
+    gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Cargando...")
     gg.processResume()
     gg.clearResults()
@@ -5869,8 +6166,7 @@ function hackAvion_xp_9()
 end
 
 function hackAvion_1_9()
-    gg.alert("Hacerlo mas Iniciar el juego o reiniciar el juego...")
-    gg.toast("Hacerlo mas Iniciar el juego o reiniciar el juego...")
+    gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Cargando...")
     gg.processResume()
     gg.clearResults()
@@ -6056,8 +6352,7 @@ function hackAvion_1_9()
 end
 
 function hackPedirAyudaAvion_9()
-    gg.alert("Hacerlo mas Iniciar el juego o reiniciar el juego...")
-    gg.toast("Hacerlo mas Iniciar el juego o reiniciar el juego...")
+    gg.toast("Make it more Start the game or restart the game...")
     gg.toast("Cargando...")
     gg.processResume()
     gg.clearResults()
@@ -7789,8 +8084,7 @@ function hackAvion_Volver()
     gg.editAll("18000", gg.TYPE_DWORD);
     gg.processResume();
     gg.clearResults();
-    gg.alert(" Restart the game after...")
-    gg.toast("  Restart the game after...")
+    gg.toast("Restart the game after...")
 
 end
 
@@ -13954,7 +14248,7 @@ function hackExp()
     int1 = gg.prompt({"Amount? [0; 100000000]"}, {1}, {"number"})
     int1[1] = tonumber(int1[1])
 
-    hack("1886938374","0","0","0","0","0",int1[1])
+    hack("1886938374", "0", "0", "0", "0", "0", int1[1])
 end
 
 function EXIT()
@@ -13969,15 +14263,15 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice(
-        {"🌟 • Change Rewards", "🏭 • Skip Time", "🚂 • Extras", '💵 • Money/Notes', "❌ • Exit"},
+        {"🌟 • Change Rewards", "🏭 • Skip Time", "🚂 • Extras", "💵 • Money/Notes", "❌ • Exit"},
         nil)
     if opcao then
         if opcao == 1 then
             menuescolhas2(1)
         end
         if opcao == 2 then
-            MNZ = gg.choice({'🐶 • Animals', '💣 • Forge', '💣 • Cow Feed Mill',
-                             '💣 • Chicken Feed Mill', '💣 • Sheep Feed Mill', '❌ • Return'}, nil)
+            MNZ = gg.choice({"🐶 • Animals", "💣 • Forge", "💣 • Cow Feed Mill",
+                             "💣 • Chicken Feed Mill", "💣 • Sheep Feed Mill", "❌ • Return"}, nil)
 
             if MNZ == nil then
                 return
@@ -13996,12 +14290,12 @@ function MENUFREE()
             end
         end
         if opcao == 3 then
-            MNF = gg.choice({'1 • XP (Wheat)', '2 • City Market', '3 • Industry Academy', '4 • XP Train',
-                             '5 • Wheat Train', '6 • Freeze Clover Train', '7 • XP Plane 6 boxes',
-                             '8 • XP Plane If it doesnt work 1/6 boxes', '9 • Ask for help plane 6 boxes',
-                             '10 • XP Plane 9 boxes', '11 • XP Plane If it doesnt work 1/9 boxes',
-                             '12 • Ask for help plane 9 boxes', '13 • Plane return to base', '14 • Train card',
-                             '15 • Heli Auto', '16 • Airplane Auto', '17 • Freeze Population', '18 • Return'},
+            MNF = gg.choice({"1 • XP (Wheat)", "2 • City Market", "3 • Industry Academy", "4 • XP Train",
+                             "5 • Wheat Train", "6 • Freeze Clover Train", "7 • XP Plane 6 boxes",
+                             "8 • XP Plane If it doesnt work 1/6 boxes", "9 • Ask for help plane 6 boxes",
+                             "10 • XP Plane 9 boxes", "11 • XP Plane If it doesnt work 1/9 boxes",
+                             "12 • Ask for help plane 9 boxes", "13 • Plane return to base", "14 • Train card",
+                             "15 • Heli Auto", "16 • Airplane Auto", "17 • Freeze Population", "18 • Return"},
                 nil)
 
             if MNF == nil then
