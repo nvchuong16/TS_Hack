@@ -1,8 +1,6 @@
 gg.setVisible(false)
 local freeuns = false
 UltimoMenu = nil
-local naousou = true
-local naousou2 = false
 
 function SalvarUltimoMenu(menu_tipo)
     UltimoMenu = menu_tipo
@@ -111,15 +109,15 @@ end
 function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
-        MNV = gg.choice({"1 • Unlock Gold Pass", "2 • Freeze Reward", "3 • Items", "4 • Skins",
-                         "5 • Decoration", "6 • Coupons", "7 • Crop Time", "8 • Badge", "9 • Name and Frame",
-                         "10 • Exp", "❌ • Back"}, nil)
+        MNV = gg.choice({"1 • Cash", "2 • Gold", "3 • Items", "4 • Skins", "5 • Decoration", "6 • Coupons",
+                         "7 • Crop Time", "8 • Badge", "9 • Name and Frame", "10 • Exp", "11 • Sign",
+                         "❌ • Back"}, nil)
         if MNV == nil then
             return
         elseif MNV == 1 then
-            hack15cD()
+            hack("1935762184", "104", "0", "0", "0", "0", 0)
         elseif MNV == 2 then
-            ItemPass()
+            hack("1635021594", "1600484724", "1953067639", "29285", "0", "0", 5)
         elseif MNV == 3 then
             menuescolhas2(3)
         elseif MNV == 4 then
@@ -137,6 +135,8 @@ function menuescolhas2(menu_tipo)
         elseif MNV == 10 then
             hackExp()
         elseif MNV == 11 then
+            menuescolhas2(11)
+        elseif MNV == 12 then
             MENUFREE()
         end
     elseif menu_tipo == 3 then
@@ -235,8 +235,7 @@ function menuescolhas2(menu_tipo)
                            "11 • Banner & Statues", "12 • Tree", "13 • Inflatable", "14 • Puzzle",
                            "15 • Diamonds", "16 • China", "17 • Flower", "18 • Kids", "19 • Easter",
                            "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Fruit", "24 • Cowboy",
-                           "25 • Expedition",
-                           "❌ • Return"}, nil)
+                           "25 • Expedition", "❌ • Return"}, nil)
 
         if MaxJP == nil then
             return
@@ -371,6 +370,8 @@ function menuescolhas2(menu_tipo)
         else
             menuescolhas2(1)
         end
+    elseif menu_tipo == 11 then
+        menuSign()
     end
     MenuVisible = -1
 end
@@ -430,7 +431,7 @@ end
 function menuIngots()
     MNV = gg.choice(
         {"💎 • Bronze Ingot", "💎 • Silver Ingot", "💎 • Gold Ingot", "💎 • Platinum Ingot",
-         "❌ • Return"}, nil)
+         "💎 • Clay", "❌ • Return"}, nil)
     if MNV == nil then
         return
     elseif MNV == 1 then
@@ -441,6 +442,8 @@ function menuIngots()
         hack("6C6F4724h", "6C754264h", "6E6F696Ch", "6E756F43h", "00726574h", "00000000h", 0)
     elseif MNV == 4 then
         hack("1634488364", "1970170228", "1819624045", "1852795244", "1853189955", "7497076", 0)
+    elseif MNV == 5 then
+        hack("616C6316h", "756F4379h", "7265746Eh", "00000000h", "00000000h", "00000000h", 0)
     else
         menuescolhas2(3)
     end
@@ -1020,19 +1023,19 @@ function menuSkinChicken()
     elseif MaxJES_110 == 9 then
         hack("1768641320", "1749245806", "1701536617", "1634099054", "1869178995", "110", 50)
     elseif MaxJES_110 == 10 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_110 == 11 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_110 == 12 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_110 == 13 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_110 == 14 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_110 == 15 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_110 == 16 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     else
         menuescolhas2(4)
     end
@@ -1127,15 +1130,15 @@ function menuSkinSheep()
     elseif MaxJES_112 == 12 then
         hack("1768641320", "1750294382", "1601201509", "1685221230", "1866949481", "100", 50)
     elseif MaxJES_112 == 13 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_112 == 14 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_112 == 15 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_112 == 16 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     elseif MaxJES_112 == 17 then
-        menuescolhas2(4)
+        gg.alert("Updating")
     else
         menuescolhas2(4)
     end
@@ -1155,61 +1158,37 @@ function menuSkinPig()
     end
 end
 
-function runHackDecor()
-    local input = gg.prompt({"Enter code"}, nil, {"text"})
-    if not input then
-        gg.alert("Bạn đã hủy nhập!")
-        return
-    end
-    local raw = input[1]
-    local vals = {}
-    for part in string.gmatch(s, "([^;]+)") do
-        table.insert(vals, part)
-    end
-    for i = 1, 6 do
-        local v = vals[i]
-        if not v or v == "" then
-            vals[i] = 0
-        else
-            local n = tonumber(v)
-            vals[i] = (n ~= nil) and n or 0
-        end
-    end
-
-    hack(vals[1], vals[2], vals[3], vals[4], vals[5], vals[6], 50)
-end
-
 function menuDecor()
     local options = {"1 • 3D Projector", "2 • Airboat", "3 • Art District", "4 • Art Hub", "5 • Bamboo Grove",
                      "6 • Bargain District", "7 • Bathyscaphe Model", "8 • Best Hot Dogs In Town",
                      "9 • Bicycle Parking", "10 • Boat Ride Attraction", "11 • Book Of Nature",
                      "12 • Bookstore", "13 • Campsite", "14 • Carp Pond", "15 • Chariot", "16 • Chess Match",
-                     "18 • Chocolate Mill", "19 • Coffee Bike", "20 • Comms Station",
-                     "21 • Crab Chef", "22 • Deep Sea Explorers", "23 • Divers", "24 • Double Date",
-                     "25 • Dovecote", "26 • Endless Serenade", "27 • Endless Stairs",
-                     "28 • Exponential Monument", "29 • Field Kitchen", "30 • First Contact",
-                     "31 • Fishermans House", "32 • Fishing Octopus", "33 • Fishing Spot",
-                     "34 • Fishing Wharf Market", "35 • Floating Camp", "36 • Flooded Tower",
-                     "37 • Garden Gnomes", "38 • Gold Mine", "39 • Happy Elephants", "40 • Hermit Crab",
-                     "41 • Hot Cup Coffee Shop", "42 • Hot Pizza Truck", "43 • Humanoid Robot",
-                     "44 • Ice Cream Cafe", "45 • Jet Pack Trials", "46 • Knowledge Tower",
-                     "47 • Living On The Road", "48 • Magic Tap", "49 • Marine Station",
-                     "50 • Mechanical Spider", "51 • Monster Truck", "52 • Monster Trucks", "53 • Nessie",
-                     "54 • Odysseus Ship", "55 • Open Air Pizzeria", "56 • Openair Planetarium",
-                     "57 • Parisian Plaza", "58 • Park Of Miniatures", "59 • Pizza Cutters",
-                     "60 • Plasma Globe", "61 • Rainbow Factory", "62 • Research Facility",
-                     "63 • Roadside Diner", "64 • Robot Cafe", "65 • Roving Minstrels", "66 • Scribes Workshop",
-                     "67 • Scroll Keeper", "68 • Sculptors Workshop", "69 • Shuttle Cafe", "70 • Souvenir Shop",
-                     "71 • Spring Holiday", "72 • Stargazers Tower", "73 • Stranded Yacht",
-                     "74 • Street Artist", "75 • Submarine", "76 • Summer Camping", "77 • Summerfun Island",
-                     "78 • Tavern", "79 • Thingamacube", "80 • Traveling Show", "81 • Venetian Bridge1",
-                     "82 • Water Tower", "83 • Wild West Mayors", "❌ • Return"}
+                     "17 • Chocolate Mill", "18 • Coffee Bike", "19 • Comms Station", "20 • Crab Chef",
+                     "21 • Deep Sea Explorers", "22 • Divers", "23 • Double Date", "24 • Dovecote",
+                     "25 • Endless Serenade", "26 • Endless Stairs", "27 • Exponential Monument",
+                     "28 • Field Kitchen", "29 • First Contact", "30 • Fishermans House",
+                     "31 • Fishing Octopus", "32 • Fishing Spot", "33 • Fishing Wharf Market",
+                     "34 • Floating Camp", "35 • Flooded Tower", "36 • Garden Gnomes", "37 • Gold Mine",
+                     "38 • Happy Elephants", "39 • Hermit Crab", "40 • Hot Cup Coffee Shop",
+                     "41 • Hot Pizza Truck", "42 • Humanoid Robot", "43 • Ice Cream Cafe",
+                     "44 • Jet Pack Trials", "45 • Knowledge Tower", "46 • Living On The Road",
+                     "47 • Magic Tap", "48 • Marine Station", "49 • Mechanical Spider", "50 • Monster Truck",
+                     "51 • Monster Trucks", "52 • Nessie", "53 • Odysseus Ship", "54 • Open Air Pizzeria",
+                     "55 • Openair Planetarium", "56 • Parisian Plaza", "57 • Park Of Miniatures",
+                     "58 • Pizza Cutters", "59 • Plasma Globe", "60 • Rainbow Factory",
+                     "61 • Research Facility", "62 • Roadside Diner", "63 • Robot Cafe",
+                     "64 • Roving Minstrels", "65 • Scribes Workshop", "66 • Scroll Keeper",
+                     "67 • Sculptors Workshop", "68 • Shuttle Cafe", "69 • Souvenir Shop",
+                     "70 • Spring Holiday", "71 • Stargazers Tower", "72 • Stranded Yacht",
+                     "73 • Street Artist", "74 • Submarine", "75 • Summer Camping", "76 • Summerfun Island",
+                     "77 • Tavern", "78 • Thingamacube", "79 • Traveling Show", "80 • Venetian Bridge1",
+                     "81 • Water Tower", "82 • Wild West Mayors", "83 • ❌ Return"}
 
     local choice = gg.choice(options, nil)
     if choice == nil then
         return
     elseif choice == 1 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 2 then
         hack('1919508762', '1952542562', '1634496607', '27502', '700281330', '85', 5)
     elseif choice == 3 then
@@ -1221,7 +1200,8 @@ function menuDecor()
     elseif choice == 6 then
         hack('1818317588', '1970361189', '6648417', '119', '0', '0', 5)
     elseif choice == 7 then
-        gg.toast("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28 loc 28")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x23E8, 0x23EC, 0x23F0,
+            0x23F4, 0x23F8, 0x23FC)
     elseif choice == 8 then
         hack('1969320740', '1701273971', '1936028255', '1634889588', '7499636', '116', 5)
     elseif choice == 9 then
@@ -1233,7 +1213,7 @@ function menuDecor()
     elseif choice == 12 then
         hack('1869562388', '1951620971', '6648431', '110', '672503271', '110', 5)
     elseif choice == 13 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 14 then
         hack('1852796956', '1769430884', '1667197044', '7369313', '0', '0', 5)
     elseif choice == 15 then
@@ -1243,7 +1223,7 @@ function menuDecor()
     elseif choice == 17 then
         hack('1869103914', '1634496355', '1632003444', '1919906915', '1667581049', '29295', 5)
     elseif choice == 18 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 19 then
         hack('1852785438', '1952671086', '1635013471', '1852795252', '672503040', '110', 5)
     elseif choice == 20 then
@@ -1261,23 +1241,23 @@ function menuDecor()
     elseif choice == 26 then
         hack('1635021594', '1601401449', '1668571501', '13160', '746717682', '90', 5)
     elseif choice == 27 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 28 then
         hack('74696B1Ah', '6E656863h', '616C705Fh', '00006B6Eh', 'C877AC63h', '00000071h', 5)
     elseif choice == 29 then
         hack('61656214h', '5F797475h', '006F6675h', '0000007Ah', '6D4B7A23h', '0000007Ah', 5)
     elseif choice == 30 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 31 then
         hack('1701860138', '1818323299', '1969317186', '1868527988', '1886352483', '29557', 5)
     elseif choice == 32 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 33 then
         hack('1634034212', '1601795189', '1752394086', '1918987615', '7628139', '113', 5)
     elseif choice == 34 then
         hack('69615328h', '676E696Ch', '74666152h', '6572745Fh', '72757361h', '00000065h', 5)
     elseif choice == 35 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 36 then
         hack('1869506316', '7562605', '-414772464', '121', '0', '0', 5)
     elseif choice == 37 then
@@ -1289,15 +1269,16 @@ function menuDecor()
     elseif choice == 40 then
         hack('66614310h', '62755465h', '00000065h', '00000000h', '00000000h', '00000000h', 5)
     elseif choice == 41 then
-        gg.toast("1969317186;1113553268;1701736033;114;33;26 loc 26")
+        hackDecor("1969317186;1113553268;1701736033;114;33;26", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif choice == 42 then
-        gg.toast("1969317186;1885305204;1869313377;6582120;33;23:65 loc 23")
+        hackDecor("1969317186;1885305204;1869313377;6582120;33;23:65 ", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif choice == 43 then
-        gg.toast("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28 loc 28")
+        hackDecor("1969317186;1113553268;1701736033;114;33;28", "28", 0x788, 0x784, 0x780, 0x77C,
+            0x778, 0x774)
     elseif choice == 44 then
         hack('1952803354', '1801675120', '1634496607', '1694524782', '1752392960', '28783', 5)
     elseif choice == 45 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 46 then
         hack('1634890794', '1768711542', '1918134126', '1600873333', '1668506994', '25973', 5)
     elseif choice == 47 then
@@ -1313,7 +1294,7 @@ function menuDecor()
     elseif choice == 52 then
         hack('61656228h', '5F797475h', '65746177h', '6F6D5F72h', '6574736Eh', '00000072h', 5)
     elseif choice == 53 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 54 then
         hack('6165622Ah', '5F797475h', '7A7A6970h', '61697265h', '7361705Fh', '00006174h', 5)
     elseif choice == 55 then
@@ -1325,11 +1306,11 @@ function menuDecor()
     elseif choice == 58 then
         hack('7A697024h', '7563617Ah', '6E697474h', '61705F67h', '00617473h', '00007473h', 5)
     elseif choice == 59 then
-        gg.toast("1935765270;1700754281;1953528167;33;24 loc 24")
+        hackDecor("1935765270;1700754281;1953528167;33;24", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif choice == 60 then
         hack('6E61631Ah', '725F7964h', '626E6961h', '6900776Fh', '6E6F6974h', '00000000h', 5)
     elseif choice == 61 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 62 then
         hack('66616316h', '65725F65h', '65756373h', '00000000h', 'C9D85C63h', '00000071h', 5)
     elseif choice == 63 then
@@ -1339,9 +1320,9 @@ function menuDecor()
     elseif choice == 65 then
         hack('1919120168', '1869901929', '1836411250', '1684368735', '1635149161', '108', 5)
     elseif choice == 66 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 67 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 68 then
         hack('61656228h', '5F797475h', '63617073h', '68735F65h', '6C747475h', '00000065h', 5)
     elseif choice == 69 then
@@ -1349,19 +1330,19 @@ function menuDecor()
     elseif choice == 70 then
         hack('1935762714', '1383228788', '1868718697', '29550', '261953283', '0', 5)
     elseif choice == 71 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 72 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 73 then
         hack('2003780370', '1769239105', '687895667', '126', '700281330', '126', 5)
     elseif choice == 74 then
         hack('1634034208', '1601795189', '1835169139', '1852404321', '776274021', '21', 5)
     elseif choice == 75 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 76 then
         hack('61656224h', '5F797475h', '7A726174h', '745F6E61h', '00656572h', '0000646Eh', 5)
     elseif choice == 77 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 78 then
         hack('00000021h', '00000000h', '00000017h', '00000000h', '489FECE0h', '0000006Fh', 5)
     elseif choice == 79 then
@@ -1369,9 +1350,9 @@ function menuDecor()
     elseif choice == 80 then
         hack('1634292250', '1601139820', '1684632130', '25959', '1939298051', '116', 5)
     elseif choice == 81 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif choice == 82 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     else
         menuescolhas2(5)
     end
@@ -1395,7 +1376,7 @@ function menuDecorSummer()
     elseif MaxDECORT == 3 then
         hack('6B695410h', '61425F69h', '0C620072h', '00000079h', '0C650A23h', '00000079h', 5)
     elseif MaxDECORT == 4 then
-        gg.toast("Updating")
+        hack('61656222h', '5F797475h', '6E697773h', '61705F67h', '51006D6Ch', '00000000h', 5)
     elseif MaxDECORT == 5 then
         hack('1634026016', '1985964131', '1701604463', '1818321529', '1939275884', '116', 5)
     elseif MaxDECORT == 6 then
@@ -1405,7 +1386,7 @@ function menuDecorSummer()
     elseif MaxDECORT == 8 then
         hack('61656224h', '5F797475h', '6F636F43h', '5F74756Eh', '00726162h', '00000000h', 5)
     elseif MaxDECORT == 9 then
-        gg.toast("33;24;1634034188;7959669;1634034206;1936615784:93 loc 24")
+        hackDecor("33;24;1634034188;7959669;1634034206;1936615784:93", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxDECORT == 10 then
         hack('72755316h', '65525F66h', '6C61746Eh', '00000000h', '0C650A23h', '00000079h', 5)
     elseif MaxDECORT == 11 then
@@ -1413,7 +1394,8 @@ function menuDecorSummer()
     elseif MaxDECORT == 12 then
         hack('1920291602', '1867538278', '-318739345', '120', '1714630657', '0', 5)
     elseif MaxDECORT == 13 then
-        gg.toast("33;28;7959669;1634496550;1765893486 loc 28")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x1BC8, 0x1BCC, 0x1BD0,
+            0x1BD4, 0x1BD8, 0x1BDC)
     elseif MaxDECORT == 14 then
         hack('1634034220', '1601795189', '1869768820', '1735289207', '1768844127', '7562614', 5)
     elseif MaxDECORT == 15 then
@@ -1490,9 +1472,9 @@ function menuDecorValentine()
     elseif MaxJTyP == 21 then
         hack("6F6C661Eh", "55726577h", "7265646Eh", "646F6F48h", "0563F200h", "00000031h", 5)
     elseif MaxJTyP == 22 then
-        gg.toast("33;25;7959669;1415538030;2036622437 loc 25")
+        hackDecor("33;25;7959669;1415538030;2036622437", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 23 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyM == 24 then
         hack('1818318374', '1769238117', '1180657006', '1702326124', '1684365938', '0', 5)
     elseif MaxJTyM == 25 then
@@ -1502,15 +1484,16 @@ function menuDecorValentine()
     elseif MaxJTyM == 27 then
         hack('1987005460', '1853183077', '7103854', '113', '0', '0', 5)
     elseif MaxJTyM == 28 then
-        gg.toast("49;24;1818318372;1769238117;1885300078;1868783973;7564131 loc 24")
+        hackDecor("49;24;1818318372;1769238117;1885300078;1868783973;7564131", "24", 0x788, 0x784, 0x780, 0x77C, 0x778,
+            0x774)
     elseif MaxJTyM == 29 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyM == 30 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyM == 31 then
-        gg.toast("6165620Ch;00797475h;6C61562Ch;69746E65h;33;23 loc 23")
+        hackDecor("6165620Ch;00797475h;6C61562Ch;69746E65h;33;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 32 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyM == 33 then
         hack('61656222h', '5F797475h', '73756C70h', '65685368h', '00007065h', '0000646Eh', 5)
     elseif MaxJTyM == 34 then
@@ -1644,9 +1627,9 @@ function menuDecorChristmas()
     elseif MaxJTyM == 44 then
         hack('7268431Ch', '6D747369h', '435F7361h', '00656661h', 'EE7877C8h', '0000007Ch', 5)
     elseif MaxJTyM == 45 then
-        gg.toast("1919435554;1836348265;1631810401;1937076082;33;23 loc 23")
+        hackDecor("1919435554;1836348265;1631810401;1937076082;33;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 46 then
-        gg.toast("1918980120;1398764393;1701147252;33;24;25 loc 24")
+        hackDecor("1918980120;1398764393;1701147252;33;24;25", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 47 then
         hack('1818322984', '1702326124', '2002742885', '1751348329', '1919510623', '101', 5)
     elseif MaxJTyM == 48 then
@@ -1654,11 +1637,11 @@ function menuDecorChristmas()
     elseif MaxJTyM == 49 then
         hack('1852393240', '1601332583', '1937076040', '101', '0', '0', 5)
     elseif MaxJTyM == 50 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyM == 51 then
         hack('72684320h', '6D747369h', '435F7361h', '75726F68h', '00000073h', '00000000h', 5)
     elseif MaxJTyM == 52 then
-        gg.toast("1919435554;1937076082;1953055504;1734955897;33;25 loc 25")
+        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 53 then
         hack('1769304344', '1600877423', '1851878512', '107', '0', '0', 5)
     elseif MaxJTyM == 54 then
@@ -1666,7 +1649,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 55 then
         hack('1701991446', '1632460645', '1952803698', '0', '672503271', '110', 5)
     elseif MaxJTyM == 56 then
-        gg.toast("1918980120;1398764393;1701147252;33;24;25 loc 25")
+        hackDecor("1918980120;1398764393;1701147252;33;24;25", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 57 then
         hack('1701013798', '1819632467', '1920300144', '1885303653', '1802396012', '0', 5)
     elseif MaxJTyM == 58 then
@@ -1678,7 +1661,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 61 then
         hack('1919435550', '1836348265', '1952412513', '1852399986', '-294095104', '124', 5)
     elseif MaxJTyM == 62 then
-        gg.toast("1919435554;1937076082;1953055504;1734955897;33;26 loc 26")
+        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", 0x7D8, 0x7D4, 0x7D0, 0x7CC, 0x7C8, 0x7C4)
     elseif MaxJTyM == 63 then
         hack('1935764508', '1970227316', '1819303794', '7040609', '0', '0', 5)
     elseif MaxJTyM == 64 then
@@ -1696,17 +1679,17 @@ function menuDecorChristmas()
     elseif MaxJTyM == 70 then
         hack('1851872030', '1381982580', '1885692773', '1852795252', '0', '0', 5)
     elseif MaxJTyM == 71 then
-        gg.toast("1919443756;1635020385;33;23;1634034188;7959669:189 loc 23")
+        hackDecor("1919443756;1635020385;33;23;1634034188;7959669:189", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 72 then
         hack('2037141286', '1667854445', '1869501279', '1667329399', '1701734760', '0', 5)
     elseif MaxJTyM == 73 then
         hack('1869509406', '1734952567', '1885303912', '1802396012', '0', '0', 5)
     elseif MaxJTyM == 74 then
-        gg.toast("1919443756;1635020385;33;23;1634034188;7959669:189 loc 23")
+        hackDecor("1919443756;1635020385;33;23;1634034188;7959669:189", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 75 then
         hack('1634289434', '1398764654', '1836543854', '28257', '0', '0', 5)
     elseif MaxJTyM == 76 then
-        gg.toast("1919435554;1836348265;1631810401;1937076082;33;23 loc 23")
+        hackDecor("1919435554;1836348265;1631810401;1937076082;33;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyM == 77 then
         hack('1634034216', '1601795189', '1953393015', '1667199589', '1869508193', '110', 5)
     elseif MaxJTyM == 78 then
@@ -1762,13 +1745,13 @@ function menuDecorHaloween()
     elseif MaxJTyMTRE == 13 then
         hack('1818322976', '1702326124', '1834970725', '1969582965', '776274029', '126', 5)
     elseif MaxJTyMTRE == 14 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 15 then
-        gg.toast("33;29;7959669;1701860138;1818323299 loc 29")
+        hackDecor("33;29;7959669;1701860138;1818323299", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyMTRE == 16 then
         hack('6C616824h', '65776F6Ch', '675F6E65h', '6F677261h', '00656C79h', '0000007Ah', 5)
     elseif MaxJTyMTRE == 17 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 18 then
         hack('61686322h', '7265626Dh', '6C61685Fh', '65776F6Ch', 'C9006E65h', '00000071h', 5)
     elseif MaxJTyMTRE == 19 then
@@ -1776,27 +1759,28 @@ function menuDecorHaloween()
     elseif MaxJTyMTRE == 20 then
         hack('63656D18h', '72745368h', '616D7761h', '0000006Eh', 'C9D85C63h', '00000071h', 5)
     elseif MaxJTyMTRE == 21 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 22 then
         hack('6C616820h', '65776F6Ch', '635F6E65h', '6C747361h', '79540065h', '0000007Ah', 5)
     elseif MaxJTyMTRE == 23 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 24 then
         hack('6C616826h', '65776F6Ch', '735F6E65h', '65726163h', '776F7263h', '00000000h', 5)
     elseif MaxJTyMTRE == 25 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 26 then
         hack('1836404762', '1852402544', '1952795999', '28530', '672503271', '110', 5)
     elseif MaxJTyMTRE == 27 then
         hack('1818314780', '1702326124', '1348431461', '7041633', '672503271', '110', 5)
     elseif MaxJTyMTRE == 28 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 29 then
-        gg.toast("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28 loc 28")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x3B8, 0x3BC, 0x3C0, 0x3C4,
+            0x3C8, 0x3CC)
     elseif MaxJTyMTRE == 30 then
-        gg.toast("1633907478;1667201394;1953528178;49;35 loc 35")
+        hackDecor("1633907478;1667201394;1953528178;49;35", "35", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTyMTRE == 31 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTyMTRE == 32 then
         hack('6C61681Ch', '65776F6Ch', '745F6E65h', '00656572h', '00000000h', '00000000h', 5)
     elseif MaxJTyMTRE == 33 then
@@ -1880,31 +1864,31 @@ function menuDecorSports()
     elseif MaxJTUTR == 7 then
         hack('1651458586', '1768254579', '1632790631', '25955', '746717682', '50', 5)
     elseif MaxJTUTR == 8 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 9 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 10 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 11 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 12 then
         hack('7275631Ch', '676E696Ch', '6E75725Fh', '0072656Eh', 'C9D85C63h', '00000071h', 5)
     elseif MaxJTUTR == 13 then
         hack('1936286762', '1416852835', '2003792488', '1633645157', '1701405550', '29806', 5)
     elseif MaxJTUTR == 14 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 15 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 16 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 17 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 18 then
-        gg.toast("33;23;7959669;1768649504;2003780467 loc 23")
+        hackDecor("33;23;7959669;1768649504;2003780467", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTUTR == 19 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 20 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 21 then
         hack('1768649504', '2003780467', '2037149535', '1634300013', '-1699151772', '113', 5)
     elseif MaxJTUTR == 22 then
@@ -1916,9 +1900,9 @@ end
 
 function menuDecorAirplane()
     MaxEWQT = gg.choice({"1 • Flight Simulator", "2 • Steam Plane", "3 • Biplane", "4 • Winged Winner",
-                         "5 • Air Galleon", "6 • amphibious_aircraft", "7 • Biomasspowered Airplane",
-                         "8 • Experimental Plane", "9 • flyseasoned_friends", "10 • hat_air_balloon",
-                         "11 • piggy_blimp", "❌ • Return"}, nil)
+                         "5 • Air Galleon", "6 • Amphibious Aircraft", "7 • Biomasspowered Airplane",
+                         "8 • Experimental Plane", "9 • Flyseasoned Friends", "10 • Hat Air Balloon",
+                         "11 • Piggy Blimp", "❌ • Return"}, nil)
 
     if MaxEWQT == nil then
         return
@@ -1933,15 +1917,18 @@ function menuDecorAirplane()
     elseif MaxEWQT == 5 then
         hack("61656222h", "5F797475h", "69796C66h", "6873676Eh", "72007069h", "00006400h", 5)
     elseif MaxEWQT == 6 then
-        gg.toast("33;28;7959669;1701860140;1818323299 loc 28")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x1998, 0x199C, 0x19A0,
+            0x19A4, 0x19A8, 0x19AC)
     elseif MaxEWQT == 7 then
         hack("6570532Ah", "6C616963h", "75616542h", "625F7974h", "6C706F69h", "00006E61h", 5)
     elseif MaxEWQT == 8 then
-        gg.toast("1869898092;1819303794;6647393;1634034188;795966;9;1811970420;33;24")
+        hackDecor("1869898092;1819303794;6647393;1634034188;795966;9;1811970420;33;24", "24", 0x788, 0x784, 0x780,
+            0x77C, 0x778, 0x774)
     elseif MaxEWQT == 9 then
-        gg.toast("Updating")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x1AD8, 0x1ADC, 0x1AE0,
+            0x1AE4, 0x1AE8, 0x1AEC)
     elseif MaxEWQT == 10 then
-        gg.toast("656E6E61h;00000072h;61656220Ch;00797475h;33;0;26;0 loc 26")
+        hackDecor("656E6E61h;00000072h;61656220Ch;00797475h;33;0;26;0", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxEWQT == 11 then
         hack("72696420h", "61656769h", "73656C62h", "75746174h", "656E0065h", "000072h", 5)
     else
@@ -2031,7 +2018,7 @@ function menuDecorRuins()
     elseif MaxPOYUT == 12 then
         hack('6C61661Ch', '5F6E6F63h', '746E7568h', '00676E69h', '00000000h', '00000000h', 5)
     elseif MaxPOYUT == 13 then
-        gg.toast("33;24;1634034188;7959669;1634034214;1635013490:93 loc 24")
+        hackDecor("33;24;1634034188;7959669;1634034214;1635013490:93", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxPOYUT == 14 then
         hack('6172611Eh', '5F636962h', '5F6E696Ah', '706D616Ch', 'DA306800h', 'FFFF0000h', 5)
     elseif MaxPOYUT == 15 then
@@ -2057,21 +2044,22 @@ function menuDecorRuins()
     elseif MaxPOYUT == 25 then
         hack('1634885928', '1600350562', '1633643617', '1885302377', '1667329121', '101', 5)
     elseif MaxPOYUT == 26 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxPOYUT == 27 then
         hack('61656222h', '5F797475h', '6E6F7473h', '6E656865h', '00006567h', '00000000h', 5)
     elseif MaxPOYUT == 28 then
         hack("6165621Ch", "5F797475h", "6D6D616Dh", "0068746Fh", "00000000h", "00000000h", 5)
     elseif MaxPOYUT == 29 then
-        gg.toast("1769300575;1852400748;103;1096776052;1918989681;7;173481;33;23 loc 23")
+        hackDecor("1769300575;1852400748;103;1096776052;1918989681;7;173481;33;23", "23", 0x788, 0x784, 0x780, 0x77C,
+            0x778, 0x774)
     elseif MaxPOYUT == 30 then
         hack("6F727426h", "486E616Ah", "6573726Fh", "636E615Fh", "746E6569h", "00000000h", 5)
     elseif MaxPOYUT == 31 then
         hack("61656216h", "5F797475h", "69746579h", "00000000h", "6D4B7A23h", "0000007Ah", 5)
     elseif MaxPOYUT == 32 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxPOYUT == 33 then
-        gg.toast("2003792488;1633645157;1852402976;1969321071;33;26 loc 26")
+        hackDecor("2003792488;1633645157;1852402976;1969321071;33;26", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     else
         menuescolhas2(5)
     end
@@ -2106,17 +2094,17 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 4 then
         hack('6570532Ch', '6C616963h', '75616542h', '425F7974h', '69506565h', '00746F6Ch', 5)
     elseif MaxWSFP == 5 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 6 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 7 then
-        gg.toast("1918976788;1416916850;6645106;49;23 loc 23")
+        hackDecor("1918976788;1416916850;6645106;49;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 8 then
         hack('69686312h', '68636B63h', '65006B69h', '0078696Ch', '656E0065h', '00000072h', 5)
     elseif MaxWSFP == 9 then
-        gg.toast("1935754524;1601332596;1852732770;7562601;33;29 loc 29")
+        hackDecor("1935754524;1601332596;1852732770;7562601;33;29", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 10 then
-        gg.toast("1852785438;1952671078;1701736297;2003;780466;49;23 loc 23")
+        hackDecor("1852785438;1952671078;1701736297;2003;780466;49;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 11 then
         hack('61747320h', '5F657574h', '74616F62h', '6C6F675Fh', '656E0064h', '00000072h', 5)
     elseif MaxWSFP == 12 then
@@ -2130,27 +2118,29 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 16 then
         hack('1701860134', '1818323299', '1969317186', '1415543156', '1835365487', '0', 5)
     elseif MaxWSFP == 17 then
-        gg.toast("33;28;7959669;1684622102;1767985779 loc 28")
+        hackDecor("33;28;7959669;1684622102;1767985779", "28", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 18 then
         hack('1634034216', '1601795189', '1769369421', '1970226789', '1767994478', '110', 5)
     elseif MaxWSFP == 19 then
         hack('1919503384', '1970226785', '1767994478', '110', '700281330', '0', 5)
     elseif MaxWSFP == 20 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 21 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 22 then
         hack('1634231064', '1869181037', '1969446766', '112', '2040695907', '122', 5)
     elseif MaxWSFP == 23 then
-        gg.toast("1702259044;1650422642;1769300575;1852400748;1752394086;1918987615;49;35 loc 35")
+        hackDecor("1702259044;1650422642;1769300575;1852400748;1752394086;1918987615;49;35", "35", 0x788, 0x784, 0x780,
+            0x77C, 0x778, 0x774)
     elseif MaxWSFP == 24 then
-        gg.toast("1634496550;1765893486;33;29;7959669 loc 29")
+        hackDecor("1634496550;1765893486;33;29;7959669", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 25 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 26 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 27 then
-        gg.toast("33;25;1634034188;7959669;1811970420;1819502872;160;0417377;1718185579;101 loc 25")
+        hackDecor("33;25;1634034188;7959669;1811970420;1819502872;160;0417377;1718185579;101", "25", 0x788, 0x784,
+            0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 28 then
         hack('776F632Ah', '53796F62h', '75746174h', '69775F65h', '6577646Ch', '5C007473h', 5)
     elseif MaxWSFP == 29 then
@@ -2158,11 +2148,11 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 30 then
         hack('6165622Ah', '5F797475h', '6F6C6F63h', '676E6972h', '6275635Fh', '00007365h', 5)
     elseif MaxWSFP == 31 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 32 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 33 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 34 then
         hack('1769100296', '111', '0', '0', '0', '0', 5)
     elseif MaxWSFP == 35 then
@@ -2170,37 +2160,39 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 36 then
         hack('1634034220', '1601795189', '1836674127', '1180920176', '1953396079', '7235937', 5)
     elseif MaxWSFP == 37 then
-        gg.toast("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28 loc 28")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", -0x08, -0x04, 0x00, 0x04,
+            0x08, 0x0C)
     elseif MaxWSFP == 38 then
         hack('67696212h', '6E636950h', '0C006369h', '00000079h', '0C650A23h', '00000079h', 5)
     elseif MaxWSFP == 39 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 40 then
-        gg.toast("49;23;1634034216;1601795189;1952543859;1885300085;1668180338;101 loc 23")
+        hackDecor("49;23;1634034216;1601795189;1952543859;1885300085;1668180338;101", "23", 0x788, 0x784, 0x780, 0x77C,
+            0x778, 0x774)
     elseif MaxWSFP == 41 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 42 then
-        gg.toast("33;31;7959669;1935754526;1601332596 loc 31")
+        hackDecor("33;31;7959669;1935754526;1601332596", "31", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 43 then
         hack('1701860130', '1818323299', '1969317186', '1398765940', '-352293259', '111', 5)
     elseif MaxWSFP == 44 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 45 then
         hack('1634034212', '1601795189', '1834973493', '1836412527', '7630437', '0', 5)
     elseif MaxWSFP == 46 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 47 then
         hack('6165621Ah', '5F797475h', '61746974h', '0000736Eh', '5D22AA23h', '0000007Ah', 5)
     elseif MaxWSFP == 48 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 49 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 50 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxWSFP == 51 then
-        gg.toast("49;26;1818318364;1769238117;1834968430;7237487 loc 26")
+        hackDecor("49;26;1818318364;1769238117;1834968430;7237487", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxWSFP == 52 then
-        gg.toast("Updating")
+        hack('6F6F7A12h', '6365645Fh', '0000726Fh', '00000000h', '00000000h', '00000000h', 5)
     else
         menuescolhas2(5)
     end
@@ -2284,9 +2276,9 @@ function menuDecorInflatable()
     elseif MaxVXCS == 14 then
         hack('1701860140', '1818323299', '1969317186', '1717533044', '1817213292', '6647393', 5)
     elseif MaxVXCS == 15 then
-        gg.toast("33;30;7959669;1684622102;1767985779 loc 30")
+        hackDecor("33;30;7959669;1684622102;1767985779", "30", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxVXCS == 16 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 17 then
         hack('1634034210', '1601795189', '1600614244', '1819042146', '771780207', '11', 5)
     elseif MaxVXCS == 18 then
@@ -2296,15 +2288,15 @@ function menuDecorInflatable()
     elseif MaxVXCS == 20 then
         hack('1701860138', '1818323299', '1969317186', '1717533044', '1967421804', '27491', 5)
     elseif MaxVXCS == 21 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 22 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 23 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 24 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 25 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 26 then
         hack('1634034218', '1601795189', '1819042146', '1601073007', '1668178276', '29285', 5)
     elseif MaxVXCS == 27 then
@@ -2312,7 +2304,7 @@ function menuDecorInflatable()
     elseif MaxVXCS == 28 then
         hack('1634034218', '1601795189', '1869373794', '1717530223', '1702326124', '29554', 5)
     elseif MaxVXCS == 29 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxVXCS == 30 then
         hack('1935754018', '1600482420', '1835102804', '1768714096', '1711301998', '140', 5)
     elseif MaxVXCS == 31 then
@@ -2448,39 +2440,39 @@ function menuDecorChina()
     elseif MaxCHIMN == 6 then
         hack('7461721Ch', '64726147h', '6A5F6E65h', '00706D75h', '69000065h', '0000676Eh', 5)
     elseif MaxCHIMN == 7 then
-        gg.toast("49;1634039574;1600681068::65 loc 49.")
+        hackDecor("49;1634039574;1600681068::65", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 8 then
-        gg.toast("1634034218;2003791475;29285;1634034188;33::81 loc 33")
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 9 then
         hack('1634886696', '1601072999', '1952543859', '1398760821', '809000784', '48', 5)
     elseif MaxCHIMN == 10 then
         hack('1768440602', '1702061422', '1852727618', '29285', '716481010', '126', 5)
     elseif MaxCHIMN == 11 then
-        gg.toast("33;26;7959669;1701860138;1818323299 loc 26")
+        hackDecor("33;26;7959669;1701860138;1818323299", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 12 then
         hack('1918984990', '1702065519', '1970429804', '1919250030', '0', '0', 5)
     elseif MaxCHIMN == 13 then
-        gg.toast("33;25;1768440602;1702061422;1852727618;29285 loc 25")
+        hackDecor("33;25;1768440602;1702061422;1852727618;29285", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 14 then
         hack('1634886696', '1601072999', '1952543859', '1398760821', '809000784', '48', 5)
     elseif MaxCHIMN == 15 then
-        gg.toast("49;1919510038;1869574757::65 loc 49")
+        hackDecor("49;1919510038;1869574757::65", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 16 then
-        gg.toast("1634034218;1601795189;1601069421;29285;29::249 loc 29")
+        hackDecor("1634034218;1601795189;1601069421;29285;29::249", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 17 then
-        gg.toast("1768440596;1702061422;33;26 loc 26")
+        hackDecor("1768440596;1702061422;33;26", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 18 then
-        gg.toast("49;1869760020;1635013479;1634034210::65 loc 49")
+        hackDecor("49;1869760020;1635013479;1634034210::65", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 19 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxCHIMN == 20 then
         hack('69684326h', '6573656Eh', '705F594Eh', '74536769h', '65757461h', '00000000h', 5)
     elseif MaxCHIMN == 21 then
-        gg.toast("1634034218;1601069421;33;27;1634034188;7959669:109 loc 27")
+        hackDecor("1634034218;1601069421;33;27;1634034188;7959669:109", "27", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 22 then
-        gg.toast("33;30;1768440596;1702061422;6778692 loc 30")
+        hackDecor("33;30;1768440596;1702061422;6778692", "30", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 23 then
-        gg.toast("49;1684369938;1852400748::125 loc 49")
+        hackDecor("49;1684369938;1852400748::125", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     else
         menuescolhas2(5)
     end
@@ -2493,7 +2485,7 @@ function menuDecorCowboy()
     if MaxCHIMN == nil then
         return
     elseif MaxCHIMN == 1 then
-        gg.toast("33;25;7959669;2003780370;1769239105 loc 25")
+        hackDecor("33;25;7959669;2003780370;1769239105", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxCHIMN == 2 then
         hack('1634034202', '1601795189', '1869373811', '28271', '0', '0', 5)
     elseif MaxCHIMN == 3 then
@@ -2501,7 +2493,7 @@ function menuDecorCowboy()
     elseif MaxCHIMN == 4 then
         hack('1634488340', '1247767406', '7365989', '120', '1714630657', '140', 5)
     elseif MaxCHIMN == 5 then
-        gg.toast("33;23;7959669;1852796956;1769430884 loc 23")
+        hackDecor("33;23;7959669;1852796956;1769430884", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     else
         menuescolhas2(5)
     end
@@ -2526,9 +2518,9 @@ function menuDecorFlower()
     elseif MaxFGJZ == 1 then
         hack('1667580958', '1415541359', '1214604658', '1702065519', '0', '0', 5)
     elseif MaxFGJZ == 2 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 3 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 4 then
         hack('1986085652', '1817206629', '6644577', '116', '0', '0', 5)
     elseif MaxFGJZ == 5 then
@@ -2542,7 +2534,7 @@ function menuDecorFlower()
     elseif MaxFGJZ == 9 then
         hack('6F6C6618h', '5F726577h', '73756F68h', '00000065h', '00000000h', '00000000h', 5)
     elseif MaxFGJZ == 10 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 11 then
         hack('61656222h', '645F6863h', '65636E61h', '6F6C665Fh', '6C00726Fh', '0000007Ah', 5)
     elseif MaxFGJZ == 12 then
@@ -2570,7 +2562,7 @@ function menuDecorFlower()
     elseif MaxFGJZ == 23 then
         hack('1818316832', '1702130789', '1819632467', '1920300144', '700252261', '0', 5)
     elseif MaxFGJZ == 24 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 25 then
         hack('1801546780', '1970235493', '1751082355', '6647151', '1714630657', '102', 5)
     elseif MaxFGJZ == 26 then
@@ -2582,7 +2574,7 @@ function menuDecorFlower()
     elseif MaxFGJZ == 29 then
         hack('756F661Ah', '6961746Eh', '72745F6Eh', '00006565h', '00000000h', '00000000h', 5)
     elseif MaxFGJZ == 30 then
-        gg.toast("33;24;7959669;1919512614;1399157857 loc 24")
+        hackDecor("33;24;7959669;1919512614;1399157857", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 31 then
         hack('1634486042', '1852403821', '1631805287', '28781', '120', '0', 5)
     elseif MaxFGJZ == 32 then
@@ -2629,7 +2621,7 @@ function menuDecorKids()
     elseif MaTPKi == 2 then
         hack('6C616716h', '7972656Ch', '7472615Fh', '00000000h', 'C877AC63h', '00000071h', 5)
     elseif MaTPKi == 3 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 4 then
         hack('1734432540', '1298099823', '1953396079', '7235937', '0', '0', 5)
     elseif MaTPKi == 5 then
@@ -2645,7 +2637,7 @@ function menuDecorKids()
     elseif MaTPKi == 10 then
         hack('6E697226h', '6D614767h', '75735F65h', '6E696672h', '73726567h', '00000000h', 5)
     elseif MaTPKi == 11 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 12 then
         hack('1852392466', '1632853871', '2013291878', '116', '0', '0', 5)
     elseif MaTPKi == 13 then
@@ -2653,7 +2645,7 @@ function menuDecorKids()
     elseif MaTPKi == 14 then
         hack('1936286756', '1866887011', '1702258034', '1970102130', '6515059', '113', 5)
     elseif MaTPKi == 15 then
-        gg.toast("33;23;7959669;1668440348;2037540200 loc 23")
+        hackDecor("33;23;7959669;1668440348;2037540200", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaTPKi == 16 then
         hack('1920291604', '1698979686', '7499619', '120', '1714630657', '140', 5)
     elseif MaTPKi == 17 then
@@ -2661,13 +2653,13 @@ function menuDecorKids()
     elseif MaTPKi == 18 then
         hack('1937067286', '1398760297', '1701733731', '0', '0', '0', 5)
     elseif MaTPKi == 19 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 20 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 21 then
         hack('1885423644', '1096776048', '1918989681', '7173481', '672503271', '110', 5)
     elseif MaTPKi == 22 then
-        gg.toast("49;34;7959669;1701860140;1818323299 loc 34")
+        hackDecor("49;34;7959669;1701860140;1818323299", "34", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaTPKi == 23 then
         hack('6E796424h', '6D6F6D61h', '72657465h', '7365725Fh', '00657563h', '00000071h', 5)
     elseif MaTPKi == 24 then
@@ -2683,9 +2675,9 @@ function menuDecorKids()
     elseif MaTPKi == 29 then
         hack('64617220h', '61726F69h', '725F6563h', '75637365h', 'C9D80065h', '00000071h', 5)
     elseif MaTPKi == 30 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 31 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 32 then
         hack('6D61671Ah', '796F6265h', '6C65685Fh', '00007869h', 'C9D85C63h', '00000071h', 5)
     elseif MaTPKi == 33 then
@@ -2703,17 +2695,17 @@ function menuDecorKids()
     elseif MaTPKi == 39 then
         hack('6E69701Ah', '6C6C6162h', '6C65685Fh', '00007869h', 'C9D85C63h', '00000071h', 5)
     elseif MaTPKi == 40 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 41 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 42 then
         hack('1667580956', '1381986927', '1885696111', '7041633', '672503271', '110', 5)
     elseif MaTPKi == 43 then
         hack('69617318h', '676E696Ch', '6361725Fh', '00000065h', '00000000h', '00000000h', 5)
     elseif MaTPKi == 44 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 45 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 46 then
         hack('64617220h', '61726F69h', '725F6563h', '75637365h', 'C9D80065h', '00000071h', 5)
     elseif MaTPKi == 47 then
@@ -2725,21 +2717,21 @@ function menuDecorKids()
     elseif MaTPKi == 50 then
         hack('6165622Ah', '5F797475h', '65707553h', '72656872h', '6174536Fh', '0000646Eh', 5)
     elseif MaTPKi == 51 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 52 then
         hack('1634882588', '1866690153', '1668637806', '7499636', '672503', '271', 5)
     elseif MaTPKi == 53 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 54 then
         hack('1918984988', '1702065519', '1701338988', '7891308', '2040695907', '122', 5)
     elseif MaTPKi == 55 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaTPKi == 56 then
         hack('6E6F6322h', '74636174h', '5F6F6F5Ah', '63736572h', 'C9006575h', '00000071h', 5)
     elseif MaTPKi == 57 then
         hack('6165621Eh', '5F797475h', '706C6F64h', '736E6968h', '00007000h', '0000646Eh', 5)
     elseif MaTPKi == 58 then
-        gg.toast("74695710h;6F506863h;6165620Ch;00797475h;33;0;29;0 loc 29")
+        hackDecor("74695710h;6F506863h;6165620Ch;00797475h;33;0;29;0", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaTPKi == 59 then
         hack('1919895580', '1130325363', '1970238049', '7103859', '1714630657', '140', 5)
     elseif MaTPKi == 60 then
@@ -2764,9 +2756,9 @@ function menuDecorEaster()
     if MaxFGJZ == nil then
         return
     elseif MaxFGJZ == 1 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 2 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 3 then
         hack('1935754520', '1601332596', '1668179302', '1702035557', '1701999616', '101', 5)
     elseif MaxFGJZ == 4 then
@@ -2776,33 +2768,33 @@ function menuDecorEaster()
     elseif MaxFGJZ == 6 then
         hack('1935762714', '1215456628', '1869442401', '27491', '777757170', '90', 5)
     elseif MaxFGJZ == 7 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 8 then
         hack('1935762716', '1383228788', '1919707489', '6578543', '73836291', '0', 5)
     elseif MaxFGJZ == 9 then
         hack('1819230994', '1163883119', '671115111', '110', '672503271', '110', 5)
     elseif MaxFGJZ == 10 then
-        gg.toast("1935754520;1601332596;1668179302;101;33;27 loc 27")
+        hackDecor("1935754520;1601332596;1668179302;101;33;27", "27", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 11 then
-        gg.toast("33;31;1935762716;1601332596;1952670054;7959151 loc 31")
+        hackDecor("33;31;1935762716;1601332596;1952670054;7959151", "31", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 12 then
         hack('1935762716', '1601332596', '1952670054', '7959151', '0', '0', 5)
     elseif MaxFGJZ == 13 then
-        gg.toast("33;25;1935762716;1601332596;1952670054;7959151 loc 25")
+        hackDecor("33;25;1935762716;1601332596;1952670054;7959151", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 14 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 15 then
         hack('1935754524', '1601332596', '1852732770', '7562601', '0', '0', 5)
     elseif MaxFGJZ == 16 then
-        gg.toast("33;26;7959669;1935762716;1601332596 loc 26")
+        hackDecor("33;26;7959669;1935762716;1601332596", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 17 then
         hack('1734435362', '1852732786', '1600613993', '1953718629', '1627419237', '25972', 5)
     elseif MaxFGJZ == 18 then
-        gg.toast("1935754520;1601332596;1668179302;101;49;32 loc 32")
+        hackDecor("1935754520;1601332596;1668179302;101;49;32", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 19 then
         hack('1935754518', '1400006004', '1886221684', '0', '0', '0', 5)
     elseif MaxFGJZ == 20 then
-        gg.toast("1818318362;1769238117;1801413998;31077;49;34 loc 34")
+        hackDecor("1818318362;1769238117;1801413998;31077;49;34", "34", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     else
         menuescolhas2(5)
     end
@@ -2821,31 +2813,31 @@ function menuDecorPirate()
     elseif MaxJTUTR == 1 then
         hack('1919512614', '1399157857', '1601202536', '1634038388', '1701999987', '0', 5)
     elseif MaxJTUTR == 2 then
-        gg.toast("1701860138;1969317186;49;33;1634034188;7959669:269 loc 33")
+        hackDecor("1701860138;1969317186;49;33;1634034188;7959669:269", "33", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTUTR == 3 then
         hack('6570532Ah', '6C616963h', '75616542h', '535F7974h', '47706968h', '00006E75h', 5)
     elseif MaxJTUTR == 4 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 5 then
         hack('1634034216', '1601795189', '1953653104', '1768972153', '1702125938', '115', 5)
     elseif MaxJTUTR == 6 then
         hack('2003784722', '1632001902', '-318737815', '120', '1714630657', '151', 5)
     elseif MaxJTUTR == 7 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxJTUTR == 8 then
         hack('72695014h', '46657461h', '0074726Fh', '00000079h', '0C650A23h', '00000079h', 5)
     elseif MaxJTUTR == 9 then
         hack('1634034220', '1601795189', '1634888048', '1935631732', '1601202536', '7827298', 5)
     elseif MaxJTUTR == 10 then
-        gg.toast("49;32;1634034188;7959669;1701860138;1969317186:89 loc 32")
+        hackDecor("49;32;1634034188;7959669;1701860138;1969317186:89", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTUTR == 11 then
-        gg.toast("33;26;1634034188;7959669;1919120168;1684368735:573 loc 26")
+        hackDecor("33;26;1634034188;7959669;1919120168;1684368735:573", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTUTR == 12 then
-        gg.toast("33;26;1634034188;7959669;1919120168;1684368735:573 loc 26")
+        hackDecor("33;26;1634034188;7959669;1919120168;1684368735:573", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTUTR == 13 then
         hack('1885430568', '1852399988', '1952543827', '1885300085', '1952543337', '101', 5)
     elseif MaxJTUTR == 14 then
-        gg.toast("49;32;1634034188;7959669;1701860138;1969317186:89 loc 32")
+        hackDecor("49;32;1634034188;7959669;1701860138;1969317186:89", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxJTUTR == 15 then
         hack('2037147174', '1399287401', '1601202536', '1634038388', '1701999987', '0', 5)
     elseif MaxJTUTR == 16 then
@@ -2874,9 +2866,9 @@ function menuDecorAtlantis()
     elseif MaxFGJZ == 2 then
         hack('61656222h', '5F797475h', '616C7461h', '61685F73h', '6500646Eh', '00726163h', 5)
     elseif MaxFGJZ == 3 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 4 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 5 then
         hack('6165622Ah', '5F797475h', '616C7461h', '7369746Eh', '746F685Fh', '00006C65h', 5)
     elseif MaxFGJZ == 6 then
@@ -2886,7 +2878,7 @@ function menuDecorAtlantis()
     elseif MaxFGJZ == 8 then
         hack('1634486038', '1916957555', '1701274729', '0', '0', '0', 5)
     elseif MaxFGJZ == 9 then
-        gg.toast("33;25;7959669;1970234112;570455150 loc 25")
+        hackDecor("33;25;7959669;1970234112;570455150", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 10 then
         hack('1634034206', '1601795189', '1702063984', '1852793961', '0', '0', 5)
     elseif MaxFGJZ == 11 then
@@ -2900,7 +2892,7 @@ function menuDecorAtlantis()
     elseif MaxFGJZ == 15 then
         hack('63726128h', '6F656168h', '79676F6Ch', '6C74615Fh', '69746E61h', '00000073h', 5)
     elseif MaxFGJZ == 16 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 17 then
         hack('1701860138', '1818323299', '1969317186', '1834973556', '1634562661', '25705', 5)
     elseif MaxFGJZ == 18 then
@@ -2928,7 +2920,7 @@ function menuDecorFruit()
     elseif MaxFGJZ == 2 then
         hack('72616612h', '73756D6Dh', '65006369h', '73726500h', '656E0000h', '00000072h', 5)
     elseif MaxFGJZ == 3 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 4 then
         hack("69616616h", "65725F72h", "65756373h", "00007000h", "0564D508h", "00000022h", 5)
     elseif MaxFGJZ == 5 then
@@ -2942,19 +2934,20 @@ function menuDecorFruit()
     elseif MaxFGJZ == 9 then
         hack("7572661Eh", "61507469h", "6B5F6B72h", "6566696Eh", "05659600h", "00000000h", 5)
     elseif MaxFGJZ == 10 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 11 then
         hack('1701601818', '1919247470', '1768844127', '25958', '0', '0', 5)
     elseif MaxFGJZ == 12 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 13 then
-        gg.toast("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28 loc 28")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x598, 0x59C, 0x5A0, 0x5A4,
+            0x5A8, 0x5AC)
     elseif MaxFGJZ == 14 then
-        gg.toast("1734702620;1650553957;1817208172;6644577;49;27 loc 27")
+        hackDecor("1734702620;1650553957;1817208172;6644577;49;27", "27", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 15 then
         hack('1634879254', '1348429168', '1936942450', '0', '672503271', '110', 5)
     elseif MaxFGJZ == 16 then
-        gg.toast("1734702622;1650553957;1631741292;1952803699;49;23 loc 23")
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x688, 0x68C, 0x690, 0x694, 0x698, 0x69C)
     elseif MaxFGJZ == 17 then
         hack('1919895576', '1632132974', '1936029298', '116', '672503271', '110', 5)
     elseif MaxFGJZ == 18 then
@@ -2966,15 +2959,15 @@ function menuDecorFruit()
     elseif MaxFGJZ == 21 then
         hack('1735544600', '1667853921', '1869108063', '112', '672503271', '110', 5)
     elseif MaxFGJZ == 22 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 23 then
         hack('1836412950', '1852402544', '1701011826', '0', '0', '0', 5)
     elseif MaxFGJZ == 24 then
         hack('61656228h', '5F797475h', '61727970h', '5F64696Dh', '66696E6Bh', '00000065h', 5)
     elseif MaxFGJZ == 25 then
-        gg.toast("1734702620;1650553957;1867015532;6648693;49;27 loc 27")
+        hackDecor("1734702620;1650553957;1867015532;6648693;49;27", "27", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 26 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     else
         menuescolhas2(5)
     end
@@ -2994,7 +2987,7 @@ function menuDecorEntertainment()
     elseif MaxFGJZ == 1 then
         hack('1701344296', '1919251553', '1868915791', '1851875182', '1852139875', '116', 5)
     elseif MaxFGJZ == 2 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 3 then
         hack('1818314782', '1702326124', '1331654245', '1851877234', '67250', '3040', 5)
     elseif MaxFGJZ == 4 then
@@ -3002,7 +2995,7 @@ function menuDecorEntertainment()
     elseif MaxFGJZ == 5 then
         hack('1987013650', '1634034188', '7959669', '1811970420', '1769300575', '1852400748', 5)
     elseif MaxFGJZ == 6 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 7 then
         hack('1935754784', '1852795240', '1970225759', '1970366836', '672464997', '110', 5)
     elseif MaxFGJZ == 8 then
@@ -3022,7 +3015,7 @@ function menuDecorEntertainment()
     elseif MaxFGJZ == 15 then
         hack('6C696626h', '6B616D6Dh', '5F676E69h', '61657274h', '65727573h', '00000000h', 5)
     elseif MaxFGJZ == 16 then
-        gg.toast("Updating")
+        gg.alert("Updating")
     elseif MaxFGJZ == 17 then
         hack('6165732Ch', '556E6F73h', '74536F66h', '6F696475h', '6E69635Fh', '00616D65h', 5)
     elseif MaxFGJZ == 18 then
@@ -3195,6 +3188,2616 @@ function menuBadge()
     end
 end
 
+function menuSign()
+    MCARTE = gg.choice({'1 • Fountain Sign', '2 • Aloha Sign', '3 • Aviator Sign', '4 • Big Screen Sign',
+                        '5 • Old Ranch Sign', '6 • Windmill Sign', '7 • Mechanical Sign', '8 • Cactus Sign',
+                        '9 • Artisan Sign', '10 • Flower Sign', '11 • Awesome Sign', '12 • Musical Sign',
+                        '13 • Luminous Sign', '14 • Neon Sign', '15 • Wild West Sign', '16 • Christmas Sign',
+                        '17 • Large Halloween Sign', '18 • City Day Sign', '19 • Farmer Card',
+                        '20 • City of Lights Card', '21 • City of Dreams Card', '22 • Ancestral Card',
+                        '23 • Stone Card', '24 • Zero Card', '25 • Easter Card', '26 • Paranormal Card',
+                        '27 • Inflatable Monster Card', '28 • Snowboard Card', '29 • Bubblegum World Card',
+                        '30 • Beach Bar Card', '31 • Sweet Home Card', '32 • Story Card', '33 • Rocker Card',
+                        '34 • Card 26', '35 • Card 27', '36 • Card 28', '37 • Card 29', '38 • Card 30',
+                        '39 • Card 31', '40 • Card 32', '41 • Card 33', '42 • Card 34', '43 • Card 35',
+                        '44 • Card 36', '45 • Card 37', '46 • Card 38', '47 • Card 39', '48 • Card 40',
+                        '49 • Card 41', '50 • Card 42', '51 • Card 43', '52 • Card 44', '53 • Carte 45',
+                        '54 • Card 46', '55 • Card 47', '❌ • Back'}, nil)
+
+    if MCARTE == nil then
+        return
+    elseif MCARTE == 1 then
+        Cartel_1()
+    elseif MCARTE == 2 then
+        Cartel_2()
+    elseif MCARTE == 3 then
+        Cartel_3()
+    elseif MCARTE == 4 then
+        Cartel_4()
+    elseif MCARTE == 5 then
+        Cartel_5()
+    elseif MCARTE == 6 then
+        Cartel_6()
+    elseif MCARTE == 7 then
+        Cartel_7()
+    elseif MCARTE == 8 then
+        Cartel_8()
+    elseif MCARTE == 9 then
+        Cartel_9()
+    elseif MCARTE == 10 then
+        Cartel_10()
+    elseif MCARTE == 11 then
+        Cartel_11()
+    elseif MCARTE == 12 then
+        Cartel_12()
+    elseif MCARTE == 13 then
+        Cartel_13()
+    elseif MCARTE == 14 then
+        Cartel_14()
+    elseif MCARTE == 15 then
+        Cartel_15()
+    elseif MCARTE == 16 then
+        Cartel_16()
+    elseif MCARTE == 17 then
+        Cartel_17()
+    elseif MCARTE == 18 then
+        Cartel_18()
+    elseif MCARTE == 19 then
+        Cartel_19()
+    elseif MCARTE == 20 then
+        Cartel_20()
+    elseif MCARTE == 21 then
+        Cartel_21()
+    elseif MCARTE == 22 then
+        Cartel_22()
+    elseif MCARTE == 23 then
+        Cartel_23()
+    elseif MCARTE == 24 then
+        Cartel_24()
+    elseif MCARTE == 25 then
+        Cartel_25()
+    elseif MCARTE == 26 then
+        Cartel_26()
+    elseif MCARTE == 27 then
+        Cartel_27()
+    elseif MCARTE == 28 then
+        Cartel_28()
+    elseif MCARTE == 29 then
+        Cartel_29()
+    elseif MCARTE == 30 then
+        Cartel_30()
+    elseif MCARTE == 31 then
+        Cartel_31()
+    elseif MCARTE == 32 then
+        Cartel_32()
+    elseif MCARTE == 33 then
+        Cartel_33()
+    elseif MCARTE == 34 then
+        Cartel_34()
+    elseif MCARTE == 35 then
+        Cartel_35()
+    elseif MCARTE == 36 then
+        Cartel_36()
+    elseif MCARTE == 37 then
+        Cartel_37()
+    elseif MCARTE == 38 then
+        Cartel_38()
+    elseif MCARTE == 39 then
+        Cartel_39()
+    elseif MCARTE == 40 then
+        Cartel_40()
+    elseif MCARTE == 41 then
+        Cartel_41()
+    elseif MCARTE == 42 then
+        Cartel_42()
+    elseif MCARTE == 43 then
+        Cartel_43()
+    elseif MCARTE == 44 then
+        Cartel_44()
+    elseif MCARTE == 45 then
+        Cartel_45()
+    elseif MCARTE == 46 then
+        Cartel_46()
+    elseif MCARTE == 47 then
+        Cartel_47()
+    elseif MCARTE == 48 then
+        Cartel_48()
+    elseif MCARTE == 49 then
+        Cartel_49()
+    elseif MCARTE == 50 then
+        Cartel_50()
+    elseif MCARTE == 51 then
+        Cartel_51()
+    elseif MCARTE == 52 then
+        Cartel_52()
+    elseif MCARTE == 53 then
+        Cartel_53()
+    elseif MCARTE == 54 then
+        Cartel_54()
+    elseif MCARTE == 55 then
+        Cartel_55()
+    else
+        menuescolhas2(1)
+    end
+
+end
+
+---- HACK SIGN
+function Cartel_1()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x08,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x04,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0x04,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0x08,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0x0C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_2()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0x48,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0x4C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0x50,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0x54,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0x58,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0x5C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_3()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x58,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x54,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x50,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x4C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x48,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x44,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_4()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0xA8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0xA4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0xA0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x9C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x98,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x94,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_5()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0xF8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0xF4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0xF0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0xEC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0xE8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0xE4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_6()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x148,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x144,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x140,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x13C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x138,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x134,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_7()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x198,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x194,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x190,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x18C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x188,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x184,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_8()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x1E8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x1E4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x1E0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x1DC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x1D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x1D4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_9()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x238,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x234,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x230,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x22C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x228,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x224,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_10()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x288,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x284,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x280,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x27C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x278,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x274,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_11()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x2D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x2D4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x2D0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x2CC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x2C8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x2C4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_12()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x328,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x324,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x320,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x31C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x318,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x314,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_13()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x378,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x374,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x370,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x36C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x368,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x364,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_14()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x3C8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x3C4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x3C0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x3BC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x3B8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x3B4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_15()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x418,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x414,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x410,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x40C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x408,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x404,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_16()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x468,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x464,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x460,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x45C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x458,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x454,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_17()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x4B8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x4B4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x4B0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x4AC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x4A8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x4A4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_18()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x508,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x504,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x500,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x4FC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x4F8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x4F4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_19()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x558,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x554,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x550,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x54C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x548,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x544,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_20()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x5A8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x5A4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x5A0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x59C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x598,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x594,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_21()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x5F8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x5F4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x5F0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x5EC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x5E8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x5E4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_22()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x648,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x644,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x640,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x63C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x638,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x634,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_23()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x698,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x694,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x690,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x68C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x688,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x684,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_24()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x6E8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x6E4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x6E0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x6DC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x6D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x6D4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_25()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address - 0x738,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address - 0x734,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address - 0x730,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address - 0x72C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address - 0x728,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address - 0x724,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_26()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0x98,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0x9C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0xA0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0xA4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0xA8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0xAC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_27()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0xE8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0xEC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0xF0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0xF4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0xF8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0xFC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_28()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0x138,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0x13C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0x140,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0x144,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0x148,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0x14C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_29()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0x188,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0x18C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0x190,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0x194,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0x198,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0x19C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_30()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0x1D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0x1DC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0x1E0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0x1E4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0x1E8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0x1EC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_31()
+    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
+    gg.refineNumber("32", gg.TYPE_DWORD)
+
+    local r = gg.getResults(1) -- load items
+    local val_1 = {}
+    val_1[1] = {
+        address = r[1].address + 0x228,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[1] = {
+        address = r[1].address + 0x22C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[1] = {
+        address = r[1].address + 0x230,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[1] = {
+        address = r[1].address + 0x234,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[1] = {
+        address = r[1].address + 0x238,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[1] = {
+        address = r[1].address + 0x23C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
+    return
+end
+
+function Cartel_32()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0x08,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0x04,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x04,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x08,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x0C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_33()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x48,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x4C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x50,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x54,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x58,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x5C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_34()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x98,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x9C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0xA0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0xA4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0xA8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0xAC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_35()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0xE8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0xEC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0xF0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0xF4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0xF8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0xFC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_36()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x138,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x13C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x140,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x144,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x148,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x14C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_37()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x188,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x18C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x190,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x194,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x198,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x19C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_38()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x1D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x1DC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x1E0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x1E4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x1E8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x1EC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_39()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x228,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x22C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x230,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x234,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x238,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x23C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_40()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x278,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x27C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x280,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x284,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x288,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x28C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_41()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x2C8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x2CC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x2D0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x2D4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x2D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x2DC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_42()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x318,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x31C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x320,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x324,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x328,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x32C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_43()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x368,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x36C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x370,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x374,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x378,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x37C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_44()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x3B8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x3BC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x3C0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x3C4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x3C8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x3CC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_45()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x408,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x40C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x410,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x414,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x418,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x41C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_46()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x458,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x45C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x460,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x464,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x468,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x46C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_47()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x4A8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x4AC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x4B0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x4B4,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x4B8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x4BC,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_48()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x4F8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x4FC,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x500,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x504,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x508,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x50C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_49()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address + 0x548,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address + 0x54C,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address + 0x550,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address + 0x554,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address + 0x558,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address + 0x55C,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_50()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0x58,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0x54,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address - 0x50,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address - 0x4C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address - 0x48,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address - 0x44,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_51()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0xA8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0xA4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address - 0xA0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address - 0x9C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address - 0x98,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address - 0x94,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_52()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0xF8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0xF4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address - 0xF0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address - 0xEC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address - 0xE8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address - 0xE4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_53()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0x148,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0x144,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address - 0x140,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address - 0x13C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address - 0x138,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address - 0x134,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_54()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0x198,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0x194,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address - 0x190,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address - 0x18C,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address - 0x188,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address - 0x184,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
+function Cartel_55()
+    gg.searchNumber("33;26;1953055504;1734955897", gg.TYPE_DWORD)
+    gg.refineNumber("26", gg.TYPE_DWORD)
+
+    local r = gg.getResults(8) -- load items
+    local val_1 = {}
+    val_1[8] = {
+        address = r[8].address - 0x1E8,
+        flags = gg.TYPE_DWORD
+    }
+    val_1 = gg.getValues(val_1) -- refresh items values
+    local val_2 = {}
+    val_2[8] = {
+        address = r[8].address - 0x1E4,
+        flags = gg.TYPE_DWORD
+    }
+    val_2 = gg.getValues(val_2)
+    local val_3 = {}
+    val_3[8] = {
+        address = r[8].address - 0x1E0,
+        flags = gg.TYPE_DWORD
+    }
+    val_3 = gg.getValues(val_3)
+    local val_4 = {}
+    val_4[8] = {
+        address = r[8].address - 0x1DC,
+        flags = gg.TYPE_DWORD
+    }
+    val_4 = gg.getValues(val_4)
+    local val_5 = {}
+    val_5[8] = {
+        address = r[8].address - 0x1D8,
+        flags = gg.TYPE_DWORD
+    }
+    val_5 = gg.getValues(val_5)
+    local val_6 = {}
+    val_6[8] = {
+        address = r[8].address - 0x1D4,
+        flags = gg.TYPE_DWORD
+    }
+    val_6 = gg.getValues(val_6)
+    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
+    return
+end
+
 ---- FORJA HACK
 function hack2()
     gg.toast("Loading...")
@@ -3317,7 +5920,7 @@ function hack13()
         seth(0, int2[1])
         seth(4, 0)
         seth(8, 1)
-        gg.toast("Success...")
+        gg.alert("Success...")
         marketnext = true
 
         local firstTimeMessage = true
@@ -3346,7 +5949,7 @@ function hack13()
                 seth(0, int2[1])
                 seth(4, 0)
                 seth(8, 1)
-                gg.toast("Success...")
+                gg.alert("Success...")
             end
         end
     end
@@ -3574,7 +6177,7 @@ end
 
 ---- GOLDPASS HACK
 function hack15cD()
-    gg.toast("Processing...")
+    gg.alert("Processing...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("6E726526h;6E656577h;35323032h;00626104h;00000031h;0000001Bh", gg.TYPE_DWORD)
@@ -3584,7 +6187,6 @@ function hack15cD()
 
     if gg.getResultCount() == 2 then
         -- do something
-
         local t = {}
         t[2] = {}
         t[2].address = r[2].address - 0x10
@@ -3610,17 +6212,11 @@ function hack15cD()
         gg.setValues(A)
 
         gg.alert("hack done")
-
-        -- gg.clearResults()
     else
-        -- do something else entirely
-        gg.toast("NO done...")
+        gg.alert("NO done...")
         gg.clearResults()
     end
 
-    -- gg.clearResults()
-    -- elseif gg.getResultCount() == 1 then
-    -- do something else
     re = gg.getResults(1)
 
     local te = {}
@@ -3652,7 +6248,7 @@ function hack15cD()
 end
 
 function hack15cDn()
-    gg.toast("Cargando...") -- 696B5326h;69415F6Eh;616C7072h;735F656Eh;65636170h --616C7072h;735F656Eh;65636170h 65726F63h;72616D10h;696B532Ah Skin_Chicken_space 1.937.011.470;1.701.998.435 .erniemars025
+    gg.alert("Cargando...") -- 696B5326h;69415F6Eh;616C7072h;735F656Eh;65636170h --616C7072h;735F656Eh;65636170h 65726F63h;72616D10h;696B532Ah Skin_Chicken_space 1.937.011.470;1.701.998.435 .erniemars025
     gg.processResume() -- 6E72651Ch;00353230h;00000031h 6E72651Ch;32737261h;00000031h  
     gg.clearResults()
     gg.searchNumber("6E726516h;6E617061h;696B531Eh;68535F6Eh", gg.TYPE_DWORD) -- 1852990740;6447474;1768641316
@@ -3721,7 +6317,7 @@ function hack15cDn()
         gg.clearResults()
     else
         -- do something else entirely
-        gg.toast("NO done...")
+        gg.alert("NO done...")
         gg.clearResults()
     end
 
@@ -3817,7 +6413,7 @@ function hack2C()
         else
             seth(0, 100)
         end
-        gg.toast("Éxito...")
+        gg.alert("Exit...")
     end
     gg.clearResults()
 end
@@ -3889,10 +6485,6 @@ function HackCons()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    -- 61702337h 7;00337472h part 3
-
-    -- gg.clearResults()
-
     hackConstr_18h("rExpe_4")
 end
 
@@ -3937,29 +6529,7 @@ function hackConstr_18h(varcJExpe_4)
     }
     val_6 = gg.getValues(val_6)
 
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_4 == "rExpe_4" then
-        setd(-48, 0)
-        setd(-44, 100)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 24)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
+    hack(val_1[1].value, val_2[1].value, 24, val_4[1].value, val_5[1].value, val_6[1].value, 100)
     return
 end
 
@@ -4077,213 +6647,60 @@ function hackGran_1_17h(varcJExpe_3)
     }
     val_6 = gg.getValues(val_6)
 
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_3 == "rExpe_3" then
-        setd(-48, 0)
-        setd(-44, 2000)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 23)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
+    hack(val_1[1].value, val_2[1].value, 23, val_4[1].value, val_5[1].value, val_6[1].value, 5000)
     return
 end
 
 -- navidad
-function Nvidad_1(NvidadR_1)
-    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
-    gg.refineNumber("32", gg.TYPE_DWORD)
-    --	33;26;1953055504;1734955897 ref 26
-    local r = gg.getResults(1) -- load items
+function hackDecor(search, refine, add_1, add_2, add_3, add_4, add_5, add_6)
+    gg.searchNumber(search, gg.TYPE_DWORD)
+    gg.refineNumber(refine, gg.TYPE_DWORD)
+
+    local r = gg.getResults(1)
     local val_1 = {}
     val_1[1] = {
-        address = r[1].address - 0x788,
+        address = r[1].address - add_1,
         flags = gg.TYPE_DWORD
     }
-    val_1 = gg.getValues(val_1) -- refresh items values
+    val_1 = gg.getValues(val_1)
     local val_2 = {}
     val_2[1] = {
-        address = r[1].address - 0x784,
+        address = r[1].address - add_2,
         flags = gg.TYPE_DWORD
     }
     val_2 = gg.getValues(val_2)
     local val_3 = {}
     val_3[1] = {
-        address = r[1].address - 0x780,
+        address = r[1].address - add_3,
         flags = gg.TYPE_DWORD
     }
     val_3 = gg.getValues(val_3)
     local val_4 = {}
     val_4[1] = {
-        address = r[1].address - 0x77C,
+        address = r[1].address - add_4,
         flags = gg.TYPE_DWORD
     }
     val_4 = gg.getValues(val_4)
     local val_5 = {}
     val_5[1] = {
-        address = r[1].address - 0x778,
+        address = r[1].address - add_5,
         flags = gg.TYPE_DWORD
     }
     val_5 = gg.getValues(val_5)
     local val_6 = {}
     val_6[1] = {
-        address = r[1].address - 0x774,
+        address = r[1].address - add_6,
         flags = gg.TYPE_DWORD
     }
     val_6 = gg.getValues(val_6)
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if NvidadR_1 == "r1NvidadR" then -- 18 Tienda de Regalos de Navidad
-        setd(-48, 0)
-        setd(-44, 5)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, val_3[1].value)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
+
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 5)
     return
-end
-
-function Nvidad_2(NvidadR_2)
-    gg.searchNumber("00000031h;00000020h;74694310h;67695379h;6C00006Eh", gg.TYPE_DWORD)
-    gg.refineNumber("32", gg.TYPE_DWORD)
-    --	33;26;1953055504;1734955897 ref 26
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address - 0x7D8,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address - 0x7D4,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-    local val_3 = {}
-    val_3[1] = {
-        address = r[1].address - 0x7D0,
-        flags = gg.TYPE_DWORD
-    }
-    val_3 = gg.getValues(val_3)
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address - 0x7CC,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address - 0x7C8,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address - 0x7C4,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if NvidadR_2 == "r2NvidadR" then -- 19 Galleta Relajada  
-        setd(-48, 0)
-        setd(-44, 5)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, val_3[1].value)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-
-function hackTHO(variac)
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    ItemPass()
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-
-    local int234 = nil
-    if variac == "th6" then
-        int234 = gg.prompt({"Cantidad? [0; 5000]"}, {1}, {"number"})
-        int234[1] = tonumber(int234[1])
-    end
-    -- TCASH UNLIMITED 1935762184;104;0;0;0;0
-    if variac == "th6" then
-        setd(-48, 0)
-        setd(-44, int234[1])
-        setd(-52, "0")
-        setd(-56, "0")
-        setd(-60, "0")
-        setd(-64, "0")
-        setd(-68, "104")
-        setd(-72, "1935762184")
-    elseif variac == "th7" then -- .statue_writer El primer escritor 6174731Ah;5F657574h;74697277h;00007265h;00000000h;00000000h
-        setd(-48, 0) -- test 24 Bola de Nieve Bola de Nieve
-        setd(-44, 5)
-        setd(-52, "00000000h")
-        setd(-56, "00000000h")
-        setd(-60, "00007265h")
-        setd(-64, "74697277h")
-        setd(-68, "5F657574h")
-        setd(-72, "6174731Ah")
-    end
-    gg.clearResults()
 end
 
 -- hackTrEn
 function hackTrEn()
-    gg.toast("Make it more Start the game or restart the game...")
+    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
@@ -4665,7 +7082,7 @@ function hackTrEn()
 end
 
 function hackTrEn_XP_2()
-    gg.toast("Make it more Start the game or restart the game...")
+    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
 
     r = gg.getResults(2)
@@ -5047,7 +7464,7 @@ end
 
 function hackTrEn_1()
 
-    gg.toast("Make it more Start the game or restart the game...")
+    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Loading............ train 1")
     gg.processResume()
     gg.clearResults()
@@ -6105,7 +8522,7 @@ end
 
 function hackAvion_xp()
 
-    gg.toast("Make it more Start the game or restart the game...")
+    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
@@ -6235,8 +8652,6 @@ function hackAvion_xp()
 end
 
 function hackTrEnTrebol_1()
-
-    --  gg.toast( "Make it more Start the game or restart the game...")  
     gg.toast("Loading............ clover 1")
     gg.processResume()
     gg.clearResults()
@@ -6253,7 +8668,6 @@ function hackTrEnTrebol_1()
     t[1].freeze = true
     gg.setValues(t)
     gg.addListItems(t)
-    -- 00000001h;6892D4F9h
 
     local e = {}
     e[1] = {}
@@ -6311,7 +8725,6 @@ function hackTrEnTrebol_2()
     t[2].freeze = true
     gg.setValues(t)
     gg.addListItems(t)
-    -- 00000001h;6892D4F9h
 
     local e = {}
     e[2] = {}
@@ -6369,7 +8782,6 @@ function hackTrEnTrebol_3()
     t[3].freeze = true
     gg.setValues(t)
     gg.addListItems(t)
-    -- 00000001h;6892D4F9h
 
     local e = {}
     e[3] = {}
@@ -6408,9 +8820,9 @@ function hackTrEnTrebol_3()
     gg.addListItems(h)
 
 end
----FFFFFFFFh;6D616E08h
+
 function hackAvion_1()
-    gg.toast("Make it more Start the game or restart the game...")
+    gg.alert("Make it more Start the game or restart the game...")
     gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
@@ -6540,8 +8952,8 @@ function hackAvion_1()
 end
 
 function hackPedirAyudaAvion()
-    gg.toast("Make it more Start the game or restart the game...")
-    gg.toast("Cargando...")
+    gg.alert("Make it more Start the game or restart the game...")
+    gg.alert("Cargando...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("696F630Ah;0000736Eh;6B6E750Ch;00776F6Eh;72696110h;726F6373h;00000065h", gg.TYPE_DWORD)
@@ -6601,8 +9013,8 @@ function hackPedirAyudaAvion()
 end
 
 function hackAvion_xp_9()
-    gg.toast("Make it more Start the game or restart the game...")
-    gg.toast("Cargando...")
+    gg.alert("Make it more Start the game or restart the game...")
+    gg.alert("Cargando...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("6F676177h;68735F6Eh;5F656B61h;FFFFFFFFh;4F53565Bh", gg.TYPE_DWORD)
@@ -6788,8 +9200,8 @@ function hackAvion_xp_9()
 end
 
 function hackAvion_1_9()
-    gg.toast("Make it more Start the game or restart the game...")
-    gg.toast("Cargando...")
+    gg.alert("Make it more Start the game or restart the game...")
+    gg.alert("Cargando...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("6F676177h;68735F6Eh;5F656B61h;FFFFFFFFh;4F53565Bh", gg.TYPE_DWORD)
@@ -6974,8 +9386,8 @@ function hackAvion_1_9()
 end
 
 function hackPedirAyudaAvion_9()
-    gg.toast("Make it more Start the game or restart the game...")
-    gg.toast("Cargando...")
+    gg.alert("Make it more Start the game or restart the game...")
+    gg.alert("Cargando...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("696F630Ah;0000736Eh;6B6E750Ch;00776F6Eh;72696110h;726F6373h;00000065h", gg.TYPE_DWORD)
@@ -7060,7 +9472,7 @@ end
 
 function hackTrEnCarta_1()
 
-    gg.toast("Cargando............  1")
+    gg.alert("Cargando............  1")
     hackTrEn_1()
     gg.processResume()
     gg.clearResults()
@@ -7119,7 +9531,7 @@ end
 
 function hackTrEnCarta_2()
 
-    gg.toast("Cargando............ 2")
+    gg.alert("Cargando............ 2")
 
     r = gg.getResults(2)
 
@@ -7173,7 +9585,7 @@ end
 
 function hackTrEnCarta_3()
 
-    gg.toast("Cargando............ 3")
+    gg.alert("Cargando............ 3")
 
     r = gg.getResults(3)
 
@@ -7227,7 +9639,7 @@ end
 
 function hackTrEnCarta_1_1()
 
-    gg.toast("Cargando............  1")
+    gg.alert("Cargando............  1")
     -- gg.processResume()
     -- gg.clearResults()
     -- gg.searchNumber("1600407924;51", gg.TYPE_DWORD ) 
@@ -7722,7 +10134,7 @@ end
 
 function hackTrEnCarta_1_2()
 
-    gg.toast("Cargando............  2")
+    gg.alert("Cargando............  2")
 
     r = gg.getResults(2)
     local tName_1 = {}
@@ -8208,7 +10620,7 @@ end
 
 function hackTrEnCarta_1_3()
 
-    gg.toast("Cargando............  3")
+    gg.alert("Cargando............  3")
 
     r = gg.getResults(3)
     local tName_1 = {}
@@ -8706,7 +11118,7 @@ function hackAvion_Volver()
     gg.editAll("18000", gg.TYPE_DWORD);
     gg.processResume();
     gg.clearResults();
-    gg.toast("Restart the game after...")
+    gg.alert("Restart the game after...")
 
 end
 
@@ -8980,28 +11392,7 @@ function hackDecoExpe_1()
     }
     val_6 = gg.getValues(val_6)
 
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-
-    setd(-48, 0)
-    setd(-44, 1)
-    setd(-52, val_6[1].value)
-    setd(-56, val_5[1].value)
-    setd(-60, val_4[1].value)
-    setd(-64, val_3[1].value)
-    setd(-68, val_2[1].value)
-    setd(-72, val_1[1].value)
-    gg.clearResults()
+    hack(val_1[1].value, val_2[1].value, val_3[1].value, val_4[1].value, val_5[1].value, val_6[1].value, 1)
     return
 end
 
@@ -9046,27 +11437,7 @@ function hackDecoExpe_2(val)
     }
     val_6 = gg.getValues(val_6)
 
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    setd(-48, 0)
-    setd(-44, 1)
-    setd(-52, val_6[1].value)
-    setd(-56, val_5[1].value)
-    setd(-60, val_4[1].value)
-    setd(-64, val)
-    setd(-68, val_2[1].value)
-    setd(-72, val_1[1].value)
-    gg.clearResults()
+    hack(val_1[1].value, val_2[1].value, val, val_4[1].value, val_5[1].value, val_6[1].value, 1)
     return
 end
 
@@ -9138,7 +11509,7 @@ function hackhelicopter_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopter_2()
     gg.toast("Loading............ helicopter")
@@ -9207,7 +11578,7 @@ function hackhelicopter_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hackhelicopter_3()
     gg.toast("Loading............ helicopter")
@@ -9276,7 +11647,7 @@ function hackhelicopter_3()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopter_4()
     gg.toast("Loading............ helicopter")
@@ -9345,7 +11716,7 @@ function hackhelicopter_4()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 end
 function hackhelicopter_5()
     gg.toast("Loading............ helicopter")
@@ -9414,7 +11785,7 @@ function hackhelicopter_5()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopter_6()
     gg.toast("Loading............ helicopter")
@@ -9483,7 +11854,7 @@ function hackhelicopter_6()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hackhelicopter_7()
     gg.toast("Loading............ helicopter")
@@ -9552,7 +11923,7 @@ function hackhelicopter_7()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopter_8()
     gg.toast("Loading............ helicopter")
@@ -9621,7 +11992,7 @@ function hackhelicopter_8()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hackhelicopter_9()
     gg.toast("Loading............ helicopter")
@@ -9690,7 +12061,7 @@ function hackhelicopter_9()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 end
 function hackhelicopter_10()
     gg.toast("Loading............ helicopter")
@@ -9759,7 +12130,7 @@ function hackhelicopter_10()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 end
 function hackhelicopter_11()
     gg.toast("Loading............ helicopter")
@@ -9828,7 +12199,7 @@ function hackhelicopter_11()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopter_12()
     gg.toast("Loading............ helicopter")
@@ -9897,7 +12268,7 @@ function hackhelicopter_12()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 end
 function hackhelicopter_13()
     gg.toast("Loading............ helicopter")
@@ -9973,7 +12344,7 @@ function hackhelicopter_13()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 
 -- HACK HELIPAD
@@ -10044,7 +12415,7 @@ function hackhelicopterPlace_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ch("rExpe_2")
+    hackSkin(28)
 end
 function hackhelicopterPlace_2()
     gg.toast("Loading............ helicopter place")
@@ -10113,7 +12484,7 @@ function hackhelicopterPlace_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hackhelicopterPlace_3()
     gg.toast("Loading............ helicopter place")
@@ -10182,7 +12553,7 @@ function hackhelicopterPlace_3()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopterPlace_4()
     gg.toast("Loading............ helicopter place")
@@ -10251,7 +12622,7 @@ function hackhelicopterPlace_4()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hackhelicopterPlace_5()
     gg.toast("Loading............ helicopter place")
@@ -10320,7 +12691,7 @@ function hackhelicopterPlace_5()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopterPlace_6()
     gg.toast("Loading............ helicopter place")
@@ -10389,7 +12760,7 @@ function hackhelicopterPlace_6()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ch("rExpe_2")
+    hackSkin(28)
 end
 function hackhelicopterPlace_7()
     gg.toast("Loading............ helicopter place")
@@ -10458,7 +12829,7 @@ function hackhelicopterPlace_7()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hackhelicopterPlace_8()
     gg.toast("Loading............ helicopter place")
@@ -10527,7 +12898,7 @@ function hackhelicopterPlace_8()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hackhelicopterPlace_9()
     gg.toast("Loading............ helicopter place")
@@ -10596,7 +12967,7 @@ function hackhelicopterPlace_9()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackhelicopterPlace_10()
     gg.toast("Loading............ helicopter place")
@@ -10665,7 +13036,7 @@ function hackhelicopterPlace_10()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hackhelicopterPlace_11()
     gg.toast("Loading............ helicopter place")
@@ -10741,8 +13112,8 @@ function hackhelicopterPlace_11()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Fh("rExpe_2")
-    -- hackSkin_1Bh("rExpe_2")
+    hackSkin(31)
+    -- hackSkin(27)
 end
 function hackhelicopterPlace_12()
     gg.toast("Loading............ helicopter place")
@@ -10818,7 +13189,7 @@ function hackhelicopterPlace_12()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Eh("rExpe_2")
+    hackSkin(30)
 end
 function hackhelicopterPlace_13()
     gg.toast("Loading............ helicopter place")
@@ -10894,7 +13265,7 @@ function hackhelicopterPlace_13()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hackhelicopterPlace_14()
     gg.toast("Loading............ helicopter place")
@@ -10970,7 +13341,7 @@ function hackhelicopterPlace_14()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Fh("rExpe_2")
+    hackSkin(31)
 end
 function hackhelicopterPlace_15()
     gg.toast("Loading............ helicopter place")
@@ -11046,7 +13417,7 @@ function hackhelicopterPlace_15()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Fh("rExpe_2")
+    hackSkin(31)
 end
 function hackhelicopterPlace_16()
     gg.toast("Loading............ helicopter place")
@@ -11122,7 +13493,7 @@ function hackhelicopterPlace_16()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 function hackhelicopterPlace_17()
     gg.toast("Loading............ helicopter place")
@@ -11198,7 +13569,7 @@ function hackhelicopterPlace_17()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Fh("rExpe_2")
+    hackSkin(31)
 end
 function hackhelicopterPlace_18()
     gg.toast("Loading............ helicopter place")
@@ -11274,10 +13645,10 @@ function hackhelicopterPlace_18()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 function hackhelicopterPlace_19()
-    gg.toast("Updating......... helicopter place")
+    gg.alert("Updating......... helicopter place")
 end
 
 -- HACK TRAIN STATION
@@ -11347,7 +13718,7 @@ function hacktrain_station_1()
     v_7[1].value = "35323032h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_1Ch("rExpe_2")
+    hackSkin(28)
 
 end
 function hacktrain_station_2()
@@ -11417,7 +13788,7 @@ function hacktrain_station_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hacktrain_station_3()
     gg.toast("Loading............ train Station")
@@ -11485,7 +13856,7 @@ function hacktrain_station_3()
     v_7[1].value = "00646F6Fh"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 
 end
 function hacktrain_station_4()
@@ -11555,7 +13926,7 @@ function hacktrain_station_4()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hacktrain_station_5()
     gg.toast("Loading............ train Station")
@@ -11623,7 +13994,7 @@ function hacktrain_station_5()
     v_7[1].value = "00000000h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 
 end
 function hacktrain_station_6()
@@ -11693,7 +14064,7 @@ function hacktrain_station_6()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hacktrain_station_7()
     gg.toast("Loading............ train Station")
@@ -11761,7 +14132,7 @@ function hacktrain_station_7()
     v_7[1].value = "E32B0A00h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 
 end
 function hacktrain_station_8()
@@ -11831,7 +14202,7 @@ function hacktrain_station_8()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 end
 function hacktrain_station_9()
     gg.toast("Loading............ train Station")
@@ -11900,7 +14271,7 @@ function hacktrain_station_9()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ch("rExpe_2")
+    hackSkin(28)
 end
 function hacktrain_station_10()
     gg.toast("Loading............ train Station")
@@ -11975,7 +14346,7 @@ function hacktrain_station_10()
     v_8[1].value = "80140032h"
     v_8[1].freeze = false
     gg.setValues(v_8)
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 
 end
 function hacktrain_station_11()
@@ -12051,7 +14422,7 @@ function hacktrain_station_11()
     v_8[1].value = "00343230h"
     v_8[1].freeze = false
     gg.setValues(v_8)
-    hackSkin_1Fh("rExpe_2")
+    hackSkin(31)
 
 end
 function hacktrain_station_12()
@@ -12128,7 +14499,7 @@ function hacktrain_station_12()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 function hacktrain_station_13()
     gg.toast("Loading............ train Station")
@@ -12204,7 +14575,7 @@ function hacktrain_station_13()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Fh("rExpe_2")
+    hackSkin(31)
 end
 
 -- HACK TRAIN
@@ -12275,7 +14646,7 @@ function hacktrain_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hacktrain_2()
     gg.toast("Loading............ train ")
@@ -12343,10 +14714,10 @@ function hacktrain_2()
     v_7[1].value = "73657500h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hacktrain_3()
-    gg.toast("Updating......... train ")
+    gg.alert("Updating......... train ")
 end
 
 -- HACK AIRPORT
@@ -12417,7 +14788,7 @@ function hackairport_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 end
 function hackairport_2()
     gg.toast("Loading............ airport ")
@@ -12486,7 +14857,7 @@ function hackairport_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackairport_3()
     gg.toast("Loading............ airport ")
@@ -12554,7 +14925,7 @@ function hackairport_3()
     v_7[1].value = "74730063h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 
 end
 function hackairport_4()
@@ -12623,7 +14994,7 @@ function hackairport_4()
     v_7[1].value = "3E003132h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 
 end
 function hackairport_5()
@@ -12693,7 +15064,7 @@ function hackairport_5()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 
 end
 function hackairport_6()
@@ -12762,7 +15133,7 @@ function hackairport_6()
     v_7[1].value = "72663C00h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 
 end
 
@@ -12833,7 +15204,7 @@ function hackairplane_1()
     v_7[1].value = "DA006576h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 
 end
 function hackairplane_2()
@@ -12903,7 +15274,7 @@ function hackairplane_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 end
 function hackairplane_3()
     gg.toast("Loading............ airplane ")
@@ -12971,7 +15342,7 @@ function hackairplane_3()
     v_7[1].value = "00313230h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_1Bh("rExpe_2")
+    hackSkin(27)
 
 end
 function hackairplane_4()
@@ -13040,7 +15411,7 @@ function hackairplane_4()
     v_7[1].value = "00000000h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 
 end
 function hackairplane_5()
@@ -13109,7 +15480,7 @@ function hackairplane_5()
     v_7[1].value = "00000074h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 
 end
 function hackairplane_7()
@@ -13179,7 +15550,7 @@ function hackairplane_7()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 
 -- HACK HARBOR
@@ -13249,7 +15620,7 @@ function hackharbor_1()
     v_7[1].value = "1A9F0033h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 
 end
 function hackharbor_2()
@@ -13318,7 +15689,7 @@ function hackharbor_2()
     v_7[1].value = "1A9F0100h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 
 end
 function hackharbor_3()
@@ -13388,7 +15759,7 @@ function hackharbor_3()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_18h("rExpe_2")
+    hackSkin(24)
 end
 function hackharbor_4()
     gg.toast("Loading............  harbor ")
@@ -13456,7 +15827,7 @@ function hackharbor_4()
     v_7[1].value = "72650032h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 
 end
 function hackharbor_5()
@@ -13526,7 +15897,7 @@ function hackharbor_5()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ch("rExpe_2")
+    hackSkin(28)
 end
 function hackharbor_6()
     gg.toast("Loading............harbor  ")
@@ -13601,7 +15972,7 @@ function hackharbor_6()
     v_8[1].value = "696C5F73h"
     v_8[1].freeze = false
     gg.setValues(v_8)
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 
 end
 
@@ -13673,7 +16044,7 @@ function hackship_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 end
 function hackship_2()
     gg.toast("Loading............   ship")
@@ -13742,7 +16113,7 @@ function hackship_2()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 end
 function hackship_3()
     gg.toast("Loading............   ship")
@@ -13811,7 +16182,7 @@ function hackship_3()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_1Ah("rExpe_2")
+    hackSkin(26)
 end
 function hackship_4()
     gg.toast("Loading............   ship")
@@ -13880,7 +16251,7 @@ function hackship_4()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 end
 
 -- HACK FORTRESS
@@ -13951,7 +16322,7 @@ function hackFortress_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
 
-    hackSkin_19h("rExpe_2")
+    hackSkin(25)
 end
 function hackFortress_2()
     gg.toast("Loading............  Fortress ")
@@ -14019,7 +16390,7 @@ function hackFortress_2()
     v_7[1].value = "00000000h"
     v_7[1].freeze = false
     gg.setValues(v_7)
-    hackSkin_17h("rExpe_2")
+    hackSkin(23)
 
 end
 function hackFortress_3()
@@ -14096,7 +16467,7 @@ function hackFortress_3()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 function hackFortress_4()
     gg.toast("Loading............ Fortress")
@@ -14172,7 +16543,7 @@ function hackFortress_4()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 function hackFortress_5()
     gg.toast("Loading............ Fortress")
@@ -14248,12 +16619,11 @@ function hackFortress_5()
     v_8[1].freeze = false
     gg.setValues(v_8)
 
-    hackSkin_1Dh("rExpe_2")
+    hackSkin(29)
 end
 
 -- HACK SKIN
-function hackSkin_1Fh(varcJExpe_2)
-    ItemPass()
+function hackSkin(val3)
     gg.toast("Loading............ ")
     gg.processResume()
     gg.clearResults()
@@ -14291,541 +16661,7 @@ function hackSkin_1Fh(varcJExpe_2)
     }
     val_6 = gg.getValues(val_6)
 
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 31)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_1Eh(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 30)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_1Dh(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 29)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_1Ch(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 28)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_1Bh(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 27)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_1Ah(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 26)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_19h(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 25)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_18h(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 24)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
-    return
-end
-function hackSkin_17h(varcJExpe_2)
-    ItemPass()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
-    gg.refineNumber("30", gg.TYPE_DWORD)
-    setd(16, "0")
-    setd(20, "0")
-    setd(24, "0")
-    setd(28, "0")
-    setd(32, "0")
-    setd(36, "0")
-    if varcJExpe_2 == "rExpe_2" then
-        setd(-48, 0)
-        setd(-44, 1)
-        setd(-52, val_6[1].value)
-        setd(-56, val_5[1].value)
-        setd(-60, val_4[1].value)
-        setd(-64, 23)
-        setd(-68, val_2[1].value)
-        setd(-72, val_1[1].value)
-    end
-    gg.clearResults()
+    hack(val_1[1].value, val_2[1].value, val3, val_4[1].value, val_5[1].value, val_6[1].value, 1)
     return
 end
 
@@ -14835,6 +16671,7 @@ function hack(val1, val2, val3, val4, val5, val6, quantity)
     gg.processResume()
     gg.clearResults()
     gg.setVisible(false)
+
     gg.searchNumber("1599361808;1936025667;116;5;30", gg.TYPE_DWORD)
     gg.refineNumber("30", gg.TYPE_DWORD)
     setd(16, "0")
@@ -14874,7 +16711,6 @@ function hackExp()
 end
 
 function EXIT()
-    naousou = true
     gg.clearList()
     gg.setVisible(true)
     os.exit()
@@ -14884,14 +16720,17 @@ end
 function MENUFREE()
     SalvarUltimoMenu(nil)
 
-    local opcao = gg.choice(
-        {"🌟 • Change Rewards", "🏭 • Skip Time", "🚂 • Extras", "💵 • Money/Notes", "❌ • Exit"},
+    local opcao = gg.choice({"🌟 • Change Rewards", "🌟 • Unlock GP", "🌟 • Freeze Rewards",
+                             "🏭 • Skip Time", "🚂 • Extras", "💵 • Helicopter(Cash/Gold)", "❌ • Exit"},
         nil)
     if opcao then
         if opcao == 1 then
             menuescolhas2(1)
-        end
-        if opcao == 2 then
+        elseif opcao == 2 then
+            hack15cD()
+        elseif opcao == 3 then
+            ItemPass()
+        elseif opcao == 4 then
             MNZ = gg.choice({"🐶 • Animals", "💣 • Forge", "💣 • Cow Feed Mill",
                              "💣 • Chicken Feed Mill", "💣 • Sheep Feed Mill", "❌ • Return"}, nil)
 
@@ -14910,8 +16749,7 @@ function MENUFREE()
             elseif MNZ == 6 then
                 MENUFREE()
             end
-        end
-        if opcao == 3 then
+        elseif opcao == 5 then
             MNF = gg.choice({"1 • XP (Wheat)", "2 • City Market", "3 • Industry Academy", "4 • XP Train",
                              "5 • Wheat Train", "6 • Freeze Clover Train", "7 • XP Plane 6 boxes",
                              "8 • XP Plane If it doesnt work 1/6 boxes", "9 • Ask for help plane 6 boxes",
@@ -14959,24 +16797,9 @@ function MENUFREE()
             else
                 MENUFREE()
             end
-
-        end
-        if opcao == 4 then
-            PRV = gg.choice({"💵 • Helicopter", "💵 • T-Cash", "💵 • Money", "❌ • Return"}, nil)
-
-            if PRV == nil then
-                return
-            elseif PRV == 1 then
-                hack11(true)
-            elseif PRV == 2 then
-                hackTHO("th6")
-            elseif PRV == 3 then
-                hackTHO("th7")
-            else
-                MENUFREE()
-            end
-        end
-        if opcao == 5 then
+        elseif opcao == 6 then
+            hack11(true)
+        else
             os.exit()
         end
 

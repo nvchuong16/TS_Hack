@@ -426,3 +426,4 @@ function menuDecor()
         menuescolhas2(5)
     end
 end
+
