@@ -1213,7 +1213,7 @@ function menuDecor()
     elseif choice == 12 then
         hack('1869562388', '1951620971', '6648431', '110', '672503271', '110', 5)
     elseif choice == 13 then
-        gg.alert("Updating")
+        hackDecor("33;25;7959669;2003780370;1769239105", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif choice == 14 then
         hack('1852796956', '1769430884', '1667197044', '7369313', '0', '0', 5)
     elseif choice == 15 then
@@ -1269,12 +1269,11 @@ function menuDecor()
     elseif choice == 40 then
         hack('66614310h', '62755465h', '00000065h', '00000000h', '00000000h', '00000000h', 5)
     elseif choice == 41 then
-        hackDecor("1969317186;1113553268;1701736033;114;33;26", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1969317186;1113553268;1701736033;114;33;26", "26", 0xE8, 0xEC, 0xF0, 0xF4, 0xF8, 0xFC)
     elseif choice == 42 then
-        hackDecor("1969317186;1885305204;1869313377;6582120;33;23:65 ", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1969317186;1885305204;1869313377;6582120;33;23:65", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif choice == 43 then
-        hackDecor("1969317186;1113553268;1701736033;114;33;28", "28", 0x788, 0x784, 0x780, 0x77C,
-            0x778, 0x774)
+        hackDecor("1969317186;1113553268;1701736033;114;33;28", "28", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif choice == 44 then
         hack('1952803354', '1801675120', '1634496607', '1694524782', '1752392960', '28783', 5)
     elseif choice == 45 then
@@ -1294,7 +1293,7 @@ function menuDecor()
     elseif choice == 52 then
         hack('61656228h', '5F797475h', '65746177h', '6F6D5F72h', '6574736Eh', '00000072h', 5)
     elseif choice == 53 then
-        gg.alert("Updating")
+        hackDecor("2003792488;1633645157;1852402976;1969321071;33;26", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif choice == 54 then
         hack('6165622Ah', '5F797475h', '7A7A6970h', '61697265h', '7361705Fh', '00006174h', 5)
     elseif choice == 55 then
@@ -1306,7 +1305,8 @@ function menuDecor()
     elseif choice == 58 then
         hack('7A697024h', '7563617Ah', '6E697474h', '61705F67h', '00617473h', '00007473h', 5)
     elseif choice == 59 then
-        hackDecor("1935765270;1700754281;1953528167;33;24", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1935765270;1700754281;1953528167;33;24", "24", 0x5F7CAF70E8, 0x5F7CAF70EC, 0x5F7CAF70F0,
+            0x5F7CAF70F4, 0x5F7CAF70F8, 0x5F7CAF70FC)
     elseif choice == 60 then
         hack('6E61631Ah', '725F7964h', '626E6961h', '6900776Fh', '6E6F6974h', '00000000h', 5)
     elseif choice == 61 then
@@ -1330,9 +1330,9 @@ function menuDecor()
     elseif choice == 70 then
         hack('1935762714', '1383228788', '1868718697', '29550', '261953283', '0', 5)
     elseif choice == 71 then
-        gg.alert("Updating")
+        hackDecor("33;29;7959669;1701860138;1818323299", "29", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif choice == 72 then
-        gg.alert("Updating")
+        hackDecor("33;29;7959669;1701860138;1818323299", "29", 0x5FCF8, 0x5FCFC, 0x5FD00, 0x5FD04, 0x5FD08, 0x5FD0C)
     elseif choice == 73 then
         hack('2003780370', '1769239105', '687895667', '126', '700281330', '126', 5)
     elseif choice == 74 then
@@ -1386,7 +1386,7 @@ function menuDecorSummer()
     elseif MaxDECORT == 8 then
         hack('61656224h', '5F797475h', '6F636F43h', '5F74756Eh', '00726162h', '00000000h', 5)
     elseif MaxDECORT == 9 then
-        hackDecor("33;24;1634034188;7959669;1634034206;1936615784:93", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;24;1634034188;7959669;1634034206;1936615784:93", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxDECORT == 10 then
         hack('72755316h', '65525F66h', '6C61746Eh', '00000000h', '0C650A23h', '00000079h', 5)
     elseif MaxDECORT == 11 then
@@ -1472,7 +1472,7 @@ function menuDecorValentine()
     elseif MaxJTyP == 21 then
         hack("6F6C661Eh", "55726577h", "7265646Eh", "646F6F48h", "0563F200h", "00000031h", 5)
     elseif MaxJTyP == 22 then
-        hackDecor("33;25;7959669;1415538030;2036622437", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;25;7959669;1415538030;2036622437", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 23 then
         gg.alert("Updating")
     elseif MaxJTyM == 24 then
@@ -1484,14 +1484,14 @@ function menuDecorValentine()
     elseif MaxJTyM == 27 then
         hack('1987005460', '1853183077', '7103854', '113', '0', '0', 5)
     elseif MaxJTyM == 28 then
-        hackDecor("49;24;1818318372;1769238117;1885300078;1868783973;7564131", "24", 0x788, 0x784, 0x780, 0x77C, 0x778,
-            0x774)
+        hackDecor("49;24;1818318372;1769238117;1885300078;1868783973;7564131", "24", -0x08, -0x04, 0x00, 0x04, 0x08,
+            0x0C)
     elseif MaxJTyM == 29 then
-        gg.alert("Updating")
+        hackDecor("33;25;7959669;1415538030;2036622437", "25", 0x368, 0x36C, 0x370, 0x374, 0x378, 0x37C)
     elseif MaxJTyM == 30 then
         gg.alert("Updating")
     elseif MaxJTyM == 31 then
-        hackDecor("6165620Ch;00797475h;6C61562Ch;69746E65h;33;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("6165620Ch;00797475h;6C61562Ch;69746E65h;33;23", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 32 then
         gg.alert("Updating")
     elseif MaxJTyM == 33 then
@@ -1627,9 +1627,9 @@ function menuDecorChristmas()
     elseif MaxJTyM == 44 then
         hack('7268431Ch', '6D747369h', '435F7361h', '00656661h', 'EE7877C8h', '0000007Ch', 5)
     elseif MaxJTyM == 45 then
-        hackDecor("1919435554;1836348265;1631810401;1937076082;33;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1919435554;1836348265;1631810401;1937076082;33;23", "23", 0x48, 0x4C, 0x50, 0x54, 0x58, 0x5C)
     elseif MaxJTyM == 46 then
-        hackDecor("1918980120;1398764393;1701147252;33;24;25", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1918980120;1398764393;1701147252;33;24;25", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 47 then
         hack('1818322984', '1702326124', '2002742885', '1751348329', '1919510623', '101', 5)
     elseif MaxJTyM == 48 then
@@ -1641,7 +1641,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 51 then
         hack('72684320h', '6D747369h', '435F7361h', '75726F68h', '00000073h', '00000000h', 5)
     elseif MaxJTyM == 52 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1919435554;1937076082;1953055504;1734955897;33;25", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 53 then
         hack('1769304344', '1600877423', '1851878512', '107', '0', '0', 5)
     elseif MaxJTyM == 54 then
@@ -1649,7 +1649,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 55 then
         hack('1701991446', '1632460645', '1952803698', '0', '672503271', '110', 5)
     elseif MaxJTyM == 56 then
-        hackDecor("1918980120;1398764393;1701147252;33;24;25", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1918980120;1398764393;1701147252;33;24;25", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 57 then
         hack('1701013798', '1819632467', '1920300144', '1885303653', '1802396012', '0', 5)
     elseif MaxJTyM == 58 then
@@ -1661,7 +1661,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 61 then
         hack('1919435550', '1836348265', '1952412513', '1852399986', '-294095104', '124', 5)
     elseif MaxJTyM == 62 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", 0x7D8, 0x7D4, 0x7D0, 0x7CC, 0x7C8, 0x7C4)
+        hackDecor("1918980120;1398764393;1701147252;33;24;26", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 63 then
         hack('1935764508', '1970227316', '1819303794', '7040609', '0', '0', 5)
     elseif MaxJTyM == 64 then
@@ -1679,17 +1679,17 @@ function menuDecorChristmas()
     elseif MaxJTyM == 70 then
         hack('1851872030', '1381982580', '1885692773', '1852795252', '0', '0', 5)
     elseif MaxJTyM == 71 then
-        hackDecor("1919443756;1635020385;33;23;1634034188;7959669:189", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1919443756;1635020385;33;23;1634034188;7959669:189", "23", 0x48, 0x4C, 0x50, 0x54, 0x58, 0x5C)
     elseif MaxJTyM == 72 then
         hack('2037141286', '1667854445', '1869501279', '1667329399', '1701734760', '0', 5)
     elseif MaxJTyM == 73 then
         hack('1869509406', '1734952567', '1885303912', '1802396012', '0', '0', 5)
     elseif MaxJTyM == 74 then
-        hackDecor("1919443756;1635020385;33;23;1634034188;7959669:189", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1919443756;1635020385;33;23;1634034188;7959669:189", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 75 then
         hack('1634289434', '1398764654', '1836543854', '28257', '0', '0', 5)
     elseif MaxJTyM == 76 then
-        hackDecor("1919435554;1836348265;1631810401;1937076082;33;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1919435554;1836348265;1631810401;1937076082;33;23", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyM == 77 then
         hack('1634034216', '1601795189', '1953393015', '1667199589', '1869508193', '110', 5)
     elseif MaxJTyM == 78 then
@@ -1747,7 +1747,7 @@ function menuDecorHaloween()
     elseif MaxJTyMTRE == 14 then
         gg.alert("Updating")
     elseif MaxJTyMTRE == 15 then
-        hackDecor("33;29;7959669;1701860138;1818323299", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;29;7959669;1701860138;1818323299", "29", 0x42038, 0x4203C, 0x42040, 0x42044, 0x42048, 0x4204C)
     elseif MaxJTyMTRE == 16 then
         hack('6C616824h', '65776F6Ch', '675F6E65h', '6F677261h', '00656C79h', '0000007Ah', 5)
     elseif MaxJTyMTRE == 17 then
@@ -1778,7 +1778,7 @@ function menuDecorHaloween()
         hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x3B8, 0x3BC, 0x3C0, 0x3C4,
             0x3C8, 0x3CC)
     elseif MaxJTyMTRE == 30 then
-        hackDecor("1633907478;1667201394;1953528178;49;35", "35", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1633907478;1667201394;1953528178;49;35", "35", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTyMTRE == 31 then
         gg.alert("Updating")
     elseif MaxJTyMTRE == 32 then
@@ -1868,7 +1868,7 @@ function menuDecorSports()
     elseif MaxJTUTR == 9 then
         gg.alert("Updating")
     elseif MaxJTUTR == 10 then
-        gg.alert("Updating")
+        hackDecor("33;28;7959669;1684622102;1767985779", "28", 0x1D8, 0x1DC, 0x1E0, 0x1E4, 0x1E8, 0x1EC)
     elseif MaxJTUTR == 11 then
         gg.alert("Updating")
     elseif MaxJTUTR == 12 then
@@ -1884,7 +1884,7 @@ function menuDecorSports()
     elseif MaxJTUTR == 17 then
         gg.alert("Updating")
     elseif MaxJTUTR == 18 then
-        hackDecor("33;23;7959669;1768649504;2003780467", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;23;7959669;1768649504;2003780467", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTUTR == 19 then
         gg.alert("Updating")
     elseif MaxJTUTR == 20 then
@@ -1922,13 +1922,13 @@ function menuDecorAirplane()
     elseif MaxEWQT == 7 then
         hack("6570532Ah", "6C616963h", "75616542h", "625F7974h", "6C706F69h", "00006E61h", 5)
     elseif MaxEWQT == 8 then
-        hackDecor("1869898092;1819303794;6647393;1634034188;795966;9;1811970420;33;24", "24", 0x788, 0x784, 0x780,
-            0x77C, 0x778, 0x774)
+        hackDecor("1869898092;1819303794;6647393;1634034188;7959669;1811970420;33;24", "24", -0x08, -0x04, 0x00, 0x04,
+            0x08, 0x0C)
     elseif MaxEWQT == 9 then
         hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x1AD8, 0x1ADC, 0x1AE0,
             0x1AE4, 0x1AE8, 0x1AEC)
     elseif MaxEWQT == 10 then
-        hackDecor("656E6E61h;00000072h;61656220Ch;00797475h;33;0;26;0", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1969317186;1113553268;1701736033;114;33;26", "26", 0x188, 0x18C, 0x190, 0x194, 0x198, 0x19C)
     elseif MaxEWQT == 11 then
         hack("72696420h", "61656769h", "73656C62h", "75746174h", "656E0065h", "000072h", 5)
     else
@@ -2018,7 +2018,7 @@ function menuDecorRuins()
     elseif MaxPOYUT == 12 then
         hack('6C61661Ch', '5F6E6F63h', '746E7568h', '00676E69h', '00000000h', '00000000h', 5)
     elseif MaxPOYUT == 13 then
-        hackDecor("33;24;1634034188;7959669;1634034214;1635013490:93", "24", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;24;1634034188;7959669;1634034214;1635013490:93", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxPOYUT == 14 then
         hack('6172611Eh', '5F636962h', '5F6E696Ah', '706D616Ch', 'DA306800h', 'FFFF0000h', 5)
     elseif MaxPOYUT == 15 then
@@ -2050,8 +2050,8 @@ function menuDecorRuins()
     elseif MaxPOYUT == 28 then
         hack("6165621Ch", "5F797475h", "6D6D616Dh", "0068746Fh", "00000000h", "00000000h", 5)
     elseif MaxPOYUT == 29 then
-        hackDecor("1769300575;1852400748;103;1096776052;1918989681;7;173481;33;23", "23", 0x788, 0x784, 0x780, 0x77C,
-            0x778, 0x774)
+        hackDecor("1769300575;1852400748;103;1096776052;1918989681;7173481;33;23", "23", -0x08, -0x04, 0x00, 0x04, 0x08,
+            0x0C)
     elseif MaxPOYUT == 30 then
         hack("6F727426h", "486E616Ah", "6573726Fh", "636E615Fh", "746E6569h", "00000000h", 5)
     elseif MaxPOYUT == 31 then
@@ -2059,7 +2059,7 @@ function menuDecorRuins()
     elseif MaxPOYUT == 32 then
         gg.alert("Updating")
     elseif MaxPOYUT == 33 then
-        hackDecor("2003792488;1633645157;1852402976;1969321071;33;26", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hack('2036811040', '1632662640', '1970436464', '1634681459', '-1609498508', '123', 5)
     else
         menuescolhas2(5)
     end
@@ -2094,17 +2094,17 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 4 then
         hack('6570532Ch', '6C616963h', '75616542h', '425F7974h', '69506565h', '00746F6Ch', 5)
     elseif MaxWSFP == 5 then
-        gg.alert("Updating")
+        hackDecor("1969317186;1113553268;1701736033;114;33;26", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxWSFP == 6 then
         gg.alert("Updating")
     elseif MaxWSFP == 7 then
-        hackDecor("1918976788;1416916850;6645106;49;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1918976788;1416916850;6645106;49;23", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxWSFP == 8 then
         hack('69686312h', '68636B63h', '65006B69h', '0078696Ch', '656E0065h', '00000072h', 5)
     elseif MaxWSFP == 9 then
-        hackDecor("1935754524;1601332596;1852732770;7562601;33;29", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1935754524;1601332596;1852732770;7562601;33;29", "29", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxWSFP == 10 then
-        hackDecor("1852785438;1952671078;1701736297;2003;780466;49;23", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1852785438;1952671078;1701736297;2003780466;49;23", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxWSFP == 11 then
         hack('61747320h', '5F657574h', '74616F62h', '6C6F675Fh', '656E0064h', '00000072h', 5)
     elseif MaxWSFP == 12 then
@@ -2118,7 +2118,7 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 16 then
         hack('1701860134', '1818323299', '1969317186', '1415543156', '1835365487', '0', 5)
     elseif MaxWSFP == 17 then
-        hackDecor("33;28;7959669;1684622102;1767985779", "28", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;28;7959669;1684622102;1767985779", "28", 0xE8, 0xEC, 0xF0, 0xF4, 0xF8, 0xFC)
     elseif MaxWSFP == 18 then
         hack('1634034216', '1601795189', '1769369421', '1970226789', '1767994478', '110', 5)
     elseif MaxWSFP == 19 then
@@ -2130,17 +2130,17 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 22 then
         hack('1634231064', '1869181037', '1969446766', '112', '2040695907', '122', 5)
     elseif MaxWSFP == 23 then
-        hackDecor("1702259044;1650422642;1769300575;1852400748;1752394086;1918987615;49;35", "35", 0x788, 0x784, 0x780,
-            0x77C, 0x778, 0x774)
+        hackDecor("1702259044;1650422642;1769300575;1852400748;1752394086;1918987615;49;35", "35", -0x08, -0x04, 0x00,
+            0x04, 0x08, 0x0C)
     elseif MaxWSFP == 24 then
-        hackDecor("1634496550;1765893486;33;29;7959669", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;29;7959669;1701860138;1818323299", "29", 0x65F38, 0x65F3C, 0x65F40, 0x65F44, 0x65F48, 0x65F4C)
     elseif MaxWSFP == 25 then
         gg.alert("Updating")
     elseif MaxWSFP == 26 then
         gg.alert("Updating")
     elseif MaxWSFP == 27 then
-        hackDecor("33;25;1634034188;7959669;1811970420;1819502872;160;0417377;1718185579;101", "25", 0x788, 0x784,
-            0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;25;1634034188;7959669;1811970420;1819502872;1600417377;1718185579;101", "25", -0x08, -0x04, 0x00,
+            0x04, 0x08, 0x0C)
     elseif MaxWSFP == 28 then
         hack('776F632Ah', '53796F62h', '75746174h', '69775F65h', '6577646Ch', '5C007473h', 5)
     elseif MaxWSFP == 29 then
@@ -2152,7 +2152,7 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 32 then
         gg.alert("Updating")
     elseif MaxWSFP == 33 then
-        gg.alert("Updating")
+        hackDecor("33;29;7959669;1701860138;1818323299", "29", 0x5DC68, 0x5DC6C, 0x5DC70, 0x5DC74, 0x5DC78, 0x5DC7C)
     elseif MaxWSFP == 34 then
         hack('1769100296', '111', '0', '0', '0', '0', 5)
     elseif MaxWSFP == 35 then
@@ -2167,12 +2167,11 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 39 then
         gg.alert("Updating")
     elseif MaxWSFP == 40 then
-        hackDecor("49;23;1634034216;1601795189;1952543859;1885300085;1668180338;101", "23", 0x788, 0x784, 0x780, 0x77C,
-            0x778, 0x774)
+        hackDecor("6165620Ch;00797475h;6C61562Ch;69746E65h;33;23", "23", 0x688, 0x68C, 0x690, 0x694, 0x698, 0x69C)
     elseif MaxWSFP == 41 then
         gg.alert("Updating")
     elseif MaxWSFP == 42 then
-        hackDecor("33;31;7959669;1935754526;1601332596", "31", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;31;7959669;1935754526;1601332596", "31", 0x138, 0x13C, 0x140, 0x144, 0x148, 0x14C)
     elseif MaxWSFP == 43 then
         hack('1701860130', '1818323299', '1969317186', '1398765940', '-352293259', '111', 5)
     elseif MaxWSFP == 44 then
@@ -2186,11 +2185,11 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 48 then
         gg.alert("Updating")
     elseif MaxWSFP == 49 then
-        gg.alert("Updating")
+        hackDecor("33;23;7959669;1768649504;2003780467", "23", 0x188, 0x18C, 0x190, 0x194, 0x198, 0x19C)
     elseif MaxWSFP == 50 then
         gg.alert("Updating")
     elseif MaxWSFP == 51 then
-        hackDecor("49;26;1818318364;1769238117;1834968430;7237487", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("49;26;1818318364;1769238117;1834968430;7237487", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxWSFP == 52 then
         hack('6F6F7A12h', '6365645Fh', '0000726Fh', '00000000h', '00000000h', '00000000h', 5)
     else
@@ -2276,7 +2275,7 @@ function menuDecorInflatable()
     elseif MaxVXCS == 14 then
         hack('1701860140', '1818323299', '1969317186', '1717533044', '1817213292', '6647393', 5)
     elseif MaxVXCS == 15 then
-        hackDecor("33;30;7959669;1684622102;1767985779", "30", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;30;7959669;1684622102;1767985779", "30", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxVXCS == 16 then
         gg.alert("Updating")
     elseif MaxVXCS == 17 then
@@ -2485,7 +2484,7 @@ function menuDecorCowboy()
     if MaxCHIMN == nil then
         return
     elseif MaxCHIMN == 1 then
-        hackDecor("33;25;7959669;2003780370;1769239105", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;25;7959669;2003780370;1769239105", "25", 0x48, 0x4C, 0x50, 0x54, 0x58, 0x5C)
     elseif MaxCHIMN == 2 then
         hack('1634034202', '1601795189', '1869373811', '28271', '0', '0', 5)
     elseif MaxCHIMN == 3 then
@@ -2493,7 +2492,7 @@ function menuDecorCowboy()
     elseif MaxCHIMN == 4 then
         hack('1634488340', '1247767406', '7365989', '120', '1714630657', '140', 5)
     elseif MaxCHIMN == 5 then
-        hackDecor("33;23;7959669;1852796956;1769430884", "23", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;23;7959669;1852796956;1769430884", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     else
         menuescolhas2(5)
     end
@@ -2562,7 +2561,7 @@ function menuDecorFlower()
     elseif MaxFGJZ == 23 then
         hack('1818316832', '1702130789', '1819632467', '1920300144', '700252261', '0', 5)
     elseif MaxFGJZ == 24 then
-        gg.alert("Updating")
+        hackDecor("6165620Ch;00797475h;6C61562Ch;69746E65h;33;23", "23", 0x4A8, 0x4AC, 0x4B0, 0x4B4, 0x4B8, 0x4BC)
     elseif MaxFGJZ == 25 then
         hack('1801546780', '1970235493', '1751082355', '6647151', '1714630657', '102', 5)
     elseif MaxFGJZ == 26 then
@@ -2776,13 +2775,13 @@ function menuDecorEaster()
     elseif MaxFGJZ == 10 then
         hackDecor("1935754520;1601332596;1668179302;101;33;27", "27", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 11 then
-        hackDecor("33;31;1935762716;1601332596;1952670054;7959151", "31", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;31;7959669;1935754526;1601332596", "31", 0x318, 0x31C, 0x320, 0x324, 0x328, 0x32C)
     elseif MaxFGJZ == 12 then
         hack('1935762716', '1601332596', '1952670054', '7959151', '0', '0', 5)
     elseif MaxFGJZ == 13 then
         hackDecor("33;25;1935762716;1601332596;1952670054;7959151", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
     elseif MaxFGJZ == 14 then
-        gg.alert("Updating")
+        hackDecor("33;31;7959669;1935754526;1601332596", "31", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxFGJZ == 15 then
         hack('1935754524', '1601332596', '1852732770', '7562601', '0', '0', 5)
     elseif MaxFGJZ == 16 then
@@ -2947,7 +2946,8 @@ function menuDecorFruit()
     elseif MaxFGJZ == 15 then
         hack('1634879254', '1348429168', '1936942450', '0', '672503271', '110', 5)
     elseif MaxFGJZ == 16 then
-        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x688, 0x68C, 0x690, 0x694, 0x698, 0x69C)
+        hackDecor("1769300575;1852400748;103;1701860140;1818323299;1969317186;33;28", "28", 0x688, 0x68C, 0x690, 0x694,
+            0x698, 0x69C)
     elseif MaxFGJZ == 17 then
         hack('1919895576', '1632132974', '1936029298', '116', '672503271', '110', 5)
     elseif MaxFGJZ == 18 then
@@ -6659,37 +6659,37 @@ function hackDecor(search, refine, add_1, add_2, add_3, add_4, add_5, add_6)
     local r = gg.getResults(1)
     local val_1 = {}
     val_1[1] = {
-        address = r[1].address - add_1,
+        address = r[1].address + add_1,
         flags = gg.TYPE_DWORD
     }
     val_1 = gg.getValues(val_1)
     local val_2 = {}
     val_2[1] = {
-        address = r[1].address - add_2,
+        address = r[1].address + add_2,
         flags = gg.TYPE_DWORD
     }
     val_2 = gg.getValues(val_2)
     local val_3 = {}
     val_3[1] = {
-        address = r[1].address - add_3,
+        address = r[1].address + add_3,
         flags = gg.TYPE_DWORD
     }
     val_3 = gg.getValues(val_3)
     local val_4 = {}
     val_4[1] = {
-        address = r[1].address - add_4,
+        address = r[1].address + add_4,
         flags = gg.TYPE_DWORD
     }
     val_4 = gg.getValues(val_4)
     local val_5 = {}
     val_5[1] = {
-        address = r[1].address - add_5,
+        address = r[1].address + add_5,
         flags = gg.TYPE_DWORD
     }
     val_5 = gg.getValues(val_5)
     local val_6 = {}
     val_6[1] = {
-        address = r[1].address - add_6,
+        address = r[1].address + add_6,
         flags = gg.TYPE_DWORD
     }
     val_6 = gg.getValues(val_6)
