@@ -827,7 +827,8 @@ function menuSkinAirport_Airplane()
                           "12 • Symphony Plane", "13 • Ghost Airport", "13 • Ghost Plane",
                           "14 • Easter Airport", "14 • Bird Plane", "15 • Ski Airport", "15 • Aero Sleigh",
                           "16 • Sultan Airport", "16 • Arabian Plane", "17 • Fashion Airport",
-                          "17 • Fashion Plane", "❌ • Return"}, nil)
+                          "17 • Fashion Plane", "18 • Dracula Airport",
+                          "18 • Vampire Plane","❌ • Return"}, nil)
 
     if MaxJES_7 == nil then
         return
@@ -903,6 +904,10 @@ function menuSkinAirport_Airplane()
         hack("1768641320", "1765891950", "1919905906", "1634099060", "1869178995", "110", 50)
     elseif MaxJES_7 == 36 then
         hack("696B532Ah", "69415F6Eh", "616C7072h", "665F656Eh", "69687361h", "00006E6Fh", 50)
+    elseif MaxJES_7 == 37 then
+        hackDecor("1768641316;1633641838;1768649482;49;27:177", "27", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+    elseif MaxJES_7 == 38 then
+        hackDecor("1768641314;1918984052;1768649482;49;26:177", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     else
         menuescolhas2(4)
     end
@@ -1000,7 +1005,8 @@ function menuSkinChicken()
                             "7 • Pilot Chicken", "8 • Disco Chicken", "9 • Fashion Chicken",
                             "10 • Festive Chicken", "11 • Halloween Chicken", "12 • Santa Little Helper Chicken",
                             "13 • Party Chicken", "14 • Fairytale Chicken", "15 • Harlequin Chicken",
-                            "16 • Vacation Chicken", "❌ • Return"}, nil)
+                            "16 • Vacation Chicken", "17 • Rock N Roll Chicken", "18 • Battle Chicken", 
+                            "❌ • Return"}, nil)
 
     if MaxJES_110 == nil then
         return
@@ -1023,19 +1029,23 @@ function menuSkinChicken()
     elseif MaxJES_110 == 9 then
         hack("1768641320", "1749245806", "1701536617", "1634099054", "1869178995", "110", 50)
     elseif MaxJES_110 == 10 then
-        gg.alert("Updating")
+        hackDecor("846818915;3486256;1768649482;49;25::525", "25", 0xA0, 0xA4, 0xA8, 0xAC, 0xB0, 0xB4)
     elseif MaxJES_110 == 11 then
-        gg.alert("Updating")
+        hackDecor("1768641320;1852006254;49;26:177", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_110 == 12 then
-        gg.alert("Updating")
+        hackDecor("49;26;1768641316;2004049774:181", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_110 == 13 then
-        gg.alert("Updating")
+        hackDecor("49;26;1768641318;1701338990;1935764588::593", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_110 == 14 then
-        gg.alert("Updating")
+        hackDecor("49;23;1768641316;1886609262:181", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_110 == 15 then
-        gg.alert("Updating")
+        hackDecor("49;23;1768641318;1920229230:181", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_110 == 16 then
+        hackDecor("49;25;1768641318;1701338990:349", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+    elseif MaxJES_110 == 17 then
         gg.alert("Updating")
+    elseif MaxJES_110 == 18 then
+        hack("1768641318", "1749245806", "1701536617", "1850433390", "1952999273", "0", 50)
     else
         menuescolhas2(4)
     end
@@ -1101,7 +1111,8 @@ function menuSkinSheep()
                             "7 • Sleuth Sheep", "8 • Battle Sheep", "9 • Easter Sheep",
                             "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
                             "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
-                            "16 • Christmas Sheep", "17 • Sheep Witch", "❌ • Return"}, nil)
+                            "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep", 
+                            "19 • Vampire Sheep", "❌ • Return"}, nil)
 
     if MaxJES_112 == nil then
         return
@@ -1130,14 +1141,18 @@ function menuSkinSheep()
     elseif MaxJES_112 == 12 then
         hack("1768641320", "1750294382", "1601201509", "1685221230", "1866949481", "100", 50)
     elseif MaxJES_112 == 13 then
-        gg.alert("Updating")
+        hackDecor("49;23;1769430896;808612979:89", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_112 == 14 then
-        gg.alert("Updating")
+        hackDecor("49;27;1768641322;1819043176;808612705:209", "27", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_112 == 15 then
-        gg.alert("Updating")
+        hackDecor("49;24;1650406000;846815588:89", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_112 == 16 then
-        gg.alert("Updating")
+        hackDecor("49;24;1751342960;846422381:89", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_112 == 17 then
+        hackDecor("49;24;1634230128;846095717:89", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+    elseif MaxJES_112 == 18 then
+        hack("1768641322", "1750294382", "1601201509", "1819043176", "808612705", "13618", 50)
+    elseif MaxJES_112 == 19 then
         gg.alert("Updating")
     else
         menuescolhas2(4)
