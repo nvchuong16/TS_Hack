@@ -234,7 +234,7 @@ function menuescolhas2(menu_tipo)
                            "6 • The First", "7 • Sports", "8 • Airplane", "9 • Candy", "10 • Ruins",
                            "11 • Banner & Statues", "12 • Tree", "13 • Inflatable", "14 • Puzzle",
                            "15 • Diamonds", "16 • China", "17 • Flower", "18 • Kids", "19 • Easter",
-                           "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Fruit", "24 • Cowboy",
+                           "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Entertainment", "24 • Cowboy",
                            "25 • Expedition", "❌ • Return"}, nil)
 
         if MaxJP == nil then
@@ -827,8 +827,8 @@ function menuSkinAirport_Airplane()
                           "12 • Symphony Plane", "13 • Ghost Airport", "13 • Ghost Plane",
                           "14 • Easter Airport", "14 • Bird Plane", "15 • Ski Airport", "15 • Aero Sleigh",
                           "16 • Sultan Airport", "16 • Arabian Plane", "17 • Fashion Airport",
-                          "17 • Fashion Plane", "18 • Dracula Airport",
-                          "18 • Vampire Plane","❌ • Return"}, nil)
+                          "17 • Fashion Plane", "18 • Dracula Airport", "18 • Vampire Plane", "❌ • Return"},
+        nil)
 
     if MaxJES_7 == nil then
         return
@@ -1005,7 +1005,7 @@ function menuSkinChicken()
                             "7 • Pilot Chicken", "8 • Disco Chicken", "9 • Fashion Chicken",
                             "10 • Festive Chicken", "11 • Halloween Chicken", "12 • Santa Little Helper Chicken",
                             "13 • Party Chicken", "14 • Fairytale Chicken", "15 • Harlequin Chicken",
-                            "16 • Vacation Chicken", "17 • Rock N Roll Chicken", "18 • Battle Chicken", 
+                            "16 • Vacation Chicken", "17 • Rock N Roll Chicken", "18 • Battle Chicken",
                             "❌ • Return"}, nil)
 
     if MaxJES_110 == nil then
@@ -1111,7 +1111,7 @@ function menuSkinSheep()
                             "7 • Sleuth Sheep", "8 • Battle Sheep", "9 • Easter Sheep",
                             "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
                             "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
-                            "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep", 
+                            "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep",
                             "19 • Vampire Sheep", "❌ • Return"}, nil)
 
     if MaxJES_112 == nil then
@@ -2334,7 +2334,7 @@ end
 function menuDecorPuzzle()
     MaxTPLKA = gg.choice({"1 • Land of the Dinosaurs", "2 • Spaceport", "3 • Snowman", "4 • Giant Cake",
                           "5 • Classic Car Collection", "6 • Magic School", "7 • Tree of Lights",
-                          "8 • Disco District", "9 • Rabbit Village", "10 • Water Village", "❌ • Return"}, nil)
+                          "8 • Disco Block", "9 • Rabbit Village", "10 • Overwater Villa", "❌ • Return"}, nil)
 
     if MaxTPLKA == nil then
         return
@@ -2353,7 +2353,7 @@ function menuDecorPuzzle()
     elseif MaxTPLKA == 7 then
         hack("6968431Ah", "6573656Eh", "7254594Eh", "6F006565h", "0032316Eh", "00310072h", 5)
     elseif MaxTPLKA == 8 then
-        hack("1936286756", "1866887011", "1702258034", "1970102130", "6515059", "113", 5)
+        hack("1936278564", "1698983779", "1634889571", "1852795252", "3690579", "110", 5)
     elseif MaxTPLKA == 9 then
         hack("7361451Eh", "32726574h", "44373130h", "726F6365h", "00323100h", "00310072h", 5)
     elseif MaxTPLKA == 10 then
@@ -2433,7 +2433,7 @@ function menuDecorChina()
     MaxCHIMN = gg.choice({"1 • Chinatown", "2 • Dragon Dance", "3 • Yellow Dog", "4 • Red Lily Pond",
                           "5 • Golden Bull", "6 • Golden Rat Garden", "7 • Bowl Of Wealth", "8 • Chinese House",
                           "9 • Chinese Lion", "10 • Confetti Blast Banner", "11 • Dancing Koi",
-                          "12 • Ferris Wheel", "13 • Fire Rooster", "14 • Fortune Keeper", "15 • Goldish",
+                          "12 • Ferris Wheel", "13 • Fire Rooster", "14 • Fortune Keeper", "15 • GoldFish",
                           "16 • Lantern Tree", "17 • Manekineko", "18 • Money Toad", "19 • Monkey Statue",
                           "20 • New Year Symbol", "21 • Paper Lanterns", "22 • Red Bridge", "23 • Red Dragon",
                           "❌ • Return"}, nil)
@@ -2455,37 +2455,37 @@ function menuDecorChina()
     elseif MaxCHIMN == 7 then
         hackDecor("49;1634039574;1600681068::65", "49", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxCHIMN == 8 then
-        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x50, 0x54, 0x58, 0x5C, 0x60, 0x64)
     elseif MaxCHIMN == 9 then
         hack('1634886696', '1601072999', '1952543859', '1398760821', '809000784', '48', 5)
     elseif MaxCHIMN == 10 then
         hack('1768440602', '1702061422', '1852727618', '29285', '716481010', '126', 5)
     elseif MaxCHIMN == 11 then
-        hackDecor("33;26;7959669;1701860138;1818323299", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;26;7959669;1701860138;1818323299", "26", 0x1E508, 0x1E50C, 0x1E510, 0x1E514, 0x1E518, 0x1E51C)
     elseif MaxCHIMN == 12 then
         hack('1918984990', '1702065519', '1970429804', '1919250030', '0', '0', 5)
     elseif MaxCHIMN == 13 then
-        hackDecor("33;25;1768440602;1702061422;1852727618;29285", "25", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;25;1768440602;1702061422;1852727618;29285", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxCHIMN == 14 then
         hack('1634886696', '1601072999', '1952543859', '1398760821', '809000784', '48', 5)
     elseif MaxCHIMN == 15 then
-        hackDecor("49;1919510038;1869574757::65", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0xF0, 0xF4, 0xF8, 0xFC, 0x100, 0x104)
     elseif MaxCHIMN == 16 then
-        hackDecor("1634034218;1601795189;1601069421;29285;29::249", "29", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0xA0, 0xA4, 0xA8, 0xAC, 0xB0, 0xB4)
     elseif MaxCHIMN == 17 then
-        hackDecor("1768440596;1702061422;33;26", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x280, 0x284, 0x288, 0x28C, 0x290, 0x294)
     elseif MaxCHIMN == 18 then
-        hackDecor("49;1869760020;1635013479;1634034210::65", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("49;1869760020;1635013479;1634034210::65", "49", 0x00, 0x04, 0x08, 0x0C, 0x10, 0x14)
     elseif MaxCHIMN == 19 then
-        gg.alert("Updating")
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x140, 0x144, 0x148, 0x14C, 0x150, 0x154)
     elseif MaxCHIMN == 20 then
         hack('69684326h', '6573656Eh', '705F594Eh', '74536769h', '65757461h', '00000000h', 5)
     elseif MaxCHIMN == 21 then
-        hackDecor("1634034218;1601069421;33;27;1634034188;7959669:109", "27", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x00, 0x04, 0x08, 0x0C, 0x10, 0x14)
     elseif MaxCHIMN == 22 then
-        hackDecor("33;30;1768440596;1702061422;6778692", "30", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x2D0, 0x2D4, 0x2D8, 0x2DC, 0x2E0, 0x2E4)
     elseif MaxCHIMN == 23 then
-        hackDecor("49;1684369938;1852400748::125", "49", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("1634034218;2003791475;29285;1634034188;33::81", "33", 0x190, 0x194, 0x198, 0x19C, 0x1A0, 0x1A4)
     else
         menuescolhas2(5)
     end
@@ -2842,15 +2842,15 @@ function menuDecorPirate()
     elseif MaxJTUTR == 9 then
         hack('1634034220', '1601795189', '1634888048', '1935631732', '1601202536', '7827298', 5)
     elseif MaxJTUTR == 10 then
-        hackDecor("49;32;1634034188;7959669;1701860138;1969317186:89", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("49;32;1634034188;7959669;1701860138;1969317186:89", "32", 0x98, 0x9C, 0xA0, 0xA4, 0xA8, 0xAC)
     elseif MaxJTUTR == 11 then
-        hackDecor("33;26;1634034188;7959669;1919120168;1684368735:573", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;26;1634034188;7959669;1919120168;1684368735:573", "26", 0x98, 0x9C, 0xA0, 0xA4, 0xA8, 0xAC)
     elseif MaxJTUTR == 12 then
-        hackDecor("33;26;1634034188;7959669;1919120168;1684368735:573", "26", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("33;26;1634034188;7959669;1919120168;1684368735:573", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTUTR == 13 then
         hack('1885430568', '1852399988', '1952543827', '1885300085', '1952543337', '101', 5)
     elseif MaxJTUTR == 14 then
-        hackDecor("49;32;1634034188;7959669;1701860138;1969317186:89", "32", 0x788, 0x784, 0x780, 0x77C, 0x778, 0x774)
+        hackDecor("49;32;1634034188;7959669;1701860138;1969317186:89", "32", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJTUTR == 15 then
         hack('2037147174', '1399287401', '1601202536', '1634038388', '1701999987', '0', 5)
     elseif MaxJTUTR == 16 then
@@ -3065,7 +3065,9 @@ function menuDecorExpedition()
                         "28 • Nature Embrace Glamping Base", "29 • Cosmic Cafeteria",
                         "30 • MonkeyLand Water Park", "31 • Mountain Haven", "32 • Sweet Amusement Park",
                         "33 • Halloween Windmill", "34 • Gate to Cyber City", "35 • Sheriff Office",
-                        "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage", "❌ • Return"}, nil)
+                        "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage",
+                        "39 • Heroes Of The Old Park Part 1", "39 • Heroes Of The Old Park Part 2", 
+                        "39 • Heroes Of The Old Park Part 3", "❌ • Return"}, nil)
 
     if MNCvSW == nil then
         return
@@ -3145,6 +3147,12 @@ function menuDecorExpedition()
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3683182", 1)
     elseif MNCvSW == 38 then
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3748718", 1)
+    elseif MNCvSW == 39 then
+        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1935761955, 101, "rExpe_1")
+    elseif MNCvSW == 40 then
+        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12660, "rExpe_1")
+    elseif MNCvSW == 41 then
+        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12916, "rExpe_1")
     else
         menuescolhas2(5)
     end
@@ -3349,7 +3357,7 @@ function menuSign()
     elseif MCARTE == 54 then
         hackSign("33;26;1953055504;1734955897", "26", -0x198, -0x194, -0x190, -0x18C, -0x188, -0x184) -- Cartel_54
     elseif MCARTE == 55 then
-        hackSign("33;26;1953055504;1734955897", "26", -0x1E8, -0x1E4, -0x1E0, -0x1DC, -0x1D8, -0x1D4)  -- Cartel_55
+        hackSign("33;26;1953055504;1734955897", "26", -0x1E8, -0x1E4, -0x1E0, -0x1DC, -0x1D8, -0x1D4) -- Cartel_55
     else
         menuescolhas2(1)
     end
@@ -8946,9 +8954,9 @@ function hackDecoExpe(val1, val2, val3, val4, val5, val6, val7, varcJExpe)
     elseif varcJExpe == "rExpe_2" then
         hackDecoExpe_2(28)
     elseif varcJExpe == "rExpe_3" then
-        hackDecoExpe_3(23)
+        hackDecoExpe_2(23)
     elseif varcJExpe == "rExpe_4" then
-        hackDecoExpe_4(24)
+        hackDecoExpe_2(24)
     end
 end
 
