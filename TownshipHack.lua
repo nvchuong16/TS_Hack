@@ -1,7 +1,6 @@
 -------------------------------------------
 -- Hàm tiện ích
 -------------------------------------------
-
 gg.setVisible(false)
 local freeuns = false
 UltimoMenu = nil
@@ -618,11 +617,12 @@ function menuSkinHeli_Helipad()
                           "10 • Carnival Platform Helipad", "10 • Feathery", "11 • Royal Palace Helipad",
                           "11 • Pumpkin", "12 • Detective Agency Helipad", "12 • Surveillance Airship",
                           "13 • Sleigh Parking Lot Helipad", "13 • Santas Helpers Sleigh", "13 • Santas Sleigh",
-                          "14 • Ballroom Helipad", "14 • Ballroom", "15 • Pirate Helipad", "15 • Pirate",
-                          "16 • Astro Helipad", "16 • Astro", "17 • Easter Helipad", "17 • Egg Chopper",
-                          "18 • Underwater Palace Helipad", "18 • Flying Bathyscaphe",
+                          "14 • Ballroom Helipad", "14 • Ballroom", "15 • Pirate Helipad",
+                          "15 • Pirate Helicopter", "16 • Astro Helipad", "16 • Astro", "17 • Easter Helipad",
+                          "17 • Egg Chopper", "18 • Underwater Palace Helipad", "18 • Flying Bathyscaphe",
                           "19 • Haunted Tower Helipad", "19 • Flying Cauldron", "20 • Private Helipad",
-                          "20 • Private", "❌ • Back"}, nil)
+                          "20 • Private Helicopter", "21 • Roll N Roll Helipad", "21 • Roll N Roll Helicopter",
+                          "❌ • Back"}, nil)
 
     if MaxJES_3 == nil then
         return
@@ -729,7 +729,7 @@ function menuSkinHeli_Helipad()
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "616C7461h", "7369746Eh", "00000000h", "00000000h",
             24)
     elseif MaxJES_3 == 38 then
-        gg.alert("Updating")
+        hackDecor("49;34;1818576916;1886348137;1768641324;2003790956:109", "34", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
     elseif MaxJES_3 == 39 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "6C6C6168h", "6565776Fh", "3230326Eh", "61430033h",
             29)
@@ -737,6 +737,10 @@ function menuSkinHeli_Helipad()
         hack("1768641324", "1699241838", "1868786028", "1919251568", "1952532319", "7955059", 50)
     elseif MaxJES_3 == 41 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
+    elseif MaxJES_3 == 42 then
+        hackDecor("49;34;1768641324;1765957495;1684567154", "34", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+    elseif MaxJES_3 == 43 then
+        hackDecor("1598903084;1834971749;846426721;49;29:129", "29", 0x88, 0x8C, 0x90, 0x94, 0x98, 0x9C)
     else
         menuescolhas2(4)
     end
@@ -777,7 +781,7 @@ function menuSkinTrain_TrainStation()
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "65685F6Eh", "73616C6Ch", "35323032h", "00000000h",
             28)
     elseif MaxJES_5 == 10 then
-        gg.alert("Updating")
+        hack("1768641322", "1918132078", "1601071457", "1819043176", "808612705", "13618", 50)
     elseif MaxJES_5 == 11 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "65665F6Eh", "76697473h", "65006C61h", "00000000h",
             26)
@@ -946,9 +950,11 @@ function menuSkinAirport_Airplane()
     elseif MaxJES_7 == 36 then
         hack("696B532Ah", "69415F6Eh", "616C7072h", "665F656Eh", "69687361h", "00006E6Fh", 50)
     elseif MaxJES_7 == 37 then
-        hackDecor("1768641316;1633641838;1768649482;49;27:177", "27", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "7269415Fh", "74726F70h", "6C61485Fh", "65776F6Ch", "30326E65h", "74003532h", "00000000h",
+            26)
     elseif MaxJES_7 == 38 then
-        hackDecor("1768641314;1918984052;1768649482;49;26:177", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "61485F65h", "776F6C6Ch", "326E6565h", "00353230h", "00000000h",
+            27)
     else
         menuescolhas2(4)
     end
@@ -3123,75 +3129,75 @@ function menuDecorExpedition()
     if MNCvSW == nil then
         return
     elseif MNCvSW == 1 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1698983535, 1698983535, 1634738994, 3372146, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1698983535, 1698983535, 1634738994, 3372146, nil, nil, nil, 0)
     elseif MNCvSW == 2 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738998, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738998, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 3 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738995, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738995, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 4 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738996, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738996, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 5 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738997, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738997, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 6 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738999, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738999, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 7 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634739000, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634739000, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 8 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634739001, 3241074, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634739001, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 9 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738993, 3372146, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738993, 3372146, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 10 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738994, 3372146, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738994, 3372146, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 11 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738995, 3372146, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738995, 3372146, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 12 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738996, 3372146, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738996, 3372146, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 13 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738997, 3306610, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738997, 3306610, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 14 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738998, 3306610, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738998, 3306610, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 15 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634738999, 3306610, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634738999, 3306610, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 16 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634739000, 3241074, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634739000, 3241074, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 17 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1634739001, 3241074, 7561581, 23)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1634739001, 3241074, 7561581, nil, nil, nil, 23)
     elseif MNCvSW == 18 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1881354289, 829715041, 7561581, 24)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1881354289, 829715041, 7561581, nil, nil, nil, 24)
     elseif MNCvSW == 19 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1881354545, 829715041, 7561581, 24)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1881354545, 829715041, 7561581, nil, nil, nil, 24)
     elseif MNCvSW == 20 then
-        hackDecoExpe(1735550285, 1698968165, 1634889571, 1852795252, 1881354801, 829715041, 7561581, 24)
+        hackSkin(1735550285, 1698968165, 1634889571, 1852795252, 1881354801, 829715041, 7561581, nil, nil, nil, 24)
     elseif MNCvSW == 21 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354289, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354289, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 22 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354545, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354545, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 23 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354801, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354801, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 24 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355057, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355057, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 25 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355313, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355313, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 26 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355569, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355569, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 27 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355825, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355825, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 28 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356081, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356081, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 29 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356337, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356337, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 30 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356593, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881356593, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 31 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354290, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354290, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 32 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354546, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354546, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 33 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354802, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354802, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 34 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355315, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355315, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 35 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355571, 829715041, 28)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355571, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 36 then
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3486318", 1)
     elseif MNCvSW == 37 then
@@ -3199,11 +3205,11 @@ function menuDecorExpedition()
     elseif MNCvSW == 38 then
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3748718", 1)
     elseif MNCvSW == 39 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1935761955, 101, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1935761955, 101, nil, nil, nil, 0)
     elseif MNCvSW == 40 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12660, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12660, nil, nil, nil, 0)
     elseif MNCvSW == 41 then
-        hackDecoExpe(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12916, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12916, nil, nil, nil, 0)
     else
         menuescolhas2(5)
     end
@@ -3262,203 +3268,198 @@ function menuBadge()
 end
 
 function menuSign()
-    MCARTE = gg.choice({'1 • Fountain Sign', '2 • Aloha Sign', '3 • Aviator Sign', '4 • Big Screen Sign',
-                        '5 • Old Ranch Sign', '6 • Windmill Sign', '7 • Mechanical Sign', '8 • Cactus Sign',
-                        '9 • Artisan Sign', '10 • Flower Sign', '11 • Awesome Sign', '12 • Musical Sign',
-                        '13 • Luminous Sign', '14 • Neon Sign', '15 • Wild West Sign', '16 • Christmas Sign',
-                        '17 • Large Halloween Sign', '18 • City Day Sign', '19 • Farmer Card',
-                        '20 • City of Lights Card', '21 • City of Dreams Card', '22 • Ancestral Card',
-                        '23 • Stone Card', '24 • Zero Card', '25 • Easter Card', '26 • Paranormal Card',
-                        '27 • Inflatable Monster Card', '28 • Snowboard Card', '29 • Bubblegum World Card',
-                        '30 • Beach Bar Card', '31 • Sweet Home Card', '32 • Story Card', '33 • Rocker Card',
-                        '34 • Card 26', '35 • Card 27', '36 • Card 28', '37 • Card 29', '38 • Card 30',
-                        '39 • Card 31', '40 • Card 32', '41 • Card 33', '42 • Card 34', '43 • Card 35',
-                        '44 • Card 36', '45 • Card 37', '46 • Card 38', '47 • Card 39', '48 • Card 40',
-                        '49 • Card 41', '50 • Card 42', '51 • Card 43', '52 • Card 44', '53 • Carte 45',
-                        '54 • Card 46', '55 • Card 47', '❌ • Back'}, nil)
+    MCARTE = gg.choice({"1 • Winged Sign", "2 • Sp 790 Sign", "3 • Arabic Sign", "4 • Cinema Sign",
+                        "5 • Cactus Sign", "6 • Wooden Sign", "7 • Easter Sign", "8 • Snowboard Sign",
+                        "9 • Furniture Sign", "10 • Flowerbed Sign", "11 • Wild West Sign",
+                        "12 • Christmas Sign", "13 • Halloween Sign", "14 • Vegas Sign", "15 • Ilove Sign",
+                        "16 • Asian Sign", "17 • Stone Sign", "18 • Music Sign", "19 • Palm Trees Sign",
+                        "20 • Mystical Sign", "21 • Frank Halloween Sign", "22 • Lamp Board Sign",
+                        "23 • Disco Sign", "24 • Ruminant Machine Sign", "25 • Smoothiebar Sign",
+                        "26 • Birthday 10years Sign", "27 • Tv City Sign", "28 • Harvest Sign",
+                        "29 • Ironcity Sign", "30 • Rock Sign", "31 • Neon Sign", "32 • Farm Sign",
+                        "33 • Cow Sign", "34 • Mill Sign", "35 • Def Sign", "36 • Mechanic Sign",
+                        "37 • Birthday Sign", "38 • Dry Fountain Sign", "39 • Regatta 2100 Sign",
+                        "40 • Regatta 2300 Sign", "41 • Regatta 2400 Sign", "42 • Regatta 3000 Sign",
+                        "43 • Regatta 3100 Sign", "44 • Expedition22 Sign", "45 • Expedition23 Sign",
+                        "46 • Expedition24 Sign", "47 • Expedition25 Sign", "48 • Expedition26 Sign",
+                        "49 • Expedition27 Sign", "50 • Expedition28 Sign", "51 • Expedition29 Sign",
+                        "52 • Expedition30 Sign", "53 • Expedition31 Sign", "54 • Expedition32 Sign",
+                        "55 • Expedition33 Sign", "56 • Expedition36 Sign", "❌ • Back"}, nil,
+        "CHOOSE ONE OPTION")
 
     if MCARTE == nil then
         return
     elseif MCARTE == 1 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", -0x8, -0x4, 0x00, 0x4, 0x8, 0xC) -- Cartel_1
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "775F6E67h", "65676E69h", "69735F64h", "6C006E67h", "6320736Fh",
+            nil, nil, 26)
     elseif MCARTE == 2 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", 0x48, 0x4C, 0x50, 0x54, 0x58, 0x5C) -- Cartel_2
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "535F6E67h", "39375F50h", "69735F30h", "65006E67h", "696D206Ch",
+            nil, nil, 26)
     elseif MCARTE == 3 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", -0x58, -0x54, -0x50, -0x4C, -0x48, -0x44) -- Cartel_3
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "615F6E67h", "69626172h", "69735F63h", "3F006E67h", "41A1C220h",
+            nil, nil, 26)
     elseif MCARTE == 4 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", -0xA8, -0xA4, -0xA0, -0x9C, -0x98, -0x94) -- Cartel_4
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "635F6E67h", "6D656E69h", "69735F61h", "20006E67h", "71206F6Ch",
+            nil, nil, 26)
     elseif MCARTE == 5 then
-        hackDecor("00000031h;00000020h;74694310h;67695379h;6C00006Eh", "32", -0xF8, -0xF4, -0xF0, -0xEC, -0xE8, -0xE4) -- Cartel_5
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "635F6E67h", "75746361h", "69735F73h", "31006E67h", "4200325Fh",
+            nil, nil, 26)
     elseif MCARTE == 6 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x148, -0x144, -0x140, -0x13C, -0x138,
-            -0x134) -- Cartel_6
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "775F6E67h", "65646F6Fh", "69735F6Eh", "74006E67h", "305F3165h",
+            nil, nil, 26)
     elseif MCARTE == 7 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x198, -0x194, -0x190, -0x18C, -0x188,
-            -0x184) -- Cartel_7
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "65747361h", "69735F72h", "73006E67h", "75206165h",
+            nil, nil, 26)
     elseif MCARTE == 8 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x1E8, -0x1E4, -0x1E0, -0x1DC, -0x1D8,
-            -0x1D4) -- Cartel_8
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "735F6E67h", "62776F6Eh", "6472616Fh", "6769735Fh", "7661006Eh",
+            nil, nil, 29)
     elseif MCARTE == 9 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x238, -0x234, -0x230, -0x22C, -0x228,
-            -0x224) -- Cartel_9
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "665F6E67h", "696E7275h", "65727574h", "6769735Fh", "7120006Eh",
+            nil, nil, 29)
     elseif MCARTE == 10 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x288, -0x284, -0x280, -0x27C, -0x278,
-            -0x274) -- Cartel_10
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "665F6E67h", "65776F6Ch", "64656272h", "6769735Fh", "4370006Eh",
+            nil, nil, 29)
     elseif MCARTE == 11 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x2D8, -0x2D4, -0x2D0, -0x2CC, -0x2C8,
-            -0x2C4) -- Cartel_11
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "775F6E67h", "5F646C69h", "74736577h", "6769735Fh", "6F6E006Eh",
+            nil, nil, 29)
     elseif MCARTE == 12 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x328, -0x324, -0x320, -0x31C, -0x318,
-            -0x314) -- Cartel_12
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "635F6E67h", "73697268h", "73616D74h", "6769735Fh", "2E72006Eh",
+            nil, nil, 29)
     elseif MCARTE == 13 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x378, -0x374, -0x370, -0x36C, -0x368,
-            -0x364) -- Cartel_13
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "685F6E67h", "6F6C6C61h", "6E656577h", "6769735Fh", "6863006Eh",
+            nil, nil, 29)
     elseif MCARTE == 14 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x3C8, -0x3C4, -0x3C0, -0x3BC, -0x3B8,
-            -0x3B4) -- Cartel_14
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "765F6E67h", "73616765h", "6769735Fh", "706D006Eh", "445F656Ch",
+            nil, nil, 25)
     elseif MCARTE == 15 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x418, -0x414, -0x410, -0x40C, -0x408,
-            -0x404) -- Cartel_15
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "695F6E67h", "65766F6Ch", "6769735Fh", "C220006Eh", "656953A1h",
+            nil, nil, 25)
     elseif MCARTE == 16 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x468, -0x464, -0x460, -0x45C, -0x458,
-            -0x454) -- Cartel_16
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "615F6E67h", "6E616973h", "6769735Fh", "2061006Eh", "65206179h",
+            nil, nil, 25)
     elseif MCARTE == 17 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x4B8, -0x4B4, -0x4B0, -0x4AC, -0x4A8,
-            -0x4A4) -- Cartel_17
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "735F6E67h", "656E6F74h", "6769735Fh", "C200006Eh", "2C6655A1h",
+            nil, nil, 25)
     elseif MCARTE == 18 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x508, -0x504, -0x500, -0x4FC, -0x4F8,
-            -0x4F4) -- Cartel_18
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "6D5F6E67h", "63697375h", "6769735Fh", "2061006Eh", "7020616Ch",
+            nil, nil, 25)
     elseif MCARTE == 19 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x558, -0x554, -0x550, -0x54C, -0x548,
-            -0x544) -- Cartel_19
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "705F6E67h", "5F6D6C61h", "65657274h", "535F0073h", "52657661h",
+            nil, nil, 25)
     elseif MCARTE == 20 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x5A8, -0x5A4, -0x5A0, -0x59C, -0x598,
-            -0x594) -- Cartel_20
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "6D5F6E67h", "69747379h", "5F6C6163h", "6E657665h", "20007374h",
+            nil, nil, 30)
     elseif MCARTE == 21 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x5F8, -0x5F4, -0x5F0, -0x5EC, -0x5E8,
-            -0x5E4) -- Cartel_21
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "665F6E67h", "6B6E6172h", "6C61685Fh", "65776F6Ch", "6F006E65h",
+            nil, nil, 30)
     elseif MCARTE == 22 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x648, -0x644, -0x640, -0x63C, -0x638,
-            -0x634) -- Cartel_22
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "6C5F6E67h", "5F706D61h", "72616F62h", "69735F64h", "74006E67h",
+            nil, nil, 30)
     elseif MCARTE == 23 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x698, -0x694, -0x690, -0x68C, -0x688,
-            -0x684) -- Cartel_23
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "645F6E67h", "6F637369h", "7469635Fh", "69735F79h", "70006E67h",
+            nil, nil, 30)
     elseif MCARTE == 24 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x6E8, -0x6E4, -0x6E0, -0x6DC, -0x6D8,
-            -0x6D4) -- Cartel_24
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "6E696D75h", "5F746E61h", "6863616Dh", "00656E69h",
+            nil, nil, 31)
     elseif MCARTE == 25 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", -0x738, -0x734, -0x730, -0x72C, -0x728,
-            -0x724) -- Cartel_25
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "735F6E67h", "746F6F6Dh", "62656968h", "5F303038h", "006E6769h",
+            nil, nil, 31)
     elseif MCARTE == 26 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", 0x98, 0x9C, 0xA0, 0xA4, 0xA8, 0xAC) -- Cartel_26
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "625F6E67h", "68747269h", "5F796164h", "65793031h", "00737261h",
+            nil, nil, 31)
     elseif MCARTE == 27 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", 0xE8, 0xEC, 0xF0, 0xF4, 0xF8, 0xFC) -- Cartel_27
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "545F6E67h", "69635F56h", "735F7974h", "006E6769h", "65686361h",
+            nil, nil, 27)
     elseif MCARTE == 28 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", 0x138, 0x13C, 0x140, 0x144, 0x148, 0x14C) -- Cartel_28
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "685F6E67h", "65767261h", "735F7473h", "006E6769h", "6563206Ch",
+            nil, nil, 27)
     elseif MCARTE == 29 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", 0x188, 0x18C, 0x190, 0x194, 0x198, 0x19C) -- Cartel_29
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "495F6E67h", "436E6F72h", "53797469h", "006E6769h", "6E61206Fh",
+            nil, nil, 27)
     elseif MCARTE == 30 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", 0x1D8, 0x1DC, 0x1E0, 0x1E4, 0x1E8, 0x1EC) -- Cartel_30
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "5F6B636Fh", "6E676973h", "2E616300h", "78450000h",
+            nil, nil, 24)
     elseif MCARTE == 31 then
-        hackDecor("00000031h;00000020h;74695310h;67695379h;6C00006Eh", "32", 0x228, 0x22C, 0x230, 0x234, 0x238, 0x23C) -- Cartel_31
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "6E5F6E67h", "5F6E6F65h", "6E676973h", "656C7000h", "6169445Fh",
+            nil, nil, 24)
     elseif MCARTE == 32 then
-        hackSign("33;26;1953055504;1734955897", "26", -0x8, -0x4, 0x00, 0x4, 0x8, 0xC) -- Cartel_32
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "665F6E67h", "5F6D7261h", "6E676973h", "B3C37400h", "6F636972h",
+            nil, nil, 24)
     elseif MCARTE == 33 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x48, 0x4C, 0x50, 0x54, 0x58, 0x5C) -- Cartel_33
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "635F6E67h", "735F776Fh", "006E6769h", "4370756Fh", "6C706D6Fh",
+            nil, nil, 23)
     elseif MCARTE == 34 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x98, 0x9C, 0xA0, 0xA4, 0xA8, 0xAC) -- Cartel_34
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "4D5F6E67h", "536C6C69h", "006E6769h", "C3747365h", "716120A1h",
+            nil, nil, 23)
     elseif MCARTE == 35 then
-        hackSign("33;26;1953055504;1734955897", "26", 0xE8, 0xEC, 0xF0, 0xF4, 0xF8, 0xFC) -- Cartel_35
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "645F6E67h", "735F6665h", "006E6769h", "20657571h", "20736F6Eh",
+            nil, nil, 23)
     elseif MCARTE == 36 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x138, 0x13C, 0x140, 0x144, 0x148, 0x14C) -- Cartel_36
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "6D5F6E67h", "61686365h", "5F63696Eh", "6E676973h", "616C2000h",
+            nil, nil, 28)
     elseif MCARTE == 37 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x188, 0x18C, 0x190, 0x194, 0x198, 0x19C) -- Cartel_37
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "625F6E67h", "68747269h", "5F796164h", "6E676973h", "646E6500h",
+            nil, nil, 28)
     elseif MCARTE == 38 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x1D8, 0x1DC, 0x1E0, 0x1E4, 0x1E8, 0x1EC) -- Cartel_38
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "645F6E67h", "665F7972h", "746E756Fh", "5F6E6961h", "6E676973h",
+            nil, nil, 32)
     elseif MCARTE == 39 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x228, 0x22C, 0x230, 0x234, 0x238, 0x23C) -- Cartel_39
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "74616765h", "325F6174h", "5F303031h", "6E676973h",
+            nil, nil, 32)
     elseif MCARTE == 40 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x278, 0x27C, 0x280, 0x284, 0x288, 0x28C) -- Cartel_40
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "74616765h", "325F6174h", "5F303033h", "6E676973h",
+            nil, nil, 32)
     elseif MCARTE == 41 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x2C8, 0x2CC, 0x2D0, 0x2D4, 0x2D8, 0x2DC) -- Cartel_41
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "74616765h", "325F6174h", "5F303034h", "6E676973h",
+            nil, nil, 32)
     elseif MCARTE == 42 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x318, 0x31C, 0x320, 0x324, 0x328, 0x32C) -- Cartel_42
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "74616765h", "335F6174h", "5F303030h", "6E676973h",
+            nil, nil, 32)
     elseif MCARTE == 43 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x368, 0x36C, 0x370, 0x374, 0x378, 0x37C) -- Cartel_43
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "725F6E67h", "74616765h", "335F6174h", "5F303031h", "6E676973h",
+            nil, nil, 32)
     elseif MCARTE == 44 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x3B8, 0x3BC, 0x3C0, 0x3C4, 0x3C8, 0x3CC) -- Cartel_44
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F32326Eh", "30303232h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 45 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x408, 0x40C, 0x410, 0x414, 0x418, 0x41C) -- Cartel_45
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F33326Eh", "30303232h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 46 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x458, 0x45C, 0x460, 0x464, 0x468, 0x46C) -- Cartel_46
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F34326Eh", "30303332h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 47 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x4A8, 0x4AC, 0x4B0, 0x4B4, 0x4B8, 0x4BC) -- Cartel_47
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F35326Eh", "30303332h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 48 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x4F8, 0x4FC, 0x500, 0x504, 0x508, 0x50C) -- Cartel_48
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F36326Eh", "30303432h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 49 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x548, 0x54C, 0x550, 0x554, 0x558, 0x55C) -- Cartel_49
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F37326Eh", "30303432h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 50 then
-        hackSign("33;26;1953055504;1734955897", "26", 0x598, 0x59C, 0x5A0, 0x5A4, 0x5A8, 0x5AC) -- Cartel_50
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F38326Eh", "30303532h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 51 then
-        hackSign("33;26;1953055504;1734955897", "26", -0xA8, -0xA4, -0xA0, -0x9C, -0x98, -0x94) -- Cartel_51
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F39326Eh", "30303532h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 52 then
-        hackSign("33;26;1953055504;1734955897", "26", -0xF8, -0xF4, -0xF0, -0xEC, -0xE8, -0xE4) -- Cartel_52
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F30336Eh", "30303632h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 53 then
-        hackSign("33;26;1953055504;1734955897", "26", -0x148, -0x144, -0x140, -0x13C, -0x138, -0x134) -- Cartel_53
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F31336Eh", "30303632h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 54 then
-        hackSign("33;26;1953055504;1734955897", "26", -0x198, -0x194, -0x190, -0x18C, -0x188, -0x184) -- Cartel_54
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F32336Eh", "30303732h",
+            "6769735Fh", "0000006Eh", 37)
     elseif MCARTE == 55 then
-        hackSign("33;26;1953055504;1734955897", "26", -0x1E8, -0x1E4, -0x1E0, -0x1DC, -0x1D8, -0x1D4) -- Cartel_55
-    else
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F33336Eh", "30303732h",
+            "6769735Fh", "0000006Eh", 37)
+    elseif MCARTE == 56 then
+        hackSkin("6E696B73h", "7469635Fh", "69735F79h", "655F6E67h", "64657078h", "6F697469h", "5F36336Eh", "30303932h",
+            "6769735Fh", "0000006Eh", 37)
+    elseif MCARTE == 57 then
         menuescolhas2(1)
     end
-
-end
-
----- HACK SIGN
-function hackSign(search, refine, add_1, add_2, add_3, add_4, add_5, add_6)
-    gg.searchNumber(search, gg.TYPE_DWORD)
-    gg.refineNumber(refine, gg.TYPE_DWORD)
-
-    local r = gg.getResults(8) -- load items
-    local val_1 = {}
-    val_1[8] = {
-        address = r[8].address + add_1,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[8] = {
-        address = r[8].address + add_2,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-    local val_3 = {}
-    val_3[8] = {
-        address = r[8].address + add_3,
-        flags = gg.TYPE_DWORD
-    }
-    val_3 = gg.getValues(val_3)
-    local val_4 = {}
-    val_4[8] = {
-        address = r[8].address + add_4,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[8] = {
-        address = r[8].address + add_5,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[8] = {
-        address = r[8].address + add_6,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-    hack(val_1[8].value, val_2[8].value, val_3[8].value, val_4[8].value, val_5[8].value, val_6[8].value, 5)
-    return
 end
 
 ---- FORJA HACK
@@ -3703,7 +3704,7 @@ end
 
 ---- GOLDPASS HACK
 function hack15cD()
-    gg.alert("Processing...")
+    gg.toast("Processing...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("6E726526h;6E656577h;35323032h;00626104h;00000031h;0000001Bh", gg.TYPE_DWORD)
@@ -3736,8 +3737,6 @@ function hack15cD()
         A[2].value = 0
         A[2].freeze = false
         gg.setValues(A)
-
-        gg.alert("hack done")
     else
         gg.alert("NO done...")
         gg.clearResults()
@@ -4289,7 +4288,7 @@ function Name_1()
     v_7[1].freeze = false
     gg.setValues(v_7)
     -- gg.clearResults()
-    hackDecoExpe_4(24)
+    hackSkin_1(24)
 end
 function Frame_1()
     gg.toast("Loading............ Frame ")
@@ -4365,81 +4364,10 @@ function Frame_1()
     v_8[1].freeze = false
     gg.setValues(v_8)
     -- gg.clearResults()
-    hackDecoExpe_4(24)
+    hackSkin_1(24)
 end
 
--- HACK DECORATION EXPEDITION
-function hackDecoExpe(val1, val2, val3, val4, val5, val6, val7, num)
-    gg.toast("Loading............ Expedition") -- reina de la isla tortuga 2#part3
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    count = gg.getResultsCount()
-    val = gg.getResults(count)
-    for i, v in ipairs(val) do
-        v.address = v.address + 0x2C -- offset where is address storing pointer
-        -- set appropiate flag
-    end
-    val = gg.getValues(val)
-    for i, v in ipairs(val) do
-        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
-        v.address = v.value
-    end
-    gg.loadResults(val)
-    local v_1 = {}
-    v_1[1] = {}
-    v_1[1].address = val[1].address
-    v_1[1].flags = gg.TYPE_DWORD
-    v_1[1].value = val1
-    v_1[1].freeze = false
-    gg.setValues(v_1)
-    local v_2 = {}
-    v_2[1] = {}
-    v_2[1].address = val[1].address + 0x04
-    v_2[1].flags = gg.TYPE_DWORD
-    v_2[1].value = val2
-    v_2[1].freeze = false
-    gg.setValues(v_2)
-    local v_3 = {}
-    v_3[1] = {}
-    v_3[1].address = val[1].address + 0x08
-    v_3[1].flags = gg.TYPE_DWORD
-    v_3[1].value = val3
-    v_3[1].freeze = false
-    gg.setValues(v_3)
-    local v_4 = {}
-    v_4[1] = {}
-    v_4[1].address = val[1].address + 0x0C
-    v_4[1].flags = gg.TYPE_DWORD
-    v_4[1].value = val4
-    v_4[1].freeze = false
-    gg.setValues(v_4)
-    local v_5 = {}
-    v_5[1] = {}
-    v_5[1].address = val[1].address + 0x10
-    v_5[1].flags = gg.TYPE_DWORD
-    v_5[1].value = val5
-    v_5[1].freeze = false
-    gg.setValues(v_5)
-    local v_6 = {}
-    v_6[1] = {}
-    v_6[1].address = val[1].address + 0x14
-    v_6[1].flags = gg.TYPE_DWORD
-    v_6[1].value = val6
-    v_6[1].freeze = false
-    gg.setValues(v_6)
-    local v_7 = {}
-    v_7[1] = {}
-    v_7[1].address = val[1].address + 0x18
-    v_7[1].flags = gg.TYPE_DWORD
-    v_7[1].value = val7
-    v_7[1].freeze = false
-    gg.setValues(v_7)
-
-    hackSkin_1(num)
-end
-
-function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, num)
+function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num)
     gg.toast("Loading............")
     gg.processResume()
     gg.clearResults()
@@ -4505,13 +4433,34 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, num)
     v_7[1].value = val7
     v_7[1].freeze = false
     gg.setValues(v_7)
-    local v_8 = {}
-    v_8[1] = {}
-    v_8[1].address = val[1].address + 0x1C
-    v_8[1].flags = gg.TYPE_DWORD
-    v_8[1].value = val8
-    v_8[1].freeze = false
-    gg.setValues(v_8)
+
+    if val8 ~= nill then
+        local v_8 = {}
+        v_8[1] = {}
+        v_8[1].address = val[1].address + 0x1C
+        v_8[1].flags = gg.TYPE_DWORD
+        v_8[1].value = val8
+        v_8[1].freeze = false
+        gg.setValues(v_8)
+    end
+    if val9 ~= nill then
+        local v_9 = {}
+        v_9[1] = {}
+        v_9[1].address = val[1].address + 0x20
+        v_9[1].flags = gg.TYPE_DWORD
+        v_9[1].value = val9
+        v_9[1].freeze = false
+        gg.setValues(v_9)
+    end
+    if val10 ~= nill then
+        local v_10 = {}
+        v_10[1] = {}
+        v_10[1].address = val[1].address + 0x24
+        v_10[1].flags = gg.TYPE_DWORD
+        v_10[1].value = val10
+        v_10[1].freeze = false
+        gg.setValues(v_10)
+    end
 
     hackSkin_1(num)
 end
@@ -4680,104 +4629,104 @@ function MENUFREE()
     end
 end
 
-local SERVER_URL =
-    "https://script.google.com/macros/s/AKfycbxVgHRNs1aDtHQ5PqW7ZDH2p2c1xb3KlL4F98xKVxGHP0_5GOJUdbe8NKgteOjWHJFmsw/exec"
+-- local SERVER_URL =
+--     "https://script.google.com/macros/s/AKfycbxVgHRNs1aDtHQ5PqW7ZDH2p2c1xb3KlL4F98xKVxGHP0_5GOJUdbe8NKgteOjWHJFmsw/exec"
 
--- Tạo device ID duy nhất (HWID giả lập)
-function make_device_id()
-    local info = gg.getTargetInfo()
-    local seed = (info.packageName or "") .. (info.versionName or "") .. (info.processName or "")
-    local h = 2166136261
-    for i = 1, #seed do
-        h = bit32.bxor(h, seed:byte(i))
-        h = (h * 16777619) % 2 ^ 32
-    end
-    return string.format("DEV-%08X", h)
-end
+-- -- Tạo device ID duy nhất (HWID giả lập)
+-- function make_device_id()
+--     local info = gg.getTargetInfo()
+--     local seed = (info.packageName or "") .. (info.versionName or "") .. (info.processName or "")
+--     local h = 2166136261
+--     for i = 1, #seed do
+--         h = bit32.bxor(h, seed:byte(i))
+--         h = (h * 16777619) % 2 ^ 32
+--     end
+--     return string.format("DEV-%08X", h)
+-- end
 
--- Gửi HTTP GET
-function http_get(url)
-    local ok, resp = pcall(gg.makeRequest, url)
-    if not ok or not resp then
-        return nil
-    end
-    return resp.content
-end
+-- -- Gửi HTTP GET
+-- function http_get(url)
+--     local ok, resp = pcall(gg.makeRequest, url)
+--     if not ok or not resp then
+--         return nil
+--     end
+--     return resp.content
+-- end
 
--- Kiểm tra thiết bị đã đăng ký chưa
-function check_device_registered(device_id)
-    local url = string.format("%s?action=check_device&device=%s", SERVER_URL, device_id)
-    local resp = http_get(url)
-    if not resp then
-        gg.alert("⚠️ Không thể kết nối đến server.\nVui lòng kiểm tra mạng.")
-        return false, "network_error"
-    end
+-- -- Kiểm tra thiết bị đã đăng ký chưa
+-- function check_device_registered(device_id)
+--     local url = string.format("%s?action=check_device&device=%s", SERVER_URL, device_id)
+--     local resp = http_get(url)
+--     if not resp then
+--         gg.alert("⚠️ Không thể kết nối đến server.\nVui lòng kiểm tra mạng.")
+--         return false, "network_error"
+--     end
 
-    if resp:match("REGISTERED") then
-        return true
-    else
-        return false
-    end
-end
+--     if resp:match("REGISTERED") then
+--         return true
+--     else
+--         return false
+--     end
+-- end
 
--- Kiểm tra key hợp lệ
-function validate_key(device_id, key)
-    local url = string.format("%s?action=validate&key=%s&device=%s", SERVER_URL, key, device_id)
-    local resp = http_get(url)
-    if not resp then
-        gg.alert("⚠️ Không thể kết nối đến server để xác thực key.")
-        return false
-    end
+-- -- Kiểm tra key hợp lệ
+-- function validate_key(device_id, key)
+--     local url = string.format("%s?action=validate&key=%s&device=%s", SERVER_URL, key, device_id)
+--     local resp = http_get(url)
+--     if not resp then
+--         gg.alert("⚠️ Không thể kết nối đến server để xác thực key.")
+--         return false
+--     end
 
-    if resp:match("EXPIRED") then
-        gg.alert("❌ Key hết hạn.\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
-                 "\n\n👉 Liên hệ với Admin để gia hạn key.")
-        return false
-    elseif resp:match("WRONG") then
-        gg.alert("❌ Key không đúng")
-        return false
-    end
+--     if resp:match("EXPIRED") then
+--         gg.alert("❌ Key hết hạn.\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
+--                      "\n\n👉 Liên hệ với Admin để gia hạn key.")
+--         return false
+--     elseif resp:match("WRONG") then
+--         gg.alert("❌ Key không đúng")
+--         return false
+--     end
 
-    return true
-end
+--     return true
+-- end
 
--- Đăng ký key mới
-function request_key(device_id)
-    local url = string.format("%s?action=request&device=%s", SERVER_URL, device_id)
-    local resp = http_get(url)
-    if resp:match("OK") then
-        gg.alert("✅ Đăng ký thành công")
-    end
-end
+-- -- Đăng ký key mới
+-- function request_key(device_id)
+--     local url = string.format("%s?action=request&device=%s", SERVER_URL, device_id)
+--     local resp = http_get(url)
+--     if resp:match("OK") then
+--         gg.alert("✅ Đăng ký thành công")
+--     end
+-- end
 
--------------------------------------------
--- 🚀 Chương trình chính
--------------------------------------------
+-- -------------------------------------------
+-- -- 🚀 Chương trình chính
+-- -------------------------------------------
 
-local device_id = make_device_id()
-gg.toast("🔍 Kiểm tra thiết bị...")
+-- local device_id = make_device_id()
+-- gg.toast("🔍 Kiểm tra thiết bị...")
 
-local registered = check_device_registered(device_id)
+-- local registered = check_device_registered(device_id)
 
-if not registered then
-    gg.alert("❌ Thiết bị CHƯA được đăng ký!\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
-                 "\n\n👉 Gửi Device ID này cho Admin để nhận key.")
-    request_key(device_id)
-    os.exit()
-end
+-- if not registered then
+--     gg.alert("❌ Thiết bị CHƯA được đăng ký!\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
+--                  "\n\n👉 Gửi Device ID này cho Admin để nhận key.")
+--     request_key(device_id)
+--     os.exit()
+-- end
 
--- Nếu thiết bị đã đăng ký → yêu cầu nhập key
-local input = gg.prompt({"Nhập key của bạn:"}, {""}, {"text"})
-if not input or input[1] == "" then
-    gg.alert("Bạn chưa nhập key. Thoát.")
-    os.exit()
-end
+-- -- Nếu thiết bị đã đăng ký → yêu cầu nhập key
+-- local input = gg.prompt({"Nhập key của bạn:"}, {""}, {"text"})
+-- if not input or input[1] == "" then
+--     gg.alert("Bạn chưa nhập key. Thoát.")
+--     os.exit()
+-- end
 
-local key = input[1]:gsub("%s+", "")
+-- local key = input[1]:gsub("%s+", "")
 
-if not validate_key(device_id, key) then
-    os.exit()
-end
+-- if not validate_key(device_id, key) then
+--     os.exit()
+-- end
 
 local function showMenu()
     gg.clearList()
