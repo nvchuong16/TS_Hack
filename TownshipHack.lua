@@ -328,9 +328,9 @@ function menuescolhas2(menu_tipo)
         if FCC == nil then
             return
         elseif FCC == 1 then
-            HackCons()
+            hackSkin(1113542739, 1953722223, 1701146707, 1114658148, 1684826485, 1936158313, 0, nil, nil, nil, 24, 100)
         elseif FCC == 2 then
-            HackGran()
+            hackSkin(1113542739, 1953722223, 1919906899, 1130719073, 1667330145, 7959657, 0, nil, nil, nil, 23, 5000)
         elseif FCC == 3 then
             hack("1599099692", "1936682818", "1701860212", "1884644453", "1987207496", "7631717", 100)
         else
@@ -343,9 +343,10 @@ function menuescolhas2(menu_tipo)
         if MNxC == nil then
             return
         elseif MNxC == 1 then
-            Name_1()
+            hackSkin(1348423763, 1768320882, 1951622508, 1600482425, 1953719654, 1818326633, 980641024, nil, nil, nil, 24)
         elseif MNxC == 2 then
-            Frame_1()
+            hackSkin(1348423763, 1768320882, 1917216108, 1600482657, 1953719654, 1818326633, 808534528, 1110454853, nil, nil, 24)
+
         else
             menuescolhas2(1)
         end
@@ -589,19 +590,19 @@ function menuSkinCastle()
         hack("696B5328h", "6F465F6Eh", "65727472h", "615F7373h", "6365747Ah", "00000073h", 50)
     elseif MaxJES_1 == 10 then
         hackSkin("6E696B53h", "726F465Fh", "73657274h", "72705F73h", "73696865h", "69726F74h", "C7DE0063h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_1 == 11 then
         hackSkin("6E696B53h", "726F465Fh", "73657274h", "68435F73h", "74736972h", "0073616Dh", "00000000h", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_1 == 12 then
         hackSkin("6E696B53h", "726F465Fh", "73657274h", "61485F73h", "776F6C6Ch", "326E6565h", "5F313230h", "00000031h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_1 == 13 then
         hackSkin("6E696B53h", "726F465Fh", "73657274h", "61485F73h", "776F6C6Ch", "326E6565h", "5F313230h", "00000032h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_1 == 14 then
         hackSkin("6E696B53h", "726F465Fh", "73657274h", "61485F73h", "776F6C6Ch", "326E6565h", "5F313230h", "00000033h",
-            29)
+            nil, nil, 29)
     else
         menuescolhas2(4)
     end
@@ -628,119 +629,120 @@ function menuSkinHeli_Helipad()
         return
     elseif MaxJES_3 == 1 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "796E635Fh", "35323032h", "00000000h",
-            28)
+            nil, nil, 28)
     elseif MaxJES_3 == 2 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "32796E63h", "00353230h", "00000000h", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_3 == 3 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6172545Fh", "006C6576h", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_3 == 4 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172545Fh", "006C6576h", 50)
     elseif MaxJES_3 == 5 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6F70535Fh", "00007472h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_3 == 6 then
         hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "6F70535Fh", "00007472h", 50)
     elseif MaxJES_3 == 7 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6F66555Fh", "00006500h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_3 == 8 then
         hack("696B5326h", "65485F6Eh", "6F63696Ch", "72657470h", "6F66555Fh", "00000000h", 50)
     elseif MaxJES_3 == 9 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "626F525Fh", "C700746Fh", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_3 == 10 then
         hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "626F525Fh", "0000746Fh", 50)
     elseif MaxJES_3 == 11 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7261485Fh", "74736576h", "00000000h",
-            28)
+            nil, nil, 28)
     elseif MaxJES_3 == 12 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "76726148h", "00747365h", "C7DE35B8h", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_3 == 13 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6172415Fh", "00636962h", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_3 == 14 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172415Fh", "00636962h", 50)
     elseif MaxJES_3 == 15 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7365525Fh", "0074726Fh", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_3 == 16 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7365525Fh", "0074726Fh", 50)
     elseif MaxJES_3 == 17 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7369645Fh", "00006F63h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_3 == 18 then
         hack("696B532Ah", "65485F6Eh", "6F63696Ch", "72657470h", "7369645Fh", "00006F63h", 50)
     elseif MaxJES_3 == 19 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6172625Fh", "006C697Ah", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_3 == 20 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "6172625Fh", "006C697Ah", 50)
     elseif MaxJES_3 == 21 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6E69635Fh", "65726564h", "00616C6Ch",
-            31)
+            nil, nil, 31)
     elseif MaxJES_3 == 22 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "6F626F52h", "00323A74h", "00000000h", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_3 == 23 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7465645Fh", "69746365h", "00006576h",
-            30)
+            nil, nil, 30)
     elseif MaxJES_3 == 24 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "65746564h", "76697463h", "A1830065h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_3 == 25 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "656C535Fh", "00686769h", "00007319h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_3 == 26 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "656C535Fh", "00686769h", 50)
     elseif MaxJES_3 == 27 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "69656C53h", "323A6867h", "00000000h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_3 == 28 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "73616D5Fh", "72657571h", "00656461h",
-            31)
+            nil, nil, 31)
     elseif MaxJES_3 == 29 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "7173616Dh", "61726575h", "72006564h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_3 == 30 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7269705Fh", "32657461h", "00343230h",
-            31)
+            nil, nil, 31)
     elseif MaxJES_3 == 31 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "61726970h", "30326574h", "00003432h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_3 == 32 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "72616D5Fh", "32303273h", "00740035h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_3 == 33 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "7372616Dh", "35323032h", "746E6500h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_3 == 34 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7361655Fh", "32726574h", "00343230h",
-            31)
+            nil, nil, 31)
     elseif MaxJES_3 == 35 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "74736165h", "30327265h", "00003432h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_3 == 36 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6C74615Fh", "69746E61h", "00000073h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_3 == 37 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "616C7461h", "7369746Eh", "00000000h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_3 == 38 then
-        hackDecor("49;34;1818576916;1886348137;1768641324;2003790956:109", "34", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "6C61685Fh", "65776F6Ch", "30326E65h",
+            "00003332h", "00000000h", 34)
     elseif MaxJES_3 == 39 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "6C6C6168h", "6565776Fh", "3230326Eh", "61430033h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_3 == 40 then
         hack("1768641324", "1699241838", "1868786028", "1919251568", "1952532319", "7955059", 50)
     elseif MaxJES_3 == 41 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
     elseif MaxJES_3 == 42 then
-        hackDecor("49;34;1768641324;1765957495;1684567154", "34", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        gg.alert("Updating")
     elseif MaxJES_3 == 43 then
-        hackDecor("1598903084;1834971749;846426721;49;29:129", "29", 0x88, 0x8C, 0x90, 0x94, 0x98, 0x9C)
+        gg.alert("Updating")
     else
         menuescolhas2(4)
     end
@@ -779,71 +781,71 @@ function menuSkinTrain_TrainStation()
         hack("696B531Eh", "72545F6Eh", "5F6E6961h", "7372616Dh", "00000000h", "00000000h", 50)
     elseif MaxJES_5 == 9 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "65685F6Eh", "73616C6Ch", "35323032h", "00000000h",
-            28)
+            nil, nil, 28)
     elseif MaxJES_5 == 10 then
         hack("1768641322", "1918132078", "1601071457", "1819043176", "808612705", "13618", 50)
     elseif MaxJES_5 == 11 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "65665F6Eh", "76697473h", "65006C61h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_5 == 12 then
         hack("696B5326h", "72545F6Eh", "5F6E6961h", "74736566h", "6C617669h", "00000000h", 50)
     elseif MaxJES_5 == 13 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "6F725F6Eh", "486E6962h", "00646F6Fh", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_5 == 14 then
         hack("696B5328h", "72545F6Eh", "5F6E6961h", "69626F72h", "6F6F486Eh", "00000064h", 50)
     elseif MaxJES_5 == 15 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "6F725F6Eh", "726E6B63h", "006C6C6Fh", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_5 == 16 then
         hack("696B5328h", "72545F6Eh", "5F6E6961h", "6B636F72h", "6C6F726Eh", "0000006Ch", 50)
     elseif MaxJES_5 == 17 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "6E6B5F6Eh", "74686769h", "00000000h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_5 == 18 then
         hack("696B5322h", "72545F6Eh", "5F6E6961h", "67696E6Bh", "00007468h", "00000000h", 50)
     elseif MaxJES_5 == 19 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "74695F6Eh", "32796C61h", "00343230h", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_5 == 20 then
         hack("696B5328h", "72545F6Eh", "5F6E6961h", "6C617469h", "32303279h", "00000034h", 50)
     elseif MaxJES_5 == 21 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "61655F6Eh", "72657473h", "E32B0A00h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_5 == 22 then
         hack("696B5322h", "72545F6Eh", "5F6E6961h", "74736165h", "00007265h", "00000000h", 50)
     elseif MaxJES_5 == 23 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "65775F6Eh", "72657473h", "6E6F006Eh", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_5 == 24 then
         hack("1768641316", "1918132078", "1601071457", "1953719671", "7238245", "0", 50)
     elseif MaxJES_5 == 25 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "68745F6Eh", "72746165h", "6C616369h", "00000000h",
-            28)
+            nil, nil, 28)
     elseif MaxJES_5 == 26 then
         hack("696B532Ah", "72545F6Eh", "5F6E6961h", "61656874h", "63697274h", "00006C61h", 50)
     elseif MaxJES_5 == 27 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "756C5F6Eh", "4E72616Eh", "32303259h", "80140032h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_5 == 28 then
         hack("696B532Ch", "72545F6Eh", "5F6E6961h", "616E756Ch", "32594E72h", "00323230h", 50)
     elseif MaxJES_5 == 29 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "61685F6Eh", "776F6C6Ch", "326E6565h", "00343230h",
-            31)
+            nil, nil, 31)
     elseif MaxJES_5 == 30 then
         hackSkin("6E696B53h", "6172545Fh", "685F6E69h", "6F6C6C61h", "6E656577h", "34323032h", "73657500h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_5 == 31 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "72705F6Eh", "73696865h", "69726F74h", "00000063h",
-            29)
+            nil, nil, 29)
     elseif MaxJES_5 == 32 then
         hack("696B532Ch", "72545F6Eh", "5F6E6961h", "68657270h", "6F747369h", "00636972h", 50)
     elseif MaxJES_5 == 33 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "68635F6Eh", "74736972h", "3273616Dh", "00343230h",
-            31)
+            nil, nil, 31)
     elseif MaxJES_5 == 34 then
         hackSkin("6E696B53h", "6172545Fh", "635F6E69h", "73697268h", "73616D74h", "34323032h", "06710000h", "00000000h",
-            24)
+            nil, nil, 24)
     else
         menuescolhas2(4)
     end
@@ -907,40 +909,40 @@ function menuSkinAirport_Airplane()
         hack("696B532Ah", "69415F6Eh", "616C7072h", "695F656Eh", "616C6572h", "0000646Eh", 50)
     elseif MaxJES_7 == 21 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "6C6C615Fh", "6C636E69h", "76697375h", "DCED0065h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_7 == 22 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "6C615F65h", "636E696Ch", "6973756Ch", "DA006576h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_7 == 23 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "7268635Fh", "6D747369h", "30327361h", "C7003232h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_7 == 24 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "68635F65h", "74736972h", "3273616Dh", "00323230h", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_7 == 25 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "616C635Fh", "63697373h", "6973756Dh", "74730063h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_7 == 26 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "6C635F65h", "69737361h", "73756D63h", "00006369h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_7 == 27 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "6C61685Fh", "65776F6Ch", "30326E65h", "3E003132h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_7 == 28 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "61685F65h", "776F6C6Ch", "326E6565h", "00313230h", "00000000h",
-            27)
+            nil, nil, 27)
     elseif MaxJES_7 == 29 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "7361655Fh", "32726574h", "00333230h", "0000000Ah", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_7 == 30 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "61655F65h", "72657473h", "33323032h", "00000000h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_7 == 31 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "6E69775Fh", "53726574h", "74726F70h", "72663C00h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_7 == 32 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "69775F65h", "7265746Eh", "726F7053h", "00000074h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_7 == 33 then
         hack("696B5322", "69415F6E", "726F7072", "72615F74", "00006261", "00000000", 50)
     elseif MaxJES_7 == 34 then
@@ -951,10 +953,10 @@ function menuSkinAirport_Airplane()
         hack("696B532Ah", "69415F6Eh", "616C7072h", "665F656Eh", "69687361h", "00006E6Fh", 50)
     elseif MaxJES_7 == 37 then
         hackSkin("6E696B53h", "7269415Fh", "74726F70h", "6C61485Fh", "65776F6Ch", "30326E65h", "74003532h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_7 == 38 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "61485F65h", "776F6C6Ch", "326E6565h", "00353230h", "00000000h",
-            27)
+            nil, nil, 27)
     else
         menuescolhas2(4)
     end
@@ -995,38 +997,38 @@ function menuSkinPort_Ship()
         hack("696B5326h", "68535F6Eh", "6E5F7069h", "6964726Fh", "646F4763h", "00000000h", 50)
     elseif MaxJES_9 == 11 then
         hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "69726863h", "616D7473h", "32303273h", "1A9F0033h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_9 == 12 then
         hackSkin("6E696B53h", "6968535Fh", "68635F70h", "74736972h", "3273616Dh", "00333230h", "00000001h", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_9 == 13 then
         hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "646C6977h", "74736577h", "34323032h", "1A9F0100h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_9 == 14 then
         hack("696B532Ch", "68535F6Eh", "775F7069h", "77646C69h", "32747365h", "00343230h", 50)
     elseif MaxJES_9 == 15 then
         hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "74726962h", "79616468h", "34323032h", "00000000h", "00000000h",
-            24)
+            nil, nil, 24)
     elseif MaxJES_9 == 16 then
         hack("1768641324", "1750294382", "1650421865", "1752461929", "846815588", "3420720", 50)
     elseif MaxJES_9 == 17 then
         hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "6C6C6168h", "6565776Fh", "3230326Eh", "72650032h", "00000000h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_9 == 18 then
         hackSkin("6E696B53h", "6968535Fh", "61685F70h", "776F6C6Ch", "326E6565h", "00323230h", "6572635Fh", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_9 == 19 then
         hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "696C6C61h", "756C636Eh", "65766973h", "35323032h", "00000000h",
-            28)
+            nil, nil, 28)
     elseif MaxJES_9 == 20 then
         hackSkin("6E696B53h", "6968535Fh", "6C615F70h", "636E696Ch", "6973756Ch", "30326576h", "20003532h", "00000000h",
-            26)
+            nil, nil, 26)
     elseif MaxJES_9 == 21 then
         hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "656C6176h", "6E69746Eh", "61447365h", "756E0079h", "696C5F73h",
-            25)
+            nil, nil, 25)
     elseif MaxJES_9 == 22 then
         hackSkin("6E696B53h", "6968535Fh", "61765F70h", "746E656Ch", "73656E69h", "00796144h", "73200034h", "00000000h",
-            23)
+            nil, nil, 23)
     elseif MaxJES_9 == 23 then
         hack("1768641316", "1632132974", "1919902322", "1668440415", "6515060", "0", 50)
     elseif MaxJES_9 == 24 then
@@ -1086,19 +1088,26 @@ function menuSkinChicken()
     elseif MaxJES_110 == 9 then
         hack("1768641320", "1749245806", "1701536617", "1634099054", "1869178995", "110", 50)
     elseif MaxJES_110 == 10 then
-        hackDecor("846818915;3486256;1768649482;49;25::525", "25", 0xA0, 0xA4, 0xA8, 0xAC, 0xB0, 0xB4)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "7269625Fh", "61646874h", "32303279h", "00000034h", "00000000h",
+            nil, nil, 25)
     elseif MaxJES_110 == 11 then
-        hackDecor("1768641320;1852006254;49;26:177", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "6C61685Fh", "65776F6Ch", "30326E65h", "42003432h", "00000070h",
+            nil, nil, 26)
     elseif MaxJES_110 == 12 then
-        hackDecor("49;26;1768641316;2004049774:181", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "7268635Fh", "6D747369h", "30327361h", "B5003332h", "0000006Bh",
+            nil, nil, 26)
     elseif MaxJES_110 == 13 then
-        hackDecor("49;26;1768641318;1701338990;1935764588::593", "26", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "7269625Fh", "61646874h", "32303279h", "45006334h", "6772656Eh",
+            "73450079h", "00000070h", 26)
     elseif MaxJES_110 == 14 then
-        hackDecor("49;23;1768641316;1886609262:181", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "6E69635Fh", "65726564h", "00616C6Ch", "00000000h", "00000000h",
+            nil, nil, 23)
     elseif MaxJES_110 == 15 then
-        hackDecor("49;23;1768641318;1920229230:181", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "6568745Fh", "69727461h", "006C6163h", "00000000h", "00000000h",
+            nil, nil, 23)
     elseif MaxJES_110 == 16 then
-        hackDecor("49;25;1768641318;1701338990:349", "25", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "6C6C615Fh", "6C636E69h", "76697375h", "6C420065h", "00006575h",
+            nil, nil, 25)
     elseif MaxJES_110 == 17 then
         gg.alert("Updating")
     elseif MaxJES_110 == 18 then
@@ -1198,15 +1207,20 @@ function menuSkinSheep()
     elseif MaxJES_112 == 12 then
         hack("1768641320", "1750294382", "1601201509", "1685221230", "1866949481", "100", 50)
     elseif MaxJES_112 == 13 then
-        hackDecor("49;23;1769430896;808612979:89", "23", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6568535Fh", "775F7065h", "77646C69h", "32747365h", "00343230h", "00000000h", "00000000h",
+            nil, nil, 23)
     elseif MaxJES_112 == 14 then
-        hackDecor("49;27;1768641322;1819043176;808612705:209", "27", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6568535Fh", "615F7065h", "6E696C6Ch", "73756C63h", "32657669h", "00353230h", "00000000h",
+            nil, nil, 27)
     elseif MaxJES_112 == 15 then
-        hackDecor("49;24;1650406000;846815588:89", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6568535Fh", "625F7065h", "68747269h", "32796164h", "73343230h", "00000000h", "00000000h",
+            nil, nil, 24)
     elseif MaxJES_112 == 16 then
-        hackDecor("49;24;1751342960;846422381:89", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6568535Fh", "635F7065h", "73697268h", "73616D74h", "34323032h", "456E6F00h", "6772656Eh",
+            "00000079h", "00000000h", 24)
     elseif MaxJES_112 == 17 then
-        hackDecor("49;24;1634230128;846095717:89", "24", -0x08, -0x04, 0x00, 0x04, 0x08, 0x0C)
+        hackSkin("6E696B53h", "6568535Fh", "685F7065h", "6F6C6C61h", "6E656577h", "32323032h", "270A3700h", "00000070h",
+            nil, nil, 24)
     elseif MaxJES_112 == 18 then
         hack("1768641322", "1750294382", "1601201509", "1819043176", "808612705", "13618", 50)
     elseif MaxJES_112 == 19 then
@@ -3943,237 +3957,6 @@ function hack2C()
     gg.clearResults()
 end
 
-function HackCons()
-    gg.toast("Loading............ construction")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD) -- Molino de halloween
-    count = gg.getResultsCount()
-    val = gg.getResults(count)
-    for i, v in ipairs(val) do
-        v.address = v.address + 0x2C -- offset where is address storing pointer
-        -- set appropiate flag
-    end
-    val = gg.getValues(val)
-    for i, v in ipairs(val) do
-        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
-        v.address = v.value
-    end
-    gg.loadResults(val)
-    local v_1 = {}
-    v_1[1] = {}
-    v_1[1].address = val[1].address
-    v_1[1].flags = gg.TYPE_DWORD
-    v_1[1].value = 1113542739
-    v_1[1].freeze = false
-    gg.setValues(v_1)
-    local v_2 = {}
-    v_2[1] = {}
-    v_2[1].address = val[1].address + 0x04
-    v_2[1].flags = gg.TYPE_DWORD
-    v_2[1].value = 1953722223
-    v_2[1].freeze = false
-    gg.setValues(v_2)
-    local v_3 = {}
-    v_3[1] = {}
-    v_3[1].address = val[1].address + 0x08
-    v_3[1].flags = gg.TYPE_DWORD
-    v_3[1].value = 1701146707
-    v_3[1].freeze = false
-    gg.setValues(v_3)
-    local v_4 = {}
-    v_4[1] = {}
-    v_4[1].address = val[1].address + 0x0C
-    v_4[1].flags = gg.TYPE_DWORD
-    v_4[1].value = 1114658148
-    v_4[1].freeze = false
-    gg.setValues(v_4)
-    local v_5 = {}
-    v_5[1] = {}
-    v_5[1].address = val[1].address + 0x10
-    v_5[1].flags = gg.TYPE_DWORD
-    v_5[1].value = 1684826485
-    v_5[1].freeze = false
-    gg.setValues(v_5)
-    local v_6 = {}
-    v_6[1] = {}
-    v_6[1].address = val[1].address + 0x14
-    v_6[1].flags = gg.TYPE_DWORD
-    v_6[1].value = 1936158313
-    v_6[1].freeze = false
-    gg.setValues(v_6)
-    local v_7 = {}
-    v_7[1] = {}
-    v_7[1].address = val[1].address + 0x18
-    v_7[1].flags = gg.TYPE_DWORD
-    v_7[1].value = 0
-    v_7[1].freeze = false
-    gg.setValues(v_7)
-
-    hackConstr_18h()
-end
-
-function hackConstr_18h()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-    -- local val_3 = {}
-    -- val_3[1] = {address = r[1].address + 0x24, flags = gg.TYPE_DWORD}
-    -- val_3 = gg.getValues(val_3)  
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    hack(val_1[1].value, val_2[1].value, 24, val_4[1].value, val_5[1].value, val_6[1].value, 100)
-    return
-end
-
-function HackGran()
-    gg.toast("Loading............ barn")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD) -- Molino de halloween
-    count = gg.getResultsCount()
-    val = gg.getResults(count)
-    for i, v in ipairs(val) do
-        v.address = v.address + 0x2C -- offset where is address storing pointer
-        -- set appropiate flag
-    end
-    val = gg.getValues(val)
-    for i, v in ipairs(val) do
-        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
-        v.address = v.value
-    end
-    gg.loadResults(val)
-    local v_1 = {}
-    v_1[1] = {}
-    v_1[1].address = val[1].address
-    v_1[1].flags = gg.TYPE_DWORD
-    v_1[1].value = 1113542739
-    v_1[1].freeze = false
-    gg.setValues(v_1)
-    local v_2 = {}
-    v_2[1] = {}
-    v_2[1].address = val[1].address + 0x04
-    v_2[1].flags = gg.TYPE_DWORD
-    v_2[1].value = 1953722223
-    v_2[1].freeze = false
-    gg.setValues(v_2)
-    local v_3 = {}
-    v_3[1] = {}
-    v_3[1].address = val[1].address + 0x08
-    v_3[1].flags = gg.TYPE_DWORD
-    v_3[1].value = 1919906899
-    v_3[1].freeze = false
-    gg.setValues(v_3)
-    local v_4 = {}
-    v_4[1] = {}
-    v_4[1].address = val[1].address + 0x0C
-    v_4[1].flags = gg.TYPE_DWORD
-    v_4[1].value = 1130719073
-    v_4[1].freeze = false
-    gg.setValues(v_4)
-    local v_5 = {}
-    v_5[1] = {}
-    v_5[1].address = val[1].address + 0x10
-    v_5[1].flags = gg.TYPE_DWORD
-    v_5[1].value = 1667330145
-    v_5[1].freeze = false
-    gg.setValues(v_5)
-    local v_6 = {}
-    v_6[1] = {}
-    v_6[1].address = val[1].address + 0x14
-    v_6[1].flags = gg.TYPE_DWORD
-    v_6[1].value = 7959657
-    v_6[1].freeze = false
-    gg.setValues(v_6)
-    local v_7 = {}
-    v_7[1] = {}
-    v_7[1].address = val[1].address + 0x18
-    v_7[1].flags = gg.TYPE_DWORD
-    v_7[1].value = 0
-    v_7[1].freeze = false
-    gg.setValues(v_7)
-
-    hackGran_1_17h()
-end
-
-function hackGran_1_17h()
-    gg.toast("Loading............ ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-
-    local r = gg.getResults(1) -- load items
-    local val_1 = {}
-    val_1[1] = {
-        address = r[1].address + 0x1C,
-        flags = gg.TYPE_DWORD
-    }
-    val_1 = gg.getValues(val_1) -- refresh items values
-    local val_2 = {}
-    val_2[1] = {
-        address = r[1].address + 0x20,
-        flags = gg.TYPE_DWORD
-    }
-    val_2 = gg.getValues(val_2)
-    -- local val_3 = {}
-    -- val_3[1] = {address = r[1].address + 0x24, flags = gg.TYPE_DWORD}
-    -- val_3 = gg.getValues(val_3)  
-    local val_4 = {}
-    val_4[1] = {
-        address = r[1].address + 0x28,
-        flags = gg.TYPE_DWORD
-    }
-    val_4 = gg.getValues(val_4)
-    local val_5 = {}
-    val_5[1] = {
-        address = r[1].address + 0x2C,
-        flags = gg.TYPE_DWORD
-    }
-    val_5 = gg.getValues(val_5)
-    local val_6 = {}
-    val_6[1] = {
-        address = r[1].address + 0x30,
-        flags = gg.TYPE_DWORD
-    }
-    val_6 = gg.getValues(val_6)
-
-    hack(val_1[1].value, val_2[1].value, 23, val_4[1].value, val_5[1].value, val_6[1].value, 5000)
-    return
-end
-
--- navidad
 function hackDecor(search, refine, add_1, add_2, add_3, add_4, add_5, add_6)
     gg.searchNumber(search, gg.TYPE_DWORD)
     gg.refineNumber(refine, gg.TYPE_DWORD)
@@ -4220,154 +4003,7 @@ function hackDecor(search, refine, add_1, add_2, add_3, add_4, add_5, add_6)
     return
 end
 
--- HACK NAME & FRAME
-function Name_1()
-    gg.toast("Loading............ Name ") -- reina de la isla tortuga 2#part3
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    count = gg.getResultsCount()
-    val = gg.getResults(count)
-    for i, v in ipairs(val) do
-        v.address = v.address + 0x2C -- offset where is address storing pointer
-        -- set appropiate flag
-    end
-    val = gg.getValues(val)
-    for i, v in ipairs(val) do
-        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
-        v.address = v.value
-    end
-    gg.loadResults(val)
-    local v_1 = {}
-    v_1[1] = {}
-    v_1[1].address = val[1].address
-    v_1[1].flags = gg.TYPE_DWORD
-    v_1[1].value = 1348423763
-    v_1[1].freeze = false
-    gg.setValues(v_1)
-    local v_2 = {}
-    v_2[1] = {}
-    v_2[1].address = val[1].address + 0x04
-    v_2[1].flags = gg.TYPE_DWORD
-    v_2[1].value = 1768320882
-    v_2[1].freeze = false
-    gg.setValues(v_2)
-    local v_3 = {}
-    v_3[1] = {}
-    v_3[1].address = val[1].address + 0x08
-    v_3[1].flags = gg.TYPE_DWORD
-    v_3[1].value = 1951622508
-    v_3[1].freeze = false
-    gg.setValues(v_3)
-    local v_4 = {}
-    v_4[1] = {}
-    v_4[1].address = val[1].address + 0x0C
-    v_4[1].flags = gg.TYPE_DWORD
-    v_4[1].value = 1600482425
-    v_4[1].freeze = false
-    gg.setValues(v_4)
-    local v_5 = {}
-    v_5[1] = {}
-    v_5[1].address = val[1].address + 0x10
-    v_5[1].flags = gg.TYPE_DWORD
-    v_5[1].value = 1953719654
-    v_5[1].freeze = false
-    gg.setValues(v_5)
-    local v_6 = {}
-    v_6[1] = {}
-    v_6[1].address = val[1].address + 0x14
-    v_6[1].flags = gg.TYPE_DWORD
-    v_6[1].value = 1818326633 -- 2
-    v_6[1].freeze = false
-    gg.setValues(v_6)
-    local v_7 = {}
-    v_7[1] = {}
-    v_7[1].address = val[1].address + 0x18
-    v_7[1].flags = gg.TYPE_DWORD
-    v_7[1].value = 980641024
-    v_7[1].freeze = false
-    gg.setValues(v_7)
-    -- gg.clearResults()
-    hackSkin_1(24)
-end
-function Frame_1()
-    gg.toast("Loading............ Frame ")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
-    count = gg.getResultsCount()
-    val = gg.getResults(count)
-    for i, v in ipairs(val) do
-        v.address = v.address + 0x2C -- offset where is address storing pointer
-        -- set appropiate flag
-    end
-    val = gg.getValues(val)
-    for i, v in ipairs(val) do
-        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
-        v.address = v.value
-    end
-    gg.loadResults(val)
-    local v_1 = {}
-    v_1[1] = {}
-    v_1[1].address = val[1].address
-    v_1[1].flags = gg.TYPE_DWORD
-    v_1[1].value = 1348423763
-    v_1[1].freeze = false
-    gg.setValues(v_1)
-    local v_2 = {}
-    v_2[1] = {}
-    v_2[1].address = val[1].address + 0x04
-    v_2[1].flags = gg.TYPE_DWORD
-    v_2[1].value = 1768320882
-    v_2[1].freeze = false
-    gg.setValues(v_2)
-    local v_3 = {}
-    v_3[1] = {}
-    v_3[1].address = val[1].address + 0x08
-    v_3[1].flags = gg.TYPE_DWORD
-    v_3[1].value = 1917216108
-    v_3[1].freeze = false
-    gg.setValues(v_3)
-    local v_4 = {}
-    v_4[1] = {}
-    v_4[1].address = val[1].address + 0x0C
-    v_4[1].flags = gg.TYPE_DWORD
-    v_4[1].value = 1600482657
-    v_4[1].freeze = false
-    gg.setValues(v_4)
-    local v_5 = {}
-    v_5[1] = {}
-    v_5[1].address = val[1].address + 0x10
-    v_5[1].flags = gg.TYPE_DWORD
-    v_5[1].value = 1953719654
-    v_5[1].freeze = false
-    gg.setValues(v_5)
-    local v_6 = {}
-    v_6[1] = {}
-    v_6[1].address = val[1].address + 0x14
-    v_6[1].flags = gg.TYPE_DWORD
-    v_6[1].value = 1818326633
-    v_6[1].freeze = false
-    gg.setValues(v_6)
-    local v_7 = {}
-    v_7[1] = {}
-    v_7[1].address = val[1].address + 0x18
-    v_7[1].flags = gg.TYPE_DWORD
-    v_7[1].value = 808534528
-    v_7[1].freeze = false
-    gg.setValues(v_7)
-    local v_8 = {}
-    v_8[1] = {}
-    v_8[1].address = val[1].address + 0x1C
-    v_8[1].flags = gg.TYPE_DWORD
-    v_8[1].value = 1110454853
-    v_8[1].freeze = false
-    gg.setValues(v_8)
-    -- gg.clearResults()
-    hackSkin_1(24)
-end
-
-function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num)
+function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num, quantity)
     gg.toast("Loading............")
     gg.processResume()
     gg.clearResults()
@@ -4462,11 +4098,11 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
         gg.setValues(v_10)
     end
 
-    hackSkin_1(num)
+    hackSkin_1(num, quantity)
 end
 
 -- HACK SKIN
-function hackSkin_1(val3)
+function hackSkin_1(val3, num)
     gg.toast("Loading............ ")
     gg.processResume()
     gg.clearResults()
@@ -4512,7 +4148,11 @@ function hackSkin_1(val3)
         val3 = val_3[1].value
     end
 
-    hack(val_1[1].value, val_2[1].value, val3, val_4[1].value, val_5[1].value, val_6[1].value, 1)
+    if num == nil then
+        num = 1
+    end
+
+    hack(val_1[1].value, val_2[1].value, val3, val_4[1].value, val_5[1].value, val_6[1].value, num)
     return
 end
 
