@@ -120,7 +120,8 @@ function menuescolhas2(menu_tipo)
         end
     elseif menu_tipo == 3 then
         MNZ = gg.choice({"1 • Mine", "2 • Construction", "3 • Gems", "4 • Ingots", "5 • Advantage",
-                         "6 • Lab", "7 • Minigame", "8 • Expansion", "9 • Barn", "❌ • Return"}, nil)
+                         "6 • Lab", "7 • Minigame", "8 • Expansion", "9 • Barn", "10 • Animal Card",
+                         "❌ • Return"}, nil)
         if MNZ == nil then
             return
         elseif MNZ == 1 then
@@ -142,6 +143,8 @@ function menuescolhas2(menu_tipo)
         elseif MNZ == 9 then
             menuescolhas2(309)
         elseif MNZ == 10 then
+            menuescolhas2(310)
+        elseif MNZ == 11 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 301 then
@@ -162,6 +165,8 @@ function menuescolhas2(menu_tipo)
         menuExpansion()
     elseif menu_tipo == 309 then
         menuBarn()
+    elseif menu_tipo == 310 then
+        hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
     elseif menu_tipo == 4 then
         MaxJE = gg.choice({"1 • Castle", "2 • Heli & Helipad", "3 • Train & Train Station",
                            "4 • Airport & Airplane", "5 • Ports & Ship", "6 • Chickens", "7 • Cows",
@@ -324,32 +329,11 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 6 then
         menuCoupon()
     elseif menu_tipo == 7 then
-        FCC = gg.choice({"1 • Construction ", "2 • Increase Barn ", "3 • Plant", "❌ • Return"}, nil)
-        if FCC == nil then
-            return
-        elseif FCC == 1 then
-            hackSkin(1113542739, 1953722223, 1701146707, 1114658148, 1684826485, 1936158313, 0, nil, nil, nil, 24, 100)
-        elseif FCC == 2 then
-            hackSkin(1113542739, 1953722223, 1919906899, 1130719073, 1667330145, 7959657, 0, nil, nil, nil, 23, 5000)
-        elseif FCC == 3 then
-            hack("1599099692", "1936682818", "1701860212", "1884644453", "1987207496", "7631717", 100)
-        else
-            menuescolhas2(1)
-        end
+        menuCropTime()
     elseif menu_tipo == 8 then
         menuBadge()
     elseif menu_tipo == 9 then
-        MNxC = gg.choice({"🕷 • Name", "🎫 • Frame", "❌ • Return"}, nil)
-        if MNxC == nil then
-            return
-        elseif MNxC == 1 then
-            hackSkin(1348423763, 1768320882, 1951622508, 1600482425, 1953719654, 1818326633, 980641024, nil, nil, nil, 24)
-        elseif MNxC == 2 then
-            hackSkin(1348423763, 1768320882, 1917216108, 1600482657, 1953719654, 1818326633, 808534528, 1110454853, nil, nil, 24)
-
-        else
-            menuescolhas2(1)
-        end
+        menuNameFrame()
     elseif menu_tipo == 11 then
         menuSign()
     end
@@ -357,7 +341,7 @@ function menuescolhas2(menu_tipo)
 end
 
 function menuMine()
-    MNM = gg.choice({"💣 • Dynamite", "💣 • Pickaxe", "💣 • Explosive", "❌ • Return"}, nil)
+    MNM = gg.choice({"💣 • Dynamite", "⛏️ • Pickaxe", "🧨 • Explosive", "❌ • Return"}, nil)
     if MNM == nil then
         return
     elseif MNM == 1 then
@@ -410,8 +394,9 @@ end
 
 function menuIngots()
     MNV = gg.choice(
-        {"💎 • Bronze Ingot", "💎 • Silver Ingot", "💎 • Gold Ingot", "💎 • Platinum Ingot",
-         "💎 • Clay", "❌ • Return"}, nil)
+        {"🟤 • Bronze Ingot", "⚪ • Silver Ingot", "🟡 • Gold Ingot", "🔷 • Platinum Ingot",
+         "🟫 • Clay", "🟤 • Bronze Ore", "⚪ • Silver Ore", "🟡 • Gold Ore", "🔷 • Platinum Ore",
+         "❌ • Return"}, nil)
     if MNV == nil then
         return
     elseif MNV == 1 then
@@ -424,13 +409,21 @@ function menuIngots()
         hack("1634488364", "1970170228", "1819624045", "1852795244", "1853189955", "7497076", 0)
     elseif MNV == 5 then
         hack("616C6316h", "756F4379h", "7265746Eh", "00000000h", "00000000h", "00000000h", 0)
+    elseif MNV == 6 then
+        hack("00316F04h", "61006C6Ch", "00720077h", "65006B63h", "6C616972h", "006E6500h", 0)
+    elseif MNV == 7 then
+        hack("00336F04h", "61006C6Ch", "00720077h", "65006B63h", "6C616972h", "006E6500h", 0)
+    elseif MNV == 8 then
+        hack("00326F04h", "61006C6Ch", "00720077h", "65006B63h", "6C616972h", "006E6500h", 0)
+    elseif MNV == 9 then
+        hack("00346F04h", "61006C6Ch", "00720077h", "65006B63h", "6C616972h", "006E6500h", 0)
     else
         menuescolhas2(3)
     end
 end
 
 function menuAdvantage()
-    MXC = gg.choice({"🎁 • 2x Train", "🎁 • Laboratory", "🎁 • Airplane", "🎁 • 2x Market",
+    MXC = gg.choice({"🎁 • 2x Train", "🎁 • Laboratory", "🎁 • Airplane Gold", "🎁 • 2x Market",
                      "🎁 • Airplane box", "🎁 • 2 game tokens", "🎁 • 50 lucky houses", "❌ • Return"},
         nil)
     if MXC == nil then
@@ -501,9 +494,9 @@ function menuLab()
 end
 
 function menuMinigame()
-    MRT = gg.choice({"⚔️ • Lives", "⚔️ • Ball", "⚔️ • Rockets", "⚔️ • Bombs",
-                     "⚔️ • Fire hydrant", "⚔️ • Pickaxe", "⚔️ • Hand", "⚔️ • Energy minigame",
-                     "⚔️ • Double", "❌ • Return"}, nil)
+    MRT = gg.choice({"❤️ • Lives", "🪩 • Ball", "🚀 • Rockets", "💣 • Bombs",
+                     "➕ • Fire hydrant", "⛏️ • Pickaxe", "🤚 • Hand", "⚡ • Energy",
+                     "✖️ • Double", "❌ • Return"}, nil)
 
     if MRT == nil then
         return
@@ -531,7 +524,7 @@ function menuMinigame()
 end
 
 function menuExpansion()
-    MRT = gg.choice({"⚔️ • Shovel", "⚔️ • Axe", "⚔️ • Saw", "❌ • Return"}, nil)
+    MRT = gg.choice({"⛏️ • Shovel", "🪓 • Axe", "🪚 • Saw", "❌ • Return"}, nil)
 
     if MRT == nil then
         return
@@ -547,7 +540,7 @@ function menuExpansion()
 end
 
 function menuBarn()
-    MRT = gg.choice({"⚔️ • Nail", "⚔️ • Hammer", "⚔️ • Paint", "❌ • Return"}, nil)
+    MRT = gg.choice({"🔩 • Nail", "🔨 • Hammer", "🪣 • Paint", "❌ • Return"}, nil)
 
     if MRT == nil then
         return
@@ -609,21 +602,22 @@ function menuSkinCastle()
 end
 
 function menuSkinHeli_Helipad()
-    MaxJES_3 = gg.choice({"1 • Festive Helipad", "1 • Festive", "2 • Wanderers Harbor Helipad",
-                          "2 • Flying Ship", "3 • Fitness Helipad", "3 • Helicycle",
-                          "4 • Flying Saucer Hangar Helipad", "4 • Flying Saucer", "5 • Docking Station Helipad",
-                          "5 • Super Robot Courier", "6 • Veggie Helipad", "6 • Eggplant",
-                          "7 • Sultans Palace Helipad", "7 • Flying Carpet", "8 • Five-star Helipad",
-                          "8 • Chaise Lounger Drone", "9 • Disco Helipad", "9 • Disco",
-                          "10 • Carnival Platform Helipad", "10 • Feathery", "11 • Royal Palace Helipad",
-                          "11 • Pumpkin", "12 • Detective Agency Helipad", "12 • Surveillance Airship",
-                          "13 • Sleigh Parking Lot Helipad", "13 • Santas Helpers Sleigh", "13 • Santas Sleigh",
-                          "14 • Ballroom Helipad", "14 • Ballroom", "15 • Pirate Helipad",
-                          "15 • Pirate Helicopter", "16 • Astro Helipad", "16 • Astro", "17 • Easter Helipad",
-                          "17 • Egg Chopper", "18 • Underwater Palace Helipad", "18 • Flying Bathyscaphe",
-                          "19 • Haunted Tower Helipad", "19 • Flying Cauldron", "20 • Private Helipad",
-                          "20 • Private Helicopter", "21 • Roll N Roll Helipad", "21 • Roll N Roll Helicopter",
-                          "❌ • Back"}, nil)
+    MaxJES_3 = gg.choice({"1 • Festive Helipad", "🚁 • Festive", "2 • Wanderers Harbor Helipad",
+                          "🚁 • Flying Ship", "3 • Fitness Helipad", "🚁 • Helicycle",
+                          "4 • Flying Saucer Hangar Helipad", "🚁 • Flying Saucer",
+                          "5 • Docking Station Helipad", "🚁 • Super Robot Courier", "6 • Veggie Helipad",
+                          "🚁 • Eggplant", "7 • Sultans Palace Helipad", "🚁 • Flying Carpet",
+                          "8 • Five-star Helipad", "🚁 • Chaise Lounger Drone", "9 • Disco Helipad",
+                          "🚁 • Disco", "10 • Carnival Platform Helipad", "🚁 • Feathery",
+                          "11 • Royal Palace Helipad", "🚁 • Pumpkin", "12 • Detective Agency Helipad",
+                          "🚁 • Surveillance Airship", "13 • Sleigh Parking Lot Helipad",
+                          "🚁 • Santas Helpers Sleigh", "🚁 • Santas Sleigh", "14 • Ballroom Helipad",
+                          "🚁 • Ballroom", "15 • Pirate Helipad", "🚁 • Pirate Helicopter",
+                          "16 • Astro Helipad", "🚁 • Astro", "17 • Easter Helipad", "🚁 • Egg Chopper",
+                          "18 • Underwater Palace Helipad", "🚁 • Flying Bathyscaphe",
+                          "19 • Haunted Tower Helipad", "🚁 • Flying Cauldron", "20 • Private Helipad",
+                          "🚁 • Private Helicopter", "21 • Roll N Roll Helipad",
+                          "🚁 • Roll N Roll Helicopter", "❌ • Back"}, nil)
 
     if MaxJES_3 == nil then
         return
@@ -740,26 +734,27 @@ function menuSkinHeli_Helipad()
     elseif MaxJES_3 == 41 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
     elseif MaxJES_3 == 42 then
-        gg.alert("Updating")
+        gg.alert("Skin is updating")
     elseif MaxJES_3 == 43 then
-        gg.alert("Updating")
+        gg.alert("Skin is updating")
     else
         menuescolhas2(4)
     end
 end
 
 function menuSkinTrain_TrainStation()
-    MaxJES_5 = gg.choice({"1 • Express Portal", "1 • Ultra Express Train", "2 • Ghost Station",
-                          "2 • Ghost Train", "3 • Disco Station", "3 • Disco Train", "4 • Space Station",
-                          "4 • Mars Rover", "5 • Mythic Station", "5 • Mythic Train", "6 • Flower Station",
-                          "6 • Flower Train", "7 • Training Camp Station", "7 • Wooden Wagon Train",
-                          "8 • Record Station", "8 • Music Express", "9 • Castle Station", "9 • Knight Train",
-                          "10 • Roman Station", "10 • Express Tram", "11 • Easter Station",
-                          "11 • Easter Express", "12 • Cowboy Station", "12 • Cowboy Train",
-                          "13 • Thearter Set Station", "13 • Theater Express", "14 • Chinese Station",
-                          "14 • Dragon Train", "15 • Halloween Station", "15 • Halloween Train",
-                          "16 • Ancient Settlement Station", "16 • Primeval Express", "17 • Christmas Station",
-                          "17 • Chrismas Train", "❌ • Back"}, nil)
+    MaxJES_5 = gg.choice({"1 • Express Portal", "🚂 • Ultra Express Train", "2 • Ghost Station",
+                          "🚂 • Ghost Train", "3 • Disco Station", "🚂 • Disco Train", "4 • Space Station",
+                          "🚂 • Mars Rover", "5 • Mythic Station", "🚂 • Mythic Train",
+                          "6 • Flower Station", "🚂 • Flower Train", "7 • Training Camp Station",
+                          "🚂 • Wooden Wagon Train", "8 • Record Station", "🚂 • Music Express",
+                          "9 • Castle Station", "🚂 • Knight Train", "10 • Roman Station",
+                          "🚂 • Express Tram", "11 • Easter Station", "🚂 • Easter Express",
+                          "12 • Cowboy Station", "🚂 • Cowboy Train", "13 • Thearter Set Station",
+                          "🚂 • Theater Express", "14 • Chinese Station", "🚂 • Dragon Train",
+                          "15 • Halloween Station", "🚂 • Halloween Train", "16 • Ancient Settlement Station",
+                          "🚂 • Primeval Express", "17 • Christmas Station", "🚂 • Chrismas Train",
+                          "❌ • Back"}, nil)
 
     if MaxJES_5 == nil then
         return
@@ -852,18 +847,19 @@ function menuSkinTrain_TrainStation()
 end
 
 function menuSkinAirport_Airplane()
-    MaxJES_7 = gg.choice({"1 • Rock Airport", "1 • Rock Plane", "2 • Sugary Airport", "2 • Éclair Plane",
-                          "3 • Cenima Airport", "3 • A-Lister Jet", "4 • Secret Base Airport",
-                          "4 • Stealth Aircraft", "5 • Aerial Airport", "5 • Ultra Plane", "5 • Mega Plane",
-                          "6 • Space Airport", "6 • Lauch Vehcle", "7 • Festival Airport", "7 • Sky Dragon",
-                          "7 • Supersonic Dragon", "8 • Tropical Airport", "8 • Tropical Biplane",
-                          "9 • Rainbow Airport", "9 • Lucky Jet", "10 • Five-Star Airport", "10 • Seaplane",
-                          "11 • Santas Residence Airport", "11 • Holiday Plane", "12 • Symphony Airport",
-                          "12 • Symphony Plane", "13 • Ghost Airport", "13 • Ghost Plane",
-                          "14 • Easter Airport", "14 • Bird Plane", "15 • Ski Airport", "15 • Aero Sleigh",
-                          "16 • Sultan Airport", "16 • Arabian Plane", "17 • Fashion Airport",
-                          "17 • Fashion Plane", "18 • Dracula Airport", "18 • Vampire Plane", "❌ • Return"},
-        nil)
+    MaxJES_7 = gg.choice({"1 • Rock Airport", "✈️ • Rock Plane", "2 • Sugary Airport",
+                          "✈️ • Éclair Plane", "3 • Cenima Airport", "✈️ • A-Lister Jet",
+                          "4 • Secret Base Airport", "✈️ • Stealth Aircraft", "5 • Aerial Airport",
+                          "✈️ • Ultra Plane", "✈️ • Mega Plane", "6 • Space Airport",
+                          "✈️ • Lauch Vehcle", "7 • Festival Airport", "✈️ • Sky Dragon",
+                          "✈️ • Supersonic Dragon", "8 • Tropical Airport", "✈️ • Tropical Biplane",
+                          "9 • Rainbow Airport", "✈️ • Lucky Jet", "10 • Five-Star Airport",
+                          "✈️ • Seaplane", "11 • Santas Residence Airport", "✈️ • Holiday Plane",
+                          "12 • Symphony Airport", "✈️ • Symphony Plane", "13 • Ghost Airport",
+                          "✈️ • Ghost Plane", "14 • Easter Airport", "✈️ • Bird Plane",
+                          "15 • Ski Airport", "✈️ • Aero Sleigh", "16 • Sultan Airport",
+                          "✈️ • Arabian Plane", "17 • Fashion Airport", "✈️ • Fashion Plane",
+                          "18 • Dracula Airport", "✈️ • Vampire Plane", "❌ • Return"}, nil)
 
     if MaxJES_7 == nil then
         return
@@ -963,15 +959,17 @@ function menuSkinAirport_Airplane()
 end
 
 function menuSkinPort_Ship()
-    MaxJES_9 = gg.choice({"1 • Equatorial Port", "1 • Cruise Liner", "2 • Pirate Harbor", "2 • Pirate Galleon",
-                          "3 • Ancient Port", "3 • Greek Bireme Ship", "4 • Jungle Port", "4 • Cruise Ship",
-                          "5 • Viking Harbor", "5 • Sturdy Drakkar", "6 • Christmas Port", "6 • Gift Ship",
-                          "7 • Saloon On The Water", "7 • River Steamboat", "8 • Candy Port", "8 • Sweet Boat",
-                          "9 • Port Of Horrors", "9 • Ghost Ship", "10 • Vacation Port", "10 • Vacation Ship",
-                          "11 • Romantic Harbor", "11 • Love Boat", "12 • Arctic Port", "12 • Arctic Ship",
-                          "13 • Egyptian Port", "13 • Egyptian Ship", "14 • Lantern Harbor", "14 • Dragon Boat",
-                          "15 • Doge Pier", "15 • Gondola", "16 • Sweet Port", "16 • Croissant Ferry",
-                          "17 • Japanese Port", "17 • Japanese Ship", "❌ • Back"}, nil)
+    MaxJES_9 = gg.choice({"1 • Equatorial Port", "🚢 • Cruise Liner", "2 • Pirate Harbor",
+                          "🚢 • Pirate Galleon", "3 • Ancient Port", "🚢 • Greek Bireme Ship",
+                          "4 • Jungle Port", "🚢 • Cruise Ship", "5 • Viking Harbor", "🚢 • Sturdy Drakkar",
+                          "6 • Christmas Port", "🚢 • Gift Ship", "7 • Saloon On The Water",
+                          "🚢 • River Steamboat", "8 • Candy Port", "🚢 • Sweet Boat",
+                          "9 • Port Of Horrors", "🚢 • Ghost Ship", "10 • Vacation Port",
+                          "🚢 • Vacation Ship", "11 • Romantic Harbor", "🚢 • Love Boat",
+                          "12 • Arctic Port", "🚢 • Arctic Ship", "13 • Egyptian Port",
+                          "🚢 • Egyptian Ship", "14 • Lantern Harbor", "🚢 • Dragon Boat", "15 • Doge Pier",
+                          "🚢 • Gondola", "16 • Sweet Port", "🚢 • Croissant Ferry", "17 • Japanese Port",
+                          "🚢 • Japanese Ship", "❌ • Back"}, nil)
 
     if MaxJES_9 == nil then
         return
@@ -1109,7 +1107,7 @@ function menuSkinChicken()
         hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "6C6C615Fh", "6C636E69h", "76697375h", "6C420065h", "00006575h",
             nil, nil, 25)
     elseif MaxJES_110 == 17 then
-        gg.alert("Updating")
+        gg.alert("Skin is updating")
     elseif MaxJES_110 == 18 then
         hack("1768641318", "1749245806", "1701536617", "1850433390", "1952999273", "0", 50)
     else
@@ -1224,7 +1222,7 @@ function menuSkinSheep()
     elseif MaxJES_112 == 18 then
         hack("1768641322", "1750294382", "1601201509", "1819043176", "808612705", "13618", 50)
     elseif MaxJES_112 == 19 then
-        gg.alert("Updating")
+        gg.alert("Skin is updating")
     else
         menuescolhas2(4)
     end
@@ -1976,7 +1974,7 @@ function menuDecorSports()
         hackSkin("75616562h", "745F7974h", "6863726Fh", "72616562h", "6F5F7265h", "706D796Ch", "00646169h", "601390FDh",
             nil, nil, 27)
     elseif MaxJTUTR == 20 then
-       hackSkin("75616562h", "545F7974h", "6E696172h", "47676E69h", "6E756F72h", "6C6F5F64h", "69706D79h", "69006461h",
+        hackSkin("75616562h", "545F7974h", "6E696172h", "47676E69h", "6E756F72h", "6C6F5F64h", "69706D79h", "69006461h",
             nil, nil, 30)
     elseif MaxJTUTR == 21 then
         hack('1768649504', '2003780467', '2037149535', '1634300013', '-1699151772', '113', 5)
@@ -2133,8 +2131,7 @@ function menuDecorRuins()
     elseif MaxPOYUT == 25 then
         hack('1634885928', '1600350562', '1633643617', '1885302377', '1667329121', '101', 5)
     elseif MaxPOYUT == 26 then
-        hackSkin("75616562h", "705F7974h", "69686572h", "726F7473h", "685F6369h", "6573756Fh", nil, nil,
-            nil, nil, 24)
+        hackSkin("75616562h", "705F7974h", "69686572h", "726F7473h", "685F6369h", "6573756Fh", nil, nil, nil, nil, 24)
     elseif MaxPOYUT == 27 then
         hack('61656222h', '5F797475h', '6E6F7473h', '6E656865h', '00006567h', '00000000h', 5)
     elseif MaxPOYUT == 28 then
@@ -2713,8 +2710,7 @@ function menuDecorKids()
     elseif MaTPKi == 2 then
         hack('6C616716h', '7972656Ch', '7472615Fh', '00000000h', 'C877AC63h', '00000071h', 5)
     elseif MaTPKi == 3 then
-        hackSkin("75616562h", "615F7974h", "6F727473h", "656D6F6Eh", "6F745F72h", "00726577h", nil, nil,
-            nil, nil, 23)
+        hackSkin("75616562h", "615F7974h", "6F727473h", "656D6F6Eh", "6F745F72h", "00726577h", nil, nil, nil, nil, 23)
     elseif MaTPKi == 4 then
         hack('1734432540', '1298099823', '1953396079', '7235937', '0', '0', 5)
     elseif MaTPKi == 5 then
@@ -2820,7 +2816,8 @@ function menuDecorKids()
     elseif MaTPKi == 54 then
         hack('1918984988', '1702065519', '1701338988', '7891308', '2040695907', '122', 5)
     elseif MaTPKi == 55 then
-        gg.alert("Updating")
+        hackSkin("63657053h", "426C6169h", "74756165h", "65535F79h", "72614361h", "6573756Fh", "655F006Ch", "746E6576h",
+            nil, nil, 25)
     elseif MaTPKi == 56 then
         hack('6E6F6322h', '74636174h', '5F6F6F5Ah', '63736572h', 'C9006575h', '00000071h', 5)
     elseif MaTPKi == 57 then
@@ -2962,7 +2959,8 @@ function menuDecorAtlantis()
     elseif MaxFGJZ == 2 then
         hack('61656222h', '5F797475h', '616C7461h', '61685F73h', '6500646Eh', '00726163h', 5)
     elseif MaxFGJZ == 3 then
-        gg.alert("Updating")
+        hackSkin("75616562h", "615F7974h", "6E616C74h", "5F736974h", "61757161h", "6D756972h", "9C948000h", "00000071h",
+            nil, nil, 24)
     elseif MaxFGJZ == 4 then
         hackSkin("75616562h", "615F7974h", "6E616C74h", "5F736974h", "6C756F62h", "72617665h", "31220064h", "74732022h",
             nil, nil, 25)
@@ -3157,7 +3155,7 @@ function menuDecorExpedition()
     if MNCvSW == nil then
         return
     elseif MNCvSW == 1 then
-        hackSkin(1701869637, 1769236836, 1698983535, 1698983535, 1698983535, 1634738994, 3372146, nil, nil, nil, 0)
+        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738994, 3372146, nil, nil, nil, 0)
     elseif MNCvSW == 2 then
         hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1634738998, 3241074, nil, nil, nil, 0)
     elseif MNCvSW == 3 then
@@ -3269,10 +3267,42 @@ function menuCoupon()
     end
 end
 
+function menuCropTime()
+    FCC = gg.choice({"1 • Construction ", "2 • Increase Barn ", "3 • Plant", "4 • Animals", "❌ • Return"},
+        nil)
+    if FCC == nil then
+        return
+    elseif FCC == 1 then
+        hackSkin(1113542739, 1953722223, 1701146707, 1114658148, 1684826485, 1936158313, 0, nil, nil, nil, 24, 100)
+    elseif FCC == 2 then
+        hackSkin(1113542739, 1953722223, 1919906899, 1130719073, 1667330145, 7959657, 0, nil, nil, nil, 23, 5000)
+    elseif FCC == 3 then
+        hack("1599099692", "1936682818", "1701860212", "1884644453", "1987207496", "7631717", 100)
+    elseif FCC == 4 then
+        hack("1599099688", "1936682818", "1701860212", "1884644453", "1836212550", "115", 100)
+    else
+        menuescolhas2(1)
+    end
+end
+
+function menuNameFrame()
+    MNxC = gg.choice({"🕷 • Name", "🎫 • Frame", "❌ • Return"}, nil)
+    if MNxC == nil then
+        return
+    elseif MNxC == 1 then
+        hackSkin(1348423763, 1768320882, 1951622508, 1600482425, 1953719654, 1818326633, 980641024, nil, nil, nil, 24)
+    elseif MNxC == 2 then
+        hackSkin(1348423763, 1768320882, 1917216108, 1600482657, 1953719654, 1818326633, 808534528, 1110454853, nil,
+            nil, 24)
+    else
+        menuescolhas2(1)
+    end
+end
+
 function menuBadge()
-    MYU = gg.choice(
-        {"💎 • Badge 1", "💎 • Badge 2", "💎 • Badge 3", "💎 • Badge 4", "💎 • Badge 5",
-         "💎 • Badge 6", "💎 • Card Colection", "❌ • Return"}, nil)
+    MYU = gg.choice({"💎 • Town Badge", "💎 • Legendary Town Badge", "💎 • City Badge",
+                     "💎 • Legendary City Badge", "💎 • Winter Badge", "💎 • Legendary Winter Badge",
+                     "💎 • Card Colection", "❌ • Return"}, nil)
 
     if MYU == nil then
         return
@@ -3507,7 +3537,7 @@ function hack2()
 end
 
 ---- HELI MONEY HACK
-function hack11(isFree)
+function hackGoldCCashByHeli()
     gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
@@ -3516,11 +3546,7 @@ function hack11(isFree)
     gg.refineNumber("1885433110", gg.TYPE_DWORD)
     xmoney = gg.prompt({"Amount of cash? [0; 5000]", "Amount of money? [1; 350000]"}, {0, 1}, {"number", "number"})
     if xmoney == nil then
-        if isFree then
-            MENUFREE()
-        else
-            MENUFREE()
-        end
+        MENUFREE()
     else
         xmoney[1] = tonumber(xmoney[1])
         xmoney[2] = tonumber(xmoney[2])
@@ -3591,7 +3617,7 @@ function hack13()
         seth(0, int2[1])
         seth(4, 0)
         seth(8, 1)
-        gg.alert("Success...")
+        gg.toast("Success...")
         marketnext = true
 
         local firstTimeMessage = true
@@ -3620,7 +3646,7 @@ function hack13()
                 seth(0, int2[1])
                 seth(4, 0)
                 seth(8, 1)
-                gg.alert("Success...")
+                gg.toast("Success...")
             end
         end
     end
@@ -3663,70 +3689,11 @@ function hack255()
         t[1].freeze = true
         gg.setValues(t)
         gg.addListItems(t) -- automaticly saves the list
-        gg.alert("hack done")
+        gg.toast("hack done")
         gg.loadResults(t) -- loading the list
     else
         gg.alert("Check the population required to unlock the terrain, then open the Gameguardian...")
     end
-    gg.clearResults()
-end
-
-function hackAnimalsFeedMill(search, refine)
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber(search, gg.TYPE_DWORD)
-    gg.refineNumber(refine, gg.TYPE_DWORD)
-
-    r = gg.getResults(1)
-    -- do something
-    local t = {}
-    t[1] = {}
-    t[1].address = r[1].address
-    t[1].flags = gg.TYPE_DWORD
-    t[1].value = 0
-    t[1].freeze = false
-    gg.setValues(t)
-
-    local e = {}
-    e[1] = {}
-    e[1].address = r[1].address + 0x04
-    e[1].flags = gg.TYPE_DWORD
-    e[1].value = 0
-    e[1].freeze = false
-    gg.setValues(e)
-
-    local y = {}
-    y[1] = {}
-    y[1].address = r[1].address + 0x08
-    y[1].flags = gg.TYPE_DWORD
-    y[1].value = 10
-    y[1].freeze = false
-    gg.setValues(y)
-
-    local v = {}
-    v[1] = {}
-    v[1].address = r[1].address + 0x10
-    v[1].flags = gg.TYPE_DWORD
-    v[1].value = 0
-    v[1].freeze = false
-    gg.setValues(v)
-
-    local h = {}
-    h[1] = {}
-    h[1].address = r[1].address + 0x18
-    h[1].flags = gg.TYPE_DWORD
-    h[1].value = 0
-    h[1].freeze = false
-    gg.setValues(h)
-
-    local k = {}
-    k[1] = {}
-    k[1].address = r[1].address + 0x20
-    k[1].flags = gg.TYPE_DWORD
-    k[1].value = 0
-    k[1].freeze = false
-    gg.setValues(k)
     gg.clearResults()
 end
 
@@ -3766,7 +3733,7 @@ function hack15cD()
         A[2].freeze = false
         gg.setValues(A)
     else
-        gg.alert("NO done...")
+        gg.toast("NO done...")
         gg.clearResults()
     end
 
@@ -3784,7 +3751,7 @@ function hack15cD()
     Ge[1] = {}
     Ge[1].address = re[1].address - 0x1C
     Ge[1].flags = gg.TYPE_DWORD
-    Ge[1].value = 7000
+    Ge[1].value = 1000
     Ge[1].freeze = false
     gg.setValues(Ge)
 
@@ -3796,21 +3763,23 @@ function hack15cD()
     Ae[1].freeze = false
     gg.setValues(Ae)
 
-    gg.alert("hack done")
+    gg.toast("hack done")
     gg.clearResults()
 end
 
-function hack15cDn()
-    gg.alert("Cargando...") -- 696B5326h;69415F6Eh;616C7072h;735F656Eh;65636170h --616C7072h;735F656Eh;65636170h 65726F63h;72616D10h;696B532Ah Skin_Chicken_space 1.937.011.470;1.701.998.435 .erniemars025
-    gg.processResume() -- 6E72651Ch;00353230h;00000031h 6E72651Ch;32737261h;00000031h  
+function hackGoldenPass()
+    gg.toast("Processing...")
+    gg.processResume()
     gg.clearResults()
-    gg.searchNumber("6E726516h;6E617061h;696B531Eh;68535F6Eh", gg.TYPE_DWORD) -- 1852990740;6447474;1768641316
-    gg.refineNumber("696B531Eh", gg.TYPE_DWORD)
+    gg.searchNumber("1768641312;1852990744;1751607662;1264545897:185", gg.TYPE_DWORD) -- KNIGHT PASS
+    gg.refineNumber("1768641312", gg.TYPE_DWORD)
+
+    -- gg.searchNumber("1852990744;1651733601;1768641314;1601071457:185", gg.TYPE_DWORD) -- GATSBY PASS
+    -- gg.refineNumber("1768641314", gg.TYPE_DWORD)
 
     r = gg.getResults(2)
 
     if gg.getResultCount() == 2 then
-        -- do something
 
         local t = {}
         t[2] = {}
@@ -3836,10 +3805,9 @@ function hack15cDn()
         A[2].freeze = false
         gg.setValues(A)
 
-        gg.alert("hack done")
+        gg.toast("hack done")
         gg.clearResults()
     elseif gg.getResultCount() == 1 then
-        -- do something else
         re = gg.getResults(1)
 
         local te = {}
@@ -3854,7 +3822,7 @@ function hack15cDn()
         Ge[1] = {}
         Ge[1].address = re[1].address - 0x14
         Ge[1].flags = gg.TYPE_DWORD
-        Ge[1].value = 7000
+        Ge[1].value = 1000
         Ge[1].freeze = false
         gg.setValues(Ge)
 
@@ -3866,18 +3834,17 @@ function hack15cDn()
         Ae[1].freeze = false
         gg.setValues(Ae)
 
-        gg.alert("hack done")
+        gg.toast("hack done")
         gg.clearResults()
     else
         -- do something else entirely
-        gg.alert("NO done...")
+        gg.toast("NO done...")
         gg.clearResults()
     end
-
 end
 
 ---- XP TRIGO HACK
-function hack16(isFree)
+function hackXPByWheat()
     gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
@@ -3893,11 +3860,7 @@ function hack16(isFree)
     })
 
     if xps == nil then
-        if isFree then
-            MENUFREE()
-        else
-            MENUFREE()
-        end
+        MENUFREE()
     else
         xps[1] = tonumber(xps[1])
         setd(0, 0)
@@ -3966,7 +3929,7 @@ function hack2C()
         else
             seth(0, 100)
         end
-        gg.alert("Exit...")
+        gg.toast("Exit...")
     end
     gg.clearResults()
 end
@@ -4229,43 +4192,22 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice({"🌟 • Unlock GP", "🌟 • Freeze Rewards", "🌟 • Change Rewards",
-                             "🏭 • Skip Time", "🚂 • Extras", "💵 • Helicopter(Cash/Gold)", "❌ • Exit"},
-        nil)
+                             "🚂 • Extras", "💵 • Helicopter(Cash/Gold)", "❌ • Exit"}, nil)
     if opcao then
         if opcao == 1 then
-            hack15cD()
+            hackGoldenPass()
         elseif opcao == 2 then
             ItemPass()
         elseif opcao == 3 then
             menuescolhas2(1)
         elseif opcao == 4 then
-            MNZ = gg.choice({"🐶 • Animals", "💣 • Forge", "🐶 • Cow Feed Mill",
-                             "🐶 • Chicken Feed Mill", "🐶 • Sheep Feed Mill", "❌ • Return"}, nil)
-
-            if MNZ == nil then
-                return
-            elseif MNZ == 1 then
-                hack14()
-            elseif MNZ == 2 then
-                hack2()
-            elseif MNZ == 3 then
-                hackAnimalsFeedMill("776F630Eh;64656566h;43960000h", "43960000h")
-            elseif MNZ == 4 then
-                hackAnimalsFeedMill("69686316h;6E656B63h;64656566h;44160000h", "44160000h")
-                hackAliGallinas()
-            elseif MNZ == 5 then
-                hackAnimalsFeedMill("65687312h;65667065h;00006465h;44960000h", "44960000h")
-            elseif MNZ == 6 then
-                MENUFREE()
-            end
-        elseif opcao == 5 then
             MNF = gg.choice({"1 • XP (Wheat)", "2 • City Market", "3 • Industry Academy", "4 • Airplane Auto",
                              "5 • Freeze Population", "❌ • Return"}, nil)
 
             if MNF == nil then
                 return
             elseif MNF == 1 then
-                hack16(true)
+                hackXPByWheat()
             elseif MNF == 2 then
                 hack13()
             elseif MNF == 3 then
@@ -4277,113 +4219,14 @@ function MENUFREE()
             else
                 MENUFREE()
             end
-        elseif opcao == 6 then
-            hack11(true)
+        elseif opcao == 5 then
+            hackGoldCCashByHeli()
         else
             os.exit()
         end
 
     end
 end
-
--- local SERVER_URL =
---     "https://script.google.com/macros/s/AKfycbxVgHRNs1aDtHQ5PqW7ZDH2p2c1xb3KlL4F98xKVxGHP0_5GOJUdbe8NKgteOjWHJFmsw/exec"
-
--- -- Tạo device ID duy nhất (HWID giả lập)
--- function make_device_id()
---     local info = gg.getTargetInfo()
---     local seed = (info.packageName or "") .. (info.versionName or "") .. (info.processName or "")
---     local h = 2166136261
---     for i = 1, #seed do
---         h = bit32.bxor(h, seed:byte(i))
---         h = (h * 16777619) % 2 ^ 32
---     end
---     return string.format("DEV-%08X", h)
--- end
-
--- -- Gửi HTTP GET
--- function http_get(url)
---     local ok, resp = pcall(gg.makeRequest, url)
---     if not ok or not resp then
---         return nil
---     end
---     return resp.content
--- end
-
--- -- Kiểm tra thiết bị đã đăng ký chưa
--- function check_device_registered(device_id)
---     local url = string.format("%s?action=check_device&device=%s", SERVER_URL, device_id)
---     local resp = http_get(url)
---     if not resp then
---         gg.alert("⚠️ Không thể kết nối đến server.\nVui lòng kiểm tra mạng.")
---         return false, "network_error"
---     end
-
---     if resp:match("REGISTERED") then
---         return true
---     else
---         return false
---     end
--- end
-
--- -- Kiểm tra key hợp lệ
--- function validate_key(device_id, key)
---     local url = string.format("%s?action=validate&key=%s&device=%s", SERVER_URL, key, device_id)
---     local resp = http_get(url)
---     if not resp then
---         gg.alert("⚠️ Không thể kết nối đến server để xác thực key.")
---         return false
---     end
-
---     if resp:match("EXPIRED") then
---         gg.alert("❌ Key hết hạn.\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
---                      "\n\n👉 Liên hệ với Admin để gia hạn key.")
---         return false
---     elseif resp:match("WRONG") then
---         gg.alert("❌ Key không đúng")
---         return false
---     end
-
---     return true
--- end
-
--- -- Đăng ký key mới
--- function request_key(device_id)
---     local url = string.format("%s?action=request&device=%s", SERVER_URL, device_id)
---     local resp = http_get(url)
---     if resp:match("OK") then
---         gg.alert("✅ Đăng ký thành công")
---     end
--- end
-
--- -------------------------------------------
--- -- 🚀 Chương trình chính
--- -------------------------------------------
-
--- local device_id = make_device_id()
--- gg.toast("🔍 Kiểm tra thiết bị...")
-
--- local registered = check_device_registered(device_id)
-
--- if not registered then
---     gg.alert("❌ Thiết bị CHƯA được đăng ký!\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
---                  "\n\n👉 Gửi Device ID này cho Admin để nhận key.")
---     request_key(device_id)
---     os.exit()
--- end
-
--- -- Nếu thiết bị đã đăng ký → yêu cầu nhập key
--- local input = gg.prompt({"Nhập key của bạn:"}, {""}, {"text"})
--- if not input or input[1] == "" then
---     gg.alert("Bạn chưa nhập key. Thoát.")
---     os.exit()
--- end
-
--- local key = input[1]:gsub("%s+", "")
-
--- if not validate_key(device_id, key) then
---     os.exit()
--- end
 
 local function showMenu()
     gg.clearList()
