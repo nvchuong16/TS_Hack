@@ -3,10 +3,71 @@ local SERVER_URL =
 
 local script_content = nil
 
--- Tạo device ID duy nhất (HWID giả lập)
+-- Tạo token ngẫu nhiên (16 byte -> 32 ký tự hex)
+local function random_token()
+    math.randomseed(os.time() + (os.clock() * 100000))
+    local t = ""
+    for i = 1, 16 do
+        t = t .. string.format("%02X", math.random(0, 255))
+    end
+    return t
+end
+
+-- Thử mở file an toàn
+local function safe_read(path)
+    local f = io.open(path, "r")
+    if not f then return nil end
+    local data = f:read("*a")
+    f:close()
+    return data
+end
+
+local function safe_write(path, data)
+    local f = io.open(path, "w")
+    if not f then return false end
+    f:write(data)
+    f:close()
+    return true
+end
+
+function get_or_create_device_token()
+    -- Danh sách đường dẫn thử lần lượt
+    local paths = {
+        "/sdcard/.my_script_device_token",
+        ".my_script_device_token"  -- thư mục hiện tại (nếu sdcard ko dùng được)
+    }
+
+    -- 1. Thử đọc token nếu đã tồn tại
+    for _, path in ipairs(paths) do
+        local data = safe_read(path)
+        if data and #data > 0 then
+            return data
+        end
+    end
+
+    -- 2. Không có -> tạo token mới
+    local token = random_token()
+
+    -- 3. Thử lưu vào từng path, chỉ cần thành công 1 chỗ
+    local saved = false
+    for _, path in ipairs(paths) do
+        if safe_write(path, token) then
+            saved = true
+            break
+        end
+    end
+
+    -- Nếu không lưu được chỗ nào thì vẫn trả token (nhưng sẽ không persistent)
+    return token
+end
+
 function make_device_id()
     local info = gg.getTargetInfo()
-    local seed = (info.packageName or "") .. (info.versionName or "") .. (info.processName or "")
+    local seed = (info.packageName or "") ..
+                 (info.versionName or "") ..
+                 (info.processName or "") ..
+                 get_or_create_device_token()
+
     local h = 2166136261
     for i = 1, #seed do
         h = bit32.bxor(h, seed:byte(i))
