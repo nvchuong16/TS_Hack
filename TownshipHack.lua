@@ -956,7 +956,7 @@ function menuSkinTrain_TrainStation()
                           "🚂 • Theater Express", "14 • Chinese Station", "🚂 • Dragon Train",
                           "15 • Halloween Station", "🚂 • Halloween Train", "16 • Ancient Settlement Station",
                           "🚂 • Primeval Express", "17 • Christmas Station", "🚂 • Chrismas Train",
-                          "❌ • Back"}, nil)
+                          "18 • Gatsby Station", "🚂 • Gatsby Train", "❌ • Back"}, nil)
 
     if MaxJES_5 == nil then
         return
@@ -1042,6 +1042,11 @@ function menuSkinTrain_TrainStation()
             nil, nil, 31)
     elseif MaxJES_5 == 34 then
         hackSkin("6E696B53h", "6172545Fh", "635F6E69h", "73697268h", "73616D74h", "34323032h", "06710000h", "00000000h",
+            nil, nil, 24)
+    elseif MaxJES_5 == 35 then
+        hack("1768641314", "1918132078", "1601071457", "1937006919", "31074", "0", 50)
+    elseif MaxJES_5 == 36 then
+        hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "61475F6Eh", "79627374h", "00000000h", "00000000h",
             nil, nil, 24)
     else
         menuescolhas2(4)
@@ -1383,7 +1388,7 @@ function menuSkinSheep()
                             "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
                             "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
                             "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep",
-                            "19 • Vampire Sheep", "❌ • Return"}, nil)
+                            "19 • Vampire Sheep", "20 • Gatsby Sheep", "❌ • Return"}, nil)
 
     if MaxJES_112 == nil then
         return
@@ -1431,6 +1436,8 @@ function menuSkinSheep()
     elseif MaxJES_112 == 19 then
         hackSkin("6E696B53h", "6568535Fh", "485F7065h", "6F6C6C61h", "6E656577h", "35323032h", "00000000h", "00000000h",
             nil, nil, 24)
+    elseif MaxJES_112 == 20 then
+        hack("1768641314", "1750294382", "1601201509", "1937006919", "31074", "0", 50)
     else
         menuescolhas2(4)
     end
@@ -1975,7 +1982,7 @@ function menuDecorChristmas()
     elseif MaxJTyM == 49 then
         hack('1852393240', '1601332583', '1937076040', '101', '0', '0', 5)
     elseif MaxJTyM == 50 then
-        hackSkin("69726843h", "69726843h", "69475F73h", "7265676Eh", "61657262h", "6E614D64h", "202D2D00h", "80D192D0h",
+        hackSkin("69726843h", "616D7473h", "69475F73h", "7265676Eh", "61657262h", "6E614D64h", "202D2D00h", "80D192D0h",
             nil, nil, 24)
     elseif MaxJTyM == 51 then
         hack('72684320h', '6D747369h', '435F7361h', '75726F68h', '00000073h', '00000000h', 5)
@@ -2875,7 +2882,8 @@ function menuDecorChina()
         hackSkin("63657053h", "426C6169h", "74756165h", "68435F79h", "5F616E69h", "73756F68h", "EF8E0065h", "000077C4h",
             nil, nil, 25)
     elseif MaxCHIMN == 9 then
-        hack('1634886696', '1601072999', '1952543859', '1398760821', '809000784', '48', 5)
+        hackSkin("63657053h", "426C6169h", "74756165h", "68435F79h", "5F616E69h", "67617264h", "00006E6Fh", "00000000h",
+            nil, nil, 26)
     elseif MaxCHIMN == 10 then
         hack('1768440602', '1702061422', '1852727618', '29285', '716481010', '126', 5)
     elseif MaxCHIMN == 11 then
@@ -4692,11 +4700,9 @@ function hackGoldenPass()
     gg.toast("Processing...")
     gg.processResume()
     gg.clearResults()
-    gg.searchNumber("1852990744;1264543081;1768641312", gg.TYPE_DWORD)
-    gg.refineNumber("1768641312", gg.TYPE_DWORD)
 
-    -- gg.searchNumber("1852990744;1651733601;1768641314;1601071457:185", gg.TYPE_DWORD) -- GATSBY PASS
-    -- gg.refineNumber("1768641314", gg.TYPE_DWORD)
+    gg.searchNumber("1852990744;1651733601;1768641314;1601071457:185", gg.TYPE_DWORD) -- GATSBY PASS
+    gg.refineNumber("1768641314", gg.TYPE_DWORD)
 
     r = gg.getResults(2)
 
