@@ -3581,7 +3581,8 @@ function menuDecorExpedition()
                         "33 • Halloween Windmill", "34 • Gate to Cyber City", "35 • Sheriff Office",
                         "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage",
                         "39 • Heroes Of The Old Park Part 1", "39 • Heroes Of The Old Park Part 2",
-                        "39 • Heroes Of The Old Park Part 3", "❌ • Return"}, nil)
+                        "39 • Heroes Of The Old Park Part 3", "40 • Viking Gate", "41 • Turkey Of Plenty", 
+                        "❌ • Return"}, nil)
 
     if MNCvSW == nil then
         return
@@ -3667,6 +3668,10 @@ function menuDecorExpedition()
         hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12660, nil, nil, nil, 0)
     elseif MNCvSW == 41 then
         hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1918988323, 12916, nil, nil, nil, 0)
+    elseif MNCvSW == 42 then
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3159150", 1)
+    elseif MNCvSW == 43 then
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3224686", 1)
     else
         menuescolhas2(5)
     end
