@@ -930,15 +930,16 @@ function menuSkinHeli_Helipad()
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "6C6C6168h", "6565776Fh", "3230326Eh", "61430033h",
             nil, nil, 29)
     elseif MaxJES_3 == 40 then
-        hack("1768641324", "1699241838", "1868786028", "1919251568", "1952532319", "7955059", 50)
+        hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7461475Fh", "00796273h", "00000072h",
+            nil, nil, 27)
     elseif MaxJES_3 == 41 then
         hack("696B532Ch", "65485F6Eh", "6F63696Ch", "72657470h", "7461475Fh", "00796273h", 50)
     elseif MaxJES_3 == 42 then
         hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "7269425Fh", "61646874h", "30325F79h",
-            "00003532h", "00000000h", 29)
+            "B2003532h", "00000072h", 34)
     elseif MaxJES_3 == 43 then
-        hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "74726942h", "79616468h", "3230325Fh", "69740035h",
-            "00006E6Fh", "006D6574h", 34)
+        hackSkin("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "74726942h", "79616468h", "3230325Fh", "6B630035h",
+            nil, nil, 29)
     else
         menuescolhas2(4)
     end
@@ -1147,7 +1148,7 @@ function menuSkinAirport_Airplane()
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "69775F65h", "7265746Eh", "726F7053h", "00000074h", "00000000h",
             nil, nil, 25)
     elseif MaxJES_7 == 33 then
-        hack("696B5322", "69415F6E", "726F7072", "72615F74", "00006261", "00000000", 50)
+        hack("696B5322h", "69415F6Eh", "726F7072h", "72615F74h", "00006261h", "00000000h", 50)
     elseif MaxJES_7 == 34 then
         hack("696B5324h", "69415F6Eh", "616C7072h", "615F656Eh", "00626172h", "00000000h", 50)
     elseif MaxJES_7 == 35 then
@@ -1333,7 +1334,8 @@ function menuSkinCow()
                             "5 • Easter Cow", "6 • Astronaut Cow", "7 • Moo Sferatu Cow", "8 • Alpine Cow",
                             "9 • Flower Cow", "10 • Birthday Cow", "11 • Ceremonial Cow", "12 • Elf Cow",
                             "13 • Party Cow", "14 • Flirty Cow", "15 • Stylish Cow", "16 • Confectioner Cow",
-                            "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "❌ • Return"}, nil)
+                            "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "20 • Arabian Cow",
+                            "21 • Japanese Cow", "❌ • Return"}, nil)
 
     if MaxJES_111 == nil then
         return
@@ -1375,6 +1377,10 @@ function menuSkinCow()
         hack("1768641322", "1866686318", "1818451831", "1769173857", "1937075555", "25449", 50)
     elseif MaxJES_111 == 19 then
         hack("1768641308", "1866686318", "1869438839", "6646134", "0", "0", 50)
+    elseif MaxJES_111 == 20 then
+        hack("1768641306", "1866686318", "1918984055", "25185", "0", "0", 50)
+    elseif MaxJES_111 == 21 then
+        hack("1768641308", "1866686318", "1634361207", "7233904", "0", "0", 50)
     else
         menuescolhas2(4)
     end
@@ -1382,13 +1388,14 @@ function menuSkinCow()
 end
 
 function menuSkinSheep()
-    MaxJES_112 = gg.choice({"1 • Rock n roll Sheep", "2 • Billy Bonka Sheep", "3 • Egyptian Sheep",
+    MaxJES_112 = gg.choice({"1 • Rock N Roll Sheep", "2 • Billy Bonka Sheep", "3 • Egyptian Sheep",
                             "4 • Samba Sheep", "5 • Noble Bandit Sheep", "6 • Birthday Sheep",
                             "7 • Sleuth Sheep", "8 • Battle Sheep", "9 • Easter Sheep",
                             "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
                             "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
                             "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep",
-                            "19 • Vampire Sheep", "20 • Gatsby Sheep", "❌ • Return"}, nil)
+                            "19 • Vampire Sheep", "20 • Gatsby Sheep", "21 • Rocker Sheep", 
+                            "22 • Rock N Roll Shades Sheep", "❌ • Return"}, nil)
 
     if MaxJES_112 == nil then
         return
@@ -1438,6 +1445,12 @@ function menuSkinSheep()
             nil, nil, 24)
     elseif MaxJES_112 == 20 then
         hack("1768641314", "1750294382", "1601201509", "1937006919", "31074", "0", 50)
+    elseif MaxJES_112 == 21 then
+        hackSkin("6E696B53h", "6568535Fh", "625F7065h", "68747269h", "32796164h", "00353230h", "00000000h", "00000000h",
+            nil, nil, 23)
+    elseif MaxJES_112 == 22 then
+        hackSkin("6E696B53h", "6568535Fh", "425F7065h", "68747269h", "5F796164h", "35323032h", "00000000h", "00000000h",
+            nil, nil, 24)
     else
         menuescolhas2(4)
     end
@@ -1449,9 +1462,9 @@ function menuSkinPig()
     if MaxJESxd_113 == nil then
         return
     elseif MaxJESxd_113 == 1 then
-        hack("696B5318h", "69505F6Eh", "4E435F67h", "00000059h", "5A0643E0h", "00007E94h", 50)
+        hack("1768641304", "1766874990", "1313038183", "89", "0", "0", 50)
     elseif MaxJESxd_113 == 2 then
-        hack("1766874990", "1635147623", "1936027241", "7954756", "0", "0", 50)
+        hack("1768641324", "1766874990", "1635147623", "1953391980", "1936027241", "7954756", 50)
     else
         menuescolhas2(4)
     end
@@ -1492,7 +1505,7 @@ function menuDecor()
     elseif choice == 2 then
         hack('1919508762', '1952542562', '1634496607', '27502', '700281330', '85', 5)
     elseif choice == 3 then
-        hack('1634034218', '1601795189', '1769239137', '1902081139', '19536', '53109', 5)
+        hack('1634034218', '1601795189', '1769239137', '1902081139', '1953653109', '29285', 5)
     elseif choice == 4 then
         hack('6E65501Eh', '486C6963h', '6573756Fh', '7472615Fh', '91870E00h', '0000007Bh', 5)
     elseif choice == 5 then
@@ -1539,7 +1552,7 @@ function menuDecor()
     elseif choice == 23 then
         hack('1801546788', '1970235493', '1650419059', '1953784175', '7367026', '113', 5)
     elseif choice == 24 then
-        hack('6570532Ch', '6C616963h', '75616542h', '445F7974h', '63657666h', '0065746Fh', 5)
+        hack('6570532Ch', '6C616963h', '75616542h', '445F7974h', '6365766Fh', '0065746Fh', 5)
     elseif choice == 25 then
         hack('1987013650', '2003784805', '29285', '0', '0', '0', 5)
     elseif choice == 26 then
@@ -1669,7 +1682,7 @@ function menuDecor()
         hackSkin("63657053h", "426C6169h", "74756165h", "654D5F79h", "76656964h", "61546C69h", "6E726576h", "00000061h",
             nil, nil, 29)
     elseif choice == 78 then
-        hack('00000021h', '00000000h', '00000017h', '00000000h', '489FECE0h', '0000006Fh', 5)
+        gg.alert("Updating")
     elseif choice == 79 then
         hack('1919501084', '1601402211', '1886216515', '6778473', '1714630657', '140', 5)
     elseif choice == 80 then
@@ -1729,7 +1742,7 @@ function menuDecorSummer()
     elseif MaxDECORT == 14 then
         hack('1634034220', '1601795189', '1869768820', '1735289207', '1768844127', '7562614', 5)
     elseif MaxDECORT == 15 then
-        hack('00000021h', '00000000h', '0000001Ah', '00000000h', '489FED60h', '0000006Fh', 5)
+        gg.alert("Updating")
     elseif MaxDECORT == 16 then
         hack('61726118h', '5F636962h', '6973616Fh', '00000073h', '00000000h', '00000000h', 5)
     elseif MaxDECORT == 17 then
@@ -1976,7 +1989,7 @@ function menuDecorChristmas()
         hackSkin("6E756F4Dh", "6E696174h", "6C616843h", "435F7465h", "48797A6Fh", "6573756Fh", "EF166C00h", "000077C4h",
             nil, nil, 24)
     elseif MaxJTyM == 47 then
-        hack('1818322984', '1702326124', '2002742885', '1751348329', '1919510623', '101', 5)
+        hack('1919443756', '1836348265', '1918137185', '2019517797', '846422381', '3289648', 5)
     elseif MaxJTyM == 48 then
         hack('1634034218', '1601795189', '2003791475', '1601069421', '1952541555', '29285', 5)
     elseif MaxJTyM == 49 then
@@ -2174,8 +2187,8 @@ function menuDecorTheFirst()
     MaxJTyCFMT = gg.choice({"1 • The first geneticist", "2 • The first tourist", "3 • The first thinker",
                             "4 • The first firefighter", "5 • The first commander", "6 • The first policeman",
                             "7 • The first musician", "8 • The first painter", "9 • The first soccer player",
-                            "10 • The first scientist", "11 • The first balloonist", "12 • The first writer",
-                            "13 • The first aircraft designer", "14 • The first chemist", "❌ • Return"}, nil)
+                            "10 • The first scientist", "11 • The first writer",
+                            "12 • The first aircraft designer", "13 • The first chemist", "❌ • Return"}, nil)
 
     if MaxJTyCFMT == nil then
         return
@@ -2200,12 +2213,10 @@ function menuDecorTheFirst()
     elseif MaxJTyCFMT == 10 then
         hack("61747324h", "5F657574h", "6E61656Eh", "74726564h", "006C6168h", "00000064h", 5)
     elseif MaxJTyCFMT == 11 then
-        hack("6174731Ah", "5F657574h", "62796C66h", "0000796Fh", "CC60F458h", "00000000h", 5)
-    elseif MaxJTyCFMT == 12 then
         hack("1635021594", "1600484724", "1953067639", "29285", "0", "0", 5)
-    elseif MaxJTyCFMT == 13 then
+    elseif MaxJTyCFMT == 12 then
         hack("1635021594", "1600484724", "1652124774", "1912633711", "0", "0", 5)
-    elseif MaxJTyCFMT == 14 then
+    elseif MaxJTyCFMT == 13 then
         hack("1635021596", "1600484724", "1835362403", "7631721", "1935963503", "29696", 5)
     else
         menuescolhas2(5)
@@ -2238,7 +2249,7 @@ function menuDecorSports()
     elseif MaxJTUTR == 7 then
         hack('1651458586', '1768254579', '1632790631', '25955', '746717682', '50', 5)
     elseif MaxJTUTR == 8 then
-        gg.alert("Updating")
+        hack("6372611Ch", "79726568h", "6E75725Fh", "0072656Eh", "06373A68h", "00000074h", 5)
     elseif MaxJTUTR == 9 then
         hackSkin("6D796C4Fh", "5F636970h", "65736142h", "6C6C6162h", "69617274h", "676E696Eh", "94180000h", "42080000h",
             nil, nil, 24)
@@ -2257,11 +2268,11 @@ function menuDecorSports()
         hackSkin("75616562h", "445F7974h", "6E697669h", "776F5467h", "6F5F7265h", "706D796Ch", "00646169h", "9AE44AC8h",
             nil, nil, 27)
     elseif MaxJTUTR == 15 then
-        gg.alert("Updating")
+        hack("6F72441Eh", "6152656Eh", "705F6563h", "656E616Ch", "06373A00h", "0000006Eh", 5)
     elseif MaxJTUTR == 16 then
-        gg.alert("Updating")
+        hack("69657726h", "6C746867h", "65746669h", "75725F72h", "72656E6Eh", "00000000h", 5)
     elseif MaxJTUTR == 17 then
-        gg.alert("Updating")
+        hack("796C6F2Ah", "6369706Dh", "6C6C6956h", "5F656761h", "6E6E7572h", "00007265h", 5)
     elseif MaxJTUTR == 18 then
         -- Code 33;23;7959669;1768649504;2003780467
         hackSkin("776F6E73h", "72616F62h", "65685364h", "6F5F7065h", "706D796Ch", "00646169h", "00000000h", "00000000h",
@@ -2275,7 +2286,7 @@ function menuDecorSports()
     elseif MaxJTUTR == 21 then
         hack('1768649504', '2003780467', '2037149535', '1634300013', '-1699151772', '113', 5)
     elseif MaxJTUTR == 22 then
-        hack('6F6C6724h', '466C6162h', '68676996h', '6C705F74h', '00656E61h', '00000071h', 5)
+        hack('6F6C6724h', '466C6162h', '6867696Ch', '6C705F74h', '00656E61h', '00000071h', 5)
     else
         menuescolhas2(5)
     end
@@ -2398,7 +2409,7 @@ function menuDecorRuins()
     elseif MaxPOYUT == 8 then
         hack("1919448102", "1214606959", "1600941153", "1768187245", "1818326629", "0", 5)
     elseif MaxPOYUT == 9 then
-        hack("6D616320h", "676E6970h", "6C697775h", "73657764h", "65770074h", "00007473h", 5)
+        hack("6D616320h", "676E6970h", "6C69775Fh", "73657764h", "65770074h", "00007473h", 5)
     elseif MaxPOYUT == 10 then
         hack('1634877718', '1600350562', '1953391956', '0', '0', '0', 5)
     elseif MaxPOYUT == 11 then
@@ -2473,7 +2484,7 @@ function menuDecorBannerStatues()
                          "41 • Romantic Dinner", "42 • Spring", "43 • Sun Monument", "44 • Tea Party Fountain",
                          "45 • The Magnificent Five", "46 • Throes Of Art", "47 • Titans",
                          "48 • Township Turned 2", "49 • Triathlon", "50 • Tyrannosaurus",
-                         "51 • Unexpected Gift", "52 • Zoo", "❌ • Return"}, nil)
+                         "51 • Unexpected Gift", "52 • Zoo", "53 • BFF Fountain", "❌ • Return"}, nil)
 
     if MaxWSFP == nil then
         return
@@ -2509,7 +2520,7 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 12 then
         hack('65705328h', '6C616963h', '75616542h', '425F7974h', '656E6E61h', '00000072h', 5)
     elseif MaxWSFP == 13 then
-        hack('00000021h', '00000000h', '00000019h', '00000000h', '489FEE20h', '0000006Fh', 5)
+        gg.alert("Updating")
     elseif MaxWSFP == 14 then
         hack('1869902616', '1935633266', '1970561396', '101', '1714630657', '140', 5)
     elseif MaxWSFP == 15 then
@@ -2557,9 +2568,9 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 30 then
         hack('6165622Ah', '5F797475h', '6F6C6F63h', '676E6972h', '6275635Fh', '00007365h', 5)
     elseif MaxWSFP == 31 then
-        gg.alert("Updating")
+        hack("636F721Ah", "7461436Bh", "73756D5Fh", "00006369h", "06373A68h", "0000007Fh", 5)
     elseif MaxWSFP == 32 then
-        gg.alert("Updating")
+        hack("766F6D1Ah", "6F4D6569h", "656D756Eh", "0000746Eh", "06373A68h", "00000070h", 5)
     elseif MaxWSFP == 33 then
         -- Code 33;29;7959669;1701860138;1818323299
         hackSkin("63657053h", "426C6169h", "74756165h", "74535F79h", "65757461h", "68736946h", "616D7265h", "0000006Eh",
@@ -2611,13 +2622,17 @@ function menuDecorBannerStatues()
         hackSkin("75616562h", "745F7974h", "74616972h", "6E6F6C68h", "6E75725Fh", "0072656Eh", "00000000h", "00000000h",
             nil, nil, 23)
     elseif MaxWSFP == 50 then
-        gg.alert("Updating")
+        hackSkin("63657053h", "426C6169h", "74756165h", "69445F79h", "6E696767h", "79545F67h", "6E6E6172h", "7561736Fh",
+            "00737572h", nil, 35)
     elseif MaxWSFP == 51 then
         -- Code 49;26;1818318364;1769238117;1834968430;7237487
         hackSkin("656C6156h", "6E69746Eh", "6F6D5F65h", "665F6E6Fh", "5F6D6F72h", "76616568h", "00006E65h", "00000000h",
             nil, nil, 26)
     elseif MaxWSFP == 52 then
         hack('6F6F7A12h', '6365645Fh', '0000726Fh', '00000000h', '00000000h', '00000000h', 5)
+    elseif MaxWSFP == 53 then
+        hackSkin("63657053h", "426C6169h", "74756165h", "6E615F79h", "6C616D69h", "776F745Fh", "61007265h", "20736567h",
+            nil, nil, 26)
     else
         menuescolhas2(5)
     end
@@ -2712,7 +2727,7 @@ function menuDecorInflatable()
     elseif MaxVXCS == 18 then
         hack('1634034206', '1601795189', '1633836851', '1852796012', '0', '0', 5)
     elseif MaxVXCS == 19 then
-        hack('1634034212', '1601795189', '1701147252', '181832', '1503', '7237484', 5)
+        hack('1634034212', '1601795189', '1701147252', '1818321503', '7237484', '0', 5)
     elseif MaxVXCS == 20 then
         hack('1701860138', '1818323299', '1969317186', '1717533044', '1967421804', '27491', 5)
     elseif MaxVXCS == 21 then
@@ -3106,7 +3121,7 @@ function menuDecorKids()
     elseif MaTPKi == 10 then
         hack('6E697226h', '6D614767h', '75735F65h', '6E696672h', '73726567h', '00000000h', 5)
     elseif MaTPKi == 11 then
-        gg.alert("Updating")
+        hack("6E616424h", "614D6563h", "6E696863h", "65685F65h", "0078696Ch", "00000046h", 5)
     elseif MaTPKi == 12 then
         hack('1852392466', '1632853871', '2013291878', '116', '0', '0', 5)
     elseif MaTPKi == 13 then
@@ -3127,7 +3142,8 @@ function menuDecorKids()
         hackSkin("75616562h", "675F7974h", "66666172h", "5F697469h", "706D6F63h", "74697465h", "006E6F69h", "98B558C5h",
             nil, nil, 27)
     elseif MaTPKi == 20 then
-        gg.alert("Updating")
+        hackSkin("61757141h", "6D756972h", "616C7441h", "6369746Eh", "636E615Fh", "746E6569h", "00000000h", "00000000h",
+            nil, nil, 24)
     elseif MaTPKi == 21 then
         hack('1885423644', '1096776048', '1918989681', '7173481', '672503271', '110', 5)
     elseif MaTPKi == 22 then
@@ -3145,7 +3161,7 @@ function menuDecorKids()
     elseif MaTPKi == 27 then
         hack('64694B16h', '69615273h', '7961776Ch', '0', '0', '0', 5)
     elseif MaTPKi == 28 then
-        hack('1701860138', '1818323299', '1969317186', '1264548212', '17665', '48585', 5)
+        hack('1701860138', '1818323299', '1969317186', '1264548212', '1766548585', '25972', 5)
     elseif MaTPKi == 29 then
         hack('64617220h', '61726F69h', '725F6563h', '75637365h', 'C9D80065h', '00000071h', 5)
     elseif MaTPKi == 30 then
@@ -3171,9 +3187,9 @@ function menuDecorKids()
     elseif MaTPKi == 39 then
         hack('6E69701Ah', '6C6C6162h', '6C65685Fh', '00007869h', 'C9D85C63h', '00000071h', 5)
     elseif MaTPKi == 40 then
-        gg.alert("Updating")
+        hack("6968732Ah", "74744170h", "74636172h", "5F6E6F69h", "61726970h", "00006574h", 5)
     elseif MaTPKi == 41 then
-        gg.alert("Updating")
+        hack("69617222h", "776F626Eh", "72696146h", "6C65685Fh", "06007869h", "00000074h", 5)
     elseif MaTPKi == 42 then
         hack('1667580956', '1381986927', '1885696111', '7041633', '672503271', '110', 5)
     elseif MaTPKi == 43 then
@@ -3452,7 +3468,7 @@ function menuDecorFruit()
     elseif MaxFGJZ == 9 then
         hack("7572661Eh", "61507469h", "6B5F6B72h", "6566696Eh", "05659600h", "00000000h", 5)
     elseif MaxFGJZ == 10 then
-        gg.alert("Updating")
+        hack("75726626h", "6F467469h", "6162746Fh", "6B5F6C6Ch", "6566696Eh", "00000000h", 5)
     elseif MaxFGJZ == 11 then
         hack('1701601818', '1919247470', '1768844127', '25958', '0', '0', 5)
     elseif MaxFGJZ == 12 then
@@ -3494,7 +3510,7 @@ function menuDecorFruit()
         hackSkin("6E616874h", "6967736Bh", "676E6976h", "6765765Fh", "62617465h", "6F48656Ch", "00657375h", "0043FFB9h",
             nil, nil, 27)
     elseif MaxFGJZ == 26 then
-        gg.alert("Updating")
+        hack("6169672Ch", "6556746Eh", "61746567h", "73656C62h", "7365725Fh", "00657563h", 5)
     else
         menuescolhas2(5)
     end
@@ -3521,9 +3537,10 @@ function menuDecorEntertainment()
     elseif MaxFGJZ == 4 then
         hack('1918976798', '2017812339', '1769172848', '1852795252', '0', '0', 5)
     elseif MaxFGJZ == 5 then
-        hack('1987013650', '1634034188', '7959669', '1811970420', '1769300575', '1852400748', 5)
+        hackSkin("616E6946h", "7765526Ch", "5F647261h", "64726167h", "69436E65h", "616D656Eh", "00000000h", "00000000h",
+            nil, nil, 24)
     elseif MaxFGJZ == 6 then
-        gg.alert("Updating")
+        hack("6F6F661Eh", "6F687364h", "75625F77h", "72656772h", "06373A00h", "00000080h", 5)
     elseif MaxFGJZ == 7 then
         hack('1935754784', '1852795240', '1970225759', '1970366836', '672464997', '110', 5)
     elseif MaxFGJZ == 8 then
@@ -3537,13 +3554,13 @@ function menuDecorEntertainment()
     elseif MaxFGJZ == 12 then
         hack('6E694B1Ah', '6D6F6467h', '746E6543h', '00006572h', 'C9D85C63h', '00000071h', 5)
     elseif MaxFGJZ == 13 then
-        hack('2003790880', '1701079410', '1918858098', '1969451877', '0', '0', 5)
+        hack("776F6C20h", "65646972h", "725F7372h", "75637365h", "17330065h", "0000005Eh", 5)
     elseif MaxFGJZ == 14 then
         hack('1818317600', '1601073007', '2036429383', '1937076045', '672464997', '110', 5)
     elseif MaxFGJZ == 15 then
         hack('6C696626h', '6B616D6Dh', '5F676E69h', '61657274h', '65727573h', '00000000h', 5)
     elseif MaxFGJZ == 16 then
-        gg.alert("Updating")
+        hack("766F6D16h", "754D6569h", "6D756573h", "00000000h", "06373A68h", "00000000h", 5)
     elseif MaxFGJZ == 17 then
         hack('6165732Ch', '556E6F73h', '74536F66h', '6F696475h', '6E69635Fh', '00616D65h', 5)
     elseif MaxFGJZ == 18 then
@@ -3581,7 +3598,7 @@ function menuDecorExpedition()
                         "33 • Halloween Windmill", "34 • Gate to Cyber City", "35 • Sheriff Office",
                         "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage",
                         "39 • Heroes Of The Old Park Part 1", "39 • Heroes Of The Old Park Part 2",
-                        "39 • Heroes Of The Old Park Part 3", "40 • Viking Gate", "41 • Turkey Of Plenty", 
+                        "39 • Heroes Of The Old Park Part 3", "40 • Viking Gate", "41 • Turkey Of Plenty",
                         "❌ • Return"}, nil)
 
     if MNCvSW == nil then
@@ -3653,9 +3670,9 @@ function menuDecorExpedition()
     elseif MNCvSW == 33 then
         hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881354802, 829715041, nil, nil, nil, 28)
     elseif MNCvSW == 34 then
-        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355315, 829715041, nil, nil, nil, 28)
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3421038", 1)
     elseif MNCvSW == 35 then
-        hackSkin(1701869637, 1769236836, 1698983535, 1634889571, 1852795252, 1881355571, 829715041, nil, nil, nil, 28)
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3617646", 1)
     elseif MNCvSW == 36 then
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3486318", 1)
     elseif MNCvSW == 37 then
