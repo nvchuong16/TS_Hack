@@ -624,10 +624,11 @@ function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
         MNV = gg.choice({'🌟 • Unlock Gold Pass', '⏳ • Freeze Reward Coupon', '⏳ • Freeze Reward Chest',
-                         '💣 • Items', "🎉 • Skins", "🏠 • Decoration", '🎫 • Coupons',
-                         '🍂 • Crop Time', '🎯 • Avatar', '⚓ • Stickers', '🏭 • Poster',
-                         "☢️ • construction and barn", '🎉 • Badge', '💎 • Name and Frame', '❌ • Back'},
-            nil, [[╔══╗───────────╔═╗╔╗─╔╗───
+                         '💵 • Money/Notes', '💣 • Items', "🎉 • Skins", "🏠 • Decoration",
+                         '🎫 • Coupons', '🍂 • Crop Time', '🎯 • Avatar', '⚓ • Stickers',
+                         '🏭 • Poster', "☢️ • construction and barn", '🎉 • Badge',
+                         '💎 • Name and Frame', '❌ • Back'}, nil,
+            [[╔══╗───────────╔═╗╔╗─╔╗───
 ╚╗╔╝╔═╗╔╦╦╗╔═╦╗║═╣║╚╗╠╣╔═╗
 ─║║─║╬║║║║║║║║║╠═║║║║║║║╬║
 ─╚╝─╚═╝╚══╝╚╩═╝╚═╝╚╩╝╚╝║╔╝
@@ -646,39 +647,42 @@ function menuescolhas2(menu_tipo)
             Congelar_Tesoro()
         end
         if MNV == 4 then
-            menuescolhas2(2)
+            menuescolhas2(675444)
         end
         if MNV == 5 then
-            menuescolhas2(11)
+            menuescolhas2(2)
         end
         if MNV == 6 then
-            menuescolhas2(12)
+            menuescolhas2(11)
         end
         if MNV == 7 then
-            menuescolhas2(5)
+            menuescolhas2(12)
         end
         if MNV == 8 then
-            hack("x")
+            menuescolhas2(5)
         end
         if MNV == 9 then
-            menuescolhas2(551)
+            hack("x")
         end
         if MNV == 10 then
-            menuescolhas2(552)
+            menuescolhas2(551)
         end
         if MNV == 11 then
-            menuescolhas2(553)
+            menuescolhas2(552)
         end
         if MNV == 12 then
-            menuescolhas2(220)
+            menuescolhas2(553)
         end
         if MNV == 13 then
-            menuescolhas2(22987)
+            menuescolhas2(220)
         end
         if MNV == 14 then
-            menuescolhas2(9287)
+            menuescolhas2(22987)
         end
         if MNV == 15 then
+            menuescolhas2(9287)
+        end
+        if MNV == 16 then
             MENUFREE()
         end
 
@@ -1732,6 +1736,31 @@ function menuescolhas2(menu_tipo)
         if MYU == 7 then
             menuescolhas2(1)
         end
+
+    elseif menu_tipo == 675444 then
+        PRV = gg.choice({"💵 • Helicopter", "💵 • T-Cash change reward",
+                         "🪙 • coins statue_writer sell change reward ", "🪙 • coins change reward ",
+                         "❌ • Volver"}, nil, 'CHOOSE ONE OPTION')
+
+        if PRV == nil then
+            return
+        end
+        if PRV == 1 then
+            hack11(true)
+        end
+        if PRV == 2 then
+            hackTHO("th6")
+        end
+        if PRV == 3 then
+            hackTHO("th7")
+        end
+        if PRV == 4 then
+            hackTHO("th616")
+        end
+        if PRV == 5 then
+            menuescolhas2(1)
+        end
+
     elseif menu_tipo == 9287 then
         MNxC = gg.choice({'🕷 • Name', '🎫 • Frame', '❌ • Return'}, nil, 'CHOOSE ONE OPTION')
         if MNxC == nil then
@@ -1845,7 +1874,8 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 170 then
         MRT = gg.choice({"⚔️ • lives", "⚔️ • ball", "⚔️ • rockets", "⚔️ • bombs",
                          "⚔️ • fire hydrant", "⚔️ • pickaxe", "⚔️ • hand",
-                         "⚔️ • energy minigame", "⚔️ • double", "❌ • Return"}, nil, "CHOOSE ONE OPTION")
+                         "⚔️ • energy minigame", "⚔️ • double", "⚔️ • Weight", "⚔️ • Fan",
+                         "⚔️ • Jackhammer", "⚔️ • Drill", "❌ • Return"}, nil, "CHOOSE ONE OPTION")
         if MRT == nil then
             return
         end
@@ -1877,6 +1907,18 @@ function menuescolhas2(menu_tipo)
             hack("lm7")
         end
         if MRT == 10 then
+            hack("lm8")
+        end
+        if MRT == 11 then
+            hack("lm9")
+        end
+        if MRT == 12 then
+            hack("lm10")
+        end
+        if MRT == 13 then
+            hack("lm11")
+        end
+        if MRT == 14 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 6 then
@@ -1884,9 +1926,9 @@ function menuescolhas2(menu_tipo)
                          '🚃📦 • XP Train', '🚃📦 • Wheat Train', '🚃 • Freeze Clover Train',
                          '🛬📦 • XP Plane ', '🛬 • Plane return to base', '📩🚃 • train card',
                          '🎫 • Unlock factory', '🎫 • Unlock community buildings',
-                         '🎫 • Unlock community..', '🚀 • Heli Auto', '💺 • Airplane Auto',
-                         '👾 • Freeze Population', '❌ • Return'}, nil,
-            [[╔══╗───────────╔═╗╔╗─╔╗───
+        -- '🎫 • Unlock community..',
+                         '🚀 • Heli Auto', '💺 • Airplane Auto', '👾 • Freeze Population', '❌ • Return'},
+            nil, [[╔══╗───────────╔═╗╔╗─╔╗───
 ╚╗╔╝╔═╗╔╦╦╗╔═╦╗║═╣║╚╗╠╣╔═╗
 ─║║─║╬║║║║║║║║║╠═║║║║║║║╬║
 ─╚╝─╚═╝╚══╝╚╩═╝╚═╝╚╩╝╚╝║╔╝
@@ -1928,19 +1970,17 @@ function menuescolhas2(menu_tipo)
         if MNF == 11 then
             community_buildings()
         end
+        -- if MNF == 12 then community_buildings_x() end
         if MNF == 12 then
-            community_buildings_x()
-        end
-        if MNF == 13 then
             hack12()
         end
-        if MNF == 14 then
+        if MNF == 13 then
             hack("lv6")
         end
-        if MNF == 15 then
+        if MNF == 14 then
             hack255()
         end
-        if MNF == 16 then
+        if MNF == 15 then
             MENUFREE()
         end
 
@@ -1966,7 +2006,8 @@ function menuescolhas2(menu_tipo)
 
     elseif menu_tipo == 8 then
         MNN = gg.choice({'🏭 • Glass', '🏭 • Brick', '🏭 • Slab', '🏭 • Saw', '🏭 • Jackhammer',
-                         '🏭 • Drill', '❌ • Back'}, nil, 'CHOOSE ONE OPTION')
+                         '🏭 • Drill', '🏭 • nail', '🏭 • hammer', '🏭 • red_paint', '🏭 • axe',
+                         '🏭 • shovel', '❌ • Back'}, nil, 'CHOOSE ONE OPTION')
 
         if MNN == nil then
             return
@@ -1990,6 +2031,21 @@ function menuescolhas2(menu_tipo)
             hack("l2")
         end
         if MNN == 7 then
+            hack("yyy1")
+        end
+        if MNN == 8 then
+            hack("yyy2")
+        end
+        if MNN == 9 then
+            hack("yyy3")
+        end
+        if MNN == 10 then
+            hack("yyy4")
+        end
+        if MNN == 11 then
+            hack("yyy5")
+        end
+        if MNN == 12 then
             menuescolhas2(2)
         end
 
@@ -2561,7 +2617,7 @@ function menuescolhas2(menu_tipo)
         MaxJES_8 = gg.choice({"🛰️ • Skin 1 Cruise Ship", "🚀 • Skin 2 Greek Bireme Ship",
                               "⚓ • Skin 3 Viking Ship", "🎯 • Skin 4 Steamship", "🛬 • Skin 5 Arctic Ship",
                               "🚁 • Skin 6 Gift Ship", "☃️ • Skin 7 Ghost Ship",
-                              "🚁 • Skin 8 Holiday Boat", "☃️ • Skin 9 Love Boat", '❌ • Volver'}, nil,
+                              "🚁 • Skin 8 Holiday Boat", "☃️ • Skin 9 Love Boat", '❌ • Back'}, nil,
             "CHOOSE ONE OPTION")
         if MaxJES_8 == nil then
             return
@@ -2638,6 +2694,9 @@ function menuescolhas2(menu_tipo)
         end
         if MaxJES_9 == 11 then
             hackharbor_6()
+        end
+        if MaxJES_9 == 12 then
+            menuescolhas2(11)
         end
     elseif menu_tipo == 110 then
         MaxJES_110 = gg.choice({"🛰️ • Skin 1 Festive Hen", "🚀 • Skin 2 Hen with Chiton",
@@ -4310,31 +4369,6 @@ function menuescolhas2(menu_tipo)
             menuescolhas2(12)
         end
 
-    elseif menu_tipo == 0 then
-        PRV = gg.choice({"💵 • Helicopter", "💵 • T-Cash change reward",
-                         "💵 • coins statue_writer sell change reward", "❌ • Return"}, nil,
-            [[╔══╗───────────╔═╗╔╗─╔╗───
-╚╗╔╝╔═╗╔╦╦╗╔═╦╗║═╣║╚╗╠╣╔═╗
-─║║─║╬║║║║║║║║║╠═║║║║║║║╬║
-─╚╝─╚═╝╚══╝╚╩═╝╚═╝╚╩╝╚╝║╔╝
-───────────────────────╚╝─]])
-
-        if PRV == nil then
-            return
-        end
-        if PRV == 1 then
-            hack11(true)
-        end
-        if PRV == 2 then
-            hackTHO("th6")
-        end
-        if PRV == 3 then
-            hackTHO("th7")
-        end
-        if PRV == 4 then
-            MENUFREE()
-        end
-
     elseif menu_tipo == 220 then
         FCC = gg.choice({"☠️ • Construction ", "☣️ • Barn ", '❌ • Return'}, nil,
             [[╔══╗───────────╔═╗╔╗─╔╗───
@@ -4932,8 +4966,8 @@ function hack15cD()
     gg.toast("Cargando...")
     gg.processResume()
     gg.clearResults()
-    gg.searchNumber("6E726526h;6E656577h;35323032h;00626104h;00000031h;0000001Bh", gg.TYPE_DWORD)
-    gg.refineNumber("0000001Bh", gg.TYPE_DWORD)
+    gg.searchNumber("7461470Ch;00796273h;6E726518h;00626104h;72545F6Eh", gg.TYPE_DWORD)
+    gg.refineNumber("72545F6Eh", gg.TYPE_DWORD)
 
     r = gg.getResults(2)
 
@@ -4942,7 +4976,7 @@ function hack15cD()
 
         local t = {}
         t[2] = {}
-        t[2].address = r[2].address - 0x10
+        t[2].address = r[2].address - 0x0C
         t[2].flags = gg.TYPE_DWORD
         t[2].value = 1
         t[2].freeze = false
@@ -4950,7 +4984,7 @@ function hack15cD()
 
         local G = {}
         G[2] = {}
-        G[2].address = r[2].address - 0x1C
+        G[2].address = r[2].address - 0x18
         G[2].flags = gg.TYPE_DWORD
         G[2].value = 7000
         G[2].freeze = false
@@ -4958,7 +4992,7 @@ function hack15cD()
 
         local A = {}
         A[2] = {}
-        A[2].address = r[2].address - 0x20
+        A[2].address = r[2].address - 0x1C
         A[2].flags = gg.TYPE_DWORD
         A[2].value = 0
         A[2].freeze = false
@@ -4981,7 +5015,7 @@ function hack15cD()
 
     local te = {}
     te[1] = {}
-    te[1].address = re[1].address - 0x10
+    te[1].address = re[1].address - 0x0C
     te[1].flags = gg.TYPE_DWORD
     te[1].value = 1
     te[1].freeze = false
@@ -4989,7 +5023,7 @@ function hack15cD()
 
     local Ge = {}
     Ge[1] = {}
-    Ge[1].address = re[1].address - 0x1C
+    Ge[1].address = re[1].address - 0x18
     Ge[1].flags = gg.TYPE_DWORD
     Ge[1].value = 7000
     Ge[1].freeze = false
@@ -4997,7 +5031,7 @@ function hack15cD()
 
     local Ae = {}
     Ae[1] = {}
-    Ae[1].address = re[1].address - 0x20
+    Ae[1].address = re[1].address - 0x1C
     Ae[1].flags = gg.TYPE_DWORD
     Ae[1].value = 0
     Ae[1].freeze = false
@@ -5520,7 +5554,7 @@ function hackGran_1_17h(varcJExpe_3)
         add_to_5 = val_5[1].value
         add_to_6 = val_6[1].value
         add_to_7 = 0
-        add_to_8 = 2000
+        add_to_8 = 8000
         setdAhI()
     end
     gg.clearResults()
@@ -5654,11 +5688,16 @@ function hackTHO(variac)
     gg.processResume()
     gg.clearResults()
     gg.setVisible(false)
-
     local int234 = nil
     if variac == "th6" then
         int234 = gg.prompt({"Cantidad? [0; 5000]"}, {1}, {"number"})
         int234[1] = tonumber(int234[1])
+    end
+
+    local int2345 = nil
+    if variac == "th616" then
+        int2345 = gg.prompt({"Cantidad? [0; 500000]"}, {1}, {"number"})
+        int2345[1] = tonumber(int2345[1])
     end
     -- TCASH UNLIMITED 1935762184;104;0;0;0;0
     if variac == "th6" then
@@ -5671,6 +5710,17 @@ function hackTHO(variac)
         add_to_6 = 0
         add_to_7 = 0
         add_to_8 = int234[1]
+        setdAhI()
+
+    elseif variac == "th616" then -- 696F630Ah;0000736Eh;00000000h;00000000h;00000000h;00000000h
+        add_to_1 = "696F630Ah"
+        add_to_2 = "0000736Eh"
+        add_to_3 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_6 = "00000000h"
+        add_to_7 = "00000000h"
+        add_to_8 = int2345[1]
         setdAhI()
     elseif variac == "th7" then -- .statue_writer El primer escritor 6174731Ah;5F657574h;74697277h;00007265h;00000000h;00000000h
 
@@ -27973,10 +28023,11 @@ function hack(variacao)
 
     local int1 = nil
     if variacao == "lm2" or variacao == "lm02" or variacao == "lm002" or variacao == "lm3" or variacao == "lm4" or
-        variacao == "lm5" or variacao == "lm6" or variacao == "g" or variacao == "h" or variacao == "i" or variacao ==
-        "j" or variacao == "j2" or variacao == "k" or variacao == "k2" or variacao == "l" or variacao == "l2" or
-        variacao == "n" or variacao == "m" or variacao == "o" or variacao == "lg1" or variacao == "lg2" or variacao ==
-        "lg3" or variacao == "lg4" then
+        variacao == "lm5" or variacao == "lm6" or variacao == "lm8" or variacao == "lm9" or variacao == "lm10" or
+        variacao == "lm11" or variacao == "g" or variacao == "h" or variacao == "i" or variacao == "j" or variacao ==
+        "j2" or variacao == "k" or variacao == "k2" or variacao == "yyy1" or variacao == "yyy2" or variacao == "yyy3" or
+        variacao == "yyy4" or variacao == "yyy5" or variacao == "l" or variacao == "l2" or variacao == "n" or variacao ==
+        "m" or variacao == "o" or variacao == "lg1" or variacao == "lg2" or variacao == "lg3" or variacao == "lg4" then
         int1 = gg.prompt({"Amount? [0; 500]"}, {1}, {"number"})
         int1[1] = tonumber(int1[1])
     end
@@ -28143,6 +28194,58 @@ function hack(variacao)
         add_to_2 = "61006C6Ch"
         add_to_1 = "6972640Ah"
         setdAhI()
+
+    elseif variacao == "yyy1" then -- build_nail 69616E0Eh;74614D6Ch;00000000h;00000000h;00000000h;00000000h
+        add_to_1 = "69616E0Eh"
+        add_to_2 = "74614D6Ch"
+        add_to_3 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_6 = "00000000h"
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        setdAhI()
+    elseif variacao == "yyy2" then -- build_hammer 6D616812h;4D72656Dh;72007461h;00000002h;1F5956E2h;801032E8h
+        add_to_1 = "6D616812h"
+        add_to_2 = "4D72656Dh"
+        add_to_3 = "72007461h"
+        add_to_4 = "00000002h"
+        add_to_5 = "1F5956E2h"
+        add_to_6 = "801032E8h"
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        setdAhI()
+    elseif variacao == "yyy3" then -- build_red_paint   69617016h;6552746Eh;74614D64h;00000000h;00000000h;00000000h
+        add_to_1 = "69617016h"
+        add_to_2 = "6552746Eh"
+        add_to_3 = "74614D64h"
+        add_to_4 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_6 = "00000000h"
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        setdAhI()
+    elseif variacao == "yyy4" then -- build_axe 65786106h;       65786106h;00000000h;00000000h;00000000h;00000000h;00000000h
+        add_to_1 = "65786106h"
+        add_to_2 = "00000000h"
+        add_to_3 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_6 = "00000000h"
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        setdAhI()
+    elseif variacao == "yyy5" then -- build_shovel     63697008h;0000006Bh;00000000h;00000000h;00000000h;00000000h
+        add_to_1 = "63697008h"
+        add_to_2 = "0000006Bh"
+        add_to_3 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_6 = "00000000h"
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        setdAhI()
+
         ---- HACK GEMAS ITENS
     elseif variacao == "n" then
         add_to_7 = 0
@@ -28444,12 +28547,13 @@ function hack(variacao)
     elseif variacao == "lm02" then
         add_to_7 = 0
         add_to_8 = int1[1]
-        add_to_6 = "0"
-        add_to_5 = "0"
-        add_to_4 = "0"
-        add_to_3 = "0"
+        add_to_6 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_3 = "00000000h"
         add_to_2 = "00656E69h"
         add_to_1 = "4C336D0Ch"
+        setdAhI()
     elseif variacao == "lm002" then
         add_to_7 = 0
         add_to_8 = int1[1]
@@ -28509,6 +28613,47 @@ function hack(variacao)
         add_to_3 = "79746974h"
         add_to_2 = "6E456465h"
         add_to_1 = "6D69542Ch"
+        setdAhI()
+
+    elseif variacao == "lm8" then
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        add_to_6 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_4 = "00656E69h"
+        add_to_3 = "4C6C6163h"
+        add_to_2 = "69747265h"
+        add_to_1 = "56336D1Ch"
+        setdAhI()
+    elseif variacao == "lm9" then
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        add_to_6 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_3 = "656C6666h"
+        add_to_2 = "75687365h"
+        add_to_1 = "52336D16h"
+        setdAhI()
+    elseif variacao == "lm10" then
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        add_to_6 = "00000000h"
+        add_to_5 = "00000000h"
+        add_to_4 = "00000000h"
+        add_to_3 = "00000074h"
+        add_to_2 = "656C6C61h"
+        add_to_1 = "4D336D10h"
+        setdAhI()
+    elseif variacao == "lm11" then
+        add_to_7 = 0
+        add_to_8 = int1[1]
+        add_to_6 = "00000000h"
+        add_to_5 = "00000065h"
+        add_to_4 = "6E694C6Ch"
+        add_to_3 = "61746E6Fh"
+        add_to_2 = "7A69726Fh"
+        add_to_1 = "48336D20h"
         setdAhI()
         ---- VANTAGEM HACK
     elseif variacao == "lv1" then
@@ -29577,7 +29722,7 @@ function hack(variacao)
         -- Skin cerdo
     elseif variacao == "Cerdj_1" then -- Cerdo Ceremonial
         add_to_7 = 0
-        add_to_8 = 50
+        add_to_8 = 1
         add_to_6 = "00007E94h"
         add_to_5 = "5A0643E0h"
         add_to_4 = "00000059h"
@@ -29587,15 +29732,15 @@ function hack(variacao)
         setdAhI()
     elseif variacao == "Cerdj_2" then -- Cerdo Ceremonial
         add_to_7 = 0
-        add_to_8 = 50
-        add_to_6 = "0"
-        add_to_5 = "0"
-        add_to_4 = "7954756"
-        add_to_3 = "1936027241"
-        add_to_2 = "1635147623"
-        add_to_1 = "1766874990"
-        setdAhI()
-        -- Decoración Valentin  
+        add_to_8 = 1
+        add_to_6 = "7954756"
+        add_to_5 = "1936027241"
+        add_to_4 = "1953391980"
+        add_to_3 = "1635147623"
+        add_to_2 = "1766874990"
+        add_to_1 = "1768641324"
+        setdAhI() -- 1768641324;1766874990;1635147623;1953391980;1936027241;7954756
+        -- Decoración Valentin    1.768.641.324;1.766.874.990;1.635.147.623;1.953.391.980;1.936.027.241;7.954.756       
         --------------------------
     elseif variacao == "r1p" then
         add_to_7 = 0 -- test 1 Valentine_cats test 1 Estatua Amor Gatuno
@@ -30258,9 +30403,6 @@ function hack(variacao)
         add_to_3 = "1684632130"
         add_to_2 = "1601139820"
         add_to_1 = "1634292250"
-
-        add_to_8 = 0
-        add_to_8 = 1
         setdAhI()
     elseif variacao == "r16px" then
         add_to_7 = 0 -- test 16 Estudio de Transformaciones
@@ -35128,9 +35270,8 @@ end
 function MENUFREE()
     SalvarUltimoMenu(nil)
 
-    local opcao = gg.choice(
-        {"🌟 • Change Rewards", "🏭 • Skip Time", "🚂 • Extras", '💵 • Money/Notes', "❌ • Exit"},
-        nil, [[╔══╗───────────╔═╗╔╗─╔╗───
+    local opcao = gg.choice({"🌟 • Change Rewards", "🏭 • Skip Time", "🚂 • Extras", "❌ • Exit"}, nil,
+        [[╔══╗───────────╔═╗╔╗─╔╗───
 ╚╗╔╝╔═╗╔╦╦╗╔═╦╗║═╣║╚╗╠╣╔═╗
 ─║║─║╬║║║║║║║║║╠═║║║║║║║╬║
 ─╚╝─╚═╝╚══╝╚╩═╝╚═╝╚╩╝╚╝║╔╝
@@ -35146,10 +35287,8 @@ function MENUFREE()
         if opcao == 3 then
             menuescolhas2(6)
         end
+        --	if opcao == 4 then menuescolhas2(0) end
         if opcao == 4 then
-            menuescolhas2(0)
-        end
-        if opcao == 5 then
             os.exit()
         end
 

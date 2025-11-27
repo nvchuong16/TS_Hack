@@ -280,9 +280,10 @@ end
 function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
-        MNV = gg.choice({"1 • Cash", "2 • Gold", "3 • Items", "4 • Skins", "5 • Decoration", "6 • Coupons",
-                         "7 • Crop Time", "8 • Badge", "9 • Name and Frame", "10 • Exp", "11 • Sign",
-                         "12 • Avatar", "13 • Sticker", "❌ • Back"}, nil)
+        MNV = gg.choice({"💵 • Cash", "💰 • Gold", "🎉 • Items", "🎨 • Skins", "🏡 • Decoration",
+                         "🎟️ • Coupons", "⏱️ • Crop Time", "✨ • Badge", "💖 • Name and Frame",
+                         "⭐ • Exp", "🪧 • Town Sign", "👨 • Avatar", "🏷️ • Sticker", "❌ • Back"},
+            nil)
         if MNV == nil then
             return
         elseif MNV == 1 then
@@ -315,9 +316,9 @@ function menuescolhas2(menu_tipo)
             MENUFREE()
         end
     elseif menu_tipo == 3 then
-        MNZ = gg.choice({"1 • Mine", "2 • Construction", "3 • Gems", "4 • Ingots", "5 • Advantage",
-                         "6 • Lab", "7 • Minigame", "8 • Expansion", "9 • Barn", "10 • Animal Card",
-                         "❌ • Return"}, nil)
+        MNZ = gg.choice({"⛏️ • Mine", "🏗️ • Construction", "💎 • Gems", "🔷 • Ingots",
+                         "⚡️ • Advantage", "🧪 • Lab", "7 • Minigame", "🗺️ • Expansion",
+                         "🏚️ • Barn", "🐶 • Animal Card", "❌ • Return"}, nil)
         if MNZ == nil then
             return
         elseif MNZ == 1 then
@@ -365,9 +366,9 @@ function menuescolhas2(menu_tipo)
         hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
         menuescolhas2(3)
     elseif menu_tipo == 4 then
-        MaxJE = gg.choice({"1 • Castle", "2 • Heli & Helipad", "3 • Train & Train Station",
-                           "4 • Airport & Airplane", "5 • Ports & Ship", "6 • Chickens", "7 • Cows",
-                           "8 • Sheep", "9 • Pigs", "❌ • Back"}, nil)
+        MaxJE = gg.choice({"🏝️ • Island", "🚁 • Heli & Helipad", "🚂 • Train & Train Station",
+                           "✈️ • Airport & Airplane", "🚢 • Ports & Ship", "🐔 • Chickens",
+                           "🐮 • Cows", "🐑 • Sheep", "🐷 • Pigs", "❌ • Back"}, nil)
 
         if MaxJE == nil then
             return
@@ -542,22 +543,22 @@ function menuescolhas2(menu_tipo)
 end
 
 function menuMine()
-    MNM = gg.choice({"💣 • Dynamite", "⛏️ • Pickaxe", "🧨 • Explosive", "❌ • Return"}, nil)
+    MNM = gg.choice({"⛏️ • Pickaxe", "🧨 • Explosive", "💣 • Dynamite", "❌ • Return"}, nil)
     if MNM == nil then
         return
     elseif MNM == 1 then
-        hack("00336D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
-    elseif MNM == 2 then
         hack("00326D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
-    elseif MNM == 3 then
+    elseif MNM == 2 then
         hack("00316D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
+    elseif MNM == 3 then
+        hack("00336D04h", "00000000h", "00000000h", "00000000h", "00000000h", "00000000h", 0)
     else
         menuescolhas2(3)
     end
 end
 
 function menuConstruction()
-    MNN = gg.choice({"🏭 • Glass", "🏭 • Brick", "🏭 • Slab", "🏭 • Electric Saw",
+    MNN = gg.choice({"🪟 • Glass", "🧱 • Brick", "🪨 • Slab", "🏭 • Electric Saw",
                      "🏭 • Jackhammer", "🏭 • Drill", "❌ • Back"}, nil)
     if MNN == nil then
         return
@@ -648,11 +649,11 @@ function menuAdvantage()
 end
 
 function menuLab()
-    MAC = gg.choice({"👑 • Ship", "👑 • Train", "👑 • Efficient Foundry", "👑 • Market",
-                     "👑 • Factories", "👑 • Helicopter Orders", "👑 • Rapid Crops",
-                     "👑 • Double Harvests", "👑 • Double Farms", "👑 • Earn Double Heli",
-                     "👑 • Chat Requests", "👑 • Zoo", "👑 • Craft Two Products",
-                     "👑 • Double Coins Airplane", "👑 • Orders", "👑 • Ingot Ships", "❌ • Return"}, nil)
+    MAC = gg.choice({"🚀 • Ship", "🚀 • Train", "🚀 • Efficient Foundry", "🚀 • Market",
+                     "🚀 • Factories", "🚀 • Helicopter Orders", "🚀 • Rapid Crops",
+                     "🚀 • Double Harvests", "🚀 • Double Farms", "🚀 • Earn Double Heli",
+                     "🚀 • Chat Requests", "🚀 • Zoo", "🚀 • Craft Two Products",
+                     "🚀 • Double Coins Airplane", "🚀 • Orders", "🚀 • Ingot Ships", "❌ • Return"}, nil)
 
     if MAC == nil then
         return
@@ -694,9 +695,10 @@ function menuLab()
 end
 
 function menuMinigame()
-    MRT = gg.choice({"❤️ • Lives", "🪩 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
-                     "⛏️ • Pickaxe", "🤚 • Hand", "⚡ • Energy", "✖️ • Double", "❌ • Return"},
-        nil)
+    MRT = gg.choice({"❤️ • Lives", "🎊 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
+                     "⛏️ • Pickaxe", "🤚 • Hand", "⚡️ • Energy", "✨ • Double(x2)",
+                     "🧰 • Weight", "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill",
+                     "❌ • Return"}, nil)
 
     if MRT == nil then
         return
@@ -718,6 +720,14 @@ function menuMinigame()
         hack("1886938400", "1953064037", "1164865385", "1735550318", "121", "0", 0)
     elseif MRT == 9 then
         hack("6D69542Ch", "6E456465h", "79746974h", "61776552h", "6C416472h", "0032586Ch", 864000)
+    elseif MRT == 10 then
+        hack("56336D1Ch", "69747265h", "4C6C6163h", "00656E69h", "00000000h", "00000000h", 0)
+    elseif MRT == 11 then
+        hack("52336D16h", "75687365h", "656C6666h", "00000000h", "00000000h", "00000000h", 0)
+    elseif MRT == 12 then
+        hack("4D336D10h", "656C6C61h", "00000074h", "00000000h", "00000000h", "00000000h", 0)
+    elseif MRT == 13 then
+        hack("48336D20h", "7A69726Fh", "61746E6Fh", "6E694C6Ch", "00000065h", "00000000h", 0)
     else
         menuescolhas2(3)
     end
@@ -957,7 +967,8 @@ function menuSkinTrain_TrainStation()
                           "🚂 • Theater Express", "14 • Chinese Station", "🚂 • Dragon Train",
                           "15 • Halloween Station", "🚂 • Halloween Train", "16 • Ancient Settlement Station",
                           "🚂 • Primeval Express", "17 • Christmas Station", "🚂 • Chrismas Train",
-                          "18 • Gatsby Station", "🚂 • Gatsby Train", "❌ • Back"}, nil)
+                          "18 • Gatsby Station", "🚂 • Gatsby Train", "19 • Old Christmas Station",
+                          "🚂 • Old Chrismas Train", "❌ • Back"}, nil)
 
     if MaxJES_5 == nil then
         return
@@ -1045,10 +1056,15 @@ function menuSkinTrain_TrainStation()
         hackSkin("6E696B53h", "6172545Fh", "635F6E69h", "73697268h", "73616D74h", "34323032h", "06710000h", "00000000h",
             nil, nil, 24)
     elseif MaxJES_5 == 35 then
-        hack("1768641314", "1918132078", "1601071457", "1937006919", "31074", "0", 50)
-    elseif MaxJES_5 == 36 then
         hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "61475F6Eh", "79627374h", "00000000h", "00000000h",
             nil, nil, 24)
+    elseif MaxJES_5 == 36 then
+        hack("1768641314", "1918132078", "1601071457", "1937006919", "31074", "0", 50)
+    elseif MaxJES_5 == 37 then
+        hackSkin("6E696B53h", "6172545Fh", "74536E69h", "6F697461h", "68635F6Eh", "74736972h", "0073616Dh", "00000000h",
+            nil, nil, 27)
+    elseif MaxJES_5 == 38 then
+        hack("1768641320", "1918132078", "1601071457", "1769105507", "1634563187", "115", 50)
     else
         menuescolhas2(4)
     end
@@ -1394,7 +1410,7 @@ function menuSkinSheep()
                             "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
                             "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
                             "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep",
-                            "19 • Vampire Sheep", "20 • Gatsby Sheep", "21 • Rocker Sheep", 
+                            "19 • Vampire Sheep", "20 • Gatsby Sheep", "21 • Rocker Sheep",
                             "22 • Rock N Roll Shades Sheep", "❌ • Return"}, nil)
 
     if MaxJES_112 == nil then
@@ -1651,7 +1667,7 @@ function menuDecor()
     elseif choice == 65 then
         hack('1919120168', '1869901929', '1836411250', '1684368735', '1635149161', '108', 5)
     elseif choice == 66 then
-        gg.alert("Updating")
+        hack('1919512618', '1399157857', '1970561396', '1920229221', '1970495845', '25970', 5)
     elseif choice == 67 then
         hack('1969451808', '1869901932', '1851875186', '1852139875', '743047284', '0', 5)
     elseif choice == 68 then
@@ -1682,7 +1698,8 @@ function menuDecor()
         hackSkin("63657053h", "426C6169h", "74756165h", "654D5F79h", "76656964h", "61546C69h", "6E726576h", "00000061h",
             nil, nil, 29)
     elseif choice == 78 then
-        gg.alert("Updating")
+        hackSkin("75616562h", "675F7974h", "62646C6Fh", "5F677265h", "6863616Dh", "00656E69h", "00000000h", "00000000h",
+            nil, nil, 23)
     elseif choice == 79 then
         hack('1919501084', '1601402211', '1886216515', '6778473', '1714630657', '140', 5)
     elseif choice == 80 then
@@ -1742,7 +1759,8 @@ function menuDecorSummer()
     elseif MaxDECORT == 14 then
         hack('1634034220', '1601795189', '1869768820', '1735289207', '1768844127', '7562614', 5)
     elseif MaxDECORT == 15 then
-        gg.alert("Updating")
+        hackSkin("75616562h", "735F7974h", "6F686165h", "5F657375h", "6F636564h", "69746172h", "00006E6Fh", "00000000h",
+            nil, nil, 26)
     elseif MaxDECORT == 16 then
         hack('61726118h', '5F636962h', '6973616Fh', '00000073h', '00000000h', '00000000h', 5)
     elseif MaxDECORT == 17 then
@@ -2520,7 +2538,8 @@ function menuDecorBannerStatues()
     elseif MaxWSFP == 12 then
         hack('65705328h', '6C616963h', '75616542h', '425F7974h', '656E6E61h', '00000072h', 5)
     elseif MaxWSFP == 13 then
-        gg.alert("Updating")
+        hackSkin("63657053h", "426C6169h", "74756165h", "6C705F79h", "65676E75h", "76694472h", "00000065h", "00000000h",
+            nil, nil, 25)
     elseif MaxWSFP == 14 then
         hack('1869902616', '1935633266', '1970561396', '101', '1714630657', '140', 5)
     elseif MaxWSFP == 15 then
@@ -3214,7 +3233,9 @@ function menuDecorKids()
     elseif MaTPKi == 52 then
         hack('1634882588', '1866690153', '1668637806', '7499636', '672503', '271', 5)
     elseif MaTPKi == 53 then
-        gg.alert("Updating")
+        -- Code 33;24;1634034188;7959669;1836405526;1701208387:89
+        hackSkin("696C6548h", "6D754A78h", "72545F70h", "75736165h", "73496572h", "646E616Ch", "00000000h", "00000000h",
+            nil, nil, 24)
     elseif MaTPKi == 54 then
         hack('1918984988', '1702065519', '1701338988', '7891308', '2040695907', '122', 5)
     elseif MaTPKi == 55 then
@@ -3597,8 +3618,8 @@ function menuDecorExpedition()
                         "30 • MonkeyLand Water Park", "31 • Mountain Haven", "32 • Sweet Amusement Park",
                         "33 • Halloween Windmill", "34 • Gate to Cyber City", "35 • Sheriff Office",
                         "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage",
-                        "39 • Heroes Of The Old Park Part 1", "39 • Heroes Of The Old Park Part 2",
-                        "39 • Heroes Of The Old Park Part 3", "40 • Viking Gate", "41 • Turkey Of Plenty",
+                        "39 • Heroes Of The Old Park 1/3", "39 • Heroes Of The Old Park 2/3",
+                        "39 • Heroes Of The Old Park 3/3", "40 • Viking Gate", "41 • Turkey Of Plenty",
                         "❌ • Return"}, nil)
 
     if MNCvSW == nil then
@@ -3721,8 +3742,8 @@ function menuCoupon()
 end
 
 function menuCropTime()
-    FCC = gg.choice({"1 • Construction ", "2 • Increase Barn ", "3 • Plant", "4 • Animals", "❌ • Return"},
-        nil)
+    FCC = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s", "🐮 • Animals 0s",
+                     "❌ • Return"}, nil)
     if FCC == nil then
         return
     elseif FCC == 1 then
@@ -3739,7 +3760,7 @@ function menuCropTime()
 end
 
 function menuNameFrame()
-    MNxC = gg.choice({"🕷 • Name", "🎫 • Frame", "❌ • Return"}, nil)
+    MNxC = gg.choice({"🆔 • Name(Pink)", "🔳 • Frame(Pink)", "❌ • Return"}, nil)
     if MNxC == nil then
         return
     elseif MNxC == 1 then
@@ -5073,8 +5094,8 @@ end
 function MENUFREE()
     SalvarUltimoMenu(nil)
 
-    local opcao = gg.choice({"🌟 • Unlock GP", "🌟 • Freeze Rewards", "🌟 • Change Rewards",
-                             "🚂 • Extras", "💵 • Helicopter(Cash/Gold)", "❌ • Exit"}, nil)
+    local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards (Item 29)", "🎁 • Change Rewards",
+                             "🌟 • Extras", "🚁 • Helicopter(Cash/Gold)", "❌ • Exit"}, nil, "Author: Helios Apollo")
     if opcao then
         if opcao == 1 then
             hackGoldenPass()
@@ -5083,8 +5104,8 @@ function MENUFREE()
         elseif opcao == 3 then
             menuescolhas2(1)
         elseif opcao == 4 then
-            MNF = gg.choice({"1 • XP (Wheat)", "2 • City Market", "3 • Industry Academy", "4 • Airplane Auto",
-                             "5 • Freeze Population", "❌ • Return"}, nil)
+            MNF = gg.choice({"🌾 • XP (Wheat)", "📦 • City Market", "🏭 • Industry Academy",
+                             "✈️ • Airplane Auto", "❄️ • Freeze Population", "❌ • Return"}, nil)
 
             if MNF == nil then
                 return
