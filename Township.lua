@@ -147,7 +147,7 @@ if not registered then
     gg.alert("❌ Thiết bị CHƯA được đăng ký!\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
                  "\n\n👉 Gửi Device ID này cho Admin để nhận key.")
     request_key(device_id)
-    os.exit()
+    gg.sleep(3000)
 end
 
 -- Nếu thiết bị đã đăng ký → yêu cầu nhập key
