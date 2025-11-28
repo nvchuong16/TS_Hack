@@ -317,7 +317,7 @@ function menuescolhas2(menu_tipo)
         end
     elseif menu_tipo == 3 then
         MNZ = gg.choice({"⛏️ • Mine", "🏗️ • Construction", "💎 • Gems", "🔷 • Ingots",
-                         "⚡️ • Advantage", "🧪 • Lab", "7 • Minigame", "🗺️ • Expansion",
+                         "⚡️ • Advantage", "🧪 • Lab", "🕹️ • Minigame", "🗺️ • Expansion",
                          "🏚️ • Barn", "🐶 • Animal Card", "❌ • Return"}, nil)
         if MNZ == nil then
             return
@@ -697,8 +697,7 @@ end
 function menuMinigame()
     MRT = gg.choice({"❤️ • Lives", "🎊 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
                      "⛏️ • Pickaxe", "🤚 • Hand", "⚡️ • Energy", "✨ • Double(x2)",
-                     "🧰 • Weight", "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill",
-                     "❌ • Return"}, nil)
+                     "🧰 • Weight", "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill", "❌ • Return"}, nil)
 
     if MRT == nil then
         return
@@ -3742,8 +3741,8 @@ function menuCoupon()
 end
 
 function menuCropTime()
-    FCC = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s", "🐮 • Animals 0s",
-                     "❌ • Return"}, nil)
+    FCC = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s",
+                     "🐮 • Animals 0s", "❌ • Return"}, nil)
     if FCC == nil then
         return
     elseif FCC == 1 then
@@ -4841,6 +4840,28 @@ function hackXPByWheat()
     end
 end
 
+function hackMarketBoxes()
+    gg.toast("Loading...")
+    gg.processResume()
+    gg.clearResults()
+    gg.setVisible(false)
+    local input = gg.prompt(
+        {"Enter the current number of market boxes", "Enter the desired number of market boxes"},
+        {0, 0}, {"number", "number"}
+    )
+    local searchString = string.format("1953063702;1634557817;1185464320;%d", input[1])
+    gg.searchNumber(searchString, gg.TYPE_DWORD)
+    gg.refineNumber(input[1], gg.TYPE_DWORD)
+    local results = gg.getResults(1)
+    if #results > 0 then
+        results[1].value = tostring(input[2])
+        gg.setValues(results)
+        gg.toast("Market boxes updated successfully!")
+    else
+        gg.toast("No matching market boxes found.")
+    end
+end
+
 ---- HACK ACADEMIA
 function seth(offset, new)
     local table = gg.getResults(30)
@@ -5095,7 +5116,8 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards (Item 29)", "🎁 • Change Rewards",
-                             "🌟 • Extras", "🚁 • Helicopter(Cash/Gold)", "❌ • Exit"}, nil, "Author: Helios Apollo")
+                             "🌟 • Extras", "🚁 • Helicopter(Cash/Gold)", "❌ • Exit"}, nil,
+        "Author: Helios Apollo")
     if opcao then
         if opcao == 1 then
             hackGoldenPass()
@@ -5105,7 +5127,8 @@ function MENUFREE()
             menuescolhas2(1)
         elseif opcao == 4 then
             MNF = gg.choice({"🌾 • XP (Wheat)", "📦 • City Market", "🏭 • Industry Academy",
-                             "✈️ • Airplane Auto", "❄️ • Freeze Population", "❌ • Return"}, nil)
+                             "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
+                             "❌ • Return"}, nil)
 
             if MNF == nil then
                 return
@@ -5119,6 +5142,8 @@ function MENUFREE()
                 hack("1599099684", "1936682818", "1701860212", "1884644453", "7498049", "0", 100)
             elseif MNF == 5 then
                 hack255()
+            elseif MNF == 6 then
+                hackMarketBoxes()
             else
                 MENUFREE()
             end
