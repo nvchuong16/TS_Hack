@@ -4875,12 +4875,10 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
     count = gg.getResultsCount()
     val = gg.getResults(count)
     for i, v in ipairs(val) do
-        v.address = v.address + 0x2C -- offset where is address storing pointer
-        -- set appropiate flag
+        v.address = v.address + 0x2C
     end
     val = gg.getValues(val)
     for i, v in ipairs(val) do
-        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
         v.address = v.value
     end
     gg.loadResults(val)
