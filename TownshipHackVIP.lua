@@ -30,22 +30,6 @@ function setdAhI()
             v.value = add_to_7
         elseif v.name == "Modified_8" then
             v.value = add_to_8
-        elseif v.name == "Modified_1_1" then
-            v.value = add_to_1
-        elseif v.name == "Modified_2_2" then
-            v.value = add_to_2
-        elseif v.name == "Modified_3_3" then
-            v.value = add_to_3
-        elseif v.name == "Modified_4_4" then
-            v.value = add_to_4
-        elseif v.name == "Modified_5_5" then
-            v.value = add_to_5
-        elseif v.name == "Modified_6_6" then
-            v.value = add_to_6
-        elseif v.name == "Modified_7_7" then
-            v.value = add_to_7
-        elseif v.name == "Modified_8_8" then
-            v.value = add_to_8
         end
     end
     gg.setValues(items)
@@ -83,7 +67,7 @@ function ItemPass()
         address = 0xABCDEF12,
         flags = gg.TYPE_DWORD
     }})
-    gg.searchNumber("1970225964;65537;1599099674:929", gg.TYPE_DWORD)
+    gg.searchNumber("1970225964;65537;1599099674:929", gg.TYPE_DWORD) --
     gg.refineNumber("1970225964", gg.TYPE_DWORD)
     n = gg.getResultCount()
     jz = gg.getResults(n)
@@ -131,7 +115,7 @@ function changeReward()
         v_1[2].address = val[2].address - 0x48
         v_1[2].flags = gg.TYPE_DWORD
         v_1[2].value = 1970225964
-        v_1[2].name = "Modified_1_1"
+        v_1[2].name = "Modified_1"
         v_1[2].freeze = false
         gg.setValues(v_1)
         gg.addListItems(v_1)
@@ -140,7 +124,7 @@ function changeReward()
         e_1[2].address = val[2].address - 0x44
         e_1[2].flags = gg.TYPE_DWORD
         e_1[2].value = 1282305904
-        e_1[2].name = "Modified_2_2"
+        e_1[2].name = "Modified_2"
         e_1[2].freeze = false
         gg.setValues(e_1)
         gg.addListItems(e_1)
@@ -149,7 +133,7 @@ function changeReward()
         p_1[2].address = val[2].address - 0x40
         p_1[2].flags = gg.TYPE_DWORD
         p_1[2].value = 1415864687
-        p_1[2].name = "Modified_3_3"
+        p_1[2].name = "Modified_3"
         p_1[2].freeze = false
         gg.setValues(p_1)
         gg.addListItems(p_1)
@@ -158,7 +142,7 @@ function changeReward()
         o_1[2].address = val[2].address - 0x3C
         o_1[2].flags = gg.TYPE_DWORD
         o_1[2].value = 1852399986
-        o_1[2].name = "Modified_4_4"
+        o_1[2].name = "Modified_4"
         o_1[2].freeze = false
         gg.setValues(o_1)
         gg.addListItems(o_1)
@@ -167,7 +151,7 @@ function changeReward()
         ha_1[2].address = val[2].address - 0x38
         ha_1[2].flags = gg.TYPE_DWORD
         ha_1[2].value = 1886546241
-        ha_1[2].name = "Modified_5_5"
+        ha_1[2].name = "Modified_5"
         ha_1[2].freeze = false
         gg.setValues(ha_1)
         gg.addListItems(ha_1)
@@ -176,7 +160,7 @@ function changeReward()
         pa_1[2].address = val[2].address - 0x34
         pa_1[2].flags = gg.TYPE_DWORD
         pa_1[2].value = 7631471
-        pa_1[2].name = "Modified_6_6"
+        pa_1[2].name = "Modified_6"
         pa_1[2].freeze = false
         gg.setValues(pa_1)
         gg.addListItems(pa_1)
@@ -185,7 +169,7 @@ function changeReward()
         ya_1[2].address = val[2].address - 0x30
         ya_1[2].flags = gg.TYPE_DWORD
         ya_1[2].value = 0
-        ya_1[2].name = "Modified_7_7"
+        ya_1[2].name = "Modified_7"
         ya_1[2].freeze = false
         gg.setValues(ya_1)
         gg.addListItems(ya_1)
@@ -194,10 +178,11 @@ function changeReward()
         ya_2[2].address = val[2].address - 0x2C
         ya_2[2].flags = gg.TYPE_DWORD
         ya_2[2].value = 2
-        ya_2[2].name = "Modified_8_8"
+        ya_2[2].name = "Modified_8"
         ya_2[2].freeze = false
         gg.setValues(ya_2)
         gg.addListItems(ya_2)
+
     end
     val = gg.getResults(1)
     local v_8 = {}
@@ -277,6 +262,7 @@ function changeReward()
     gg.clearResults()
 end
 
+-- MENU
 function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
@@ -340,7 +326,7 @@ function menuescolhas2(menu_tipo)
         elseif MNZ == 9 then
             menuescolhas2(309)
         elseif MNZ == 10 then
-            hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
+            menuescolhas2(310)
         elseif MNZ == 11 then
             menuescolhas2(1)
         end
@@ -362,6 +348,9 @@ function menuescolhas2(menu_tipo)
         menuExpansion()
     elseif menu_tipo == 309 then
         menuBarn()
+    elseif menu_tipo == 310 then
+        hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
+        menuescolhas2(3)
     elseif menu_tipo == 4 then
         MaxJE = gg.choice({"🏝️ • Island", "🚁 • Heli & Helipad", "🚂 • Train & Train Station",
                            "✈️ • Airport & Airplane", "🚢 • Ports & Ship", "🐔 • Chickens",
@@ -698,7 +687,8 @@ end
 function menuMinigame()
     MRT = gg.choice({"❤️ • Lives", "🎊 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
                      "⛏️ • Pickaxe", "🤚 • Hand", "⚡️ • Energy", "✨ • Double(x2)",
-                     "🧰 • Weight", "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill", "❌ • Return"}, nil)
+                     "🧰 • Weight", "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill",
+                     "❌ • Return"}, nil)
 
     if MRT == nil then
         return
@@ -3649,8 +3639,8 @@ function menuCoupon()
 end
 
 function menuCropTime()
-    FCC = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s",
-                     "🐮 • Animals 0s", "❌ • Return"}, nil)
+    FCC = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s", "🐮 • Animals 0s",
+                     "❌ • Return"}, nil)
     if FCC == nil then
         return
     elseif FCC == 1 then
@@ -4585,10 +4575,14 @@ function hackGoldenPass()
     gg.toast("Processing...")
     gg.processResume()
     gg.clearResults()
+
     gg.searchNumber("1852990744;1651733601;1768641314;1601071457:185", gg.TYPE_DWORD) -- GATSBY PASS
     gg.refineNumber("1768641314", gg.TYPE_DWORD)
+
     r = gg.getResults(2)
+
     if gg.getResultCount() == 2 then
+
         local t = {}
         t[2] = {}
         t[2].address = r[2].address - 0x08
@@ -4645,7 +4639,8 @@ function hackGoldenPass()
         gg.toast("hack done")
         gg.clearResults()
     else
-        gg.toast("Fail...")
+        -- do something else entirely
+        gg.toast("NO done...")
         gg.clearResults()
     end
 end
@@ -4666,7 +4661,7 @@ function hackXPByWheat()
     })
 
     if xps == nil then
-        menuescolhas2(99)
+        MENUFREE()
     else
         xps[1] = tonumber(xps[1])
         setd(0, 0)
@@ -4815,6 +4810,63 @@ function hackMiningDepth()
     gg.toast("Done!")
 end
 
+function hackRegatta(search, refine, add1, add2, add3)
+    gg.searchNumber(search, gg.TYPE_DWORD)
+    gg.refineNumber(refine, gg.TYPE_DWORD)
+    n = gg.getResultCount()
+    jz = gg.getResults(n)
+
+    if n == 0 then
+        gg.toast("No tasks found!")
+        gg.clearResults()
+        return
+    end
+
+    local t = {}
+    for i = 1, n do
+        local base = jz[i].address
+
+        table.insert(t, {
+            address = base + add1,
+            flags = gg.TYPE_DWORD,
+            value = 0
+        })
+
+        table.insert(t, {
+            address = base + add2,
+            flags = gg.TYPE_DWORD,
+            value = 0
+        })
+        gotoPointerAndEdit(base + add3)
+    end
+
+    if #t > 0 then
+        gg.setValues(t)
+    end
+    gg.clearResults()
+    gg.toast("Done!")
+end
+
+function gotoPointerAndEdit(addr)
+    local v = gg.getValues({
+        [1] = {
+            address = addr,
+            flags = gg.TYPE_QWORD
+        }
+    })
+    local ptr = v[1].value
+    local edits = {{
+        address = ptr,
+        flags = gg.TYPE_DWORD,
+        value = 0
+    }, {
+        address = ptr + 0x4,
+        flags = gg.TYPE_DWORD,
+        value = 300
+    }}
+    gg.setValues(edits)
+end
+
 function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num, quantity)
     gg.toast("Loading............")
     gg.processResume()
@@ -4824,9 +4876,11 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
     val = gg.getResults(count)
     for i, v in ipairs(val) do
         v.address = v.address + 0x2C -- offset where is address storing pointer
+        -- set appropiate flag
     end
     val = gg.getValues(val)
     for i, v in ipairs(val) do
+        -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
         v.address = v.value
     end
     gg.loadResults(val)
@@ -4873,7 +4927,7 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
     v_6[1].freeze = false
     gg.setValues(v_6)
 
-    if val7 ~= nil then
+    if val7 ~= nill then
         local v_7 = {}
         v_7[1] = {}
         v_7[1].address = val[1].address + 0x18
@@ -4882,7 +4936,7 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
         v_7[1].freeze = false
         gg.setValues(v_7)
     end
-    if val8 ~= nil then
+    if val8 ~= nill then
         local v_8 = {}
         v_8[1] = {}
         v_8[1].address = val[1].address + 0x1C
@@ -4891,7 +4945,7 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
         v_8[1].freeze = false
         gg.setValues(v_8)
     end
-    if val9 ~= nil then
+    if val9 ~= nill then
         local v_9 = {}
         v_9[1] = {}
         v_9[1].address = val[1].address + 0x20
@@ -4900,7 +4954,7 @@ function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, n
         v_9[1].freeze = false
         gg.setValues(v_9)
     end
-    if val10 ~= nil then
+    if val10 ~= nill then
         local v_10 = {}
         v_10[1] = {}
         v_10[1].address = val[1].address + 0x24
@@ -4991,63 +5045,6 @@ function hack(val1, val2, val3, val4, val5, val6, quantity)
     gg.toast("Done!")
 end
 
-function hackRegatta(search, refine, add1, add2, add3)
-    gg.searchNumber(search, gg.TYPE_DWORD)
-    gg.refineNumber(refine, gg.TYPE_DWORD)
-    n = gg.getResultCount()
-    jz = gg.getResults(n)
-
-    if n == 0 then
-        gg.toast("No tasks found!")
-        gg.clearResults()
-        return
-    end
-
-    local t = {}
-    for i = 1, n do
-        local base = jz[i].address
-
-        table.insert(t, {
-            address = base + add1,
-            flags = gg.TYPE_DWORD,
-            value = 0
-        })
-
-        table.insert(t, {
-            address = base + add2,
-            flags = gg.TYPE_DWORD,
-            value = 0
-        })
-        gotoPointerAndEdit(base + add3)
-    end
-
-    if #t > 0 then
-        gg.setValues(t)
-    end
-    gg.clearResults()
-    gg.toast("Done!")
-end
-
-function gotoPointerAndEdit(addr)
-    local v = gg.getValues({
-        [1] = {
-            address = addr,
-            flags = gg.TYPE_QWORD
-        }
-    })
-    local ptr = v[1].value
-    local edits = {{
-        address = ptr,
-        flags = gg.TYPE_DWORD,
-        value = 0
-    }, {
-        address = ptr + 0x4,
-        flags = gg.TYPE_DWORD,
-        value = 300
-    }}
-    gg.setValues(edits)
-end
-
 function EXIT()
     gg.clearList()
     gg.setVisible(true)
@@ -5076,7 +5073,6 @@ function MENUFREE()
         else
             EXIT()
         end
-
     end
 end
 
@@ -5088,6 +5084,8 @@ local function showMenu()
 end
 
 local userType = showMenu()
+if userType == 1 then
+end
 
 while freeuns do
     if gg.isVisible(true) then
