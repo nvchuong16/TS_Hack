@@ -5070,8 +5070,7 @@ function MENUFREE()
         elseif opcao == 4 then
             menuescolhas2(99)
         elseif opcao == 5 then
-            -- menuescolhas2(100)
-            gg.alert("Liên hệ với admin nâng cấp key lên VIP để sử dụng chức năng này.")
+            menuescolhas2(100)
         elseif opcao == 6 then
             hackGoldCashByHeli()
         else
