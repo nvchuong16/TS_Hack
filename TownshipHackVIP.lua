@@ -106,13 +106,20 @@ function ItemPass()
 end
 
 function changeReward()
-    gg.searchNumber("1970225964;7631471;5;29", gg.TYPE_DWORD)
+    gg.searchNumber("29;1970225964::17", gg.TYPE_DWORD)
     gg.refineNumber("29", gg.TYPE_DWORD)
     val = gg.getResults(2)
+
+    if gg.getResultsCount() == 0 then
+        gg.toast("You have frozen reward, if not, restart the game.")
+        gg.clearResults()
+        return
+    end
+
     if gg.getResultCount() == 2 then
         local v_1 = {}
         v_1[2] = {}
-        v_1[2].address = val[2].address - 0x48
+        v_1[2].address = val[2].address + 0x10
         v_1[2].flags = gg.TYPE_DWORD
         v_1[2].value = 1970225964
         v_1[2].name = "Modified_1"
@@ -121,7 +128,7 @@ function changeReward()
         gg.addListItems(v_1)
         local e_1 = {}
         e_1[2] = {}
-        e_1[2].address = val[2].address - 0x44
+        e_1[2].address = val[2].address + 0x14
         e_1[2].flags = gg.TYPE_DWORD
         e_1[2].value = 1282305904
         e_1[2].name = "Modified_2"
@@ -130,7 +137,7 @@ function changeReward()
         gg.addListItems(e_1)
         local p_1 = {}
         p_1[2] = {}
-        p_1[2].address = val[2].address - 0x40
+        p_1[2].address = val[2].address + 0x18
         p_1[2].flags = gg.TYPE_DWORD
         p_1[2].value = 1415864687
         p_1[2].name = "Modified_3"
@@ -139,7 +146,7 @@ function changeReward()
         gg.addListItems(p_1)
         local o_1 = {}
         o_1[2] = {}
-        o_1[2].address = val[2].address - 0x3C
+        o_1[2].address = val[2].address + 0x1C
         o_1[2].flags = gg.TYPE_DWORD
         o_1[2].value = 1852399986
         o_1[2].name = "Modified_4"
@@ -148,7 +155,7 @@ function changeReward()
         gg.addListItems(o_1)
         local ha_1 = {}
         ha_1[2] = {}
-        ha_1[2].address = val[2].address - 0x38
+        ha_1[2].address = val[2].address + 0x20
         ha_1[2].flags = gg.TYPE_DWORD
         ha_1[2].value = 1886546241
         ha_1[2].name = "Modified_5"
@@ -157,7 +164,7 @@ function changeReward()
         gg.addListItems(ha_1)
         local pa_1 = {}
         pa_1[2] = {}
-        pa_1[2].address = val[2].address - 0x34
+        pa_1[2].address = val[2].address + 0x24
         pa_1[2].flags = gg.TYPE_DWORD
         pa_1[2].value = 7631471
         pa_1[2].name = "Modified_6"
@@ -166,7 +173,7 @@ function changeReward()
         gg.addListItems(pa_1)
         local ya_1 = {}
         ya_1[2] = {}
-        ya_1[2].address = val[2].address - 0x30
+        ya_1[2].address = val[2].address + 0x28
         ya_1[2].flags = gg.TYPE_DWORD
         ya_1[2].value = 0
         ya_1[2].name = "Modified_7"
@@ -175,7 +182,7 @@ function changeReward()
         gg.addListItems(ya_1)
         local ya_2 = {}
         ya_2[2] = {}
-        ya_2[2].address = val[2].address - 0x2C
+        ya_2[2].address = val[2].address + 0x2C
         ya_2[2].flags = gg.TYPE_DWORD
         ya_2[2].value = 2
         ya_2[2].name = "Modified_8"
@@ -187,7 +194,7 @@ function changeReward()
     val = gg.getResults(1)
     local v_8 = {}
     v_8[1] = {}
-    v_8[1].address = val[1].address - 0x48
+    v_8[1].address = val[1].address + 0x10
     v_8[1].flags = gg.TYPE_DWORD
     v_8[1].value = 1970225964
     v_8[1].name = "Modified_1"
@@ -196,7 +203,7 @@ function changeReward()
     gg.addListItems(v_8)
     local e_8 = {}
     e_8[1] = {}
-    e_8[1].address = val[1].address - 0x44
+    e_8[1].address = val[1].address + 0x14
     e_8[1].flags = gg.TYPE_DWORD
     e_8[1].value = 1282305904
     e_8[1].name = "Modified_2"
@@ -205,7 +212,7 @@ function changeReward()
     gg.addListItems(e_8)
     local p_8 = {}
     p_8[1] = {}
-    p_8[1].address = val[1].address - 0x40
+    p_8[1].address = val[1].address + 0x18
     p_8[1].flags = gg.TYPE_DWORD
     p_8[1].value = 1415864687
     p_8[1].name = "Modified_3"
@@ -214,7 +221,7 @@ function changeReward()
     gg.addListItems(p_8)
     local o_8 = {}
     o_8[1] = {}
-    o_8[1].address = val[1].address - 0x3C
+    o_8[1].address = val[1].address + 0x1C
     o_8[1].flags = gg.TYPE_DWORD
     o_8[1].value = 1852399986
     o_8[1].name = "Modified_4"
@@ -223,7 +230,7 @@ function changeReward()
     gg.addListItems(o_8)
     local ha_8 = {}
     ha_8[1] = {}
-    ha_8[1].address = val[1].address - 0x38
+    ha_8[1].address = val[1].address + 0x20
     ha_8[1].flags = gg.TYPE_DWORD
     ha_8[1].value = 1886546241
     ha_8[1].name = "Modified_5"
@@ -232,7 +239,7 @@ function changeReward()
     gg.addListItems(ha_8)
     local pa_8 = {}
     pa_8[1] = {}
-    pa_8[1].address = val[1].address - 0x34
+    pa_8[1].address = val[1].address + 0x24
     pa_8[1].flags = gg.TYPE_DWORD
     pa_8[1].value = 7631471
     pa_8[1].name = "Modified_6"
@@ -241,7 +248,7 @@ function changeReward()
     gg.addListItems(pa_8)
     local ya_8 = {}
     ya_8[1] = {}
-    ya_8[1].address = val[1].address - 0x30
+    ya_8[1].address = val[1].address + 0x28
     ya_8[1].flags = gg.TYPE_DWORD
     ya_8[1].value = 0
     ya_8[1].name = "Modified_7"
@@ -250,7 +257,7 @@ function changeReward()
     gg.addListItems(ya_8)
     local ya_8 = {}
     ya_8[1] = {}
-    ya_8[1].address = val[1].address - 0x2C
+    ya_8[1].address = val[1].address + 0x2C
     ya_8[1].flags = gg.TYPE_DWORD
     ya_8[1].value = 2
     ya_8[1].name = "Modified_8"
@@ -326,7 +333,7 @@ function menuescolhas2(menu_tipo)
         elseif MNZ == 9 then
             menuescolhas2(309)
         elseif MNZ == 10 then
-            menuescolhas2(310)
+            hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
         elseif MNZ == 11 then
             menuescolhas2(1)
         end
@@ -348,9 +355,6 @@ function menuescolhas2(menu_tipo)
         menuExpansion()
     elseif menu_tipo == 309 then
         menuBarn()
-    elseif menu_tipo == 310 then
-        hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
-        menuescolhas2(3)
     elseif menu_tipo == 4 then
         MaxJE = gg.choice({"🏝️ • Island", "🚁 • Heli & Helipad", "🚂 • Train & Train Station",
                            "✈️ • Airport & Airplane", "🚢 • Ports & Ship", "🐔 • Chickens",
@@ -759,7 +763,8 @@ function menuSkinCastle()
     MaxJES_1 = gg.choice({"1 • Gatsby Island Palace", "2 • Gatsby Island Mansion", "3 • Gatsby Island House",
                           "4 • Pirate Fort", "5 • Pirate Base", "6 • Pirate Hut", "7 • Easter Village",
                           "8 • Little Paris", "9 • Aztec Island", "10 • Neanderthal Island", "11 • Ice Castle",
-                          "12 • Witchs House", "13 • Witchs Mansion", "14 • Witchs Castle", "❌ • Return"}, nil)
+                          "12 • Witchs House", "13 • Witchs Mansion", "14 • Witchs Castle", "15 • Christmas Castle",
+                          "❌ • Return"}, nil)
 
     if MaxJES_1 == nil then
         return
@@ -796,6 +801,9 @@ function menuSkinCastle()
     elseif MaxJES_1 == 14 then
         hackSkin("6E696B53h", "726F465Fh", "73657274h", "61485F73h", "776F6C6Ch", "326E6565h", "5F313230h", "00000033h",
             nil, nil, 29)
+    elseif MaxJES_1 == 15 then
+        hackSkin("6E696B53h", "726F465Fh", "73657274h", "68635F73h", "74736972h", "5F73616Dh", "30303233h", "39393900h",
+            nil, nil, 28)
     else
         menuescolhas2(4)
     end
@@ -3517,7 +3525,7 @@ function menuDecorExpedition()
                         "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage",
                         "39 • Heroes Of The Old Park 1/3", "39 • Heroes Of The Old Park 2/3",
                         "39 • Heroes Of The Old Park 3/3", "40 • Viking Gate", "41 • Turkey Of Plenty",
-                        "❌ • Return"}, nil)
+                        "42 • Mountain Chalet", "❌ • Return"}, nil)
 
     if MNCvSW == nil then
         return
@@ -3607,6 +3615,8 @@ function menuDecorExpedition()
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3159150", 1)
     elseif MNCvSW == 43 then
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3224686", 1)
+    elseif MNCvSW == 44 then
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3355758", 1)
     else
         menuescolhas2(5)
     end
@@ -3673,7 +3683,8 @@ end
 function menuBadge()
     MYU = gg.choice({"💎 • Town Badge", "💎 • Legendary Town Badge", "💎 • City Badge",
                      "💎 • Legendary City Badge", "💎 • Winter Badge", "💎 • Legendary Winter Badge",
-                     "💎 • Card Colection", "❌ • Return"}, nil)
+                     "💎 • Journey Badge", "💎 • Legendary Journey Badge", "💎 • Card Colection", 
+                     "❌ • Return"}, nil)
 
     if MYU == nil then
         return
@@ -3690,6 +3701,10 @@ function menuBadge()
     elseif MYU == 6 then
         hack("1684103708", "811558247", "1919377202", "6581857", "426107464", "112", 1)
     elseif MYU == 7 then
+        hack("1684103706", "811558247", "1633836851", "25971", "0", "0", 1)
+    elseif MYU == 8 then
+        hack("1684103708", "811558247", "1919377203", "6581857", "0", "0", 1)
+    elseif MYU == 9 then
         hack("1918976790", "1348420452", "896230241", "0", "1985025720", "120", 100)
     else
         menuescolhas2(1)
@@ -4867,6 +4882,98 @@ function gotoPointerAndEdit(addr)
     gg.setValues(edits)
 end
 
+function hackUnlimitedLike()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.setVisible(false)
+    local input = gg.prompt(
+        {"Enter the city level:", "Enter the city like:"},
+        {0, 0}, {"number", "number"}
+    )
+
+    if input == nil then
+        gg.alert("No value was entered. Operation canceled.")
+        return
+    end
+
+    local level = input[1]
+    local likes = input[2]
+
+    gg.setRanges(gg.REGION_C_ALLOC)
+    local searchString = string.format("%d;%d", level, likes)
+    gg.clearResults()
+    gg.searchNumber(searchString, gg.TYPE_DWORD)
+    gg.toast("Please wait ...")
+
+    local results = gg.getResults(400)
+    if #results == 0 then
+        gg.alert("No results found. Try again later.")
+        return
+    end
+
+    gg.alert("Now like your friend city and enter the new number of likes.")
+    gg.sleep(5000)
+
+    local updatedLikes = gg.prompt(
+        {"Enter the new number of likes:"},
+        {0}, {"number"}
+    )
+
+    if updatedLikes == nil then
+        gg.alert("You not write anything!")
+        return
+    end
+
+    gg.refineNumber(updatedLikes[1], gg.TYPE_DWORD)
+    local refinedResults = gg.getResults(2)
+    if #refinedResults == 0 then
+        gg.alert("No results found. Try again later.")
+        return
+    end
+
+    local targetAddress = refinedResults[1].address
+    local listItems = {
+        {address = targetAddress - (95 * 4), flags = gg.TYPE_DWORD, name = "Value 1"},
+        {address = targetAddress - (94 * 4), flags = gg.TYPE_DWORD, name = "Value 2"},
+        {address = targetAddress - (93 * 4), flags = gg.TYPE_DWORD, name = "Value 3"}
+    }
+
+    local savedValues = gg.getValues(listItems)
+    gg.addListItems(listItems)
+    gg.toast("Please wait ...")
+
+    local searchString2 = string.format("1768972591;%d;%d;%d", savedValues[1].value, savedValues[2].value, savedValues[3].value)
+    gg.clearResults()
+    gg.searchNumber(searchString2, gg.TYPE_DWORD)
+    gg.refineNumber("1768972591", gg.TYPE_DWORD)
+    gg.toast("Please wait ...")
+
+    local n = gg.getResultCount()
+    local jz = gg.getResults(n)
+
+    if n == 0 then
+        gg.alert("No results found. Try again later.")
+        return
+    end
+
+    for i = 1, n do
+        gg.setValues({
+            {address = jz[i].address + (1 * 4), flags = gg.TYPE_DWORD, value = 0},
+            {address = jz[i].address + (2 * 4), flags = gg.TYPE_DWORD, value = 0},
+            {address = jz[i].address + (3 * 4), flags = gg.TYPE_DWORD, value = 0}
+        })
+
+        gg.addListItems({
+            {address = jz[i].address - (7 * 4), flags = gg.TYPE_DWORD, freeze = true, value = 0},
+            {address = jz[i].address - (6 * 4), flags = gg.TYPE_DWORD, freeze = true, value = 0},
+            {address = jz[i].address - (5 * 4), flags = gg.TYPE_DWORD, freeze = true, value = 0},
+            {address = jz[i].address - (4 * 4), flags = gg.TYPE_DWORD, freeze = true, value = 0}
+        })
+    end
+
+    gg.toast("Freeze like button successfully!")
+end
+
 function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num, quantity)
     gg.toast("Loading............")
     gg.processResume()
@@ -5053,7 +5160,8 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards(Item 29)", "🎁 • Change Rewards",
-                             "🌟 • Extras", "⛵ • Regatta", "🚁 • Helicopter(Cash/Gold)", "❌ • Exit"},
+                             "🌟 • Extras", "⛵ • Regatta", "🚁 • Helicopter(Cash/Gold)", 
+                             "👍 • Unlimited Like", "❌ • Exit"},
         nil, "Author: Helios Apollo")
     if opcao then
         if opcao == 1 then
@@ -5068,6 +5176,8 @@ function MENUFREE()
             menuescolhas2(100)
         elseif opcao == 6 then
             hackGoldCashByHeli()
+        elseif opcao == 7 then
+            hackUnlimitedLike()
         else
             EXIT()
         end
