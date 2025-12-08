@@ -1,27 +1,22 @@
 **** Sử dụng điện thoại Android *****
 
 1. Download Clone_app hoặc Mo_vir: 
-	Clone_app download: https://www.mediafire.com/file/jgeoh82opale9iq/CloneApp_3.3.3.apk/file
-	Mo_vir download: https://www.mediafire.com/file/mlex2md6er3yf1q/Mo_vir_v8.apk/file
+	Clone_app download(liên kết acc qua Gmail): https://www.mediafire.com/file/jgeoh82opale9iq/CloneApp_3.3.3.apk/file
+	Mo_vir download(liên kết acc qua Facebook): https://www.mediafire.com/file/mlex2md6er3yf1q/Mo_vir_v8.apk/file
 2. Download Mo_gg: 
 	https://www.mediafire.com/file/i8aq9phll8738l9/Mo_GG_14.apk/file
 3. Download TSscript.lua:
-	https://drive.google.com/uc?export=download&id=1DvmT_5XFfP7cpi6tQD3LhkNSy8XpoEob
-4: Video hướng dẫn cài Clone_app:
-	https://drive.google.com/file/d/1VMOV1MyafFJkJmgmq34mfcNH_o2CX3mA/view?usp=sharing
-5: Video hướng dẫn cài Mo_gg:
-	https://drive.google.com/file/d/1OsAS6gU9ZIL-f5t0stkf-8v8Yh2oBX-B/view?usp=sharing
-6: Video hướng dẫn run script và đăng ký key:
-	https://drive.google.com/file/d/10fqrL8sai0fkGU5gwOTUixUsYBn2ksdV/view?usp=sharing
-	
-	Đăng ký xong lưu lại DeviceID và liên hệ với admin để nhận key
-
-7: Video hướng dẫn hack exp bằng wheat
+	https://drive.google.com/uc?export=download&id=1ZWUTOPgJQuuZ5xDi7lyDzlF_xWTGodaq
+4: Video hướng dẫn cài Clone_app và Mo_gg:
+	https://drive.google.com/file/d/1qGbv6Wdz-tK60cPzPmnpdED8vcyVNDU4/view?usp=drive_link
+5: Video hướng dẫn run script và đăng ký key:
+	https://drive.google.com/file/d/1HsF-87M-6WNWgmIxOZIEbKRcDucrB5cR/view?usp=drive_link
+6: Video hướng dẫn hack exp bằng wheat
 	https://drive.google.com/file/d/1n6hII0xD3ZItfh3ZACJPEg3xsiHy39Bi/view?usp=sharing
-8: Video hướng dẫn hack golden ticket:
-	https://drive.google.com/file/d/1buwKNy1_C972xzmCKQk6OfW_qzkilOAm/view?usp=sharing
-9: Video hướng dẫn hack tất cả các item, decor, skin, bảng hiệu, avatar, sticker,...
-	https://drive.google.com/file/d/1fUB1dHZxGdvItiOLFLSTCSNiwtaDeCK3/view?usp=sharing
+7: Video hướng dẫn hack golden ticket:
+	https://drive.google.com/file/d/1ufizsuCQshFIycBbnTi7LeI7nGoSxilm/view?usp=drive_link
+8: Video hướng dẫn hack tất cả các item, decor, skin, bảng hiệu, avatar, sticker,...
+	https://drive.google.com/file/d/1yD4UkmyzqRSiVObfG-Fpf2t9RykgN25L/view?usp=drive_link
 
 
 **** Sử dụng giả lập (Ldplayer) ****
@@ -33,7 +28,7 @@
 2. Download Mo_gg trên Ldplayer: 
 	https://www.mediafire.com/file/i8aq9phll8738l9/Mo_GG_14.apk/file
 3. Download TSscript.lua trên Ldplayer:
-	https://drive.google.com/uc?export=download&id=1DvmT_5XFfP7cpi6tQD3LhkNSy8XpoEob
+	https://drive.google.com/uc?export=download&id=1ZWUTOPgJQuuZ5xDi7lyDzlF_xWTGodaq
 	
 Các bước sau tương tự như trên điện thoại Android
 	

@@ -3,7 +3,6 @@ local SERVER_URL =
 
 local script_content = nil
 
--- Tạo token ngẫu nhiên (16 byte -> 32 ký tự hex)
 local function random_token()
     math.randomseed(os.time() + (os.clock() * 100000))
     local t = ""
@@ -13,7 +12,6 @@ local function random_token()
     return t
 end
 
--- Thử mở file an toàn
 local function safe_read(path)
     local f = io.open(path, "r")
     if not f then return nil end
@@ -31,13 +29,11 @@ local function safe_write(path, data)
 end
 
 function get_or_create_device_token()
-    -- Danh sách đường dẫn thử lần lượt
     local paths = {
         "/sdcard/.my_script_device_token",
-        ".my_script_device_token"  -- thư mục hiện tại (nếu sdcard ko dùng được)
+        ".my_script_device_token"
     }
 
-    -- 1. Thử đọc token nếu đã tồn tại
     for _, path in ipairs(paths) do
         local data = safe_read(path)
         if data and #data > 0 then
@@ -45,21 +41,17 @@ function get_or_create_device_token()
         end
     end
 
-    -- 2. Không có -> tạo token mới
     local token = random_token()
 
-    -- 3. Thử lưu vào từng path, chỉ cần thành công 1 chỗ
     for _, path in ipairs(paths) do
         if safe_write(path, token) then
             break
         end
     end
 
-    -- Nếu không lưu được chỗ nào thì vẫn trả token (nhưng sẽ không persistent)
     return token
 end
 
--- Hàm đọc key đã lưu (nếu có)
 local function load_saved_key()
     local paths = {
         "/sdcard/.my_script_key",
@@ -74,7 +66,6 @@ local function load_saved_key()
     return nil, nil
 end
 
--- Hàm lưu key (thử lưu vào các đường dẫn giống token)
 local function save_key_to_file(key)
     local paths = {
         "/sdcard/.my_script_key",
@@ -102,7 +93,6 @@ function make_device_id()
     return string.format("DEV-%08X", h)
 end
 
--- Gửi HTTP GET
 function http_get(url)
     local ok, resp = pcall(gg.makeRequest, url)
     if not ok or not resp then
@@ -111,7 +101,6 @@ function http_get(url)
     return resp.content
 end
 
--- Kiểm tra thiết bị đã đăng ký chưa
 function check_device_registered(device_id)
     local url = string.format("%s?action=check_device&device=%s", SERVER_URL, device_id)
     local resp = http_get(url)
@@ -127,7 +116,6 @@ function check_device_registered(device_id)
     end
 end
 
--- Kiểm tra key hợp lệ
 function validate_key(device_id, key)
     gg.toast("Đang kiểm tra key của bạn!")
     local url = string.format("%s?action=validate&key=%s&device=%s", SERVER_URL, key, device_id)
@@ -151,9 +139,6 @@ function validate_key(device_id, key)
     return true
 end
 
--- Đăng ký key mới: giờ server trả về CHÍNH KEY (thay vì "OK")
--- Hàm sẽ trả về key (chuỗi) nếu thành công, hoặc nil nếu lỗi.
--- Ngoài ra hàm sẽ cố gắng copy key vào clipboard (nếu API có hỗ trợ).
 function request_key(device_id)
     local url = string.format("%s?action=request&device=%s", SERVER_URL, device_id)
     local resp = http_get(url)
@@ -162,13 +147,12 @@ function request_key(device_id)
         return nil
     end
 
-    local key = resp:gsub("^%s+", ""):gsub("%s+$", "") -- trim
+    local key = resp:gsub("^%s+", ""):gsub("%s+$", "")
     if key == "" then
         gg.alert("❌ Đăng ký key không thành công.")
         return nil
     end
 
-    -- Thông báo và copy
     local copied = false
     pcall(function() if gg.copyText then gg.copyText(key); copied = true end end)
     pcall(function() if gg.setClipboard then gg.setClipboard(key); copied = true end end)
@@ -182,10 +166,6 @@ function request_key(device_id)
     return key
 end
 
--------------------------------------------
--- 🚀 Chương trình chính
--------------------------------------------
-
 local device_id = make_device_id()
 gg.toast("🔍 Kiểm tra thiết bị...")
 
@@ -194,17 +174,10 @@ local registered = check_device_registered(device_id)
 if not registered then
     gg.alert("❌ Thiết bị CHƯA được đăng ký!\n\n" .. "📱 Device ID của bạn là:\n" .. device_id ..
                  "\n\n👉 Gửi yêu cầu tạo key.")
-    -- Gọi request_key, nhận về key (nếu server tạo)
     local new_key = request_key(device_id)
     gg.sleep(3000)
-    -- Nếu server trả key tự động thì user sẽ dùng key đó (không tự động lưu)
 end
 
--- Luồng xử lý key:
--- 1) Nếu có key đã lưu thì load và kiểm tra. Nếu hợp lệ -> vào menu.
--- 2) Nếu không có hoặc key lưu sai -> hỏi nhập key mới (có checkbox lưu). Sau đó kiểm tra key mới:
---    - Nếu đúng -> (nếu user chọn lưu) lưu key mới rồi vào menu.
---    - Nếu sai -> thông báo sai và exit.
 local saved_key, saved_path = load_saved_key()
 local key = nil
 
@@ -212,9 +185,7 @@ if saved_key and saved_key:match("%S") then
     gg.toast("🔒 Tìm thấy key đã lưu, đang kiểm tra...")
     if validate_key(device_id, saved_key) then
         key = saved_key
-        -- Thành công, tiếp tục chạy script dưới
     else
-        -- Key đã lưu không hợp lệ -> yêu cầu nhập key mới
         gg.toast("🔑 Key lưu không hợp lệ, vui lòng nhập key mới.")
         local prompt_titles = {"📱 Device ID: " .. device_id .. "\n\nNhập key của bạn:", "Lưu key mới vào file?"}
         local prompt_defaults = { "", false }
@@ -234,9 +205,9 @@ if saved_key and saved_key:match("%S") then
             if save_choice then
                 local ok, path = save_key_to_file(new_key)
                 if ok then
-                    gg.toast("✅ Key mới đã được lưu vào: " .. tostring(path))
+                    gg.toast("✅ Key mới đã được lưu!")
                 else
-                    gg.alert("⚠️ Không thể lưu key mới vào file trên thiết bị.")
+                    gg.alert("⚠️ Không thể lưu key mới trên thiết bị.")
                 end
             end
         else
@@ -245,7 +216,6 @@ if saved_key and saved_key:match("%S") then
         end
     end
 else
-    -- Không có key lưu -> hỏi nhập key (có checkbox lưu)
     local prompt_titles = {"📱 Device ID: " .. device_id .. "\n\nNhập key của bạn:", "Lưu key vào file?"}
     local prompt_defaults = { "", false }
     local prompt_types = { "text", "checkbox" }
@@ -264,9 +234,9 @@ else
         if save_choice then
             local ok, path = save_key_to_file(new_key)
             if ok then
-                gg.toast("✅ Key đã được lưu vào: " .. tostring(path))
+                gg.toast("✅ Key đã được lưu!")
             else
-                gg.alert("⚠️ Không thể lưu key vào file trên thiết bị.")
+                gg.alert("⚠️ Không thể lưu key trên thiết bị.")
             end
         end
     else
@@ -275,7 +245,6 @@ else
     end
 end
 
--- Nếu tới đây thì key đã hợp lệ và script_content đã được load bởi validate_key
 gg.toast("Đang tải menu .......")
 local func, err = load(script_content)
 if not func then
@@ -283,7 +252,6 @@ if not func then
     os.exit()
 end
 
--- Chạy script
 local success, run_err = pcall(func)
 if not success then
     gg.alert("Lỗi khi chạy script:\n" .. tostring(run_err))
