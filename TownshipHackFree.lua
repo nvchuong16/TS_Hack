@@ -274,8 +274,8 @@ function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
         MENU = gg.choice({"💵 • Cash", "💰 • Gold", "🎉 • Items", "🎨 • Skins", "🏡 • Decoration",
-                         "🎟️ • Coupons", "⏱️ • Crop Time", "✨ • Badge", "💖 • Name and Frame",
-                         "⭐ • Exp", "🪧 • Town Sign", "👨 • Avatar", "🏷️ • Sticker", "❌ • Back"},
+                          "🎟️ • Coupons", "⏱️ • Crop Time", "✨ • Badge", "💖 • Name and Frame",
+                          "⭐ • Exp", "🪧 • Town Sign", "👨 • Avatar", "🏷️ • Sticker", "❌ • Back"},
             nil)
         if MENU == nil then
             return
@@ -310,8 +310,8 @@ function menuescolhas2(menu_tipo)
         end
     elseif menu_tipo == 3 then
         MENU = gg.choice({"⛏️ • Mine", "🏗️ • Construction", "💎 • Gems", "🔷 • Ingots",
-                         "⚡️ • Advantage", "🧪 • Lab", "🕹️ • Minigame", "🗺️ • Expansion",
-                         "🏚️ • Barn", "🐶 • Animal Card", "❌ • Return"}, nil)
+                          "⚡️ • Advantage", "🧪 • Lab", "🕹️ • Minigame", "🗺️ • Expansion",
+                          "🏚️ • Barn", "🐶 • Animal Card", "❌ • Return"}, nil)
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -357,8 +357,8 @@ function menuescolhas2(menu_tipo)
         menuBarn()
     elseif menu_tipo == 4 then
         MENU = gg.choice({"🏝️ • Island", "🚁 • Heli & Helipad", "🚂 • Train & Train Station",
-                           "✈️ • Airport & Airplane", "🚢 • Ports & Ship", "🐔 • Chickens",
-                           "🐮 • Cows", "🐑 • Sheep", "🐷 • Pigs", "❌ • Back"}, nil)
+                          "✈️ • Airport & Airplane", "🚢 • Ports & Ship", "🐔 • Chickens",
+                          "🐮 • Cows", "🐑 • Sheep", "🐷 • Pigs", "❌ • Back"}, nil)
 
         if MENU == nil then
             return
@@ -403,11 +403,11 @@ function menuescolhas2(menu_tipo)
         menuSkinPig()
     elseif menu_tipo == 5 then
         MENU = gg.choice({"1 • Decoration", "2 • Summer", "3 • Valentine", "4 • Christmas", "5 • Halloween",
-                           "6 • The First", "7 • Sports", "8 • Airplane", "9 • Candy", "10 • Ruins",
-                           "11 • Banner & Statues", "12 • Tree", "13 • Inflatable", "14 • Puzzle",
-                           "15 • Diamonds", "16 • China", "17 • Flower", "18 • Kids", "19 • Easter",
-                           "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Entertainment", "24 • Cowboy",
-                           "25 • Expedition", "❌ • Return"}, nil)
+                          "6 • The First", "7 • Sports", "8 • Airplane", "9 • Candy", "10 • Ruins",
+                          "11 • Banner & Statues", "12 • Tree", "13 • Inflatable", "14 • Puzzle",
+                          "15 • Diamonds", "16 • China", "17 • Flower", "18 • Kids", "19 • Easter",
+                          "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Entertainment", "24 • Cowboy",
+                          "25 • Expedition", "❌ • Return"}, nil)
 
         if MENU == nil then
             return
@@ -549,7 +549,7 @@ end
 
 function menuConstruction()
     MENU = gg.choice({"🪟 • Glass", "🧱 • Brick", "🪨 • Slab", "🏭 • Electric Saw",
-                     "🏭 • Jackhammer", "🏭 • Drill", "❌ • Back"}, nil)
+                      "🏭 • Jackhammer", "🏭 • Drill", "❌ • Back"}, nil)
     if MENU == nil then
         return
     elseif MENU >= 1 and MENU <= 6 then
@@ -571,9 +571,10 @@ function menuGems()
 end
 
 function menuIngots()
-    MENU = gg.choice({"🟤 • Bronze Ingot", "⚪ • Silver Ingot", "🟡 • Gold Ingot", "🔷 • Platinum Ingot",
-                     "🟫 • Clay", "🟤 • Bronze Ore", "⚪ • Silver Ore", "🟡 • Gold Ore",
-                     "🔷 • Platinum Ore", "❌ • Return"}, nil)
+    MENU = gg.choice(
+        {"🟤 • Bronze Ingot", "⚪ • Silver Ingot", "🟡 • Gold Ingot", "🔷 • Platinum Ingot",
+         "🟫 • Clay", "🟤 • Bronze Ore", "⚪ • Silver Ore", "🟡 • Gold Ore", "🔷 • Platinum Ore",
+         "❌ • Return"}, nil)
     if MENU == nil then
         return
     elseif MENU >= 1 and MENU <= 9 then
@@ -585,11 +586,11 @@ end
 
 function menuAdvantage()
     MENU = gg.choice({"🎁 • 2x Train", "🎁 • Laboratory", "🎁 • Airplane Gold", "🎁 • 2x Market",
-                     "🎁 • Airplane box", "🎁 • 2 game tokens", "🎁 • 50 lucky houses", "❌ • Return"},
+                      "🎁 • Airplane box", "🎁 • 2 game tokens", "🎁 • 50 lucky houses", "❌ • Return"},
         nil)
     if MENU == nil then
         return
-    elseif MENU >= 1 and MENU <= 7then
+    elseif MENU >= 1 and MENU <= 7 then
         hack()
     else
         menuescolhas2(3)
@@ -598,10 +599,11 @@ end
 
 function menuLab()
     MENU = gg.choice({"🚀 • Ship", "🚀 • Train", "🚀 • Efficient Foundry", "🚀 • Market",
-                     "🚀 • Factories", "🚀 • Helicopter Orders", "🚀 • Rapid Crops",
-                     "🚀 • Double Harvests", "🚀 • Double Farms", "🚀 • Earn Double Heli",
-                     "🚀 • Chat Requests", "🚀 • Zoo", "🚀 • Craft Two Products",
-                     "🚀 • Double Coins Airplane", "🚀 • Orders", "🚀 • Ingot Ships", "❌ • Return"}, nil)
+                      "🚀 • Factories", "🚀 • Helicopter Orders", "🚀 • Rapid Crops",
+                      "🚀 • Double Harvests", "🚀 • Double Farms", "🚀 • Earn Double Heli",
+                      "🚀 • Chat Requests", "🚀 • Zoo", "🚀 • Craft Two Products",
+                      "🚀 • Double Coins Airplane", "🚀 • Orders", "🚀 • Ingot Ships", "❌ • Return"},
+        nil)
 
     if MENU == nil then
         return
@@ -613,10 +615,10 @@ function menuLab()
 end
 
 function menuMinigame()
-    MENU = gg.choice({"❤️ • Lives", "🎊 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
-                     "⛏️ • Pickaxe", "🤚 • Hand", "⚡️ • Energy", "✨ • Double(x2)",
-                     "🧰 • Weight", "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill",
-                     "❌ • Return"}, nil)
+    MENU = gg.choice(
+        {"❤️ • Lives", "🎊 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
+         "⛏️ • Pickaxe", "🤚 • Hand", "⚡️ • Energy", "✨ • Double(x2)", "🧰 • Weight",
+         "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -653,10 +655,10 @@ end
 
 function menuSkinCastle()
     MENU = gg.choice({"1 • Gatsby Island Palace", "2 • Gatsby Island Mansion", "3 • Gatsby Island House",
-                          "4 • Pirate Fort", "5 • Pirate Base", "6 • Pirate Hut", "7 • Easter Village",
-                          "8 • Little Paris", "9 • Aztec Island", "10 • Neanderthal Island", "11 • Ice Castle",
-                          "12 • Witchs House", "13 • Witchs Mansion", "14 • Witchs Castle", "15 • Christmas Castle",
-                          "❌ • Return"}, nil)
+                      "4 • Pirate Fort", "5 • Pirate Base", "6 • Pirate Hut", "7 • Easter Village",
+                      "8 • Little Paris", "9 • Aztec Island", "10 • Neanderthal Island", "11 • Ice Castle",
+                      "12 • Witchs House", "13 • Witchs Mansion", "14 • Witchs Castle", "15 • Christmas Castle",
+                      "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -671,31 +673,30 @@ end
 
 function menuSkinHeli_Helipad()
     MENU = gg.choice({"1 • Festive Helipad", "🚁 • Festive", "2 • Wanderers Harbor Helipad",
-                          "🚁 • Flying Ship", "3 • Fitness Helipad", "🚁 • Helicycle",
-                          "4 • Flying Saucer Hangar Helipad", "🚁 • Flying Saucer",
-                          "5 • Docking Station Helipad", "🚁 • Super Robot Courier", "6 • Veggie Helipad",
-                          "🚁 • Eggplant", "7 • Sultans Palace Helipad", "🚁 • Flying Carpet",
-                          "8 • Five-star Helipad", "🚁 • Chaise Lounger Drone", "9 • Disco Helipad",
-                          "🚁 • Disco", "10 • Carnival Platform Helipad", "🚁 • Feathery",
-                          "11 • Royal Palace Helipad", "🚁 • Pumpkin", "12 • Detective Agency Helipad",
-                          "🚁 • Surveillance Airship", "13 • Sleigh Parking Lot Helipad",
-                          "🚁 • Santas Helpers Sleigh", "🚁 • Santas Sleigh", "14 • Ballroom Helipad",
-                          "🚁 • Ballroom", "15 • Pirate Helipad", "🚁 • Pirate Helicopter",
-                          "16 • Astro Helipad", "🚁 • Astro", "17 • Easter Helipad", "🚁 • Egg Chopper",
-                          "18 • Underwater Palace Helipad", "🚁 • Flying Bathyscaphe",
-                          "19 • Haunted Tower Helipad", "🚁 • Flying Cauldron", "20 • Private Helipad",
-                          "🚁 • Private Helicopter", "21 • Roll N Roll Helipad",
-                          "🚁 • Roll N Roll Helicopter", "❌ • Back"}, nil)
+                      "🚁 • Flying Ship", "3 • Fitness Helipad", "🚁 • Helicycle",
+                      "4 • Flying Saucer Hangar Helipad", "🚁 • Flying Saucer", "5 • Docking Station Helipad",
+                      "🚁 • Super Robot Courier", "6 • Veggie Helipad", "🚁 • Eggplant",
+                      "7 • Sultans Palace Helipad", "🚁 • Flying Carpet", "8 • Five-star Helipad",
+                      "🚁 • Chaise Lounger Drone", "9 • Disco Helipad", "🚁 • Disco",
+                      "10 • Carnival Platform Helipad", "🚁 • Feathery", "11 • Royal Palace Helipad",
+                      "🚁 • Pumpkin", "12 • Detective Agency Helipad", "🚁 • Surveillance Airship",
+                      "13 • Sleigh Parking Lot Helipad", "🚁 • Santas Helpers Sleigh", "🚁 • Santas Sleigh",
+                      "14 • Ballroom Helipad", "🚁 • Ballroom", "15 • Pirate Helipad",
+                      "🚁 • Pirate Helicopter", "16 • Astro Helipad", "🚁 • Astro", "17 • Easter Helipad",
+                      "🚁 • Egg Chopper", "18 • Underwater Palace Helipad", "🚁 • Flying Bathyscaphe",
+                      "19 • Haunted Tower Helipad", "🚁 • Flying Cauldron", "20 • Private Helipad",
+                      "🚁 • Private Helicopter", "21 • Roll N Roll Helipad", "🚁 • Roll N Roll Helicopter",
+                      "22 • Christmas Helipad", "🚁 • Christmas Helicopter", "❌ • Back"}, nil)
 
     if MENU == nil then
         return
     elseif MENU == 1 then
-        hackSkinFree("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "796E635Fh", "35323032h", "00000000h",
-            nil, nil, 28)
+        hackSkinFree("6E696B53h", "6C65485Fh", "706F6369h", "50726574h", "6563616Ch", "796E635Fh", "35323032h",
+            "00000000h", nil, nil, 28)
     elseif MENU == 2 then
-        hackSkinFree("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "32796E63h", "00353230h", "00000000h", "00000000h",
-            nil, nil, 23)
-    elseif MENU >= 3 and MENU <= 43 then
+        hackSkinFree("6E696B53h", "6C65485Fh", "706F6369h", "5F726574h", "32796E63h", "00353230h", "00000000h",
+            "00000000h", nil, nil, 23)
+    elseif MENU >= 3 and MENU <= 45 then
         hackSkin()
     else
         menuescolhas2(4)
@@ -704,18 +705,18 @@ end
 
 function menuSkinTrain_TrainStation()
     MENU = gg.choice({"1 • Express Portal", "🚂 • Ultra Express Train", "2 • Ghost Station",
-                          "🚂 • Ghost Train", "3 • Disco Station", "🚂 • Disco Train", "4 • Space Station",
-                          "🚂 • Mars Rover", "5 • Mythic Station", "🚂 • Mythic Train",
-                          "6 • Flower Station", "🚂 • Flower Train", "7 • Training Camp Station",
-                          "🚂 • Wooden Wagon Train", "8 • Record Station", "🚂 • Music Express",
-                          "9 • Castle Station", "🚂 • Knight Train", "10 • Roman Station",
-                          "🚂 • Express Tram", "11 • Easter Station", "🚂 • Easter Express",
-                          "12 • Cowboy Station", "🚂 • Cowboy Train", "13 • Thearter Set Station",
-                          "🚂 • Theater Express", "14 • Chinese Station", "🚂 • Dragon Train",
-                          "15 • Halloween Station", "🚂 • Halloween Train", "16 • Ancient Settlement Station",
-                          "🚂 • Primeval Express", "17 • Christmas Station", "🚂 • Chrismas Train",
-                          "18 • Gatsby Station", "🚂 • Gatsby Train", "19 • Old Christmas Station",
-                          "🚂 • Old Chrismas Train", "❌ • Back"}, nil)
+                      "🚂 • Ghost Train", "3 • Disco Station", "🚂 • Disco Train", "4 • Space Station",
+                      "🚂 • Mars Rover", "5 • Mythic Station", "🚂 • Mythic Train", "6 • Flower Station",
+                      "🚂 • Flower Train", "7 • Training Camp Station", "🚂 • Wooden Wagon Train",
+                      "8 • Record Station", "🚂 • Music Express", "9 • Castle Station", "🚂 • Knight Train",
+                      "10 • Roman Station", "🚂 • Express Tram", "11 • Easter Station",
+                      "🚂 • Easter Express", "12 • Cowboy Station", "🚂 • Cowboy Train",
+                      "13 • Thearter Set Station", "🚂 • Theater Express", "14 • Chinese Station",
+                      "🚂 • Dragon Train", "15 • Halloween Station", "🚂 • Halloween Train",
+                      "16 • Ancient Settlement Station", "🚂 • Primeval Express", "17 • Christmas Station",
+                      "🚂 • Chrismas Train", "18 • Gatsby Station", "🚂 • Gatsby Train",
+                      "19 • Old Christmas Station", "🚂 • Old Chrismas Train", "20 • French Station",
+                      "🚂 • French Train", "❌ • Back"}, nil)
 
     if MENU == nil then
         return
@@ -723,7 +724,7 @@ function menuSkinTrain_TrainStation()
         hackFree("696B532Ah", "72545F6Eh", "536E6961h", "69746174h", "535F6E6Fh", "00003250h", 50)
     elseif MENU == 2 then
         hackFree("696B5320h", "72545F6Eh", "5F6E6961h", "3A325053h", "00000032h", "00000000h", 50)
-    elseif MENU >= 3 and MENU <= 38 then
+    elseif MENU >= 3 and MENU <= 40 then
         hack()
     else
         menuescolhas2(4)
@@ -731,19 +732,17 @@ function menuSkinTrain_TrainStation()
 end
 
 function menuSkinAirport_Airplane()
-    MENU = gg.choice({"1 • Rock Airport", "✈️ • Rock Plane", "2 • Sugary Airport",
-                          "✈️ • Éclair Plane", "3 • Cenima Airport", "✈️ • A-Lister Jet",
-                          "4 • Secret Base Airport", "✈️ • Stealth Aircraft", "5 • Aerial Airport",
-                          "✈️ • Ultra Plane", "✈️ • Mega Plane", "6 • Space Airport",
-                          "✈️ • Lauch Vehcle", "7 • Festival Airport", "✈️ • Sky Dragon",
-                          "✈️ • Supersonic Dragon", "8 • Tropical Airport", "✈️ • Tropical Biplane",
-                          "9 • Rainbow Airport", "✈️ • Lucky Jet", "10 • Five-Star Airport",
-                          "✈️ • Seaplane", "11 • Santas Residence Airport", "✈️ • Holiday Plane",
-                          "12 • Symphony Airport", "✈️ • Symphony Plane", "13 • Ghost Airport",
-                          "✈️ • Ghost Plane", "14 • Easter Airport", "✈️ • Bird Plane",
-                          "15 • Ski Airport", "✈️ • Aero Sleigh", "16 • Sultan Airport",
-                          "✈️ • Arabian Plane", "17 • Fashion Airport", "✈️ • Fashion Plane",
-                          "18 • Dracula Airport", "✈️ • Vampire Plane", "❌ • Return"}, nil)
+    MENU = gg.choice(
+        {"1 • Rock Airport", "✈️ • Rock Plane", "2 • Sugary Airport", "✈️ • Éclair Plane",
+         "3 • Cenima Airport", "✈️ • A-Lister Jet", "4 • Secret Base Airport", "✈️ • Stealth Aircraft",
+         "5 • Aerial Airport", "✈️ • Ultra Plane", "✈️ • Mega Plane", "6 • Space Airport",
+         "✈️ • Lauch Vehcle", "7 • Festival Airport", "✈️ • Sky Dragon", "✈️ • Supersonic Dragon",
+         "8 • Tropical Airport", "✈️ • Tropical Biplane", "9 • Rainbow Airport", "✈️ • Lucky Jet",
+         "10 • Five-Star Airport", "✈️ • Seaplane", "11 • Santas Residence Airport",
+         "✈️ • Holiday Plane", "12 • Symphony Airport", "✈️ • Symphony Plane", "13 • Ghost Airport",
+         "✈️ • Ghost Plane", "14 • Easter Airport", "✈️ • Bird Plane", "15 • Ski Airport",
+         "✈️ • Aero Sleigh", "16 • Sultan Airport", "✈️ • Arabian Plane", "17 • Fashion Airport",
+         "✈️ • Fashion Plane", "18 • Dracula Airport", "✈️ • Vampire Plane", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -760,16 +759,15 @@ end
 
 function menuSkinPort_Ship()
     MENU = gg.choice({"1 • Equatorial Port", "🚢 • Cruise Liner", "2 • Pirate Harbor",
-                          "🚢 • Pirate Galleon", "3 • Ancient Port", "🚢 • Greek Bireme Ship",
-                          "4 • Jungle Port", "🚢 • Cruise Ship", "5 • Viking Harbor", "🚢 • Sturdy Drakkar",
-                          "6 • Christmas Port", "🚢 • Gift Ship", "7 • Saloon On The Water",
-                          "🚢 • River Steamboat", "8 • Candy Port", "🚢 • Sweet Boat",
-                          "9 • Port Of Horrors", "🚢 • Ghost Ship", "10 • Vacation Port",
-                          "🚢 • Vacation Ship", "11 • Romantic Harbor", "🚢 • Love Boat",
-                          "12 • Arctic Port", "🚢 • Arctic Ship", "13 • Egyptian Port",
-                          "🚢 • Egyptian Ship", "14 • Lantern Harbor", "🚢 • Dragon Boat", "15 • Doge Pier",
-                          "🚢 • Gondola", "16 • Sweet Port", "🚢 • Croissant Ferry", "17 • Japanese Port",
-                          "🚢 • Japanese Ship", "18 • Knight Port", "🚢 • Knight Ship", "❌ • Back"}, nil)
+                      "🚢 • Pirate Galleon", "3 • Ancient Port", "🚢 • Greek Bireme Ship",
+                      "4 • Jungle Port", "🚢 • Cruise Ship", "5 • Viking Harbor", "🚢 • Sturdy Drakkar",
+                      "6 • Christmas Port", "🚢 • Gift Ship", "7 • Saloon On The Water",
+                      "🚢 • River Steamboat", "8 • Candy Port", "🚢 • Sweet Boat", "9 • Port Of Horrors",
+                      "🚢 • Ghost Ship", "10 • Vacation Port", "🚢 • Vacation Ship", "11 • Romantic Harbor",
+                      "🚢 • Love Boat", "12 • Arctic Port", "🚢 • Arctic Ship", "13 • Egyptian Port",
+                      "🚢 • Egyptian Ship", "14 • Lantern Harbor", "🚢 • Dragon Boat", "15 • Doge Pier",
+                      "🚢 • Gondola", "16 • Sweet Port", "🚢 • Croissant Ferry", "17 • Japanese Port",
+                      "🚢 • Japanese Ship", "18 • Knight Port", "🚢 • Knight Ship", "❌ • Back"}, nil)
 
     if MENU == nil then
         return
@@ -786,18 +784,18 @@ end
 
 function menuSkinChicken()
     MENU = gg.choice({"1 • Festive Chicken", "2 • Chicken in a Chiton", "3 • Leprechaun Chicken",
-                            "4 • Birthday Chicken", "5 • Explorer Chicken", "6 • Cheerleader Chicken",
-                            "7 • Pilot Chicken", "8 • Disco Chicken", "9 • Fashion Chicken",
-                            "10 • Festive Chicken", "11 • Halloween Chicken", "12 • Santa Little Helper Chicken",
-                            "13 • Party Chicken", "14 • Fairytale Chicken", "15 • Harlequin Chicken",
-                            "16 • Vacation Chicken", "17 • Rock N Roll Chicken", "18 • Battle Chicken",
-                            "❌ • Return"}, nil)
+                      "4 • Birthday Chicken", "5 • Explorer Chicken", "6 • Cheerleader Chicken",
+                      "7 • Pilot Chicken", "8 • Disco Chicken", "9 • Fashion Chicken", "10 • Festive Chicken",
+                      "11 • Halloween Chicken", "12 • Santa Little Helper Chicken", "13 • Party Chicken",
+                      "14 • Fairytale Chicken", "15 • Harlequin Chicken", "16 • Vacation Chicken",
+                      "17 • Rock N Roll Chicken", "18 • Battle Chicken", "19 • Christmas Chicken",
+                      "❌ • Return"}, nil)
 
     if MENU == nil then
         return
     elseif MENU == 1 then
         hackFree("696B5328h", "68435F6Eh", "656B6369h", "6E635F6Eh", "32303279h", "00000035h", 50)
-    elseif MENU >= 2 and MENU <= 18 then
+    elseif MENU >= 2 and MENU <= 19 then
         hack()
     else
         menuescolhas2(4)
@@ -807,17 +805,17 @@ end
 
 function menuSkinCow()
     MENU = gg.choice({"1 • Corsair Cow", "2 • Arctic Cow", "3 • Queen Of Atlantis", "4 • Spy Cow",
-                            "5 • Easter Cow", "6 • Astronaut Cow", "7 • Moo Sferatu Cow", "8 • Alpine Cow",
-                            "9 • Flower Cow", "10 • Birthday Cow", "11 • Ceremonial Cow", "12 • Elf Cow",
-                            "13 • Party Cow", "14 • Flirty Cow", "15 • Stylish Cow", "16 • Confectioner Cow",
-                            "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "20 • Arabian Cow",
-                            "21 • Japanese Cow", "❌ • Return"}, nil)
+                      "5 • Easter Cow", "6 • Astronaut Cow", "7 • Moo Sferatu Cow", "8 • Alpine Cow",
+                      "9 • Flower Cow", "10 • Birthday Cow", "11 • Ceremonial Cow", "12 • Elf Cow",
+                      "13 • Party Cow", "14 • Flirty Cow", "15 • Stylish Cow", "16 • Confectioner Cow",
+                      "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "20 • Arabian Cow",
+                      "21 • Japanese Cow", "22 • French Cow", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
     elseif MENU == 1 then
         hackFree("696B5326h", "6F435F6Eh", "69705F77h", "65746172h", "34323032h", "00000000h", 50)
-    elseif MENU >= 2 and MENU <= 21 then
+    elseif MENU >= 2 and MENU <= 22 then
         hack()
     else
         menuescolhas2(4)
@@ -826,14 +824,13 @@ function menuSkinCow()
 end
 
 function menuSkinSheep()
-    MENU = gg.choice({"1 • Rock N Roll Sheep", "2 • Billy Bonka Sheep", "3 • Egyptian Sheep",
-                            "4 • Samba Sheep", "5 • Noble Bandit Sheep", "6 • Birthday Sheep",
-                            "7 • Sleuth Sheep", "8 • Battle Sheep", "9 • Easter Sheep",
-                            "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
-                            "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep",
-                            "16 • Christmas Sheep", "17 • Sheep Witch", "18 • Mythic Sheep",
-                            "19 • Vampire Sheep", "20 • Gatsby Sheep", "21 • Rocker Sheep",
-                            "22 • Rock N Roll Shades Sheep", "❌ • Return"}, nil)
+    MENU = gg.choice(
+        {"1 • Rock N Roll Sheep", "2 • Billy Bonka Sheep", "3 • Egyptian Sheep", "4 • Samba Sheep",
+         "5 • Noble Bandit Sheep", "6 • Birthday Sheep", "7 • Sleuth Sheep", "8 • Battle Sheep",
+         "9 • Easter Sheep", "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
+         "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep", "16 • Christmas Sheep",
+         "17 • Sheep Witch", "18 • Mythic Sheep", "19 • Vampire Sheep", "20 • Gatsby Sheep",
+         "21 • Rocker Sheep", "22 • Rock N Roll Shades Sheep", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -890,8 +887,8 @@ function menuDecor()
     if MENU == nil then
         return
     elseif MENU == 1 then
-        hackSkinFree("75616562h", "655F7974h", "72657078h", "6E656D69h", "72705F74h", "63656A6Fh", "00726F74h", "00000000h",
-            nil, nil, 27)
+        hackSkinFree("75616562h", "655F7974h", "72657078h", "6E656D69h", "72705F74h", "63656A6Fh", "00726F74h",
+            "00000000h", nil, nil, 27)
     elseif MENU == 2 then
         hackFree('1919508762', '1952542562', '1634496607', '27502', '700281330', '85', 5)
     elseif MENU == 3 then
@@ -905,12 +902,12 @@ function menuDecor()
 end
 
 function menuDecorSummer()
-    MENU = gg.choice({"1 • Aqutic Adventure", "2 • Beach Bungalow", "3 • Beach Smoothie Bar",
-                           "4 • Beach Swing", "5 • Beach Volleyball", "6 • Bungalow", "7 • Catch The Wave Ride",
-                           "8 • Coconut Paradise Juice Bar", "9 • Cozy Tropics", "10 • First Board",
-                           "11 • Flowery Hammock", "12 • Infinite Wave", "13 • Jet Pack Attraction",
-                           "14 • Knife Throwing", "15 • Lure Makers Hut", "16 • Oasis",
-                           "17 • Palm Tree Juice Bar", "18 • Vacation", "19 • Pool", "❌ • Return"}, nil)
+    MENU = gg.choice(
+        {"1 • Aqutic Adventure", "2 • Beach Bungalow", "3 • Beach Smoothie Bar", "4 • Beach Swing",
+         "5 • Beach Volleyball", "6 • Bungalow", "7 • Catch The Wave Ride", "8 • Coconut Paradise Juice Bar",
+         "9 • Cozy Tropics", "10 • First Board", "11 • Flowery Hammock", "12 • Infinite Wave",
+         "13 • Jet Pack Attraction", "14 • Knife Throwing", "15 • Lure Makers Hut", "16 • Oasis",
+         "17 • Palm Tree Juice Bar", "18 • Vacation", "19 • Pool", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -925,17 +922,16 @@ end
 
 function menuDecorValentine()
     MENU = gg.choice({"1 • Affection Statue", "2 • Bear In Love", "3 • Romantic Date",
-                         "4 • Love Delivery Statue", "5 • Just Married", "6 • Doves In Love",
-                         "7 • Heart Flowerbed", "8 • Love Arch", "9 • Cuddly Kitty", "10 • Stuffed Bunny",
-                         "11 • Cupids Arrow", "12 • Lovers Bench", "13 • Pilot In Love", "14 • Flying Hearts",
-                         "15 • Cupids Eye", "16 • Perfect Pair Photo Zone", "17 • Small Romantic Park",
-                         "18 • Carriage", "19 • Wedding Lawn", "20 • Eternal Love Sculpture", "21 • The Rose",
-                         "22 • Cupid", "23 • Flower Cart", "24 • Flowerbed With Angels",
-                         "25 • Key To The Heart", "26 • Love Padlocks", "27 • Love Tunnel",
-                         "28 • Peacocks In Love", "29 • Pond With Swans", "30 • Royal Carriage",
-                         "31 • Ruby Heart", "32 • Statue Of Lovers", "33 • Stuffed Sheep",
-                         "34 • Stuffed Unicorn", "35 • Teddy Bear", "36 • Topiary Love", "37 • Undying Love",
-                         "❌ • Return"}, nil)
+                      "4 • Love Delivery Statue", "5 • Just Married", "6 • Doves In Love",
+                      "7 • Heart Flowerbed", "8 • Love Arch", "9 • Cuddly Kitty", "10 • Stuffed Bunny",
+                      "11 • Cupids Arrow", "12 • Lovers Bench", "13 • Pilot In Love", "14 • Flying Hearts",
+                      "15 • Cupids Eye", "16 • Perfect Pair Photo Zone", "17 • Small Romantic Park",
+                      "18 • Carriage", "19 • Wedding Lawn", "20 • Eternal Love Sculpture", "21 • The Rose",
+                      "22 • Cupid", "23 • Flower Cart", "24 • Flowerbed With Angels", "25 • Key To The Heart",
+                      "26 • Love Padlocks", "27 • Love Tunnel", "28 • Peacocks In Love", "29 • Pond With Swans",
+                      "30 • Royal Carriage", "31 • Ruby Heart", "32 • Statue Of Lovers", "33 • Stuffed Sheep",
+                      "34 • Stuffed Unicorn", "35 • Teddy Bear", "36 • Topiary Love", "37 • Undying Love",
+                      "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -951,29 +947,28 @@ end
 
 function menuDecorChristmas()
     MENU = gg.choice({"1 • Ice Rink", "2 • Holiday Carousel", "3 • Holiday Lamppost", "4 • Friendly Group",
-                         "5 • Snowman", "6 • Ice Angel", "7 • Christmas Fence", "8 • Snow Globe",
-                         "9 • Lake House", "10 • Santas House", "11 • Ice Slide",
-                         "12 • Accident At The Workshop", "13 • Dogsled", "14 • Frozen T Rex",
-                         "15 • Polar Station", "16 • Ski Lift", "17 • Ice Reindeer", "18 • Ice Castle",
-                         "19 • Snow Globe", "20 • Frozen Mammoth", "21 • Icebreaker Ship",
-                         "22 • Penguin Skating Rink", "23 • Arctic Glacier", "24 • Christmas Stocking",
-                         "25 • Christmas Tree", "26 • Mountain Of Presents", "27 • Ice Dragon",
-                         "28 • Elf House", "29 • Bridge For Two", "30 • Christmas Ball",
-                         "31 • Meeting Santa Banner", "32 • Winter Sports Rentals", "33 • Santas Workshop",
-                         "34 • Sheep Slide", "35 • Holiday Hut", "36 • Squirrel Skating Rink", "37 • Ice Gate",
-                         "38 • Polar Explorer", "39 • Hot Springs", "40 • Castle Ice Slide",
-                         "41 • Holiday Season", "42 • Santas Turbo Sleigh", "43 • Floating Lanterns",
-                         "44 • Christmas On Wheels", "45 • Christmas Square", "46 • Cozy Chalet",
-                         "47 • Festive Tree", "48 • Forest Skating Rink", "49 • Gingerbread House",
-                         "50 • Gingerbread Statue", "51 • Holiday Choir", "52 • Holiday Gift Store",
-                         "53 • Holiday Market Stall", "54 • Holiday Shop", "55 • Holiday Tree Market",
-                         "56 • Husky House", "57 • Ice Museum", "58 • Ice Sculptures", "59 • Snow House",
-                         "60 • Magic Number", "61 • Magical Alley", "62 • Mr Gingerbread", "63 • New Years Eve",
-                         "64 • Photo With Santa", "65 • Polar Water Park", "66 • Reindeer Rodeo",
-                         "67 • Santas Helper", "68 • Santas Helpers House", "69 • Santas Helpers",
-                         "70 • Santas Office", "71 • Santas Reindeer", "72 • Snow Cannon", "73 • Snow Fight",
-                         "74 • Snow Fortress", "75 • Snowman Igloo", "76 • Winter Activities",
-                         "77 • Winter Fun", "78 • Hot Springs", "79 • Frozen Lake", "❌ • Return"}, nil)
+                      "5 • Snowman", "6 • Ice Angel", "7 • Christmas Fence", "8 • Snow Globe",
+                      "9 • Lake House", "10 • Santas House", "11 • Ice Slide", "12 • Accident At The Workshop",
+                      "13 • Dogsled", "14 • Frozen T Rex", "15 • Polar Station", "16 • Ski Lift",
+                      "17 • Ice Reindeer", "18 • Ice Castle", "19 • Snow Globe", "20 • Frozen Mammoth",
+                      "21 • Icebreaker Ship", "22 • Penguin Skating Rink", "23 • Arctic Glacier",
+                      "24 • Christmas Stocking", "25 • Christmas Tree", "26 • Mountain Of Presents",
+                      "27 • Ice Dragon", "28 • Elf House", "29 • Bridge For Two", "30 • Christmas Ball",
+                      "31 • Meeting Santa Banner", "32 • Winter Sports Rentals", "33 • Santas Workshop",
+                      "34 • Sheep Slide", "35 • Holiday Hut", "36 • Squirrel Skating Rink", "37 • Ice Gate",
+                      "38 • Polar Explorer", "39 • Hot Springs", "40 • Castle Ice Slide", "41 • Holiday Season",
+                      "42 • Santas Turbo Sleigh", "43 • Floating Lanterns", "44 • Christmas On Wheels",
+                      "45 • Christmas Square", "46 • Cozy Chalet", "47 • Festive Tree",
+                      "48 • Forest Skating Rink", "49 • Gingerbread House", "50 • Gingerbread Statue",
+                      "51 • Holiday Choir", "52 • Holiday Gift Store", "53 • Holiday Market Stall",
+                      "54 • Holiday Shop", "55 • Holiday Tree Market", "56 • Husky House", "57 • Ice Museum",
+                      "58 • Ice Sculptures", "59 • Snow House", "60 • Magic Number", "61 • Magical Alley",
+                      "62 • Mr Gingerbread", "63 • New Years Eve", "64 • Photo With Santa",
+                      "65 • Polar Water Park", "66 • Reindeer Rodeo", "67 • Santas Helper",
+                      "68 • Santas Helpers House", "69 • Santas Helpers", "70 • Santas Office",
+                      "71 • Santas Reindeer", "72 • Snow Cannon", "73 • Snow Fight", "74 • Snow Fortress",
+                      "75 • Snowman Igloo", "76 • Winter Activities", "77 • Winter Fun", "78 • Hot Springs",
+                      "79 • Frozen Lake", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -988,18 +983,18 @@ function menuDecorChristmas()
 end
 
 function menuDecorHaloween()
-    MENU = gg.choice({"1 • Ominous Fountain", "2 • Black Cat", "3 • Witch With Potion",
-                            "4 • Warlocks Hut", "5 • Carnivorous Greenhouse", "6 • Pumpkin Man",
-                            "7 • The Pumpkinheaded Horseman", "8 • Ghostly Carriage", "9 • Gothic Tower",
-                            "10 • Werewolf Show", "11 • Broomriding Session", "12 • Carnivorous Plant",
-                            "13 • Chamber Of Horrors", "14 • Cursed House", "15 • Eternal Torch",
-                            "16 • Gargoyles", "17 • Haunting Carriage", "18 • House Of Horrors",
-                            "19 • Magic Cauldron", "20 • Mechanical Scarecrow", "21 • Moving Castle",
-                            "22 • Mysterious Castle", "23 • Phantom Lantern", "24 • Pumpkin Scarecrow",
-                            "25 • Pumpkin Wheel", "26 • Secret Road", "27 • Sinister Mansion",
-                            "28 • Spiderweb Tree", "29 • Spooky Crypt", "30 • Super Natural Orchestra",
-                            "31 • Supernatural Veggie Patch", "32 • Tree With Pumpkins", "33 • Witch Parking",
-                            "34 • Witch Shop", "35 • Phantom Ship", "36 • Haunted Ship", "❌ • Return"}, nil)
+    MENU = gg.choice({"1 • Ominous Fountain", "2 • Black Cat", "3 • Witch With Potion", "4 • Warlocks Hut",
+                      "5 • Carnivorous Greenhouse", "6 • Pumpkin Man", "7 • The Pumpkinheaded Horseman",
+                      "8 • Ghostly Carriage", "9 • Gothic Tower", "10 • Werewolf Show",
+                      "11 • Broomriding Session", "12 • Carnivorous Plant", "13 • Chamber Of Horrors",
+                      "14 • Cursed House", "15 • Eternal Torch", "16 • Gargoyles", "17 • Haunting Carriage",
+                      "18 • House Of Horrors", "19 • Magic Cauldron", "20 • Mechanical Scarecrow",
+                      "21 • Moving Castle", "22 • Mysterious Castle", "23 • Phantom Lantern",
+                      "24 • Pumpkin Scarecrow", "25 • Pumpkin Wheel", "26 • Secret Road",
+                      "27 • Sinister Mansion", "28 • Spiderweb Tree", "29 • Spooky Crypt",
+                      "30 • Super Natural Orchestra", "31 • Supernatural Veggie Patch", "32 • Tree With Pumpkins",
+                      "33 • Witch Parking", "34 • Witch Shop", "35 • Phantom Ship", "36 • Haunted Ship",
+                      "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1012,10 +1007,10 @@ end
 
 function menuDecorTheFirst()
     MENU = gg.choice({"1 • The first geneticist", "2 • The first tourist", "3 • The first thinker",
-                            "4 • The first firefighter", "5 • The first commander", "6 • The first policeman",
-                            "7 • The first musician", "8 • The first painter", "9 • The first soccer player",
-                            "10 • The first scientist", "11 • The first writer",
-                            "12 • The first aircraft designer", "13 • The first chemist", "❌ • Return"}, nil)
+                      "4 • The first firefighter", "5 • The first commander", "6 • The first policeman",
+                      "7 • The first musician", "8 • The first painter", "9 • The first soccer player",
+                      "10 • The first scientist", "11 • The first writer", "12 • The first aircraft designer",
+                      "13 • The first chemist", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1027,13 +1022,13 @@ function menuDecorTheFirst()
 end
 
 function menuDecorSports()
-    MENU = gg.choice({"1 • Hockey Rink", "2 • Rugby Field", "3 • Neverending Slope",
-                          "4 • Seasoned Goalkeeper", "5 • Skatepark", "6 • World Champion", "7 • Bobsled Track",
-                          "8 • Archery", "9 • Baseball Practice", "10 • Bumper Car Ride",
-                          "11 • Champions Plaza", "12 • Curling", "13 • Discobolus", "14 • Diving Board",
-                          "15 • Drone Race", "16 • Heavyweight Champ", "17 • Olympic Village",
-                          "18 • Snow Wave Statue", "19 • Torchbearer Statue", "20 • Training Ground",
-                          "21 • Triumphal Victory Statue", "22 • World Tour", "❌ • Return"}, nil)
+    MENU = gg.choice({"1 • Hockey Rink", "2 • Rugby Field", "3 • Neverending Slope", "4 • Seasoned Goalkeeper",
+                      "5 • Skatepark", "6 • World Champion", "7 • Bobsled Track", "8 • Archery",
+                      "9 • Baseball Practice", "10 • Bumper Car Ride", "11 • Champions Plaza", "12 • Curling",
+                      "13 • Discobolus", "14 • Diving Board", "15 • Drone Race", "16 • Heavyweight Champ",
+                      "17 • Olympic Village", "18 • Snow Wave Statue", "19 • Torchbearer Statue",
+                      "20 • Training Ground", "21 • Triumphal Victory Statue", "22 • World Tour", "❌ • Return"},
+        nil)
 
     if MENU == nil then
         return
@@ -1046,9 +1041,9 @@ end
 
 function menuDecorAirplane()
     MENU = gg.choice({"1 • Flight Simulator", "2 • Steam Plane", "3 • Biplane", "4 • Winged Winner",
-                         "5 • Air Galleon", "6 • Amphibious Aircraft", "7 • Biomasspowered Airplane",
-                         "8 • Experimental Plane", "9 • Flyseasoned Friends", "10 • Hat Air Balloon",
-                         "11 • Piggy Blimp", "❌ • Return"}, nil)
+                      "5 • Air Galleon", "6 • Amphibious Aircraft", "7 • Biomasspowered Airplane",
+                      "8 • Experimental Plane", "9 • Flyseasoned Friends", "10 • Hat Air Balloon",
+                      "11 • Piggy Blimp", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1062,9 +1057,9 @@ end
 
 function menuDecorCandy()
     MENU = gg.choice({"1 • Candy House", "2 • Mountain Of Candy", "3 • Candy Tree", "4 • Candy Bridge",
-                          "5 • Gingerbread Gate", "6 • Berry Tree", "7 • Candy Carousel", "8 • Candy Castle",
-                          "9 • Candy Express", "10 • Caramel Apple", "11 • Gingerbread Fence",
-                          "12 • Jelly Trampoline", "13 • Sugar Tree", "14 • Sweet Tooth Street", "❌ • Return"},
+                      "5 • Gingerbread Gate", "6 • Berry Tree", "7 • Candy Carousel", "8 • Candy Castle",
+                      "9 • Candy Express", "10 • Caramel Apple", "11 • Gingerbread Fence",
+                      "12 • Jelly Trampoline", "13 • Sugar Tree", "14 • Sweet Tooth Street", "❌ • Return"},
         nil)
 
     if MENU == nil then
@@ -1078,15 +1073,14 @@ end
 
 function menuDecorRuins()
     MENU = gg.choice({"1 • Lost City Gate", "2 • Ancient City Site", "3 • Ancient Statue", "4 • Lost City",
-                          "5 • Banana Break", "6 • Jungle Cave", "7 • Ancient Calendar", "8 • Ancient Throne",
-                          "9 • Campfire Fun", "10 • Colorful Tent", "11 • Egyptian House", "12 • Falconry",
-                          "13 • Jungle Village", "14 • Magic Lamp", "15 • Monkey Nursery", "16 • Mystery Pond",
-                          "17 • Papyrus Shop", "18 • Paradise Tent", "19 • Pharaoh Statue",
-                          "20 • Primeval Settlement", "21 • Pyramid Of Cheops", "22 • Rope Bridge",
-                          "23 • Sarcophagus", "24 • Scarab Statue", "25 • Sheikhs Palace",
-                          "26 • Stone Age House", "27 • Stonehenge", "28 • The First Fider",
-                          "29 • Underwater Temple", "30 • Trojan Horse", "31 • Yeti", "32 • Wildlife Reserve",
-                          "33 • Papyrus Boat", "❌ • Return"}, nil)
+                      "5 • Banana Break", "6 • Jungle Cave", "7 • Ancient Calendar", "8 • Ancient Throne",
+                      "9 • Campfire Fun", "10 • Colorful Tent", "11 • Egyptian House", "12 • Falconry",
+                      "13 • Jungle Village", "14 • Magic Lamp", "15 • Monkey Nursery", "16 • Mystery Pond",
+                      "17 • Papyrus Shop", "18 • Paradise Tent", "19 • Pharaoh Statue",
+                      "20 • Primeval Settlement", "21 • Pyramid Of Cheops", "22 • Rope Bridge",
+                      "23 • Sarcophagus", "24 • Scarab Statue", "25 • Sheikhs Palace", "26 • Stone Age House",
+                      "27 • Stonehenge", "28 • The First Fider", "29 • Underwater Temple", "30 • Trojan Horse",
+                      "31 • Yeti", "32 • Wildlife Reserve", "33 • Papyrus Boat", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1099,21 +1093,21 @@ end
 
 function menuDecorBannerStatues()
     MENU = gg.choice({"1 • 5 Years Together Banner", "2 • 9 Year", "3 • Arabian Horses", "4 • Bee Pilot",
-                         "5 • Broccoli Tree", "6 • Camping", "7 • Carrot Tree", "8 • Cheep Cheep", "9 • Chef",
-                         "10 • Confectioner Cow", "11 • Conqueror Of The Seas", "12 • Cooking Masterpiece Banner",
-                         "13 • Diver", "14 • Family Nest", "15 • Famous Director Statue", "16 • Farmers Totem",
-                         "17 • Festival Selfie Banner", "18 • Film Fountain", "19 • Fountain Melody",
-                         "20 • Friendship Bench", "21 • Ghost Huntress", "22 • Golden Sail",
-                         "23 • Happy Splashes", "24 • Happy Town Day Statue", "25 • Heartfelt Topiary",
-                         "26 • Hearttoheart Fountain", "27 • His Majestys Throne", "28 • Jaunty Rider",
-                         "29 • Jolly Chefs", "30 • Jolly Painters", "31 • Kitty Rock",
-                         "32 • Lights Camera Action", "33 • Lucky Fisherman", "34 • Magnificent Trio",
-                         "35 • Minotaur", "36 • New Record Fountain", "37 • Peacock Flower Bed",
-                         "38 • Primetime Picnic", "39 • Primeval Painter", "40 • Prince On A White Horse",
-                         "41 • Romantic Dinner", "42 • Spring", "43 • Sun Monument", "44 • Tea Party Fountain",
-                         "45 • The Magnificent Five", "46 • Throes Of Art", "47 • Titans",
-                         "48 • Township Turned 2", "49 • Triathlon", "50 • Tyrannosaurus",
-                         "51 • Unexpected Gift", "52 • Zoo", "53 • BFF Fountain", "❌ • Return"}, nil)
+                      "5 • Broccoli Tree", "6 • Camping", "7 • Carrot Tree", "8 • Cheep Cheep", "9 • Chef",
+                      "10 • Confectioner Cow", "11 • Conqueror Of The Seas", "12 • Cooking Masterpiece Banner",
+                      "13 • Diver", "14 • Family Nest", "15 • Famous Director Statue", "16 • Farmers Totem",
+                      "17 • Festival Selfie Banner", "18 • Film Fountain", "19 • Fountain Melody",
+                      "20 • Friendship Bench", "21 • Ghost Huntress", "22 • Golden Sail", "23 • Happy Splashes",
+                      "24 • Happy Town Day Statue", "25 • Heartfelt Topiary", "26 • Hearttoheart Fountain",
+                      "27 • His Majestys Throne", "28 • Jaunty Rider", "29 • Jolly Chefs",
+                      "30 • Jolly Painters", "31 • Kitty Rock", "32 • Lights Camera Action",
+                      "33 • Lucky Fisherman", "34 • Magnificent Trio", "35 • Minotaur",
+                      "36 • New Record Fountain", "37 • Peacock Flower Bed", "38 • Primetime Picnic",
+                      "39 • Primeval Painter", "40 • Prince On A White Horse", "41 • Romantic Dinner",
+                      "42 • Spring", "43 • Sun Monument", "44 • Tea Party Fountain",
+                      "45 • The Magnificent Five", "46 • Throes Of Art", "47 • Titans",
+                      "48 • Township Turned 2", "49 • Triathlon", "50 • Tyrannosaurus", "51 • Unexpected Gift",
+                      "52 • Zoo", "53 • BFF Fountain", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1126,8 +1120,8 @@ end
 
 function menuDecorTree()
     MENU = gg.choice({"1 • Jacaranda", "2 • Cactus", "3 • Baobab", "4 • Date Palm", "5 • Wisteria",
-                         "6 • Delonix regia", "7 • Araguaney", "8 • Rhododendron", "9 • Gladioli",
-                         "10 • Poppies", "11 • Field of Flowers", "❌ • Return"}, nil)
+                      "6 • Delonix regia", "7 • Araguaney", "8 • Rhododendron", "9 • Gladioli",
+                      "10 • Poppies", "11 • Field of Flowers", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1139,17 +1133,16 @@ function menuDecorTree()
 end
 
 function menuDecorInflatable()
-    MENU = gg.choice({"1 • Inflatable Fish", "2 • Inflatable Pig", "3 • Inflatable Whale",
-                         "4 • Inflatable Cow", "5 • Inflatable Sheep", "6 • Inflatable Bee",
-                         "7 • Inflatable Dragon", "8 • Inflatable Elephant", "9 • Inflatable Panda",
-                         "10 • Shark Jaw Trampoline", "11 • Lion Trampoline", "12 • Zoo Trampoline",
-                         "13 • Inflatable Jellyfish", "14 • Inflatable Plane", "15 • Inflatable Castle",
-                         "16 • Inflatable Chicken", "17 • Inflatable Dog", "18 • Inflatable Number 3",
-                         "19 • Inflatable Tree", "20 • Inflatable Duck", "21 • Inflatable Butterfly",
-                         "22 • Inflatable Turtle", "23 • Inflatable Parrot", "24 • Inflatable Octopus",
-                         "25 • Inflatable Penguin", "26 • Air Dancer", "27 • Balloon Arch",
-                         "28 • Balloon Bouquet", "29 • Betsy The Astronaut", "30 • Bouncy Castle",
-                         "31 • Eagleeye Cupid", "32 • Flying House", "33 • Meltdown", "❌ • Return"}, nil)
+    MENU = gg.choice(
+        {"1 • Inflatable Fish", "2 • Inflatable Pig", "3 • Inflatable Whale", "4 • Inflatable Cow",
+         "5 • Inflatable Sheep", "6 • Inflatable Bee", "7 • Inflatable Dragon", "8 • Inflatable Elephant",
+         "9 • Inflatable Panda", "10 • Shark Jaw Trampoline", "11 • Lion Trampoline", "12 • Zoo Trampoline",
+         "13 • Inflatable Jellyfish", "14 • Inflatable Plane", "15 • Inflatable Castle",
+         "16 • Inflatable Chicken", "17 • Inflatable Dog", "18 • Inflatable Number 3", "19 • Inflatable Tree",
+         "20 • Inflatable Duck", "21 • Inflatable Butterfly", "22 • Inflatable Turtle",
+         "23 • Inflatable Parrot", "24 • Inflatable Octopus", "25 • Inflatable Penguin", "26 • Air Dancer",
+         "27 • Balloon Arch", "28 • Balloon Bouquet", "29 • Betsy The Astronaut", "30 • Bouncy Castle",
+         "31 • Eagleeye Cupid", "32 • Flying House", "33 • Meltdown", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1162,8 +1155,8 @@ end
 
 function menuDecorPuzzle()
     MENU = gg.choice({"1 • Land of the Dinosaurs", "2 • Spaceport", "3 • Snowman", "4 • Giant Cake",
-                          "5 • Classic Car Collection", "6 • Magic School", "7 • Tree of Lights",
-                          "8 • Disco Block", "9 • Rabbit Village", "10 • Overwater Villa", "❌ • Return"}, nil)
+                      "5 • Classic Car Collection", "6 • Magic School", "7 • Tree of Lights", "8 • Disco Block",
+                      "9 • Rabbit Village", "10 • Overwater Villa", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1176,12 +1169,12 @@ end
 
 function menuDecorDiamonds()
     MENU = gg.choice({"1 • St. Basils Cathedral", "2 • Castle", "3 • Statue of Liberty", "4 • Crater",
-                          "5 • Taj Mahal", "6 • Watchtower", "7 • Petronas Twin Towers", "8 • Pizza Tower",
-                          "9 • Temple of Heaven", "10 • Notre Dame de Paris", "11 • Space Needle",
-                          "12 • Sea Arches", "13 • Big Ben", "14 • Golden Gate Bridge", "15 • Thai Temple",
-                          "16 • Burj Khalifa", "17 • Pyramid", "18 • Yacht", "19 • Empire State Building",
-                          "20 • Vintage Boat", "21 • Eiffel Tower", "22 • Space Needle", "23 • Flag",
-                          "24 • Sydney Opera House", "25 • Triumphal Arch", "❌ • Return"}, nil)
+                      "5 • Taj Mahal", "6 • Watchtower", "7 • Petronas Twin Towers", "8 • Pizza Tower",
+                      "9 • Temple of Heaven", "10 • Notre Dame de Paris", "11 • Space Needle",
+                      "12 • Sea Arches", "13 • Big Ben", "14 • Golden Gate Bridge", "15 • Thai Temple",
+                      "16 • Burj Khalifa", "17 • Pyramid", "18 • Yacht", "19 • Empire State Building",
+                      "20 • Vintage Boat", "21 • Eiffel Tower", "22 • Space Needle", "23 • Flag",
+                      "24 • Sydney Opera House", "25 • Triumphal Arch", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1194,12 +1187,11 @@ end
 
 function menuDecorChina()
     MENU = gg.choice({"1 • Chinatown", "2 • Dragon Dance", "3 • Yellow Dog", "4 • Red Lily Pond",
-                          "5 • Golden Bull", "6 • Golden Rat Garden", "7 • Bowl Of Wealth", "8 • Chinese House",
-                          "9 • Chinese Lion", "10 • Confetti Blast Banner", "11 • Dancing Koi",
-                          "12 • Ferris Wheel", "13 • Fire Rooster", "14 • Fortune Keeper", "15 • GoldFish",
-                          "16 • Lantern Tree", "17 • Manekineko", "18 • Money Toad", "19 • Monkey Statue",
-                          "20 • New Year Symbol", "21 • Paper Lanterns", "22 • Red Bridge", "23 • Red Dragon",
-                          "❌ • Return"}, nil)
+                      "5 • Golden Bull", "6 • Golden Rat Garden", "7 • Bowl Of Wealth", "8 • Chinese House",
+                      "9 • Chinese Lion", "10 • Confetti Blast Banner", "11 • Dancing Koi", "12 • Ferris Wheel",
+                      "13 • Fire Rooster", "14 • Fortune Keeper", "15 • GoldFish", "16 • Lantern Tree",
+                      "17 • Manekineko", "18 • Money Toad", "19 • Monkey Statue", "20 • New Year Symbol",
+                      "21 • Paper Lanterns", "22 • Red Bridge", "23 • Red Dragon", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1213,7 +1205,7 @@ end
 
 function menuDecorCowboy()
     MENU = gg.choice({"1 • Cowboy Town", "2 • Saloon", "3 • Sheriffs House", "4 • Urban Safari",
-                          "5 • Watermill", "❌ • Return"}, nil)
+                      "5 • Watermill", "❌ • Return"}, nil)
     if MENU == nil then
         return
     elseif MENU >= 1 and MENU <= 5 then
@@ -1224,18 +1216,17 @@ function menuDecorCowboy()
 end
 
 function menuDecorFlower()
-    MENU = gg.choice({"1 • Adventure Park", "2 • Boat With Flowers", "3 • Car Flower Bed",
-                         "4 • Cave Retreat", "5 • Clothespin Artobject", "6 • Floral Boutique",
-                         "7 • Floral Fairy Fountain", "8 • Florist House", "9 • Florists House",
-                         "10 • Flower Arch", "11 • Flower Dancefloor", "12 • Flower Fence", "13 • Flower Gate",
-                         "14 • Flower Lamppost", "15 • Flower Pavilion", "16 • Flower Swing",
-                         "17 • Flower Truck", "18 • Gardener Training", "19 • Hanging Gardens",
-                         "20 • Ivy House", "21 • Mother Naturepond", "22 • Mushroom Stump",
-                         "23 • Palette Flowerbed", "24 • Romantic Gazebo", "25 • Sailors House",
-                         "26 • Sheep Flowerbed", "27 • Summer Cafe", "28 • Topiary Show",
-                         "29 • Tree Of Life Fountain", "30 • Upside Down House", "31 • Urban Oasis",
-                         "32 • Vase Of Flowers", "33 • Vineyard Terrace", "34 • Vineyard",
-                         "35 • Waterfall Terrace", "36 • Watering Can Flowerbed", "❌ • Return"}, nil)
+    MENU = gg.choice({"1 • Adventure Park", "2 • Boat With Flowers", "3 • Car Flower Bed", "4 • Cave Retreat",
+                      "5 • Clothespin Artobject", "6 • Floral Boutique", "7 • Floral Fairy Fountain",
+                      "8 • Florist House", "9 • Florists House", "10 • Flower Arch", "11 • Flower Dancefloor",
+                      "12 • Flower Fence", "13 • Flower Gate", "14 • Flower Lamppost", "15 • Flower Pavilion",
+                      "16 • Flower Swing", "17 • Flower Truck", "18 • Gardener Training",
+                      "19 • Hanging Gardens", "20 • Ivy House", "21 • Mother Naturepond", "22 • Mushroom Stump",
+                      "23 • Palette Flowerbed", "24 • Romantic Gazebo", "25 • Sailors House",
+                      "26 • Sheep Flowerbed", "27 • Summer Cafe", "28 • Topiary Show",
+                      "29 • Tree Of Life Fountain", "30 • Upside Down House", "31 • Urban Oasis",
+                      "32 • Vase Of Flowers", "33 • Vineyard Terrace", "34 • Vineyard",
+                      "35 • Waterfall Terrace", "36 • Watering Can Flowerbed", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1248,25 +1239,24 @@ end
 
 function menuDecorKids()
     MENU = gg.choice({"1 • Aquarists House", "2 • Art Show", "3 • Astronomical Tower", "4 • Canyon Station",
-                        "5 • Carousel", "6 • City Aquarium", "7 • Claw MENUhine", "8 • Clucky Coaster",
-                        "9 • Coral Garden", "10 • Country Ring Toss", "11 • Danceoff", "12 • Dino Park",
-                        "13 • Diplodocus", "14 • Disco Forever", "15 • Ecofriendly Exhibition",
-                        "16 • Fiery Rally", "17 • Giant Puzzle", "18 • Giant Synthesizer",
-                        "19 • Graffiti Championship", "20 • Grekk Aquarium", "21 • Happy Aquarium",
-                        "22 • Helicopter Trampoline", "23 • High Striker", "24 • Hot Dog Swings",
-                        "25 • Interactive Fountain", "26 • Juggler", "27 • Kids Train Ride", "28 • Kite Master",
-                        "29 • Little Street Racers", "30 • Mars Rover", "31 • Mechanical Bull",
-                        "32 • Mobile Games Forefather", "33 • Natural Wonder Installation",
-                        "34 • Naval Encounter", "35 • New Heights", "36 • Observation Tower",
-                        "37 • Octopus Merrygoround", "38 • Pickup Rodeo", "39 • Pinball",
-                        "40 • Raging Sea Ride", "41 • Rainbow Ride", "42 • Ropes Course", "43 • Sailing Duel",
-                        "44 • Shell Game", "45 • Shopping Cart Race", "46 • Skateboarders", "47 • Sky Swing",
-                        "48 • Star Shooting Range", "49 • Stilt Performance", "50 • Superfriends Photo Cutout",
-                        "51 • Takeoff Ride", "52 • Train Slide", "53 • Treasure Island Playground",
-                        "54 • UFO Carousel", "55 • Underwater World Carousel", "56 • Visiting The Bunnies",
-                        "57 • Visiting The Dolphins", "58 • Waterfall Ride", "59 • Wild West Ride",
-                        "60 • Wishing Well", "61 • Yellow Submarine Club", "62 • Young Cowboys Playground",
-                        "❌ • Return"}, nil)
+                      "5 • Carousel", "6 • City Aquarium", "7 • Claw MENUhine", "8 • Clucky Coaster",
+                      "9 • Coral Garden", "10 • Country Ring Toss", "11 • Danceoff", "12 • Dino Park",
+                      "13 • Diplodocus", "14 • Disco Forever", "15 • Ecofriendly Exhibition",
+                      "16 • Fiery Rally", "17 • Giant Puzzle", "18 • Giant Synthesizer",
+                      "19 • Graffiti Championship", "20 • Grekk Aquarium", "21 • Happy Aquarium",
+                      "22 • Helicopter Trampoline", "23 • High Striker", "24 • Hot Dog Swings",
+                      "25 • Interactive Fountain", "26 • Juggler", "27 • Kids Train Ride", "28 • Kite Master",
+                      "29 • Little Street Racers", "30 • Mars Rover", "31 • Mechanical Bull",
+                      "32 • Mobile Games Forefather", "33 • Natural Wonder Installation", "34 • Naval Encounter",
+                      "35 • New Heights", "36 • Observation Tower", "37 • Octopus Merrygoround",
+                      "38 • Pickup Rodeo", "39 • Pinball", "40 • Raging Sea Ride", "41 • Rainbow Ride",
+                      "42 • Ropes Course", "43 • Sailing Duel", "44 • Shell Game", "45 • Shopping Cart Race",
+                      "46 • Skateboarders", "47 • Sky Swing", "48 • Star Shooting Range",
+                      "49 • Stilt Performance", "50 • Superfriends Photo Cutout", "51 • Takeoff Ride",
+                      "52 • Train Slide", "53 • Treasure Island Playground", "54 • UFO Carousel",
+                      "55 • Underwater World Carousel", "56 • Visiting The Bunnies", "57 • Visiting The Dolphins",
+                      "58 • Waterfall Ride", "59 • Wild West Ride", "60 • Wishing Well",
+                      "61 • Yellow Submarine Club", "62 • Young Cowboys Playground", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1279,12 +1269,12 @@ end
 
 function menuDecorEaster()
     MENU = gg.choice({"1 • Cart Full Of Gifts", "2 • Easter Bunnys House", "3 • Easter Fence",
-                         "4 • Easter Fountain", "5 • Easter Fun", "6 • Easter Hammock", "7 • Easter Maze",
-                         "8 • Easter Railway", "9 • Easter Shop", "10 • Easter Topiary", "11 • Easter Tree",
-                         "12 • Easter Workshop", "13 • Egg Topiary", "14 • Faberg Egg Gold",
-                         "15 • Rabbit Treasure", "16 • Talented Bunny Statue", "17 • Easter plant",
-                         "18 • Stuffed Bunny", "19 • Rabbit house", "20 • Chocolate Fountain",
-                         "21 • Faberg Egg Blue", "❌ • Return"}, nil)
+                      "4 • Easter Fountain", "5 • Easter Fun", "6 • Easter Hammock", "7 • Easter Maze",
+                      "8 • Easter Railway", "9 • Easter Shop", "10 • Easter Topiary", "11 • Easter Tree",
+                      "12 • Easter Workshop", "13 • Egg Topiary", "14 • Faberg Egg Gold",
+                      "15 • Rabbit Treasure", "16 • Talented Bunny Statue", "17 • Easter plant",
+                      "18 • Stuffed Bunny", "19 • Rabbit house", "20 • Chocolate Fountain",
+                      "21 • Faberg Egg Blue", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1297,11 +1287,11 @@ end
 
 function menuDecorPirate()
     MENU = gg.choice({"1 • Baldassarres Treasure", "2 • Legendary Captain", "3 • Naval Cannon",
-                          "4 • Pirate Cafe", "5 • Pirate Camp", "6 • Pirate Corner", "7 • Pirate Playground",
-                          "8 • Pirate Raid", "9 • Pirate Ship Bow", "10 • Pirate Ship", "11 • Pirate Tavern",
-                          "12 • Sacred Chest", "13 • Sea Rovers", "14 • Teamwork", "15 • The Flyer",
-                          "16 • The Ninth Wave Ride", "17 • Treasure Chest", "18 • Treasure Keeper",
-                          "❌ • Return"}, nil)
+                      "4 • Pirate Cafe", "5 • Pirate Camp", "6 • Pirate Corner", "7 • Pirate Playground",
+                      "8 • Pirate Raid", "9 • Pirate Ship Bow", "10 • Pirate Ship", "11 • Pirate Tavern",
+                      "12 • Sacred Chest", "13 • Sea Rovers", "14 • Teamwork", "15 • The Flyer",
+                      "16 • The Ninth Wave Ride", "17 • Treasure Chest", "18 • Treasure Keeper", "❌ • Return"},
+        nil)
 
     if MENU == nil then
         return
@@ -1314,11 +1304,10 @@ end
 
 function menuDecorAtlantis()
     MENU = gg.choice({"1 • Admiralty Anchor", "2 • Atlandean Trident", "3 • Atlantean Aquarium",
-                         "4 • Atlantean Rest", "5 • Atlantis Hotel", "6 • Atlantis Museum", "7 • Coral Fence",
-                         "8 • Glass Bridge", "9 • Pearl Shell", "10 • Poseidon Statue",
-                         "11 • Ruins Of Atlantis", "12 • Sea Herald", "13 • Sea Horse",
-                         "14 • Sea Riches Statue", "15 • Sunken City", "16 • Sword In The Stone",
-                         "17 • The Mermaid", "18 • Water Fairy", "❌ • Return"}, nil)
+                      "4 • Atlantean Rest", "5 • Atlantis Hotel", "6 • Atlantis Museum", "7 • Coral Fence",
+                      "8 • Glass Bridge", "9 • Pearl Shell", "10 • Poseidon Statue", "11 • Ruins Of Atlantis",
+                      "12 • Sea Herald", "13 • Sea Horse", "14 • Sea Riches Statue", "15 • Sunken City",
+                      "16 • Sword In The Stone", "17 • The Mermaid", "18 • Water Fairy", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1331,14 +1320,13 @@ end
 
 function menuDecorFruit()
     MENU = gg.choice({"1 • Apple Orchard", "2 • Banjo Concert", "3 • Fruit Bridge", "4 • Farmers Market",
-                         "5 • Fruit Cannon", "6 • Fruit Flower Bed", "7 • Fruit Master",
-                         "8 • Fruit Shooting Range", "9 • Fruit Village", "10 • Fruitball",
-                         "11 • Giant Blender", "12 • Giant Watermelon", "13 • Goddess Of Harvest",
-                         "14 • Grand Harvest Square", "15 • Grape Press", "16 • Harvest Of A Giant",
-                         "17 • Horn Of Plenty", "18 • Mixed Fruit", "19 • Mobile Market",
-                         "20 • Orange Juice Fountain", "21 • Organic Shop", "22 • Pear Tiki Bar",
-                         "23 • Pumpkin Race", "24 • Pyramid Of Smoothies", "25 • Spicy House",
-                         "26 • Vegetable Display", "❌ • Return"}, nil)
+                      "5 • Fruit Cannon", "6 • Fruit Flower Bed", "7 • Fruit Master",
+                      "8 • Fruit Shooting Range", "9 • Fruit Village", "10 • Fruitball", "11 • Giant Blender",
+                      "12 • Giant Watermelon", "13 • Goddess Of Harvest", "14 • Grand Harvest Square",
+                      "15 • Grape Press", "16 • Harvest Of A Giant", "17 • Horn Of Plenty", "18 • Mixed Fruit",
+                      "19 • Mobile Market", "20 • Orange Juice Fountain", "21 • Organic Shop",
+                      "22 • Pear Tiki Bar", "23 • Pumpkin Race", "24 • Pyramid Of Smoothies",
+                      "25 • Spicy House", "26 • Vegetable Display", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1351,12 +1339,12 @@ end
 
 function menuDecorEntertainment()
     MENU = gg.choice({"1 • Amphitheater", "2 • Camera Platform", "3 • Chilling Performance",
-                         "4 • Classic Car Show", "5 • Coming Soon", "6 • Cooking Show", "7 • Fashion Gallery",
-                         "8 • Gramophone Carousel", "9 • Hall Of Fame", "10 • Insomnia Installation",
-                         "11 • Jazz Club", "12 • Kingdom Centre", "13 • Lowriders", "14 • Makeover Studio",
-                         "15 • Movie Magic", "16 • Movie Museum", "17 • Movie Set", "18 • Music District",
-                         "19 • Music Shop", "20 • Openair Stage", "21 • Organist", "22 • Outdoor Cinema",
-                         "23 • Retro Movie Theater", "24 • Western Movie Set", "❌ • Return"}, nil)
+                      "4 • Classic Car Show", "5 • Coming Soon", "6 • Cooking Show", "7 • Fashion Gallery",
+                      "8 • Gramophone Carousel", "9 • Hall Of Fame", "10 • Insomnia Installation",
+                      "11 • Jazz Club", "12 • Kingdom Centre", "13 • Lowriders", "14 • Makeover Studio",
+                      "15 • Movie Magic", "16 • Movie Museum", "17 • Movie Set", "18 • Music District",
+                      "19 • Music Shop", "20 • Openair Stage", "21 • Organist", "22 • Outdoor Cinema",
+                      "23 • Retro Movie Theater", "24 • Western Movie Set", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1369,22 +1357,21 @@ end
 
 function menuDecorExpedition()
     MENU = gg.choice({"1 • Queen of Turtle Island", "2 • Cleopatras Secret Spa Hotel",
-                        "3 • Guardian of the North", "4 • Pirate Odyssey", "5 • Yeti Megalith",
-                        "6 • Botanical Amusement Park", "7 • Poseidons Kingdom Museum",
-                        "8 • Institute of Natural Phenomena", "9 • Central Park", "10 • Chinese Community Center",
-                        "11 • Rainbow Ecopark", "12 • Gourment Tour", "13 • Agricultural Fair",
-                        "14 • Sports Complex", "15 • Penguin World", "16 • Retro Disco Hall",
-                        "17 • Arts and Craft Fair", "18 • Cozy Campsite", "19 • Beach Party",
-                        "20 • The Heart of Italy", "21 • Smart Mansion", "22 • Golden Deer Country House",
-                        "23 • Frozen Lotus Fountain", "24 • Ancient Theater of Pandora",
-                        "25 • The Wasp Queen Greenhouse", "26 • Space Research Center", "27 • Tree Library",
-                        "28 • Nature Embrace Glamping Base", "29 • Cosmic Cafeteria",
-                        "30 • MonkeyLand Water Park", "31 • Mountain Haven", "32 • Sweet Amusement Park",
-                        "33 • Halloween Windmill", "34 • Gate to Cyber City", "35 • Sheriff Office",
-                        "36 • Santa Village", "37 • Jazz Club", "38 • Sinister Carriage",
-                        "39 • Heroes Of The Old Park 1/3", "39 • Heroes Of The Old Park 2/3",
-                        "39 • Heroes Of The Old Park 3/3", "40 • Viking Gate", "41 • Turkey Of Plenty",
-                        "42 • Mountain Chalet", "❌ • Return"}, nil)
+                      "3 • Guardian of the North", "4 • Pirate Odyssey", "5 • Yeti Megalith",
+                      "6 • Botanical Amusement Park", "7 • Poseidons Kingdom Museum",
+                      "8 • Institute of Natural Phenomena", "9 • Central Park", "10 • Chinese Community Center",
+                      "11 • Rainbow Ecopark", "12 • Gourment Tour", "13 • Agricultural Fair",
+                      "14 • Sports Complex", "15 • Penguin World", "16 • Retro Disco Hall",
+                      "17 • Arts and Craft Fair", "18 • Cozy Campsite", "19 • Beach Party",
+                      "20 • The Heart of Italy", "21 • Smart Mansion", "22 • Golden Deer Country House",
+                      "23 • Frozen Lotus Fountain", "24 • Ancient Theater of Pandora",
+                      "25 • The Wasp Queen Greenhouse", "26 • Space Research Center", "27 • Tree Library",
+                      "28 • Nature Embrace Glamping Base", "29 • Cosmic Cafeteria", "30 • MonkeyLand Water Park",
+                      "31 • Mountain Haven", "32 • Sweet Amusement Park", "33 • Halloween Windmill",
+                      "34 • Gate to Cyber City", "35 • Sheriff Office", "36 • Santa Village", "37 • Jazz Club",
+                      "38 • Sinister Carriage", "39 • Heroes Of The Old Park 1/3",
+                      "39 • Heroes Of The Old Park 2/3", "39 • Heroes Of The Old Park 3/3", "40 • Viking Gate",
+                      "41 • Turkey Of Plenty", "42 • Mountain Chalet", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1397,8 +1384,8 @@ end
 
 function menuCoupon()
     MENU = gg.choice({"🎫 • Order Coupon", "🎫 • Expansion Coupon", "🎫 • Barn Coupon",
-                     "🎫 • Factory Coupon", "🎫 • Train Coupon", "🎫 • Island Coupon",
-                     "🎫 • Dealer Coupon", "❌ • Return"}, nil)
+                      "🎫 • Factory Coupon", "🎫 • Train Coupon", "🎫 • Island Coupon",
+                      "🎫 • Dealer Coupon", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1410,8 +1397,8 @@ function menuCoupon()
 end
 
 function menuCropTime()
-    MENU = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s", "🐮 • Animals 0s",
-                     "❌ • Return"}, nil)
+    MENU = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s",
+                      "🐮 • Animals 0s", "❌ • Return"}, nil)
     if MENU == nil then
         return
     elseif MENU >= 1 and MENU <= 4 then
@@ -1434,9 +1421,9 @@ end
 
 function menuBadge()
     MENU = gg.choice({"💎 • Town Badge", "💎 • Legendary Town Badge", "💎 • City Badge",
-                     "💎 • Legendary City Badge", "💎 • Winter Badge", "💎 • Legendary Winter Badge",
-                     "💎 • Journey Badge", "💎 • Legendary Journey Badge", "💎 • Card Colection", 
-                     "❌ • Return"}, nil)
+                      "💎 • Legendary City Badge", "💎 • Winter Badge", "💎 • Legendary Winter Badge",
+                      "💎 • Journey Badge", "💎 • Legendary Journey Badge", "💎 • Card Colection",
+                      "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1451,31 +1438,30 @@ end
 
 function menuSign()
     MENU = gg.choice({"❌ • Back", "1 • Aviator Sign", "2 • Christmas Sign", "3 • Fairytale Sign",
-                        "4 • Big Screen Sign", "5 • Cactus Sign", "6 • Outstanding Sign", "7 • Easter Sign",
-                        "8 • Snowboarding Sign", "9 • Cozy Home Sign", "10 • Flower Sign",
-                        "11 • Wild West Sign", "12 • Christmas Sign", "13 • Big Halloween Sign",
-                        "14 • Town Of Lights Sign", "15 • Town Of Dreamstowns Sign",
-                        "16 • Ancient Traditional Sign", "17 • Stone Sign", "18 • Music Sign",
-                        "19 • Aloha Sign", "20 • Paranomarl Sign", "21 • Inflatable Monster Sign",
-                        "22 • Marquee Sign", "23 • The Town Never Sleeps Sign", "24 • Bubble Gum For All Sign",
-                        "25 • Aniversary Sign", "26 • Coming To You Live Sign", "27 • Big Apple Sign",
-                        "28 • Artisan Sign", "29 • Rock Sign", "30 • Neon Sign", "31 • Cozy Farm Sign",
-                        "32 • Good Old Rancho Sign", "33 • Mill Sign", "34 • Mechanical Sign",
-                        "35 • Town Day Sign", "36 • Fountain Sign", "37 • Pirate Sign", "38 • Winter Sign",
-                        "39 • Festive Sign", "40 • Big Halloween 2025 Sign", "41 • Winter Wonder Sign",
-                        "42 • Mystical Sign", "43 • Supernatural Sign", "44 • Cthutun Sign",
-                        "45 • Holiday Sign", "46 • Extraterrestrial Sign", "47 • Ghostly Sign",
-                        "48 • Desert Sign", "49 • Cowboy Sign", "50 • Power Of Ancientors Sign",
-                        "51 • Atlantis Sign", "52 • Smart Garden Sign", "53 • Sweet Treat Sign",
-                        "54 • Penguin Resort Sign", "❌ • Back"}, nil, "CHOOSE ONE OPTION")
+                      "4 • Big Screen Sign", "5 • Cactus Sign", "6 • Outstanding Sign", "7 • Easter Sign",
+                      "8 • Snowboarding Sign", "9 • Cozy Home Sign", "10 • Flower Sign", "11 • Wild West Sign",
+                      "12 • Christmas Sign", "13 • Big Halloween Sign", "14 • Town Of Lights Sign",
+                      "15 • Town Of Dreamstowns Sign", "16 • Ancient Traditional Sign", "17 • Stone Sign",
+                      "18 • Music Sign", "19 • Aloha Sign", "20 • Paranomarl Sign",
+                      "21 • Inflatable Monster Sign", "22 • Marquee Sign", "23 • The Town Never Sleeps Sign",
+                      "24 • Bubble Gum For All Sign", "25 • Aniversary Sign", "26 • Coming To You Live Sign",
+                      "27 • Big Apple Sign", "28 • Artisan Sign", "29 • Rock Sign", "30 • Neon Sign",
+                      "31 • Cozy Farm Sign", "32 • Good Old Rancho Sign", "33 • Mill Sign",
+                      "34 • Mechanical Sign", "35 • Town Day Sign", "36 • Fountain Sign", "37 • Pirate Sign",
+                      "38 • Winter Sign", "39 • Festive Sign", "40 • Big Halloween 2025 Sign",
+                      "41 • Winter Wonder Sign", "42 • Mystical Sign", "43 • Supernatural Sign",
+                      "44 • Cthutun Sign", "45 • Holiday Sign", "46 • Extraterrestrial Sign",
+                      "47 • Ghostly Sign", "48 • Desert Sign", "49 • Cowboy Sign",
+                      "50 • Power Of Ancientors Sign", "51 • Atlantis Sign", "52 • Smart Garden Sign",
+                      "53 • Sweet Treat Sign", "54 • Penguin Resort Sign", "❌ • Back"}, nil, "CHOOSE ONE OPTION")
 
     if MENU == nil then
         return
     elseif MENU == 1 then
         menuescolhas2(1)
     elseif MENU == 2 then
-        hackSkinFree("6E696B73h", "7469635Fh", "69735F79h", "775F6E67h", "65676E69h", "69735F64h", "6C006E67h", "6320736Fh",
-            nil, nil, 26)
+        hackSkinFree("6E696B73h", "7469635Fh", "69735F79h", "775F6E67h", "65676E69h", "69735F64h", "6C006E67h",
+            "6320736Fh", nil, nil, 26)
     elseif MENU >= 3 and MENU <= 55 then
         hack()
     elseif MENU == 56 then
@@ -1484,29 +1470,29 @@ function menuSign()
 end
 
 function menuAvatar()
-    MENU = gg.choice({"👑 • 1 year", "👑 • 2 years", "👑 • 3 years", "👑 • 4 years",
-                        "👑 • 5 years", "👑 • 6 years", "👑 • 7 years", "👑 • 8 years",
-                        "👑 • 9 years", "👑 • 10 years", "👑 • 11 years", "👑 • ava 12",
-                        "👑 • ava 13", "👑 • ava 14", "👑 • ava 15", "👑 • ava 16", "👑 • ava 17",
-                        "👑 • ava 18", "👑 • ava 19", "👑 • ava 20", "👑 • ava 21", "👑 • ava 22",
-                        "👑 • ava 23", "👑 • ava 24", "👑 • ava 25", "👑 • ava 26", "👑 • ava 27",
-                        "👑 • ava 28", "👑 • ava 29", "👑 • ava 30", "👑 • ava 31", "👑 • ava 32",
-                        "👑 • ava 33", "👑 • ava 34", "👑 • ava 35", "👑 • ava 36", "👑 • ava 37",
-                        "👑 • ava 38", "👑 • ava 39", "👑 • ava 40", "👑 • ava 41", "👑 • ava 42",
-                        "👑 • ava 43", "👑 • ava 44", "👑 • ava 45", "👑 • ava 46", "👑 • ava 47",
-                        "👑 • ava 48", "👑 • ava 49", "👑 • ava 50", "👑 • ava 51", "👑 • ava 52",
-                        "👑 • ava 53", "👑 • ava 54", "👑 • ava 55", "👑 • ava 56", "👑 • ava 57",
-                        "👑 • ava 58", "👑 • ava 59", "👑 • ava 60", "👑 • ava 61", "👑 • ava 62",
-                        "👑 • ava 63", "👑 • ava 64", "👑 • ava 65", "👑 • ava 66", "👑 • ava 67",
-                        "👑 • ava 68", "👑 • ava 69", "👑 • ava 70", "👑 • ava 71", "👑 • ava 72",
-                        "👑 • ava 73", "👑 • ava 74", "👑 • ava 75", "👑 • ava 76", "👑 • ava 77",
-                        "👑 • ava 78", "👑 • ava 79", "👑 • ava 80", "👑 • ava 81", "👑 • ava 82",
-                        "👑 • ava 83", "👑 • ava 84", "👑 • ava 85", "👑 • ava 86", "👑 • ava 87",
-                        "👑 • ava 88", "👑 • ava 89", "👑 • ava 90", "👑 • ava 91", "👑 • ava 92",
-                        "👑 • ava 93", "👑 • ava 94", "👑 • ava 95", "👑 • ava 96", "👑 • ava 97",
-                        "👑 • ava 98", "👑 • ava 99", "👑 • ava 100", "👑 • ava 101",
-                        "👑 • ava 102", "👑 • ava 103", "👑 • ava 104", "👑 • ava 105", "❌ • Return"},
-        nil, "CHOOSE ONE OPTION")
+    MENU = gg.choice(
+        {"👑 • 1 year", "👑 • 2 years", "👑 • 3 years", "👑 • 4 years", "👑 • 5 years",
+         "👑 • 6 years", "👑 • 7 years", "👑 • 8 years", "👑 • 9 years", "👑 • 10 years",
+         "👑 • 11 years", "👑 • ava 12", "👑 • ava 13", "👑 • ava 14", "👑 • ava 15",
+         "👑 • ava 16", "👑 • ava 17", "👑 • ava 18", "👑 • ava 19", "👑 • ava 20",
+         "👑 • ava 21", "👑 • ava 22", "👑 • ava 23", "👑 • ava 24", "👑 • ava 25",
+         "👑 • ava 26", "👑 • ava 27", "👑 • ava 28", "👑 • ava 29", "👑 • ava 30",
+         "👑 • ava 31", "👑 • ava 32", "👑 • ava 33", "👑 • ava 34", "👑 • ava 35",
+         "👑 • ava 36", "👑 • ava 37", "👑 • ava 38", "👑 • ava 39", "👑 • ava 40",
+         "👑 • ava 41", "👑 • ava 42", "👑 • ava 43", "👑 • ava 44", "👑 • ava 45",
+         "👑 • ava 46", "👑 • ava 47", "👑 • ava 48", "👑 • ava 49", "👑 • ava 50",
+         "👑 • ava 51", "👑 • ava 52", "👑 • ava 53", "👑 • ava 54", "👑 • ava 55",
+         "👑 • ava 56", "👑 • ava 57", "👑 • ava 58", "👑 • ava 59", "👑 • ava 60",
+         "👑 • ava 61", "👑 • ava 62", "👑 • ava 63", "👑 • ava 64", "👑 • ava 65",
+         "👑 • ava 66", "👑 • ava 67", "👑 • ava 68", "👑 • ava 69", "👑 • ava 70",
+         "👑 • ava 71", "👑 • ava 72", "👑 • ava 73", "👑 • ava 74", "👑 • ava 75",
+         "👑 • ava 76", "👑 • ava 77", "👑 • ava 78", "👑 • ava 79", "👑 • ava 80",
+         "👑 • ava 81", "👑 • ava 82", "👑 • ava 83", "👑 • ava 84", "👑 • ava 85",
+         "👑 • ava 86", "👑 • ava 87", "👑 • ava 88", "👑 • ava 89", "👑 • ava 90",
+         "👑 • ava 91", "👑 • ava 92", "👑 • ava 93", "👑 • ava 94", "👑 • ava 95",
+         "👑 • ava 96", "👑 • ava 97", "👑 • ava 98", "👑 • ava 99", "👑 • ava 100",
+         "👑 • ava 101", "👑 • ava 102", "👑 • ava 103", "👑 • ava 104", "👑 • ava 105",
+         "❌ • Return"}, nil, "CHOOSE ONE OPTION")
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -1533,19 +1519,19 @@ function menuSticker()
         return
     elseif STICK == 1 then
         MENU = gg.choice({'🌟 • Sticker 1', '🌟 • Sticker 2', '🌟 • Sticker 3', '🌟 • Sticker 4',
-                            '🌟 • Sticker 5', '🌟 • Sticker 6', '🌟 • Sticker 7', '🌟 • Sticker 8',
-                            '🌟 • Sticker 9', '🌟 • Sticker 10', '🌟 • Sticker 11', '🌟 • Sticker 12',
-                            '🌟 • Sticker 13', '🌟 • Sticker 14', '🌟 • Sticker 15', '🌟 • Sticker 16',
-                            '🌟 • Sticker 17', '🌟 • Sticker 18', '🌟 • Sticker 19', '🌟 • Sticker 20',
-                            '🌟 • Sticker 21', '🌟 • Sticker 22', '🌟 • Sticker 23', '🌟 • Sticker 24',
-                            '🌟 • Sticker 25', '🌟 • Sticker 26', '🌟 • Sticker 27', '🌟 • Sticker 28',
-                            '🌟 • Sticker 29', '🌟 • Sticker 30', '🌟 • Sticker 31', '🌟 • Sticker 32',
-                            '🌟 • Sticker 33', '🌟 • Sticker 34', '🌟 • Sticker 35', '🌟 • Sticker 36',
-                            '🌟 • Sticker 37', '🌟 • Sticker 38', '🌟 • Sticker 39', '🌟 • Sticker 40',
-                            '🌟 • Sticker 41', '🌟 • Sticker 42', '🌟 • Sticker 43', '🌟 • Sticker 44',
-                            '🌟 • Sticker 45', '🌟 • Sticker 46', '🌟 • Sticker 47', '🌟 • Sticker 48',
-                            '🌟 • Sticker 49', '🌟 • Sticker 50', '🌟 • Sticker 51', '🌟 • Sticker 52',
-                            '🌟 • Sticker 53', '🌟 • Sticker 54', '🌟 • Sticker 55', '❌ • Return'}, nil,
+                          '🌟 • Sticker 5', '🌟 • Sticker 6', '🌟 • Sticker 7', '🌟 • Sticker 8',
+                          '🌟 • Sticker 9', '🌟 • Sticker 10', '🌟 • Sticker 11', '🌟 • Sticker 12',
+                          '🌟 • Sticker 13', '🌟 • Sticker 14', '🌟 • Sticker 15', '🌟 • Sticker 16',
+                          '🌟 • Sticker 17', '🌟 • Sticker 18', '🌟 • Sticker 19', '🌟 • Sticker 20',
+                          '🌟 • Sticker 21', '🌟 • Sticker 22', '🌟 • Sticker 23', '🌟 • Sticker 24',
+                          '🌟 • Sticker 25', '🌟 • Sticker 26', '🌟 • Sticker 27', '🌟 • Sticker 28',
+                          '🌟 • Sticker 29', '🌟 • Sticker 30', '🌟 • Sticker 31', '🌟 • Sticker 32',
+                          '🌟 • Sticker 33', '🌟 • Sticker 34', '🌟 • Sticker 35', '🌟 • Sticker 36',
+                          '🌟 • Sticker 37', '🌟 • Sticker 38', '🌟 • Sticker 39', '🌟 • Sticker 40',
+                          '🌟 • Sticker 41', '🌟 • Sticker 42', '🌟 • Sticker 43', '🌟 • Sticker 44',
+                          '🌟 • Sticker 45', '🌟 • Sticker 46', '🌟 • Sticker 47', '🌟 • Sticker 48',
+                          '🌟 • Sticker 49', '🌟 • Sticker 50', '🌟 • Sticker 51', '🌟 • Sticker 52',
+                          '🌟 • Sticker 53', '🌟 • Sticker 54', '🌟 • Sticker 55', '❌ • Return'}, nil,
             'CHOOSE ONE OPTION')
         if MENU == nil then
             return
@@ -1565,20 +1551,22 @@ function menuSticker()
             menuSticker()
         end
     elseif STICK == 2 then
-        MENU = gg.choice(
-            {'🌟 • Sticker 1x', '🌟 • Sticker 2x', '🌟 • Sticker 3x', '🌟 • Sticker 4x',
-             '🌟 • Sticker 5x', '🌟 • Sticker 6x', '🌟 • Sticker 7x', '🌟 • Sticker 8x',
-             '🌟 • Sticker 9x', '🌟 • Sticker 10x', '🌟 • Sticker 11x', '🌟 • Sticker 12x',
-             '🌟 • Sticker 13x', '🌟 • Sticker 14x', '🌟 • Sticker 15x', '🌟 • Sticker 16x',
-             '🌟 • Sticker 17x', '🌟 • Sticker 18x', '🌟 • Sticker 19x', '🌟 • Sticker 20x',
-             '🌟 • Sticker 21x', '🌟 • Sticker 22x', '🌟 • Sticker 23x', '🌟 • Sticker 24x',
-             '🌟 • Sticker 25x', '🌟 • Sticker 26x', '🌟 • Sticker 27x', '🌟 • Sticker 28x',
-             '🌟 • Sticker 29x', '🌟 • Sticker 30x', '🌟 • Sticker 31x', '🌟 • Sticker 32x',
-             '🌟 • Sticker 33x', '🌟 • Sticker 34x', '🌟 • Sticker 35x', '🌟 • Sticker 36x',
-             '🌟 • Sticker 37x', '🌟 • Sticker 38x', '🌟 • Sticker 39x', '🌟 • Sticker 40x',
-             '🌟 • Sticker 41x', '🌟 • Sticker 42x', '🌟 • Sticker 43x', '🌟 • Sticker 44x',
-             '🌟 • Sticker 45x', '🌟 • Sticker 46x', '🌟 • Sticker 47x', '🌟 • Sticker 48x',
-             '🌟 • Sticker 49x', '🌟 • Sticker 50x', '❌ • Return'}, nil, 'CHOOSE ONE OPTION')
+        MENU = gg.choice({'🌟 • Sticker 1x', '🌟 • Sticker 2x', '🌟 • Sticker 3x', '🌟 • Sticker 4x',
+                          '🌟 • Sticker 5x', '🌟 • Sticker 6x', '🌟 • Sticker 7x', '🌟 • Sticker 8x',
+                          '🌟 • Sticker 9x', '🌟 • Sticker 10x', '🌟 • Sticker 11x', '🌟 • Sticker 12x',
+                          '🌟 • Sticker 13x', '🌟 • Sticker 14x', '🌟 • Sticker 15x',
+                          '🌟 • Sticker 16x', '🌟 • Sticker 17x', '🌟 • Sticker 18x',
+                          '🌟 • Sticker 19x', '🌟 • Sticker 20x', '🌟 • Sticker 21x',
+                          '🌟 • Sticker 22x', '🌟 • Sticker 23x', '🌟 • Sticker 24x',
+                          '🌟 • Sticker 25x', '🌟 • Sticker 26x', '🌟 • Sticker 27x',
+                          '🌟 • Sticker 28x', '🌟 • Sticker 29x', '🌟 • Sticker 30x',
+                          '🌟 • Sticker 31x', '🌟 • Sticker 32x', '🌟 • Sticker 33x',
+                          '🌟 • Sticker 34x', '🌟 • Sticker 35x', '🌟 • Sticker 36x',
+                          '🌟 • Sticker 37x', '🌟 • Sticker 38x', '🌟 • Sticker 39x',
+                          '🌟 • Sticker 40x', '🌟 • Sticker 41x', '🌟 • Sticker 42x',
+                          '🌟 • Sticker 43x', '🌟 • Sticker 44x', '🌟 • Sticker 45x',
+                          '🌟 • Sticker 46x', '🌟 • Sticker 47x', '🌟 • Sticker 48x',
+                          '🌟 • Sticker 49x', '🌟 • Sticker 50x', '❌ • Return'}, nil, 'CHOOSE ONE OPTION')
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -1603,8 +1591,8 @@ end
 
 function menuExtras()
     MENU = gg.choice({"🌾 • XP (Wheat)(Free)", "📦 • City Market(Free)", "🏭 • Industry Academy",
-                     "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
-                     "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth", "❌ • Return"}, nil)
+                      "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
+                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1631,8 +1619,8 @@ end
 
 function menuRegatta()
     MENU = gg.choice({"🕹️ • Match-3 Tasks", "🚁 • Helicopter Tasks", "⛏️ • Digtools Mine Tasks",
-                     "🏭 • Produce Tasks", "📦 • Train Boxes Tasks", "🏝️ • Fruit Island Tasks",
-                     "🌾 • Harvest Tasks", "🚢 • Sending Ship Tasks", "❌ • Return"}, nil)
+                      "🏭 • Produce Tasks", "📦 • Train Boxes Tasks", "🏝️ • Fruit Island Tasks",
+                      "🌾 • Harvest Tasks", "🚢 • Sending Ship Tasks", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1665,7 +1653,7 @@ function hackXPByWheat()
     gg.setVisible(false)
     gg.searchNumber("120;300", gg.TYPE_FLOAT)
     gg.refineNumber("120", gg.TYPE_FLOAT)
-    
+
     setd(0, 0)
     setd(16, 0)
     setd(20, 1000)
@@ -1870,9 +1858,8 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards(Item 29)", "🎁 • Change Rewards",
-                             "🌟 • Extras", "⛵ • Regatta", "🚁 • Helicopter(Cash/Gold)", 
-                             "👍 • Unlimited Like", "❌ • Exit"},
-        nil, "Author: Helios Apollo")
+                             "🌟 • Extras", "⛵ • Regatta", "🚁 • Helicopter(Cash/Gold)",
+                             "👍 • Unlimited Like", "❌ • Exit"}, nil, "Author: Helios Apollo")
     if opcao then
         if opcao == 1 then
             hackGoldenPass()
