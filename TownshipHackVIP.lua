@@ -274,7 +274,7 @@ function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
         MENU = gg.choice({"💵 • Cash", "💰 • Gold", "🎉 • Items", "🎨 • Skins", "🏡 • Decoration",
-                          "🎟️ • Coupons", "⏱️ • Crop Time", "✨ • Badge", "💖 • Name and Frame",
+                          "🎟️ • Coupons", "⏱️ • Skip Time", "✨ • Badge", "💖 • Name and Frame",
                           "⭐ • Exp", "🪧 • Town Sign", "👨 • Avatar", "🏷️ • Sticker", "❌ • Back"},
             nil)
         if MENU == nil then
@@ -4410,7 +4410,8 @@ end
 function menuExtras()
     MENU = gg.choice({"🌾 • XP (Wheat)", "📦 • City Market", "🏭 • Industry Academy",
                       "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
-                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth", "❌ • Return"}, nil)
+                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth",
+                      "🚁 • Helicopter(Cash/Gold)", "🐮 • Animals 0s", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -4430,6 +4431,10 @@ function menuExtras()
         hackCompleteCommunityBuilding()
     elseif MENU == 8 then
         hackMiningDepth()
+    elseif MENU == 9 then
+        hackGoldCashByHeli()
+    elseif MENU == 10 then
+        hackSkipTimeAnimal()
     else
         MENUFREE()
     end
@@ -4594,8 +4599,8 @@ function hackGoldenPass()
     gg.processResume()
     gg.clearResults()
 
-    gg.searchNumber("1852990744;1651733601;1768641314;1601071457:185", gg.TYPE_DWORD) -- GATSBY PASS
-    gg.refineNumber("1768641314", gg.TYPE_DWORD)
+    gg.searchNumber("49;1852990754;1936290408;28:185", gg.TYPE_DWORD)
+    gg.refineNumber("49", gg.TYPE_DWORD)
 
     r = gg.getResults(2)
 
@@ -4654,11 +4659,11 @@ function hackGoldenPass()
         Ae[1].freeze = false
         gg.setValues(Ae)
 
-        gg.toast("hack done")
+        gg.toast("Done!")
         gg.clearResults()
     else
         -- do something else entirely
-        gg.toast("NO done...")
+        gg.toast("Fail. Please try again.")
         gg.clearResults()
     end
 end
@@ -4890,17 +4895,13 @@ function hackUnlimitedLike()
     gg.setRanges(gg.REGION_C_ALLOC)
     gg.setVisible(false)
     local input = gg.prompt({"Enter the city level:", "Enter the city like:"}, {0, 0}, {"number", "number"})
-
     if input == nil then
         gg.alert("No value was entered. Operation canceled.")
         return
     end
 
-    local level = input[1]
-    local likes = input[2]
-
     gg.setRanges(gg.REGION_C_ALLOC)
-    local searchString = string.format("%d;%d", level, likes)
+    local searchString = string.format("%d;%d", input[1], input[2])
     gg.clearResults()
     gg.searchNumber(searchString, gg.TYPE_DWORD)
     gg.toast("Please wait ...")
@@ -4915,7 +4916,6 @@ function hackUnlimitedLike()
     gg.sleep(5000)
 
     local updatedLikes = gg.prompt({"Enter the new number of likes:"}, {0}, {"number"})
-
     if updatedLikes == nil then
         gg.alert("You not write anything!")
         return
@@ -4999,8 +4999,22 @@ function hackUnlimitedLike()
             value = 0
         }})
     end
-
     gg.toast("Freeze like button successfully!")
+end
+
+function hackSkipTimeAnimal()
+    gg.toast("Loading...")
+    gg.processResume()
+    gg.clearResults()
+    gg.searchNumber("1200;3600;14400;25200", gg.TYPE_FLOAT) -- cow, chicken, sheep, pig
+    gg.getResults(4)
+    gg.editAll('1', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("18000;21600", gg.TYPE_FLOAT) -- mushroom, bee
+    gg.getResults(2)
+    gg.editAll('1', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.clearList()
 end
 
 function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num, quantity)
@@ -5159,7 +5173,7 @@ function hack(val1, val2, val3, val4, val5, val6, quantity)
 
     local int1 = nil
     if quantity == 0 then
-        int1 = gg.prompt({"Amount (Cash max 5000): "}, {"1"}, {"text"})
+        int1 = gg.prompt({"Amount (Cash max 5000/day): "}, {"1"}, {"text"})
         int1[1] = tonumber(int1[1])
     end
 
@@ -5189,8 +5203,8 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards(Item 29)", "🎁 • Change Rewards",
-                             "🌟 • Extras", "⛵ • Regatta", "🚁 • Helicopter(Cash/Gold)",
-                             "👍 • Unlimited Like", "❌ • Exit"}, nil, "Author: Helios Apollo")
+                             "🌟 • Extras", "⛵ • Regatta", "👍 • Unlimited Like", "❌ • Exit"}, nil,
+        "Author: Helios Apollo")
     if opcao then
         if opcao == 1 then
             hackGoldenPass()
@@ -5203,8 +5217,6 @@ function MENUFREE()
         elseif opcao == 5 then
             menuescolhas2(100)
         elseif opcao == 6 then
-            hackGoldCashByHeli()
-        elseif opcao == 7 then
             hackUnlimitedLike()
         else
             EXIT()

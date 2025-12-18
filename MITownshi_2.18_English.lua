@@ -4445,6 +4445,7 @@ function menuescolhas2(menu_tipo)
 "🎲 • Stuffed Animal Machine",
 "🎲 • Ultimate Console",
 "🎲 • Octopus Merry-Go-Round",
+"🎲 • waterfall_mountain_surfingers",
 "❌ • Return"   
     }, nil,"CHOOSE ONE OPTION")
 	if MaTPKi == nil then return end
@@ -4458,7 +4459,8 @@ function menuescolhas2(menu_tipo)
     if MaTPKi == 8 then hack("r8MaTPKi") end
     if MaTPKi == 9 then hack("r9MaTPKi") end
     if MaTPKi == 10 then hack("r10MaTPKi") end
-    if MaTPKi == 11 then menuescolhas2(12) end
+	if MaTPKi == 11 then hackDecoBebes_1() end
+    if MaTPKi == 12 then menuescolhas2(12) end
 	     elseif menu_tipo == 5360 then
         MNCvSW = gg.choice({
 '🎫 • Turtle Island Queen Expedition',
@@ -5130,7 +5132,7 @@ gg.setValues(A)
 
 
 end
-function hack15cD()
+function hack15cDNooooo()
   gg.toast( "Cargando...")  
   gg.processResume() 
   gg.clearResults()
@@ -5210,6 +5212,86 @@ gg.setValues(Ae)
   gg.alert("hack done 1") 
   gg.toast( "hack done 1...")
 gg.clearResults()
+end
+function hack15cD()
+ 
+ gg.searchNumber("1919443736;1852990754;1935764852;13618", gg.TYPE_DWORD)
+gg.refineNumber("13618", gg.TYPE_DWORD )
+
+
+local results = gg.getResults(1)
+
+-- Check if the results table is empty
+if #results == 0 then
+    gg.alert("Value not found! Please try again.")
+    -- You can add more code here to exit the script, prompt the user, etc.
+    return -- Stops script execution if nothing is found
+else
+ 
+local te = {}
+te[1] = {}
+te[1].address = results[1].address + 0x88
+te[1].flags = gg.TYPE_DWORD
+te[1].value = 0
+te[1].freeze = false
+gg.setValues(te)
+
+local Ge = {}
+Ge[1] = {}
+Ge[1].address = results[1].address + 0x8C
+Ge[1].flags = gg.TYPE_DWORD
+Ge[1].value = 7000
+Ge[1].freeze = false
+gg.setValues(Ge)
+
+local Ae = {}
+Ae[1] = {}
+Ae[1].address = results[1].address + 0x98
+Ae[1].flags = gg.TYPE_DWORD
+Ae[1].value = 1
+Ae[1].freeze = false
+gg.setValues(Ae)
+
+gg.alert("hack done 1") 
+--gg.clearResults()
+ 
+
+end
+local results = gg.getResults(2)
+
+-- Check if the results table is empty
+if #results == 0 then
+    gg.alert("Value not found! Please try again.")
+    -- You can add more code here to exit the script, prompt the user, etc.
+    return -- Stops script execution if nothing is found
+else
+
+local t = {}
+t[2] = {}
+t[2].address = results[2].address + 0x88
+t[2].flags = gg.TYPE_DWORD
+t[2].value = 0
+t[2].freeze = false
+gg.setValues(t)
+
+local G = {}
+G[2] = {}
+G[2].address = results[2].address + 0x8C
+G[2].flags = gg.TYPE_DWORD
+G[2].value = 7000
+G[2].freeze = false
+gg.setValues(G)
+
+local A = {}
+A[2] = {}
+A[2].address = results[2].address + 0x98
+A[2].flags = gg.TYPE_DWORD
+A[2].value = 1
+A[2].freeze = false
+gg.setValues(A)
+
+end
+
 end
 function hack15cDn()
   gg.toast( "Cargando...") --696B5326h;69415F6Eh;616C7072h;735F656Eh;65636170h --616C7072h;735F656Eh;65636170h 65726F63h;72616D10h;696B532Ah Skin_Chicken_space 1.937.011.470;1.701.998.435 .erniemars025
@@ -32234,7 +32316,83 @@ v_9[1].freeze = false
 gg.setValues(v_9)
 hackSkin_18h("rExpe_2")
 end
+function hackDecoBebes_1()
+  gg.toast( "Loading............  Deco")
+  gg.processResume()
+  gg.clearResults()
+gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)  --   
+count = gg.getResultsCount()
+val = gg.getResults(count)
+for i, v in ipairs(val) do
+  v.address = v.address + 0x2C -- offset where is address storing pointer
+   -- set appropiate flag
+end
+val = gg.getValues(val)
+for i, v in ipairs(val) do
+  -- v.value = v.value & 0xFFFFFFFF -- needed if game is 32 bit
+  v.address = v.value
+end
+gg.loadResults(val)
+local v_1 = {}  
+v_1[1] = {}
+v_1[1].address = val[1].address  
+v_1[1].flags = gg.TYPE_DWORD
+v_1[1].value = "65746177h"
+v_1[1].freeze = false
+gg.setValues(v_1)
+local v_2 = {}
+v_2[1] = {}
+v_2[1].address = val[1].address + 0x04
+v_2[1].flags = gg.TYPE_DWORD
+v_2[1].value = "6C616672h"
+v_2[1].freeze = false
+gg.setValues(v_2)
+local v_3 = {}
+v_3[1] = {}
+v_3[1].address = val[1].address + 0x08
+v_3[1].flags = gg.TYPE_DWORD
+v_3[1].value = "6F6D5F6Ch"
+v_3[1].freeze = false
+gg.setValues(v_3)
+local v_4 = {}
+v_4[1] = {}
+v_4[1].address = val[1].address + 0x0C
+v_4[1].flags = gg.TYPE_DWORD
+v_4[1].value = "61746E75h"
+v_4[1].freeze = false
+gg.setValues(v_4)
+local v_5 = {}
+v_5[1] = {}
+v_5[1].address = val[1].address + 0x10
+v_5[1].flags = gg.TYPE_DWORD
+v_5[1].value = "735F6E69h"
+v_5[1].freeze = false
+gg.setValues(v_5)
+local v_6 = {}
+v_6[1] = {}
+v_6[1].address = val[1].address + 0x14
+v_6[1].flags = gg.TYPE_DWORD
+v_6[1].value = "69667275h" 
+v_6[1].freeze = false
+gg.setValues(v_6)
+local v_7 = {}
+v_7[1] = {}
+v_7[1].address = val[1].address + 0x18
+v_7[1].flags = gg.TYPE_DWORD
+v_7[1].value = "7265676Eh"
+v_7[1].freeze = false
+gg.setValues(v_7)
 
+local v_8 = {}
+v_8[1] = {}
+v_8[1].address = val[1].address + 0x1C
+v_8[1].flags = gg.TYPE_DWORD
+v_8[1].value = "00000073h"
+v_8[1].freeze = false
+gg.setValues(v_8)
+hackSkin_1Dh("rExpe_2")
+
+end
 
 
 function hackBadg(varith)

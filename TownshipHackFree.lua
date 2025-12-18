@@ -274,7 +274,7 @@ function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
         MENU = gg.choice({"💵 • Cash", "💰 • Gold", "🎉 • Items", "🎨 • Skins", "🏡 • Decoration",
-                          "🎟️ • Coupons", "⏱️ • Crop Time", "✨ • Badge", "💖 • Name and Frame",
+                          "🎟️ • Coupons", "⏱️ • Skip Time", "✨ • Badge", "💖 • Name and Frame",
                           "⭐ • Exp", "🪧 • Town Sign", "👨 • Avatar", "🏷️ • Sticker", "❌ • Back"},
             nil)
         if MENU == nil then
@@ -1590,9 +1590,10 @@ function menuSticker()
 end
 
 function menuExtras()
-    MENU = gg.choice({"🌾 • XP (Wheat)(Free)", "📦 • City Market(Free)", "🏭 • Industry Academy",
+    MENU = gg.choice({"🌾 • XP (Wheat)", "📦 • City Market", "🏭 • Industry Academy",
                       "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
-                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth", "❌ • Return"}, nil)
+                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth",
+                      "🚁 • Helicopter(Cash/Gold)", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1612,6 +1613,8 @@ function menuExtras()
         gg.alert("Upgrade key to VIP to use this feature.")
     elseif MENU == 8 then
         gg.alert("Upgrade key to VIP to use this feature.")
+    elseif MENU == 9 then
+        hackGoldCashByHeli()
     else
         MENUFREE()
     end
@@ -1659,6 +1662,80 @@ function hackXPByWheat()
     setd(20, 1000)
     gg.clearResults()
     gg.clearList()
+end
+
+function hackGoldenPass()
+    gg.toast("Processing...")
+    gg.processResume()
+    gg.clearResults()
+
+    gg.searchNumber("49;1852990754;1936290408;28:185", gg.TYPE_DWORD)
+    gg.refineNumber("49", gg.TYPE_DWORD)
+
+    r = gg.getResults(2)
+
+    if gg.getResultCount() == 2 then
+
+        local t = {}
+        t[2] = {}
+        t[2].address = r[2].address - 0x08
+        t[2].flags = gg.TYPE_DWORD
+        t[2].value = 1
+        t[2].freeze = false
+        gg.setValues(t)
+
+        local G = {}
+        G[2] = {}
+        G[2].address = r[2].address - 0x14
+        G[2].flags = gg.TYPE_DWORD
+        G[2].value = 1000
+        G[2].freeze = false
+        gg.setValues(G)
+
+        local A = {}
+        A[2] = {}
+        A[2].address = r[2].address - 0x18
+        A[2].flags = gg.TYPE_DWORD
+        A[2].value = 0
+        A[2].freeze = false
+        gg.setValues(A)
+
+        gg.toast("hack done")
+        gg.clearResults()
+    elseif gg.getResultCount() == 1 then
+        re = gg.getResults(1)
+
+        local te = {}
+        te[1] = {}
+        te[1].address = re[1].address - 0x08
+        te[1].flags = gg.TYPE_DWORD
+        te[1].value = 1
+        te[1].freeze = false
+        gg.setValues(te)
+
+        local Ge = {}
+        Ge[1] = {}
+        Ge[1].address = re[1].address - 0x14
+        Ge[1].flags = gg.TYPE_DWORD
+        Ge[1].value = 1000
+        Ge[1].freeze = false
+        gg.setValues(Ge)
+
+        local Ae = {}
+        Ae[1] = {}
+        Ae[1].address = re[1].address - 0x18
+        Ae[1].flags = gg.TYPE_DWORD
+        Ae[1].value = 0
+        Ae[1].freeze = false
+        gg.setValues(Ae)
+
+        gg.toast("Done!")
+        gg.clearResults()
+    else
+        -- do something else entirely
+        gg.toast("Fail. Please try again.")
+        gg.clearResults()
+    end
 end
 
 function hackRegatta()
@@ -1828,7 +1905,7 @@ end
 function hackFree(val1, val2, val3, val4, val5, val6, quantity)
     local int1 = nil
     if quantity == 0 then
-        int1 = gg.prompt({"Amount (Cash max 5000): "}, {"1"}, {"text"})
+        int1 = gg.prompt({"Amount (Cash max 5000/day): "}, {"1"}, {"text"})
         int1[1] = tonumber(int1[1])
     end
 

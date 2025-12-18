@@ -176,6 +176,8 @@ if not registered then
                  "\n\n👉 Gửi yêu cầu tạo key.")
     local new_key = request_key(device_id)
     gg.sleep(3000)
+else
+    gg.alert("📱 Device ID của bạn là:\n" .. device_id)
 end
 
 local saved_key, saved_path = load_saved_key()
