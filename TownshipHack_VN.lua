@@ -111,7 +111,7 @@ function changeReward()
     val = gg.getResults(2)
 
     if gg.getResultsCount() == 0 then
-        gg.toast("You have frozen reward, if not, restart the game.")
+        gg.alert("Bạn đã đóng băng quà, nếu chưa hãy khởi động lại game.")
         gg.clearResults()
         return
     end
@@ -265,7 +265,7 @@ function changeReward()
     gg.setValues(ya_8)
     gg.addListItems(ya_8)
 
-    gg.toast("Free reward done!")
+    gg.toast("Thành công!")
     gg.clearResults()
 end
 
@@ -273,10 +273,11 @@ end
 function menuescolhas2(menu_tipo)
     SalvarUltimoMenu(menu_tipo)
     if menu_tipo == 1 then
-        MENU = gg.choice({"💵 • Cash", "💰 • Gold", "🎉 • Items", "🎨 • Skins", "🏡 • Decoration",
-                          "🎟️ • Coupons", "⏱️ • Skip Time", "✨ • Badge", "💖 • Name and Frame",
-                          "⭐ • Exp", "🪧 • Town Sign", "👨 • Avatar", "🏷️ • Sticker", "❌ • Back"},
-            nil)
+        MENU = gg.choice({"💵 • Tiền", "💰 • Vàng", "🎉 • Vật phẩm", "🎨 • Trang phục",
+                          "🏡 • Trang trí", "🎟️ • Phiếu", "⏱️ • Tua thời gian",
+                          "✨ • Huy hiệu", "💖 • Tên và Khung", "⭐ • Kinh nghiệm",
+                          "🪧 • Bảng hiệu", "👨 • Ảnh đại diện", "🏷️ • Nhãn dán",
+                          "❌ • Quay lại"}, nil)
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -309,9 +310,10 @@ function menuescolhas2(menu_tipo)
             MENUFREE()
         end
     elseif menu_tipo == 3 then
-        MENU = gg.choice({"⛏️ • Mine", "🏗️ • Construction", "💎 • Gems", "🔷 • Ingots",
-                          "⚡️ • Advantage", "🧪 • Lab", "🕹️ • Minigame", "🗺️ • Expansion",
-                          "🏚️ • Barn", "🐶 • Animal Card", "❌ • Return"}, nil)
+        MENU = gg.choice({"⛏️ • Đào mỏ", "🏗️ • Xây dựng", "💎 • Ngọc",
+                          "🔷 • Thỏi kim loại", "⚡️ • Nâng cao", "🧪 • Phòng thí nghiệm",
+                          "🕹️ • Minigame", "🗺️ • Mở rộng đất", "🏚️ • Kho",
+                          "🐶 • Thẻ mở thú","🕹️ • Token", "❌ • Quay lại"}, nil)
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -335,6 +337,8 @@ function menuescolhas2(menu_tipo)
         elseif MENU == 10 then
             hack("1667589160", "893013611", "977480752", "978660400", "978463801", "52", 10)
         elseif MENU == 11 then
+            hack("1634878494", "1315860327", "1416917861", "1852140399", "0", "0", 0)
+        elseif MENU == 12 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 301 then
@@ -356,9 +360,9 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 309 then
         menuBarn()
     elseif menu_tipo == 4 then
-        MENU = gg.choice({"🏝️ • Island", "🚁 • Heli & Helipad", "🚂 • Train & Train Station",
-                          "✈️ • Airport & Airplane", "🚢 • Ports & Ship", "🐔 • Chickens",
-                          "🐮 • Cows", "🐑 • Sheep", "🐷 • Pigs", "❌ • Back"}, nil)
+        MENU = gg.choice({"🏝️ • Đảo", "🚁 • Trực thăng & Trạm", "🚂 • Tàu hoả & Sân ga",
+                          "✈️ • Máy bay & Sân bay", "🚢 • Bến cảng & Tàu", "🐔 • Gà",
+                          "🐮 • Bò", "🐑 • Cừu", "🐷 • Lợn", "❌ • Quay lại"}, nil)
 
         if MENU == nil then
             return
@@ -407,7 +411,7 @@ function menuescolhas2(menu_tipo)
                           "11 • Banner & Statues", "12 • Tree", "13 • Inflatable", "14 • Puzzle",
                           "15 • Diamonds", "16 • China", "17 • Flower", "18 • Kids", "19 • Easter",
                           "20 • Pirate", "21 • Atlantis", "22 • Fruit", "23 • Entertainment", "24 • Cowboy",
-                          "25 • Expedition", "❌ • Return"}, nil)
+                          "25 • Expedition", "❌ • Quay lại"}, nil)
 
         if MENU == nil then
             return
@@ -537,7 +541,7 @@ function menuescolhas2(menu_tipo)
 end
 
 function menuMine()
-    MENU = gg.choice({"⛏️ • Pickaxe", "🧨 • Explosive", "💣 • Dynamite", "❌ • Return"}, nil)
+    MENU = gg.choice({"⛏️ • Quốc", "🧨 • Thuốc nổ", "💣 • Mìn", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -552,8 +556,8 @@ function menuMine()
 end
 
 function menuConstruction()
-    MENU = gg.choice({"🪟 • Glass", "🧱 • Brick", "🪨 • Slab", "🏭 • Electric Saw",
-                      "🏭 • Jackhammer", "🏭 • Drill", "❌ • Back"}, nil)
+    MENU = gg.choice({"🪟 • Kính", "🧱 • Gạch", "🪨 • Bê tông", "🏭 • Máy cưa điện",
+                      "🏭 • Máy đục", "🏭 • Máy khoan", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -574,7 +578,8 @@ function menuConstruction()
 end
 
 function menuGems()
-    MENU = gg.choice({"💎 • Orange", "💎 • Green", "💎 • Red", "❌ • Return"}, nil)
+    MENU =
+        gg.choice({"💎 • Ngọc cam", "💎 • Ngọc xanh", "💎 • Ngọc đỏ", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -589,10 +594,10 @@ function menuGems()
 end
 
 function menuIngots()
-    MENU = gg.choice(
-        {"🟤 • Bronze Ingot", "⚪ • Silver Ingot", "🟡 • Gold Ingot", "🔷 • Platinum Ingot",
-         "🟫 • Clay", "🟤 • Bronze Ore", "⚪ • Silver Ore", "🟡 • Gold Ore", "🔷 • Platinum Ore",
-         "❌ • Return"}, nil)
+    MENU = gg.choice({"🟤 • Thỏi đồng", "⚪ • Thỏi bạc", "🟡 • Thỏi vàng",
+                      "🔷 • Thỏi bạch kim", "🟫 • Đất sét", "🟤 • Quặng đồng",
+                      "⚪ • Quặng bạc", "🟡 • Quặng vàng", "🔷 • Quặng bạch kim",
+                      "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -619,9 +624,9 @@ function menuIngots()
 end
 
 function menuAdvantage()
-    MENU = gg.choice({"🎁 • 2x Train", "🎁 • Laboratory", "🎁 • Airplane Gold", "🎁 • 2x Market",
-                      "🎁 • Airplane box", "🎁 • 2 game tokens", "🎁 • 50 lucky houses", "❌ • Return"},
-        nil)
+    MENU = gg.choice({"🎁 • X2 Tàu hoả", "🎁 • Phòng thí nghiệm", "🎁 • Tăng vàng máy bay",
+                      "🎁 • X2 Vật phẩm trong chợ", "🎁 • Hộp máy bay",
+                      "🎁 • Điểm đua thuyền", "🎁 • 50 cỏ 4 lá", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -648,7 +653,7 @@ function menuLab()
                       "🚀 • Factories", "🚀 • Helicopter Orders", "🚀 • Rapid Crops",
                       "🚀 • Double Harvests", "🚀 • Double Farms", "🚀 • Earn Double Heli",
                       "🚀 • Chat Requests", "🚀 • Zoo", "🚀 • Craft Two Products",
-                      "🚀 • Double Coins Airplane", "🚀 • Orders", "🚀 • Ingot Ships", "❌ • Return"},
+                      "🚀 • Double Coins Airplane", "🚀 • Orders", "🚀 • Ingot Ships", "❌ • Quay lại"},
         nil)
 
     if MENU == nil then
@@ -691,10 +696,12 @@ function menuLab()
 end
 
 function menuMinigame()
-    MENU = gg.choice(
-        {"❤️ • Lives", "🎊 • Ball", "🚀 • Rockets", "💣 • Bombs", "➕ • Fire hydrant",
-         "⛏️ • Pickaxe", "🤚 • Hand", "⚡️ • Energy", "✨ • Double(x2)", "🧰 • Weight",
-         "🧰 • Fan", "🧰 • Jackhammer", "🧰 • Drill", "❌ • Return"}, nil)
+    MENU = gg.choice({"❤️ • Lượt chơi", "🎊 • Quả cầu", "🚀 • Tên lửa", "💣 • Bom",
+                      "➕ • Trụ cứu hỏa (Bản cũ)", "⛏️ • Đục (Bản cũ)",
+                      "🤚 • Bàn tay (Bản cũ)", "⚡️ • Năng lượng", "✨ • X2",
+                      "🧰 • Tạ (Bản mới)", "🧰 • Quạt (Bản mới)", "🧰 • Đục (Bản mới)",
+                      "🧰 • Khoan (Bản mới)", "🎊 • Vô hạn quả cầu", "🚀 • Vô hạn tên lửa", 
+                      "💣 • Vô hạn bom", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -715,7 +722,7 @@ function menuMinigame()
     elseif MENU == 8 then
         hack("1886938400", "1953064037", "1164865385", "1735550318", "121", "0", 0)
     elseif MENU == 9 then
-        hack("6D69542Ch", "6E456465h", "79746974h", "61776552h", "6C416472h", "0032586Ch", 864000)
+        hack("6D69542Ch", "6E456465h", "79746974h", "61776552h", "6C416472h", "0032586Ch", 0)
     elseif MENU == 10 then
         hack("56336D1Ch", "69747265h", "4C6C6163h", "00656E69h", "00000000h", "00000000h", 0)
     elseif MENU == 11 then
@@ -724,13 +731,22 @@ function menuMinigame()
         hack("4D336D10h", "656C6C61h", "00000074h", "00000000h", "00000000h", "00000000h", 0)
     elseif MENU == 13 then
         hack("48336D20h", "7A69726Fh", "61746E6Fh", "6E694C6Ch", "00000065h", "00000000h", 0)
+    elseif MENU == 14 then
+        hackSkin("6374614Dh", "694C3368h", "6E746867h", "42676E69h", "74736F6Fh", "666E695Fh", "656D6954h", "05730500h",
+            nil, nil, 28, 0)
+    elseif MENU == 15 then
+        hackSkin("6374614Dh", "694C3368h", "6F42656Eh", "5F74736Fh", "54666E69h", "00656D69h", "746E756Fh", "04007265h",
+            nil, nil, 23, 0)
+    elseif MENU == 16 then
+        hackSkin("6374614Dh", "6F423368h", "6F42626Dh", "5F74736Fh", "54666E69h", "00656D69h", "00000000h", "00000000h",
+            nil, nil, 23, 0)
     else
         menuescolhas2(3)
     end
 end
 
 function menuExpansion()
-    MENU = gg.choice({"⛏️ • Shovel", "🪓 • Axe", "🪚 • Saw", "❌ • Return"}, nil)
+    MENU = gg.choice({"⛏️ • Xẻng", "🪓 • Rìu", "🪚 • Cưa", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -746,7 +762,7 @@ function menuExpansion()
 end
 
 function menuBarn()
-    MENU = gg.choice({"🔩 • Nail", "🔨 • Hammer", "🪣 • Paint", "❌ • Return"}, nil)
+    MENU = gg.choice({"🔩 • Đinh", "🔨 • Búa", "🪣 • Thùng sơn", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -766,7 +782,7 @@ function menuSkinCastle()
                       "4 • Pirate Fort", "5 • Pirate Base", "6 • Pirate Hut", "7 • Easter Village",
                       "8 • Little Paris", "9 • Aztec Island", "10 • Neanderthal Island", "11 • Ice Castle",
                       "12 • Witchs House", "13 • Witchs Mansion", "14 • Witchs Castle", "15 • Christmas Castle",
-                      "❌ • Return"}, nil)
+                      "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -826,7 +842,7 @@ function menuSkinHeli_Helipad()
                       "🚁 • Egg Chopper", "18 • Underwater Palace Helipad", "🚁 • Flying Bathyscaphe",
                       "19 • Haunted Tower Helipad", "🚁 • Flying Cauldron", "20 • Private Helipad",
                       "🚁 • Private Helicopter", "21 • Roll N Roll Helipad", "🚁 • Roll N Roll Helicopter",
-                      "22 • Christmas Helipad", "🚁 • Christmas Helicopter", "❌ • Back"}, nil)
+                      "22 • Christmas Helipad", "🚁 • Christmas Helicopter", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -973,7 +989,7 @@ function menuSkinTrain_TrainStation()
                       "16 • Ancient Settlement Station", "🚂 • Primeval Express", "17 • Christmas Station",
                       "🚂 • Chrismas Train", "18 • Gatsby Station", "🚂 • Gatsby Train",
                       "19 • Old Christmas Station", "🚂 • Old Chrismas Train", "20 • French Station",
-                      "🚂 • French Train", "❌ • Back"}, nil)
+                      "🚂 • French Train", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1091,7 +1107,8 @@ function menuSkinAirport_Airplane()
          "✈️ • Holiday Plane", "12 • Symphony Airport", "✈️ • Symphony Plane", "13 • Ghost Airport",
          "✈️ • Ghost Plane", "14 • Easter Airport", "✈️ • Bird Plane", "15 • Ski Airport",
          "✈️ • Aero Sleigh", "16 • Sultan Airport", "✈️ • Arabian Plane", "17 • Fashion Airport",
-         "✈️ • Fashion Plane", "18 • Dracula Airport", "✈️ • Vampire Plane", "❌ • Return"}, nil)
+         "✈️ • Fashion Plane", "18 • Dracula Airport", "✈️ • Vampire Plane", "19 • Mexican Airport", 
+         "✈️ • Mexican Plane", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1185,6 +1202,12 @@ function menuSkinAirport_Airplane()
     elseif MENU == 38 then
         hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "61485F65h", "776F6C6Ch", "326E6565h", "00353230h", "00000000h",
             nil, nil, 27)
+    elseif MENU == 39 then
+        hackSkin("6E696B53h", "7269415Fh", "74726F70h", "7261635Fh", "6176696Eh", "30375F6Ch", "BD280400h", "00000078h",
+            nil, nil, 24)
+    elseif MENU == 40 then
+        hackSkin("6E696B53h", "7269415Fh", "6E616C70h", "61635F65h", "76696E72h", "375F6C61h", "BD280030h", "00000078h",
+            nil, nil, 25)
     else
         menuescolhas2(4)
     end
@@ -1200,7 +1223,8 @@ function menuSkinPort_Ship()
                       "🚢 • Love Boat", "12 • Arctic Port", "🚢 • Arctic Ship", "13 • Egyptian Port",
                       "🚢 • Egyptian Ship", "14 • Lantern Harbor", "🚢 • Dragon Boat", "15 • Doge Pier",
                       "🚢 • Gondola", "16 • Sweet Port", "🚢 • Croissant Ferry", "17 • Japanese Port",
-                      "🚢 • Japanese Ship", "18 • Knight Port", "🚢 • Knight Ship", "❌ • Back"}, nil)
+                      "🚢 • Japanese Ship", "18 • Knight Port", "🚢 • Knight Ship", "19 • Broadway Port", 
+                      "🚢 • Broadway Ship", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1286,6 +1310,11 @@ function menuSkinPort_Ship()
         hack("1768641312", "1750294382", "1264545897", "1751607662", "116", "0", 50)
     elseif MENU == 36 then
         hack("1768641316", "1632132974", "1919902322", "1768835935", "7628903", "0", 50)
+    elseif MENU == 37 then
+        hackSkin("6E696B53h", "7261485Fh", "5F726F62h", "616F7262h", "79617764h", "0039365Fh", "00000000h", "00000000h",
+            nil, nil, 23)
+    elseif MENU == 38 then
+        hack("696B532Ah", "68535F6Eh", "625F7069h", "64616F72h", "5F796177h", "00003936h", 50)
     else
         menuescolhas2(4)
     end
@@ -1298,7 +1327,7 @@ function menuSkinChicken()
                       "11 • Halloween Chicken", "12 • Santa Little Helper Chicken", "13 • Party Chicken",
                       "14 • Fairytale Chicken", "15 • Harlequin Chicken", "16 • Vacation Chicken",
                       "17 • Rock N Roll Chicken", "18 • Battle Chicken", "19 • Christmas Chicken",
-                      "❌ • Return"}, nil)
+                      "20 • Broadway Chicken", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1349,6 +1378,9 @@ function menuSkinChicken()
     elseif MENU == 19 then
         hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "7268635Fh", "6D747369h", "365F7361h", "00680037h", "00000000h",
             nil, nil, 25)
+    elseif MENU == 20 then
+        hackSkin("6E696B53h", "6968435Fh", "6E656B63h", "6F72625Fh", "61776461h", "39365F79h", "00000000h", "00000000h",
+            nil, nil, 24)
     else
         menuescolhas2(4)
     end
@@ -1361,7 +1393,7 @@ function menuSkinCow()
                       "9 • Flower Cow", "10 • Birthday Cow", "11 • Ceremonial Cow", "12 • Elf Cow",
                       "13 • Party Cow", "14 • Flirty Cow", "15 • Stylish Cow", "16 • Confectioner Cow",
                       "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "20 • Arabian Cow",
-                      "21 • Japanese Cow", "22 • French Cow", "❌ • Return"}, nil)
+                      "21 • Japanese Cow", "22 • French Cow", "23 • Mexican Cow", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1409,6 +1441,8 @@ function menuSkinCow()
         hack("1768641308", "1866686318", "1634361207", "7233904", "0", "0", 50)
     elseif MENU == 22 then
         hack("696B5324h", "6F435F6Eh", "72665F77h", "65636E61h", "0038365Fh", "00000000h", 50)
+    elseif MENU == 23 then
+        hack("696B5328h", "6F435F6Eh", "61635F77h", "76696E72h", "375F6C61h", "00000030h", 50)
     else
         menuescolhas2(4)
     end
@@ -1422,7 +1456,7 @@ function menuSkinSheep()
          "9 • Easter Sheep", "10 • Spring Festival Sheep", "11 • Ballroom Sheep", "12 • Nordric Sheep",
          "13 • Baa baa bandits Sheep", "14 • Vacation Sheep", "15 • Festive Sheep", "16 • Christmas Sheep",
          "17 • Sheep Witch", "18 • Mythic Sheep", "19 • Vampire Sheep", "20 • Gatsby Sheep",
-         "21 • Rocker Sheep", "22 • Rock N Roll Shades Sheep", "❌ • Return"}, nil)
+         "21 • Rocker Sheep", "22 • Rock N Roll Shades Sheep", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1485,7 +1519,7 @@ function menuSkinSheep()
 end
 
 function menuSkinPig()
-    MENUSxd_113 = gg.choice({"1 • Ceremonial Pig", "2 • Cupid Pig", "❌ • Return"}, nil)
+    MENUSxd_113 = gg.choice({"1 • Ceremonial Pig", "2 • Cupid Pig", "❌ • Quay lại"}, nil)
     if MENUSxd_113 == nil then
         return
     elseif MENUSxd_113 == 1 then
@@ -1594,7 +1628,7 @@ function menuDecor()
     elseif MENU == 31 then
         hack('1701860138', '1818323299', '1969317186', '1868527988', '1886352483', '29557', 5)
     elseif MENU == 32 then
-        gg.alert("Updating")
+        gg.alert("Đang cập nhật...")
     elseif MENU == 33 then
         hack('1634034212', '1601795189', '1752394086', '1918987615', '7628139', '113', 5)
     elseif MENU == 34 then
@@ -1722,7 +1756,7 @@ function menuDecorSummer()
          "5 • Beach Volleyball", "6 • Bungalow", "7 • Catch The Wave Ride", "8 • Coconut Paradise Juice Bar",
          "9 • Cozy Tropics", "10 • First Board", "11 • Flowery Hammock", "12 • Infinite Wave",
          "13 • Jet Pack Attraction", "14 • Knife Throwing", "15 • Lure Makers Hut", "16 • Oasis",
-         "17 • Palm Tree Juice Bar", "18 • Vacation", "19 • Pool", "❌ • Return"}, nil)
+         "17 • Palm Tree Juice Bar", "18 • Vacation", "19 • Pool", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1783,7 +1817,7 @@ function menuDecorValentine()
                       "26 • Love Padlocks", "27 • Love Tunnel", "28 • Peacocks In Love", "29 • Pond With Swans",
                       "30 • Royal Carriage", "31 • Ruby Heart", "32 • Statue Of Lovers", "33 • Stuffed Sheep",
                       "34 • Stuffed Unicorn", "35 • Teddy Bear", "36 • Topiary Love", "37 • Undying Love",
-                      "❌ • Return"}, nil)
+                      "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -1898,7 +1932,7 @@ function menuDecorChristmas()
                       "68 • Santas Helpers House", "69 • Santas Helpers", "70 • Santas Office",
                       "71 • Santas Reindeer", "72 • Snow Cannon", "73 • Snow Fight", "74 • Snow Fortress",
                       "75 • Snowman Igloo", "76 • Winter Activities", "77 • Winter Fun", "78 • Hot Springs",
-                      "79 • Frozen Lake", "❌ • Return"}, nil)
+                      "79 • Frozen Lake", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2087,7 +2121,7 @@ function menuDecorHaloween()
                       "27 • Sinister Mansion", "28 • Spiderweb Tree", "29 • Spooky Crypt",
                       "30 • Super Natural Orchestra", "31 • Supernatural Veggie Patch", "32 • Tree With Pumpkins",
                       "33 • Witch Parking", "34 • Witch Shop", "35 • Phantom Ship", "36 • Haunted Ship",
-                      "❌ • Return"}, nil)
+                      "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2182,7 +2216,7 @@ function menuDecorTheFirst()
                       "4 • The first firefighter", "5 • The first commander", "6 • The first policeman",
                       "7 • The first musician", "8 • The first painter", "9 • The first soccer player",
                       "10 • The first scientist", "11 • The first writer", "12 • The first aircraft designer",
-                      "13 • The first chemist", "❌ • Return"}, nil)
+                      "13 • The first chemist", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2223,8 +2257,8 @@ function menuDecorSports()
                       "9 • Baseball Practice", "10 • Bumper Car Ride", "11 • Champions Plaza", "12 • Curling",
                       "13 • Discobolus", "14 • Diving Board", "15 • Drone Race", "16 • Heavyweight Champ",
                       "17 • Olympic Village", "18 • Snow Wave Statue", "19 • Torchbearer Statue",
-                      "20 • Training Ground", "21 • Triumphal Victory Statue", "22 • World Tour", "❌ • Return"},
-        nil)
+                      "20 • Training Ground", "21 • Triumphal Victory Statue", "22 • World Tour",
+                      "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2288,7 +2322,7 @@ function menuDecorAirplane()
     MENU = gg.choice({"1 • Flight Simulator", "2 • Steam Plane", "3 • Biplane", "4 • Winged Winner",
                       "5 • Air Galleon", "6 • Amphibious Aircraft", "7 • Biomasspowered Airplane",
                       "8 • Experimental Plane", "9 • Flyseasoned Friends", "10 • Hat Air Balloon",
-                      "11 • Piggy Blimp", "❌ • Return"}, nil)
+                      "11 • Piggy Blimp", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2328,7 +2362,7 @@ function menuDecorCandy()
     MENU = gg.choice({"1 • Candy House", "2 • Mountain Of Candy", "3 • Candy Tree", "4 • Candy Bridge",
                       "5 • Gingerbread Gate", "6 • Berry Tree", "7 • Candy Carousel", "8 • Candy Castle",
                       "9 • Candy Express", "10 • Caramel Apple", "11 • Gingerbread Fence",
-                      "12 • Jelly Trampoline", "13 • Sugar Tree", "14 • Sweet Tooth Street", "❌ • Return"},
+                      "12 • Jelly Trampoline", "13 • Sugar Tree", "14 • Sweet Tooth Street", "❌ • Quay lại"},
         nil)
 
     if MENU == nil then
@@ -2375,7 +2409,7 @@ function menuDecorRuins()
                       "20 • Primeval Settlement", "21 • Pyramid Of Cheops", "22 • Rope Bridge",
                       "23 • Sarcophagus", "24 • Scarab Statue", "25 • Sheikhs Palace", "26 • Stone Age House",
                       "27 • Stonehenge", "28 • The First Fider", "29 • Underwater Temple", "30 • Trojan Horse",
-                      "31 • Yeti", "32 • Wildlife Reserve", "33 • Papyrus Boat", "❌ • Return"}, nil)
+                      "31 • Yeti", "32 • Wildlife Reserve", "33 • Papyrus Boat", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2469,7 +2503,7 @@ function menuDecorBannerStatues()
                       "42 • Spring", "43 • Sun Monument", "44 • Tea Party Fountain",
                       "45 • The Magnificent Five", "46 • Throes Of Art", "47 • Titans",
                       "48 • Township Turned 2", "49 • Triathlon", "50 • Tyrannosaurus", "51 • Unexpected Gift",
-                      "52 • Zoo", "53 • BFF Fountain", "❌ • Return"}, nil)
+                      "52 • Zoo", "53 • BFF Fountain", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2612,7 +2646,7 @@ end
 function menuDecorTree()
     MENU = gg.choice({"1 • Jacaranda", "2 • Cactus", "3 • Baobab", "4 • Date Palm", "5 • Wisteria",
                       "6 • Delonix regia", "7 • Araguaney", "8 • Rhododendron", "9 • Gladioli",
-                      "10 • Poppies", "11 • Field of Flowers", "❌ • Return"}, nil)
+                      "10 • Poppies", "11 • Field of Flowers", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2653,7 +2687,7 @@ function menuDecorInflatable()
          "20 • Inflatable Duck", "21 • Inflatable Butterfly", "22 • Inflatable Turtle",
          "23 • Inflatable Parrot", "24 • Inflatable Octopus", "25 • Inflatable Penguin", "26 • Air Dancer",
          "27 • Balloon Arch", "28 • Balloon Bouquet", "29 • Betsy The Astronaut", "30 • Bouncy Castle",
-         "31 • Eagleeye Cupid", "32 • Flying House", "33 • Meltdown", "❌ • Return"}, nil)
+         "31 • Eagleeye Cupid", "32 • Flying House", "33 • Meltdown", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2739,7 +2773,7 @@ end
 function menuDecorPuzzle()
     MENU = gg.choice({"1 • Land of the Dinosaurs", "2 • Spaceport", "3 • Snowman", "4 • Giant Cake",
                       "5 • Classic Car Collection", "6 • Magic School", "7 • Tree of Lights", "8 • Disco Block",
-                      "9 • Rabbit Village", "10 • Overwater Villa", "❌ • Return"}, nil)
+                      "9 • Rabbit Village", "10 • Overwater Villa", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2775,7 +2809,7 @@ function menuDecorDiamonds()
                       "12 • Sea Arches", "13 • Big Ben", "14 • Golden Gate Bridge", "15 • Thai Temple",
                       "16 • Burj Khalifa", "17 • Pyramid", "18 • Yacht", "19 • Empire State Building",
                       "20 • Vintage Boat", "21 • Eiffel Tower", "22 • Space Needle", "23 • Flag",
-                      "24 • Sydney Opera House", "25 • Triumphal Arch", "❌ • Return"}, nil)
+                      "24 • Sydney Opera House", "25 • Triumphal Arch", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2840,7 +2874,7 @@ function menuDecorChina()
                       "9 • Chinese Lion", "10 • Confetti Blast Banner", "11 • Dancing Koi", "12 • Ferris Wheel",
                       "13 • Fire Rooster", "14 • Fortune Keeper", "15 • GoldFish", "16 • Lantern Tree",
                       "17 • Manekineko", "18 • Money Toad", "19 • Monkey Statue", "20 • New Year Symbol",
-                      "21 • Paper Lanterns", "22 • Red Bridge", "23 • Red Dragon", "❌ • Return"}, nil)
+                      "21 • Paper Lanterns", "22 • Red Bridge", "23 • Red Dragon", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -2911,7 +2945,7 @@ end
 
 function menuDecorCowboy()
     MENU = gg.choice({"1 • Cowboy Town", "2 • Saloon", "3 • Sheriffs House", "4 • Urban Safari",
-                      "5 • Watermill", "❌ • Return"}, nil)
+                      "5 • Watermill", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -2942,7 +2976,7 @@ function menuDecorFlower()
                       "26 • Sheep Flowerbed", "27 • Summer Cafe", "28 • Topiary Show",
                       "29 • Tree Of Life Fountain", "30 • Upside Down House", "31 • Urban Oasis",
                       "32 • Vase Of Flowers", "33 • Vineyard Terrace", "34 • Vineyard",
-                      "35 • Waterfall Terrace", "36 • Watering Can Flowerbed", "❌ • Return"}, nil)
+                      "35 • Waterfall Terrace", "36 • Watering Can Flowerbed", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3047,7 +3081,7 @@ function menuDecorKids()
                       "52 • Train Slide", "53 • Treasure Island Playground", "54 • UFO Carousel",
                       "55 • Underwater World Carousel", "56 • Visiting The Bunnies", "57 • Visiting The Dolphins",
                       "58 • Waterfall Ride", "59 • Wild West Ride", "60 • Wishing Well",
-                      "61 • Yellow Submarine Club", "62 • Young Cowboys Playground", "❌ • Return"}, nil)
+                      "61 • Yellow Submarine Club", "62 • Young Cowboys Playground", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3197,7 +3231,7 @@ function menuDecorEaster()
                       "12 • Easter Workshop", "13 • Egg Topiary", "14 • Faberg Egg Gold",
                       "15 • Rabbit Treasure", "16 • Talented Bunny Statue", "17 • Easter plant",
                       "18 • Stuffed Bunny", "19 • Rabbit house", "20 • Chocolate Fountain",
-                      "21 • Faberg Egg Blue", "❌ • Return"}, nil)
+                      "21 • Faberg Egg Blue", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3263,8 +3297,8 @@ function menuDecorPirate()
                       "4 • Pirate Cafe", "5 • Pirate Camp", "6 • Pirate Corner", "7 • Pirate Playground",
                       "8 • Pirate Raid", "9 • Pirate Ship Bow", "10 • Pirate Ship", "11 • Pirate Tavern",
                       "12 • Sacred Chest", "13 • Sea Rovers", "14 • Teamwork", "15 • The Flyer",
-                      "16 • The Ninth Wave Ride", "17 • Treasure Chest", "18 • Treasure Keeper", "❌ • Return"},
-        nil)
+                      "16 • The Ninth Wave Ride", "17 • Treasure Chest", "18 • Treasure Keeper",
+                      "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3320,7 +3354,8 @@ function menuDecorAtlantis()
                       "4 • Atlantean Rest", "5 • Atlantis Hotel", "6 • Atlantis Museum", "7 • Coral Fence",
                       "8 • Glass Bridge", "9 • Pearl Shell", "10 • Poseidon Statue", "11 • Ruins Of Atlantis",
                       "12 • Sea Herald", "13 • Sea Horse", "14 • Sea Riches Statue", "15 • Sunken City",
-                      "16 • Sword In The Stone", "17 • The Mermaid", "18 • Water Fairy", "❌ • Return"}, nil)
+                      "16 • Sword In The Stone", "17 • The Mermaid", "18 • Water Fairy", "❌ • Quay lại"},
+        nil)
 
     if MENU == nil then
         return
@@ -3377,7 +3412,7 @@ function menuDecorFruit()
                       "15 • Grape Press", "16 • Harvest Of A Giant", "17 • Horn Of Plenty", "18 • Mixed Fruit",
                       "19 • Mobile Market", "20 • Orange Juice Fountain", "21 • Organic Shop",
                       "22 • Pear Tiki Bar", "23 • Pumpkin Race", "24 • Pyramid Of Smoothies",
-                      "25 • Spicy House", "26 • Vegetable Display", "❌ • Return"}, nil)
+                      "25 • Spicy House", "26 • Vegetable Display", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3452,7 +3487,7 @@ function menuDecorEntertainment()
                       "11 • Jazz Club", "12 • Kingdom Centre", "13 • Lowriders", "14 • Makeover Studio",
                       "15 • Movie Magic", "16 • Movie Museum", "17 • Movie Set", "18 • Music District",
                       "19 • Music Shop", "20 • Openair Stage", "21 • Organist", "22 • Outdoor Cinema",
-                      "23 • Retro Movie Theater", "24 • Western Movie Set", "❌ • Return"}, nil)
+                      "23 • Retro Movie Theater", "24 • Western Movie Set", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3527,7 +3562,8 @@ function menuDecorExpedition()
                       "34 • Gate to Cyber City", "35 • Sheriff Office", "36 • Santa Village", "37 • Jazz Club",
                       "38 • Sinister Carriage", "39 • Heroes Of The Old Park 1/3",
                       "39 • Heroes Of The Old Park 2/3", "39 • Heroes Of The Old Park 3/3", "40 • Viking Gate",
-                      "41 • Turkey Of Plenty", "42 • Mountain Chalet", "❌ • Return"}, nil)
+                      "41 • Turkey Of Plenty", "42 • Mountain Chalet", "43 • Altar Of Bastet",
+                      "44 • Golden Quill", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3619,15 +3655,20 @@ function menuDecorExpedition()
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3224686", 1)
     elseif MENU == 44 then
         hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3355758", 1)
+    elseif MENU == 45 then
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3421294", 1)
+    elseif MENU == 46 then
+        hack("1886930220", "1953064037", "1148088169", "1919902565", "1869182049", "3486830", 1)
     else
         menuescolhas2(5)
     end
 end
 
 function menuCoupon()
-    MENU = gg.choice({"🎫 • Order Coupon", "🎫 • Expansion Coupon", "🎫 • Barn Coupon",
-                      "🎫 • Factory Coupon", "🎫 • Train Coupon", "🎫 • Island Coupon",
-                      "🎫 • Dealer Coupon", "❌ • Return"}, nil)
+    MENU = gg.choice({"🎫 • Thẻ đóng hàng", "🎫 • Thẻ mở đất", "🎫 • Thẻ nâng cấp kho",
+                      "🎫 • Thẻ nâng cấp nhà máy", "🎫 • Thẻ nâng cấp tàu hỏa",
+                      "🎫 • Thẻ nâng cấp đảo", "🎫 • Thẻ chọn đồ trong chợ",
+                      "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3651,8 +3692,8 @@ function menuCoupon()
 end
 
 function menuCropTime()
-    MENU = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s",
-                      "🐮 • Animals 0s", "❌ • Return"}, nil)
+    MENU = gg.choice({"🏗️ • Xây dựng 0s", "🏚️ • Kho ảo(x10000%)", "🌱 • Trồng cây 0s",
+                      "🐮 • Vật nuôi 0s", "✈️ • Máy bay 0s", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -3663,13 +3704,15 @@ function menuCropTime()
         hack("1599099692", "1936682818", "1701860212", "1884644453", "1987207496", "7631717", 100)
     elseif MENU == 4 then
         hack("1599099688", "1936682818", "1701860212", "1884644453", "1836212550", "115", 100)
+    elseif MENU == 5 then
+        hack("1599099684", "1936682818", "1701860212", "1884644453", "7498049", "0", 100)
     else
         menuescolhas2(1)
     end
 end
 
 function menuNameFrame()
-    MENU = gg.choice({"🆔 • Name(Pink)", "🔳 • Frame(Pink)", "❌ • Return"}, nil)
+    MENU = gg.choice({"🆔 • Tên hồng", "🔳 • Khung hồng", "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -3683,10 +3726,9 @@ function menuNameFrame()
 end
 
 function menuBadge()
-    MENU = gg.choice({"💎 • Town Badge", "💎 • Legendary Town Badge", "💎 • City Badge",
-                      "💎 • Legendary City Badge", "💎 • Winter Badge", "💎 • Legendary Winter Badge",
-                      "💎 • Journey Badge", "💎 • Legendary Journey Badge", "💎 • Card Colection",
-                      "❌ • Return"}, nil)
+    MENU = gg.choice({"💎 • Town", "💎 • Legendary Town", "💎 • City", "💎 • Legendary City",
+                      "💎 • Winter", "💎 • Legendary Winter", "💎 • Journey", "💎 • Legendary Journey",
+                      "💎 • Gói thẻ vàng", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3707,14 +3749,14 @@ function menuBadge()
     elseif MENU == 8 then
         hack("1684103708", "811558247", "1919377203", "6581857", "0", "0", 1)
     elseif MENU == 9 then
-        hack("1918976790", "1348420452", "896230241", "0", "1985025720", "120", 100)
+        hack("1918976790", "1348420452", "896230241", "0", "0", "0", 0)
     else
         menuescolhas2(1)
     end
 end
 
 function menuSign()
-    MENU = gg.choice({"❌ • Back", "1 • Aviator Sign", "2 • Christmas Sign", "3 • Fairytale Sign",
+    MENU = gg.choice({"❌ • Quay lại", "1 • Aviator Sign", "2 • Christmas Sign", "3 • Fairytale Sign",
                       "4 • Big Screen Sign", "5 • Cactus Sign", "6 • Outstanding Sign", "7 • Easter Sign",
                       "8 • Snowboarding Sign", "9 • Cozy Home Sign", "10 • Flower Sign", "11 • Wild West Sign",
                       "12 • Christmas Sign", "13 • Big Halloween Sign", "14 • Town Of Lights Sign",
@@ -3730,7 +3772,7 @@ function menuSign()
                       "44 • Cthutun Sign", "45 • Holiday Sign", "46 • Extraterrestrial Sign",
                       "47 • Ghostly Sign", "48 • Desert Sign", "49 • Cowboy Sign",
                       "50 • Power Of Ancientors Sign", "51 • Atlantis Sign", "52 • Smart Garden Sign",
-                      "53 • Sweet Treat Sign", "54 • Penguin Resort Sign", "❌ • Back"}, nil, "CHOOSE ONE OPTION")
+                      "53 • Sweet Treat Sign", "54 • Penguin Resort Sign", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -3926,7 +3968,7 @@ function menuAvatar()
          "👑 • ava 91", "👑 • ava 92", "👑 • ava 93", "👑 • ava 94", "👑 • ava 95",
          "👑 • ava 96", "👑 • ava 97", "👑 • ava 98", "👑 • ava 99", "👑 • ava 100",
          "👑 • ava 101", "👑 • ava 102", "👑 • ava 103", "👑 • ava 104", "👑 • ava 105",
-         "❌ • Return"}, nil, "CHOOSE ONE OPTION")
+         "❌ • Quay lại"}, nil)
     if MENU == nil then
         return
     elseif MENU == 1 then
@@ -4145,8 +4187,7 @@ function menuAvatar()
 end
 
 function menuSticker()
-    STICK =
-        gg.choice({"🌟 • Menu Sticker 1", "🌟 • Menu Sticker 2", "❌ • Return"}, nil, "CHOOSE ONE OPTION")
+    STICK = gg.choice({"🌟 • Menu Sticker 1", "🌟 • Menu Sticker 2", "❌ • Quay lại"}, nil)
     if STICK == nil then
         return
     elseif STICK == 1 then
@@ -4163,8 +4204,8 @@ function menuSticker()
                           '🌟 • Sticker 41', '🌟 • Sticker 42', '🌟 • Sticker 43', '🌟 • Sticker 44',
                           '🌟 • Sticker 45', '🌟 • Sticker 46', '🌟 • Sticker 47', '🌟 • Sticker 48',
                           '🌟 • Sticker 49', '🌟 • Sticker 50', '🌟 • Sticker 51', '🌟 • Sticker 52',
-                          '🌟 • Sticker 53', '🌟 • Sticker 54', '🌟 • Sticker 55', '❌ • Return'}, nil,
-            'CHOOSE ONE OPTION')
+                          '🌟 • Sticker 53', '🌟 • Sticker 54', '🌟 • Sticker 55', '❌ • Quay lại'},
+            nil, 'CHOOSE ONE OPTION')
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -4296,7 +4337,8 @@ function menuSticker()
                           '🌟 • Sticker 40x', '🌟 • Sticker 41x', '🌟 • Sticker 42x',
                           '🌟 • Sticker 43x', '🌟 • Sticker 44x', '🌟 • Sticker 45x',
                           '🌟 • Sticker 46x', '🌟 • Sticker 47x', '🌟 • Sticker 48x',
-                          '🌟 • Sticker 49x', '🌟 • Sticker 50x', '❌ • Return'}, nil, 'CHOOSE ONE OPTION')
+                          '🌟 • Sticker 49x', '🌟 • Sticker 50x', '❌ • Quay lại'}, nil,
+            'CHOOSE ONE OPTION')
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -4408,10 +4450,15 @@ function menuSticker()
 end
 
 function menuExtras()
-    MENU = gg.choice({"🌾 • XP (Wheat)", "📦 • City Market", "🏭 • Industry Academy",
-                      "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
-                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth",
-                      "🚁 • Helicopter(Cash/Gold)", "🐮 • Animals 0s", "❌ • Return"}, nil)
+    MENU = gg.choice({"🌾 • Tăng kinh nghiệm trồng lúa mạch",
+                      "📦 • Tăng số lượng vật phẩm thuê ông mập", "🏭 • Industry Academy",
+                      "❄️ • Đóng băng dân", "📦 • Hộp trong chợ",
+                      "🏨 • Hoàn thành nhà cộng đồng nhanh", "⛏️ • Độ sâu đào mỏ",
+                      "🚁 • Hack đô/vàng bằng trực thăng", "🐮 • Vật nuôi 0s",
+                      "🚂📦 • Tàu hoả tăng XP", "🚂📦 • Tàu hoả lúa mì",
+                      "✈️📦 • Máy bay tăng XP", "🃏 • Tăng số lượng thẻ",
+                      "❄️ • Đóng băng và gửi thẻ vàng vô hạn", "🕹️ • Cấp độ minigame",
+                      "🕹️ • Điểm sự kiện Frozen Fortune", "❌ • Quay lại"}, nil)
 
     if MENU == nil then
         return
@@ -4422,28 +4469,42 @@ function menuExtras()
     elseif MENU == 3 then
         hackIndustryAcademy()
     elseif MENU == 4 then
-        hack("1599099684", "1936682818", "1701860212", "1884644453", "7498049", "0", 100)
-    elseif MENU == 5 then
         hackFreezePopulation()
-    elseif MENU == 6 then
+    elseif MENU == 5 then
         hackMarketBoxes()
-    elseif MENU == 7 then
+    elseif MENU == 6 then
         hackCompleteCommunityBuilding()
-    elseif MENU == 8 then
+    elseif MENU == 7 then
         hackMiningDepth()
-    elseif MENU == 9 then
+    elseif MENU == 8 then
         hackGoldCashByHeli()
-    elseif MENU == 10 then
+    elseif MENU == 9 then
         hackSkipTimeAnimal()
+    elseif MENU == 10 then
+        hackTrainBox('diamond')
+    elseif MENU == 11 then
+        hackTrainBox('wheat')
+    elseif MENU == 12 then
+        hackAirplaneBox()
+    elseif MENU == 13 then
+        hackMatch3Level()
+    elseif MENU == 14 then
+        hackIncreaseCard()
+    elseif MENU == 15 then
+        hackFreezeSendGoldCard()
+    elseif MENU == 16 then
+        hackPointEvent()
     else
         MENUFREE()
     end
 end
 
 function menuRegatta()
-    MENU = gg.choice({"🕹️ • Match-3 Tasks", "🚁 • Helicopter Tasks", "⛏️ • Digtools Mine Tasks",
-                      "🏭 • Produce Tasks", "📦 • Train Boxes Tasks", "🏝️ • Fruit Island Tasks",
-                      "🌾 • Harvest Tasks", "🚢 • Sending Ship Tasks", "❌ • Return"}, nil)
+    MENU = gg.choice({"🕹️ • Nhiệm vụ Match-3", "🚁 • Nhiệm vụ gửi trực thăng",
+                      "⛏️ • Nhiệm vụ đào mỏ", "🏭 • Nhiệm vụ sản xuất",
+                      "📦 • Nhiệm vụ đóng hộp tàu", "🏝️ • Nhiệm vụ hoa quả ngoài đảo",
+                      "🌾 • Nhiệm vụ thu hoạch", "🚢 • Nhiệm vụ gửi tàu", "❌ • Quay lại"},
+        nil)
 
     if MENU == nil then
         return
@@ -4469,25 +4530,7 @@ function menuRegatta()
 end
 
 function hackGoldCashByHeli()
-    gg.toast("Loading...")
-    gg.processResume()
-    gg.clearResults()
-    gg.setVisible(false)
-    gg.searchNumber("1885433110;1852403807", gg.TYPE_DWORD)
-    gg.refineNumber("1885433110", gg.TYPE_DWORD)
-    xmoney = gg.prompt({"Amount of cash? [0; 5000]", "Amount of money? [1; 350000]"}, {0, 1}, {"number", "number"})
-    if xmoney == nil then
-        MENUFREE()
-    else
-        xmoney[1] = tonumber(xmoney[1])
-        xmoney[2] = tonumber(xmoney[2])
-        setd(-212, xmoney[1])
-        setd(-216, 0)
-        setd(-220, xmoney[2])
-        setd(-224, 0)
-        gg.clearResults()
-
-    end
+    gg.alert("Đang cập nhật...")
 end
 
 function hackItemMarket()
@@ -4508,23 +4551,24 @@ function hackItemMarket()
     gg.processResume()
     gg.clearResults()
     gg.setVisible(false)
-    gg.alert("Choose a product from the marketplace, enter the quantity of the last one and open script again!")
+    gg.alert(
+        "Chọn vật phẩm trong chợ, quay lại kịch bản và nhập số lượng của vật phẩm ở ô cuối!")
     wait_for_action()
     gg.processResume()
     gg.clearResults()
     gg.setVisible(false)
-    inputs = gg.prompt({"Last product quantity:"})
+    inputs = gg.prompt({"Số lượng:"})
     local qtditem = inputs[1] .. "X4"
     gg.searchNumber(qtditem, gg.TYPE_DWORD)
     while gg.getResultsCount() > 2 do
         gg.processResume()
         gg.setVisible(false)
-        gg.alert("Please select another product!")
+        gg.alert("Chọn vật phẩm khác!")
         wait_for_action()
         gg.processResume()
         gg.setVisible(false)
         inputs2 = gg.prompt({
-            [1] = "New quantity of the last product:"
+            [1] = "Số lượng mới của vật phẩm ở ô cuối:"
         }, {
             [1] = "0"
         }, {
@@ -4534,26 +4578,26 @@ function hackItemMarket()
         gg.refineNumber(qtditem2, gg.TYPE_DWORD)
     end
     if gg.getResultsCount() <= 2 then
-        int2 = gg.prompt({"Amount?[50; 500]"}, {1}, {"number"})
+        int2 = gg.prompt({"Số lượng?[50; 500]"}, {1}, {"number"})
         int2[1] = tonumber(int2[1])
         seth(-4, 0)
         seth(0, int2[1])
         seth(4, 0)
         seth(8, 1)
-        gg.toast("Success...")
+        gg.toast("Thành công!")
         marketnext = true
         local firstTimeMessage = true
         while marketnext do
             gg.processResume()
             gg.setVisible(false)
             if firstTimeMessage then
-                gg.alert("Pick up the product, choose another product and open GameGuardian!")
+                gg.alert("Nhận vật phẩm, chọn vật phẩm khác và mở lại kịch bản!")
                 firstTimeMessage = false
             end
             wait_for_action()
             gg.processResume()
             gg.setVisible(false)
-            local choice = gg.alert("Press the button to continue hacking or to stop.", "Finish.", "Continue.")
+            local choice = gg.alert("Chọn tiếp tục hoặc kết thúc.", "Kết thúc", "Tiếp tục")
             if choice == 1 then
                 menuescolhas2(99)
                 marketnext = false
@@ -4563,14 +4607,13 @@ function hackItemMarket()
                 seth(0, int2[1])
                 seth(4, 0)
                 seth(8, 1)
-                gg.toast("Success...")
+                gg.toast("Thành công!")
             end
         end
     end
 end
 
 function hackFreezePopulation()
-    gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("000B0001h;706F7014h;74616C75h;006E6F69h", gg.TYPE_DWORD)
@@ -4586,21 +4629,20 @@ function hackFreezePopulation()
         t[1].freeze = true
         gg.setValues(t)
         gg.addListItems(t) -- automaticly saves the list
-        gg.toast("hack done")
+        gg.toast("Thành công!")
         gg.loadResults(t) -- loading the list
     else
-        gg.alert("Check the population required to unlock the terrain, then open the Gameguardian...")
+        gg.alert("Kiểm tra số dân cần thiết để mở khóa ô đất, sau đó mở lại kịch bản.")
     end
     gg.clearResults()
 end
 
 function hackGoldenPass()
-    gg.toast("Processing...")
     gg.processResume()
     gg.clearResults()
 
-    gg.searchNumber("49;1852990754;1936290408;28:185", gg.TYPE_DWORD)
-    gg.refineNumber("49", gg.TYPE_DWORD)
+    gg.searchNumber("1768641320;1852990748;1668178290;1851880038:189", gg.TYPE_DWORD)
+    gg.refineNumber("1768641320", gg.TYPE_DWORD)
 
     r = gg.getResults(2)
 
@@ -4630,7 +4672,7 @@ function hackGoldenPass()
         A[2].freeze = false
         gg.setValues(A)
 
-        gg.toast("hack done")
+        gg.toast("Thành công!")
         gg.clearResults()
     elseif gg.getResultCount() == 1 then
         re = gg.getResults(1)
@@ -4659,24 +4701,23 @@ function hackGoldenPass()
         Ae[1].freeze = false
         gg.setValues(Ae)
 
-        gg.toast("Done!")
+        gg.toast("Thành công!")
         gg.clearResults()
     else
         -- do something else entirely
-        gg.toast("Fail. Please try again.")
+        gg.toast("Thất bại. Hãy thử lại!")
         gg.clearResults()
     end
 end
 
 function hackXPByWheat()
-    gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
     gg.setVisible(false)
     gg.searchNumber("120;300", gg.TYPE_FLOAT)
     gg.refineNumber("120", gg.TYPE_FLOAT)
     xps = gg.prompt({
-        [1] = "Desired XP amount? Max: 9000"
+        [1] = "Số lượng XP mong muốn? Tối đa: 9000"
     }, {
         [1] = "0"
     }, {
@@ -4696,12 +4737,11 @@ function hackXPByWheat()
 end
 
 function hackMarketBoxes()
-    gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
     gg.setVisible(false)
-    local input = gg.prompt({"Enter the current number of market boxes", "Enter the desired number of market boxes"},
-        {0, 0}, {"number", "number"})
+    local input = gg.prompt({"Nhập số hộp chợ hiện tại:", "Nhập số hộp chợ mong muốn:"}, {0, 0},
+        {"number", "number"})
     local searchString = string.format("1953063702;1634557817;1185464320;%d", input[1])
     gg.searchNumber(searchString, gg.TYPE_DWORD)
     gg.refineNumber(input[1], gg.TYPE_DWORD)
@@ -4709,10 +4749,10 @@ function hackMarketBoxes()
     if #results > 0 then
         results[1].value = tostring(input[2])
         gg.setValues(results)
-        gg.toast("Market boxes updated successfully!")
+        gg.toast("Hộp chợ đã được cập nhật thành công!")
 
     else
-        gg.toast("No matching market boxes found.")
+        gg.toast("Không tìm thấy. Hãy thử lại!")
     end
     gg.clearResults()
 end
@@ -4729,16 +4769,15 @@ function seth(offset, new)
 end
 
 function hackIndustryAcademy()
-    gg.toast("Loading...")
     gg.processResume()
     gg.clearList()
     gg.clearResults()
-    gg.alert("Check out factory/train/island s time reduction at the industry academy.")
+    gg.alert("Kiểm tra giảm thời gian của nhà máy/tàu/đảo tại Học viện Công nghiệp.")
     wait_for_action()
     gg.processResume()
     gg.setVisible(false)
 
-    input = gg.prompt({"Current time reduction value", "Island"}, nil, {"number", "checkbox"})
+    input = gg.prompt({"Giá trị giảm thời gian hiện tại", "Đảo"}, nil, {"number", "checkbox"})
     if input == nil then
         return menuescolhas2(99)
     end
@@ -4747,13 +4786,13 @@ function hackIndustryAcademy()
     while gg.getResultsCount() > 2 do
         gg.processResume()
         gg.setVisible(false)
-        gg.alert("Gain 1 one-time reduction level in the factory/train/island and open script.")
+        gg.alert("Tăng 1 cấp giảm thời gian cho nhà máy / tàu / đảo và mở lại kịch bản.")
         wait_for_action()
         gg.processResume()
         gg.setVisible(false)
 
         input2 = gg.prompt({
-            [1] = "New time reduction value."
+            [1] = "Giá trị giảm thời gian mới."
         }, {
             [1] = "0"
         }, {
@@ -4774,7 +4813,7 @@ function hackIndustryAcademy()
             seth(0x18, 100)
         end
         seth(0, 100)
-        gg.toast("Done...")
+        gg.toast("Thành công!")
     end
     gg.clearResults()
 end
@@ -4786,7 +4825,7 @@ function hackCompleteCommunityBuilding()
     jz = gg.getResults(n)
 
     if n == 0 then
-        gg.toast("No community building found!")
+        gg.toast("Không tìm thấy. Hãy thử lại!")
         gg.clearResults()
         return
     end
@@ -4804,7 +4843,7 @@ function hackCompleteCommunityBuilding()
         gg.setValues(t)
     end
     gg.clearResults()
-    gg.toast("Done! Please restart game!")
+    gg.toast("Thành công! Hãy khởi động lại trò chơi!")
 end
 
 function hackMiningDepth()
@@ -4814,12 +4853,12 @@ function hackMiningDepth()
     jz = gg.getResults(1)
 
     if n == 0 then
-        gg.toast("Not found!")
+        gg.toast("Không tìm thấy. Hãy thử lại!")
         gg.clearResults()
         return
     end
     local int1 = nil
-    int1 = gg.prompt({"New mining depth: "}, {"1"}, {"text"})
+    int1 = gg.prompt({"Nhập độ đào mỏ mới: "}, {"1"}, {"text"})
     int1[1] = tonumber(int1[1])
 
     local t = {}
@@ -4830,7 +4869,7 @@ function hackMiningDepth()
     })
     gg.setValues(t)
     gg.clearResults()
-    gg.toast("Done!")
+    gg.toast("Thành công!")
 end
 
 function hackRegatta(search, refine, add1, add2, add3)
@@ -4840,7 +4879,7 @@ function hackRegatta(search, refine, add1, add2, add3)
     jz = gg.getResults(n)
 
     if n == 0 then
-        gg.toast("No tasks found!")
+        gg.toast("Không tìm thấy. Hãy thử lại!")
         gg.clearResults()
         return
     end
@@ -4867,7 +4906,7 @@ function hackRegatta(search, refine, add1, add2, add3)
         gg.setValues(t)
     end
     gg.clearResults()
-    gg.toast("Done!")
+    gg.toast("Thành công!")
 end
 
 function gotoPointerAndEdit(addr)
@@ -4894,9 +4933,11 @@ function hackUnlimitedLike()
     gg.clearResults()
     gg.setRanges(gg.REGION_C_ALLOC)
     gg.setVisible(false)
-    local input = gg.prompt({"Enter the city level:", "Enter the city like:"}, {0, 0}, {"number", "number"})
+    local input = gg.prompt(
+        {"Nhập cấp độ của thành phố:", "Nhập số lượt thích của thành phố:"}, {0, 0},
+        {"number", "number"})
     if input == nil then
-        gg.alert("No value was entered. Operation canceled.")
+        gg.alert("Không có giá trị nào được nhập. Kịch bản đã huỷ!")
         return
     end
 
@@ -4904,27 +4945,27 @@ function hackUnlimitedLike()
     local searchString = string.format("%d;%d", input[1], input[2])
     gg.clearResults()
     gg.searchNumber(searchString, gg.TYPE_DWORD)
-    gg.toast("Please wait ...")
+    gg.toast("Vui lòng đợi ...")
 
     local results = gg.getResults(400)
     if #results == 0 then
-        gg.alert("No results found. Try again later.")
+        gg.alert("Không tìm thấy. Hãy thử lại!")
         return
     end
 
-    gg.alert("Now like your friend city and enter the new number of likes.")
+    gg.alert("Bây giờ hãy thích thành phố bạn bè và nhập số lượt thích mới.")
     gg.sleep(5000)
 
-    local updatedLikes = gg.prompt({"Enter the new number of likes:"}, {0}, {"number"})
+    local updatedLikes = gg.prompt({"Nhập số lượt thích mới:"}, {0}, {"number"})
     if updatedLikes == nil then
-        gg.alert("You not write anything!")
+        gg.alert("Không có giá trị nào được nhập. Kịch bản đã huỷ!")
         return
     end
 
     gg.refineNumber(updatedLikes[1], gg.TYPE_DWORD)
     local refinedResults = gg.getResults(2)
     if #refinedResults == 0 then
-        gg.alert("No results found. Try again later.")
+        gg.alert("Không tìm thấy. Hãy thử lại!")
         return
     end
 
@@ -4945,20 +4986,20 @@ function hackUnlimitedLike()
 
     local savedValues = gg.getValues(listItems)
     gg.addListItems(listItems)
-    gg.toast("Please wait ...")
+    gg.toast("Vui lòng đợi ...")
 
     local searchString2 = string.format("1768972591;%d;%d;%d", savedValues[1].value, savedValues[2].value,
         savedValues[3].value)
     gg.clearResults()
     gg.searchNumber(searchString2, gg.TYPE_DWORD)
     gg.refineNumber("1768972591", gg.TYPE_DWORD)
-    gg.toast("Please wait ...")
+    gg.toast("Vui lòng đợi ...")
 
     local n = gg.getResultCount()
     local jz = gg.getResults(n)
 
     if n == 0 then
-        gg.alert("No results found. Try again later.")
+        gg.alert("Không tìm thấy. Hãy thử lại!")
         return
     end
 
@@ -4999,11 +5040,10 @@ function hackUnlimitedLike()
             value = 0
         }})
     end
-    gg.toast("Freeze like button successfully!")
+    gg.toast("Nút like đã được đóng băng!")
 end
 
 function hackSkipTimeAnimal()
-    gg.toast("Loading...")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("1200;3600;14400;25200", gg.TYPE_FLOAT) -- cow, chicken, sheep, pig
@@ -5015,10 +5055,845 @@ function hackSkipTimeAnimal()
     gg.editAll('1', gg.TYPE_FLOAT)
     gg.clearResults()
     gg.clearList()
+    gg.toast("Thành công!")
+end
+
+function hackTrainBox(type)
+    gg.processResume()
+    gg.clearResults()
+    gg.searchNumber("1801519156X4Ch", gg.TYPE_DWORD)
+    local n = gg.getResultCount()
+    local r = gg.getResults(n)
+    if n == 0 then
+        gg.alert("Không tìm thấy. Hãy thử lại!")
+        return
+    end
+    local val1, val2, val3, quantity
+    if type == 'diamond' then
+        val1 = 1634296844
+        val2 = 7169380
+        val3 = 13407
+        quantity = 500
+    elseif type == 'wheat' then
+        val1 = 1701345034
+        val2 = 29793
+        val3 = 0
+        quantity = 1
+    end
+    for i = 1, n do
+        setTrainBox(r[i].address - 0x654, val1, val2, val3, quantity)
+        setTrainBox(r[i].address - 0x52C, val1, val2, val3, quantity)
+        setTrainBox(r[i].address - 0x404, val1, val2, val3, quantity)
+        setTrainBox(r[i].address - 0x2DC, val1, val2, val3, quantity)
+        setTrainBox(r[i].address - 0x1B4, val1, val2, val3, quantity)
+        local time = {}
+        time[1] = {}
+        time[1].address = r[i].address + 0x14
+        time[1].flags = gg.TYPE_FLOAT
+        time[1].value = 1
+        gg.setValues(time)
+    end
+    gg.clearResults()
+    gg.toast("Thành công!")
+end
+
+function setTrainBox(address, val1, val2, val3, quantity)
+    local box1 = {}
+    box1[1] = {}
+    box1[1].address = address
+    box1[1].flags = gg.TYPE_DWORD
+    box1[1].value = val1
+    gg.setValues(box1)
+
+    local box2 = {}
+    box2[1] = {}
+    box2[1].address = address + 0x04
+    box2[1].flags = gg.TYPE_DWORD
+    box2[1].value = val2
+    gg.setValues(box2)
+
+    local box3 = {}
+    box3[1] = {}
+    box3[1].address = address + 0x08
+    box3[1].flags = gg.TYPE_DWORD
+    box3[1].value = val3
+    gg.setValues(box3)
+
+    local box7 = {}
+    box7[1] = {}
+    box7[1].address = address + 0x18
+    box7[1].flags = gg.TYPE_DWORD
+    box7[1].value = 0
+    gg.setValues(box7)
+
+    local box8 = {}
+    box8[1] = {}
+    box8[1].address = address + 0x1C
+    box8[1].flags = gg.TYPE_DWORD
+    box8[1].value = quantity
+    gg.setValues(box8)
+
+    local req1 = {}
+    req1[1] = {}
+    req1[1].address = address + 0x44
+    req1[1].flags = gg.TYPE_DWORD
+    req1[1].value = 0
+    gg.setValues(req1)
+
+    local req2 = {}
+    req2[1] = {}
+    req2[1].address = address + 0x48
+    req2[1].flags = gg.TYPE_DWORD
+    req2[1].value = 1
+    gg.setValues(req2)
+
+    local card1 = {}
+    card1[1] = {}
+    card1[1].address = address + 0xE8
+    card1[1].flags = gg.TYPE_DWORD
+    card1[1].value = 1918976790
+    gg.setValues(card1)
+
+    local card2 = {}
+    card2[1] = {}
+    card2[1].address = address + 0xEC
+    card2[1].flags = gg.TYPE_DWORD
+    card2[1].value = 1348420452
+    gg.setValues(card2)
+
+    local card3 = {}
+    card3[1] = {}
+    card3[1].address = address + 0xF0
+    card3[1].flags = gg.TYPE_DWORD
+    card3[1].value = 896230241
+    gg.setValues(card3)
+end
+
+function hackAirplaneBox()
+    gg.toast("Loading...")
+    gg.processResume()
+    gg.clearResults()
+    gg.searchNumber("231928234002000", gg.TYPE_QWORD)
+    count = gg.getResultsCount()
+    val = gg.getResults(count)
+    for i, v in ipairs(val) do
+        v.address = v.address - 0x24
+    end
+
+    val = gg.getValues(val)
+    for i, v in ipairs(val) do
+        v.address = v.value
+    end
+    gg.loadResults(val)
+
+    for i, v in ipairs(val) do
+        v.address = v.address - 0x2F0
+    end
+    val = gg.getValues(val)
+
+    for i, v in ipairs(val) do
+        v.address = v.value
+    end
+    gg.loadResults(val)
+
+    local v_1 = {}
+    v_1[1] = {}
+    v_1[1].address = val[1].address + 0x08
+    v_1[1].flags = gg.TYPE_DWORD
+    v_1[1].value = 650
+    v_1[1].freeze = false
+    gg.setValues(v_1)
+
+    local e_1 = {}
+    e_1[1] = {}
+    e_1[1].address = val[1].address + 0x10
+    e_1[1].flags = gg.TYPE_DWORD
+    e_1[1].value = 1634296844
+    e_1[1].freeze = false
+    gg.setValues(e_1)
+
+    local p_1 = {}
+    p_1[1] = {}
+    p_1[1].address = val[1].address + 0x14
+    p_1[1].flags = gg.TYPE_DWORD
+    p_1[1].value = 7169380
+    p_1[1].freeze = false
+    gg.setValues(p_1)
+
+    local o_1 = {}
+    o_1[1] = {}
+    o_1[1].address = val[1].address + 0x18
+    o_1[1].flags = gg.TYPE_DWORD
+    o_1[1].value = 13407
+    o_1[1].freeze = false
+    gg.setValues(o_1)
+
+    local ha_1 = {}
+    ha_1[1] = {}
+    ha_1[1].address = val[1].address + 0x1C
+    ha_1[1].flags = gg.TYPE_DWORD
+    ha_1[1].value = 0
+    ha_1[1].freeze = false
+    gg.setValues(ha_1)
+
+    local pa_1 = {}
+    pa_1[1] = {}
+    pa_1[1].address = val[1].address + 0x20
+    pa_1[1].flags = gg.TYPE_DWORD
+    pa_1[1].value = 0
+    pa_1[1].freeze = false
+    gg.setValues(pa_1)
+
+    local ya_1 = {}
+    ya_1[1] = {}
+    ya_1[1].address = val[1].address + 0x24
+    ya_1[1].flags = gg.TYPE_DWORD
+    ya_1[1].value = 0
+    ya_1[1].freeze = false
+    gg.setValues(ya_1)
+
+    -- Caja 1
+
+    local k_1 = {}
+    k_1[1] = {}
+    k_1[1].address = val[1].address + 0x58
+    k_1[1].flags = gg.TYPE_DWORD
+    k_1[1].value = 650
+    k_1[1].freeze = false
+    gg.setValues(k_1)
+
+    local k_2 = {}
+    k_2[1] = {}
+    k_2[1].address = val[1].address + 0x60
+    k_2[1].flags = gg.TYPE_DWORD
+    k_2[1].value = 1634296844
+    k_2[1].freeze = false
+    gg.setValues(k_2)
+
+    local k_3 = {}
+    k_3[1] = {}
+    k_3[1].address = val[1].address + 0x64
+    k_3[1].flags = gg.TYPE_DWORD
+    k_3[1].value = 7169380
+    k_3[1].freeze = false
+    gg.setValues(k_3)
+    local k_4 = {}
+    k_4[1] = {}
+    k_4[1].address = val[1].address + 0x68
+    k_4[1].flags = gg.TYPE_DWORD
+    k_4[1].value = 13407
+    k_4[1].freeze = false
+    gg.setValues(k_4)
+
+    local e_1 = {}
+    e_1[1] = {}
+    e_1[1].address = val[1].address + 0x6C
+    e_1[1].flags = gg.TYPE_DWORD
+    e_1[1].value = 0
+    e_1[1].freeze = false
+    gg.setValues(e_1)
+
+    local x_1 = {}
+    x_1[1] = {}
+    x_1[1].address = val[1].address + 0x70
+    x_1[1].flags = gg.TYPE_DWORD
+    x_1[1].value = 0
+    x_1[1].freeze = false
+    gg.setValues(x_1)
+
+    local v_1 = {}
+    v_1[1] = {}
+    v_1[1].address = val[1].address + 0x74
+    v_1[1].flags = gg.TYPE_DWORD
+    v_1[1].value = 0
+    v_1[1].freeze = false
+    gg.setValues(v_1)
+
+    -- otra
+    local t = {}
+    t[1] = {}
+    t[1].address = val[1].address + 0xA8
+    t[1].flags = gg.TYPE_DWORD
+    t[1].value = 650
+    t[1].freeze = false
+    gg.setValues(t)
+
+    local e_2 = {}
+    e_2[1] = {}
+    e_2[1].address = val[1].address + 0xB0
+    e_2[1].flags = gg.TYPE_DWORD
+    e_2[1].value = 1634296844
+    e_2[1].freeze = false
+    gg.setValues(e_2)
+
+    local p_2 = {}
+    p_2[1] = {}
+    p_2[1].address = val[1].address + 0xB4
+    p_2[1].flags = gg.TYPE_DWORD
+    p_2[1].value = 7169380
+    p_2[1].freeze = false
+    gg.setValues(p_2)
+
+    local o_2 = {}
+    o_2[1] = {}
+    o_2[1].address = val[1].address + 0xB8
+    o_2[1].flags = gg.TYPE_DWORD
+    o_2[1].value = 13407
+    o_2[1].freeze = false
+    gg.setValues(o_2)
+
+    local ha_2 = {}
+    ha_2[1] = {}
+    ha_2[1].address = val[1].address + 0xBC
+    ha_2[1].flags = gg.TYPE_DWORD
+    ha_2[1].value = 0
+    ha_2[1].freeze = false
+    gg.setValues(ha_2)
+
+    local pa_2 = {}
+    pa_2[1] = {}
+    pa_2[1].address = val[1].address + 0xC0
+    pa_2[1].flags = gg.TYPE_DWORD
+    pa_2[1].value = 0
+    pa_2[1].freeze = false
+    gg.setValues(pa_2)
+
+    local ya_2 = {}
+    ya_2[1] = {}
+    ya_2[1].address = val[1].address + 0xC4
+    ya_2[1].flags = gg.TYPE_DWORD
+    ya_2[1].value = 0
+    ya_2[1].freeze = false
+    gg.setValues(ya_2)
+
+    -- otra
+    local t_3 = {}
+    t_3[1] = {}
+    t_3[1].address = val[1].address + 0xF8
+    t_3[1].flags = gg.TYPE_DWORD
+    t_3[1].value = 650
+    t_3[1].freeze = false
+    gg.setValues(t_3)
+
+    local e_3 = {}
+    e_3[1] = {}
+    e_3[1].address = val[1].address + 0x100
+    e_3[1].flags = gg.TYPE_DWORD
+    e_3[1].value = 1634296844
+    e_3[1].freeze = false
+    gg.setValues(e_3)
+
+    local p_3 = {}
+    p_3[1] = {}
+    p_3[1].address = val[1].address + 0x104
+    p_3[1].flags = gg.TYPE_DWORD
+    p_3[1].value = 7169380
+    p_3[1].freeze = false
+    gg.setValues(p_3)
+
+    local o_3 = {}
+    o_3[1] = {}
+    o_3[1].address = val[1].address + 0x108
+    o_3[1].flags = gg.TYPE_DWORD
+    o_3[1].value = 13407
+    o_3[1].freeze = false
+    gg.setValues(o_3)
+
+    local ha_3 = {}
+    ha_3[1] = {}
+    ha_3[1].address = val[1].address + 0x10C
+    ha_3[1].flags = gg.TYPE_DWORD
+    ha_3[1].value = 0
+    ha_3[1].freeze = false
+    gg.setValues(ha_3)
+
+    local pa_3 = {}
+    pa_3[1] = {}
+    pa_3[1].address = val[1].address + 0x110
+    pa_3[1].flags = gg.TYPE_DWORD
+    pa_3[1].value = 0
+    pa_3[1].freeze = false
+    gg.setValues(pa_3)
+
+    local ya_3 = {}
+    ya_3[1] = {}
+    ya_3[1].address = val[1].address + 0x114
+    ya_3[1].flags = gg.TYPE_DWORD
+    ya_3[1].value = 0
+    ya_3[1].freeze = false
+    gg.setValues(ya_3)
+    gg.clearResults()
+
+    -- otra
+    local t_5 = {}
+    t_5[1] = {}
+    t_5[1].address = val[1].address - 0x188
+    t_5[1].flags = gg.TYPE_DWORD
+    t_5[1].value = 650
+    t_5[1].freeze = false
+    gg.setValues(t_5)
+
+    local e_5 = {}
+    e_5[1] = {}
+    e_5[1].address = val[1].address - 0x180
+    e_5[1].flags = gg.TYPE_DWORD
+    e_5[1].value = 1634296844
+    e_5[1].freeze = false
+    gg.setValues(e_5)
+
+    local p_5 = {}
+    p_5[1] = {}
+    p_5[1].address = val[1].address - 0x17C
+    p_5[1].flags = gg.TYPE_DWORD
+    p_5[1].value = 7169380
+    p_5[1].freeze = false
+    gg.setValues(p_5)
+
+    local o_5 = {}
+    o_5[1] = {}
+    o_5[1].address = val[1].address - 0x178
+    o_5[1].flags = gg.TYPE_DWORD
+    o_5[1].value = 13407
+    o_5[1].freeze = false
+    gg.setValues(o_5)
+
+    local ha_5 = {}
+    ha_5[1] = {}
+    ha_5[1].address = val[1].address - 0x174
+    ha_5[1].flags = gg.TYPE_DWORD
+    ha_5[1].value = 0
+    ha_5[1].freeze = false
+    gg.setValues(ha_5)
+
+    local pa_5 = {}
+    pa_5[1] = {}
+    pa_5[1].address = val[1].address - 0x170
+    pa_5[1].flags = gg.TYPE_DWORD
+    pa_5[1].value = 0
+    pa_5[1].freeze = false
+    gg.setValues(pa_5)
+
+    local ya_5 = {}
+    ya_5[1] = {}
+    ya_5[1].address = val[1].address - 0x16C
+    ya_5[1].flags = gg.TYPE_DWORD
+    ya_5[1].value = 0
+    ya_5[1].freeze = false
+    gg.setValues(ya_5)
+    gg.clearResults()
+
+    -- otra
+    local t_6 = {}
+    t_6[1] = {}
+    t_6[1].address = val[1].address - 0x138
+    t_6[1].flags = gg.TYPE_DWORD
+    t_6[1].value = 650
+    t_6[1].freeze = false
+    gg.setValues(t_6)
+
+    local e_6 = {}
+    e_6[1] = {}
+    e_6[1].address = val[1].address - 0x130
+    e_6[1].flags = gg.TYPE_DWORD
+    e_6[1].value = 1634296844
+    e_6[1].freeze = false
+    gg.setValues(e_6)
+
+    local p_6 = {}
+    p_6[1] = {}
+    p_6[1].address = val[1].address - 0x12C
+    p_6[1].flags = gg.TYPE_DWORD
+    p_6[1].value = 7169380
+    p_6[1].freeze = false
+    gg.setValues(p_6)
+
+    local o_6 = {}
+    o_6[1] = {}
+    o_6[1].address = val[1].address - 0x128
+    o_6[1].flags = gg.TYPE_DWORD
+    o_6[1].value = 13407
+    o_6[1].freeze = false
+    gg.setValues(o_6)
+
+    local ha_6 = {}
+    ha_6[1] = {}
+    ha_6[1].address = val[1].address - 0x124
+    ha_6[1].flags = gg.TYPE_DWORD
+    ha_6[1].value = 0
+    ha_6[1].freeze = false
+    gg.setValues(ha_6)
+
+    local pa_6 = {}
+    pa_6[1] = {}
+    pa_6[1].address = val[1].address - 0x120
+    pa_6[1].flags = gg.TYPE_DWORD
+    pa_6[1].value = 0
+    pa_6[1].freeze = false
+    gg.setValues(pa_6)
+
+    local ya_6 = {}
+    ya_6[1] = {}
+    ya_6[1].address = val[1].address - 0x11C
+    ya_6[1].flags = gg.TYPE_DWORD
+    ya_6[1].value = 0
+    ya_6[1].freeze = false
+    gg.setValues(ya_6)
+    gg.clearResults()
+
+    -- otra
+    local t_7 = {}
+    t_7[1] = {}
+    t_7[1].address = val[1].address - 0xE8
+    t_7[1].flags = gg.TYPE_DWORD
+    t_7[1].value = 650
+    t_7[1].freeze = false
+    gg.setValues(t_7)
+
+    local e_7 = {}
+    e_7[1] = {}
+    e_7[1].address = val[1].address - 0xE0
+    e_7[1].flags = gg.TYPE_DWORD
+    e_7[1].value = 1634296844
+    e_7[1].freeze = false
+    gg.setValues(e_7)
+
+    local p_7 = {}
+    p_7[1] = {}
+    p_7[1].address = val[1].address - 0xDC
+    p_7[1].flags = gg.TYPE_DWORD
+    p_7[1].value = 7169380
+    p_7[1].freeze = false
+    gg.setValues(p_7)
+
+    local o_7 = {}
+    o_7[1] = {}
+    o_7[1].address = val[1].address - 0xD8
+    o_7[1].flags = gg.TYPE_DWORD
+    o_7[1].value = 13407
+    o_7[1].freeze = false
+    gg.setValues(o_7)
+
+    local ha_7 = {}
+    ha_7[1] = {}
+    ha_7[1].address = val[1].address - 0xD4
+    ha_7[1].flags = gg.TYPE_DWORD
+    ha_7[1].value = 0
+    ha_7[1].freeze = false
+    gg.setValues(ha_7)
+
+    local pa_7 = {}
+    pa_7[1] = {}
+    pa_7[1].address = val[1].address - 0xD0
+    pa_7[1].flags = gg.TYPE_DWORD
+    pa_7[1].value = 0
+    pa_7[1].freeze = false
+    gg.setValues(pa_7)
+
+    local ya_7 = {}
+    ya_7[1] = {}
+    ya_7[1].address = val[1].address - 0xCC
+    ya_7[1].flags = gg.TYPE_DWORD
+    ya_7[1].value = 0
+    ya_7[1].freeze = false
+    gg.setValues(ya_7)
+    gg.clearResults()
+
+    -- otra
+    local t_8 = {}
+    t_8[1] = {}
+    t_8[1].address = val[1].address + 0x148
+    t_8[1].flags = gg.TYPE_DWORD
+    t_8[1].value = 650
+    t_8[1].freeze = false
+    gg.setValues(t_8)
+
+    local e_8 = {}
+    e_8[1] = {}
+    e_8[1].address = val[1].address + 0x150
+    e_8[1].flags = gg.TYPE_DWORD
+    e_8[1].value = 1634296844
+    e_8[1].freeze = false
+    gg.setValues(e_8)
+
+    local p_8 = {}
+    p_8[1] = {}
+    p_8[1].address = val[1].address + 0x154
+    p_8[1].flags = gg.TYPE_DWORD
+    p_8[1].value = 7169380
+    p_8[1].freeze = false
+    gg.setValues(p_8)
+
+    local o_8 = {}
+    o_8[1] = {}
+    o_8[1].address = val[1].address + 0x158
+    o_8[1].flags = gg.TYPE_DWORD
+    o_8[1].value = 13407
+    o_8[1].freeze = false
+    gg.setValues(o_8)
+
+    local ha_8 = {}
+    ha_8[1] = {}
+    ha_8[1].address = val[1].address + 0x15C
+    ha_8[1].flags = gg.TYPE_DWORD
+    ha_8[1].value = 0
+    ha_8[1].freeze = false
+    gg.setValues(ha_8)
+
+    local pa_8 = {}
+    pa_8[1] = {}
+    pa_8[1].address = val[1].address + 0x160
+    pa_8[1].flags = gg.TYPE_DWORD
+    pa_8[1].value = 0
+    pa_8[1].freeze = false
+    gg.setValues(pa_8)
+
+    local ya_8 = {}
+    ya_8[1] = {}
+    ya_8[1].address = val[1].address + 0x164
+    ya_8[1].flags = gg.TYPE_DWORD
+    ya_8[1].value = 0
+    ya_8[1].freeze = false
+    gg.setValues(ya_8)
+    gg.clearResults()
+    hackAirplaneBox_1()
+end
+
+function hackAirplaneBox_1()
+    gg.processResume()
+    gg.searchNumber("231928234002000", gg.TYPE_QWORD)
+    count = gg.getResultsCount()
+    r = gg.getResults(count)
+    for i, v in ipairs(r) do
+        v.address = v.address - 0x24
+    end
+    r = gg.getValues(r)
+    for i, v in ipairs(r) do
+        v.address = v.value
+    end
+
+    gg.loadResults(r)
+
+    local t = {}
+    t[1] = {}
+    t[1].address = r[1].address - 0x318
+    t[1].flags = gg.TYPE_DWORD
+    t[1].value = 1
+    t[1].freeze = false
+    gg.setValues(t)
+
+    local e_1 = {}
+    e_1[1] = {}
+    e_1[1].address = r[1].address + 0xA8
+    e_1[1].flags = gg.TYPE_DWORD
+    e_1[1].value = 1
+    e_1[1].freeze = false
+    gg.setValues(e_1)
+
+    local p_1 = {}
+    p_1[1] = {}
+    p_1[1].address = r[1].address + 0x1E8
+    p_1[1].flags = gg.TYPE_DWORD
+    p_1[1].value = 1
+    p_1[1].freeze = false
+    gg.setValues(p_1)
+
+    local o_1 = {} -- 140
+    o_1[1] = {}
+    o_1[1].address = r[1].address + 0x328
+    o_1[1].flags = gg.TYPE_DWORD
+    o_1[1].value = 1
+    o_1[1].freeze = false
+    gg.setValues(o_1)
+
+    local ha_1 = {}
+    ha_1[1] = {}
+    ha_1[1].address = r[1].address + 0x468
+    ha_1[1].flags = gg.TYPE_DWORD
+    ha_1[1].value = 1
+    ha_1[1].freeze = false
+    gg.setValues(ha_1)
+
+    local ha_2 = {}
+    ha_2[1] = {}
+    ha_2[1].address = r[1].address + 0x5A8
+    ha_2[1].flags = gg.TYPE_DWORD
+    ha_2[1].value = 1
+    ha_2[1].freeze = false
+    gg.setValues(ha_2)
+
+    local ha_3 = {}
+    ha_3[1] = {}
+    ha_3[1].address = r[1].address + 0x6E8
+    ha_3[1].flags = gg.TYPE_DWORD
+    ha_3[1].value = 1
+    ha_3[1].freeze = false
+    gg.setValues(ha_3)
+
+    local ha_4 = {}
+    ha_4[1] = {}
+    ha_4[1].address = r[1].address + 0x828
+    ha_4[1].flags = gg.TYPE_DWORD
+    ha_4[1].value = 1
+    ha_4[1].freeze = false
+    gg.setValues(ha_4)
+
+    local pa_1 = {}
+    pa_1[1] = {}
+    pa_1[1].address = r[1].address + 0x968
+    pa_1[1].flags = gg.TYPE_DWORD
+    pa_1[1].value = 1
+    pa_1[1].freeze = false
+    gg.setValues(pa_1)
+    gg.clearResults()
+    gg.toast("Thành công!")
+end
+
+function hackIncreaseCard()
+    gg.processResume()
+    gg.clearResults()
+    local input = gg.prompt({"Nhập số lượng thẻ hiện tại", "Nhập số lượng thẻ mong muốn"}, {0, 0},
+        {"number", "number"})
+    local search1 = string.format("1918984974;%d::73", input[1])
+    gg.searchNumber(search1, gg.TYPE_DWORD)
+    gg.refineNumber(input[1], gg.TYPE_DWORD)
+    gg.getResults(gg.getResultCount())
+    gg.editAll(tostring(input[2]), gg.TYPE_DWORD)
+
+    gg.processResume()
+    gg.clearResults()
+    local search2 = string.format("1918984976;%d::73", input[1])
+    gg.searchNumber(search2, gg.TYPE_DWORD)
+    gg.refineNumber(input[1], gg.TYPE_DWORD)
+    gg.getResults(gg.getResultCount())
+    gg.editAll(tostring(input[2]), gg.TYPE_DWORD)
+
+    gg.toast("Thành công!")
+    gg.clearResults()
+end
+
+function hackFreezeSendGoldCard()
+    gg.processResume()
+    gg.clearResults()
+    gg.searchNumber("1684813601X28", gg.TYPE_DWORD)
+    r = gg.getResults(1)
+    if gg.getResultCount() == 1 then
+        local t = {}
+        t[1] = {}
+        t[1].address = r[1].address
+        t[1].flags = gg.TYPE_DWORD
+        t[1].value = 0
+        t[1].freeze = true
+        gg.setValues(t)
+
+        gg.processResume()
+        gg.clearResults()
+        gg.searchNumber("65535;86400", gg.TYPE_DWORD)
+        gg.refineNumber("86400", gg.TYPE_DWORD)
+        local n = gg.getResultCount()
+        local rs = gg.getResults(n)
+
+        if n == 0 then
+            gg.alert("No results found. Try again later.")
+        end
+        for i = 1, n do
+            local t1 = {}
+            t1[1] = {}
+            t1[1].address = rs[i].address + 0x20
+            t1[1].flags = gg.TYPE_DWORD
+            t1[1].value = 0
+            t1[1].freeze = true
+            gg.setValues(t1)
+            gg.addListItems(t1)
+
+            local t2 = {}
+            t2[1] = {}
+            t2[1].address = rs[i].address + 0x24
+            t2[1].flags = gg.TYPE_DWORD
+            t2[1].value = 0
+            t2[1].freeze = true
+            gg.setValues(t2)
+            gg.addListItems(t2)
+
+            local t3 = {}
+            t3[1] = {}
+            t3[1].address = rs[i].address + 0x28
+            t3[1].flags = gg.TYPE_DWORD
+            t3[1].value = 0
+            t3[1].freeze = true
+            gg.setValues(t3)
+            gg.addListItems(t3)
+
+            local t4 = {}
+            t4[1] = {}
+            t4[1].address = rs[i].address + 0x2C
+            t4[1].flags = gg.TYPE_DWORD
+            t4[1].value = 0
+            t4[1].freeze = true
+            gg.setValues(t4)
+            gg.addListItems(t4)
+
+            local t5 = {}
+            t5[1] = {}
+            t5[1].address = rs[i].address + 0x30
+            t5[1].flags = gg.TYPE_DWORD
+            t5[1].value = 0
+            t5[1].freeze = true
+            gg.setValues(t5)
+            gg.addListItems(t5)
+
+            local t6 = {}
+            t6[1] = {}
+            t6[1].address = rs[i].address + 0x34
+            t6[1].flags = gg.TYPE_DWORD
+            t6[1].value = 0
+            t6[1].freeze = true
+            gg.setValues(t6)
+            gg.addListItems(t6)
+        end
+        gg.toast("Thành công!")
+    else
+        gg.alert("Không tìm thấy. Hãy thử lại!")
+    end
+    gg.clearResults()
+end
+
+function hackPointEvent()
+    gg.processResume()
+    gg.clearResults()
+    local input = gg.prompt({"Nhập số điểm hiện tại:"}, {"0"}, {"text"})
+    local search = string.format("1986947350;1952543849;1936617321;%d", input[1])
+    gg.searchNumber(search, gg.TYPE_DWORD)
+    gg.refineNumber(input[1], gg.TYPE_DWORD)
+    local n = gg.getResultCount()
+    local r = gg.getResults(n)
+    if n == 0 then
+        gg.alert("Không tìm thấy. Hãy thử lại!")
+        return
+    end
+    gg.editAll(70000, gg.TYPE_DWORD)
+    gg.toast("Thành công! Hãy quay vòng để nhận điểm.")
+    gg.clearResults()
+end
+
+function hackMatch3Level()
+    local input = gg.prompt({"Nhập cấp độ hiện tại của minigame (cấp độ >= 7):",
+                             "Nhập cấp độ mong muốn của minigame:"}, {0, 0}, {"number", "number"})
+    local searchString = string.format("65537;276;%d;2::217", input[1])
+    gg.searchNumber(searchString, gg.TYPE_DWORD)
+    gg.refineNumber(input[1], gg.TYPE_DWORD)
+    local results = gg.getResults(1)
+    if #results > 0 then
+        results[1].value = tostring(input[2])
+        gg.setValues(results)
+        gg.toast("Cấp độ minigame đã được cập nhật thành công!")
+
+    else
+        gg.toast("Không tìm thấy. Hãy thử lại!")
+    end
+    gg.clearResults()
 end
 
 function hackSkin(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, num, quantity)
-    gg.toast("Loading............")
     gg.processResume()
     gg.clearResults()
     gg.searchNumber("7021767231079972979", gg.TYPE_QWORD)
@@ -5173,7 +6048,7 @@ function hack(val1, val2, val3, val4, val5, val6, quantity)
 
     local int1 = nil
     if quantity == 0 then
-        int1 = gg.prompt({"Amount (Cash max 5000/day): "}, {"1"}, {"text"})
+        int1 = gg.prompt({"Số lượng (Tiền max 5000/ngày): "}, {"1"}, {"text"})
         int1[1] = tonumber(int1[1])
     end
 
@@ -5190,7 +6065,7 @@ function hack(val1, val2, val3, val4, val5, val6, quantity)
     add_to_2 = val2
     add_to_1 = val1
     setdAhI()
-    gg.toast("Done!")
+    gg.toast("Thành công!")
 end
 
 function EXIT()
@@ -5202,9 +6077,10 @@ end
 function MENUFREE()
     SalvarUltimoMenu(nil)
 
-    local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards(Item 29)", "🎁 • Change Rewards",
-                             "🌟 • Extras", "⛵ • Regatta", "👍 • Unlimited Like", "❌ • Exit"}, nil,
-        "Author: Helios Apollo")
+    local opcao = gg.choice({"🎫 • Mở vé vàng", "🧊 • Đóng băng quà(quà 29)", "🎁 • Chọn quà",
+                             "🌟 • Mở rộng", "⛵ • Đua thuyền", "👍 • Không giới hạn Like",
+                             "❌ • Thoát"}, nil,
+        "Author: Helios Apollo (https://www.facebook.com/profile.php?id=61554934952158) \n\nZalo/Telegram: (+84)344886498")
     if opcao then
         if opcao == 1 then
             hackGoldenPass()

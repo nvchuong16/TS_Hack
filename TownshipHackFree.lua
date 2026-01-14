@@ -311,7 +311,7 @@ function menuescolhas2(menu_tipo)
     elseif menu_tipo == 3 then
         MENU = gg.choice({"⛏️ • Mine", "🏗️ • Construction", "💎 • Gems", "🔷 • Ingots",
                           "⚡️ • Advantage", "🧪 • Lab", "🕹️ • Minigame", "🗺️ • Expansion",
-                          "🏚️ • Barn", "🐶 • Animal Card", "❌ • Return"}, nil)
+                          "🏚️ • Barn", "🐶 • Animal Card", "🕹️ • Token", "❌ • Return"}, nil)
         if MENU == nil then
             return
         elseif MENU == 1 then
@@ -335,6 +335,8 @@ function menuescolhas2(menu_tipo)
         elseif MENU == 10 then
             hack()
         elseif MENU == 11 then
+            hack()
+        elseif MENU == 12 then
             menuescolhas2(1)
         end
     elseif menu_tipo == 301 then
@@ -742,7 +744,8 @@ function menuSkinAirport_Airplane()
          "✈️ • Holiday Plane", "12 • Symphony Airport", "✈️ • Symphony Plane", "13 • Ghost Airport",
          "✈️ • Ghost Plane", "14 • Easter Airport", "✈️ • Bird Plane", "15 • Ski Airport",
          "✈️ • Aero Sleigh", "16 • Sultan Airport", "✈️ • Arabian Plane", "17 • Fashion Airport",
-         "✈️ • Fashion Plane", "18 • Dracula Airport", "✈️ • Vampire Plane", "❌ • Return"}, nil)
+         "✈️ • Fashion Plane", "18 • Dracula Airport", "✈️ • Vampire Plane", "19 • Mexican Airport", 
+         "✈️ • Mexican Plane", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -750,7 +753,7 @@ function menuSkinAirport_Airplane()
         hackFree("696B5322h", "69415F6Eh", "726F7072h", "6F725F74h", "00006B63h", "00000000h", 50)
     elseif MENU == 2 then
         hackFree("696B5324h", "69415F6Eh", "616C7072h", "725F656Eh", "006B636Fh", "00000000h", 50)
-    elseif MENU >= 3 and MENU <= 38 then
+    elseif MENU >= 3 and MENU <= 40 then
         hack()
     else
         menuescolhas2(4)
@@ -767,7 +770,8 @@ function menuSkinPort_Ship()
                       "🚢 • Love Boat", "12 • Arctic Port", "🚢 • Arctic Ship", "13 • Egyptian Port",
                       "🚢 • Egyptian Ship", "14 • Lantern Harbor", "🚢 • Dragon Boat", "15 • Doge Pier",
                       "🚢 • Gondola", "16 • Sweet Port", "🚢 • Croissant Ferry", "17 • Japanese Port",
-                      "🚢 • Japanese Ship", "18 • Knight Port", "🚢 • Knight Ship", "❌ • Back"}, nil)
+                      "🚢 • Japanese Ship", "18 • Knight Port", "🚢 • Knight Ship", "19 • Broadway Port", 
+                      "🚢 • Broadway Ship", "❌ • Back"}, nil)
 
     if MENU == nil then
         return
@@ -775,7 +779,7 @@ function menuSkinPort_Ship()
         hackFree("696B531Eh", "61485F6Eh", "726F6272h", "3950535Fh", "00000000h", "00000000h", 50)
     elseif MENU == 2 then
         hackFree("1768641306", "1750294382", "1398763625", "14672", "0", "0", 50)
-    elseif MENU >= 3 and MENU <= 36 then
+    elseif MENU >= 3 and MENU <= 38 then
         hack()
     else
         menuescolhas2(4)
@@ -789,13 +793,13 @@ function menuSkinChicken()
                       "11 • Halloween Chicken", "12 • Santa Little Helper Chicken", "13 • Party Chicken",
                       "14 • Fairytale Chicken", "15 • Harlequin Chicken", "16 • Vacation Chicken",
                       "17 • Rock N Roll Chicken", "18 • Battle Chicken", "19 • Christmas Chicken",
-                      "❌ • Return"}, nil)
+                      "20 • Broadway Chicken", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
     elseif MENU == 1 then
         hackFree("696B5328h", "68435F6Eh", "656B6369h", "6E635F6Eh", "32303279h", "00000035h", 50)
-    elseif MENU >= 2 and MENU <= 19 then
+    elseif MENU >= 2 and MENU <= 20 then
         hack()
     else
         menuescolhas2(4)
@@ -809,13 +813,13 @@ function menuSkinCow()
                       "9 • Flower Cow", "10 • Birthday Cow", "11 • Ceremonial Cow", "12 • Elf Cow",
                       "13 • Party Cow", "14 • Flirty Cow", "15 • Stylish Cow", "16 • Confectioner Cow",
                       "17 • Festive Cow", "18 • Symphony Cow", "19 • Cinema Cow", "20 • Arabian Cow",
-                      "21 • Japanese Cow", "22 • French Cow", "❌ • Return"}, nil)
+                      "21 • Japanese Cow", "22 • French Cow", "23 • Mexican Cow", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
     elseif MENU == 1 then
         hackFree("696B5326h", "6F435F6Eh", "69705F77h", "65746172h", "34323032h", "00000000h", 50)
-    elseif MENU >= 2 and MENU <= 22 then
+    elseif MENU >= 2 and MENU <= 23 then
         hack()
     else
         menuescolhas2(4)
@@ -1371,11 +1375,12 @@ function menuDecorExpedition()
                       "34 • Gate to Cyber City", "35 • Sheriff Office", "36 • Santa Village", "37 • Jazz Club",
                       "38 • Sinister Carriage", "39 • Heroes Of The Old Park 1/3",
                       "39 • Heroes Of The Old Park 2/3", "39 • Heroes Of The Old Park 3/3", "40 • Viking Gate",
-                      "41 • Turkey Of Plenty", "42 • Mountain Chalet", "❌ • Return"}, nil)
+                      "41 • Turkey Of Plenty", "42 • Mountain Chalet", "43 • Altar Of Bastet",
+                      "44 • Golden Quill", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
-    elseif MENU >= 1 and MENU <= 44 then
+    elseif MENU >= 1 and MENU <= 46 then
         hack()
     else
         menuescolhas2(5)
@@ -1398,10 +1403,10 @@ end
 
 function menuCropTime()
     MENU = gg.choice({"🏗️ • Construction 0s", "🏚️ • Increase Barn(x10000%)", "🌱 • Plant 0s",
-                      "🐮 • Animals 0s", "❌ • Return"}, nil)
+                      "🐮 • Animals 0s", "✈️ • Airplane 0s", "❌ • Return"}, nil)
     if MENU == nil then
         return
-    elseif MENU >= 1 and MENU <= 4 then
+    elseif MENU >= 1 and MENU <= 5 then
         hack()
     else
         menuescolhas2(1)
@@ -1591,9 +1596,11 @@ end
 
 function menuExtras()
     MENU = gg.choice({"🌾 • XP (Wheat)", "📦 • City Market", "🏭 • Industry Academy",
-                      "✈️ • Airplane Auto", "❄️ • Freeze Population", "📦 • Market Boxes",
-                      "🏨 • Complete Cummunity Building", "⛏️ • Mining Depth",
-                      "🚁 • Helicopter(Cash/Gold)", "❌ • Return"}, nil)
+                      "❄️ • Freeze Population", "📦 • Market Boxes", "🏨 • Complete Cummunity Building",
+                      "⛏️ • Mining Depth", "🚁 • Helicopter(Cash/Gold)", "🐮 • Skip Time Animals Farm",
+                      "🚂📦 • Train XP", "🚂📦 • Train wheat", "✈️📦 • Airplane XP",
+                      "🕹️ • Match 3 Level", "🃏 • Increase Card", "❄️ • Freeze Send Gold Card",
+                      "🕹️ • Point Frozen Forturn Event", "❌ • Return"}, nil)
 
     if MENU == nil then
         return
@@ -1601,20 +1608,8 @@ function menuExtras()
         hackXPByWheat()
     elseif MENU == 2 then
         hackItemMarket()
-    elseif MENU == 3 then
+    elseif MENU >= 3 and MENU <= 16 then
         gg.alert("Upgrade key to Premium to use this feature.")
-    elseif MENU == 4 then
-        gg.alert("Upgrade key to Premium to use this feature.")
-    elseif MENU == 5 then
-        gg.alert("Upgrade key to Premium to use this feature.")
-    elseif MENU == 6 then
-        gg.alert("Upgrade key to Premium to use this feature.")
-    elseif MENU == 7 then
-        gg.alert("Upgrade key to VIP to use this feature.")
-    elseif MENU == 8 then
-        gg.alert("Upgrade key to VIP to use this feature.")
-    elseif MENU == 9 then
-        hackGoldCashByHeli()
     else
         MENUFREE()
     end
@@ -1935,8 +1930,8 @@ function MENUFREE()
     SalvarUltimoMenu(nil)
 
     local opcao = gg.choice({"🎫 • Unlock GP", "🧊 • Freeze Rewards(Item 29)", "🎁 • Change Rewards",
-                             "🌟 • Extras", "⛵ • Regatta", "🚁 • Helicopter(Cash/Gold)",
-                             "👍 • Unlimited Like", "❌ • Exit"}, nil, "Author: Helios Apollo")
+                             "🌟 • Extras", "⛵ • Regatta", "👍 • Unlimited Like", "❌ • Exit"}, nil,
+        "Author: Helios Apollo (https://www.facebook.com/profile.php?id=61554934952158) \n\nZalo/Telegram: (+84)344886498")
     if opcao then
         if opcao == 1 then
             hackGoldenPass()
@@ -1949,8 +1944,6 @@ function MENUFREE()
         elseif opcao == 5 then
             menuescolhas2(100)
         elseif opcao == 6 then
-            hackGoldCashByHeli()
-        elseif opcao == 7 then
             gg.alert("Upgrade key to VIP to use this feature.")
         else
             EXIT()

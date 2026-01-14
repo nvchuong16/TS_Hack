@@ -140,7 +140,7 @@ function validate_key(device_id, key)
 end
 
 function request_key(device_id)
-    local url = string.format("%s?action=request&device=%s", SERVER_URL, device_id)
+    local url = string.format("%s?action=request&device=%s&lang=VN", SERVER_URL, device_id)
     local resp = http_get(url)
     if not resp then
         gg.alert("⚠️ Không thể kết nối đến server để yêu cầu key.")

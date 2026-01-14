@@ -6,7 +6,8 @@
 2. Download Mo_gg: 
 	https://www.mediafire.com/file/i8aq9phll8738l9/Mo_GG_14.apk/file
 3. Download TSscript.lua:
-	https://drive.google.com/uc?export=download&id=1ZWUTOPgJQuuZ5xDi7lyDzlF_xWTGodaq
+	Vietnamese ver: https://drive.google.com/uc?export=download&id=1Wzvs9DnX99wvMS0jkj2bWdEjwgiHJQ5t
+	English ver: https://drive.google.com/uc?export=download&id=1mVDfhGNuEfU_iuyoNby5vB2Jqu5PBBxo
 4: Video hướng dẫn cài Clone_app và Mo_gg:
 	https://drive.google.com/file/d/1qGbv6Wdz-tK60cPzPmnpdED8vcyVNDU4/view?usp=drive_link
 5: Video hướng dẫn run script và đăng ký key:
@@ -28,7 +29,8 @@
 2. Download Mo_gg trên Ldplayer: 
 	https://www.mediafire.com/file/i8aq9phll8738l9/Mo_GG_14.apk/file
 3. Download TSscript.lua trên Ldplayer:
-	https://drive.google.com/uc?export=download&id=1ZWUTOPgJQuuZ5xDi7lyDzlF_xWTGodaq
+	Vietnamese ver: https://drive.google.com/uc?export=download&id=1Wzvs9DnX99wvMS0jkj2bWdEjwgiHJQ5t
+	English ver: https://drive.google.com/uc?export=download&id=1mVDfhGNuEfU_iuyoNby5vB2Jqu5PBBxo
 	
 Các bước sau tương tự như trên điện thoại Android
 	
